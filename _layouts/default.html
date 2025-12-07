@@ -1,29 +1,18 @@
+<!-- Base HTML shell for all pages. Includes site header, main content area, and footer. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | escape }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <nav class="site-nav">
-        <a href="{{ '/' | relative_url }}">Home</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="site-main container">
+  {% include header.html %}
+  <main class="page">
     {{ content }}
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>Food integrity directory – starting in Aotearoa New Zealand.</p>
-    </div>
-  </footer>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>
