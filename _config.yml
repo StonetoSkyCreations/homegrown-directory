@@ -1,0 +1,71 @@
+# Basic site configuration for the Food Integrity Directory Jekyll site.
+# Title can be customized later; url/baseurl set for GitHub Pages-friendly defaults.
+
+title: Food Integrity Directory
+description: "Directory connecting farms, markets, stores, restaurants, and distributors with transparent growing practices."
+# For GitHub Pages, set url to your site URL (e.g., https://username.github.io) and baseurl to repo name or "" for user/organization sites.
+url: "https://example.github.io"
+baseurl: "/homegrown-directory" # Set to "" if deploying at the root of a user/organization site.
+
+# Collections for different listing types.
+collections:
+  farms:
+    output: true
+    permalink: /farms/:country/:slug/
+  markets:
+    output: true
+    permalink: /markets/:country/:slug/
+  stores:
+    output: true
+    permalink: /stores/:country/:slug/
+  restaurants:
+    output: true
+    permalink: /restaurants/:country/:slug/
+  distributors:
+    output: true
+    permalink: /distributors/:country/:slug/
+
+markdown: kramdown
+permalink: pretty
+
+# Default layouts per collection for consistency.
+defaults:
+  - scope:
+      path: ""
+      type: farms
+    values:
+      layout: listing
+  - scope:
+      path: ""
+      type: markets
+    values:
+      layout: listing
+  - scope:
+      path: ""
+      type: stores
+    values:
+      layout: listing
+  - scope:
+      path: ""
+      type: restaurants
+    values:
+      layout: listing
+  - scope:
+      path: ""
+      type: distributors
+    values:
+      layout: listing
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+# Include assets and collections when building the site.
+include:
+  - assets
+
+# GitHub Pages-supported plugins only (none added here to remain fully compatible).
+# plugins:
+#   - jekyll-feed
+

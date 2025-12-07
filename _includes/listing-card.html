@@ -1,0 +1,18 @@
+<!-- Reusable card for showing a listing summary in lists and indexes. -->
+<article class="listing-card">
+  <p class="listing-card__type">{{ listing.collection | capitalize }}</p>
+  <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ listing.title }}</a></h3>
+  <p class="listing-card__location">{{ listing.city }}, {{ listing.region }}, {{ listing.country }}</p>
+  <div class="listing-card__tags">
+    {% assign tags = listing.practices | default: listing.products | default: listing.sources | default: listing.vendors %}
+    {% if tags %}
+    <ul class="tag-list">
+      {% for tag in tags limit: 4 %}
+      <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="muted">Details coming soon.</p>
+    {% endif %}
+  </div>
+</article>

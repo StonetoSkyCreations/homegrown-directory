@@ -1,0 +1,34 @@
+<!-- Homepage entry point introducing the directory and linking into key categories. -->
+---
+layout: home
+title: Welcome
+---
+<h1>Food integrity starts with knowing the story.</h1>
+<p class="lead">This directory surfaces how food is grown and connects farms, markets, stores, restaurants, and distributors who value soil health and transparency.</p>
+
+<div class="search-box">
+  <label for="search">Quick search</label>
+  <input id="search" type="search" placeholder="Search by name, region, or practice">
+  <!-- TODO: Add client-side search and filtering in a future update. -->
+</div>
+
+<div class="category-grid">
+  <a class="category-card" href="{{ '/farms/' | relative_url }}">
+    <h2>Farms</h2>
+    <p>Producers focused on soil health, biodiversity, and transparent practices.</p>
+  </a>
+  <a class="category-card" href="{{ '/markets/' | relative_url }}">
+    <h2>Markets</h2>
+    <p>Community markets and roadside stands with growers at the forefront.</p>
+  </a>
+  <a class="category-card" href="{{ '/stores/' | relative_url }}">
+    <h2>Stores</h2>
+    <p>Retailers and co-ops prioritizing provenance and regenerative sourcing.</p>
+  </a>
+  <a class="category-card" href="{{ '/restaurants/' | relative_url }}">
+    <h2>Restaurants</h2>
+    <p>Kitchens that honor where ingredients come from and who grows them.</p>
+  </a>
+</div>
+
+<a class="country-link" href="{{ '/country/new-zealand/' | relative_url }}">Start with New Zealand →</a>

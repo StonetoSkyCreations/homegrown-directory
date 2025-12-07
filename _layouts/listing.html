@@ -1,0 +1,72 @@
+<!-- Layout for individual listings across all collections (farm, market, store, restaurant, distributor). -->
+---
+layout: default
+---
+<section class="listing">
+  <header class="listing__header">
+    <p class="listing__type">{{ page.collection | capitalize }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="listing__location">{{ page.city }}, {{ page.region }}, {{ page.country }}</p>
+  </header>
+
+  <div class="listing__content">
+    {{ content }}
+  </div>
+
+  <div class="listing__meta">
+    {% if page.practices %}
+    <div>
+      <h2>Practices</h2>
+      <ul class="tag-list">
+        {% for practice in page.practices %}
+        <li>{{ practice }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if page.products %}
+    <div>
+      <h2>Products</h2>
+      <ul class="tag-list">
+        {% for product in page.products %}
+        <li>{{ product }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if page.sources %}
+    <div>
+      <h2>Sources</h2>
+      <ul class="tag-list">
+        {% for source in page.sources %}
+        <li>{{ source }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if page.vendors %}
+    <div>
+      <h2>Vendors</h2>
+      <ul class="tag-list">
+        {% for vendor in page.vendors %}
+        <li>{{ vendor }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if page.supplies_to %}
+    <div>
+      <h2>Supplies To</h2>
+      <ul class="tag-list">
+        {% for partner in page.supplies_to %}
+        <li>{{ partner }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</section>
