@@ -1,0 +1,41 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/_layouts/default.html b/_layouts/default.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..9eae7c11434f279d517b28d88e1d05b0e9274bc6
+--- /dev/null
++++ b/_layouts/default.html
+@@ -0,0 +1,31 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>{{ page.title | default: site.title }}</title>
++  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
++</head>
++<body>
++  <header>
++    <div class="wrapper">
++      <h1>{{ site.title }}</h1>
++      <nav>
++        <a href="{{ '/' | relative_url }}">Home</a>
++      </nav>
++    </div>
++  </header>
++
++  <main>
++    <div class="wrapper">
++      {{ content }}
++    </div>
++  </main>
++
++  <footer>
++    <div class="wrapper">
++      <p>&copy; {{ site.time | date: '%Y' }} Food Integrity Directory</p>
++    </div>
++  </footer>
++</body>
++</html>
+ 
+EOF
+)
