@@ -1,0 +1,18 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..274b6de1b4d1427fe71c922ec07faeae06daed92
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,8 @@
++---
++layout: default
++title: Home
++---
++
++<section>
++  <p>This will become a global food integrity directory, beginning with New Zealand producers, markets, and retailers.</p>
++</section>
+ 
+EOF
+)
