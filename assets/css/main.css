@@ -1,58 +1,48 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/assets/css/main.css b/assets/css/main.css
-new file mode 100644
-index 0000000000000000000000000000000000000000..3ff86bed6156096c3058bb2e6b31204d459a11b1
---- /dev/null
-+++ b/assets/css/main.css
-@@ -0,0 +1,48 @@
-+:root {
-+  color-scheme: light;
-+}
-+
-+body {
-+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-+  margin: 0;
-+  padding: 0;
-+  line-height: 1.6;
-+  background: #fafafa;
-+  color: #222;
-+}
-+
-+.wrapper {
-+  max-width: 900px;
-+  margin: 0 auto;
-+  padding: 1.5rem;
-+}
-+
-+header, footer {
-+  background: #f0f0f0;
-+  border-bottom: 1px solid #e0e0e0;
-+}
-+
-+header h1 {
-+  margin: 0;
-+  font-size: 1.6rem;
-+}
-+
-+nav a {
-+  color: #0366d6;
-+  text-decoration: none;
-+  margin-right: 1rem;
-+}
-+
-+nav a:hover {
-+  text-decoration: underline;
-+}
-+
-+main {
-+  min-height: 60vh;
-+}
-+
-+footer p {
-+  margin: 0;
-+  font-size: 0.9rem;
-+  color: #555;
-+}
- 
-EOF
-)
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #faf7f2;
+  color: #222;
+}
+
+a {
+  color: #215c3b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.site-header {
+  border-bottom: 1px solid #e0d5c5;
+  background: #f3eee5;
+}
+
+.site-title a {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.site-nav a {
+  margin-left: 1rem;
+  font-size: 0.95rem;
+}
+
+.site-main {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.site-footer {
+  border-top: 1px solid #e0d5c5;
+  background: #f3eee5;
+  font-size: 0.85rem;
+  text-align: center;
+}
