@@ -1,30 +1,25 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/_config.yml b/_config.yml
-new file mode 100644
-index 0000000000000000000000000000000000000000..1436d30915b3033a6585331b718bea40afa43f31
---- /dev/null
-+++ b/_config.yml
-@@ -0,0 +1,20 @@
-+# Basic site configuration for GitHub Pages
-+# Placeholder values to be customized later
-+
-+title: Global Food Integrity Directory
-+markdown: kramdown
-+
-+collections:
-+  farms:
-+    output: true
-+  markets:
-+    output: true
-+  stores:
-+    output: true
-+  restaurants:
-+    output: true
-+  distributors:
-+    output: true
-+
-+# Enable future expansion without plugins
-+plugins: []
- 
-EOF
-)
+title: Food Integrity Directory
+description: >-
+  A static directory for integrity-based food systems, starting in Aotearoa New Zealand.
+baseurl: ""   # e.g. "/homegrown-directory" if using project pages
+url: ""       # e.g. "https://stonetoskycreations.github.io"
+
+collections:
+  farms:
+    output: true
+    permalink: /farms/:country/:slug/
+  markets:
+    output: true
+    permalink: /markets/:country/:slug/
+  stores:
+    output: true
+    permalink: /stores/:country/:slug/
+  restaurants:
+    output: true
+    permalink: /restaurants/:country/:slug/
+  distributors:
+    output: true
+    permalink: /distributors/:country/:slug/
+
+markdown: kramdown
+plugins: []
