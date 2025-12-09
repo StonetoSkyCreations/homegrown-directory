@@ -8,7 +8,8 @@ layout: default
 {% assign offset = per_page | times: page_num | minus: per_page %}
 {% assign paginated_posts = posts | slice: offset, per_page %}
 {% assign total_pages = total_posts | divided_by: per_page %}
-{% if total_posts > total_pages | times: per_page %}
+{% assign page_capacity = total_pages | times: per_page %}
+{% if total_posts > page_capacity %}
   {% assign total_pages = total_pages | plus: 1 %}
 {% endif %}
 
