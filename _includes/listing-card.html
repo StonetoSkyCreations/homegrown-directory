@@ -5,6 +5,7 @@
   data-region="{{ listing.region | escape }}"
   data-city="{{ listing.city | default: listing.city_town | escape }}"
   data-type="{{ listing.type | default: listing.collection | escape }}"
+  data-country="{{ listing.country_slug | escape }}"
   data-practices="{{ practices_joined | escape }}">
   <div class="listing-card__meta">
     <span class="pill pill--type">{{ listing.type | default: listing.collection | capitalize }}</span>

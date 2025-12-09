@@ -4,9 +4,13 @@ title: Home
 ---
 
 <section class="hero">
-  <p class="eyebrow">Aotearoa New Zealand</p>
+  <p class="eyebrow">Aotearoa NZ + Australia</p>
   <h1>Find food grown with integrity.</h1>
-  <p class="lead">A simple, human-friendly directory to help people find honest food, and help businesses find farms and producers.</p>
+  <p class="lead">A simple, human-friendly directory to help people find honest food, and help businesses find farms and producers across both countries.</p>
+  <p class="muted country-note">
+    Showing: <span data-country-label>New Zealand</span>. Use the country switcher above to change.
+    <span class="country-note__links"><a href="{{ '/country/new-zealand/' | relative_url }}">NZ listings</a> · <a href="{{ '/country/australia/' | relative_url }}">Australia listings</a></span>
+  </p>
   <div class="hero__actions">
     <a class="button" href="{{ '/groceries/' | relative_url }}">Find Groceries</a>
     <a class="button" href="{{ '/eateries/' | relative_url }}">Find Cafés &amp; Restaurants</a>
@@ -23,6 +27,7 @@ title: Home
   </div>
   <div class="results-toolbar">
     <div id="resultsCount" class="muted">Loading listings…</div>
+    <div class="country-chip" data-country-label>New Zealand</div>
   </div>
   <div class="results-layout">
     <div id="listingResults" class="listing-grid listing-grid--tight" aria-live="polite"></div>

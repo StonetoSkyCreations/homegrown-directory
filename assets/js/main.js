@@ -2,14 +2,30 @@
   const searchInput = document.querySelector("#searchInput");
   const resultsContainer = document.querySelector("#listingResults");
   const resultsCount = document.querySelector("#resultsCount");
-  const mapPanel = document.querySelector("#mapPanel");
+  const countryButtons = Array.from(document.querySelectorAll("[data-country-option]"));
+  const countryLabelEls = Array.from(document.querySelectorAll("[data-country-label]"));
+  const mapPanel = document.querySelector(".map-panel");
+  const countryPage = document.querySelector("[data-country-page]");
   const toggleMapBtn = document.querySelector("#toggleMap");
   const clearFiltersBtn = document.querySelector("#clearFilters");
   const filtersForm = document.querySelector(".filters");
   const mapShouldStartOpen = mapPanel && mapPanel.classList.contains("map-panel--open");
   const initialHash = window.location.hash ? window.location.hash.replace("#", "").toLowerCase() : "";
-  let hashCountry = "";
+
+  const defaultCountry = "new-zealand";
+  const COUNTRY_STORAGE_KEY = "hg-country";
+  const countryDefaults = {
+    "new-zealand": { center: [-41.2, 174.7], zoom: 5 },
+    australia: { center: [-25.3, 133.8], zoom: 4 }
+  };
+
+  let selectedCountry = "";
   let hashTypes = [];
+  let listings = [];
+  let filtered = [];
+  let map;
+  let markerLayer;
+  let runDirectoryFilters;
 
   const typeLabels = {
     farms: "Farms",
@@ -27,53 +43,41 @@
     distributors: "#725ac1"
   };
 
-  let listings = [];
-  let filtered = [];
-  let map;
-  let markerLayer;
+  const getStoredCountry = () => {
+    try {
+      return localStorage.getItem(COUNTRY_STORAGE_KEY) || "";
+    } catch (err) {
+      return "";
+    }
+  };
 
-  // Simple directory filtering (region + tags + subtype) for directory pages
-  const directoryContainer = document.querySelector(".directory-page");
-  if (directoryContainer) {
-    const regionSelect = document.getElementById("regionFilter");
-    const tagFilters = Array.from(document.querySelectorAll('input[name="tag"]'));
-    const subtypeFilters = Array.from(document.querySelectorAll('input[name="subtype"]'));
-    const cards = Array.from(directoryContainer.querySelectorAll(".listing-card"));
-    const dirResultsCount = document.getElementById("dirResultsCount");
+  const getCountryName = (slug) => {
+    if (slug === "australia") return "Australia";
+    return "New Zealand";
+  };
 
-    const applyDirectoryFilters = () => {
-      const selectedRegion = regionSelect ? regionSelect.value : "all";
-      const selectedTags = tagFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
-      const selectedSubtypes = subtypeFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
-      let visibleCount = 0;
+  const setDocumentCountry = (slug) => {
+    document.documentElement.setAttribute("data-country", slug);
+  };
 
-      cards.forEach((card) => {
-        const region = (card.dataset.region || "").toLowerCase();
-        const practices = (card.dataset.practices || "").toLowerCase().split(",").filter(Boolean);
-        const subtype = (card.dataset.type || "").toLowerCase();
+  const updateCountryLabels = (slug) => {
+    const label = getCountryName(slug);
+    countryLabelEls.forEach((el) => {
+      const prefix = el.dataset.countryPrefix || "";
+      const suffix = el.dataset.countrySuffix || "";
+      el.textContent = `${prefix}${label}${suffix}`;
+    });
+  };
 
-        const regionOk = selectedRegion === "all" || region === selectedRegion.toLowerCase();
-        const tagsOk = selectedTags.every((t) => practices.includes(t));
-        const subtypeOk = selectedSubtypes.length === 0 || selectedSubtypes.includes(subtype);
+  const syncCountryButtons = (slug) => {
+    countryButtons.forEach((btn) => {
+      const isActive = btn.dataset.countryOption === slug;
+      btn.classList.toggle("is-active", isActive);
+      btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+  };
 
-        const show = regionOk && tagsOk && subtypeOk;
-        card.style.display = show ? "" : "none";
-        if (show) visibleCount += 1;
-      });
-
-      if (dirResultsCount) {
-        dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
-      }
-    };
-
-    if (regionSelect) regionSelect.addEventListener("change", applyDirectoryFilters);
-    tagFilters.forEach((c) => c.addEventListener("change", applyDirectoryFilters));
-    subtypeFilters.forEach((c) => c.addEventListener("change", applyDirectoryFilters));
-    applyDirectoryFilters();
-  }
-
-  const hasUI = resultsContainer || mapPanel;
-  if (!hasUI) return;
+  const getActiveCountry = () => selectedCountry || defaultCountry;
 
   const applyHashPrefill = () => {
     if (!initialHash) return;
@@ -84,25 +88,66 @@
       if (typeInput) typeInput.checked = true;
       return;
     }
-    hashCountry = initialHash;
+    selectedCountry = initialHash;
   };
 
-  const fetchListings = async () => {
-    try {
-      const url = window.HG_INDEX_URL || "/search.json";
-      const response = await fetch(url);
-      const data = await response.json();
-      listings = data;
-      filtered = data;
-      applyHashPrefill();
-      applyFilters();
-      if (mapShouldStartOpen) openMap();
-      refreshMap(filtered);
-    } catch (err) {
-      console.error("Failed to load search index", err);
-      if (resultsCount) resultsCount.textContent = "Could not load listings right now.";
-    }
-  };
+  applyHashPrefill();
+  if (!selectedCountry && countryPage) {
+    selectedCountry = countryPage.dataset.countryPage;
+  }
+  if (!selectedCountry) {
+    const storedCountry = getStoredCountry();
+    selectedCountry = storedCountry || defaultCountry;
+  }
+  setDocumentCountry(selectedCountry);
+  syncCountryButtons(selectedCountry);
+  updateCountryLabels(selectedCountry);
+
+  // Directory filtering (region + tags + subtype + country) for directory pages
+  const directoryContainer = document.querySelector(".directory-page");
+  if (directoryContainer) {
+    const regionSelect = document.getElementById("regionFilter");
+    const tagFilters = Array.from(document.querySelectorAll('input[name="tag"]'));
+    const subtypeFilters = Array.from(document.querySelectorAll('input[name="subtype"]'));
+    const cards = Array.from(directoryContainer.querySelectorAll(".listing-card"));
+    const dirResultsCount = document.getElementById("dirResultsCount");
+
+    runDirectoryFilters = () => {
+      const selectedRegion = regionSelect ? regionSelect.value : "all";
+      const selectedTags = tagFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
+      const selectedSubtypes = subtypeFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
+      const activeCountry = getActiveCountry();
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const region = (card.dataset.region || "").toLowerCase();
+        const practices = (card.dataset.practices || "").toLowerCase().split(",").filter(Boolean);
+        const subtype = (card.dataset.type || "").toLowerCase();
+        const country = (card.dataset.country || "").toLowerCase();
+
+        const regionOk = selectedRegion === "all" || region === selectedRegion.toLowerCase();
+        const tagsOk = selectedTags.every((t) => practices.includes(t));
+        const subtypeOk = selectedSubtypes.length === 0 || selectedSubtypes.includes(subtype);
+        const countryOk = !activeCountry || country === activeCountry;
+
+        const show = regionOk && tagsOk && subtypeOk && countryOk;
+        card.style.display = show ? "" : "none";
+        if (show) visibleCount += 1;
+      });
+
+      if (dirResultsCount) {
+        dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
+      }
+    };
+
+    if (regionSelect) regionSelect.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters());
+    tagFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
+    subtypeFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
+  }
+
+  if (typeof runDirectoryFilters === "function") runDirectoryFilters();
+
+  const hasSearchUI = resultsContainer || mapPanel;
 
   const cardTemplate = (item) => {
     const tags =
@@ -131,7 +176,7 @@
     `;
   };
 
-  const renderList = (items) => {
+  function renderList(items) {
     if (!resultsContainer) return;
     if (!items.length) {
       resultsContainer.innerHTML = `<p class="muted">No listings match those filters yet.</p>`;
@@ -142,9 +187,9 @@
       const noun = items.length === 1 ? "listing" : "listings";
       resultsCount.textContent = `${items.length} ${noun}`;
     }
-  };
+  }
 
-  const matchesFilters = (item, selections) => {
+  function matchesFilters(item, selections) {
     const textQuery = selections.query.toLowerCase().trim();
     const haystack = [
       item.title,
@@ -178,12 +223,13 @@
       !selections.services.length ||
       selections.services.every((p) => (item.services || []).includes(p));
 
-    const countryMatch = !hashCountry || item.country_slug === hashCountry;
+    const countryMatch = !getActiveCountry() || item.country_slug === getActiveCountry();
 
     return textMatches && typeMatches && practicesMatch && productsMatch && servicesMatch && countryMatch;
-  };
+  }
 
-  const applyFilters = () => {
+  function applyFilters() {
+    if (!hasSearchUI) return;
     const selections = {
       query: searchInput ? searchInput.value : "",
       types: [],
@@ -200,17 +246,17 @@
     filtered = listings.filter((item) => matchesFilters(item, selections));
     renderList(filtered);
     refreshMap(filtered);
-  };
+  }
 
-  const clearFilters = () => {
+  function clearFilters() {
     if (filtersForm) {
       filtersForm.querySelectorAll('input[type="checkbox"]').forEach((input) => (input.checked = false));
     }
     if (searchInput) searchInput.value = "";
     applyFilters();
-  };
+  }
 
-  const openMap = () => {
+  function openMap() {
     if (!mapPanel) return;
     mapPanel.classList.add("is-open");
     if (toggleMapBtn) toggleMapBtn.textContent = "Hide map";
@@ -222,15 +268,15 @@
       markerLayer = L.layerGroup().addTo(map);
     }
     refreshMap(filtered);
-  };
+  }
 
-  const closeMap = () => {
+  function closeMap() {
     if (!mapPanel) return;
     mapPanel.classList.remove("is-open");
     if (toggleMapBtn) toggleMapBtn.textContent = "Show map";
-  };
+  }
 
-  const refreshMap = (items) => {
+  function refreshMap(items) {
     if (!map || !markerLayer) return;
     markerLayer.clearLayers();
     const withCoords = items.filter((item) => typeof item.lat === "number" && typeof item.lon === "number");
@@ -252,11 +298,59 @@
       const bounds = L.latLngBounds(withCoords.map((item) => [item.lat, item.lon]));
       map.fitBounds(bounds, { padding: [30, 30] });
     } else {
-      map.setView([-41.2, 174.7], 5);
+      const activeCountry = getActiveCountry();
+      const fallback = countryDefaults[activeCountry] || countryDefaults[defaultCountry];
+      map.setView(fallback.center, fallback.zoom);
+    }
+  }
+
+  function setCountry(slug, options = {}) {
+    selectedCountry = slug || defaultCountry;
+    try {
+      localStorage.setItem(COUNTRY_STORAGE_KEY, selectedCountry);
+    } catch (err) {
+      // ignore storage errors
+    }
+    setDocumentCountry(selectedCountry);
+    syncCountryButtons(selectedCountry);
+    updateCountryLabels(selectedCountry);
+    if (countryPage && countryPage.dataset.countryPage !== selectedCountry) {
+      const base = window.HG_BASEURL || "";
+      window.location.href = `${base}/country/${selectedCountry}/`;
+      return;
+    }
+    if (typeof runDirectoryFilters === "function") runDirectoryFilters();
+    if (hasSearchUI) {
+      applyFilters();
+      if (mapShouldStartOpen && map) refreshMap(filtered);
+    }
+    if (options.updateHash) {
+      const base = window.location.href.split("#")[0];
+      window.history.replaceState(null, "", `${base}#${selectedCountry}`);
+    }
+  }
+
+  const fetchListings = async () => {
+    if (!hasSearchUI) return;
+    try {
+      const url = window.HG_INDEX_URL || "/search.json";
+      const response = await fetch(url);
+      const data = await response.json();
+      listings = data;
+      filtered = data;
+      applyFilters();
+      if (mapShouldStartOpen) openMap();
+      refreshMap(filtered);
+    } catch (err) {
+      console.error("Failed to load search index", err);
+      if (resultsCount) resultsCount.textContent = "Could not load listings right now.";
     }
   };
 
   // Event listeners
+  countryButtons.forEach((btn) => {
+    btn.addEventListener("click", () => setCountry(btn.dataset.countryOption, { updateHash: true }));
+  });
   if (searchInput) {
     searchInput.addEventListener("input", applyFilters);
   }

@@ -10,7 +10,19 @@
       <a href="{{ '/vendors/' | relative_url }}">Vendors</a>
       <a href="{{ '/map/' | relative_url }}">Map</a>
       <a href="{{ '/submit.html' | relative_url }}">Add / Update a Listing</a>
-      <a class="pill" href="{{ '/country/new-zealand/' | relative_url }}">Aotearoa NZ</a>
     </nav>
+    <div class="country-switcher" data-country-switcher>
+      <span class="country-switcher__label">Country</span>
+      <div class="country-switcher__options">
+        <button type="button" class="pill country-option" data-country-option="new-zealand">
+          <span class="country-option__code">NZ</span>
+          <span class="country-option__name">Aotearoa</span>
+        </button>
+        <button type="button" class="pill country-option" data-country-option="australia">
+          <span class="country-option__code">AU</span>
+          <span class="country-option__name">Australia</span>
+        </button>
+      </div>
+    </div>
   </div>
 </header>

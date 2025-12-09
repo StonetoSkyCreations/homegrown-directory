@@ -90,6 +90,42 @@ a:focus-visible {
   background: var(--accent-soft);
   text-decoration: none;
 }
+.country-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.country-switcher__label {
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.country-switcher__options {
+  display: flex;
+  gap: 0.4rem;
+}
+.country-option {
+  cursor: pointer;
+  border-color: var(--border);
+  background: #fff;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+.country-option:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+}
+.country-option.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.country-option__code {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.country-option__name {
+  font-weight: 600;
+}
 
 .pill {
   display: inline-flex;
@@ -153,6 +189,15 @@ a:focus-visible {
   color: var(--muted);
   margin: 0;
   max-width: 780px;
+}
+.country-note {
+  margin: 0;
+}
+.country-note__links {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  margin-left: 0.35rem;
 }
 .hero__actions {
   display: flex;
@@ -240,6 +285,16 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+.country-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: #eef3e7;
+  border: 1px solid var(--border);
+  font-weight: 700;
 }
 
 .results-layout {
