@@ -736,6 +736,12 @@ a:focus-visible {
 .listing__meta h2 {
   margin-bottom: 0.4rem;
 }
+.listing__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
 
 .tag-list {
   list-style: none;

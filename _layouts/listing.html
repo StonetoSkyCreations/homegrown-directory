@@ -14,6 +14,8 @@ map: false
 {% assign source_partners = all_listings | where_exp: 'item', 'sources_list contains item.slug' | uniq %}
 {% assign schema_type = 'LocalBusiness' %}
 {% assign display_label = page.collection | capitalize %}
+{% assign review_target = page.slug | default: page.title | slugify %}
+{% assign encoded_title = page.title | default: page.name | uri_escape %}
 {% assign address_parts = "" | split: "" %}
 {% if page.address %}{% assign address_parts = address_parts | push: page.address %}{% endif %}
 {% if page.suburb %}{% assign address_parts = address_parts | push: page.suburb %}{% endif %}
@@ -68,10 +70,11 @@ map: false
   </div>
 
   <div class="listing__meta">
-    {% include rating.html listing=page %}
-    <div class="listing__contact">
-      <a class="button ghost" href="{{ '/review.html?listing=' | append: (page.slug | default: page.title | slugify) | relative_url }}">Review this place</a>
+    <div class="listing__actions">
+      <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}">Update listing</a>
+      <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}">Review this place</a>
     </div>
+    {% include rating.html listing=page %}
 
     {% if page.practices %}
       <div>
