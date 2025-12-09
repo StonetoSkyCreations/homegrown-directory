@@ -82,7 +82,7 @@ permalink: /blog/submit/
       'Article text / summary:',
       data.get('body') || ''
     ];
-    const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+    const mailto = `mailto:contact@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
     window.location.href = mailto;
   });
 </script>

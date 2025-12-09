@@ -12,8 +12,8 @@
 {% if listing.region %}{% assign address_parts = address_parts | push: listing.region %}{% endif %}
 {% if listing.country %}{% assign address_parts = address_parts | push: listing.country %}{% endif %}
 {% assign card_address = address_parts | join: ', ' %}
-{% assign has_coords = listing.lat and listing.lon %}
-{% assign has_street = listing.address %}
+{% assign has_street = listing.address and listing.address != '' %}
+{% assign has_coords = listing.lat and listing.lon and listing.lat != '' and listing.lon != '' %}
 {% assign map_query = card_address | uri_escape %}
 {% case listing.collection %}
   {% when 'stores' %}
@@ -45,13 +45,13 @@
   data-practices="{{ practices_joined | escape }}">
   <div class="listing-card__meta">
     <span class="pill pill--type">{{ card_label }}</span>
-    {% if has_coords %}
-      <a class="listing-card__location-link" href="https://www.google.com/maps/search/?api=1&query={{ listing.lat }},{{ listing.lon }}" target="_blank" rel="noopener">
-        <span class="listing-card__location">{{ card_address | default: 'View on map' }}</span>
-      </a>
-    {% elsif has_street %}
+    {% if has_street %}
       <a class="listing-card__location-link" href="https://www.google.com/maps/search/?api=1&query={{ map_query }}" target="_blank" rel="noopener">
         <span class="listing-card__location">{{ card_address }}</span>
+      </a>
+    {% elsif has_coords %}
+      <a class="listing-card__location-link" href="https://www.google.com/maps/search/?api=1&query={{ listing.lat }},{{ listing.lon }}" target="_blank" rel="noopener">
+        <span class="listing-card__location">View on map</span>
       </a>
     {% else %}
       {% if card_address != "" %}
