@@ -25,3 +25,4 @@ source_urls:
 last_checked: ''
 notes: FreshChoice store finder
 city: Nationwide (esp. South Island)
+---

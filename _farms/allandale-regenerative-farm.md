@@ -20,3 +20,4 @@ email: ''
 phone: ''
 description: Regenerative beef and lamb farm near Amberley focused on soil health and pasture-raised livestock.
 Farm practicing regenerative grazing to raise pasture-fed beef and lamb while improving soil health and biodiversity. Source: https://www.allandale.farm/
+---

@@ -27,4 +27,4 @@ notes: ''
 published: true
 city: Wānaka
 Organic and wholefood retailer in Wānaka specialising in organic products and local suppliers. Source: user-supplied list
-
+---

@@ -27,4 +27,4 @@ notes: ''
 published: true
 city: Kaikōura
 Local specialty grocer carrying organic pantry staples and fresh local produce. Source: user-supplied list
-
+---

@@ -22,4 +22,4 @@ email: ''
 phone: ''
 description: Thames restaurant celebrating local, sustainable ingredients with produce from Pakaraka Permaculture.
 Menu built around local and sustainable ingredients, including organic produce from Pakaraka Permaculture. Source: user-supplied list
-
+---

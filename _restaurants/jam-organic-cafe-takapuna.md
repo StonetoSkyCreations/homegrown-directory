@@ -23,3 +23,4 @@ email: ''
 phone: '09 486 1600'
 description: Takapuna cafe prioritising organic ingredients and free-range meats and eggs.
 Serves organic ingredients whenever possible with free-range meats and eggs. Source: user-provided listing
+---

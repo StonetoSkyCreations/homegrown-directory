@@ -27,4 +27,4 @@ notes: ''
 published: true
 city: Coromandel
 Summer Saturday community market in Coromandel Town featuring local and homegrown produce, including organic and gluten-free options. Source: user-supplied list
-
+---

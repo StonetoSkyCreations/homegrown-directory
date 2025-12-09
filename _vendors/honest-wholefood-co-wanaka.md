@@ -27,3 +27,4 @@ last_checked: ''
 notes: ''
 city: Wānaka
 Creates plant-based snacks using organic ingredients where possible and a strong ethical sourcing focus. Source: https://honestwholefood.co.nz/
+---

@@ -29,3 +29,4 @@ notes: Retail
 city: Wellington
 rating_average: 5
 rating_count: 1
+---

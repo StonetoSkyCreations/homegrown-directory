@@ -25,3 +25,4 @@ source_urls:
 last_checked: ''
 notes: Four Square store locator
 city: Nationwide
+---

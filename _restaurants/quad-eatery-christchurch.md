@@ -23,3 +23,4 @@ email: hello@quadeatery.co.nz
 phone: 03 260 2272
 description: Cafe at the Arts Centre serving brunch with organic Kōkako coffee and locally sourced ingredients.
 Serves organic Kōkako coffee and brunch dishes built from locally sourced ingredients. Source: user-provided listing
+---

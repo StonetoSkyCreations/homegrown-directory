@@ -27,3 +27,4 @@ last_checked: ''
 notes: ''
 city: Wellington
 Roastery and cafe offering Fair Trade Organic certified coffee, supplying wholesale and serving in-house. Source: https://havana.co.nz/
+---

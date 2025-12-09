@@ -23,3 +23,4 @@ email: ''
 phone: ''
 description: Waterfront Paihia restaurant serving free-range pork knuckle and seasonal Bay of Islands produce.
 Seafood-led menu with a signature free-range pork knuckle and regularly changing seasonal dishes. Highlights local Bay of Islands growers and fresh catch, with sweeping views from the Paihia wharf. Source: https://www.charlotteskitchen.co.nz/
+---

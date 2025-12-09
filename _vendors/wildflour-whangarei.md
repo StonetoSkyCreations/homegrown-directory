@@ -27,3 +27,4 @@ last_checked: ''
 notes: ''
 city: Whangārei
 Local bakery using organic flour and sourdough starters, selling at Whangārei markets. Source: user-supplied list
+---

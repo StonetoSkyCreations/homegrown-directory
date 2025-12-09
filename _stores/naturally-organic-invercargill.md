@@ -28,4 +28,4 @@ notes: ''
 published: true
 city: Invercargill
 Organic grocer in Invercargill stocking certified organic produce, wholefoods, and health products. Source: user-supplied list
-
+---

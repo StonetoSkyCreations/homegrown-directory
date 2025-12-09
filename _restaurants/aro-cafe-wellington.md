@@ -24,3 +24,4 @@ email: ''
 phone: 04 384 4970
 description: Aro Street cafe serving seasonal locally sourced food with organic milk products and free-range poultry.
 Seasonal menu with locally sourced ingredients, organic milk products, and free-range poultry. Source: user-provided listing
+---

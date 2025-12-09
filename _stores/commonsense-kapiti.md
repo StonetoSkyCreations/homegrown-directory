@@ -28,3 +28,4 @@ notes: Retail
 city: Kapiti Coast
 rating_average: 5
 rating_count: 1
+---

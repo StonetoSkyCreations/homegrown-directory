@@ -26,3 +26,4 @@ source_urls:
 last_checked: Degrowth NZ on co-ops
 notes: Co-op/Hub
 city: Lower Hutt
+---

@@ -23,3 +23,4 @@ email: ''
 phone: "+64 4 499 6368"
 description: Pipitea cafe offering organically and locally sourced food and coffee where possible.
 Committed to using organic ingredients and locally sourced food and coffee. Source: user-provided listing
+---

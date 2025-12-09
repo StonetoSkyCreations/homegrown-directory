@@ -28,4 +28,4 @@ notes: ''
 published: true
 city: Wānaka
 Local organic store and cafe in Wānaka serving and selling organic wholefoods. Source: user-supplied list
-
+---

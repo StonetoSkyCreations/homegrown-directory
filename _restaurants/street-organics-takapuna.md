@@ -23,3 +23,4 @@ email: ''
 phone: "(09) 216 5991"
 description: Takapuna café making meals, cakes, and treats from scratch with local organic ingredients where possible.
 Cafe and bakery focused on organic ingredients and made-from-scratch meals and treats. Source: user-provided listing
+---

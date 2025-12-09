@@ -30,3 +30,4 @@ source_urls:
 hours: Mon–Fri 12–4pm (tastings)
 last_checked: '2025-12-09'
 notes: ''
+---

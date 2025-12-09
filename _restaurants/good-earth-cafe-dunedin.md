@@ -22,3 +22,4 @@ email: ''
 phone: ''
 description: Dunedin cafe focused on organic ingredients, wholefoods, and organic coffee.
 Vegetarian/vegan-friendly cafe using organic ingredients and coffee with an emphasis on wholefoods. Source: user-supplied list
+---

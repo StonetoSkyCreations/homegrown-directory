@@ -45,3 +45,4 @@ city: Dunedin
 rating_average: 5
 rating_count: 1
 Long-standing organic grocer and wholefood store in Dunedin with certified organic produce, bulk wholefoods, refillery, deli, and ethically sourced groceries. Source: https://www.tastenature.co.nz/
+---

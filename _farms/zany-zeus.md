@@ -28,3 +28,4 @@ source_urls:
 hours: Mon–Sat 10:00–20:00; Sun closed
 last_checked: '2025-12-09'
 notes: ''
+---

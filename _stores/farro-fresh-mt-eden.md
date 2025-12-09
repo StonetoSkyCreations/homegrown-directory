@@ -27,3 +27,4 @@ source_urls:
 last_checked: Farro ToastieTakeover listing
 notes: Retail
 city: Auckland
+---

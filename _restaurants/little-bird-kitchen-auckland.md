@@ -23,3 +23,4 @@ email: ''
 phone: 027 648 4757
 description: Plant-based café in Ponsonby using local organic produce for a seasonal menu.
 Raw and plant-based cafe serving dishes built on local organic produce; part of Little Bird Organics. Source: user-provided listing
+---

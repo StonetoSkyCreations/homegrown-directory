@@ -23,3 +23,4 @@ email: ''
 phone: ''
 description: Estate restaurant featuring organic/biodynamic culinary gardens and seasonal Hawke's Bay produce.
 Restaurant at Giants Estate serving seasonal menus built around on-site organic and biodynamic gardens and local producers. Source: https://craggyrange.com/
+---

@@ -25,3 +25,4 @@ source_urls:
 last_checked: ''
 notes: New World store finder
 city: Nationwide
+---

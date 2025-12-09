@@ -33,3 +33,4 @@ last_checked: 'user-submitted'
 notes: "Additional locations include The Malthouse Cottage, 69 Colombo Street, Beckenham; and Cacao Pod concept space (location TBD)."
 rating_average: 5
 rating_count: 1
+---

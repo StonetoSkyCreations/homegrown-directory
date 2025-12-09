@@ -30,3 +30,4 @@ city: New Plymouth
 rating_average: 5
 rating_count: 1
 Organic and wholefood supermarket in New Plymouth stocking certified organic fresh produce, groceries, and health products with a strong local sourcing focus. Source: https://downtoearth.nz/
+---

@@ -25,3 +25,4 @@ source_urls:
 last_checked: ''
 notes: Woolworths NZ store locator; ScrapeHero (186 stores)
 city: Nationwide
+---

@@ -27,4 +27,4 @@ notes: ''
 published: true
 city: Hokitika
 Community co-op providing organic foods and wholefoods at affordable prices in Hokitika. Source: user-supplied list
-
+---

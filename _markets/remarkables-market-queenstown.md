@@ -28,3 +28,4 @@ notes: ''
 published: true
 city: Queenstown
 Seasonal Saturday market at Remarkables Park with vendors from Central Otago and Queenstown, including organic and spray-free produce and free-range eggs. Source: https://www.remarkablesmarket.co.nz/
+---

@@ -29,3 +29,4 @@ description: Christchurch restaurant focused on certified-organic vegetables, wi
 rating_average: 5
 rating_count: 1
 Menu built on certified-organic veg (including Streamside Organics), wild meats, and ethically sourced NZ seafood, paired with natural wines. Weekly menus change with seasonal ethical supply. Source: user-provided details
+---

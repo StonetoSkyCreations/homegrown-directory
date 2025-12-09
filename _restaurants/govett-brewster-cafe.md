@@ -22,4 +22,4 @@ email: ''
 phone: ''
 description: Cafe inside the Govett-Brewster Art Gallery committed to local, ethical, and organic produce.
 Gallery cafe serving menus built on local Taranaki suppliers with an emphasis on ethical and organic ingredients. Source: https://monicaseatery.co.nz/
-
+---

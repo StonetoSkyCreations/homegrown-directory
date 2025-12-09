@@ -28,4 +28,4 @@ notes: ''
 published: true
 city: Kaikōura
 Independent grocer offering organic and free-range eggs and local seasonal produce in Kaikōura. Source: user-supplied list
-
+---

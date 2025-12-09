@@ -24,3 +24,4 @@ phone: ''
 social_links: []
 description: Eatery serving exclusively Bostock Certified Organic chicken with a focus on clean, ethical ingredients.
 Eatery featuring Bostock Certified Organic chicken, prepared with minimal additives and an ethical sourcing focus. Source: user-provided details
+---

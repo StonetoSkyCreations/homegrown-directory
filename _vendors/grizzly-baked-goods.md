@@ -27,3 +27,4 @@ last_checked: ''
 notes: ''
 city: Christchurch
 Artisan bakery making sourdough breads and pastries with organic and locally grown flour, sold via markets and retail. Source: https://www.grizzly.co.nz/
+---

@@ -28,4 +28,4 @@ notes: ''
 published: true
 city: Takaka
 Organic and wholefood retailer in Golden Bay offering fresh produce and pantry goods. Source: user-supplied list
-
+---

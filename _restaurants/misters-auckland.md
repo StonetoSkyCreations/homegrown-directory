@@ -23,3 +23,4 @@ email: ''
 phone: "+64 9 379 9939"
 description: CBD cafe with a fully gluten- and dairy-free organic menu using locally sourced seasonal ingredients.
 Menu is entirely gluten- and dairy-free with organic, locally sourced seasonal ingredients. Source: user-provided listing
+---

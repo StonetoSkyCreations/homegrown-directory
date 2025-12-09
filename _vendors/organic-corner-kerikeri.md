@@ -29,3 +29,4 @@ last_checked: ''
 notes: ''
 city: Kerikeri
 Certified organic vegetable stall at the Kerikeri Farmers Market (Bay of Islands), specialising in heirloom tomato varieties. Source: https://www.kerigoldchalets.co.nz/kerikeri-blog/kerikeri-farmers-market
+---

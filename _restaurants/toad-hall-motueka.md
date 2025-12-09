@@ -22,3 +22,4 @@ email: ''
 phone: ''
 description: Motueka café and store focusing on local, seasonal ingredients and organic coffee.
 Popular Motueka spot serving seasonal dishes and organic coffee, with a store featuring local produce. Source: user-supplied list
+---

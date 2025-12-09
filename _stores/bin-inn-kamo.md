@@ -26,3 +26,4 @@ source_urls:
 last_checked: Bin Inn Kamo page
 notes: Retail
 city: Whangārei
+---
