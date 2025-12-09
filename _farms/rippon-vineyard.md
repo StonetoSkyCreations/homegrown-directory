@@ -4,7 +4,7 @@ title: "Rippon Vineyard"
 slug: rippon-vineyard
 name: "Rippon Vineyard"
 type: "Vineyard"
-description: "Biodynamic Demeter-certified vineyard in Wanaka."
+description: "A pioneering biodynamic vineyard overlooking Lake Wānaka, farmed with regenerative soil practices and biodynamic principles."
 country: "NZ"
 country_slug: new-zealand
 region: "Otago"
@@ -23,12 +23,13 @@ products:
   - "Wine"
 practices_tags:
   - biodynamic
+  - regenerative
 certifications:
   - Demeter
-supply_role: "Producer; Exporter"
+supply_role: "Producer; Cellar door"
 source_urls:
   - "https://biodynamic.org.nz/demeter/demeter-producers"
-hours: "Daily 12pm–5pm (tastings)"
+hours: "Daily 12pm–5pm (cellar door)"
 last_checked: "2025-12-09"
 notes: ""
 ---
