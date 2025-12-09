@@ -16,10 +16,10 @@ title: Home
     </div>
   </div>
   <div class="hero__actions">
-    <a class="button" href="{{ '/groceries/' | relative_url }}">Find Groceries</a>
-    <a class="button" href="{{ '/eateries/' | relative_url }}">Find Cafés &amp; Restaurants</a>
-    <a class="button" href="{{ '/markets/' | relative_url }}">Find Markets</a>
-    <a class="button ghost" href="{{ '/farms/' | relative_url }}">Find Farms &amp; Producers (for businesses)</a>
+    <button class="button" type="button" data-type-filter="stores">Find Groceries</button>
+    <button class="button" type="button" data-type-filter="restaurants,vendors">Find Eateries</button>
+    <button class="button" type="button" data-type-filter="markets">Find Markets</button>
+    <button class="button ghost" type="button" data-type-filter="farms">Find Farms &amp; Producers (for businesses)</button>
   </div>
 </section>
 

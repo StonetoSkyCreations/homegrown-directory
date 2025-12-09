@@ -10,6 +10,7 @@
   const clearFiltersBtn = document.querySelector("#clearFilters");
   const filtersForm = document.querySelector(".filters");
   const heroRegionSelect = document.querySelector("#heroRegion");
+  const heroTypeButtons = Array.from(document.querySelectorAll("[data-type-filter]"));
   const navToggle = document.querySelector("[data-nav-toggle]");
   const primaryNav = document.querySelector("[data-primary-nav]");
   const mapShouldStartOpen = mapPanel && mapPanel.classList.contains("map-panel--open");
@@ -29,6 +30,7 @@
   let map;
   let markerLayer;
   let runDirectoryFilters;
+  let heroTypeFilters = [];
 
   const typeLabels = {
     farms: "Farms",
@@ -235,7 +237,7 @@
       selections.region === "all" ||
       (item.region || "").toLowerCase() === selections.region;
 
-    const typeFilters = selections.types.concat(hashTypes);
+    const typeFilters = selections.types.concat(hashTypes, heroTypeFilters);
     const collection = (item.collection || "").toLowerCase();
     const typeMatches = !typeFilters.length || typeFilters.includes(collection);
 
@@ -291,6 +293,10 @@
     }
     if (searchInput) searchInput.value = "";
     if (heroRegionSelect) heroRegionSelect.value = "all";
+    heroTypeFilters = [];
+    if (heroTypeButtons.length) {
+      heroTypeButtons.forEach((btn) => btn.classList.remove("is-active"));
+    }
     applyFilters();
   }
 
@@ -398,6 +404,19 @@
   };
 
   // Event listeners
+  heroTypeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filters = (btn.dataset.typeFilter || "")
+        .split(",")
+        .map((v) => v.trim().toLowerCase())
+        .filter(Boolean);
+      const isActive = btn.classList.contains("is-active");
+      heroTypeFilters = isActive ? [] : filters;
+      heroTypeButtons.forEach((b) => b.classList.toggle("is-active", b === btn && !isActive));
+      applyFilters();
+      document.getElementById("listingResults")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
   countryButtons.forEach((btn) => {
     btn.addEventListener("click", () => setCountry(btn.dataset.countryOption, { updateHash: true }));
   });

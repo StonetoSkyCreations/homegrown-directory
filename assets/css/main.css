@@ -534,6 +534,12 @@ a:focus-visible {
   transform: translateY(-1px);
   box-shadow: 0 12px 28px rgba(37, 88, 47, 0.18);
 }
+.button.is-active,
+.button.ghost.is-active {
+  background: var(--accent-2);
+  border-color: var(--accent-2);
+  color: #fff;
+}
 .button.ghost {
   background: #fff;
   color: var(--text);
