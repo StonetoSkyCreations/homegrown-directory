@@ -3,10 +3,10 @@ title: "Pikikiruna Organic Farm"
 slug: pikikiruna-organic-farm
 country: "New Zealand"
 country_slug: new-zealand
-region: "Tasman"
-city: "Golden Bay"
-lat: 
-lon: 
+region: "Waikato"
+city: "Parawera"
+lat: -38.06822
+lon: 175.42020
 practices:
   - "Organic (certified)"
 products:
@@ -17,10 +17,11 @@ services:
 sources: []
 supplies_to: []
 hours: ""
-website: ""
-email: ""
-phone: ""
-description: "Certified organic farm in Golden Bay producing vegetables."
+website: "https://pikiroaorganicfarm.co.nz"
+email: "info@pikiroaorganicfarm.co.nz"
+phone: "+64 27 363 3220"
+description: "Certified organic farm in Parawera producing vegetables."
+address: "496 Owairaka Valley Road, Parawera 3877, New Zealand"
+postcode: "3877"
 ---
-Certified organic producer in Golden Bay supplying vegetables locally. Source: user-supplied list
-
+Certified organic producer in Parawera supplying vegetables locally. Source: user-supplied list
