@@ -1,0 +1,32 @@
+---
+layout: vendor
+title: Urban Flair
+slug: urban-flair
+country_slug: new-zealand
+country: New Zealand
+region: Auckland
+city: Auckland
+address: Auckland (mobile food truck)
+description: Food truck and private chef service using free‑range and organic products from local suppliers with biodegradable, eco‑friendly packaging.
+practices:
+  - Organic
+  - Free-range
+  - Sustainable packaging
+products:
+  - Burgers
+  - Tacos
+  - Catering dishes
+services:
+  - Food truck
+  - Catering
+  - Private chef
+website: https://urbanflair.co.nz
+email: urban.flair.nz@gmail.com
+phone: "+64 20 4082 5841"
+social: ''
+hours: ''
+lat: ''
+lon: ''
+supplies_to: []
+sources: []
+---
