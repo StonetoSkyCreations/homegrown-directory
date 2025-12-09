@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Markets
-description: "Markets are local hubs where growers, producers, and artisans connect directly with the community—keeping food systems human-scale, seasonal, and rooted in place."
+description: "Find farmers' markets, market halls, and local food hubs near you."
 permalink: /markets/
 ---
 {% assign items = site.markets | sort: 'name' %}
