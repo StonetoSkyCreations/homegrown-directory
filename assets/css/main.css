@@ -95,30 +95,29 @@ a:focus-visible {
 }
 .nav-toggle {
   display: none;
-  grid-template-columns: auto 1fr;
-  grid-auto-rows: auto;
+  flex-direction: row;
   align-items: center;
-  gap: 0.18rem 0.35rem;
-  padding: 0.55rem 0.75rem;
-  border-radius: 12px;
+  gap: 0.5rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 14px;
   border: 1px solid var(--border);
   background: #fff;
   cursor: pointer;
 }
 .nav-toggle__bar {
-  grid-column: 1;
   display: block;
-  width: 18px;
-  height: 2px;
+  width: 22px;
+  height: 2.5px;
   background: var(--text);
   border-radius: 999px;
+}
+.nav-toggle__bar + .nav-toggle__bar {
+  margin-top: 5px;
 }
 .nav-toggle__label {
   font-weight: 700;
   color: var(--text);
   font-size: 0.95rem;
-  grid-row: 1 / 4;
-  grid-column: 2;
 }
 .country-switcher {
   display: flex;
