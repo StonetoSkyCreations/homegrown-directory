@@ -4,14 +4,15 @@ slug: scarecrow
 name: Scarecrow
 type: cafe
 category: mixed
-description: Farm-to-table café and grocer serving organic coffee and seasonal local produce.
+description: Urban kitchen and grocery offering a seasonal menu with organic coffees and teas alongside fresh, nourishing food.
 country: NZ
 country_slug: new-zealand
 region: Auckland
-suburb: CBD
-address: ''
-phone: ''
-email: ''
+city: Auckland
+suburb: Auckland CBD
+address: 33 Victoria Street East, Auckland
+phone: "+64 9 377 1333"
+email: store@scarecrow.co.nz
 website: https://scarecrow.co.nz
 social_links: []
 sourcing_tags:
@@ -21,13 +22,15 @@ sourcing_tags:
 - direct-from-farm
 suppliers: []
 products_or_cuisine:
-- Cafe
-- Grocer
+- Café meals
 - Organic coffee
-- Seasonal produce
+- Teas
+services:
+- Café
+- Grocery
+- Catering
 source_urls:
 - https://scarecrow.co.nz
 last_checked: '2025-12-09'
-notes: ''
-city: Auckland
+notes: Updated with address and contact details.
 ---

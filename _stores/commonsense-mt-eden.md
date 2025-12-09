@@ -5,27 +5,32 @@ name: Commonsense Mt Eden
 brand: Commonsense Mt Eden
 type: organic-store
 category: retailer
-description: Commonsense Organics – organic grocery (Auckland)
+description: Certified organic and fair‑trade store selling a wide range of organic food, groceries and household items.
 country: NZ
 country_slug: new-zealand
 region: Auckland
 suburb: Mount Eden
-address: 284 Dominion Road
+city: Auckland
+address: 284 Dominion Road, Mt Eden, Auckland
 postcode: '1024'
 lon: -36.8828
-phone: ''
-email: mteden@commonsenseorganics.co.nz
-website: https://commonsenseorganics.co.nz/stores/auckland-mt-eden/
-social_links:
-- https://commonsenseorganics.co.nz/stores/auckland-mt-eden/
+phone: "+64 9 973 4133"
+email: ''
+website: https://commonsenseorganics.co.nz
+social_links: []
 sourcing_tags:
-- organic
-products: []
-market_days: []
+- certified-organic
+- fair-trade
+products:
+- Groceries
+- Fresh produce
+- Household goods
+services:
+- Retail store
+hours: Mon–Fri 9am–7pm; Sat–Sun 9am–6pm
 source_urls: []
-last_checked: Commonsense Mt Eden page
-notes: Retail
-city: Auckland
+last_checked: Updated listing
+notes: Retail; updated with latest details.
 rating_average: 5
 rating_count: 1
 ---

@@ -5,22 +5,26 @@ published: true
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
-city: Auckland
+city: Ponsonby
 suburb: Ponsonby
+address: 1A Summer Street, Rear Tenancy, Ponsonby, Auckland
 practices:
-- Organic (uncertified)
-- Seasonal menu
+- Organic
+- Locally sourced
+- Sustainable
 products:
-- Vegetables
-- Coffee and tea
+- Plant-based meals
+- Baked goods
+- Juices
 services:
-- Restaurant supply
+- Café
+- Dine-in
 sources: []
 supplies_to: []
-hours: ''
+hours: Daily 8am–4pm
 website: https://littlebirdorganics.co.nz
 email: ''
-phone: 027 648 4757
-description: Plant-based café in Ponsonby using local organic produce for a seasonal menu.
-Raw and plant-based cafe serving dishes built on local organic produce; part of Little Bird Organics. Source: user-provided listing
+phone: "+64 27 648 4757"
+description: Plant‑based café serving seasonal dishes made with local organic produce and emphasising circular economy practices.
+notes: Updated with location and hours from latest listing details.
 ---
