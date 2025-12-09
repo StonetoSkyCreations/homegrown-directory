@@ -106,6 +106,8 @@ a:focus-visible {
   cursor: pointer;
 }
 .nav-toggle__bar {
+  grid-column: 1;
+  display: block;
   width: 18px;
   height: 2px;
   background: var(--text);

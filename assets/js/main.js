@@ -236,10 +236,8 @@
       (item.region || "").toLowerCase() === selections.region;
 
     const typeFilters = selections.types.concat(hashTypes);
-    const typeMatches =
-      !typeFilters.length ||
-      typeFilters.includes(item.collection) ||
-      typeFilters.includes(item.collection?.toLowerCase());
+    const collection = (item.collection || "").toLowerCase();
+    const typeMatches = !typeFilters.length || typeFilters.includes(collection);
 
     const practicesMatch =
       !selections.practices.length ||
