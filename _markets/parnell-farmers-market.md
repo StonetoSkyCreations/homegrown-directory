@@ -9,11 +9,9 @@ description: Weekly market in central Auckland with local growers and producers
 country: NZ
 country_slug: new-zealand
 region: Auckland
-city_town: Auckland
 suburb: Parnell
 address: Jubilee Building, 545 Parnell Road
 postcode: '1052'
-lat: ''
 lon: -36.8543
 phone: '09 555 5164'
 email: market@parnell.org.nz
@@ -29,4 +27,4 @@ source_urls:
 - Saturdays 8am–12pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Auckland

@@ -9,11 +9,9 @@ description: Authentic farmers’ market in Manawatū with local growers
 country: NZ
 country_slug: new-zealand
 region: Manawatu-Wanganui
-city_town: Manawatū
 suburb: Feilding
 address: Manchester Square
 postcode: '4702'
-lat: ''
 lon: -40.2274
 phone: 06 323 3318
 email: market@feildingpromotion.co.nz
@@ -29,4 +27,4 @@ source_urls:
 - Fridays 10am–2pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Manawatū

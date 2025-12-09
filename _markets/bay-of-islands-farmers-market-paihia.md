@@ -9,11 +9,9 @@ description: Local farmers’ market featuring Far North growers (Paihia site)
 country: NZ
 country_slug: new-zealand
 region: Northland
-city_town: Paihia
 suburb: Paihia
 address: Village Green, 60 Marsden Rd
 postcode: '0200'
-lat: ''
 lon: -35.2814
 phone: 021 120 3082
 email: info@bayofislandsfarmersmarket.co.nz
@@ -29,4 +27,4 @@ source_urls:
 - Thursdays 2pm–5:30pm (Paihia)
 last_checked: FMNZ member list
 notes: Market
----
+city: Paihia

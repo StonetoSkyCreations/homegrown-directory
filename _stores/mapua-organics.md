@@ -1,35 +1,30 @@
 ---
-layout: "store"
-slug: "mapua-organics"
-name: "Mapua Organics"
-brand: "Mapua Organics"
-type: "organic-store"
-category: "retailer"
-description: "Certified organic produce supplier/store in Mapua."
-country: "NZ"
-country_slug: "new-zealand"
-region: "Tasman"
-city_town: "Mapua"
-suburb: ""
-address: ""
-postcode: ""
-lat: ""
-lon: ""
-phone: ""
-email: ""
-website: ""
+layout: store
+slug: mapua-organics
+name: Mapua Organics
+brand: Mapua Organics
+type: organic-store
+category: retailer
+description: Certified organic produce supplier/store in Mapua.
+country: NZ
+country_slug: new-zealand
+region: Tasman
+address: ''
+phone: ''
+email: ''
+website: ''
 social_links: []
 sourcing_tags:
-  - "organic"
+- organic
 products:
-  - "Vegetables"
-  - "Fruit"
+- Vegetables
+- Fruit
 market_days: []
 source_urls:
-  - "User-supplied list"
-last_checked: ""
-notes: ""
+- User-supplied list
+last_checked: ''
+notes: ''
 published: true
----
+city: Mapua
 Supplies certified organic produce from Mapua, Tasman. Source: user-supplied list
 

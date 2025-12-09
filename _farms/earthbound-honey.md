@@ -1,26 +1,23 @@
 ---
-title: "Earthbound Honey"
+title: Earthbound Honey
 slug: earthbound-honey
-country: "New Zealand"
+country: New Zealand
 country_slug: new-zealand
-region: "Northland"
-city: "Whangārei"
-lat: 
-lon: 
+region: Northland
+city: Whangārei
 practices:
-  - "Organic (certified)"
+- Organic (certified)
 products:
-  - "Honey"
+- Honey
 services:
-  - "Wholesale"
-  - "Farmers market stall"
+- Wholesale
+- Farmers market stall
 sources: []
 supplies_to: []
-hours: ""
-website: "https://earthboundhoney.co.nz/"
-email: ""
-phone: ""
-description: "Certified organic honey and beeswax products from Northland."
----
+hours: ''
+website: https://earthboundhoney.co.nz/
+email: ''
+phone: ''
+description: Certified organic honey and beeswax products from Northland.
 Certified organic apiarists producing honey and beeswax products and supplying across Northland. Source: https://earthboundhoney.co.nz/
 

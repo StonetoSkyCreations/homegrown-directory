@@ -9,13 +9,11 @@ description: Local farmers’ market featuring Far North growers (Kerikeri site)
 country: NZ
 country_slug: new-zealand
 region: Northland
-city_town: Kerikeri
 suburb: Kerikeri
 address: Kerikeri Domain, Hobson Ave
 postcode: '0230'
-lat: ''
 lon: -35.2268
-phone: '021 120 3082'
+phone: 021 120 3082
 email: info@bayofislandsfarmersmarket.co.nz
 website: https://bayofislandsfarmersmarket.co.nz/
 social_links:
@@ -29,4 +27,4 @@ source_urls:
 - Sundays 8:30am–12pm (Kerikeri)
 last_checked: FMNZ member list
 notes: Market
----
+city: Kerikeri

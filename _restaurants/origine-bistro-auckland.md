@@ -1,28 +1,25 @@
 ---
-title: "Origine Bistro"
+title: Origine Bistro
 slug: origine-bistro-auckland
 published: true
-country: "New Zealand"
+country: New Zealand
 country_slug: new-zealand
-region: "Auckland"
-city: "Auckland"
-suburb: "Auckland CBD"
-lat: 
-lon: 
+region: Auckland
+city: Auckland
+suburb: Auckland CBD
 practices:
-  - "Organic (uncertified)"
-  - "Seasonal menu"
+- Organic (uncertified)
+- Seasonal menu
 products:
-  - "Wine"
-  - "Seafood"
+- Wine
+- Seafood
 services:
-  - "Restaurant supply"
+- Restaurant supply
 sources: []
 supplies_to: []
-hours: ""
-website: "https://origine.nz"
-email: ""
+hours: ''
+website: https://origine.nz
+email: ''
 phone: "+64 27 674 4463"
-description: "French-inspired bistro in Commercial Bay driven by an organic kitchen garden and local produce."
----
+description: French-inspired bistro in Commercial Bay driven by an organic kitchen garden and local produce.
 Menu built around an organic kitchen garden and locally sourced produce at Commercial Bay. Source: user-provided listing

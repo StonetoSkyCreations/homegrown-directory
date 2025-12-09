@@ -5,8 +5,6 @@ country: "New Zealand"
 country_slug: new-zealand
 region: "Northland"
 city: "Kawakawa"
-lat: 
-lon: 
 practices:
   - "Organic (uncertified)"
   - "Regenerative"
@@ -21,9 +19,6 @@ sources: []
 supplies_to:
   - bay-of-islands-farmers-market-kerikeri
 hours: ""
-website: ""
-email: ""
-phone: ""
 address: "33 Settlement Road, Kawakawa 0210, New Zealand"
 postcode: "0210"
 lat: -35.3838

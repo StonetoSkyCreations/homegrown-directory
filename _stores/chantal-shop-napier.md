@@ -9,11 +9,9 @@ description: Organic grocery store & cafe (run by Chantal Organics)
 country: NZ
 country_slug: new-zealand
 region: Hawke's Bay
-city_town: Napier
 suburb: Napier South
 address: 45 Hastings Street
 postcode: '4110'
-lat: ''
 lon: -39.4929
 phone: ''
 email: manager@chantalshop.nz
@@ -28,4 +26,4 @@ source_urls:
 - Retail arm of Chantal Organics (wholesaler)
 last_checked: Chantal Shop contact
 notes: Retail
----
+city: Napier

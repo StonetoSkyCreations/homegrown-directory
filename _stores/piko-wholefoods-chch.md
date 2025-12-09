@@ -9,11 +9,9 @@ description: Worker-owned co-op wholefoods store (100% vegetarian)
 country: NZ
 country_slug: new-zealand
 region: Canterbury
-city_town: Christchurch
 suburb: Christchurch Central
 address: 229 Kilmore Street
 postcode: '8011'
-lat: ''
 lon: -43.529
 phone: ''
 email: shop@pikowholefoods.co.nz
@@ -28,4 +26,4 @@ source_urls:
 - Established 1979
 last_checked: Piko site; Envirohub Chch
 notes: Retail/Co-op
----
+city: Christchurch

@@ -1,31 +1,28 @@
 ---
-layout: "store"
-slug: "bin-inn-whangarei"
-name: "Bin Inn Whangarei"
-brand: "Bin Inn Whangarei"
-type: "bulk-refillery"
-category: "retailer"
-description: "Bin Inn – bulk wholefoods & specialty grocery"
-country: "NZ"
-country_slug: "new-zealand"
-region: "Northland"
-city_town: "Whangārei"
-suburb: "Whangārei"
-address: "75 Walton Street"
-postcode: "0110"
-lat: ""
-lon: ""
-phone: "09 430 7208"
-email: "whangarei@bininn.co.nz"
-website: "https://www.bininn.co.nz/northland/whangarei"
+layout: store
+slug: bin-inn-whangarei
+name: Bin Inn Whangarei
+brand: Bin Inn Whangarei
+type: bulk-refillery
+category: retailer
+description: Bin Inn – bulk wholefoods & specialty grocery
+country: NZ
+country_slug: new-zealand
+region: Northland
+suburb: Whangārei
+address: 75 Walton Street
+postcode: '0110'
+phone: '09 430 7208'
+email: whangarei@bininn.co.nz
+website: https://www.bininn.co.nz/northland/whangarei
 social_links: []
 sourcing_tags:
-  - "organic"
+- organic
 products:
-  - "Bulk foods"
+- Bulk foods
 market_days: []
 source_urls:
-  - "Bin Inn Whangarei"
-last_checked: "2025-12-09"
-notes: ""
----
+- Bin Inn Whangarei
+last_checked: '2025-12-09'
+notes: ''
+city: Whangārei

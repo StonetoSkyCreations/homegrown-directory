@@ -9,11 +9,9 @@ description: Commonsense Organics – organic grocery & health products
 country: NZ
 country_slug: new-zealand
 region: Wellington
-city_town: Wellington
 suburb: Kilbirnie
 address: 37 Rongotai Road
 postcode: '6022'
-lat: ''
 lon: -41.3275
 phone: ''
 email: kilbirnie@commonsenseorganics.co.nz
@@ -27,4 +25,4 @@ market_days: []
 source_urls: []
 last_checked: Commonsense Kilbirnie page
 notes: Retail
----
+city: Wellington

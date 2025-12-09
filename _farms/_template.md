@@ -1,27 +1,25 @@
 ---
-title: "Name of farm"
+title: Name of farm
 slug: farm-slug
 published: false
-country: "Country name"
+country: Country name
 country_slug: country-slug
-region: "Region or state"
-city: "City or town"
-lat: 
-lon: 
+region: Region or state
+city: City or town
 practices:
-  - "Organic (certified)"
+- Organic (certified)
 products:
-  - "Vegetables"
+- Vegetables
 services:
-  - "CSA / veggie box"
-  - "Wholesale"
+- CSA / veggie box
+- Wholesale
 supplies_to:
-  - slug-of-market-or-store
+- slug-of-market-or-store
 sources: []
-hours: ""
-website: ""
-email: ""
-phone: ""
-description: "One-sentence description for cards and SEO."
+hours: ''
+website: ''
+email: ''
+phone: ''
+description: One-sentence description for cards and SEO.
 ---
 Write a short paragraph about the farm, how it grows, and how people can connect. Keep relationships in `supplies_to` so outlets can link back automatically.

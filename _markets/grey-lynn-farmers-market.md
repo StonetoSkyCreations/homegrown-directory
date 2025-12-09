@@ -9,11 +9,9 @@ description: Community-run inner Auckland farmers’ market (many organic vendor
 country: NZ
 country_slug: new-zealand
 region: Auckland
-city_town: Auckland
 suburb: Grey Lynn
 address: 510 Richmond Road (Grey Lynn Community Centre)
 postcode: '1021'
-lat: ''
 lon: -36.8564
 phone: 021 276 8818
 email: info@greylynnfarmersmarket.co.nz
@@ -29,4 +27,4 @@ source_urls:
 - Sundays 9am–12:30pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Auckland

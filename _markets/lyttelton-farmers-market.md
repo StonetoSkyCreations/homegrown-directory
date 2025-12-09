@@ -9,11 +9,9 @@ description: Popular farmers’ market with local organic produce & crafts
 country: NZ
 country_slug: new-zealand
 region: Canterbury
-city_town: Christchurch
 suburb: Lyttelton
 address: London Street (near Lyttelton Main School)
 postcode: '8082'
-lat: ''
 lon: -43.6025
 phone: 022 089 6262
 email: lytteltonfarmersmarket@gmail.com
@@ -29,4 +27,4 @@ source_urls:
 - Saturdays 10am–1pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Christchurch

@@ -1,34 +1,28 @@
 ---
 layout: farm
-title: "Artemis Ltd"
+title: Artemis Ltd
 slug: artemis-ltd
-name: "Artemis Ltd"
-type: "Business"
-description: "Producer of herbal teas and remedies using certified organic ingredients from Dunedin."
-country: "NZ"
+name: Artemis Ltd
+type: Business
+description: Producer of herbal teas and remedies using certified organic ingredients from Dunedin.
+country: NZ
 country_slug: new-zealand
-region: "Otago"
-city_town: "Dunedin"
-city: "Dunedin"
-suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
-website: "https://artemis.co.nz"
+region: Otago
+city: Dunedin
+address: ''
+phone: ''
+email: ''
+website: https://artemis.co.nz
 social_links: []
 products:
-  - "Herbal teas"
-  - "Remedies"
+- Herbal teas
+- Remedies
 practices_tags:
-  - organic
+- organic
 certifications:
-  - BioGro
-supply_role: "Producer; Processor"
+- BioGro
+supply_role: Producer; Processor
 source_urls:
-  - "https://www.biogro.co.nz/organic-business-profiles"
-last_checked: "2025-12-09"
-notes: ""
----
+- https://www.biogro.co.nz/organic-business-profiles
+last_checked: '2025-12-09'
+notes: ''

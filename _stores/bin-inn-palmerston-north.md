@@ -1,31 +1,28 @@
 ---
-layout: "store"
-slug: "bin-inn-palmerston-north"
-name: "Bin Inn Palmerston North"
-brand: "Bin Inn Palmerston North"
-type: "bulk-refillery"
-category: "retailer"
-description: "Bin Inn – bulk wholefoods & specialty grocery"
-country: "NZ"
-country_slug: "new-zealand"
-region: "Manawatu-Wanganui"
-city_town: "Palmerston North"
-suburb: "Palmerston North"
-address: "313 Church Street"
-postcode: "4410"
-lat: ""
-lon: ""
-phone: "06 355 4985"
-email: "palmerstonnorth@bininn.co.nz"
-website: "https://www.bininn.co.nz/manawatu-wanganui/palmerston-north"
+layout: store
+slug: bin-inn-palmerston-north
+name: Bin Inn Palmerston North
+brand: Bin Inn Palmerston North
+type: bulk-refillery
+category: retailer
+description: Bin Inn – bulk wholefoods & specialty grocery
+country: NZ
+country_slug: new-zealand
+region: Manawatu-Wanganui
+suburb: Palmerston North
+address: 313 Church Street
+postcode: '4410'
+phone: 06 355 4985
+email: palmerstonnorth@bininn.co.nz
+website: https://www.bininn.co.nz/manawatu-wanganui/palmerston-north
 social_links: []
 sourcing_tags:
-  - "organic"
+- organic
 products:
-  - "Bulk foods"
+- Bulk foods
 market_days: []
 source_urls:
-  - "Bin Inn Palmerston North"
-last_checked: "2025-12-09"
-notes: ""
----
+- Bin Inn Palmerston North
+last_checked: '2025-12-09'
+notes: ''
+city: Palmerston North

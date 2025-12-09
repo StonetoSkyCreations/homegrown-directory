@@ -9,11 +9,9 @@ description: Independent organic health food store (BioGro-certified retailer)
 country: NZ
 country_slug: new-zealand
 region: Auckland
-city_town: Auckland
 suburb: Takapuna
 address: 1 Barrys Point Road
 postcode: '0622'
-lat: ''
 lon: -36.787
 phone: ''
 email: info@ieproduce.com
@@ -28,4 +26,4 @@ source_urls:
 - NZ’s first certified organic store
 last_checked: IE Produce contact
 notes: Retail
----
+city: Auckland

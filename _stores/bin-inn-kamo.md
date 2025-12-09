@@ -9,11 +9,9 @@ description: Bin Inn – bulk wholefoods & specialty grocery (franchise)
 country: NZ
 country_slug: new-zealand
 region: Northland
-city_town: Whangārei
 suburb: Kamo
 address: 386 Kamo Road
 postcode: '0112'
-lat: ''
 lon: -35.6709
 phone: ''
 email: kamo@bininn.co.nz
@@ -27,4 +25,4 @@ source_urls:
 - Long-running bulk foods shop
 last_checked: Bin Inn Kamo page
 notes: Retail
----
+city: Whangārei

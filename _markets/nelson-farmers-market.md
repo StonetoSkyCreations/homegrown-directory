@@ -9,11 +9,9 @@ description: Mid-week farmers’ market with local produce in Nelson city
 country: NZ
 country_slug: new-zealand
 region: Nelson
-city_town: Nelson
 suburb: Nelson
 address: Morrison Square (243 Trafalgar St)
 postcode: '7010'
-lat: ''
 lon: -41.2708
 phone: 027 348 2214
 email: manager@nelsonfarmersmarket.org.nz
@@ -29,4 +27,4 @@ source_urls:
 - Wednesdays 8:30am–1:30pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Nelson

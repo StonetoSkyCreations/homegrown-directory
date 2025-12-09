@@ -9,11 +9,9 @@ description: Local farmers’ market serving North Canterbury (organic produce a
 country: NZ
 country_slug: new-zealand
 region: Canterbury
-city_town: Hurunui
 suburb: Amberley
 address: 122 Carters Road (Amberley Domain)
 postcode: '7410'
-lat: ''
 lon: -43.1567
 phone: 027 220 3710
 email: admin@amberleyfarmersmarket.org.nz
@@ -29,4 +27,4 @@ source_urls:
 - Saturdays 9am–12:30pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Hurunui

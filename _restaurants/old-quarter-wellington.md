@@ -1,29 +1,26 @@
 ---
-title: "The Old Quarter"
+title: The Old Quarter
 slug: old-quarter-wellington
 published: true
-country: "New Zealand"
+country: New Zealand
 country_slug: new-zealand
-region: "Wellington"
-city: "Wellington"
-lat: 
-lon: 
+region: Wellington
+city: Wellington
 practices:
-  - "Free-range"
-  - "Seasonal menu"
+- Free-range
+- Seasonal menu
 products:
-  - "Meat"
-  - "Seafood"
-  - "Coffee and tea"
+- Meat
+- Seafood
+- Coffee and tea
 services:
-  - "Restaurant supply"
+- Restaurant supply
 sources: []
 supplies_to: []
-hours: ""
-website: "http://www.theoldquarter.co.nz/"
-email: ""
-phone: ""
-description: "Vietnamese-inspired eatery using free-range chicken and pork plus seasonal local ingredients."
----
+hours: ''
+website: http://www.theoldquarter.co.nz/
+email: ''
+phone: ''
+description: Vietnamese-inspired eatery using free-range chicken and pork plus seasonal local ingredients.
 CBD restaurant with menus built on free-range meats and locally sourced seasonal produce. Source: http://www.theoldquarter.co.nz/
 

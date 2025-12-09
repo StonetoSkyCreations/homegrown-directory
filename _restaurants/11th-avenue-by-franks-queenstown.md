@@ -1,28 +1,25 @@
 ---
-title: "11th Avenue by Frank’s"
+title: 11th Avenue by Frank’s
 slug: 11th-avenue-by-franks-queenstown
 published: true
-country: "New Zealand"
+country: New Zealand
 country_slug: new-zealand
-region: "Otago"
-city: "Queenstown"
-suburb: "Lower Shotover"
-lat: 
-lon: 
+region: Otago
+city: Queenstown
+suburb: Lower Shotover
 practices:
-  - "Free-range"
-  - "Local sourcing"
+- Free-range
+- Local sourcing
 products:
-  - "Coffee and tea"
-  - "Breakfast"
+- Coffee and tea
+- Breakfast
 services:
-  - "Restaurant supply"
+- Restaurant supply
 sources: []
 supplies_to: []
-hours: ""
-website: "https://11thavebyfranks.co.nz"
-email: "hello@11thavebyfranks.co.nz"
-phone: "03 222 7030"
-description: "Lower Shotover café offering free-range local produce and fair trade organic coffee."
----
+hours: ''
+website: https://11thavebyfranks.co.nz
+email: hello@11thavebyfranks.co.nz
+phone: 03 222 7030
+description: Lower Shotover café offering free-range local produce and fair trade organic coffee.
 Sister cafe to Frank’s serving free-range dishes and fair trade organic coffee. Source: user-provided listing

@@ -1,31 +1,28 @@
 ---
-layout: "store"
-slug: "bin-inn-timaru"
-name: "Bin Inn Timaru"
-brand: "Bin Inn Timaru"
-type: "bulk-refillery"
-category: "retailer"
-description: "Bin Inn – bulk wholefoods & specialty grocery"
-country: "NZ"
-country_slug: "new-zealand"
-region: "Canterbury"
-city_town: "Timaru"
-suburb: "Timaru"
-address: "9 Theodosia Street"
-postcode: "7910"
-lat: ""
-lon: ""
-phone: "03 684 5009"
-email: "timaru@bininn.co.nz"
-website: "https://www.bininn.co.nz/canterbury/timaru"
+layout: store
+slug: bin-inn-timaru
+name: Bin Inn Timaru
+brand: Bin Inn Timaru
+type: bulk-refillery
+category: retailer
+description: Bin Inn – bulk wholefoods & specialty grocery
+country: NZ
+country_slug: new-zealand
+region: Canterbury
+suburb: Timaru
+address: 9 Theodosia Street
+postcode: '7910'
+phone: 03 684 5009
+email: timaru@bininn.co.nz
+website: https://www.bininn.co.nz/canterbury/timaru
 social_links: []
 sourcing_tags:
-  - "organic"
+- organic
 products:
-  - "Bulk foods"
+- Bulk foods
 market_days: []
 source_urls:
-  - "Bin Inn Timaru"
-last_checked: "2025-12-09"
-notes: ""
----
+- Bin Inn Timaru
+last_checked: '2025-12-09'
+notes: ''
+city: Timaru

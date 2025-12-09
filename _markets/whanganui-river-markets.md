@@ -9,11 +9,9 @@ description: Large outdoor market by Whanganui River (mix of produce and craft s
 country: NZ
 country_slug: new-zealand
 region: Manawatu-Wanganui
-city_town: Whanganui
 suburb: Whanganui
 address: Whanganui Riverbank, Taupo Quay
 postcode: '4500'
-lat: ''
 lon: -39.9464
 phone: 027 285 8600
 email: whanganuirivermarkets@gmail.com
@@ -28,4 +26,4 @@ source_urls:
 - Saturdays 9am–1pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Whanganui

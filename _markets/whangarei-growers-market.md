@@ -9,11 +9,9 @@ description: NZ’s oldest growers-only market (strong focus on spray-free produ
 country: NZ
 country_slug: new-zealand
 region: Northland
-city_town: Whangārei
 suburb: Whangārei
 address: Water Street (Sunnyside carpark)
 postcode: '0110'
-lat: ''
 lon: -35.7261
 phone: '09 438 1337'
 email: whangareigrowersmarket@gmail.com
@@ -29,4 +27,4 @@ source_urls:
 - Saturdays 6am–10:30am
 last_checked: FMNZ member list
 notes: Market
----
+city: Whangārei

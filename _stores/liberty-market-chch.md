@@ -9,11 +9,9 @@ description: Large organic & natural food market (South Island’s largest range
 country: NZ
 country_slug: new-zealand
 region: Canterbury
-city_town: Christchurch
 suburb: Waltham
 address: Cnr Moorhouse Ave & Fitzgerald Ave
 postcode: '8011'
-lat: ''
 lon: -43.5389
 phone: ''
 email: shop@libertymarketnz.com
@@ -29,4 +27,4 @@ source_urls:
 - now city location
 last_checked: Liberty Market site; Yelp
 notes: Retail
----
+city: Christchurch

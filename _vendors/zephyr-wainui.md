@@ -1,34 +1,30 @@
 ---
 layout: vendor
 slug: zephyr-wainui
-name: "Zephyr Wainui"
-type: "cafe"
-category: "eatery"
-description: "Plant-based café offering organic coffee and seasonal local produce at Wainui Beach."
-country: "NZ"
+name: Zephyr Wainui
+type: cafe
+category: eatery
+description: Plant-based café offering organic coffee and seasonal local produce at Wainui Beach.
+country: NZ
 country_slug: new-zealand
-region: "Gisborne"
-city_town: "Gisborne"
-suburb: "Wainui Beach"
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
-website: "https://zephyrwainui.co.nz"
+region: Gisborne
+suburb: Wainui Beach
+address: ''
+phone: ''
+email: ''
+website: https://zephyrwainui.co.nz
 social_links: []
 sourcing_tags:
-  - organic
-  - local
-  - seasonal
+- organic
+- local
+- seasonal
 suppliers: []
 products_or_cuisine:
-  - "Plant-based"
-  - "Cafe"
-  - "Organic coffee"
+- Plant-based
+- Cafe
+- Organic coffee
 source_urls:
-  - "https://zephyrwainui.co.nz"
-last_checked: "2025-12-09"
-notes: ""
----
+- https://zephyrwainui.co.nz
+last_checked: '2025-12-09'
+notes: ''
+city: Gisborne

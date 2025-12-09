@@ -9,11 +9,9 @@ description: Organic & wholefoods store with supplements (est. 1980s)
 country: NZ
 country_slug: new-zealand
 region: Hawke's Bay
-city_town: Hastings
 suburb: St Leonards
 address: 221E Heretaunga Street East
 postcode: '4122'
-lat: ''
 lon: -39.6403
 phone: ''
 email: cornucopiaorganic@gmail.com
@@ -28,4 +26,4 @@ source_urls:
 - Includes Taste Cornucopia organic café next door
 last_checked: Cornucopia contact; Be Nourished dir.
 notes: Retail
----
+city: Hastings

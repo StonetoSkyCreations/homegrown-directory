@@ -9,11 +9,9 @@ description: Weekly market showcasing Taranaki producers (organic options availa
 country: NZ
 country_slug: new-zealand
 region: Taranaki
-city_town: New Plymouth
 suburb: New Plymouth
 address: Currie Street (Huatoki Plaza)
 postcode: '4310'
-lat: ''
 lon: -39.0583
 phone: 021 0298 3187
 email: marketmanager@farmersmarkettaranaki.org.nz
@@ -29,4 +27,4 @@ source_urls:
 - Sundays 9am–12:30pm
 last_checked: FMNZ member list
 notes: Market
----
+city: New Plymouth

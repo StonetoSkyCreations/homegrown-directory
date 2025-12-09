@@ -9,11 +9,9 @@ description: Waikato farmers’ market featuring local growers (some organic)
 country: NZ
 country_slug: new-zealand
 region: Waikato
-city_town: Cambridge
 suburb: Cambridge
 address: Victoria Square, Victoria Street
 postcode: '3434'
-lat: ''
 lon: -37.8916
 phone: 027 290 3032
 email: enquiries@waikatofarmersmarkets.co.nz
@@ -29,4 +27,4 @@ source_urls:
 - Saturdays 8am–12pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Cambridge

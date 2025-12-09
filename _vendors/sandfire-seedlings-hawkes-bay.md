@@ -1,36 +1,30 @@
 ---
 layout: vendor
 slug: sandfire-seedlings-hawkes-bay
-name: "Sandfire Seedlings"
-type: "producer"
-category: "nursery"
-description: "Heritage seedlings grown organically for Hawke's Bay markets."
-country: "NZ"
+name: Sandfire Seedlings
+type: producer
+category: nursery
+description: Heritage seedlings grown organically for Hawke's Bay markets.
+country: NZ
 country_slug: new-zealand
-region: "Hawke's Bay"
-city_town: ""
-suburb: ""
-address: "Hawke's Bay Farmers' Market"
-postcode: ""
-lat: ""
-lon: ""
-phone: ""
-email: ""
-website: ""
+region: Hawke's Bay
+address: Hawke's Bay Farmers' Market
+phone: ''
+email: ''
+website: ''
 social_links: []
 sourcing_tags:
-  - "Organic (uncertified)"
+- Organic (uncertified)
 products:
-  - "Flowers"
-  - "Vegetables"
+- Flowers
+- Vegetables
 services:
-  - "Farmers market stall"
+- Farmers market stall
 sources: []
 supplies_to: []
 market_days: []
 source_urls:
-  - "https://hawkesbayfarmersmarket.co.nz/"
-last_checked: ""
-notes: ""
----
+- https://hawkesbayfarmersmarket.co.nz/
+last_checked: ''
+notes: ''
 Sells organically grown heritage seedlings at the Hawke's Bay Farmers’ Market. Source: Hawke's Bay Farmers’ Market vendor listings

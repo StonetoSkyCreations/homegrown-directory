@@ -1,28 +1,24 @@
 ---
-title: "Federal Diner"
+title: Federal Diner
 slug: federal-diner-wanaka
 published: true
-country: "New Zealand"
+country: New Zealand
 country_slug: new-zealand
-region: "Otago"
-city: "Wānaka"
-suburb: ""
-lat: 
-lon: 
+region: Otago
+city: Wānaka
 practices:
-  - "Organic (uncertified)"
-  - "Free-range"
+- Organic (uncertified)
+- Free-range
 products:
-  - "Breakfast"
-  - "Coffee and tea"
+- Breakfast
+- Coffee and tea
 services:
-  - "Restaurant supply"
+- Restaurant supply
 sources: []
 supplies_to: []
-hours: ""
-website: "https://federaldiner.co.nz"
-email: "eat@federaldiner.co.nz"
-phone: "03 443 5152"
-description: "Wānaka diner serving organic eggs and free-range meats all day."
----
+hours: ''
+website: https://federaldiner.co.nz
+email: eat@federaldiner.co.nz
+phone: 03 443 5152
+description: Wānaka diner serving organic eggs and free-range meats all day.
 Focuses on organic eggs and free-range meats for breakfast and all-day dining. Source: user-provided listing

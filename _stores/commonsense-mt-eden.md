@@ -9,11 +9,9 @@ description: Commonsense Organics – organic grocery (Auckland)
 country: NZ
 country_slug: new-zealand
 region: Auckland
-city_town: Auckland
 suburb: Mount Eden
 address: 284 Dominion Road
 postcode: '1024'
-lat: ''
 lon: -36.8828
 phone: ''
 email: mteden@commonsenseorganics.co.nz
@@ -27,4 +25,4 @@ market_days: []
 source_urls: []
 last_checked: Commonsense Mt Eden page
 notes: Retail
----
+city: Auckland

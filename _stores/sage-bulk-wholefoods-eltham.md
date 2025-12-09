@@ -1,36 +1,33 @@
 ---
-layout: "store"
-slug: "sage-bulk-wholefoods-eltham"
-name: "Sage Bulk Wholefoods - Eltham"
-brand: "Sage Bulk Wholefoods"
-type: "bulk-foods"
-category: "retail"
-description: "Zero-plastic grocery offering organic bulk foods, pantry staples, and eco household goods."
-country: "AU"
-country_slug: "australia"
-region: "Victoria"
-city_town: "Melbourne"
-suburb: "Eltham"
-address: "972 Main Road"
-postcode: "3095"
-lat:
-lon:
-phone: "0413 919 605"
-email: "sageeltham@gmail.com"
-website: "https://sagebulkwholefoods.com.au"
+layout: store
+slug: sage-bulk-wholefoods-eltham
+name: Sage Bulk Wholefoods - Eltham
+brand: Sage Bulk Wholefoods
+type: bulk-foods
+category: retail
+description: Zero-plastic grocery offering organic bulk foods, pantry staples, and eco household goods.
+country: AU
+country_slug: australia
+region: Victoria
+suburb: Eltham
+address: 972 Main Road
+postcode: '3095'
+phone: 0413 919 605
+email: sageeltham@gmail.com
+website: https://sagebulkwholefoods.com.au
 social_links: []
 sourcing_tags:
-  - "organic"
+- organic
 products:
-  - "Bulk grains"
-  - "Nuts"
-  - "Spices"
-  - "Pantry staples"
-  - "Cleaning and personal care"
+- Bulk grains
+- Nuts
+- Spices
+- Pantry staples
+- Cleaning and personal care
 market_days: []
 source_urls:
-  - "https://sagebulkwholefoods.com.au"
-last_checked: "2025-12-09"
-notes: "Retail"
----
+- https://sagebulkwholefoods.com.au
+last_checked: '2025-12-09'
+notes: Retail
+city: Melbourne
 Local zero-waste refillery with organic bulk foods and low-waste household products.

@@ -9,11 +9,9 @@ description: Common Unity’s Urban Kai Network – co-op buying & urban farming
 country: NZ
 country_slug: new-zealand
 region: Wellington
-city_town: Lower Hutt
 suburb: Epuni
 address: 310 Waiwhetu Road
 postcode: '5011'
-lat: ''
 lon: -41.2195
 phone: ''
 email: info@commonunityproject.org.nz
@@ -27,4 +25,4 @@ source_urls:
 - Community-supported food hub & education centre
 last_checked: Degrowth NZ on co-ops
 notes: Co-op/Hub
----
+city: Lower Hutt

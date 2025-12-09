@@ -1,32 +1,29 @@
 ---
 layout: farm
-title: "Setha's Seeds"
+title: Setha's Seeds
 slug: sethas-seeds
-name: "Setha's Seeds"
-type: "Farm"
-description: "Organic (uncertified) heirloom seed grower in Takaka."
-country: "NZ"
+name: Setha's Seeds
+type: Farm
+description: Organic (uncertified) heirloom seed grower in Takaka.
+country: NZ
 country_slug: new-zealand
-region: "Hawke's Bay"
-city_town: "Tutira"
-city: "Tutira"
-suburb: ""
-address: "PO Box 60, Tutira 4181, Hawke’s Bay, New Zealand"
-postcode: "4181"
+region: Hawke's Bay
+city: Tutira
+address: PO Box 60, Tutira 4181, Hawke’s Bay, New Zealand
+postcode: '4181'
 lat: -39.1692
 lon: 176.9289
 phone: "+64 21 238 8654"
-email: "info@sethasseeds.co.nz"
-website: "https://sethasseeds.co.nz"
+email: info@sethasseeds.co.nz
+website: https://sethasseeds.co.nz
 social_links: []
 products:
-  - "Heirloom seeds"
+- Heirloom seeds
 practices_tags:
-  - organic
+- organic
 certifications: []
-supply_role: "Producer"
+supply_role: Producer
 source_urls:
-  - "https://maikai.nz/pages/mai-kai-suppliers"
-last_checked: "2025-12-09"
-notes: ""
----
+- https://maikai.nz/pages/mai-kai-suppliers
+last_checked: '2025-12-09'
+notes: ''

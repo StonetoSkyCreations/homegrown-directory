@@ -1,33 +1,27 @@
 ---
 layout: farm
-title: "FRENZ Eggs"
+title: FRENZ Eggs
 slug: frenz-eggs
-name: "FRENZ Eggs"
-type: "Farm"
-description: "Certified organic egg producer from Papakura."
-country: "NZ"
+name: FRENZ Eggs
+type: Farm
+description: Certified organic egg producer from Papakura.
+country: NZ
 country_slug: new-zealand
-region: "Auckland"
-city_town: "Papakura"
-city: "Papakura"
-suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
-website: "https://www.frenz.co.nz"
+region: Auckland
+city: Papakura
+address: ''
+phone: ''
+email: ''
+website: https://www.frenz.co.nz
 social_links: []
 products:
-  - "Eggs"
+- Eggs
 practices_tags:
-  - organic
+- organic
 certifications:
-  - BioGro
-supply_role: "Producer; Exporter"
+- BioGro
+supply_role: Producer; Exporter
 source_urls:
-  - "https://www.organictradenz.com/member-page/"
-last_checked: "2025-12-09"
-notes: ""
----
+- https://www.organictradenz.com/member-page/
+last_checked: '2025-12-09'
+notes: ''

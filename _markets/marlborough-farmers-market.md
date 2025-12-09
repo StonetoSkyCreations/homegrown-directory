@@ -9,11 +9,9 @@ description: Community farmers’ market featuring Marlborough growers (seasonal
 country: NZ
 country_slug: new-zealand
 region: Marlborough
-city_town: Blenheim
 suburb: Blenheim
 address: 43 Hathaway Street (A&P Showgrounds)
 postcode: '7201'
-lat: ''
 lon: -41.518
 phone: 021 030 0396
 email: info@marlboroughfarmersmarket.org.nz
@@ -29,4 +27,4 @@ source_urls:
 - Sundays 9am–12pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Blenheim

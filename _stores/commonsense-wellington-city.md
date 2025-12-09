@@ -9,11 +9,9 @@ description: Commonsense Organics – large organic/natural foods supermarket
 country: NZ
 country_slug: new-zealand
 region: Wellington
-city_town: Wellington
 suburb: Te Aro
 address: 147 Tory Street
 postcode: '6011'
-lat: ''
 lon: -41.2959
 phone: ''
 email: wellington@commonsenseorganics.co.nz
@@ -28,4 +26,4 @@ source_urls:
 - Commonsense has 5 stores (Wgtn & AKL)
 last_checked: Commonsense Wellington page
 notes: Retail
----
+city: Wellington

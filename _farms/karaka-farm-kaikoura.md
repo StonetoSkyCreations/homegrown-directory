@@ -1,25 +1,22 @@
 ---
-title: "Karaka Farm"
+title: Karaka Farm
 slug: karaka-farm-kaikoura
-country: "New Zealand"
+country: New Zealand
 country_slug: new-zealand
-region: "Canterbury"
-city: "Kaikōura Flats"
-lat: 
-lon: 
+region: Canterbury
+city: Kaikōura Flats
 practices:
-  - "Regenerative"
+- Regenerative
 products:
-  - "Meat"
+- Meat
 services:
-  - "Wholesale"
-  - "Farm stand"
+- Wholesale
+- Farm stand
 sources: []
 supplies_to: []
-hours: ""
-website: ""
-email: ""
-phone: ""
-description: "Regenerative farm near Kaikōura producing 100% grass-fed meat."
----
+hours: ''
+website: ''
+email: ''
+phone: ''
+description: Regenerative farm near Kaikōura producing 100% grass-fed meat.
 Pasture-based regenerative farm in the Kaikōura Flats focused on soil health and grass-fed livestock. Source: user-supplied list

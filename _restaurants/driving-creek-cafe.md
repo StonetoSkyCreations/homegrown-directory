@@ -1,28 +1,25 @@
 ---
-title: "Driving Creek Café"
+title: Driving Creek Café
 slug: driving-creek-cafe
 published: true
-country: "New Zealand"
+country: New Zealand
 country_slug: new-zealand
-region: "Waikato"
-city: "Coromandel"
-lat: 
-lon: 
+region: Waikato
+city: Coromandel
 practices:
-  - "Seasonal menu"
-  - "Organic (uncertified)"
+- Seasonal menu
+- Organic (uncertified)
 products:
-  - "Coffee and tea"
-  - "Bread and bakery"
+- Coffee and tea
+- Bread and bakery
 services:
-  - "Restaurant supply"
+- Restaurant supply
 sources: []
 supplies_to: []
-hours: ""
-website: "http://www.drivingcreekrailway.co.nz/"
-email: ""
-phone: ""
-description: "Cafe in the bush serving meals with local and organic produce where possible."
----
+hours: ''
+website: http://www.drivingcreekrailway.co.nz/
+email: ''
+phone: ''
+description: Cafe in the bush serving meals with local and organic produce where possible.
 Cafe near Driving Creek Railway using local, seasonal, and organic ingredients whenever possible. Source: http://www.drivingcreekrailway.co.nz/
 

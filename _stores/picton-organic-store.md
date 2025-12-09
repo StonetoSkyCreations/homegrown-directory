@@ -1,36 +1,31 @@
 ---
-layout: "store"
-slug: "picton-organic-store"
-name: "Picton Organic Store"
-brand: "Picton Organic Store"
-type: "organic-store"
-category: "retailer"
-description: "Organic food, produce, and health goods store in Picton."
-country: "NZ"
-country_slug: "new-zealand"
-region: "Marlborough"
-city_town: "Picton"
-suburb: ""
-address: ""
-postcode: ""
-lat: ""
-lon: ""
-phone: ""
-email: ""
-website: ""
+layout: store
+slug: picton-organic-store
+name: Picton Organic Store
+brand: Picton Organic Store
+type: organic-store
+category: retailer
+description: Organic food, produce, and health goods store in Picton.
+country: NZ
+country_slug: new-zealand
+region: Marlborough
+address: ''
+phone: ''
+email: ''
+website: ''
 social_links: []
 sourcing_tags:
-  - "organic"
+- organic
 products:
-  - "Pantry goods"
-  - "Vegetables"
-  - "Fruit"
+- Pantry goods
+- Vegetables
+- Fruit
 market_days: []
 source_urls:
-  - "User-supplied list"
-last_checked: ""
-notes: ""
+- User-supplied list
+last_checked: ''
+notes: ''
 published: true
----
+city: Picton
 Dedicated organic store in Picton carrying organic produce, groceries, and health items. Source: user-supplied list
 

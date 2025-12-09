@@ -1,3 +1,4 @@
+---
 layout: "listing"
 slug: "old-packhouse-market"
 name: "The Old Packhouse Market"
@@ -7,8 +8,6 @@ country: "New Zealand"
 country_slug: new-zealand
 region: "Northland"
 city: "Kerikeri"
-lat: 
-lon: 
 practices:
   - "Organic (uncertified)"
   - "Spray-free"

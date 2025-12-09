@@ -1,36 +1,32 @@
 ---
 layout: vendor
 slug: scarecrow
-name: "Scarecrow"
-type: "cafe"
-category: "mixed"
-description: "Farm-to-table café and grocer serving organic coffee and seasonal local produce."
-country: "NZ"
+name: Scarecrow
+type: cafe
+category: mixed
+description: Farm-to-table café and grocer serving organic coffee and seasonal local produce.
+country: NZ
 country_slug: new-zealand
-region: "Auckland"
-city_town: "Auckland"
-suburb: "CBD"
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
-website: "https://scarecrow.co.nz"
+region: Auckland
+suburb: CBD
+address: ''
+phone: ''
+email: ''
+website: https://scarecrow.co.nz
 social_links: []
 sourcing_tags:
-  - organic
-  - local
-  - seasonal
-  - direct-from-farm
+- organic
+- local
+- seasonal
+- direct-from-farm
 suppliers: []
 products_or_cuisine:
-  - "Cafe"
-  - "Grocer"
-  - "Organic coffee"
-  - "Seasonal produce"
+- Cafe
+- Grocer
+- Organic coffee
+- Seasonal produce
 source_urls:
-  - "https://scarecrow.co.nz"
-last_checked: "2025-12-09"
-notes: ""
----
+- https://scarecrow.co.nz
+last_checked: '2025-12-09'
+notes: ''
+city: Auckland

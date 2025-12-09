@@ -9,11 +9,9 @@ description: Large authentic farmers’ market at Dunedin Railway Station
 country: NZ
 country_slug: new-zealand
 region: Otago
-city_town: Dunedin
 suburb: Dunedin Central
 address: Anzac Avenue (Dunedin Railway Station)
 postcode: '9016'
-lat: ''
 lon: -45.8742
 phone: 021 734 282
 email: manager@otagofarmersmarket.org.nz
@@ -29,4 +27,4 @@ source_urls:
 - Saturdays 8am–12:30pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Dunedin

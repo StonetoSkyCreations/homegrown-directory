@@ -9,11 +9,9 @@ description: Large regional farmers’ market with many organic producers
 country: NZ
 country_slug: new-zealand
 region: Hawke's Bay
-city_town: Hastings
 suburb: Hastings
 address: Showground Hawke’s Bay, Kenilworth Rd
 postcode: '4122'
-lat: ''
 lon: -39.6559
 phone: 06 878 1368
 email: info@hawkesbayfarmersmarket.co.nz
@@ -29,4 +27,4 @@ source_urls:
 - Sundays 8:30am–12:30pm
 last_checked: FMNZ member list
 notes: Market
----
+city: Hastings
