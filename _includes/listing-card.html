@@ -2,6 +2,7 @@
 {% assign practices_joined = practices_tags | join: ',' %}
 {% assign review_target = listing.slug | default: listing.title | default: listing.name | slugify %}
 {% assign card_title = listing.title | default: listing.name %}
+{% assign encoded_title = card_title | uri_escape %}
 {% assign card_type = listing.collection %}
 {% assign card_label = card_type | capitalize %}
 {% assign address_parts = "" | split: "" %}
@@ -65,6 +66,7 @@
     {% include rating.html listing=listing %}
     <div class="listing-card__actions">
       <a class="button ghost" href="{{ listing.url | relative_url }}">Learn more</a>
+      <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}">Update listing</a>
       <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}">Review this place</a>
     </div>
   </div>

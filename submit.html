@@ -26,6 +26,11 @@ permalink: /submit.html
     </div>
 
     <div class="form-group">
+      <label for="owner_name">Business owner (optional)</label>
+      <input type="text" id="owner_name" name="owner_name" placeholder="Your name if you own or manage this business">
+    </div>
+
+    <div class="form-group">
       <label for="place_type">Type of place</label>
       <select id="place_type" name="place_type" required>
         <option value="">Select type</option>
@@ -100,9 +105,30 @@ permalink: /submit.html
 <script>
   const submitForm = document.getElementById('submitForm');
   const params = new URLSearchParams(window.location.search);
+  const nameInput = document.getElementById('name');
+  const submissionTypeRadios = submitForm.querySelectorAll('input[name="submission_type"]');
+
+  const listingRef = params.get('listing') || '';
+  const presetName = params.get('name');
+  const presetSubmissionType = params.get('submission_type');
+
   if (params.get('type') === 'community') {
     const placeType = document.getElementById('place_type');
     if (placeType) placeType.value = 'Community / grassroots initiative';
+  }
+
+  if (presetName && nameInput) {
+    nameInput.value = presetName;
+  } else if (listingRef && nameInput) {
+    nameInput.value = listingRef;
+  }
+
+  const shouldSetUpdate =
+    (presetSubmissionType && presetSubmissionType.toLowerCase().includes('update')) || Boolean(listingRef);
+  if (shouldSetUpdate && submissionTypeRadios.length) {
+    submissionTypeRadios.forEach((radio) => {
+      radio.checked = radio.value.toLowerCase().includes('update');
+    });
   }
 
   submitForm.addEventListener('submit', (e) => {
@@ -119,6 +145,7 @@ permalink: /submit.html
       `Submission type: ${subType}`,
       `Type of place: ${data.get('place_type') || ''}`,
       `Business name: ${data.get('name') || ''}`,
+      `Business owner (if applicable): ${data.get('owner_name') || ''}`,
       `Address: ${data.get('address') || ''}`,
       `Website: ${data.get('website') || ''}`,
       `Social links: ${data.get('social') || ''}`,
@@ -126,7 +153,8 @@ permalink: /submit.html
       `Contact phone: ${data.get('phone') || ''}`,
       `Practices: ${practices}`,
       `Description / notes: ${data.get('description') || ''}`,
-      `Updates needed: ${data.get('updates') || ''}`
+      `Updates needed: ${data.get('updates') || ''}`,
+      `Listing reference: ${listingRef}`
     ];
 
     const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
