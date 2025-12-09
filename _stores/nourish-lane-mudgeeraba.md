@@ -29,4 +29,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Gold Coast
+---
 Organic-focused health food shop with bulk refills, pantry staples, and supplements.

@@ -30,4 +30,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Gold Coast
+---
 Market-style grocer with organic options, local produce, and pantry goods on the Isle of Capri.

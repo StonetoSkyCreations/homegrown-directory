@@ -34,4 +34,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Bellarine Peninsula
+---
 Zero-waste refillery with organic-leaning bulk foods and eco household goods.

@@ -29,4 +29,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Market
 city: Brisbane
+---
 Monthly market bringing local growers and artisan makers to Mitchelton’s main street.

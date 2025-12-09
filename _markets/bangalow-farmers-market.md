@@ -30,4 +30,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Market
 city: Bangalow
+---
 Weekly Saturday market bringing organic and seasonal produce to Bangalow.

@@ -30,4 +30,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Cooperative
 city: Brisbane
+---
 Member-driven organic co-op supplying certified organic produce and pantry goods to the local community.

@@ -30,4 +30,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Cooperative; delivery boxes
 city: Brisbane
+---
 Organic produce box co-op connecting local growers to households across Brisbane.

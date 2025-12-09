@@ -30,4 +30,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer; zero-waste refillery
 city: Byron Bay
+---
 Zero-waste refillery with organic bulk wholefoods, snacks, and pantry refill options.

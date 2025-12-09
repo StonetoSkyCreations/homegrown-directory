@@ -28,4 +28,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+---
 Organic-focused grocer offering produce, staples, and low-tox household goods.

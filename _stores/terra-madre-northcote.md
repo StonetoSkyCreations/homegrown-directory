@@ -30,4 +30,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ACO certified
 city: Melbourne
+---
 Well-known organic supermarket with a broad ACO-certified range of produce and pantry staples.

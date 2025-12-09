@@ -10,6 +10,7 @@ require "date"
 COLLECTION_DIRS = %w[_farms _markets _stores _restaurants _vendors _distributors].freeze
 REQUIRED_KEYS = %w[slug country country_slug region].freeze
 PLACEHOLDER_URLS = ["#", "/", "", nil].freeze
+WARNING_LIMIT = 120
 
 def load_front_matter(path)
   text = File.read(path)
@@ -27,6 +28,8 @@ def normalize_url(url)
 end
 
 errors = []
+warnings = []
+warning_counts = Hash.new(0)
 COLLECTION_DIRS.each do |dir|
   Dir.glob(File.join(dir, "*.md")).each do |path|
     begin
@@ -49,14 +52,34 @@ COLLECTION_DIRS.each do |dir|
     if data["website"] && website && !data["website"].to_s.include?("//")
       errors << "#{path}: website missing protocol (would normalize to #{website})"
     end
+
+    if data["address"].to_s.strip.empty?
+      warnings << "#{path}: missing address"
+      warning_counts[:missing_address] += 1
+    end
+    if data["phone"].to_s.strip.empty?
+      warnings << "#{path}: missing phone"
+      warning_counts[:missing_phone] += 1
+    end
   end
 end
 
-if errors.empty?
-  puts "All collection files passed basic validation."
-  exit 0
-else
+unless errors.empty?
   puts "Validation issues (#{errors.size}):"
   errors.each { |e| puts "- #{e}" }
-  exit 1
 end
+
+unless warnings.empty?
+  puts "\nWarnings (#{warnings.size}):"
+  warnings.first(WARNING_LIMIT).each { |w| puts "- #{w}" }
+  if warnings.size > WARNING_LIMIT
+    puts "... #{warnings.size - WARNING_LIMIT} more warnings truncated"
+  end
+  puts "\nWarning counts: #{warning_counts}"
+end
+
+if errors.empty? && warnings.empty?
+  puts "All collection files passed basic validation."
+end
+
+exit(errors.empty? ? 0 : 1)

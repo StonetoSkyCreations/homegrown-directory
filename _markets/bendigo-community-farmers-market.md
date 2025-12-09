@@ -34,4 +34,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Market
 city: Bendigo
+---
 Regional farmers market featuring organic and biodynamic growers with seasonal produce and meats.

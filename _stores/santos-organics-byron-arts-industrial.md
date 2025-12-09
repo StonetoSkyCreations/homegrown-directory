@@ -31,4 +31,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer; warehouse format.
 city: Byron Bay
+---
 Bulk-focused organic grocery with refill stations and certified organic lines for the Byron Bay area.

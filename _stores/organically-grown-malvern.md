@@ -34,4 +34,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: NASAA certified organic
 city: Melbourne
+---
 Certified organic grocer focused on Australian-sourced produce and pantry goods.

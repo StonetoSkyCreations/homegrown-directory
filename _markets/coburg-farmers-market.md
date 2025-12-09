@@ -32,4 +32,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: VFMA accredited; bring own bags
 city: Melbourne
+---
 VFMA-accredited Saturday market featuring organic growers and local artisan foods; plastic-bag free.

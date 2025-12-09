@@ -29,4 +29,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Gold Coast
+---
 Health food shop offering organic pantry lines, bulk refills, and wellness products.

@@ -29,4 +29,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Market
 city: Brisbane
+---
 Waterfront market featuring seasonal produce and local food makers every second Saturday.
