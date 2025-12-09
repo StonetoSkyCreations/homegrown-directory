@@ -27,4 +27,6 @@ last_checked: ''
 notes: ''
 published: true
 city: Raglan
+rating_average: 5
+rating_count: 1
 Raglan’s organic and wholefood store offering fresh organic fruit and veg, organic dairy, and bulk goods, with a focus on sourcing local where possible. Source: https://www.raglanherbaldispensary.nz/

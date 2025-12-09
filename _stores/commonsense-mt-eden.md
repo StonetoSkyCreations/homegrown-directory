@@ -26,3 +26,5 @@ source_urls: []
 last_checked: Commonsense Mt Eden page
 notes: Retail
 city: Auckland
+rating_average: 5
+rating_count: 1

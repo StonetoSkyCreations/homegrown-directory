@@ -26,4 +26,6 @@ services:
   - "Chocolaterie"
 hours: "Daily 10am–5pm"
 published: true
+rating_average: 5
+rating_count: 1
 ---

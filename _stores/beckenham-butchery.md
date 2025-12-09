@@ -26,6 +26,9 @@ practices_tags:
 - free-range
 - grass-fed
 - ethical
+- organic
+rating_average: 5
+rating_count: 1
 services:
 - Retail butchery
 - Custom cuts

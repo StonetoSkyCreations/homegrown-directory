@@ -23,4 +23,6 @@ practices_tags:
 services:
   - "Retail shop"
 published: true
+rating_average: 5
+rating_count: 1
 ---
