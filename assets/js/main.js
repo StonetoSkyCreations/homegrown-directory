@@ -9,6 +9,8 @@
   const toggleMapBtn = document.querySelector("#toggleMap");
   const clearFiltersBtn = document.querySelector("#clearFilters");
   const filtersForm = document.querySelector(".filters");
+  const navToggle = document.querySelector("[data-nav-toggle]");
+  const primaryNav = document.querySelector("[data-primary-nav]");
   const mapShouldStartOpen = mapPanel && mapPanel.classList.contains("map-panel--open");
   const initialHash = window.location.hash ? window.location.hash.replace("#", "").toLowerCase() : "";
 
@@ -102,6 +104,22 @@
   setDocumentCountry(selectedCountry);
   syncCountryButtons(selectedCountry);
   updateCountryLabels(selectedCountry);
+
+  // Mobile navigation toggle
+  if (navToggle && primaryNav) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = primaryNav.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+    primaryNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (primaryNav.classList.contains("is-open")) {
+          primaryNav.classList.remove("is-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  }
 
   // Directory filtering (region + tags + subtype + country) for directory pages
   const directoryContainer = document.querySelector(".directory-page");
