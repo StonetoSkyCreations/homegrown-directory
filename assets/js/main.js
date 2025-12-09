@@ -376,6 +376,9 @@
 
   const fetchListings = async () => {
     if (!hasSearchUI) return;
+    if (mapShouldStartOpen && !map) {
+      openMap();
+    }
     try {
       const url = window.HG_INDEX_URL || "/search.json";
       const response = await fetch(url);
@@ -400,6 +403,9 @@
     } catch (err) {
       console.error("Failed to load search index", err);
       if (resultsCount) resultsCount.textContent = "Could not load listings right now.";
+      if (mapShouldStartOpen && map) {
+        refreshMap([]);
+      }
     }
   };
 

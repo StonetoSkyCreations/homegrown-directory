@@ -637,7 +637,8 @@ a:focus-visible {
   height: 360px;
 }
 .map-only #map {
-  height: 520px;
+  height: min(76vh, 760px);
+  min-height: 60vh;
 }
 .map-only {
   margin-top: 1.25rem;
