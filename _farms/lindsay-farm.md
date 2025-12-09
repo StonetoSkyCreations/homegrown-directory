@@ -8,15 +8,15 @@ description: "Certified organic raw milk producer in Havelock North."
 country: "NZ"
 country_slug: new-zealand
 region: "Hawke's Bay"
-city_town: "Havelock North"
-city: "Havelock North"
+city_town: "Waipukurau"
+city: "Waipukurau"
 suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
+address: "356 Lindsay Road, RD 3 Waipukurau 4283, Hawke’s Bay, New Zealand"
+postcode: "4283"
+lat: -39.995
+lon: 176.557
+phone: "+64 27 543 2096"
+email: "info@yourmilk.nz"
 website: "https://www.rawmilk.co.nz"
 social_links: []
 products:
