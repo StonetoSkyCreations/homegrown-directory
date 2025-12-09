@@ -7,6 +7,12 @@ title: Home
   <div class="hero__text">
     <h1>Find food grown with integrity.</h1>
     <p class="lead">Explore farms, markets, grocers, and eateries across Aotearoa NZ + Australia.</p>
+    <div class="hero__filters">
+      <label for="heroRegion" class="muted">Browse by region</label>
+      <select id="heroRegion">
+        <option value="all">All regions</option>
+      </select>
+    </div>
   </div>
   <div class="hero__actions">
     <a class="button" href="{{ '/groceries/' | relative_url }}">Find Groceries</a>

@@ -9,6 +9,7 @@
   const toggleMapBtn = document.querySelector("#toggleMap");
   const clearFiltersBtn = document.querySelector("#clearFilters");
   const filtersForm = document.querySelector(".filters");
+  const heroRegionSelect = document.querySelector("#heroRegion");
   const navToggle = document.querySelector("[data-nav-toggle]");
   const primaryNav = document.querySelector("[data-primary-nav]");
   const mapShouldStartOpen = mapPanel && mapPanel.classList.contains("map-panel--open");
@@ -230,6 +231,9 @@
       .join(" ")
       .toLowerCase();
     const textMatches = !textQuery || haystack.includes(textQuery);
+    const regionMatches =
+      selections.region === "all" ||
+      (item.region || "").toLowerCase() === selections.region;
 
     const typeFilters = selections.types.concat(hashTypes);
     const typeMatches =
@@ -251,13 +255,22 @@
 
     const countryMatch = !getActiveCountry() || item.country_slug === getActiveCountry();
 
-    return textMatches && typeMatches && practicesMatch && productsMatch && servicesMatch && countryMatch;
+    return (
+      textMatches &&
+      regionMatches &&
+      typeMatches &&
+      practicesMatch &&
+      productsMatch &&
+      servicesMatch &&
+      countryMatch
+    );
   }
 
   function applyFilters() {
     if (!hasSearchUI) return;
     const selections = {
       query: searchInput ? searchInput.value : "",
+      region: heroRegionSelect ? heroRegionSelect.value : "all",
       types: [],
       practices: [],
       products: [],
@@ -279,6 +292,7 @@
       filtersForm.querySelectorAll('input[type="checkbox"]').forEach((input) => (input.checked = false));
     }
     if (searchInput) searchInput.value = "";
+    if (heroRegionSelect) heroRegionSelect.value = "all";
     applyFilters();
   }
 
@@ -364,6 +378,18 @@
       const data = await response.json();
       listings = data;
       filtered = data;
+      if (heroRegionSelect) {
+        const regions = Array.from(
+          new Set(
+            listings
+              .map((item) => (item.region || "").trim())
+              .filter(Boolean)
+          )
+        ).sort((a, b) => a.localeCompare(b));
+        heroRegionSelect.innerHTML = `<option value="all">All regions</option>${regions
+          .map((region) => `<option value="${region.toLowerCase()}">${region}</option>`)
+          .join("")}`;
+      }
       applyFilters();
       if (mapShouldStartOpen) openMap();
       refreshMap(filtered);
@@ -379,6 +405,9 @@
   });
   if (searchInput) {
     searchInput.addEventListener("input", applyFilters);
+  }
+  if (heroRegionSelect) {
+    heroRegionSelect.addEventListener("change", applyFilters);
   }
   if (filtersForm) {
     filtersForm.addEventListener("change", applyFilters);
