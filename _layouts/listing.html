@@ -6,7 +6,7 @@ map: false
 {% assign display_title = page.title | default: page.name %}
 {% assign supplies_list = page.supplies_to | default: empty_array %}
 {% assign sources_list = page.sources | default: empty_array %}
-{% assign all_listings = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors %}
+{% assign all_listings = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors | concat: site.vendors %}
 {% assign outgoing_supplies = all_listings | where_exp: 'item', 'supplies_list contains item.slug' | uniq %}
 {% assign incoming_from_supplies = all_listings | where_exp: 'item', 'item.supplies_to contains page.slug' %}
 {% assign incoming_from_sources = all_listings | where_exp: 'item', 'item.sources contains page.slug' %}
@@ -26,7 +26,13 @@ map: false
     <div>
       <p class="listing__type">{{ page.collection | capitalize }}</p>
       <h1>{{ display_title }}</h1>
-      <p class="listing__location">{{ page.city | default: page.city_town }}, {{ page.region }}, {{ page.country }}</p>
+      <p class="listing__location">
+        {% if page.address %}{{ page.address }}{% endif %}
+        {% if page.suburb %}{% if page.address %}, {% endif %}{{ page.suburb }}{% endif %}
+        {% if page.city_town or page.city %}{% if page.address or page.suburb %}, {% endif %}{{ page.city | default: page.city_town }}{% endif %}
+        {% if page.region %}, {{ page.region }}{% endif %}
+        {% if page.country %}, {{ page.country }}{% endif %}
+      </p>
       {% if page.website or page.email or page.phone %}
       <div class="listing__contact">
         {% if page.website %}<a href="{{ page.website }}" rel="noopener">Website</a>{% endif %}
@@ -79,6 +85,17 @@ map: false
       <div>
         <h2>Hours / schedule</h2>
         <p class="muted">{{ page.hours }}</p>
+      </div>
+    {% endif %}
+
+    {% if page.market_days %}
+      <div>
+        <h2>Market days</h2>
+        <ul class="tag-list">
+          {% for day in page.market_days %}
+          <li>{{ day }}</li>
+          {% endfor %}
+        </ul>
       </div>
     {% endif %}
 

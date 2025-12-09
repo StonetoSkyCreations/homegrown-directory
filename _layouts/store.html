@@ -1,0 +1,72 @@
+---
+layout: default
+map: false
+---
+{% assign display_title = page.title | default: page.name %}
+<section class="listing">
+  <header class="listing__header">
+    <div>
+      <p class="listing__type">{{ page.type | capitalize }}</p>
+      <h1>{{ display_title }}</h1>
+      <p class="listing__location">
+        {% if page.address %}{{ page.address }}{% endif %}
+        {% if page.suburb %}, {{ page.suburb }}{% endif %}
+        {% if page.city_town %}, {{ page.city_town }}{% endif %}
+        {% if page.region %}, {{ page.region }}{% endif %}
+      </p>
+      {% if page.phone or page.email or page.website %}
+      <div class="listing__contact">
+        {% if page.phone %}<span>{{ page.phone }}</span>{% endif %}
+        {% if page.email %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
+        {% if page.website %}<a href="{{ page.website }}">Website</a>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="listing__content">
+    {{ content | default: page.description }}
+  </div>
+
+  <div class="listing__meta">
+    {% if page.products %}
+      <div>
+        <h2>Products</h2>
+        <ul class="tag-list">
+          {% for item in page.products %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if page.sourcing_tags %}
+      <div>
+        <h2>Sourcing</h2>
+        <ul class="tag-list">
+          {% for tag in page.sourcing_tags %}
+          <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if page.market_days %}
+      <div>
+        <h2>Market days</h2>
+        <ul class="tag-list">
+          {% for day in page.market_days %}
+          <li>{{ day }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if page.notes %}
+      <div>
+        <h2>Notes</h2>
+        <p class="muted">{{ page.notes }}</p>
+      </div>
+    {% endif %}
+  </div>
+</section>

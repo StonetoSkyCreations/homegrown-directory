@@ -1,0 +1,31 @@
+---
+layout: "store"
+slug: "bin-inn-lincoln-rd-chch"
+name: "Bin Inn Lincoln Rd (Chch)"
+brand: "Bin Inn Lincoln Rd (Chch)"
+type: "bulk-refillery"
+category: "retailer"
+description: "Bin Inn – bulk wholefoods & specialty grocery"
+country: "NZ"
+country_slug: "new-zealand"
+region: "Canterbury"
+city_town: "Christchurch"
+suburb: "Spreydon"
+address: "15 Lincoln Road"
+postcode: "8024"
+lat: ""
+lon: ""
+phone: "03 338 2535"
+email: "lincolnrd@bininn.co.nz"
+website: "https://www.bininn.co.nz/canterbury/lincoln-rd"
+social_links: []
+sourcing_tags:
+  - "organic"
+products:
+  - "Bulk foods"
+market_days: []
+source_urls:
+  - "Bin Inn Lincoln Rd"
+last_checked: "2025-12-09"
+notes: ""
+---

@@ -1,0 +1,30 @@
+---
+layout: "store"
+slug: "commonsense-mt-eden"
+name: "Commonsense Mt Eden"
+brand: "Commonsense Mt Eden"
+type: "organic-store"
+category: "retailer"
+description: "Commonsense Organics – organic grocery (Auckland)"
+country: "NZ"
+country_slug: "new-zealand"
+region: "Auckland"
+city_town: "Auckland"
+suburb: "Mount Eden"
+address: "284 Dominion Road"
+postcode: "1024"
+lat: ""
+lon: -36.8828
+phone: "174.7559"
+email: "09 973 4133"
+website: "mteden@commonsenseorganics.co.nz"
+social_links:
+  - "https://commonsenseorganics.co.nz/stores/auckland-mt-eden/"
+sourcing_tags:
+  - "organic"
+products: []
+market_days: []
+source_urls: []
+last_checked: "Commonsense Mt Eden page"
+notes: "Retail"
+---

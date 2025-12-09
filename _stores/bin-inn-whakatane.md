@@ -1,0 +1,31 @@
+---
+layout: "store"
+slug: "bin-inn-whakatane"
+name: "Bin Inn Whakatane"
+brand: "Bin Inn Whakatane"
+type: "bulk-refillery"
+category: "retailer"
+description: "Bin Inn – bulk wholefoods & specialty grocery"
+country: "NZ"
+country_slug: "new-zealand"
+region: "Bay of Plenty"
+city_town: "Whakatane"
+suburb: "Whakatane"
+address: "252 The Strand"
+postcode: "3120"
+lat: ""
+lon: ""
+phone: "07 308 0264"
+email: "whakatane@bininn.co.nz"
+website: "https://www.bininn.co.nz/bay-of-plenty/whakatane"
+social_links: []
+sourcing_tags:
+  - "organic"
+products:
+  - "Bulk foods"
+market_days: []
+source_urls:
+  - "Bin Inn Whakatane"
+last_checked: "2025-12-09"
+notes: ""
+---
