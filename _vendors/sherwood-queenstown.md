@@ -9,14 +9,14 @@ country: "NZ"
 country_slug: new-zealand
 region: "Otago"
 city_town: "Queenstown"
-suburb: ""
-address: ""
-postcode: ""
+suburb: "Frankton Rd"
+address: "554–558 Frankton Road, Queenstown 9300, New Zealand"
+postcode: "9300"
 lat:
 lon:
-phone: ""
-email: ""
-website: "https://sherwoodqueenstown.nz"
+phone: "+64 3 450 1090"
+email: "reservations@sherwoodqueenstown.nz"
+website: "https://www.sherwoodqueenstown.nz"
 social_links: []
 sourcing_tags:
   - organic

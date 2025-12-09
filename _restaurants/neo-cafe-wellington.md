@@ -25,4 +25,3 @@ phone: ""
 description: "Willis Street cafe using free-range eggs, organic ingredients where possible, and local suppliers."
 ---
 Modern cafe focusing on local suppliers, free-range eggs, and organic ingredients when available. Source: https://www.neocafe.co.nz/
-
