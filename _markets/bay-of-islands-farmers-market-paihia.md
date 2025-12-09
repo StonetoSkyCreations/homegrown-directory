@@ -1,32 +1,32 @@
 ---
-layout: "listing"
-slug: "bay-of-islands-farmers-market-paihia"
-name: "Bay of Islands Farmers Market – Paihia"
-brand: "Bay of Islands Farmers Market – Paihia"
-type: "farmers-market"
-category: "market"
-description: "Local farmers’ market featuring Far North growers (Paihia site)"
-country: "NZ"
-country_slug: "new-zealand"
-region: "Northland"
-city_town: "Paihia"
-suburb: "Paihia"
-address: "Village Green, 60 Marsden Rd"
-postcode: "0200"
-lat: ""
+layout: listing
+slug: bay-of-islands-farmers-market-paihia
+name: Bay of Islands Farmers Market – Paihia
+brand: Bay of Islands Farmers Market – Paihia
+type: farmers-market
+category: market
+description: Local farmers’ market featuring Far North growers (Paihia site)
+country: NZ
+country_slug: new-zealand
+region: Northland
+city_town: Paihia
+suburb: Paihia
+address: Village Green, 60 Marsden Rd
+postcode: '0200'
+lat: ''
 lon: -35.2814
-phone: "174.0925"
-email: "021 120 3082"
-website: "info@bayofislandsfarmersmarket.co.nz"
+phone: 021 120 3082
+email: info@bayofislandsfarmersmarket.co.nz
+website: https://bayofislandsfarmersmarket.co.nz/
 social_links:
-  - "https://bayofislandsfarmersmarket.co.nz/"
+- https://bayofislandsfarmersmarket.co.nz/
 sourcing_tags:
-  - "local"
+- local
 products: []
 market_days:
-  - "Market"
+- Market
 source_urls:
-  - "Thursdays 2pm–5:30pm (Paihia)"
-last_checked: "FMNZ member list"
-notes: "Market"
+- Thursdays 2pm–5:30pm (Paihia)
+last_checked: FMNZ member list
+notes: Market
 ---
