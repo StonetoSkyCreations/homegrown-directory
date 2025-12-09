@@ -95,9 +95,10 @@ a:focus-visible {
 }
 .nav-toggle {
   display: none;
+  grid-template-columns: auto 1fr;
+  grid-auto-rows: auto;
   align-items: center;
-  justify-content: center;
-  gap: 0.25rem;
+  gap: 0.18rem 0.35rem;
   padding: 0.55rem 0.75rem;
   border-radius: 12px;
   border: 1px solid var(--border);
@@ -114,6 +115,8 @@ a:focus-visible {
   font-weight: 700;
   color: var(--text);
   font-size: 0.95rem;
+  grid-row: 1 / 4;
+  grid-column: 2;
 }
 .country-switcher {
   display: flex;
@@ -958,5 +961,20 @@ a:focus-visible {
   }
   .country-switcher {
     margin-left: auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .country-option__name {
+    display: none;
+  }
+  .country-option {
+    padding: 0.5rem 0.65rem;
+  }
+  .country-switcher {
+    gap: 0.35rem;
+  }
+  .nav-toggle {
+    grid-template-columns: auto 1fr;
   }
 }
