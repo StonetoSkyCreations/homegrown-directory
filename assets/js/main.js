@@ -32,9 +32,6 @@
   let map;
   let markerLayer;
 
-  const hasUI = resultsContainer || mapPanel;
-  if (!hasUI) return;
-
   // Simple directory filtering (region + tags + subtype) for directory pages
   const directoryContainer = document.querySelector(".directory-page");
   if (directoryContainer) {
@@ -74,6 +71,9 @@
     subtypeFilters.forEach((c) => c.addEventListener("change", applyDirectoryFilters));
     applyDirectoryFilters();
   }
+
+  const hasUI = resultsContainer || mapPanel;
+  if (!hasUI) return;
 
   const applyHashPrefill = () => {
     if (!initialHash) return;

@@ -217,6 +217,13 @@ a:focus-visible {
   display: grid;
   gap: 0.35rem;
 }
+.filters select {
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-size: 1rem;
+}
 .filter-label {
   margin: 0;
   font-weight: 700;
