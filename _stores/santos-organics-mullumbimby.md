@@ -1,0 +1,37 @@
+---
+layout: "store"
+slug: "santos-organics-mullumbimby"
+name: "Santos Organics (Mullumbimby)"
+brand: "Santos Organics"
+type: "organic-grocery"
+category: "retail"
+description: "Not-for-profit organic bulk food store in central Mullumbimby."
+country: "AU"
+country_slug: "australia"
+region: "New South Wales"
+city_town: "Mullumbimby"
+suburb: "Mullumbimby"
+address: "51-53 Burringbar St"
+postcode: "2482"
+lat:
+lon:
+phone: "(02) 6684 3773"
+email: ""
+website: "https://santosorganics.com.au"
+social_links:
+  - "https://santosorganics.com.au"
+sourcing_tags:
+  - "organic"
+  - "biodynamic"
+  - "regenerative"
+products:
+  - "Organic groceries"
+  - "Bulk foods"
+market_days: []
+source_urls:
+  - "https://santosorganics.com.au"
+  - "https://santosorganics.com.au/pages/aco-accreditation"
+last_checked: "2025-12-09"
+notes: "Retailer; not-for-profit; ACO accredited."
+---
+Santos Organics’ Mullumbimby store carries certified organic and biodynamic bulk foods, groceries, and pantry staples, run as a not-for-profit with a focus on regenerative supply chains.
