@@ -3,8 +3,8 @@ layout: default
 title: Farms
 permalink: /farms/
 ---
-{% assign items = site.farms | sort: 'name' %}
-{% assign regions = items | map: 'region' | uniq | sort %}
+{% assign items = site.farms | sort: 'slug' %}
+{% assign regions = items | map: 'region' | uniq %}
 <section class="directory-page">
   <div class="directory-hero">
     <div>

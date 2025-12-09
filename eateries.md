@@ -3,8 +3,8 @@ layout: default
 title: Eateries
 permalink: /eateries/
 ---
-{% assign items = site.vendors | concat: site.restaurants | where_exp: 'i', 'i.title' | sort: 'title' %}
-{% assign regions = items | map: 'region' | uniq | sort %}
+{% assign items = site.vendors | concat: site.restaurants %}
+{% assign regions = items | map: 'region' | uniq %}
 <section class="directory-page">
   <div class="directory-hero">
     <div>

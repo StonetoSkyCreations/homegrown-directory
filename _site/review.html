@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#305c24">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Review a Listing | Homegrown Directory</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Review a Listing" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A global, integrity-first food directory mapping producers, markets, grocers, eateries, and hubs — starting in Aotearoa New Zealand." />
+<meta property="og:description" content="A global, integrity-first food directory mapping producers, markets, grocers, eateries, and hubs — starting in Aotearoa New Zealand." />
+<link rel="canonical" href="https://homegrowndirectory.com/review.html" />
+<meta property="og:url" content="https://homegrowndirectory.com/review.html" />
+<meta property="og:site_name" content="Homegrown Directory" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Review a Listing" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"A global, integrity-first food directory mapping producers, markets, grocers, eateries, and hubs — starting in Aotearoa New Zealand.","headline":"Review a Listing","url":"https://homegrowndirectory.com/review.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/">Homegrown Directory</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" data-nav-toggle>
+      <span class="nav-toggle__icon">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </span>
+      <span class="nav-toggle__label">Menu</span>
+    </button>
+    <nav id="primaryNav" class="nav" data-primary-nav>
+      <a href="/farms/">Farms</a>
+      <a href="/markets/">Markets</a>
+      <a href="/groceries/">Grocers</a>
+      <a href="/eateries/">Eateries</a>
+      <a href="/map/">Map</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/submit.html">Add / Update a Listing</a>
+    </nav>
+    <div class="country-switcher" data-country-switcher>
+      <span class="country-switcher__label">Country</span>
+      <div class="country-switcher__options">
+        <button type="button" class="pill country-option" data-country-option="new-zealand">
+          <span class="country-option__code">NZ</span>
+        </button>
+        <button type="button" class="pill country-option" data-country-option="australia">
+          <span class="country-option__code">AU</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="page">
+    <section class="form-page">
+  <header class="collection-index__header">
+    <p class="eyebrow">Reviews</p>
+    <h1>Review this Place</h1>
+    <p class="lead">Share your experience and help keep the directory accurate. On submit, your email client will open with the review details.</p>
+  </header>
+
+  <form id="reviewForm">
+    <div class="form-group">
+      <label for="business_name">Business name</label>
+      <input type="text" id="business_name" name="business_name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Star rating</label>
+      <div class="stars" role="radiogroup" aria-label="Star rating">
+        
+        <label class="star" aria-label="1 star">
+          <input type="radio" name="rating" value="1" >
+          <span>★</span>
+        </label>
+        
+        <label class="star" aria-label="2 star">
+          <input type="radio" name="rating" value="2" >
+          <span>★</span>
+        </label>
+        
+        <label class="star" aria-label="3 star">
+          <input type="radio" name="rating" value="3" >
+          <span>★</span>
+        </label>
+        
+        <label class="star" aria-label="4 star">
+          <input type="radio" name="rating" value="4" >
+          <span>★</span>
+        </label>
+        
+        <label class="star" aria-label="5 star">
+          <input type="radio" name="rating" value="5" checked>
+          <span>★</span>
+        </label>
+        
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="review_text">Your review or experience</label>
+      <textarea id="review_text" name="review_text" rows="4" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="corrections">Anything that’s changed or needs correcting? (optional)</label>
+      <textarea id="corrections" name="corrections" rows="3"></textarea>
+    </div>
+
+    <div class="form-group split">
+      <div>
+        <label for="visit">When did you last visit? (optional)</label>
+        <input type="text" id="visit" name="visit" placeholder="e.g. June 2025">
+      </div>
+      <div>
+        <label for="reviewer_name">Your name (optional)</label>
+        <input type="text" id="reviewer_name" name="reviewer_name">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="reviewer_email">Your email (optional, for follow-up)</label>
+      <input type="email" id="reviewer_email" name="reviewer_email">
+    </div>
+
+    <button type="submit" class="button">Send via email</button>
+  </form>
+</section>
+
+<script>
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    const listing = params.get('listing') || '';
+    const nameField = document.getElementById('business_name');
+    if (listing) {
+      nameField.value = decodeURIComponent(listing.replace(/\\+/g, ' '));
+    }
+
+    const form = document.getElementById('reviewForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const business = data.get('business_name') || '';
+      const rating = data.get('rating') || '5';
+      const subject = `New Review – ${business}`;
+      const bodyLines = [
+        `Business name: ${business}`,
+        `Star rating: ${rating}/5`,
+        `Review: ${data.get('review_text') || ''}`,
+        `Corrections: ${data.get('corrections') || ''}`,
+        `Last visit: ${data.get('visit') || ''}`,
+        `Reviewer name: ${data.get('reviewer_name') || ''}`,
+        `Reviewer email: ${data.get('reviewer_email') || ''}`
+      ];
+      const mailto = `mailto:contact@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+      window.location.href = mailto;
+    });
+  })();
+</script>
+
+  </main>
+  <footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Built for transparency in how food is grown. Start local, stay curious.</p>
+    <p class="footer-meta">
+      <a href="/about/">About</a> ·
+      <a href="/sitemap.xml">Sitemap</a> ·
+      <a href="/robots.txt">Robots</a> ·
+      <a href="https://github.com/stonetoskycreations/homegrown-directory">GitHub</a>
+    </p>
+  </div>
+</footer>
+
+  
+  <script>
+    window.HG_INDEX_URL = '/search.json';
+    window.HG_BASEURL = '';
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

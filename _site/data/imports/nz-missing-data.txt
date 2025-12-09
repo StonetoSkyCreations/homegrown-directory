@@ -1,0 +1,248 @@
+_distributors/supply-circle-hub.md: address, postcode, phone, hours
+_farms/ahikaaroa-trust.md: address, postcode, lat, lon, hours
+_farms/allandale-regenerative-farm.md: address, postcode, lat, lon, phone, email, hours
+_farms/artemis-ltd.md: address, postcode, lat, lon, phone, email, hours
+_farms/awarua-organics.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/babich-wines.md: address, postcode, lat, lon, phone, email, hours
+_farms/bayleaf-organics-haumoana.md: address, postcode, lat, lon, phone, email, hours
+_farms/biofarm.md: address, postcode, lat, lon, phone, email, hours
+_farms/bostock-brothers.md: address, postcode, lat, lon, phone, email, hours
+_farms/bostock-new-zealand.md: address, postcode, lat, lon, phone, email, hours
+_farms/cardrona-merino.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/ceres-organics.md: address, postcode, lat, lon, phone, email, hours
+_farms/chantal-organics.md: address, postcode, lat, lon, phone, email, hours
+_farms/churton-wines.md: address, postcode, lat, lon, phone, email, hours
+_farms/coraltree-organic-products.md: address, postcode, lat, lon, phone, email, hours
+_farms/coro-fresh-goodness-growers.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/durham-farms.md: address, postcode, lat, lon, phone, email, hours
+_farms/early-bird-organics.md: address, postcode, lat, lon, phone, email, hours
+_farms/earthbound-honey.md: address, postcode, lat, lon, phone, email, hours
+_farms/eco-egg-company.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/figs-hawkes-bay.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/forest-maker-honey.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/frenz-eggs.md: address, postcode, lat, lon, phone, email, hours
+_farms/hohepa-hawkes-bay.md: address, postcode, lat, lon, phone, email, hours
+_farms/honeylicious.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/jersey-girl-organics.md: address, postcode, lat, lon, phone, email, hours
+_farms/jj-organics-napier.md: address, postcode, lat, lon, phone, email, website
+_farms/kaiwhenua-organics.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/kanapu-hemp-foods.md: address, postcode, lat, lon, phone, email, hours
+_farms/kapiti-free-range-eggs.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/kapiti-olive-oil.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/karaka-farm-kaikoura.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/kelmarna-gardens.md: address, postcode, lat, lon, phone, email, hours
+_farms/laughing-pukeko-farm.md: address, postcode, lat, lon, phone, email, hours
+_farms/let-food-be-thy-medicine-kawakawa.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/lindsay-farm.md: address, postcode, lat, lon, phone, email, hours
+_farms/lux-organics-rotorua.md: address, postcode, lat, lon, phone, email, hours
+_farms/mangarara-family-farm.md: address, postcode, lat, lon, phone, email, hours
+_farms/millton-vineyards-winery.md: address, postcode, lat, lon, phone, email, hours
+_farms/mingiroa-farm.md: address, postcode, lat, lon, phone, email, hours
+_farms/moana-organics.md: address, postcode, phone, hours
+_farms/northland-naturals.md: address, postcode, lat, lon, phone, email, hours
+_farms/oromahoe-pauls-garden.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/pasture-poultry.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/pikikiruna-organic-farm.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/quartz-reef.md: address, postcode, lat, lon, phone, email, hours
+_farms/reikorangi-organic-gardens.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/renwick-organic-gardens.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/rippon-vineyard.md: address, postcode, lat, lon, phone, email, hours
+_farms/riwaka-organics.md: address, postcode, lat, lon, phone, email, website, hours
+_farms/sentry-hill-organics.md: address, postcode, lat, lon, phone, email, hours
+_farms/seresin-estate.md: address, postcode, lat, lon, phone, email, hours
+_farms/sethas-seeds.md: address, postcode, lat, lon, phone, email, hours
+_farms/te-horo-harvest.md: address, postcode, lat, lon, phone, email, hours
+_farms/the-organic-farm.md: address, postcode, lat, lon, phone, email, hours
+_farms/tonzu-bean-supreme.md: address, postcode, lat, lon, phone, email, hours
+_farms/waima-hill-organic-beef.md: address, postcode, lat, lon, phone, email, hours
+_farms/waipuna-pastures.md: address, postcode, email, hours
+_farms/wilderland-organics-whitianga.md: address, postcode, lat, lon, phone, email, hours
+_farms/zany-zeus.md: address, postcode, lat, lon, phone, email, hours
+_farms/zealong-tea-estate.md: address, postcode, lat, lon, phone, email, hours
+_markets/amberley-farmers-market.md: lat, hours
+_markets/bay-of-islands-farmers-market-kerikeri.md: lat, hours
+_markets/bay-of-islands-farmers-market-paihia.md: lat, hours
+_markets/cambridge-farmers-market.md: lat, hours
+_markets/clevedon-village-farmers-market.md: lat, hours
+_markets/coroglen-farmers-market.md: postcode, lat, lon, phone, email, website, hours
+_markets/coromandel-homegrown-community-market.md: postcode, lat, lon, phone, email, website, hours
+_markets/feilding-farmers-market.md: lat, hours
+_markets/gisborne-farmers-market.md: lat, hours
+_markets/golden-bay-farmers-market.md: postcode, lat, lon, phone, email, website, hours
+_markets/grey-lynn-farmers-market.md: lat, hours
+_markets/hamilton-farmers-market.md: lat, hours
+_markets/harbour-harvest-market.md: address, postcode, phone, email
+_markets/hawke-s-bay-farmers-market-hastings.md: lat, hours
+_markets/hill-street-farmers-market.md: postcode, lat, lon, phone, email, website, hours
+_markets/kapiti-coast-farmers-market.md: postcode, lat, lon, phone, email, hours
+_markets/lyttelton-farmers-market.md: lat, hours
+_markets/marlborough-farmers-market.md: lat, hours
+_markets/motueka-sunday-market.md: postcode, lat, lon, phone, email, website, hours
+_markets/napier-urban-farmers-market.md: lat, hours
+_markets/nelson-farmers-market.md: lat, hours
+_markets/northland-farmers-market.md: postcode, lat, lon, phone, email, website, hours
+_markets/otago-farmers-market-dunedin.md: lat, hours
+_markets/palmerston-north-farmers-market.md: postcode, lat, lon, phone, email, website, hours
+_markets/parnell-farmers-market.md: lat, hours
+_markets/rangitahi-farmers-market.md: postcode, lat, lon, phone, email, hours
+_markets/remarkables-market-queenstown.md: postcode, lat, lon, phone, email, hours
+_markets/riverside-market-christchurch.md: lat, hours
+_markets/rotorua-farmers-market.md: postcode, lat, lon, phone, email, website, hours
+_markets/southern-farmers-market-invercargill.md: lat, email, website, hours
+_markets/taranaki-farmers-market.md: lat, hours
+_markets/te-awamutu-produce-market.md: lat, website, hours
+_markets/wanaka-farmers-market.md: postcode, lat, lon, phone, email, hours
+_markets/wellington-harbourside-market.md: postcode, lat, lon, phone, email, hours
+_markets/west-coast-farmers-market-greymouth.md: address, postcode, lat, lon, phone, email, website, hours
+_markets/whanganui-river-markets.md: lat, hours
+_markets/whangarei-growers-market.md: lat, hours
+_restaurants/camina-thames.md: address, postcode, lat, lon, phone, email, website, hours
+_restaurants/charlottes-kitchen-paihia.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/craggy-range-restaurant.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/driving-creek-cafe.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/good-earth-cafe-dunedin.md: address, postcode, lat, lon, phone, email, website, hours
+_restaurants/govett-brewster-cafe.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/hapi-organic-cafe-napier.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/hygge-at-clifton-bay.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/kakariki-kitchen-whanganui.md: address, postcode, lat, lon, phone, email, website, hours
+_restaurants/kopupako-kitchen.md: address, postcode, phone, email
+_restaurants/matatoki-cheese-barn.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/neo-cafe-wellington.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/old-quarter-wellington.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/organic-buzz-whanganui.md: address, postcode, lat, lon, phone, email, website, hours
+_restaurants/paroa-bay-winery-sage.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/pepper-tree-coromandel.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/solscape-conscious-kitchen.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/tairua-beach-club.md: address, postcode, lat, lon, phone, email, hours
+_restaurants/the-sanctuary-bay-of-islands.md: address, postcode, lat, lon, phone, email
+_restaurants/toad-hall-motueka.md: address, postcode, lat, lon, phone, email, website, hours
+_restaurants/wholemeal-cafe-takaka.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/benge-and-co-organics-nelson.md: postcode, lat, lon, phone, email, hours
+_stores/bin-inn-bethlehem.md: lat, lon, hours
+_stores/bin-inn-blenheim.md: lat, lon, hours
+_stores/bin-inn-browns-bay.md: lat, lon, hours
+_stores/bin-inn-burnside-chch.md: lat, lon, hours
+_stores/bin-inn-dinsdale.md: lat, lon, hours
+_stores/bin-inn-dunedin.md: lat, lon, hours
+_stores/bin-inn-feilding.md: lat, lon, hours
+_stores/bin-inn-gisborne.md: lat, lon, hours
+_stores/bin-inn-glenfield.md: lat, lon, hours
+_stores/bin-inn-hamilton-east.md: lat, lon, hours
+_stores/bin-inn-hastings-taradale.md: lat, lon, hours
+_stores/bin-inn-howick.md: lat, lon, hours
+_stores/bin-inn-kamo.md: lat, phone, hours
+_stores/bin-inn-kapiti-paraparaumu.md: lat, lon, hours
+_stores/bin-inn-lincoln-rd-chch.md: lat, lon, hours
+_stores/bin-inn-masterton.md: lat, lon, hours
+_stores/bin-inn-nelson.md: lat, lon, hours
+_stores/bin-inn-onehunga.md: lat, lon, hours
+_stores/bin-inn-palmerston-north.md: lat, lon, hours
+_stores/bin-inn-papamoa.md: lat, lon, hours
+_stores/bin-inn-petone.md: lat, lon, hours
+_stores/bin-inn-pukekohe.md: lat, lon, hours
+_stores/bin-inn-rangiora.md: lat, lon, hours
+_stores/bin-inn-richmond.md: lat, lon, hours
+_stores/bin-inn-rolleston.md: lat, lon, hours
+_stores/bin-inn-rotorua.md: lat, lon, hours
+_stores/bin-inn-silverdale.md: lat, lon, hours
+_stores/bin-inn-st-andrews.md: lat, lon, hours
+_stores/bin-inn-stanmore-rd-chch.md: lat, lon, hours
+_stores/bin-inn-stonefields.md: lat, lon, hours
+_stores/bin-inn-takanini.md: lat, lon, hours
+_stores/bin-inn-taupo.md: lat, lon, hours
+_stores/bin-inn-te-awamutu.md: lat, lon, hours
+_stores/bin-inn-thames.md: lat, lon, hours
+_stores/bin-inn-timaru.md: lat, lon, hours
+_stores/bin-inn-waitara.md: lat, lon, hours
+_stores/bin-inn-warkworth.md: lat, lon, hours
+_stores/bin-inn-whakatane.md: lat, lon, hours
+_stores/bin-inn-whangarei.md: lat, lon, hours
+_stores/brown-owl-organics-rotorua.md: postcode, lat, lon, phone, email, hours
+_stores/chantal-shop-napier.md: lat, phone, hours
+_stores/city-honest-grocer.md: address, postcode, phone, email, hours
+_stores/commons-unity-remakery-lower-hutt.md: lat, phone, hours
+_stores/commonsense-kapiti.md: lat, phone, hours
+_stores/commonsense-kilbirnie.md: lat, phone, hours
+_stores/commonsense-lower-hutt.md: lat, phone, hours
+_stores/commonsense-mt-eden.md: lat, phone, hours
+_stores/commonsense-wellington-city.md: lat, phone, hours
+_stores/cornucopia-organics-hastings.md: lat, phone, hours
+_stores/countdown-all-nz-branches.md: postcode, lat, phone, email, hours
+_stores/down-to-earth-organics-new-plymouth.md: postcode, lat, lon, phone, email, hours
+_stores/earth-food-store-waikanae.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/earthbound-organics-richmond.md: address, postcode, lat, lon, phone, email, hours
+_stores/farro-fresh-commercial-bay.md: lat, lon, email, hours
+_stores/farro-fresh-epsom.md: lat, website, hours
+_stores/farro-fresh-grey-lynn.md: lat, website, hours
+_stores/farro-fresh-mt-eden.md: lat, website, hours
+_stores/farro-fresh-mt-wellington.md: lat, website, hours
+_stores/farro-fresh-orakei.md: lat, website, hours
+_stores/farro-fresh-smales-farm.md: lat, website, hours
+_stores/four-square-selected-stores.md: postcode, lat, phone, website, hours
+_stores/freshchoice-all-locations.md: postcode, lat, phone, website, hours
+_stores/golden-bay-organics.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/green-grocer-palmerston-north.md: postcode, lat, lon, phone, email, website, hours
+_stores/harbour-co-op-lyttelton.md: lat, phone, hours
+_stores/herbal-dispensary-raglan.md: postcode, lat, lon, phone, email, hours
+_stores/homegrown-wholefoods-paraparaumu.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/honest-wholefoods-invercargill.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/huckleberry-glen-innes-closed.md: lat, lon, email, website, hours
+_stores/huckleberry-grey-lynn-harvest.md: lat, lon, email, website, hours
+_stores/huckleberry-new-lynn.md: lat, lon, email, website, hours
+_stores/huckleberry-whangarei.md: postcode, lat, lon, phone, email, hours
+_stores/ie-produce-takapuna.md: lat, phone, hours
+_stores/kaikoura-quality-store.md: postcode, lat, lon, phone, email, website, hours
+_stores/liberty-market-chch.md: lat, phone, hours
+_stores/mapua-organics.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/mrs-woollys-general-store-glenorchy.md: postcode, lat, lon, phone, email, hours
+_stores/naturally-organic-invercargill.md: postcode, lat, lon, phone, email, website, hours
+_stores/new-world-all-locations.md: postcode, lat, phone, website, hours
+_stores/ooooby-online-organic-boxes.md: lat, lon, hours
+_stores/organic-corner-deli-whangarei.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/pak-nsave-all-locations.md: postcode, lat, phone, website, hours
+_stores/pembroke-wines-and-spirits-wanaka.md: postcode, lat, lon, phone, email, hours
+_stores/picton-organic-store.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/piko-wholefoods-chch.md: lat, phone, hours
+_stores/riverton-organic-shop.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/soulfood-organic-wanaka.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/source-bulk-foods-queenstown.md: postcode, lat, lon, phone, email, hours
+_stores/supervalue-all-locations.md: postcode, lat, phone, website, hours
+_stores/taste-nature-dunedin.md: postcode, lat, lon, phone, email, hours
+_stores/thames-organic-shop.md: postcode, lat, lon, phone, email, website, hours
+_stores/the-grocer-kaikoura.md: postcode, lat, lon, phone, email, website, hours
+_stores/whanganui-organic-food-co-op.md: postcode, lat, lon, phone, email, website, hours
+_stores/wholefood-co-op-hokitika.md: address, postcode, lat, lon, phone, email, website, hours
+_stores/wholefood-heaven-wanaka.md: postcode, lat, lon, phone, email, website, hours
+_stores/zany-zeus-lower-hutt.md: postcode, lat, lon, phone, email, hours
+_vendors/ahi-restaurant.md: address, postcode, lat, lon, phone, email, hours
+_vendors/cafe-irresistiblue.md: address, postcode, lat, lon, phone, email, hours
+_vendors/daily-bread-pt-chevalier.md: address, postcode, lat, lon, phone, email, hours
+_vendors/farm-house-cafe.md: address, postcode, lat, lon, phone, email, hours
+_vendors/flagship-eatery.md: address, postcode, lat, lon, phone, email, hours
+_vendors/foraged-in-raglan.md: address, postcode, lat, lon, phone, email, hours
+_vendors/grizzly-baked-goods.md: address, postcode, lat, lon, phone, email, hours
+_vendors/havana-coffee-works.md: postcode, lat, lon, phone, email, hours
+_vendors/hill-house-cafe.md: address, postcode, lat, lon, phone, email, hours
+_vendors/hillside-kitchen-cellar.md: address, postcode, lat, lon, phone, email, hours
+_vendors/honest-wholefood-co-wanaka.md: address, postcode, lat, lon, phone, email, hours
+_vendors/mapu-test-kitchen.md: address, postcode, lat, lon, phone, email, hours
+_vendors/no7-balmac.md: address, postcode, lat, lon, phone, email, hours
+_vendors/oatery-wellington.md: address, postcode, lat, lon, phone, email, hours
+_vendors/orepuki-beach-cafe.md: address, postcode, lat, lon, phone, email, website, hours
+_vendors/organic-corner-kerikeri.md: postcode, lat, lon, phone, email, website, hours
+_vendors/origin-northland.md: address, postcode, lat, lon, phone, email, hours
+_vendors/power-plant-wholefood-organic-store.md: address, postcode, lat, lon, phone, email, hours
+_vendors/sandfire-seedlings-hawkes-bay.md: postcode, lat, lon, phone, email, website, hours
+_vendors/scarecrow.md: address, postcode, lat, lon, phone, email, hours
+_vendors/she-universe-chocolate.md: address, postcode, lat, lon, phone, email, hours
+_vendors/shepherd.md: address, postcode, lat, lon, phone, email, hours
+_vendors/sherwood-queenstown.md: address, postcode, lat, lon, phone, email, hours
+_vendors/st-georges-restaurant.md: address, postcode, lat, lon, phone, email, hours
+_vendors/tasman-bay-salt-co.md: address, postcode, lat, lon, phone, email, hours
+_vendors/the-bikery-cafe.md: address, postcode, lat, lon, phone, email, website, hours
+_vendors/the-falls-retreat.md: address, postcode, lat, lon, phone, email, hours
+_vendors/the-wholemeal-cafe.md: address, postcode, lat, lon, phone, email, hours
+_vendors/volcanoview-restaurant-bar.md: address, postcode, lat, lon, phone, email, hours
+_vendors/wildflour-whangarei.md: address, postcode, lat, lon, phone, email, website, hours
+_vendors/zephyr-wainui.md: address, postcode, lat, lon, phone, email, hours
+country/new-zealand.md: address, postcode, lat, lon, phone, email, website, hours

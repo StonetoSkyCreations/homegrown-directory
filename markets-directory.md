@@ -4,8 +4,8 @@ title: Markets
 description: "Find farmers' markets, market halls, and local food hubs near you."
 permalink: /markets/
 ---
-{% assign items = site.markets | sort: 'name' %}
-{% assign regions = items | map: 'region' | uniq | sort %}
+{% assign items = site.markets | sort: 'slug' %}
+{% assign regions = items | map: 'region' | uniq %}
 <section class="directory-page">
   <div class="directory-hero">
     <div>
