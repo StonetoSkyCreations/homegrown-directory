@@ -32,31 +32,37 @@ defaults:
       type: farms
     values:
       layout: listing
+      country_slug: new-zealand
   - scope:
       path: ""
       type: markets
     values:
       layout: listing
+      country_slug: new-zealand
   - scope:
       path: ""
       type: stores
     values:
       layout: listing
+      country_slug: new-zealand
   - scope:
       path: ""
       type: restaurants
     values:
       layout: listing
+      country_slug: new-zealand
   - scope:
       path: ""
       type: distributors
     values:
       layout: listing
+      country_slug: new-zealand
   - scope:
       path: ""
       type: vendors
     values:
       layout: vendor
+      country_slug: new-zealand
 
 markdown: kramdown
 kramdown:
