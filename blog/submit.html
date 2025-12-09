@@ -1,0 +1,88 @@
+---
+layout: default
+title: Submit an Article
+permalink: /blog/submit/
+---
+<section class="form-page">
+  <header class="collection-index__header">
+    <p class="eyebrow">Contribute</p>
+    <h1>Submit an article</h1>
+    <p class="lead">Share a story or resource about organic, regenerative, spray-free, biodynamic, local, or ethical food systems. On submit, your email client will open with the details prefilled.</p>
+  </header>
+
+  <form id="blogSubmitForm">
+    <div class="form-group">
+      <label for="article_title">Article title</label>
+      <input type="text" id="article_title" name="article_title" required>
+    </div>
+
+    <div class="form-group">
+      <label for="author">Your name</label>
+      <input type="text" id="author" name="author" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="article_type">Submission type</label>
+      <div class="pill-group">
+        <label class="pill pill--checkbox">
+          <input type="radio" name="article_type" value="Full article text" checked>
+          <span>Full article text</span>
+        </label>
+        <label class="pill pill--checkbox">
+          <input type="radio" name="article_type" value="External link (we'll review)">
+          <span>External link (we'll review)</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="link">Link (if sharing an existing article)</label>
+      <input type="url" id="link" name="link" placeholder="https://">
+    </div>
+
+    <div class="form-group">
+      <label for="body">Article text or summary</label>
+      <textarea id="body" name="body" rows="6" placeholder="Paste your article, outline, or key points here."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="tags">Topics (comma-separated)</label>
+      <input type="text" id="tags" name="tags" placeholder="organic, regenerative, markets, soil">
+    </div>
+
+    <div class="form-group">
+      <label for="notes">Notes (images, credits, or context)</label>
+      <textarea id="notes" name="notes" rows="3"></textarea>
+    </div>
+
+    <button type="submit" class="button">Send via email</button>
+  </form>
+</section>
+
+<script>
+  const blogSubmitForm = document.getElementById('blogSubmitForm');
+  blogSubmitForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(blogSubmitForm);
+    const subject = `Blog submission – ${data.get('article_title') || ''}`;
+    const bodyLines = [
+      `Article title: ${data.get('article_title') || ''}`,
+      `Author: ${data.get('author') || ''}`,
+      `Email: ${data.get('email') || ''}`,
+      `Submission type: ${data.get('article_type') || ''}`,
+      `Link: ${data.get('link') || ''}`,
+      `Tags: ${data.get('tags') || ''}`,
+      `Notes: ${data.get('notes') || ''}`,
+      '',
+      'Article text / summary:',
+      data.get('body') || ''
+    ];
+    const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+    window.location.href = mailto;
+  });
+</script>

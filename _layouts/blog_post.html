@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#305c24">
+  {% assign meta_description = page.summary | default: page.description | default: site.description %}
+  <meta name="description" content="{{ meta_description | strip_newlines | escape }}">
+  {% if page.featured_image %}
+  <meta property="og:image" content="{{ page.featured_image | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% endif %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% seo %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title | escape }}",
+    "description": "{{ meta_description | strip_newlines | escape }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ page.author | default: 'Homegrown Directory' | escape }}"
+    },
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}"
+    }{% if page.featured_image %},
+    "image": "{{ page.featured_image | absolute_url }}"{% endif %},
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.title | escape }}",
+      "url": "{{ site.url | append: site.baseurl }}"
+    }
+  }
+  </script>
+</head>
+<body>
+  {% include header.html %}
+  <main class="page page--article">
+    <article class="article">
+      <header class="article__header">
+        <p class="pill pill--type">Article</p>
+        <h1>{{ page.title }}</h1>
+        <div class="article__meta">
+          <span>{{ page.date | date: "%-d %B %Y" }}</span>
+          {% if page.author %}<span>· {{ page.author }}</span>{% endif %}
+          {% if page.tags %}
+            <span>· {{ page.tags | join: ", " }}</span>
+          {% endif %}
+        </div>
+        {% if page.summary %}
+          <p class="lead">{{ page.summary }}</p>
+        {% endif %}
+        {% if page.featured_image %}
+          <figure class="article__image">
+            <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title | escape }}">
+          </figure>
+        {% endif %}
+      </header>
+      <div class="article__body">
+        {{ content }}
+      </div>
+    </article>
+  </main>
+  {% include footer.html %}
+</body>
+</html>

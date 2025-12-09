@@ -7,6 +7,9 @@ timezone: Pacific/Auckland
 permalink: pretty
 
 collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
   farms:
     output: true
     permalink: /farms/:slug/
@@ -27,6 +30,11 @@ collections:
     permalink: /vendors/:slug/
 
 defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: blog_post
   - scope:
       path: ""
       type: farms

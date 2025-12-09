@@ -64,6 +64,30 @@ title: Home
   </div>
 </section>
 
+<section class="latest-articles">
+  <header class="latest-articles__header">
+    <p class="eyebrow">Latest articles</p>
+    <h2>Stories on organic, regenerative, and local food.</h2>
+    <p class="muted">Fresh reads from the Homegrown blog.</p>
+  </header>
+  <div class="blog-list blog-list--compact">
+    {% assign latest_posts = site.posts | sort: 'date' | reverse | slice: 0, 3 %}
+    {% for post in latest_posts %}
+      <article class="blog-card">
+        <p class="pill pill--type">Article</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p class="muted blog-card__meta">{{ post.date | date: "%-d %B %Y" }}{% if post.tags %} · {{ post.tags | join: ", " }}{% endif %}</p>
+        {% if post.summary %}
+          <p class="blog-card__summary">{{ post.summary }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+  <div class="latest-articles__cta">
+    <a class="button" href="{{ '/blog/' | relative_url }}">View all articles</a>
+  </div>
+</section>
+
 <section class="search-section">
   <div class="search-controls">
     <label for="searchInput" class="muted">Search by region, city, or vendor name…</label>
