@@ -83,7 +83,7 @@ permalink: /review.html
         `Reviewer name: ${data.get('reviewer_name') || ''}`,
         `Reviewer email: ${data.get('reviewer_email') || ''}`
       ];
-      const mailto = `mailto:joshebroadhurst@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+      const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
       window.location.href = mailto;
     });
   })();

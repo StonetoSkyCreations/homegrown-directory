@@ -62,7 +62,7 @@ permalink: /submit.html
     <div class="form-group split">
       <div>
         <label for="email">Contact email</label>
-        <input type="email" id="email" name="email" placeholder="contact@example.com">
+        <input type="email" id="email" name="email" placeholder="josh@stonetosky.nz">
       </div>
       <div>
         <label for="phone">Contact phone</label>
@@ -129,7 +129,7 @@ permalink: /submit.html
       `Updates needed: ${data.get('updates') || ''}`
     ];
 
-    const mailto = `mailto:joshebroadhurst@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+    const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
     window.location.href = mailto;
   });
 </script>
