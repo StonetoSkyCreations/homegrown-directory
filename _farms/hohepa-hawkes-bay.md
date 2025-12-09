@@ -1,34 +1,28 @@
 ---
-layout: farm
-title: "Hohepa Hawke’s Bay"
+title: "Hohepa Hawke's Bay"
 slug: hohepa-hawkes-bay
-name: "Hohepa Hawke’s Bay"
-type: "Farm"
-description: "Biodynamic dairy producer offering milk and cheese from Clive."
-country: "NZ"
+country: "New Zealand"
 country_slug: new-zealand
 region: "Hawke's Bay"
-city_town: "Clive"
 city: "Clive"
-suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
-website: "https://www.hohepa.com"
-social_links: []
+lat: 
+lon: 
+practices:
+  - "Organic (uncertified)"
+  - "Regenerative"
 products:
-  - "Milk"
-  - "Cheese"
-practices_tags:
-  - biodynamic
-certifications:
-  - Demeter
-supply_role: "Producer"
-source_urls:
-  - "https://maikai.nz/pages/mai-kai-suppliers"
-last_checked: "2025-12-09"
-notes: ""
+  - "Dairy"
+services:
+  - "Wholesale"
+  - "Farmers market stall"
+sources: []
+supplies_to:
+  - hawke-s-bay-farmers-market-hastings
+hours: ""
+website: "https://hawkesbayfarmersmarket.co.nz/hohepa-hawkes-bay/"
+email: ""
+phone: ""
+description: "Organic and regenerative dairy enterprise producing cheeses, yoghurt, and milk from pasture-raised cows."
 ---
+Operates organic/regenerative dairy herds on chemical-free pastures, producing award-winning cheeses, yoghurt, and milk and selling via Hawke's Bay Farmers' Market. Source: https://hawkesbayfarmersmarket.co.nz/hohepa-hawkes-bay/
+

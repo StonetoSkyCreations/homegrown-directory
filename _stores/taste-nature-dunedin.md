@@ -1,31 +1,36 @@
 ---
 layout: "store"
 slug: "taste-nature-dunedin"
-name: "Taste Nature (Dunedin)"
-brand: "Taste Nature (Dunedin)"
+name: "Taste Nature"
+brand: "Taste Nature"
 type: "organic-store"
 category: "retailer"
-description: "Organic supermarket and cafe – largest in Otago"
+description: "Dunedin’s dedicated organic and wholefood supermarket."
 country: "NZ"
 country_slug: "new-zealand"
 region: "Otago"
 city_town: "Dunedin"
-suburb: "Dunedin Central"
-address: "131 High Street"
-postcode: "9016"
+suburb: ""
+address: "133 High Street"
+postcode: ""
 lat: ""
-lon: -45.8805
-phone: "170.5001"
-email: "03 474 0219"
-website: "info@tastenature.co.nz"
-social_links:
-  - "https://tastenature.co.nz/"
+lon: ""
+phone: ""
+email: ""
+website: "https://www.tastenature.co.nz/"
+social_links: []
 sourcing_tags:
   - "organic"
-products: []
+products:
+  - "Pantry goods"
+  - "Vegetables"
+  - "Fruit"
 market_days: []
 source_urls:
-  - "Has on-site vegetarian cafe"
-last_checked: "Taste Nature contact"
-notes: "Retail"
+  - "https://www.tastenature.co.nz/"
+last_checked: ""
+notes: ""
+published: true
 ---
+Long-standing organic grocer and wholefood store in Dunedin with certified organic produce, bulk wholefoods, and ethically sourced groceries. Source: https://www.tastenature.co.nz/
+

@@ -1,0 +1,26 @@
+---
+title: "Kakariki Kitchen"
+slug: kakariki-kitchen-whanganui
+published: true
+country: "New Zealand"
+country_slug: new-zealand
+region: "Manawatu-Whanganui"
+city: "Whanganui"
+lat: 
+lon: 
+practices:
+  - "Organic (uncertified)"
+  - "Local sourcing"
+products:
+  - "Coffee and tea"
+services:
+  - "Restaurant supply"
+sources: []
+supplies_to: []
+hours: ""
+website: ""
+email: ""
+phone: ""
+description: "Whanganui café using organic coffee and aiming for local, ethical ingredients."
+---
+Café focused on organic coffee and sourcing local, ethical ingredients where possible. Source: user-supplied list

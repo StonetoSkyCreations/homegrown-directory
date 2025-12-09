@@ -1,0 +1,27 @@
+---
+title: "Solscape – The Conscious Kitchen"
+slug: solscape-conscious-kitchen
+published: true
+country: "New Zealand"
+country_slug: new-zealand
+region: "Waikato"
+city: "Raglan"
+lat: 
+lon: 
+practices:
+  - "Organic (uncertified)"
+  - "Seasonal menu"
+products:
+  - "Coffee and tea"
+  - "Bread and bakery"
+services:
+  - "Restaurant supply"
+sources: []
+supplies_to: []
+hours: ""
+website: "https://solscape.co.nz/eat/"
+email: ""
+phone: ""
+description: "Eco-retreat café serving organic, locally sourced, seasonal dishes in Raglan."
+---
+Cafe at Solscape eco-retreat offering organic, locally sourced cuisine with an emphasis on seasonal, sustainable ingredients. Source: https://solscape.co.nz/eat/
