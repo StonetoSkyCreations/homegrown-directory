@@ -3,17 +3,45 @@ layout: default
 map: false
 ---
 {% assign display_title = page.title | default: page.name %}
+{% assign review_target = page.slug | default: page.title | slugify %}
+{% assign encoded_title = page.title | default: page.name | uri_escape %}
+{% assign address_parts = "" | split: "" %}
+{% if page.address %}{% assign address_parts = address_parts | push: page.address %}{% endif %}
+{% if page.suburb %}{% assign address_parts = address_parts | push: page.suburb %}{% endif %}
+{% if page.city or page.city_town %}{% assign address_parts = address_parts | push: page.city | default: page.city_town %}{% endif %}
+{% if page.region %}{% assign address_parts = address_parts | push: page.region %}{% endif %}
+{% if page.country %}{% assign address_parts = address_parts | push: page.country %}{% endif %}
+{% assign display_address = address_parts | join: ', ' %}
+{% assign has_street = page.address and page.address != '' %}
+{% assign has_coords = page.lat and page.lon and page.lat != '' and page.lon != '' %}
+{% assign maps_query = display_address | uri_escape %}
+{% assign website_url = page.website | default: "" %}
+{% if website_url != "" and website_url contains "://" %}
+{% elsif website_url != "" %}
+  {% assign website_url = "https://" | append: website_url %}
+{% endif %}
+{% assign phone_href = page.phone | default: "" | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
 <section class="listing">
   <header class="listing__header">
     <div>
       <p class="listing__type">{{ page.type | default: 'Vendor' | capitalize }}</p>
       <h1>{{ display_title }}</h1>
-      <p class="listing__location">{{ page.suburb | default: page.city_town }}, {{ page.region }}, {{ page.country }}</p>
-      {% if page.website or page.email or page.phone %}
+      <p class="listing__location">
+        {% if has_street %}
+          <a class="listing__location-link" href="https://www.google.com/maps/search/?api=1&query={{ maps_query }}" target="_blank" rel="noopener">
+            {{ display_address }}
+          </a>
+        {% elsif display_address != "" %}
+          <span class="muted">{{ display_address }}</span>
+        {% else %}
+          <span class="muted">Address not provided yet.</span>
+        {% endif %}
+      </p>
+      {% if website_url != "" or page.email or phone_href != "" %}
       <div class="listing__contact">
-        {% if page.website %}<a href="{{ page.website }}" rel="noopener">Website</a>{% endif %}
+        {% if website_url != "" %}<a href="{{ website_url }}" rel="noopener">Website</a>{% endif %}
         {% if page.email %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
-        {% if page.phone %}<span>{{ page.phone }}</span>{% endif %}
+        {% if phone_href != "" %}<a href="tel:{{ phone_href }}">{{ page.phone }}</a>{% endif %}
       </div>
       {% endif %}
     </div>
@@ -24,6 +52,11 @@ map: false
   </div>
 
   <div class="listing__meta">
+    <div class="listing__actions">
+      <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}">Update listing</a>
+      <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}">Review this place</a>
+    </div>
+    {% include rating.html listing=page %}
     {% if page.sourcing_tags %}
       <div>
         <h2>Sourcing</h2>

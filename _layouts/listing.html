@@ -26,6 +26,12 @@ map: false
 {% assign has_street = page.address and page.address != '' %}
 {% assign has_coords = page.lat and page.lon and page.lat != '' and page.lon != '' %}
 {% assign maps_query = display_address | uri_escape %}
+{% assign website_url = page.website | default: "" %}
+{% if website_url != "" and website_url contains "://" %}
+{% elsif website_url != "" %}
+  {% assign website_url = "https://" | append: website_url %}
+{% endif %}
+{% assign phone_href = page.phone | default: "" | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
 {% case page.collection %}
   {% when 'farms' %}{% assign schema_type = 'Farm' %}{% assign display_label = 'Farm' %}
   {% when 'restaurants' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Eatery' %}
@@ -55,11 +61,11 @@ map: false
           <span class="muted">Address not provided yet.</span>
         {% endif %}
       </p>
-      {% if page.website or page.email or page.phone %}
+      {% if website_url != "" or page.email or phone_href != "" %}
       <div class="listing__contact">
-        {% if page.website %}<a href="{{ page.website }}" rel="noopener">Website</a>{% endif %}
+        {% if website_url != "" %}<a href="{{ website_url }}" rel="noopener">Website</a>{% endif %}
         {% if page.email %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
-        {% if page.phone %}<span>{{ page.phone }}</span>{% endif %}
+        {% if phone_href != "" %}<a href="tel:{{ phone_href }}">{{ page.phone }}</a>{% endif %}
       </div>
       {% endif %}
     </div>
