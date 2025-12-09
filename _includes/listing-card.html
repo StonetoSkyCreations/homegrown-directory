@@ -1,20 +1,28 @@
-<article class="listing-card">
+{% assign practices_tags = listing.practices | default: listing.practices_tags | default: listing.sourcing_tags | default: listing.services | default: empty %}
+{% assign practices_joined = practices_tags | join: ',' %}
+<article class="listing-card"
+  data-region="{{ listing.region | escape }}"
+  data-city="{{ listing.city | default: listing.city_town | escape }}"
+  data-type="{{ listing.type | default: listing.collection | escape }}"
+  data-practices="{{ practices_joined | escape }}">
   <div class="listing-card__meta">
-    <span class="pill pill--type">{{ listing.collection | capitalize }}</span>
-    <span class="listing-card__location">{{ listing.city | default: listing.city_town }}, {{ listing.region }}, {{ listing.country }}</span>
+    <span class="pill pill--type">{{ listing.type | default: listing.collection | capitalize }}</span>
+    <span class="listing-card__location">{{ listing.city | default: listing.city_town }}, {{ listing.region }}</span>
   </div>
   <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ listing.title | default: listing.name }}</a></h3>
   <p class="listing-card__summary">{{ listing.description | default: listing.excerpt | strip_html | truncate: 130 }}</p>
   <div class="listing-card__tags">
-    {% assign tags = listing.practices | default: listing.products | default: listing.services %}
-    {% if tags %}
+    {% if practices_tags and practices_tags.size > 0 %}
     <ul class="tag-list">
-      {% for tag in tags limit: 4 %}
+      {% for tag in practices_tags limit: 4 %}
       <li>{{ tag }}</li>
       {% endfor %}
     </ul>
     {% else %}
-    <p class="muted">Details coming soon.</p>
+    <p class="muted">Learn more.</p>
     {% endif %}
+    <div class="listing-card__actions">
+      <a class="button ghost" href="{{ listing.url | relative_url }}">Learn more</a>
+    </div>
   </div>
 </article>

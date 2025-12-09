@@ -1,118 +1,43 @@
 ---
 layout: default
 title: Home
-map: true
 ---
 
 <section class="hero">
-  <p class="eyebrow">Aotearoa first, global soon</p>
+  <p class="eyebrow">Aotearoa New Zealand</p>
   <h1>Find food grown with integrity.</h1>
-  <p class="lead">A simple directory for organic, regenerative, biodynamic, spray-free, and pasture-raised food systems. Trace who grew it, who moves it, and where to buy or eat it.</p>
+  <p class="lead">A simple, human-friendly directory to help people find honest food, and help businesses find farms and producers.</p>
   <div class="hero__actions">
-    <a class="button" href="{{ '/country/new-zealand/' | relative_url }}">Browse New Zealand</a>
-    <a class="button ghost" href="#search">Search the directory</a>
+    <a class="button" href="{{ '/groceries/' | relative_url }}">Find Groceries</a>
+    <a class="button" href="{{ '/eateries/' | relative_url }}">Find Cafés &amp; Restaurants</a>
+    <a class="button" href="{{ '/markets/' | relative_url }}">Find Markets</a>
+    <a class="button ghost" href="{{ '/farms/' | relative_url }}">Find Farms &amp; Producers (for businesses)</a>
   </div>
 </section>
 
-<section class="search-section" id="search">
+<section class="search-section">
   <div class="search-controls">
-    <label for="searchInput" class="muted">Search name, location, tags</label>
-    <input id="searchInput" type="search" placeholder="Try “organic eggs Christchurch”" autocomplete="off">
+    <label for="searchInput" class="muted">Search by region, city, or vendor name…</label>
+    <input id="searchInput" type="search" placeholder="Try “Wellington organic”" autocomplete="off">
   </div>
-
-  <div class="filters">
-    <div class="filter-group">
-      <p class="filter-label">Type</p>
-      <div class="pill-group">
-        {% for type in site.data.taxonomies.types %}
-          {% assign value = type | downcase %}
-          <label class="pill pill--checkbox">
-            <input type="checkbox" name="type" value="{{ value }}">
-            <span>{{ type }}</span>
-          </label>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="filter-group">
-      <p class="filter-label">Practices</p>
-      <div class="pill-group">
-        {% for practice in site.data.taxonomies.practices %}
-        <label class="pill pill--checkbox">
-          <input type="checkbox" name="practices" value="{{ practice }}">
-          <span>{{ practice }}</span>
-        </label>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="filter-group">
-      <p class="filter-label">Products</p>
-      <div class="pill-group">
-        {% for product in site.data.taxonomies.products %}
-        <label class="pill pill--checkbox">
-          <input type="checkbox" name="products" value="{{ product }}">
-          <span>{{ product }}</span>
-        </label>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="filter-group">
-      <p class="filter-label">Sales channels</p>
-      <div class="pill-group">
-        {% for service in site.data.taxonomies.services %}
-        <label class="pill pill--checkbox">
-          <input type="checkbox" name="services" value="{{ service }}">
-          <span>{{ service }}</span>
-        </label>
-        {% endfor %}
-      </div>
-    </div>
-    <button class="button ghost" id="clearFilters" type="button">Clear filters</button>
-  </div>
-
   <div class="results-toolbar">
     <div id="resultsCount" class="muted">Loading listings…</div>
-    <button class="button" id="toggleMap" type="button">Show map</button>
   </div>
-
   <div class="results-layout">
     <div id="listingResults" class="listing-grid listing-grid--tight" aria-live="polite"></div>
-    <div class="map-panel" id="mapPanel">
-      <div id="map"></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div>
+      <p>About</p>
+      <p class="muted">A public, static directory for integrity-first food systems in Aotearoa.</p>
+    </div>
+    <div class="footer-meta">
+      <a href="https://github.com/stonetoskycreations/homegrown-directory">GitHub</a> ·
+      <a href="mailto:hello@example.com">Contact</a> ·
+      <a href="https://github.com/stonetoskycreations/homegrown-directory">Add a Listing</a>
     </div>
   </div>
-</section>
-
-<section class="category-grid">
-  <a class="category-card" href="{{ '/farms/' | relative_url }}">
-    <h3>Farms & producers</h3>
-    <p>Organic, regenerative, biodynamic, spray-free, pasture-raised.</p>
-  </a>
-  <a class="category-card" href="{{ '/markets/' | relative_url }}">
-    <h3>Markets & stalls</h3>
-    <p>Weekend farmers markets, roadside stands, seasonal pop-ups.</p>
-  </a>
-  <a class="category-card" href="{{ '/stores/' | relative_url }}">
-    <h3>Stores & co-ops</h3>
-    <p>Independent grocers, refilleries, and honest provenance retailers.</p>
-  </a>
-  <a class="category-card" href="{{ '/restaurants/' | relative_url }}">
-    <h3>Cafés & kitchens</h3>
-    <p>Eateries that name their farmers and keep menus seasonal.</p>
-  </a>
-  <a class="category-card" href="{{ '/distributors/' | relative_url }}">
-    <h3>Hubs & distributors</h3>
-    <p>Aggregators, CSAs, and logistics partners moving good food.</p>
-  </a>
-</section>
-
-<section class="info-block">
-  <div>
-    <h2>Why this exists</h2>
-    <p>We map relationships — who grows, who aggregates, who cooks, and where you can buy. Listings are Markdown files with structured frontmatter so anyone can add or update entries.</p>
-    <p>Start with Aotearoa New Zealand and expand globally as the map fills in.</p>
-  </div>
-  <div class="info-block__actions">
-    <a class="button" href="{{ '/country/new-zealand/' | relative_url }}">See all NZ listings</a>
-    <a class="button ghost" href="https://github.com/stonetoskycreations/homegrown-directory">Contribute on GitHub</a>
-  </div>
-</section>
+</footer>

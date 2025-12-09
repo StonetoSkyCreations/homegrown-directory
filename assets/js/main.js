@@ -35,6 +35,46 @@
   const hasUI = resultsContainer || mapPanel;
   if (!hasUI) return;
 
+  // Simple directory filtering (region + tags + subtype) for directory pages
+  const directoryContainer = document.querySelector(".directory-page");
+  if (directoryContainer) {
+    const regionSelect = document.getElementById("regionFilter");
+    const tagFilters = Array.from(document.querySelectorAll('input[name="tag"]'));
+    const subtypeFilters = Array.from(document.querySelectorAll('input[name="subtype"]'));
+    const cards = Array.from(directoryContainer.querySelectorAll(".listing-card"));
+    const dirResultsCount = document.getElementById("dirResultsCount");
+
+    const applyDirectoryFilters = () => {
+      const selectedRegion = regionSelect ? regionSelect.value : "all";
+      const selectedTags = tagFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
+      const selectedSubtypes = subtypeFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const region = (card.dataset.region || "").toLowerCase();
+        const practices = (card.dataset.practices || "").toLowerCase().split(",").filter(Boolean);
+        const subtype = (card.dataset.type || "").toLowerCase();
+
+        const regionOk = selectedRegion === "all" || region === selectedRegion.toLowerCase();
+        const tagsOk = selectedTags.every((t) => practices.includes(t));
+        const subtypeOk = selectedSubtypes.length === 0 || selectedSubtypes.includes(subtype);
+
+        const show = regionOk && tagsOk && subtypeOk;
+        card.style.display = show ? "" : "none";
+        if (show) visibleCount += 1;
+      });
+
+      if (dirResultsCount) {
+        dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
+      }
+    };
+
+    if (regionSelect) regionSelect.addEventListener("change", applyDirectoryFilters);
+    tagFilters.forEach((c) => c.addEventListener("change", applyDirectoryFilters));
+    subtypeFilters.forEach((c) => c.addEventListener("change", applyDirectoryFilters));
+    applyDirectoryFilters();
+  }
+
   const applyHashPrefill = () => {
     if (!initialHash) return;
     const typeKeys = Object.keys(typeLabels);

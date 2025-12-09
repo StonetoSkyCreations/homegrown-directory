@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Farms
-permalink: /farms/
+title: Groceries
+permalink: /groceries/
 ---
-{% assign items = site.farms | sort: 'name' %}
+{% assign items = site.stores | sort: 'name' %}
 {% assign regions = items | map: 'region' | uniq | sort %}
 <section class="directory-page">
   <header class="collection-index__header">
-    <p class="eyebrow">Farms & producers</p>
-    <h1>Find farms and producers</h1>
-    <p class="lead">Organic, regenerative, spray-free, biodynamic, and pasture-raised farms for people and businesses.</p>
+    <p class="eyebrow">Groceries & retail</p>
+    <h1>Find honest groceries</h1>
+    <p class="lead">Supermarkets, co-ops, wholefood stores, and refilleries that foreground organic, spray-free, or local sourcing.</p>
   </header>
 
   <div class="filters">
@@ -35,9 +35,9 @@ permalink: /farms/
       </div>
     </div>
     <div class="filter-group">
-      <p class="filter-label">Producer type</p>
+      <p class="filter-label">Store type</p>
       <div class="pill-group">
-        {% assign subtypes = "farm,vineyard,tea,meat,dairy,seed" | split: "," %}
+        {% assign subtypes = "supermarket,organic-store,wholefoods-store,bulk-refillery,co-op,specialty-grocer" | split: "," %}
         {% for sub in subtypes %}
         <label class="pill pill--checkbox">
           <input type="checkbox" name="subtype" value="{{ sub }}">
