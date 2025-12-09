@@ -26,8 +26,14 @@ permalink: /submit.html
     </div>
 
     <div class="form-group">
-      <label for="owner_name">Business owner (optional)</label>
-      <input type="text" id="owner_name" name="owner_name" placeholder="Your name if you own or manage this business">
+      <label class="pill pill--checkbox">
+        <input type="checkbox" id="owner_checkbox" name="owner_checkbox">
+        <span>I’m the business owner</span>
+      </label>
+      <div id="owner_name_wrapper" style="display: none; margin-top: 0.6rem;">
+        <label for="owner_name">Your name (for owners)</label>
+        <textarea id="owner_name" name="owner_name" rows="2" placeholder="Add your name here"></textarea>
+      </div>
     </div>
 
     <div class="form-group">
@@ -107,10 +113,14 @@ permalink: /submit.html
   const params = new URLSearchParams(window.location.search);
   const nameInput = document.getElementById('name');
   const submissionTypeRadios = submitForm.querySelectorAll('input[name="submission_type"]');
+  const ownerCheckbox = document.getElementById('owner_checkbox');
+  const ownerNameField = document.getElementById('owner_name');
+  const ownerWrapper = document.getElementById('owner_name_wrapper');
 
   const listingRef = params.get('listing') || '';
   const presetName = params.get('name');
   const presetSubmissionType = params.get('submission_type');
+  const presetOwner = params.get('owner_name');
 
   if (params.get('type') === 'community') {
     const placeType = document.getElementById('place_type');
@@ -131,6 +141,21 @@ permalink: /submit.html
     });
   }
 
+  const toggleOwnerField = (forceShow = false) => {
+    const show = forceShow || ownerCheckbox.checked;
+    if (ownerWrapper) ownerWrapper.style.display = show ? 'block' : 'none';
+  };
+
+  if (presetOwner && ownerNameField) {
+    ownerNameField.value = presetOwner;
+    if (ownerCheckbox) ownerCheckbox.checked = true;
+    toggleOwnerField(true);
+  }
+
+  if (ownerCheckbox) {
+    ownerCheckbox.addEventListener('change', () => toggleOwnerField());
+  }
+
   submitForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = new FormData(submitForm);
@@ -145,7 +170,7 @@ permalink: /submit.html
       `Submission type: ${subType}`,
       `Type of place: ${data.get('place_type') || ''}`,
       `Business name: ${data.get('name') || ''}`,
-      `Business owner (if applicable): ${data.get('owner_name') || ''}`,
+      `Business owner (if applicable): ${data.get('owner_checkbox') ? data.get('owner_name') || '' : ''}`,
       `Address: ${data.get('address') || ''}`,
       `Website: ${data.get('website') || ''}`,
       `Social links: ${data.get('social') || ''}`,
