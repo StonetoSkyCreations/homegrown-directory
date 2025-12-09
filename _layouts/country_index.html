@@ -1,20 +1,21 @@
-<!-- Layout for showing all listings in a given country, grouped by collection type. -->
 ---
 layout: default
 ---
 <section class="country-index">
   <header class="country-index__header">
+    <p class="eyebrow">Country</p>
     <h1>{{ page.title }}</h1>
-    <p>Explore farms, markets, stores, restaurants, and distributors contributing to transparent food systems in {{ page.title }}.</p>
+    <p class="lead">Explore farms, markets, stores, restaurants, and hubs contributing to transparent food systems in {{ page.title }}.</p>
+    <a class="country-link" href="{{ '/map/#' | append: page.country_slug | relative_url }}">View on map</a>
   </header>
 
   <div class="country-index__content">
-    {% assign collection_map = 'Farms:farms,Markets:markets,Stores:stores,Restaurants:restaurants,Distributors:distributors' | split: ',' %}
+    {% assign collection_map = 'Farms:farms,Markets:markets,Stores:stores,Restaurants:restaurants,Hubs:distributors' | split: ',' %}
     {% for entry in collection_map %}
       {% assign parts = entry | split: ':' %}
       {% assign label = parts[0] %}
       {% assign key = parts[1] %}
-      {% assign items = site[key] | where: 'country', page.title | sort: 'title' %}
+      {% assign items = site[key] | where: 'country_slug', page.country_slug | sort: 'title' %}
       <section class="country-section">
         <div class="country-section__header">
           <h2>{{ label }}</h2>

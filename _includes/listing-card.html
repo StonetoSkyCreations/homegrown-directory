@@ -1,10 +1,12 @@
-<!-- Reusable card for showing a listing summary in lists and indexes. -->
 <article class="listing-card">
-  <p class="listing-card__type">{{ listing.collection | capitalize }}</p>
+  <div class="listing-card__meta">
+    <span class="pill pill--type">{{ listing.collection | capitalize }}</span>
+    <span class="listing-card__location">{{ listing.city }}, {{ listing.region }}, {{ listing.country }}</span>
+  </div>
   <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ listing.title }}</a></h3>
-  <p class="listing-card__location">{{ listing.city }}, {{ listing.region }}, {{ listing.country }}</p>
+  <p class="listing-card__summary">{{ listing.description | default: listing.excerpt | strip_html | truncate: 130 }}</p>
   <div class="listing-card__tags">
-    {% assign tags = listing.practices | default: listing.products | default: listing.sources | default: listing.vendors %}
+    {% assign tags = listing.practices | default: listing.products | default: listing.services %}
     {% if tags %}
     <ul class="tag-list">
       {% for tag in tags limit: 4 %}

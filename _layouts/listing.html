@@ -1,12 +1,39 @@
-<!-- Layout for individual listings across all collections (farm, market, store, restaurant, distributor). -->
 ---
 layout: default
+map: false
 ---
+{% assign empty_array = "" | split: "" %}
+{% assign supplies_list = page.supplies_to | default: empty_array %}
+{% assign sources_list = page.sources | default: empty_array %}
+{% assign all_listings = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors %}
+{% assign outgoing_supplies = all_listings | where_exp: 'item', 'supplies_list contains item.slug' | uniq %}
+{% assign incoming_from_supplies = all_listings | where_exp: 'item', 'item.supplies_to contains page.slug' %}
+{% assign incoming_from_sources = all_listings | where_exp: 'item', 'item.sources contains page.slug' %}
+{% assign incoming_sources = incoming_from_supplies | concat: incoming_from_sources | uniq | where_exp: 'item', 'item.slug != page.slug' %}
+{% assign source_partners = all_listings | where_exp: 'item', 'sources_list contains item.slug' | uniq %}
+{% assign schema_type = 'LocalBusiness' %}
+{% case page.collection %}
+  {% when 'farms' %}{% assign schema_type = 'Farm' %}
+  {% when 'restaurants' %}{% assign schema_type = 'Restaurant' %}
+  {% when 'stores' %}{% assign schema_type = 'GroceryStore' %}
+  {% when 'markets' %}{% assign schema_type = 'Store' %}
+  {% when 'distributors' %}{% assign schema_type = 'WholesaleStore' %}
+{% endcase %}
+
 <section class="listing">
   <header class="listing__header">
-    <p class="listing__type">{{ page.collection | capitalize }}</p>
-    <h1>{{ page.title }}</h1>
-    <p class="listing__location">{{ page.city }}, {{ page.region }}, {{ page.country }}</p>
+    <div>
+      <p class="listing__type">{{ page.collection | capitalize }}</p>
+      <h1>{{ page.title }}</h1>
+      <p class="listing__location">{{ page.city }}, {{ page.region }}, {{ page.country }}</p>
+      {% if page.website or page.email or page.phone %}
+      <div class="listing__contact">
+        {% if page.website %}<a href="{{ page.website }}" rel="noopener">Website</a>{% endif %}
+        {% if page.email %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
+        {% if page.phone %}<span>{{ page.phone }}</span>{% endif %}
+      </div>
+      {% endif %}
+    </div>
   </header>
 
   <div class="listing__content">
@@ -15,58 +42,103 @@ layout: default
 
   <div class="listing__meta">
     {% if page.practices %}
-    <div>
-      <h2>Practices</h2>
-      <ul class="tag-list">
-        {% for practice in page.practices %}
-        <li>{{ practice }}</li>
-        {% endfor %}
-      </ul>
-    </div>
+      <div>
+        <h2>Practices</h2>
+        <ul class="tag-list">
+          {% for practice in page.practices %}
+          <li>{{ practice }}</li>
+          {% endfor %}
+        </ul>
+      </div>
     {% endif %}
 
     {% if page.products %}
-    <div>
-      <h2>Products</h2>
-      <ul class="tag-list">
-        {% for product in page.products %}
-        <li>{{ product }}</li>
-        {% endfor %}
-      </ul>
-    </div>
+      <div>
+        <h2>Products</h2>
+        <ul class="tag-list">
+          {% for product in page.products %}
+          <li>{{ product }}</li>
+          {% endfor %}
+        </ul>
+      </div>
     {% endif %}
 
-    {% if page.sources %}
-    <div>
-      <h2>Sources</h2>
-      <ul class="tag-list">
-        {% for source in page.sources %}
-        <li>{{ source }}</li>
-        {% endfor %}
-      </ul>
-    </div>
+    {% if page.services %}
+      <div>
+        <h2>Services & sales channels</h2>
+        <ul class="tag-list">
+          {% for service in page.services %}
+          <li>{{ service }}</li>
+          {% endfor %}
+        </ul>
+      </div>
     {% endif %}
 
-    {% if page.vendors %}
-    <div>
-      <h2>Vendors</h2>
-      <ul class="tag-list">
-        {% for vendor in page.vendors %}
-        <li>{{ vendor }}</li>
-        {% endfor %}
-      </ul>
-    </div>
+    {% if page.hours %}
+      <div>
+        <h2>Hours / schedule</h2>
+        <p class="muted">{{ page.hours }}</p>
+      </div>
     {% endif %}
 
-    {% if page.supplies_to %}
-    <div>
-      <h2>Supplies To</h2>
-      <ul class="tag-list">
-        {% for partner in page.supplies_to %}
-        <li>{{ partner }}</li>
-        {% endfor %}
-      </ul>
-    </div>
+    {% if source_partners %}
+      <div>
+        <h2>Sourced from</h2>
+        <ul class="link-list">
+          {% for item in source_partners %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if outgoing_supplies %}
+      <div>
+        <h2>Supplies to</h2>
+        <ul class="link-list">
+          {% for item in outgoing_supplies %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if incoming_sources %}
+      <div>
+        <h2>Also referenced by</h2>
+        <ul class="link-list">
+          {% for item in incoming_sources %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
+          {% endfor %}
+        </ul>
+      </div>
     {% endif %}
   </div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ schema_type }}",
+  "name": "{{ page.title | escape }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | escape }}",
+  "url": "{{ page.url | absolute_url }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "{{ page.city | escape }}",
+    "addressRegion": "{{ page.region | escape }}",
+    "addressCountry": "{{ page.country | escape }}"
+  },
+  {% if page.lat and page.lon %}
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": {{ page.lat }},
+    "longitude": {{ page.lon }}
+  },
+  {% endif %}
+  {% if page.hours %}"openingHours": "{{ page.hours | escape }}",{% endif %}
+  {% if page.phone %}"telephone": "{{ page.phone | escape }}",{% endif %}
+  {% if page.website %}"sameAs": ["{{ page.website | escape }}"],{% endif %}
+  "areaServed": "{{ page.country | escape }}"
+}
+</script>

@@ -1,25 +1,60 @@
-title: Food Integrity Directory
+title: Homegrown Directory
 description: >-
-  A static directory for integrity-based food systems, starting in Aotearoa New Zealand.
-baseurl: ""   # e.g. "/homegrown-directory" if using project pages
-url: ""       # e.g. "https://stonetoskycreations.github.io"
+  A global, integrity-first food directory mapping producers, markets, stores, restaurants, and hubs — starting in Aotearoa New Zealand.
+baseurl: "" # set to "/homegrown-directory" if deploying to a project page
+url: "https://homegrown-directory.example" # update to your canonical host (https://user.github.io/homegrown-directory)
+timezone: Pacific/Auckland
+permalink: pretty
 
 collections:
   farms:
     output: true
-    permalink: /farms/:country/:slug/
+    permalink: /farms/:country_slug/:slug/
   markets:
     output: true
-    permalink: /markets/:country/:slug/
+    permalink: /markets/:country_slug/:slug/
   stores:
     output: true
-    permalink: /stores/:country/:slug/
+    permalink: /stores/:country_slug/:slug/
   restaurants:
     output: true
-    permalink: /restaurants/:country/:slug/
+    permalink: /restaurants/:country_slug/:slug/
   distributors:
     output: true
-    permalink: /distributors/:country/:slug/
+    permalink: /distributors/:country_slug/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: farms
+    values:
+      layout: listing
+  - scope:
+      path: ""
+      type: markets
+    values:
+      layout: listing
+  - scope:
+      path: ""
+      type: stores
+    values:
+      layout: listing
+  - scope:
+      path: ""
+      type: restaurants
+    values:
+      layout: listing
+  - scope:
+      path: ""
+      type: distributors
+    values:
+      layout: listing
 
 markdown: kramdown
-plugins: []
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
