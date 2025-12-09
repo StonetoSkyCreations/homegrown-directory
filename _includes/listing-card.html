@@ -1,17 +1,42 @@
 {% assign practices_tags = listing.practices | default: listing.practices_tags | default: listing.sourcing_tags | default: listing.services | default: empty %}
 {% assign practices_joined = practices_tags | join: ',' %}
 {% assign review_target = listing.slug | default: listing.title | default: listing.name | slugify %}
+{% assign card_title = listing.title | default: listing.name %}
+{% assign card_type = listing.collection %}
+{% assign card_label = card_type | capitalize %}
+{% case listing.collection %}
+  {% when 'stores' %}
+    {% assign card_type = 'grocer' %}
+    {% assign card_label = 'Grocer' %}
+  {% when 'restaurants' %}
+    {% assign card_type = 'eatery' %}
+    {% assign card_label = 'Eatery' %}
+  {% when 'vendors' %}
+    {% assign card_type = 'eatery' %}
+    {% assign card_label = 'Eatery' %}
+  {% when 'markets' %}
+    {% assign card_type = 'market' %}
+    {% assign card_label = 'Market' %}
+  {% when 'farms' %}
+    {% assign card_type = 'farm' %}
+    {% assign card_label = 'Farm' %}
+  {% when 'distributors' %}
+    {% assign card_type = 'hub' %}
+    {% assign card_label = 'Hub' %}
+{% endcase %}
 <article class="listing-card"
   data-region="{{ listing.region | escape }}"
   data-city="{{ listing.city | default: listing.city_town | escape }}"
+  data-name="{{ card_title | escape }}"
   data-type="{{ listing.type | default: listing.collection | escape }}"
+  data-category="{{ card_type | escape }}"
   data-country="{{ listing.country_slug | escape }}"
   data-practices="{{ practices_joined | escape }}">
   <div class="listing-card__meta">
-    <span class="pill pill--type">{{ listing.type | default: listing.collection | capitalize }}</span>
+    <span class="pill pill--type">{{ card_label }}</span>
     <span class="listing-card__location">{{ listing.city | default: listing.city_town }}, {{ listing.region }}</span>
   </div>
-  <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ listing.title | default: listing.name }}</a></h3>
+  <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ card_title }}</a></h3>
   <p class="listing-card__summary">{{ listing.description | default: listing.excerpt | strip_html | truncate: 130 }}</p>
   <div class="listing-card__tags">
     {% if practices_tags and practices_tags.size > 0 %}

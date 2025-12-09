@@ -13,18 +13,20 @@ map: false
 {% assign incoming_sources = incoming_from_supplies | concat: incoming_from_sources | uniq | where_exp: 'item', 'item.slug != page.slug' %}
 {% assign source_partners = all_listings | where_exp: 'item', 'sources_list contains item.slug' | uniq %}
 {% assign schema_type = 'LocalBusiness' %}
+{% assign display_label = page.collection | capitalize %}
 {% case page.collection %}
-  {% when 'farms' %}{% assign schema_type = 'Farm' %}
-  {% when 'restaurants' %}{% assign schema_type = 'Restaurant' %}
-  {% when 'stores' %}{% assign schema_type = 'GroceryStore' %}
-  {% when 'markets' %}{% assign schema_type = 'Store' %}
-  {% when 'distributors' %}{% assign schema_type = 'WholesaleStore' %}
+  {% when 'farms' %}{% assign schema_type = 'Farm' %}{% assign display_label = 'Farm' %}
+  {% when 'restaurants' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Eatery' %}
+  {% when 'vendors' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Eatery' %}
+  {% when 'stores' %}{% assign schema_type = 'GroceryStore' %}{% assign display_label = 'Grocer' %}
+  {% when 'markets' %}{% assign schema_type = 'Store' %}{% assign display_label = 'Market' %}
+  {% when 'distributors' %}{% assign schema_type = 'WholesaleStore' %}{% assign display_label = 'Hub' %}
 {% endcase %}
 
 <section class="listing">
   <header class="listing__header">
     <div>
-      <p class="listing__type">{{ page.collection | capitalize }}</p>
+      <p class="listing__type">{{ display_label }}</p>
       <h1>{{ display_title }}</h1>
       <p class="listing__location">
         {% if page.address %}{{ page.address }}{% endif %}

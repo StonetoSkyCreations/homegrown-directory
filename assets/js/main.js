@@ -32,8 +32,9 @@
   const typeLabels = {
     farms: "Farms",
     markets: "Markets",
-    stores: "Stores",
-    restaurants: "Restaurants",
+    stores: "Grocers",
+    restaurants: "Eateries",
+    vendors: "Eateries",
     distributors: "Hubs"
   };
 
@@ -42,6 +43,7 @@
     markets: "#ff8a3d",
     stores: "#2d6cdf",
     restaurants: "#a05c1f",
+    vendors: "#a05c1f",
     distributors: "#725ac1"
   };
 
@@ -125,6 +127,7 @@
   const directoryContainer = document.querySelector(".directory-page");
   if (directoryContainer) {
     const regionSelect = document.getElementById("regionFilter");
+    const textFilter = document.getElementById("dirSearch");
     const tagFilters = Array.from(document.querySelectorAll('input[name="tag"]'));
     const subtypeFilters = Array.from(document.querySelectorAll('input[name="subtype"]'));
     const cards = Array.from(directoryContainer.querySelectorAll(".listing-card"));
@@ -132,6 +135,7 @@
 
     runDirectoryFilters = () => {
       const selectedRegion = regionSelect ? regionSelect.value : "all";
+      const query = textFilter ? textFilter.value.toLowerCase().trim() : "";
       const selectedTags = tagFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
       const selectedSubtypes = subtypeFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
       const activeCountry = getActiveCountry();
@@ -142,13 +146,16 @@
         const practices = (card.dataset.practices || "").toLowerCase().split(",").filter(Boolean);
         const subtype = (card.dataset.type || "").toLowerCase();
         const country = (card.dataset.country || "").toLowerCase();
+        const name = (card.dataset.name || "").toLowerCase();
+        const city = (card.dataset.city || "").toLowerCase();
 
         const regionOk = selectedRegion === "all" || region === selectedRegion.toLowerCase();
         const tagsOk = selectedTags.every((t) => practices.includes(t));
         const subtypeOk = selectedSubtypes.length === 0 || selectedSubtypes.includes(subtype);
         const countryOk = !activeCountry || country === activeCountry;
+        const textOk = !query || name.includes(query) || region.includes(query) || city.includes(query) || practices.join(" ").includes(query);
 
-        const show = regionOk && tagsOk && subtypeOk && countryOk;
+        const show = regionOk && tagsOk && subtypeOk && countryOk && textOk;
         card.style.display = show ? "" : "none";
         if (show) visibleCount += 1;
       });
@@ -159,6 +166,7 @@
     };
 
     if (regionSelect) regionSelect.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters());
+    if (textFilter) textFilter.addEventListener("input", () => runDirectoryFilters && runDirectoryFilters());
     tagFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
     subtypeFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
   }

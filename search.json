@@ -5,12 +5,23 @@ permalink: /search.json
 [
 {% assign all = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors | concat: site.vendors %}
 {% for doc in all %}
+  {% assign display_type = doc.collection | capitalize %}
+  {% case doc.collection %}
+    {% when 'stores' %}
+      {% assign display_type = 'Grocer' %}
+    {% when 'restaurants' %}
+      {% assign display_type = 'Eatery' %}
+    {% when 'vendors' %}
+      {% assign display_type = 'Eatery' %}
+    {% when 'distributors' %}
+      {% assign display_type = 'Hub' %}
+  {% endcase %}
   {
     "id": "{{ doc.id | default: doc.slug | slugify }}",
     "title": {{ doc.title | default: doc.name | jsonify }},
     "name": {{ doc.name | default: doc.title | jsonify }},
     "collection": "{{ doc.collection }}",
-    "type": "{{ doc.collection | capitalize }}",
+    "type": "{{ display_type }}",
     "slug": "{{ doc.slug }}",
     "url": "{{ doc.url | relative_url }}",
     "country": {{ doc.country | jsonify }},

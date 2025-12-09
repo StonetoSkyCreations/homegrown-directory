@@ -204,6 +204,13 @@ a:focus-visible {
   display: grid;
   gap: 0.75rem;
 }
+.hero--home {
+  gap: 1rem;
+}
+.hero__text {
+  display: grid;
+  gap: 0.35rem;
+}
 .hero h1 {
   margin: 0.1rem 0 0.35rem;
   font-family: "Space Grotesk", sans-serif;
@@ -229,6 +236,41 @@ a:focus-visible {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 0.25rem;
+}
+.hero--home .hero__actions .button {
+  min-width: 180px;
+}
+
+.directory-hero {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.directory-controls {
+  background: #f7f8f4;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  display: grid;
+  gap: 0.55rem;
+}
+.directory-controls input,
+.directory-controls select {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.filter-row {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.4rem 0 0.8rem;
 }
 
 .about-hero {
@@ -838,6 +880,10 @@ a:focus-visible {
   .hero {
     padding: 2.5rem;
   }
+  .hero--home {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+  }
   .results-layout {
     grid-template-columns: 2fr 1fr;
   }
@@ -855,6 +901,14 @@ a:focus-visible {
   }
   .markets-hero {
     grid-template-columns: 1.6fr 1.4fr;
+    align-items: center;
+  }
+  .directory-hero {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+  .filter-row {
+    grid-template-columns: 0.4fr 1fr;
     align-items: center;
   }
 }

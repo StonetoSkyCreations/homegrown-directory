@@ -3,94 +3,27 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
-  <p class="eyebrow">Aotearoa NZ + Australia</p>
-  <h1>Find food grown with integrity.</h1>
-  <p class="lead">A simple, human-friendly directory to help people find honest food, and help businesses find farms and producers across both countries.</p>
-  <p class="muted country-note">
-    Showing: <span data-country-label>New Zealand</span>. Use the country switcher above to change.
-    <span class="country-note__links"><a href="{{ '/country/new-zealand/' | relative_url }}">NZ listings</a> · <a href="{{ '/country/australia/' | relative_url }}">Australia listings</a></span>
-  </p>
+<section class="hero hero--home">
+  <div class="hero__text">
+    <p class="eyebrow">Aotearoa NZ + Australia</p>
+    <h1>Find food grown with integrity.</h1>
+    <p class="lead">Search by what you need, or jump straight into farms, markets, grocers, or eateries.</p>
+    <p class="muted country-note">
+      Showing: <span data-country-label>New Zealand</span>. Use the country switcher above to change.
+      <span class="country-note__links"><a href="{{ '/country/new-zealand/' | relative_url }}">NZ listings</a> · <a href="{{ '/country/australia/' | relative_url }}">Australia listings</a></span>
+    </p>
+  </div>
   <div class="hero__actions">
     <a class="button" href="{{ '/groceries/' | relative_url }}">Find Groceries</a>
     <a class="button" href="{{ '/eateries/' | relative_url }}">Find Cafés &amp; Restaurants</a>
     <a class="button" href="{{ '/markets/' | relative_url }}">Find Markets</a>
     <a class="button ghost" href="{{ '/farms/' | relative_url }}">Find Farms &amp; Producers (for businesses)</a>
-    <a class="button" href="{{ '/submit.html' | relative_url }}">Add / Update a Listing</a>
   </div>
 </section>
 
-<section class="community-section">
-  <header class="community-section__header">
-    <div>
-      <p class="eyebrow">Community initiatives</p>
-      <h2>Grassroots projects nourishing people and soil.</h2>
-      <p class="muted">Movements turning surplus into meals, building local food resilience, and keeping good food out of landfill.</p>
-    </div>
-    <a class="button ghost" href="{{ '/submit.html?type=community' | relative_url }}">Share a community initiative</a>
-  </header>
-  <div class="community-grid">
-    <article class="community-card">
-      <div class="community-card__top">
-        <div>
-          <p class="pill pill--type">Community</p>
-          <h3>Homegrown (Ōtautahi)</h3>
-          <p class="community-card__location">Christchurch · Rescued organic produce → meals</p>
-        </div>
-        <div class="community-impact">
-          <div>
-            <p class="impact-label">Green bins rescued</p>
-            <p class="impact-value">13</p>
-          </div>
-          <div>
-            <p class="impact-label">Weight rescued</p>
-            <p class="impact-value">~650 kg</p>
-          </div>
-        </div>
-      </div>
-      <p class="community-card__summary">
-        Community-powered initiative turning surplus organic produce from Streamside Organics into nourishing stocks, soups, and pantry fillers for local hubs.
-      </p>
-      <ul class="community-points">
-        <li>Rescues surplus organic produce that would otherwise go to waste.</li>
-        <li>Transforms it into community meals and pantry staples; koha welcome.</li>
-        <li>Building mutual aid and food sovereignty across Christchurch.</li>
-      </ul>
-      <div class="community-meta">
-        <p class="muted">Currently paused — follow socials for the next soup cooks and pantry drops.</p>
-        <p class="muted">Wish list: large pots/ladles/colander, A1 sign, fridge space, mentors, commercial kitchen time, food safety/logistics support.</p>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="latest-articles">
-  <header class="latest-articles__header">
-    <p class="eyebrow">Latest articles</p>
-    <h2>Stories on organic, regenerative, and local food.</h2>
-    <p class="muted">Fresh reads from the Homegrown blog.</p>
-  </header>
-  <div class="blog-list blog-list--compact">
-    {% assign latest_posts = site.posts | sort: 'date' | reverse | slice: 0, 3 %}
-    {% for post in latest_posts %}
-      <article class="blog-card">
-        <p class="pill pill--type">Article</p>
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p class="muted blog-card__meta">{{ post.date | date: "%-d %B %Y" }}{% if post.tags %} · {{ post.tags | join: ", " }}{% endif %}</p>
-        {% if post.summary %}
-          <p class="blog-card__summary">{{ post.summary }}</p>
-        {% endif %}
-      </article>
-    {% endfor %}
-  </div>
-  <div class="latest-articles__cta">
-    <a class="button" href="{{ '/blog/' | relative_url }}">View all articles</a>
-  </div>
-</section>
-
-<section class="search-section">
+<section class="search-section search-section--home">
   <div class="search-controls">
-    <label for="searchInput" class="muted">Search by region, city, or vendor name…</label>
+    <label for="searchInput" class="muted">Search by region, city, or business name…</label>
     <input id="searchInput" type="search" placeholder="Try “Wellington organic”" autocomplete="off">
   </div>
   <div class="results-toolbar">
@@ -101,17 +34,3 @@ title: Home
     <div id="listingResults" class="listing-grid listing-grid--tight" aria-live="polite"></div>
   </div>
 </section>
-
-<footer class="site-footer">
-  <div class="site-footer__inner">
-    <div>
-      <p>About</p>
-      <p class="muted">A public, static directory for integrity-first food systems in Aotearoa.</p>
-    </div>
-    <div class="footer-meta">
-      <a href="https://github.com/stonetoskycreations/homegrown-directory">GitHub</a> ·
-      <a href="mailto:josh@stonetosky.nz">Contact</a> ·
-      <a href="https://github.com/stonetoskycreations/homegrown-directory">Add a Listing</a>
-    </div>
-  </div>
-</footer>
