@@ -6,8 +6,9 @@ permalink: /search.json
 {% assign all = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors %}
 {% for doc in all %}
   {
-    "id": "{{ doc.id | slugify }}",
-    "title": {{ doc.title | jsonify }},
+    "id": "{{ doc.id | default: doc.slug | slugify }}",
+    "title": {{ doc.title | default: doc.name | jsonify }},
+    "name": {{ doc.name | default: doc.title | jsonify }},
     "collection": "{{ doc.collection }}",
     "type": "{{ doc.collection | capitalize }}",
     "slug": "{{ doc.slug }}",

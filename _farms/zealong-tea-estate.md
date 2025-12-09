@@ -1,0 +1,33 @@
+---
+layout: farm
+title: "Zealong Tea Estate"
+slug: zealong-tea-estate
+name: "Zealong Tea Estate"
+type: "Farm"
+description: "Certified organic tea estate and exporter based in Gordonton."
+country: "NZ"
+country_slug: new-zealand
+region: "Waikato"
+city_town: "Gordonton"
+city: "Gordonton"
+suburb: ""
+address: ""
+postcode: ""
+lat:
+lon:
+phone: ""
+email: ""
+website: "https://zealong.com"
+social_links: []
+products:
+  - "Tea"
+practices_tags:
+  - organic
+certifications:
+  - BioGro
+supply_role: "Producer; Exporter"
+source_urls:
+  - "https://www.organictradenz.com/member-page/"
+last_checked: "2025-12-09"
+notes: ""
+---

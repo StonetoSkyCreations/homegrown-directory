@@ -3,6 +3,7 @@ layout: default
 map: false
 ---
 {% assign empty_array = "" | split: "" %}
+{% assign display_title = page.title | default: page.name %}
 {% assign supplies_list = page.supplies_to | default: empty_array %}
 {% assign sources_list = page.sources | default: empty_array %}
 {% assign all_listings = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors %}
@@ -24,8 +25,8 @@ map: false
   <header class="listing__header">
     <div>
       <p class="listing__type">{{ page.collection | capitalize }}</p>
-      <h1>{{ page.title }}</h1>
-      <p class="listing__location">{{ page.city }}, {{ page.region }}, {{ page.country }}</p>
+      <h1>{{ display_title }}</h1>
+      <p class="listing__location">{{ page.city | default: page.city_town }}, {{ page.region }}, {{ page.country }}</p>
       {% if page.website or page.email or page.phone %}
       <div class="listing__contact">
         {% if page.website %}<a href="{{ page.website }}" rel="noopener">Website</a>{% endif %}
@@ -120,7 +121,7 @@ map: false
 {
   "@context": "https://schema.org",
   "@type": "{{ schema_type }}",
-  "name": "{{ page.title | escape }}",
+  "name": "{{ display_title | escape }}",
   "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | escape }}",
   "url": "{{ page.url | absolute_url }}",
   "address": {
