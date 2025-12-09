@@ -4,27 +4,30 @@ slug: she-universe-chocolate
 name: She Universe Chocolate
 type: producer
 category: cafe
-description: Governors Bay chocolatier and café using organic and fair trade cocoa with ethical sourcing.
+description: Organic and ethically sourced chocolate crafted by She Universe across Christchurch locations, offering artisan chocolates and cacao-based drinks.
 country: NZ
 country_slug: new-zealand
 region: Canterbury
-address: ''
-phone: ''
-email: ''
-website: https://sheuniverse.com/
+city: Christchurch
+address: Riverside Market Lane, 84 Cashel Street, Christchurch Central
+phone: "+64 22 590 3350"
+email: riverside@sheuniverse.com
+website: https://sheuniverse.com
 social_links: []
 sourcing_tags:
-- Organic (uncertified)
+- Organic
+- Ethical sourcing
 products:
-- Pantry goods
-- Coffee and tea
-services: []
+- Chocolates
+- Hot chocolate
+- Gifts
+services:
+- Retail shop
+- Chocolaterie
 sources: []
 supplies_to: []
 market_days: []
 source_urls:
-- https://sheuniverse.com/
-last_checked: ''
-notes: ''
-city: Governors Bay
-Chocolate cafe and producer using organic ingredients where possible and a strong fair trade policy for cocoa and sugar. Source: https://sheuniverse.com/
+- https://sheuniverse.com
+last_checked: 'user-submitted'
+notes: "Additional locations include The Malthouse Cottage, 69 Colombo Street, Beckenham; and Cacao Pod concept space (location TBD)."

@@ -1,23 +1,42 @@
 ---
-title: The Organic Buzz
-slug: organic-buzz-whanganui
+title: Organic Buzz
+slug: organic-buzz
 published: true
 country: New Zealand
 country_slug: new-zealand
-region: Manawatu-Whanganui
-city: Whanganui
+region: Manawatū-Whanganui
+city: Palmerston North
+address: Shop 1, 337 Broadway Avenue, Palmerston North
 practices:
-- Organic (uncertified)
+  - Organic
+  - Spray-free
+  - Ethically raised
+  - Local growers
 products:
-- Coffee and tea
-- Bread and bakery
+  - Fruit and vegetables
+  - Meat
+  - Gluten-free foods
+  - Vegan foods
+  - Drinks
+  - Herbs and supplements
+  - Dairy and dairy-free
+  - Tea and coffee
+  - Dried fruit, nuts and grains
+  - Treats and desserts
+  - Eggs
+  - Pantry items
+  - Beauty and skincare
+  - Essential oils
+  - Cleaning products
 services:
-- Restaurant supply
+  - Retail grocery
+  - In-store shopping only
+  - Refill station
 sources: []
 supplies_to: []
-hours: ''
-website: ''
-email: ''
-phone: ''
-description: Local café/store serving organic coffee and snacks.
-Whanganui café and store offering organic coffee and a selection of organic products and snacks. Source: user-supplied list
+hours: "Mon–Fri 8:30am–5:30pm; Sat 9:00am–2:00pm; Sun closed"
+website: https://organicbuzz.co.nz
+email: info@organicbuzz.co.nz
+phone: "+64 6 353 0549"
+description: Organic food grocer supporting local growers with a wide range of organic, spray-free, and ethically raised products for in-store shopping.
+Organic food grocer supporting local growers with a wide range of organic, spray-free, and ethically raised products for in-store shopping.
