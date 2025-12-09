@@ -1,8 +1,8 @@
 title: Homegrown Directory
 description: >-
   A global, integrity-first food directory mapping producers, markets, stores, restaurants, and hubs — starting in Aotearoa New Zealand.
-baseurl: "" # set to "/homegrown-directory" if deploying to a project page
-url: "https://homegrown-directory.example" # update to your canonical host (https://user.github.io/homegrown-directory)
+baseurl: "/homegrown-directory" # project page base path on GitHub Pages
+url: "https://stonetoskycreations.github.io"
 timezone: Pacific/Auckland
 permalink: pretty
 
