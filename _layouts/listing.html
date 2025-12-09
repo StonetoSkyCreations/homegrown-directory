@@ -48,6 +48,11 @@ map: false
   </div>
 
   <div class="listing__meta">
+    {% include rating.html listing=page %}
+    <div class="listing__contact">
+      <a class="button ghost" href="{{ '/review.html?listing=' | append: (page.slug | default: page.title | slugify) | relative_url }}">Review this place</a>
+    </div>
+
     {% if page.practices %}
       <div>
         <h2>Practices</h2>

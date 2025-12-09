@@ -1,0 +1,20 @@
+{% assign avg = listing.rating_average | default: 0 %}
+{% assign count = listing.rating_count | default: 0 %}
+{% assign full_stars = avg | floor %}
+{% assign half_star = 0 %}
+{% if avg > full_stars and avg < full_stars | plus: 1 %}{% assign half_star = 1 %}{% endif %}
+{% assign empty_stars = 5 | minus: full_stars | minus: half_star %}
+<div class="rating" aria-label="Rating {{ avg }} out of 5">
+  <div class="rating__stars">
+    {% for i in (1..full_stars) %}<span aria-hidden="true">★</span>{% endfor %}
+    {% if half_star == 1 %}<span aria-hidden="true">☆</span>{% endif %}
+    {% for i in (1..empty_stars) %}<span aria-hidden="true">☆</span>{% endfor %}
+  </div>
+  <div class="rating__text">
+    {% if count > 0 %}
+      {{ avg | round: 1 }} · {{ count }} review{% if count != 1 %}s{% endif %}
+    {% else %}
+      No reviews yet
+    {% endif %}
+  </div>
+</div>

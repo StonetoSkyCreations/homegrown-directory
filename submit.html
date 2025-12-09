@@ -1,0 +1,128 @@
+---
+layout: default
+title: Add or Update a Listing
+permalink: /submit.html
+---
+<section class="form-page">
+  <header class="collection-index__header">
+    <p class="eyebrow">Contribute</p>
+    <h1>Add or Update a Listing</h1>
+    <p class="lead">Use this form to add new farms, stores, cafés, restaurants, markets, or hubs, or to update an existing listing. On submit, your email client will open with the details prefilled.</p>
+  </header>
+
+  <form id="submitForm">
+    <div class="form-group">
+      <label>Submission type</label>
+      <div class="pill-group">
+        <label class="pill pill--checkbox">
+          <input type="radio" name="submission_type" value="Add new listing" checked>
+          <span>Add new listing</span>
+        </label>
+        <label class="pill pill--checkbox">
+          <input type="radio" name="submission_type" value="Update existing listing">
+          <span>Update existing listing</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="place_type">Type of place</label>
+      <select id="place_type" name="place_type" required>
+        <option value="">Select type</option>
+        <option>Farm / Producer</option>
+        <option>Grocery / Wholefood store / Refill</option>
+        <option>Café / Restaurant / Food truck</option>
+        <option>Market / Farmers’ market</option>
+        <option>Distributor / Food hub</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Business name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address (street, suburb, city/town, region)</label>
+      <input type="text" id="address" name="address" placeholder="123 Example St, Suburb, City, Region">
+    </div>
+
+    <div class="form-group split">
+      <div>
+        <label for="website">Website</label>
+        <input type="url" id="website" name="website" placeholder="https://">
+      </div>
+      <div>
+        <label for="social">Social links</label>
+        <input type="text" id="social" name="social" placeholder="https:// (comma separated)">
+      </div>
+    </div>
+
+    <div class="form-group split">
+      <div>
+        <label for="email">Contact email</label>
+        <input type="email" id="email" name="email" placeholder="contact@example.com">
+      </div>
+      <div>
+        <label for="phone">Contact phone</label>
+        <input type="text" id="phone" name="phone" placeholder="+64...">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Practices</label>
+      <div class="pill-group">
+        {% assign tags = "Certified organic,Spray-free / organic but uncertified,Regenerative / agroecological,Biodynamic,Wild / foraged,Pasture-raised,Local / regional focus" | split: "," %}
+        {% for tag in tags %}
+        <label class="pill pill--checkbox">
+          <input type="checkbox" name="practices" value="{{ tag }}">
+          <span>{{ tag }}</span>
+        </label>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description / notes</label>
+      <textarea id="description" name="description" rows="3" placeholder="Short context about practices, sourcing, services..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="updates">What needs to be updated or corrected? (for updates)</label>
+      <textarea id="updates" name="updates" rows="3"></textarea>
+    </div>
+
+    <button type="submit" class="button">Send via email</button>
+  </form>
+</section>
+
+<script>
+  const submitForm = document.getElementById('submitForm');
+  submitForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(submitForm);
+    const subType = data.get('submission_type') || 'Add new listing';
+    const subject = subType === 'Update existing listing'
+      ? 'Listing Update Request – Homegrown Directory'
+      : 'New Listing Submission – Homegrown Directory';
+
+    const practices = data.getAll('practices').join(', ');
+
+    const bodyLines = [
+      `Submission type: ${subType}`,
+      `Type of place: ${data.get('place_type') || ''}`,
+      `Business name: ${data.get('name') || ''}`,
+      `Address: ${data.get('address') || ''}`,
+      `Website: ${data.get('website') || ''}`,
+      `Social links: ${data.get('social') || ''}`,
+      `Contact email: ${data.get('email') || ''}`,
+      `Contact phone: ${data.get('phone') || ''}`,
+      `Practices: ${practices}`,
+      `Description / notes: ${data.get('description') || ''}`,
+      `Updates needed: ${data.get('updates') || ''}`
+    ];
+
+    const mailto = `mailto:joshebroadhurst@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+    window.location.href = mailto;
+  });
+</script>

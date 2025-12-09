@@ -1,5 +1,6 @@
 {% assign practices_tags = listing.practices | default: listing.practices_tags | default: listing.sourcing_tags | default: listing.services | default: empty %}
 {% assign practices_joined = practices_tags | join: ',' %}
+{% assign review_target = listing.slug | default: listing.title | default: listing.name | slugify %}
 <article class="listing-card"
   data-region="{{ listing.region | escape }}"
   data-city="{{ listing.city | default: listing.city_town | escape }}"
@@ -21,8 +22,10 @@
     {% else %}
     <p class="muted">Learn more.</p>
     {% endif %}
+    {% include rating.html listing=listing %}
     <div class="listing-card__actions">
       <a class="button ghost" href="{{ listing.url | relative_url }}">Learn more</a>
+      <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}">Review this place</a>
     </div>
   </div>
 </article>

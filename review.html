@@ -1,0 +1,90 @@
+---
+layout: default
+title: Review a Listing
+permalink: /review.html
+---
+<section class="form-page">
+  <header class="collection-index__header">
+    <p class="eyebrow">Reviews</p>
+    <h1>Review this Place</h1>
+    <p class="lead">Share your experience and help keep the directory accurate. On submit, your email client will open with the review details.</p>
+  </header>
+
+  <form id="reviewForm">
+    <div class="form-group">
+      <label for="business_name">Business name</label>
+      <input type="text" id="business_name" name="business_name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Star rating</label>
+      <div class="stars" role="radiogroup" aria-label="Star rating">
+        {% for i in (1..5) %}
+        <label class="star" aria-label="{{ i }} star">
+          <input type="radio" name="rating" value="{{ i }}" {% if i == 5 %}checked{% endif %}>
+          <span>★</span>
+        </label>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="review_text">Your review or experience</label>
+      <textarea id="review_text" name="review_text" rows="4" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="corrections">Anything that’s changed or needs correcting? (optional)</label>
+      <textarea id="corrections" name="corrections" rows="3"></textarea>
+    </div>
+
+    <div class="form-group split">
+      <div>
+        <label for="visit">When did you last visit? (optional)</label>
+        <input type="text" id="visit" name="visit" placeholder="e.g. June 2025">
+      </div>
+      <div>
+        <label for="reviewer_name">Your name (optional)</label>
+        <input type="text" id="reviewer_name" name="reviewer_name">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="reviewer_email">Your email (optional, for follow-up)</label>
+      <input type="email" id="reviewer_email" name="reviewer_email">
+    </div>
+
+    <button type="submit" class="button">Send via email</button>
+  </form>
+</section>
+
+<script>
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    const listing = params.get('listing') || '';
+    const nameField = document.getElementById('business_name');
+    if (listing) {
+      nameField.value = decodeURIComponent(listing.replace(/\\+/g, ' '));
+    }
+
+    const form = document.getElementById('reviewForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const business = data.get('business_name') || '';
+      const rating = data.get('rating') || '5';
+      const subject = `New Review – ${business}`;
+      const bodyLines = [
+        `Business name: ${business}`,
+        `Star rating: ${rating}/5`,
+        `Review: ${data.get('review_text') || ''}`,
+        `Corrections: ${data.get('corrections') || ''}`,
+        `Last visit: ${data.get('visit') || ''}`,
+        `Reviewer name: ${data.get('reviewer_name') || ''}`,
+        `Reviewer email: ${data.get('reviewer_email') || ''}`
+      ];
+      const mailto = `mailto:joshebroadhurst@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+      window.location.href = mailto;
+    });
+  })();
+</script>
