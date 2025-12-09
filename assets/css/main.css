@@ -680,6 +680,16 @@ a:focus-visible {
   color: var(--muted);
   font-size: 0.95rem;
 }
+.listing-card__location-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: inherit;
+  text-decoration: none;
+}
+.listing-card__location-link:hover {
+  text-decoration: underline;
+}
 
 .listing {
   background: #fff;

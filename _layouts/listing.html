@@ -14,6 +14,14 @@ map: false
 {% assign source_partners = all_listings | where_exp: 'item', 'sources_list contains item.slug' | uniq %}
 {% assign schema_type = 'LocalBusiness' %}
 {% assign display_label = page.collection | capitalize %}
+{% assign address_parts = "" | split: "" %}
+{% if page.address %}{% assign address_parts = address_parts | push: page.address %}{% endif %}
+{% if page.suburb %}{% assign address_parts = address_parts | push: page.suburb %}{% endif %}
+{% if page.city or page.city_town %}{% assign address_parts = address_parts | push: page.city | default: page.city_town %}{% endif %}
+{% if page.region %}{% assign address_parts = address_parts | push: page.region %}{% endif %}
+{% if page.country %}{% assign address_parts = address_parts | push: page.country %}{% endif %}
+{% assign display_address = address_parts | join: ', ' %}
+{% assign maps_query = display_address | uri_escape %}
 {% case page.collection %}
   {% when 'farms' %}{% assign schema_type = 'Farm' %}{% assign display_label = 'Farm' %}
   {% when 'restaurants' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Eatery' %}
@@ -29,12 +37,19 @@ map: false
       <p class="listing__type">{{ display_label }}</p>
       <h1>{{ display_title }}</h1>
       <p class="listing__location">
-        {% if page.address %}{{ page.address }}{% endif %}
-        {% if page.suburb %}{% if page.address %}, {% endif %}{{ page.suburb }}{% endif %}
-        {% if page.city_town or page.city %}{% if page.address or page.suburb %}, {% endif %}{{ page.city | default: page.city_town }}{% endif %}
-        {% if page.region %}, {{ page.region }}{% endif %}
-        {% if page.country %}, {{ page.country }}{% endif %}
+        {% if display_address != "" %}
+          {{ display_address }}
+        {% else %}
+          <span class="muted">Address not provided yet.</span>
+        {% endif %}
       </p>
+      <div class="listing__contact">
+        {% if display_address != "" %}
+          <a href="https://www.google.com/maps/search/?api=1&query={{ maps_query }}" target="_blank" rel="noopener">Open in Maps</a>
+        {% else %}
+          <span class="muted">Add an address to help visitors find you.</span>
+        {% endif %}
+      </div>
       {% if page.website or page.email or page.phone %}
       <div class="listing__contact">
         {% if page.website %}<a href="{{ page.website }}" rel="noopener">Website</a>{% endif %}

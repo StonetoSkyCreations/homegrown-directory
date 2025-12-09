@@ -4,6 +4,14 @@
 {% assign card_title = listing.title | default: listing.name %}
 {% assign card_type = listing.collection %}
 {% assign card_label = card_type | capitalize %}
+{% assign address_parts = "" | split: "" %}
+{% if listing.address %}{% assign address_parts = address_parts | push: listing.address %}{% endif %}
+{% if listing.suburb %}{% assign address_parts = address_parts | push: listing.suburb %}{% endif %}
+{% if listing.city or listing.city_town %}{% assign address_parts = address_parts | push: listing.city | default: listing.city_town %}{% endif %}
+{% if listing.region %}{% assign address_parts = address_parts | push: listing.region %}{% endif %}
+{% if listing.country %}{% assign address_parts = address_parts | push: listing.country %}{% endif %}
+{% assign card_address = address_parts | join: ', ' %}
+{% assign map_query = card_address | uri_escape %}
 {% case listing.collection %}
   {% when 'stores' %}
     {% assign card_type = 'grocer' %}
@@ -34,7 +42,13 @@
   data-practices="{{ practices_joined | escape }}">
   <div class="listing-card__meta">
     <span class="pill pill--type">{{ card_label }}</span>
-    <span class="listing-card__location">{{ listing.city | default: listing.city_town }}, {{ listing.region }}</span>
+    {% if card_address != "" %}
+    <a class="listing-card__location-link" href="https://www.google.com/maps/search/?api=1&query={{ map_query }}" target="_blank" rel="noopener">
+      <span class="listing-card__location">{{ card_address }}</span>
+    </a>
+    {% else %}
+    <span class="listing-card__location muted">Location not provided</span>
+    {% endif %}
   </div>
   <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ card_title }}</a></h3>
   <p class="listing-card__summary">{{ listing.description | default: listing.excerpt | strip_html | truncate: 130 }}</p>
