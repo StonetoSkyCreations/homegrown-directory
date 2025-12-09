@@ -9,22 +9,22 @@ permalink: pretty
 collections:
   farms:
     output: true
-    permalink: /farms/:country_slug/:slug/
+    permalink: /farms/:slug/
   markets:
     output: true
-    permalink: /markets/:country_slug/:slug/
+    permalink: /markets/:slug/
   stores:
     output: true
-    permalink: /stores/:country_slug/:slug/
+    permalink: /stores/:slug/
   restaurants:
     output: true
-    permalink: /restaurants/:country_slug/:slug/
+    permalink: /restaurants/:slug/
   distributors:
     output: true
-    permalink: /distributors/:country_slug/:slug/
+    permalink: /distributors/:slug/
   vendors:
     output: true
-    permalink: /vendors/:country_slug/:slug/
+    permalink: /vendors/:slug/
 
 defaults:
   - scope:
