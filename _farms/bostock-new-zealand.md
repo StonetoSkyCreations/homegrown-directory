@@ -11,11 +11,11 @@ region: "Hawke's Bay"
 city_town: "Hastings"
 city: "Hastings"
 suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
+address: "5 Kirkwood Road, Hastings 4175, New Zealand"
+postcode: "4175"
+lat: -39.6076593
+lon: 176.7755928
+phone: "+64 6 873 9046"
 email: ""
 website: "https://www.bostock.nz"
 social_links: []

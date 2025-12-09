@@ -8,16 +8,16 @@ description: "Certified organic hemp grower and processor in Hawke's Bay."
 country: "NZ"
 country_slug: new-zealand
 region: "Hawke's Bay"
-city_town: ""
-city: ""
+city_town: "Hastings"
+city: "Hastings"
 suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
+address: "111 Avenue Road East, Hastings 4122, New Zealand"
+postcode: "4122"
+lat: -39.6395783
+lon: 176.8392322
 phone: ""
 email: ""
-website: "https://hempery.nz"
+website: ""
 social_links: []
 products:
   - "Hemp oil"

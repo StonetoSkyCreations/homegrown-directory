@@ -7,17 +7,17 @@ type: "Farm"
 description: "Certified organic egg producer from Christchurch."
 country: "NZ"
 country_slug: new-zealand
-region: "Canterbury"
-city_town: "Christchurch"
-city: "Christchurch"
+region: "Manawatu-Wanganui"
+city_town: "Levin"
+city: "Levin"
 suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
-website: ""
+address: "25 Sheffield Street, Levin 5510, New Zealand"
+postcode: "5510"
+lat: -40.6222455
+lon: 175.2861796
+phone: "027 441 7235"
+email: "paulnes@xtra.co.nz"
+website: "https://ecoegg.co.nz"
 social_links: []
 products:
   - "Eggs"

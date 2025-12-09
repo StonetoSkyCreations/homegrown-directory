@@ -11,13 +11,13 @@ region: "Hawke's Bay"
 city_town: "Napier"
 city: "Napier"
 suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
-website: "https://chantal.co.nz"
+address: "93 Austin Street, Onekawa, Napier 4110, New Zealand"
+postcode: "4110"
+lat: -39.50070
+lon: 176.88200
+phone: "+64 6 843 2114 / 0800 254 766"
+email: "info@chantal.co.nz / orders@chantal.co.nz"
+website: "https://chantalorganics.co.nz"
 social_links: []
 products:
   - "Pantry goods"
@@ -27,6 +27,7 @@ certifications: []
 supply_role: "Processor; Distributor"
 source_urls:
   - "https://maikai.nz/pages/mai-kai-suppliers"
+hours: "Mon–Fri 08:00–17:00; Sat–Sun closed"
 last_checked: "2025-12-09"
 notes: "Founded as organic co-op farm"
 ---

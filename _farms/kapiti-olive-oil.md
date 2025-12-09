@@ -5,8 +5,10 @@ country: "New Zealand"
 country_slug: new-zealand
 region: "Wellington"
 city: "Waikanae"
-lat: 
-lon: 
+address: "51 Rodney Avenue, Te Horo Beach, RD 1 Otaki 5581, New Zealand"
+postcode: "5581"
+lat: -40.7994903
+lon: 175.1234693
 practices:
   - "Spray-free"
 products:
@@ -17,10 +19,9 @@ services:
 sources: []
 supplies_to: []
 hours: ""
-website: ""
-email: ""
-phone: ""
+website: "https://kapitiolives.co.nz"
+email: "david@kapitiolives.com"
+phone: "+64 27 555 0111"
 description: "Waikanae olive grove producing spray-free olive oil."
 ---
 Produces spray-free olives and olive oil on the Kapiti Coast, supplying locally. Source: user-supplied list
-

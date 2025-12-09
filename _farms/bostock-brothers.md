@@ -11,13 +11,13 @@ region: "Hawke's Bay"
 city_town: "Hastings"
 city: "Hastings"
 suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
-website: "https://www.bostocksorganic.co.nz"
+address: "5 Kirkwood Road, Hastings 4175, New Zealand"
+postcode: "4175"
+lat: -39.6076593
+lon: 176.7755928
+phone: "022 323 9611 / 021 977 909 / +64 6 873 9046"
+email: "lbyrt@bostockbrothers.co.nz / chayes@bostockbrothers.co.nz"
+website: "https://bostockbrothers.co.nz"
 social_links: []
 products:
   - "Chicken"
