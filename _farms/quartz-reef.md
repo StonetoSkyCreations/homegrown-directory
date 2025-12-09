@@ -11,12 +11,12 @@ region: "Otago"
 city_town: "Bendigo"
 city: "Bendigo"
 suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
+address: "6-8 Hughes Crescent, Cromwell 9310, Central Otago, New Zealand"
+postcode: "9310"
+lat: -45.042
+lon: 169.1991
+phone: "+64 3 445 3084"
+email: "info@quartzreef.co.nz"
 website: "https://quartzreef.co.nz"
 social_links: []
 products:
@@ -28,6 +28,7 @@ certifications:
 supply_role: "Producer; Exporter"
 source_urls:
   - "https://biodynamic.org.nz/demeter/demeter-producers"
+hours: "Mon–Fri 12–4pm (tastings)"
 last_checked: "2025-12-09"
 notes: ""
 ---

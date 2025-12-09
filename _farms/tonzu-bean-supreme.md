@@ -11,12 +11,12 @@ region: "Auckland"
 city_town: "Auckland"
 city: "Auckland"
 suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
+address: "628 Swanson Road, Swanson, Auckland 0612, New Zealand"
+postcode: "0612"
+lat: -36.8648
+lon: 174.5750
+phone: "+64 9 835 3617"
+email: "info@tonzu.co.nz"
 website: "https://tonzu.co.nz"
 social_links: []
 products:

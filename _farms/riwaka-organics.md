@@ -5,8 +5,10 @@ country: "New Zealand"
 country_slug: new-zealand
 region: "Tasman"
 city: "Riwaka"
-lat: 
-lon: 
+address: "60 Takaka Hill Highway, Riwaka 7198, New Zealand"
+postcode: "7198"
+lat: -41.0833
+lon: 173.0
 practices:
   - "Organic (certified)"
 products:
@@ -17,11 +19,10 @@ services:
   - "Wholesale"
 sources: []
 supplies_to: []
-hours: ""
-website: ""
-email: ""
-phone: ""
+hours: "10am–6pm daily"
+website: "https://riwakariverestate.com"
+email: "sayhello@riwakariverestate.com"
+phone: "+64 21 277 2553"
 description: "Certified organic farm near Motueka selling fruit and vegetables."
 ---
 Produces certified organic produce in Riwaka for local customers and markets. Source: user-supplied list
-

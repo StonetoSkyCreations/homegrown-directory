@@ -11,11 +11,11 @@ region: "Hawke's Bay"
 city_town: "Hastings"
 city: "Hastings"
 suburb: ""
-address: ""
-postcode: ""
+address: "300 Eastbourne Street West, Hastings 4122, New Zealand"
+postcode: "4122"
 lat:
 lon:
-phone: ""
+phone: "+64 6 870 3598"
 email: ""
 website: "https://theorganicfarm.co.nz"
 social_links: []

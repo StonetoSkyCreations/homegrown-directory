@@ -11,12 +11,12 @@ region: "Marlborough"
 city_town: "Renwick"
 city: "Renwick"
 suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
+address: "24 Barracks Road, RD 2 Hawkesbury, Marlborough, New Zealand"
+postcode: "7272"
+lat: -41.5265
+lon: 173.8177
+phone: "+64 3 572 9408"
+email: "hello@seresin.co.nz; orders@seresin.co.nz"
 website: "https://seresin.co.nz"
 social_links: []
 products:
@@ -28,6 +28,7 @@ certifications:
 supply_role: "Producer; Exporter"
 source_urls:
   - "https://biodynamic.org.nz/demeter/demeter-producers"
+hours: "By appointment only (no cellar door)"
 last_checked: "2025-12-09"
 notes: ""
 ---

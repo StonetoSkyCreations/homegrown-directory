@@ -7,16 +7,16 @@ type: "Farm"
 description: "Organic (uncertified) heirloom seed grower in Takaka."
 country: "NZ"
 country_slug: new-zealand
-region: "Tasman"
-city_town: "Takaka"
-city: "Takaka"
+region: "Hawke's Bay"
+city_town: "Tutira"
+city: "Tutira"
 suburb: ""
-address: ""
-postcode: ""
-lat:
-lon:
-phone: ""
-email: ""
+address: "PO Box 60, Tutira 4181, Hawke’s Bay, New Zealand"
+postcode: "4181"
+lat: -39.1692
+lon: 176.9289
+phone: "+64 21 238 8654"
+email: "info@sethasseeds.co.nz"
 website: "https://sethasseeds.co.nz"
 social_links: []
 products:
