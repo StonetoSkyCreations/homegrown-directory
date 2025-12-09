@@ -34,6 +34,7 @@ permalink: /submit.html
         <option>Café / Restaurant / Food truck</option>
         <option>Market / Farmers’ market</option>
         <option>Distributor / Food hub</option>
+        <option>Community / grassroots initiative</option>
       </select>
     </div>
 
@@ -98,6 +99,12 @@ permalink: /submit.html
 
 <script>
   const submitForm = document.getElementById('submitForm');
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('type') === 'community') {
+    const placeType = document.getElementById('place_type');
+    if (placeType) placeType.value = 'Community / grassroots initiative';
+  }
+
   submitForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = new FormData(submitForm);
