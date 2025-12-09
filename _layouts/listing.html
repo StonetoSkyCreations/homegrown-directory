@@ -21,6 +21,8 @@ map: false
 {% if page.region %}{% assign address_parts = address_parts | push: page.region %}{% endif %}
 {% if page.country %}{% assign address_parts = address_parts | push: page.country %}{% endif %}
 {% assign display_address = address_parts | join: ', ' %}
+{% assign has_coords = page.lat and page.lon %}
+{% assign has_street = page.address %}
 {% assign maps_query = display_address | uri_escape %}
 {% case page.collection %}
   {% when 'farms' %}{% assign schema_type = 'Farm' %}{% assign display_label = 'Farm' %}
@@ -37,19 +39,20 @@ map: false
       <p class="listing__type">{{ display_label }}</p>
       <h1>{{ display_title }}</h1>
       <p class="listing__location">
-        {% if display_address != "" %}
-          {{ display_address }}
+        {% if has_coords %}
+          <a class="listing__location-link" href="https://www.google.com/maps/search/?api=1&query={{ page.lat }},{{ page.lon }}" target="_blank" rel="noopener">
+            {{ display_address | default: "View on map" }}
+          </a>
+        {% elsif has_street %}
+          <a class="listing__location-link" href="https://www.google.com/maps/search/?api=1&query={{ maps_query }}" target="_blank" rel="noopener">
+            {{ display_address }}
+          </a>
+        {% elsif display_address != "" %}
+          <span class="muted">{{ display_address }}</span>
         {% else %}
           <span class="muted">Address not provided yet.</span>
         {% endif %}
       </p>
-      <div class="listing__contact">
-        {% if display_address != "" %}
-          <a href="https://www.google.com/maps/search/?api=1&query={{ maps_query }}" target="_blank" rel="noopener">Open in Maps</a>
-        {% else %}
-          <span class="muted">Add an address to help visitors find you.</span>
-        {% endif %}
-      </div>
       {% if page.website or page.email or page.phone %}
       <div class="listing__contact">
         {% if page.website %}<a href="{{ page.website }}" rel="noopener">Website</a>{% endif %}

@@ -12,6 +12,8 @@
 {% if listing.region %}{% assign address_parts = address_parts | push: listing.region %}{% endif %}
 {% if listing.country %}{% assign address_parts = address_parts | push: listing.country %}{% endif %}
 {% assign card_address = address_parts | join: ', ' %}
+{% assign has_coords = listing.lat and listing.lon %}
+{% assign has_street = listing.address %}
 {% assign map_query = card_address | uri_escape %}
 {% case listing.collection %}
   {% when 'stores' %}
@@ -43,12 +45,20 @@
   data-practices="{{ practices_joined | escape }}">
   <div class="listing-card__meta">
     <span class="pill pill--type">{{ card_label }}</span>
-    {% if card_address != "" %}
-    <a class="listing-card__location-link" href="https://www.google.com/maps/search/?api=1&query={{ map_query }}" target="_blank" rel="noopener">
-      <span class="listing-card__location">{{ card_address }}</span>
-    </a>
+    {% if has_coords %}
+      <a class="listing-card__location-link" href="https://www.google.com/maps/search/?api=1&query={{ listing.lat }},{{ listing.lon }}" target="_blank" rel="noopener">
+        <span class="listing-card__location">{{ card_address | default: 'View on map' }}</span>
+      </a>
+    {% elsif has_street %}
+      <a class="listing-card__location-link" href="https://www.google.com/maps/search/?api=1&query={{ map_query }}" target="_blank" rel="noopener">
+        <span class="listing-card__location">{{ card_address }}</span>
+      </a>
     {% else %}
-    <span class="listing-card__location muted">Location not provided</span>
+      {% if card_address != "" %}
+        <span class="listing-card__location muted">{{ card_address }}</span>
+      {% else %}
+        <span class="listing-card__location muted">Location not provided</span>
+      {% endif %}
     {% endif %}
   </div>
   <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ card_title }}</a></h3>
