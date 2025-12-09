@@ -22,6 +22,9 @@ collections:
   distributors:
     output: true
     permalink: /distributors/:country_slug/:slug/
+  vendors:
+    output: true
+    permalink: /vendors/:country_slug/:slug/
 
 defaults:
   - scope:
@@ -49,6 +52,11 @@ defaults:
       type: distributors
     values:
       layout: listing
+  - scope:
+      path: ""
+      type: vendors
+    values:
+      layout: vendor
 
 markdown: kramdown
 kramdown:

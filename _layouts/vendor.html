@@ -1,0 +1,60 @@
+---
+layout: default
+map: false
+---
+{% assign display_title = page.title | default: page.name %}
+<section class="listing">
+  <header class="listing__header">
+    <div>
+      <p class="listing__type">{{ page.type | default: 'Vendor' | capitalize }}</p>
+      <h1>{{ display_title }}</h1>
+      <p class="listing__location">{{ page.suburb | default: page.city_town }}, {{ page.region }}, {{ page.country }}</p>
+      {% if page.website or page.email or page.phone %}
+      <div class="listing__contact">
+        {% if page.website %}<a href="{{ page.website }}" rel="noopener">Website</a>{% endif %}
+        {% if page.email %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
+        {% if page.phone %}<span>{{ page.phone }}</span>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="listing__content">
+    {{ content | default: page.description }}
+  </div>
+
+  <div class="listing__meta">
+    {% if page.sourcing_tags %}
+      <div>
+        <h2>Sourcing</h2>
+        <ul class="tag-list">
+          {% for tag in page.sourcing_tags %}
+          <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if page.products_or_cuisine %}
+      <div>
+        <h2>Products or cuisine</h2>
+        <ul class="tag-list">
+          {% for item in page.products_or_cuisine %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if page.suppliers %}
+      <div>
+        <h2>Suppliers</h2>
+        <ul class="link-list">
+          {% for item in page.suppliers %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+</section>

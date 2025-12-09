@@ -3,7 +3,7 @@ layout: null
 permalink: /search.json
 ---
 [
-{% assign all = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors %}
+{% assign all = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors | concat: site.vendors %}
 {% for doc in all %}
   {
     "id": "{{ doc.id | default: doc.slug | slugify }}",
