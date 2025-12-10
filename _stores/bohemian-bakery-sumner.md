@@ -40,3 +40,10 @@ lon:
 supplies_to:
 sources:
 ---
+Sumner’s Bohemian Bakery is the seaside extension of everything Bohemian stands for: slow-fermented bread, honest pastries, and ingredients grounded in Canterbury’s soils. The shelves are filled daily with sourdoughs made from Milmore Downs organic whole-wheat and rye, spray-free Farmers Mill flour, and honest food crafted the long way — never rushed, never improvised with additives.
+
+Located in the heart of Sumner Mall, the bakery opens early to catch the first walkers and swimmers drifting through town. People queue with sandy feet and surfboards under one arm, ordering Prima coffee, T-leaf teas, and cold drinks from Karma, Almighty, and the Chia Sisters. On sunny days the pastries disappear quickly — and on very sunny days, almost instantly.
+
+The space opens to flowers, trees, and the salt air. Locals grab a warm croissant before heading to the beach; travellers take a loaf home for lunch; families linger over pies, toasties, sandwiches, and plant-based options that rotate with demand.
+
+Sumner is small, friendly, and unmistakably coastal — a village bakery by the sea, carrying the full Bohemian ethos into a neighbourhood that feels like its natural home.

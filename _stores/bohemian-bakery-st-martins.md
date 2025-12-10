@@ -38,3 +38,10 @@ lon:
 supplies_to:
 sources:
 ---
+St Martins is Bohemian Bakery’s neighbourhood hub — a friendly corner stop positioned beside New World and moments from Hansen Park, where dog-walkers, families, and commuters drift through from dawn to afternoon.
+
+Fresh sourdough, pastries, pies, toasties, and sandwiches arrive daily from the Bohemian kitchens, all built on the same integrity-based foundation: slow fermentation, Canterbury-grown flour, free-range eggs from Thulani, local honey, ethical meat suppliers, and small NZ beverage makers whose values align with Bohemian’s own.
+
+St Martins brews C4’s Krank blend, giving this location its own distinct flavour profile — a darker, richer companion to the morning pastry run. There’s outdoor seating for those passing through on foot or with prams, and plenty of space for a quick grab-and-go visit while doing the grocery shop next door.
+
+Desserts line the cabinets: eclairs, tarts, cakes, and seasonal specials that often sell out by mid-afternoon. Despite being one of the newer Bohemian sites, it already feels embedded — the kind of place where staff know regulars by name and where community happens naturally through everyday ritual.

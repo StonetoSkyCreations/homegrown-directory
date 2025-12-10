@@ -33,3 +33,10 @@ lon:
 supplies_to:
 sources:
 ---
+Merivale’s Bohemian Bakery is a warm, refined neighbourhood spot — a quieter corner of the city where the bakery’s craft meets a more boutique environment. Surrounded by established homes, tree-lined streets, and steady foot traffic, this location brings the full Bohemian sourdough and pastry ethos into one of Christchurch’s most walkable suburbs.
+
+The cabinets reflect the same dedication to real bread and honest ingredients: long-fermented sourdoughs made from Milmore Downs and Farmers Mill flours, croissants and pastries shaped by hand, and a rotating selection of cakes, tarts, pies, and savoury items. Free-range Thulani eggs, local honey, Canterbury dairy, and small-batch NZ beverages remain foundational across all products.
+
+Merivale pours excellent coffee, offers relaxed indoor seating, and creates a slower, more intimate pace than the busier city and coastal stores. Locals often stop in on their morning walks, pick up bread for the week, or treat themselves to a pastry after the school run.
+
+This location feels polished yet grounded — a suburban bakery with real craftsmanship at its core and a strong sense of familiarity for those who return daily.

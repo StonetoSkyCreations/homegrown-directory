@@ -38,3 +38,12 @@ lon:
 supplies_to:
 sources:
 ---
+Cashel Street HQ is the beating heart of Bohemian Bakery — the place where the craft is fully visible, where sourdough and pastry are shaped in the open, and where customers can watch the entire process unfold.
+
+Opened in 2023, this bakery is an open kitchen, production space, cafe, and teaching ground in one. Here, bakers laminate croissant dough, feed sourdough starters, score loaves, and pipe custards within view of the mezzanine seating. It’s both a working bakery and a quiet celebration of the craft itself.
+
+The ingredients remain the same pillars of the Bohemian ethos: organic Milmore Downs whole-wheat and rye, spray-free Farmers Mill flour, free-range Thulani eggs, Anchor dairy, Heathcote honey, and a network of small producers. Drinks include AllPress coffee, T-leaf teas, Hakanoa hot tonics, Wildwood specialties, and cold drinks from Karma, Almighty, and Good Sh*t Soda.
+
+Cashel HQ supplies all other Bohemian locations and wholesale partners, anchoring the bakery’s entire ecosystem. It’s the closest thing to a village bakery inside a modern city — transparent, relational, deeply hands-on. Courses in sourdough and croissant making are on the horizon, and bakers regularly send customers home with starter, yeast, or flour to help them succeed in their own kitchens.
+
+If Bohemian has a centre of gravity, this is it.

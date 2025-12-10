@@ -36,3 +36,12 @@ lon:
 supplies_to:
 sources:
 ---
+In the heart of Christchurch’s SALT District — a pocket of grit, creativity, and post-quake reinvention — sits Bohemian’s City Bakery Cafe. It’s where the craft of slow-fermented sourdough meets the energy of an evolving urban neighbourhood.
+
+The pastries and breads come from the same foundation as all Bohemian locations: long, cool fermentations; Canterbury-grown flours from Milmore Downs and Farmers Mill; real ingredients sourced from local producers including Thulani eggs, Heathcote honey, Prima and AllPress coffee roasters, and a suite of small Aotearoa drink makers.
+
+City Bakery Cafe is lively and communal. Musicians play live every Saturday from 10am–1pm, and the space fills with brunch-goers, workers escaping their offices, and locals who treat the cafe as a dependable ritual. Inside, you’ll find signs in Czech and Slovak nodding to the bakery’s roots; outside, a small garden softens the industrial lines of the district.
+
+The food is simple and generous: pastries warm from the oven, sandwiches, toasties, pies, vegetarian and plant-based options, and loaves baked that morning. Drinks range from espresso to Wildwood’s specialty hot chocolates to Hakanoa elixirs, with Karma and Chia Sisters rounding out the cold selection.
+
+This location is spirited, social, and expressive — a true city bakery with the soul of a village one.

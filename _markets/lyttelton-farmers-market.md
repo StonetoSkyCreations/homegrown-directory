@@ -31,3 +31,8 @@ city: Christchurch
 rating_average: 5
 rating_count: 1
 ---
+The Lyttelton Farmers’ Market sits in the heart of the port town, surrounded by steep hills, sea air, and the hum of a community that knows its growers by name. Saturday mornings see the main street transformed into a lively, compact marketplace where local producers line the road with seasonal vegetables, fruit, bread, preserves, chutneys, honey, seedlings, and handmade goods.
+
+Lyttelton’s market has a distinctly grassroots feel. It’s community-run, tightly woven, and proudly local. Many of the stalls come from the harbour basin or surrounding hills—small regenerative farms, organic growers, bakers, fermenters, orchardists, and backyard producers who value integrity over scale. Musicians often play between the stalls, dogs weave through the crowd, and neighbours catch up over produce boxes and fresh pastries.
+
+The market is a weekly anchor for the community—a place to reconnect with the seasons, support local livelihoods, and participate in a micro-economy that keeps money, nourishment, and relationship cycling close to home.

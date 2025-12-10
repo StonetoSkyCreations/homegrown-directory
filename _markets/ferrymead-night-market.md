@@ -37,3 +37,10 @@ sources:
 rating_average: 5
 rating_count: 1
 ---
+The Ferrymead Night Market is part market, part festival, part living heritage experience. Held on the first Saturday of each month (except mid-winter months), it transforms the Ferrymead Heritage Park into a vibrant evening gathering filled with food stalls, craft vendors, music, and the unique charm of the old village streets lit at dusk.
+
+Food is central: a rotating mix of local makers, pop-up kitchens, artisan producers, and small family businesses offering everything from hot meals to baked goods, preserves, and specialty treats. While not exclusively organic or regenerative, many vendors represent the spirit of the Homegrown ecosystem—small-batch, local, relationship-based food production.
+
+Historic trams and trains run through the park, buildings open their doors, and families wander through with lanterns, mulled drinks, and fresh hot food in hand. Dogs on leads are welcome, musicians play throughout the evening, and the atmosphere blends nostalgia with community energy.
+
+The Ferrymead Night Market isn’t just a place to shop—it’s a monthly celebration of local culture, creativity, and connection.
