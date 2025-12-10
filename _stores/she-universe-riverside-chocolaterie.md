@@ -3,7 +3,8 @@ layout: store
 title: "She Universe Riverside Chocolaterie"
 slug: she-universe-riverside-chocolaterie
 name: "She Universe Riverside Chocolaterie"
-type: "Chocolaterie"
+type: "Cafe & chocolaterie"
+category: cafe
 description: "Organic chocolate alchemists crafting unique chocolates with real, organic ingredients and ethically sourced cacao, located inside Riverside Market."
 country: "New Zealand"
 country_slug: new-zealand
@@ -22,6 +23,7 @@ practices_tags:
   - organic
   - ethical
 services:
+  - "Cafe"
   - "Retail shop"
   - "Chocolaterie"
 hours: "Daily 10am–5pm"

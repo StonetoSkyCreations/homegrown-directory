@@ -3,7 +3,8 @@ layout: store
 title: "She Universe Malthouse Chocolaterie"
 slug: she-universe-malthouse-chocolaterie
 name: "She Universe Malthouse Chocolaterie"
-type: "Chocolaterie"
+type: "Cafe & chocolaterie"
+category: cafe
 description: "Organic and ethically sourced chocolate crafted by She Universe, offering artisan chocolates, loose chocolate moments, and cacao-based creations in Beckenham."
 country: "New Zealand"
 country_slug: new-zealand
@@ -22,6 +23,7 @@ practices_tags:
   - organic
   - ethical
 services:
+  - "Cafe"
   - "Retail shop"
   - "Chocolaterie"
 hours: "Daily 9am–4pm"
