@@ -31,6 +31,7 @@
   let markerLayer;
   let runDirectoryFilters;
   let heroTypeFilters = [];
+  let populateDirectoryRegions;
 
   const typeLabels = {
     farms: "Farms",
@@ -153,6 +154,25 @@
     const cards = Array.from(directoryContainer.querySelectorAll(".listing-card"));
     const dirResultsCount = document.getElementById("dirResultsCount");
 
+    populateDirectoryRegions = (countrySlug) => {
+      if (!regionSelect) return;
+      const activeCountry = countrySlug || getActiveCountry();
+      const regions = Array.from(
+        new Set(
+          cards
+            .filter((card) => !activeCountry || (card.dataset.country || "").toLowerCase() === activeCountry)
+            .map((card) => (card.dataset.region || "").trim())
+            .filter(Boolean)
+        )
+      ).sort((a, b) => a.localeCompare(b));
+      const current = regionSelect.value;
+      regionSelect.innerHTML = `<option value=\"all\">All regions</option>${regions
+        .map((region) => `<option value=\"${region.toLowerCase()}\">${region}</option>`)
+        .join("")}`;
+      const restore = Array.from(regionSelect.options).some((opt) => opt.value === current);
+      regionSelect.value = restore ? current : "all";
+    };
+
     runDirectoryFilters = () => {
       const selectedRegion = regionSelect ? regionSelect.value : "all";
       const query = textFilter ? textFilter.value.toLowerCase().trim() : "";
@@ -184,6 +204,8 @@
         dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
       }
     };
+
+    populateDirectoryRegions(selectedCountry);
 
     if (regionSelect) regionSelect.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters());
     if (textFilter) textFilter.addEventListener("input", () => runDirectoryFilters && runDirectoryFilters());
@@ -376,6 +398,7 @@
     syncCountryButtons(selectedCountry);
     updateCountryLabels(selectedCountry);
     populateHeroRegions(selectedCountry);
+    if (typeof populateDirectoryRegions === "function") populateDirectoryRegions(selectedCountry);
     if (countryPage && countryPage.dataset.countryPage !== selectedCountry) {
       const base = window.HG_BASEURL || "";
       window.location.href = `${base}/country/${selectedCountry}/`;
