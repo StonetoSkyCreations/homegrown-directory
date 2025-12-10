@@ -1,0 +1,14 @@
+{% assign parts = "" | split: "" %}
+{% if page.address %}{% assign parts = parts | push: page.address | compact %}{% endif %}
+{% if page.city or page.city_town %}{% assign parts = parts | push: page.city | default: page.city_town | compact %}{% endif %}
+{% if page.region %}{% assign parts = parts | push: page.region | compact %}{% endif %}
+{% if page.postcode %}{% assign parts = parts | push: page.postcode | compact %}{% endif %}
+{% if page.country %}{% assign parts = parts | push: page.country | compact %}{% endif %}
+{% assign full_address = parts | join: ', ' %}
+{% if full_address != "" %}
+  <a class="listing__location-link" href="https://www.google.com/maps/search/?api=1&query={{ full_address | uri_escape }}" target="_blank" rel="noopener">
+    {{ full_address }}
+  </a>
+{% else %}
+  <span class="muted">Address not provided yet.</span>
+{% endif %}

@@ -5,17 +5,6 @@ map: false
 {% assign display_title = page.title | default: page.name %}
 {% assign review_target = page.slug | default: page.title | slugify %}
 {% assign encoded_title = page.title | default: page.name | uri_escape %}
-{% assign street_val = page.address | default: "" | strip %}
-{% assign lat_val = page.lat | default: "" | strip %}
-{% assign lon_val = page.lon | default: "" | strip %}
-{% assign address_parts = "" | split: "" %}
-{% if street_val != "" %}{% assign address_parts = address_parts | push: street_val %}{% endif %}
-{% if page.suburb %}{% assign address_parts = address_parts | push: page.suburb %}{% endif %}
-{% if page.city or page.city_town %}{% assign address_parts = address_parts | push: page.city | default: page.city_town %}{% endif %}
-{% if page.region %}{% assign address_parts = address_parts | push: page.region %}{% endif %}
-{% if page.country %}{% assign address_parts = address_parts | push: page.country %}{% endif %}
-{% assign display_address = address_parts | join: ', ' %}
-{% assign maps_query = display_address | uri_escape %}
 {% assign website_url = page.website | default: "" %}
 {% if website_url != "" and website_url contains "://" %}
 {% elsif website_url != "" %}
@@ -28,18 +17,7 @@ map: false
       <p class="listing__type">{{ page.type | capitalize }}</p>
       <h1>{{ display_title }}</h1>
       <p class="listing__location">
-        {% if street_val != "" or (lat_val != "" and lon_val != "") %}
-          <a class="listing__location-link"
-            href="https://www.openstreetmap.org/search?query={{ maps_query }}"
-            target="_blank"
-            rel="noopener">
-            {{ display_address | default: "View on map" }}
-          </a>
-        {% elsif display_address != "" %}
-          <span class="muted">{{ display_address }}</span>
-        {% else %}
-          <span class="muted">Address not provided yet.</span>
-        {% endif %}
+        {% include address-block.html %}
       </p>
       {% if website_url != "" or page.email or phone_href != "" %}
       <div class="listing__contact">
