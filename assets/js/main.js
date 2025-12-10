@@ -50,6 +50,22 @@
     distributors: "#725ac1"
   };
 
+  const populateHeroRegions = (countrySlug) => {
+    if (!heroRegionSelect || !listings.length) return;
+    const activeCountry = countrySlug || getActiveCountry();
+    const regions = Array.from(
+      new Set(
+        listings
+          .filter((item) => !activeCountry || item.country_slug === activeCountry)
+          .map((item) => (item.region || "").trim())
+          .filter(Boolean)
+      )
+    ).sort((a, b) => a.localeCompare(b));
+    heroRegionSelect.innerHTML = `<option value="all">All regions</option>${regions
+      .map((region) => `<option value="${region.toLowerCase()}">${region}</option>`)
+      .join("")}`;
+  };
+
   const getStoredCountry = () => {
     try {
       return localStorage.getItem(COUNTRY_STORAGE_KEY) || "";
@@ -109,6 +125,7 @@
   setDocumentCountry(selectedCountry);
   syncCountryButtons(selectedCountry);
   updateCountryLabels(selectedCountry);
+  populateHeroRegions(selectedCountry);
 
   // Mobile navigation toggle
   if (navToggle && primaryNav) {
@@ -358,6 +375,7 @@
     setDocumentCountry(selectedCountry);
     syncCountryButtons(selectedCountry);
     updateCountryLabels(selectedCountry);
+    populateHeroRegions(selectedCountry);
     if (countryPage && countryPage.dataset.countryPage !== selectedCountry) {
       const base = window.HG_BASEURL || "";
       window.location.href = `${base}/country/${selectedCountry}/`;
@@ -385,18 +403,7 @@
       const data = await response.json();
       listings = data;
       filtered = data;
-      if (heroRegionSelect) {
-        const regions = Array.from(
-          new Set(
-            listings
-              .map((item) => (item.region || "").trim())
-              .filter(Boolean)
-          )
-        ).sort((a, b) => a.localeCompare(b));
-        heroRegionSelect.innerHTML = `<option value="all">All regions</option>${regions
-          .map((region) => `<option value="${region.toLowerCase()}">${region}</option>`)
-          .join("")}`;
-      }
+      populateHeroRegions(getActiveCountry());
       applyFilters();
       if (mapShouldStartOpen) openMap();
       refreshMap(filtered);

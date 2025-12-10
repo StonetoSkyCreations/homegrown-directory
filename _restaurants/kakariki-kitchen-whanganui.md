@@ -4,7 +4,7 @@ slug: kakariki-kitchen-whanganui
 published: true
 country: New Zealand
 country_slug: new-zealand
-region: Manawatu-Whanganui
+region: Manawatū-Whanganui
 city: Whanganui
 practices:
 - Organic (uncertified)
