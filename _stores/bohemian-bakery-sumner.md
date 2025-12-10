@@ -29,6 +29,7 @@ services:
   - takeaway coffee
   - pastries
   - lunch options
+  - cafe
 website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
 phone: "+64 3-326 3357"

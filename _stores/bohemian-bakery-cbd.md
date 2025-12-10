@@ -25,6 +25,7 @@ services:
   - bakery café
   - live music (Saturdays)
   - indoor & outdoor seating
+  - cafe
 website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
 phone: "+64 3-365 0456"

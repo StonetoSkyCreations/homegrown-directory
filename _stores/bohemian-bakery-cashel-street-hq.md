@@ -27,6 +27,7 @@ services:
   - café
   - wholesale pastry supply
   - educational viewing mezzanine
+  - cafe
 website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
 phone: "+64 3-365 1335"
