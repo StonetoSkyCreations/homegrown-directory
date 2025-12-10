@@ -1,6 +1,6 @@
 ---
 title: "How to spot credible market claims"
-date: 2025-12-09
+date: 2025-12-09 08:00:00 +13:00
 author: "Homegrown Directory"
 tags:
   - markets

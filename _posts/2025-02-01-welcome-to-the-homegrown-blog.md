@@ -1,6 +1,6 @@
 ---
 title: "Welcome to the Homegrown Directory blog"
-date: 2025-12-09
+date: 2025-12-09 00:00:00 +13:00
 author: "Homegrown Directory"
 tags:
   - NZ
