@@ -2,6 +2,7 @@
 layout: market
 title: Ohoka Farmers Market
 slug: ohoka-farmers-market
+type: farmers-market
 country_slug: new-zealand
 country: New Zealand
 region: Canterbury

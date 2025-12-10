@@ -3,7 +3,7 @@ layout: listing
 slug: riverside-market-christchurch
 name: Riverside Market (Christchurch)
 brand: Riverside Market (Christchurch)
-type: farmers-market
+type: market-hall
 category: market
 description: Large indoor farmers’ market-style food hall (open 7 days)
 country: NZ

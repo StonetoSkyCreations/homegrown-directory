@@ -2,6 +2,7 @@
 layout: market
 title: Riccarton Sunday Market
 slug: riccarton-sunday-market
+type: market
 country_slug: new-zealand
 country: New Zealand
 region: Canterbury

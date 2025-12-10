@@ -2,6 +2,7 @@
 layout: market
 title: Ferrymead Night Market
 slug: ferrymead-night-market
+type: night-market
 country_slug: new-zealand
 country: New Zealand
 region: Canterbury
