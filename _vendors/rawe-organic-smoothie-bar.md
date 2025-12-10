@@ -2,6 +2,7 @@
 layout: vendor
 title: RAWE Organic Smoothie Bar
 slug: rawe-organic-smoothie-bar
+type: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

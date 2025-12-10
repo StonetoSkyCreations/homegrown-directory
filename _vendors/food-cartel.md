@@ -2,6 +2,7 @@
 layout: vendor
 title: Food Cartel
 slug: food-cartel
+type: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Gisborne

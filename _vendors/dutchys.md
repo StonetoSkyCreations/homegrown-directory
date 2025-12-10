@@ -2,6 +2,7 @@
 layout: vendor
 title: Dutchy's
 slug: dutchys
+type: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Manawatū-Whanganui

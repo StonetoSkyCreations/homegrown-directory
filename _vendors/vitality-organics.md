@@ -2,6 +2,7 @@
 layout: vendor
 title: Vitality Organics
 slug: vitality-organics
+type: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Bay of Plenty

@@ -2,6 +2,7 @@
 layout: vendor
 title: Oh Açaí
 slug: oh-acai
+type: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

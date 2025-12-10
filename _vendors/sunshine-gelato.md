@@ -2,6 +2,7 @@
 layout: vendor
 title: Sunshine Gelato
 slug: sunshine-gelato
+type: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

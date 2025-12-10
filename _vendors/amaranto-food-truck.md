@@ -2,6 +2,7 @@
 layout: vendor
 title: Amaranto Food Truck
 slug: amaranto-food-truck
+type: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland
