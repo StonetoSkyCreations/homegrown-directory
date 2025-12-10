@@ -1,5 +1,4 @@
 ---
----
 layout: store
 title: Golden Bay Organics
 slug: golden-bay-organics

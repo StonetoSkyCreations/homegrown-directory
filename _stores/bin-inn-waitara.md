@@ -1,5 +1,4 @@
 ---
----
 layout: store
 title: Bin Inn Waitara
 slug: bin-inn-waitara

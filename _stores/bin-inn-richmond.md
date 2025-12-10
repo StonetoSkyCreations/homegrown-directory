@@ -1,5 +1,4 @@
 ---
----
 layout: store
 title: Bin Inn Richmond
 slug: bin-inn-richmond

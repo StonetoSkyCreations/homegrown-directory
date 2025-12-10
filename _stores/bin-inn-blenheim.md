@@ -1,5 +1,4 @@
 ---
----
 layout: store
 title: Bin Inn Blenheim
 slug: bin-inn-blenheim

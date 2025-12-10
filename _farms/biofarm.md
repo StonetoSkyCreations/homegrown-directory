@@ -1,5 +1,4 @@
 ---
----
 layout: farm
 title: BioFarm
 slug: biofarm

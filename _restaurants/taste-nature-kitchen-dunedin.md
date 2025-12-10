@@ -31,5 +31,4 @@ social_links:
 - https://www.instagram.com/tastenaturenz
 description: Organic café and espresso bar attached to Taste Nature, serving seasonal, ethical dishes and coffee alongside the grocer.
 ---
----
 Organic café and espresso bar within Taste Nature’s Dunedin space, offering seasonal plates, organic baked goods, and coffee aligned with their ethical sourcing ethos.
