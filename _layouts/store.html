@@ -28,9 +28,16 @@ map: false
       <p class="listing__type">{{ page.type | capitalize }}</p>
       <h1>{{ display_title }}</h1>
       <p class="listing__location">
-        {% if street_val != "" %}
-          <a class="listing__location-link" href="https://www.google.com/maps/search/?api=1&query={{ maps_query }}" target="_blank" rel="noopener">
-            {{ display_address }}
+        {% if street_val != "" or (lat_val != "" and lon_val != "") %}
+          <a class="listing__location-link map-link"
+            data-map-link
+            data-map-address="{{ maps_query }}"
+            data-map-lat="{{ page.lat }}"
+            data-map-lon="{{ page.lon }}"
+            href="https://www.openstreetmap.org/search?query={{ maps_query }}"
+            target="_blank"
+            rel="noopener">
+            {{ display_address | default: "View on map" }}
           </a>
         {% elsif display_address != "" %}
           <span class="muted">{{ display_address }}</span>

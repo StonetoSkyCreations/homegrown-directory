@@ -45,13 +45,16 @@
   data-practices="{{ practices_joined | escape }}">
   <div class="listing-card__meta">
     <span class="pill pill--type">{{ card_label }}</span>
-    {% if has_street %}
-      <a class="listing-card__location-link" href="https://www.google.com/maps/search/?api=1&query={{ map_query }}" target="_blank" rel="noopener">
-        <span class="listing-card__location">{{ card_address }}</span>
-      </a>
-    {% elsif has_coords %}
-      <a class="listing-card__location-link" href="https://www.google.com/maps/search/?api=1&query={{ listing.lat }},{{ listing.lon }}" target="_blank" rel="noopener">
-        <span class="listing-card__location">View on map</span>
+    {% if has_street or has_coords %}
+      <a class="listing-card__location-link map-link"
+        data-map-link
+        data-map-address="{{ map_query }}"
+        data-map-lat="{{ listing.lat }}"
+        data-map-lon="{{ listing.lon }}"
+        href="https://www.openstreetmap.org/search?query={{ map_query }}"
+        target="_blank"
+        rel="noopener">
+        <span class="listing-card__location">{{ card_address | default: "View on map" }}</span>
       </a>
     {% else %}
       {% if card_address != "" %}
