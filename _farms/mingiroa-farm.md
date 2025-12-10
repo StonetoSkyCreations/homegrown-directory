@@ -10,19 +10,21 @@ postcode: "4779"
 lat: -40.1451
 lon: 175.4939
 practices:
-  - "Regenerative"
+  - Certified organic
+  - Regenerative
+  - Spray-free
+  - Pasture-raised
 products:
-  - "Meat"
-  - "Eggs"
+  - Grass-fed beef
+  - Farm produce
 services:
-  - "Wholesale"
-  - "Delivery"
-sources: []
+  - Farm
+sources:
+  - https://www.mingiroafarm.com
 supplies_to: []
 hours: ""
-website: "https://www.mingiroafarm.com/regenerative-ag"
+website: "https://www.mingiroafarm.com"
 email: "mingiroafarm@gmail.com"
 phone: ""
-description: "Regenerative livestock farm using long grazing rotations and avoiding synthetic sprays and fertilisers."
+description: "Certified organic regenerative farm using long grazing rotations, diverse pastures and no synthetic sprays to raise pasture-fed beef."
 ---
-Farm focused on regenerative agriculture—long grazing rotations, no pesticides or synthetic fertilisers—producing pasture-raised meats and eggs. Source: https://www.mingiroafarm.com/regenerative-ag

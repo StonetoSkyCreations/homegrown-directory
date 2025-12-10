@@ -1,31 +1,36 @@
 ---
 layout: store
+title: Golden Bay Organics
 slug: golden-bay-organics
-name: Golden Bay Organics
-brand: Golden Bay Organics
-type: organic-store
-category: retailer
-description: Takaka organic store selling fresh produce, wholefoods, and ethically sourced goods.
-country: NZ
+type: grocer
 country_slug: new-zealand
+country: New Zealand
 region: Tasman
-address: ''
-phone: ''
-email: ''
-website: ''
-social_links: []
-sourcing_tags:
-- organic
-products:
-- Vegetables
-- Fruit
-- Pantry goods
-market_days: []
-source_urls:
-- User-supplied list
-last_checked: ''
-notes: ''
-published: true
 city: Takaka
-Organic and wholefood retailer in Golden Bay offering fresh produce and pantry goods. Source: user-supplied list
----
+address: 47 Commercial Street, Takaka, Tasman
+description: Organic one-stop shop offering fresh produce, breads, bulk grains, herbs and spices, snacks, teas, supplements and body-care products.
+practices:
+  - Organic
+products:
+  - Fresh produce and breads
+  - Bulk grains, flours, nuts and seeds
+  - Dried fruits
+  - Herbs and spices
+  - Chocolates and healthy snacks
+  - Teas and supplements
+  - Herbal remedies
+  - Hiking foods
+  - Candles and water filters
+  - Body-care products
+services:
+  - Retail store
+website: ''
+email: gborganics@xtra.co.nz
+phone: "03 525 8677"
+social: ''
+hours: ''
+lat: ''
+lon: ''
+supplies_to: []
+sources:
+  - User-supplied list

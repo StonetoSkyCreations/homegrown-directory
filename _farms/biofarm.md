@@ -2,28 +2,28 @@
 layout: farm
 title: BioFarm
 slug: biofarm
-name: BioFarm
-type: Farm
-description: Certified organic dairy producer making yogurt and milk near Palmerston North.
-country: NZ
 country_slug: new-zealand
+country: New Zealand
 region: Manawatū-Whanganui
 city: Palmerston North
-address: ''
-phone: ''
-email: ''
-website: https://biofarm.co.nz
-social_links: []
+address: Te Matai Road, Palmerston North
+description: One of New Zealand’s oldest certified organic farms producing yoghurt and milk using biodynamic and regenerative principles with on-site processing.
+practices:
+  - Certified organic
+  - Biodynamic
+  - Regenerative
 products:
-- Yogurt
-- Milk
-practices_tags:
-- organic
-certifications:
-- BioGro
-supply_role: Producer
-source_urls:
-- https://maikai.nz/pages/mai-kai-suppliers
-last_checked: '2025-12-09'
-notes: ''
----
+  - Yoghurt
+  - Milk
+services:
+  - Dairy production
+website: https://biofarm.co.nz
+email: ''
+phone: "06 354 8600"
+social: ''
+hours: ''
+lat: ''
+lon: ''
+supplies_to: []
+sources:
+  - https://biofarm.co.nz

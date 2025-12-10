@@ -1,29 +1,30 @@
 ---
 layout: store
+title: Bin Inn Waitara
 slug: bin-inn-waitara
-name: Bin Inn Waitara
-brand: Bin Inn Waitara
-type: bulk-refillery
-category: retailer
-description: Bin Inn – bulk wholefoods & specialty grocery
-country: NZ
+type: bulk refillery
 country_slug: new-zealand
+country: New Zealand
 region: Taranaki
-suburb: Waitara
-address: 6 Browne Street
-postcode: '4320'
-phone: 06 754 7604
-email: waitara@bininn.co.nz
-website: https://www.bininn.co.nz/taranaki/waitara
-social_links: []
-sourcing_tags:
-- organic
+city: Waitara
+address: 61 McLean Street, Waitara 4320
+description: Bulk wholefoods and specialty grocery with organic and gluten-free options.
+practices:
+  - Organic
 products:
-- Bulk foods
-market_days: []
-source_urls:
-- Bin Inn Waitara
-last_checked: '2025-12-09'
-notes: ''
-city: New Plymouth
----
+  - Bulk foods
+  - Gluten-free foods
+  - Organic products
+  - Health products
+services:
+  - Retail store
+website: https://bininn.co.nz/pages/waitara
+email: waitara@bininn.co.nz
+phone: "06 754 9000"
+social: ''
+hours: "Mon–Fri 08:30–17:00; Sat 09:00–15:00"
+lat: -39.0024865
+lon: 174.235171
+supplies_to: []
+sources:
+  - https://bininn.co.nz/pages/waitara
