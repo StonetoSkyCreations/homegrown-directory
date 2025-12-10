@@ -7,7 +7,6 @@ Static, GitHub Pages–ready Jekyll site that maps integrity-first food systems 
 - Shared front matter: `country`, `country_slug`, `region`, `city`, `lat`, `lon`, `practices`, `products`, `services`, `supplies_to` (slugs you supply), `sources` (slugs you buy from), `hours`, `website`, `email`, `phone`, `description`.
 - Templates you can copy: `_farms/_template.md`, `_markets/_template.md`, `_stores/_template.md`, `_restaurants/_template.md`, `_distributors/_template.md`.
 - Search + filters: client-side search over `search.json` (name, location, tags, description) with type/practice/product/service filters.
-- Map: Leaflet + OpenStreetMap tiles show all listings with category colours and popups linking to detail pages.
 - SEO: `jekyll-seo-tag`, JSON-LD per listing, sitemap/robots.
 
 ## Add a listing
@@ -23,6 +22,5 @@ bundle exec jekyll serve
 
 ## URLs to know
 - Home/search: `/`
-- Map: `/map/`
 - Country index: `/country/new-zealand/`
 - Collections: `/farms/`, `/markets/`, `/stores/`, `/restaurants/`, `/distributors/`
