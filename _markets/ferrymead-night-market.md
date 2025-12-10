@@ -33,4 +33,6 @@ lon: ''
 supplies_to: []
 sources:
   - https://www.ferrymead.org.nz
+rating_average: 5
+rating_count: 1
 ---

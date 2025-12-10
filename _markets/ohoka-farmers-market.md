@@ -35,4 +35,6 @@ lon: ''
 supplies_to: []
 sources:
   - http://www.ohokafarmersmarket.co.nz
+rating_average: 5
+rating_count: 1
 ---

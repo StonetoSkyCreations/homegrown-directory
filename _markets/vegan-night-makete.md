@@ -35,4 +35,6 @@ lon: ''
 supplies_to: []
 sources:
   - http://www.veganchristchurch.org.nz/
+rating_average: 5
+rating_count: 1
 ---

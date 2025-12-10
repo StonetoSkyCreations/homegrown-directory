@@ -28,4 +28,6 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Christchurch
+rating_average: 5
+rating_count: 1
 ---

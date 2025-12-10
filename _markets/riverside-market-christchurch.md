@@ -27,4 +27,6 @@ source_urls:
 last_checked: Pure NZ Top10 markets
 notes: Market/Hub
 city: Christchurch
+rating_average: 5
+rating_count: 1
 ---

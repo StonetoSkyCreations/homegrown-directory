@@ -43,4 +43,6 @@ lon: 172.584
 supplies_to: []
 sources:
   - https://www.christchurchfarmersmarket.co.nz
+rating_average: 5
+rating_count: 1
 ---

@@ -33,4 +33,6 @@ lon: ''
 supplies_to: []
 sources:
   - https://www.riccartonmarket.co.nz
+rating_average: 5
+rating_count: 1
 ---
