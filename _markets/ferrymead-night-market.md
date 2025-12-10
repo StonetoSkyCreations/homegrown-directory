@@ -1,5 +1,5 @@
 ---
-layout: market
+layout: listing
 title: Ferrymead Night Market
 slug: ferrymead-night-market
 type: night-market

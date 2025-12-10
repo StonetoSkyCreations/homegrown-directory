@@ -478,26 +478,5 @@
     });
   }
 
-  // Map links: use geo: on mobile to respect default map app, fallback to OSM on desktop
-  const mapLinks = Array.from(document.querySelectorAll("[data-map-link]"));
-  if (mapLinks.length) {
-    const isMobile = /android|iphone|ipad|ipod/i.test(navigator.userAgent || "");
-    mapLinks.forEach((link) => {
-      const address = (link.dataset.mapAddress || "").trim();
-      const lat = (link.dataset.mapLat || "").trim();
-      const lon = (link.dataset.mapLon || "").trim();
-      const hasCoords = lat !== "" && lon !== "";
-      const query = address || (hasCoords ? `${lat},${lon}` : "");
-      const encodedQuery = encodeURIComponent(query);
-      const geoHref = hasCoords
-        ? `geo:${lat},${lon}?q=${encodedQuery}`
-        : `geo:0,0?q=${encodedQuery}`;
-      const fallbackHref = query
-        ? `https://www.openstreetmap.org/search?query=${encodedQuery}`
-        : link.getAttribute("href");
-      link.setAttribute("href", isMobile ? geoHref : fallbackHref);
-    });
-  }
-
   fetchListings();
 })();

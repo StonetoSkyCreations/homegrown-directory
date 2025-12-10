@@ -49,11 +49,7 @@ map: false
       <h1>{{ display_title }}</h1>
       <p class="listing__location">
         {% if street_val != "" or (lat_val != "" and lon_val != "") %}
-          <a class="listing__location-link map-link"
-            data-map-link
-            data-map-address="{{ maps_query }}"
-            data-map-lat="{{ page.lat }}"
-            data-map-lon="{{ page.lon }}"
+          <a class="listing__location-link"
             href="https://www.openstreetmap.org/search?query={{ maps_query }}"
             target="_blank"
             rel="noopener">

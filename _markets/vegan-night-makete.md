@@ -1,5 +1,5 @@
 ---
-layout: market
+layout: listing
 title: Vegan Night Mākete
 slug: vegan-night-makete
 type: night-market

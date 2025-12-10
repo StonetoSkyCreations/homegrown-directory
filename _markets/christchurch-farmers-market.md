@@ -1,5 +1,5 @@
 ---
-layout: market
+layout: listing
 title: Christchurch Farmers’ Market
 slug: christchurch-farmers-market
 type: farmers-market

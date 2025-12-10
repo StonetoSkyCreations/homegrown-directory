@@ -46,22 +46,16 @@
   <div class="listing-card__meta">
     <span class="pill pill--type">{{ card_label }}</span>
     {% if has_street or has_coords %}
-      <a class="listing-card__location-link map-link"
-        data-map-link
-        data-map-address="{{ map_query }}"
-        data-map-lat="{{ listing.lat }}"
-        data-map-lon="{{ listing.lon }}"
+      <a class="listing-card__location-link"
         href="https://www.openstreetmap.org/search?query={{ map_query }}"
         target="_blank"
         rel="noopener">
         <span class="listing-card__location">{{ card_address | default: "View on map" }}</span>
       </a>
+    {% elsif card_address != "" %}
+      <span class="listing-card__location muted">{{ card_address }}</span>
     {% else %}
-      {% if card_address != "" %}
-        <span class="listing-card__location muted">{{ card_address }}</span>
-      {% else %}
-        <span class="listing-card__location muted">Location not provided</span>
-      {% endif %}
+      <span class="listing-card__location muted">Location not provided</span>
     {% endif %}
   </div>
   <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ card_title }}</a></h3>

@@ -1,5 +1,5 @@
 ---
-layout: market
+layout: listing
 title: Riccarton Sunday Market
 slug: riccarton-sunday-market
 type: market

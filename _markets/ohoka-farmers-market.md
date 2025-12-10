@@ -1,5 +1,5 @@
 ---
-layout: market
+layout: listing
 title: Ohoka Farmers Market
 slug: ohoka-farmers-market
 type: farmers-market
