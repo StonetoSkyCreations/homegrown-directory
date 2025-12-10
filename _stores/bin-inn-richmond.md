@@ -1,4 +1,5 @@
 ---
+---
 layout: store
 title: Bin Inn Richmond
 slug: bin-inn-richmond
@@ -39,3 +40,4 @@ lon: ''
 supplies_to: []
 sources:
   - https://www.bininn.co.nz/tasman/richmond
+---

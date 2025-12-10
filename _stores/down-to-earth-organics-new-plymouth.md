@@ -1,4 +1,5 @@
 ---
+---
 layout: store
 title: Down to Earth Organics
 slug: down-to-earth-organics-new-plymouth
@@ -29,3 +30,4 @@ lon: 174.095274
 supplies_to: []
 sources:
   - https://downtoearthorganics.co.nz
+---

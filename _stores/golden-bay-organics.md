@@ -1,4 +1,5 @@
 ---
+---
 layout: store
 title: Golden Bay Organics
 slug: golden-bay-organics
@@ -34,3 +35,4 @@ lon: ''
 supplies_to: []
 sources:
   - User-supplied list
+---

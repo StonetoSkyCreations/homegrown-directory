@@ -1,4 +1,5 @@
 ---
+---
 layout: store
 title: Bin Inn Blenheim
 slug: bin-inn-blenheim
@@ -40,3 +41,4 @@ lon: ''
 supplies_to: []
 sources:
   - https://www.bininn.co.nz/marlborough/blenheim
+---

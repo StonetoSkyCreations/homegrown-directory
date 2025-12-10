@@ -1,4 +1,5 @@
 ---
+---
 layout: store
 title: Bin Inn Waitara
 slug: bin-inn-waitara
@@ -28,3 +29,4 @@ lon: 174.235171
 supplies_to: []
 sources:
   - https://bininn.co.nz/pages/waitara
+---
