@@ -77,6 +77,17 @@ a:focus-visible {
   letter-spacing: -0.01em;
   color: var(--text);
 }
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+.site-logo {
+  height: 32px;
+  width: auto;
+}
 .nav {
   display: flex;
   flex-wrap: wrap;

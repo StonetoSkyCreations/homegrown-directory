@@ -1,6 +1,9 @@
 <header class="site-header">
   <div class="site-header__inner">
-    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <a href="{{ '/' | relative_url }}" class="brand logo-title">
+      <img src="{{ '/logo.png' | relative_url }}" alt="Homegrown Directory logo" class="site-logo">
+      <span>{{ site.title }}</span>
+    </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" data-nav-toggle>
       <span class="nav-toggle__icon">
         <span class="nav-toggle__bar"></span>
