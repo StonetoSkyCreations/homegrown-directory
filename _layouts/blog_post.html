@@ -4,20 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#305c24">
-  {% assign meta_description = page.summary | default: page.description | default: site.description %}
-  <meta name="description" content="{{ meta_description | strip_newlines | escape }}">
+  {% comment %}SEO/AEO meta built from post summary/description{% endcomment %}
+  {% include seo-meta.html %}
   {% if page.featured_image %}
   <meta property="og:image" content="{{ page.featured_image | absolute_url }}">
   <meta name="twitter:card" content="summary_large_image">
   {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  {% seo %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "{{ page.title | escape }}",
-    "description": "{{ meta_description | strip_newlines | escape }}",
+    "description": "{{ page.summary | default: page.description | default: site.description | strip_newlines | escape }}",
     "author": {
       "@type": "Person",
       "name": "{{ page.author | default: 'Homegrown Directory' | escape }}"

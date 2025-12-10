@@ -32,3 +32,37 @@ layout: default
     {% endfor %}
   </div>
 </section>
+
+{% assign country_items = site.farms | where: 'country_slug', page.country_slug | concat: site.markets | where: 'country_slug', page.country_slug %}
+{% assign country_items = country_items | concat: site.stores | where: 'country_slug', page.country_slug %}
+{% assign country_items = country_items | concat: site.restaurants | where: 'country_slug', page.country_slug %}
+{% assign country_items = country_items | concat: site.distributors | where: 'country_slug', page.country_slug %}
+{% assign country_items = country_items | concat: site.vendors | where: 'country_slug', page.country_slug %}
+{% assign country_items = country_items | uniq %}
+{% if country_items and country_items.size > 0 %}
+{%- comment -%}Country-level CollectionPage + ItemList schema for all listings in this country.{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ page.title | escape }} listings",
+  "description": "Directory of farms, markets, grocers, eateries, and hubs in {{ page.title | escape }}.",
+  "url": "{{ page.url | absolute_url }}",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": {{ country_items.size }},
+    "itemListElement": [
+      {% for listing in country_items %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "name": "{{ listing.title | default: listing.name | escape }}",
+        "url": "{{ listing.url | absolute_url }}"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+}
+</script>
+{% endif %}

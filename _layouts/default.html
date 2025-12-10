@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#305c24">
+  {% comment %}SEO/AEO meta built from page data and practices{% endcomment %}
+  {% include seo-meta.html %}
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   {% if page.map %}
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+e2at5O2yRMTDFK3V3pztISZ6WH3btmU8MXy+4wYQ=" crossorigin="">
   {% endif %}
-  {% seo %}
 </head>
 <body>
   {% include header.html %}

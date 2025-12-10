@@ -1,0 +1,60 @@
+{% comment %}
+SEO/AEO meta builder
+- Use `page.seo_title` / `page.seo_description` to override defaults.
+- Falls back to dynamic titles/descriptions using page type, location, and practices.
+- Keeps HTML structure untouched while improving search + AI answer quality.
+{% endcomment %}
+{% assign site_name = site.title | default: "Homegrown Directory" %}
+{% assign location_parts = "" | split: "" %}
+{% if page.city %}{% assign location_parts = location_parts | push: page.city %}{% endif %}
+{% if page.region %}{% assign location_parts = location_parts | push: page.region %}{% endif %}
+{% if page.country %}{% assign location_parts = location_parts | push: page.country %}{% endif %}
+{% assign location_text = location_parts | uniq | join: ", " %}
+
+{% assign practices_source = page.practices | default: page.practices_tags | default: page.sourcing_tags | default: empty %}
+{% assign primary_practice = practices_source[0] | default: "" %}
+
+{% assign type_label = page.collection | capitalize %}
+{% case page.collection %}
+  {% when 'stores' %}{% assign type_label = 'Grocer' %}
+  {% when 'restaurants' %}{% assign type_label = 'Eatery' %}
+  {% when 'vendors' %}{% assign type_label = 'Eatery' %}
+  {% when 'markets' %}{% assign type_label = 'Market' %}
+  {% when 'farms' %}{% assign type_label = 'Farm' %}
+  {% when 'distributors' %}{% assign type_label = 'Hub' %}
+  {% else %}
+    {% assign type_label = page.type | default: page.collection | default: 'Page' %}
+{% endcase %}
+
+{% assign desc_source = page.seo_description | default: page.description | default: page.summary | default: page.intro | default: page.excerpt | default: site.description %}
+{% capture desc_base %}
+  {% if page.collection and page.collection != 'posts' %}
+    {{ page.title | default: type_label }}{% if location_text != "" %} in {{ location_text }}{% endif %}{% if primary_practice != "" %} — {{ primary_practice }}{% endif %}. {{ desc_source }}
+  {% else %}
+    {{ desc_source }}
+  {% endif %}
+{% endcapture %}
+{% assign seo_description = desc_base | strip_html | strip_newlines | replace: "  ", " " | strip | truncate: 155 %}
+
+{% capture auto_title %}
+  {% if page.collection and page.collection != 'posts' %}
+    {{ page.title | default: type_label }}{% if type_label %} | {{ type_label }}{% endif %}{% if location_text != "" %} in {{ location_text }}{% endif %}{% if primary_practice != "" %} | {{ primary_practice }}{% endif %} | {{ site_name }}
+  {% elsif page.layout == 'home' or page.url == '/' %}
+    {{ site_name }} | Organic, spray-free, and regenerative directory for NZ & Australia
+  {% elsif page.collection == 'posts' %}
+    {{ page.title }} | Insights on organic and local food | {{ site_name }}
+  {% else %}
+    {{ page.title | default: site_name }} | {{ site.description | default: "Organic and local food directory" }}
+  {% endif %}
+{% endcapture %}
+{% assign seo_title = page.seo_title | default: auto_title | strip | replace: "  ", " " %}
+
+<title>{{ seo_title | escape }}</title>
+<meta name="description" content="{{ seo_description | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{{ seo_title | escape }}">
+<meta property="og:description" content="{{ seo_description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="{{ site_name | escape }}">
+<meta property="og:type" content="{% if page.collection == 'posts' or page.layout == 'blog_post' %}article{% else %}website{% endif %}">
+<meta name="twitter:card" content="summary">
