@@ -35,3 +35,16 @@ hours: ''
 last_checked: user-submitted
 notes: ''
 ---
+Streamside Organics began in 2014 on a single acre of leased land. What started as a small, hands-on experiment in feeding a local community has grown into one of Canterbury's most respected organic market gardens: a 50-acre certified organic farm supplying thousands of households each week.
+
+Led by founders Dominique and Logan, Streamside has held tight to the principles that shaped its beginnings: grow organically, care for soil as a living system, treat farming as a community service, and keep food as fresh and accessible as possible. Over the past decade, that philosophy has expanded into a large, skilled team working year-round to harvest, pack, and deliver organic produce with consistency, quality, and care.
+
+The farm is AsureQuality certified (#1444), and almost everything grown on site carries that certification. When produce isn't certified -- such as fruit sourced from trusted partners -- it is always clearly labelled as spray-free, with transparent sourcing that avoids synthetic fertilisers or pesticides. Their farming model emphasises soil health, biodiversity, crop rotation, and low-impact growing methods that build long-term ecological resilience.
+
+At the heart of Streamside is the weekly veggie box: a subscription service that brings seasonal organic produce directly to households across Canterbury and beyond. Customers can choose curated boxes or customise their own, pausing or adjusting their subscription at any time. Every item is harvested to order, packed by hand, and delivered by courier or collected at the farm or local farmers' markets. Flexibility, freshness, and transparency form the backbone of the service.
+
+Streamside maintains long-standing relationships with other organic producers to offer a wide range of additional items, such as fruit from Ashley River Organics and bread from Bellbird Baked Goods. These partnerships extend the seasonal range while keeping the sourcing local, ethical, and aligned with organic values.
+
+They remain deeply connected to the community that supported them from the beginning. Every weekend, Streamside is present at the Christchurch Farmers Market and South Christchurch Farmers Market -- rain, wind, heat, or cold -- showing up to share vegetables, talk recipes, discuss organic growing, and maintain the relationships that have shaped the farm's identity.
+
+Today, more than a decade after its beginnings, Streamside Organics continues to evolve without losing sight of its core purpose: to grow healthy food with integrity, support the land that sustains them, make organic produce accessible for everyday households, and strengthen community through fresh, seasonal, nutrient-dense vegetables delivered right to your door.
