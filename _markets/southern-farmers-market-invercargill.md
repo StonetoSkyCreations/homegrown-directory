@@ -3,7 +3,7 @@ layout: listing
 slug: southern-farmers-market-invercargill
 name: Southern Farmers Market (Invercargill)
 brand: Southern Farmers Market (Invercargill)
-type: farmers-market
+type: market
 category: market
 description: Community farmers’ market with local produce (some spray-free/organic)
 country: NZ

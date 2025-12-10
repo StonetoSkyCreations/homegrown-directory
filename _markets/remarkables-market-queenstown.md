@@ -3,7 +3,7 @@ layout: listing
 slug: remarkables-market-queenstown
 name: Remarkables Market
 brand: Remarkables Market
-type: farmers-market
+type: market
 category: market
 description: Queenstown seasonal market featuring local producers including organic and spray-free stalls.
 country: NZ

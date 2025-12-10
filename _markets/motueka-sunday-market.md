@@ -3,7 +3,7 @@ layout: listing
 slug: motueka-sunday-market
 name: Motueka Sunday Market
 brand: Motueka Sunday Market
-type: farmers-market
+type: market
 category: market
 description: Sunday market at Decks Reserve with local organic and spray-free produce.
 country: NZ

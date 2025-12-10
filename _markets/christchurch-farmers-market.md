@@ -2,7 +2,7 @@
 layout: listing
 title: Christchurch Farmers’ Market
 slug: christchurch-farmers-market
-type: farmers-market
+type: market
 country_slug: new-zealand
 country: New Zealand
 region: Canterbury

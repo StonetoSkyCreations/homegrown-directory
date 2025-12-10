@@ -3,7 +3,7 @@ layout: listing
 slug: coromandel-homegrown-community-market
 name: Coromandel Town Homegrown Community Market
 brand: Coromandel Town Homegrown Community Market
-type: farmers-market
+type: market
 category: market
 description: Saturday community market in Coromandel Town with local/homegrown produce including organic and gluten-free options.
 country: NZ

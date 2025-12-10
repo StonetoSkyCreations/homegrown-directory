@@ -3,7 +3,7 @@ layout: listing
 slug: hill-street-farmers-market
 name: Hill Street Farmers Market
 brand: Hill Street Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Thorndon Saturday market with fresh, local and organic produce plus free-range eggs.
 country: NZ

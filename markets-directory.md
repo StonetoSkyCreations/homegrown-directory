@@ -12,18 +12,6 @@ permalink: /markets/
       <p class="eyebrow">Markets</p>
       <h1>Markets close to home</h1>
       <p class="lead">Community marketplaces woven from local food, craft, and connection.</p>
-      <div class="filter-row">
-        <p class="filter-label">Looking for</p>
-        <div class="pill-group">
-          {% assign subtypes = "farmers-market,market,market-hall" | split: "," %}
-          {% for sub in subtypes %}
-          <label class="pill pill--checkbox">
-            <input type="checkbox" name="subtype" value="{{ sub }}">
-            <span>{{ sub | replace: '-', ' ' | capitalize }}</span>
-          </label>
-          {% endfor %}
-        </div>
-      </div>
     </div>
     <div class="directory-controls">
       <label for="regionFilter">Region</label>

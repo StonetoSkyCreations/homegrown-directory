@@ -3,7 +3,7 @@ layout: listing
 slug: wellington-harbourside-market
 name: Wellington Harbourside Market
 brand: Wellington Harbourside Market
-type: farmers-market
+type: market
 category: market
 description: Sunday waterfront market with local growers, organic produce stalls, and free-range eggs.
 country: NZ

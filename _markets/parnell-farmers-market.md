@@ -3,7 +3,7 @@ layout: listing
 slug: parnell-farmers-market
 name: Parnell Farmers Market
 brand: Parnell Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Weekly market in central Auckland with local growers and producers
 country: NZ

@@ -3,7 +3,7 @@ layout: listing
 slug: napier-urban-farmers-market
 name: Napier Urban Farmers Market
 brand: Napier Urban Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Inner-city farmers’ market (satellite of Hawke’s Bay Farmers Market)
 country: NZ

@@ -3,7 +3,7 @@ layout: listing
 slug: mornington-peninsula-farmers-market
 name: Mornington Peninsula Farmers Market
 brand: Mornington Peninsula Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Monthly Mornington market featuring certified organic fruits, vegetables, olives, and cheese from Peninsula growers.
 country: AU

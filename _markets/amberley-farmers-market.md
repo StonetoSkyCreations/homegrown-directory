@@ -3,7 +3,7 @@ layout: listing
 slug: amberley-farmers-market
 name: Amberley Farmers Market
 brand: Amberley Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Local farmers’ market serving North Canterbury (organic produce available)
 country: NZ

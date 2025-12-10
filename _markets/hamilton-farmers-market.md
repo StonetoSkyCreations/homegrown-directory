@@ -3,7 +3,7 @@ layout: listing
 slug: hamilton-farmers-market
 name: Hamilton Farmers Market
 brand: Hamilton Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Large regional market for Waikato (held in Hamilton)
 country: NZ

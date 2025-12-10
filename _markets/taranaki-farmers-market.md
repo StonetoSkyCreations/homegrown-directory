@@ -3,7 +3,7 @@ layout: listing
 slug: taranaki-farmers-market
 name: Taranaki Farmers Market
 brand: Taranaki Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Weekly market showcasing Taranaki producers (organic options available)
 country: NZ

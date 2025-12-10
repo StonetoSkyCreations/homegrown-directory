@@ -3,7 +3,7 @@ layout: listing
 slug: byron-bay-farmers-market
 name: Byron Bay Farmers Market
 brand: Byron Bay Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Weekly Thursday farmers market with local fresh produce and organic vendors in Byron Bay.
 country: AU

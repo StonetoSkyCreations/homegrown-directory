@@ -3,7 +3,7 @@ layout: listing
 slug: jan-powers-farmers-market-mitchelton
 name: Jan Powers Farmers Market (Mitchelton)
 brand: Jan Powers Farmers Markets
-type: farmers-market
+type: market
 category: market
 description: Monthly Sunday market on Blackwood St with local seasonal produce and artisan foods.
 country: AU

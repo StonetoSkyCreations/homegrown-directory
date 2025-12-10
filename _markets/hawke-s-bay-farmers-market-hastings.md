@@ -3,7 +3,7 @@ layout: listing
 slug: hawke-s-bay-farmers-market-hastings
 name: Hawke’s Bay Farmers Market (Hastings)
 brand: Hawke’s Bay Farmers Market (Hastings)
-type: farmers-market
+type: market
 category: market
 description: Large regional farmers’ market with many organic producers
 country: NZ

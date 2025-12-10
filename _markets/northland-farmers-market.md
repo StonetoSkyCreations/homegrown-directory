@@ -3,7 +3,7 @@ layout: listing
 slug: northland-farmers-market-whangarei
 name: Northland Farmers Market
 brand: Northland Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Saturday market in Whangārei focused on locally grown and made goods with organic and spray-free vendors.
 country: NZ

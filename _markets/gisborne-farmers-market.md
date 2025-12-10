@@ -3,7 +3,7 @@ layout: listing
 slug: gisborne-farmers-market
 name: Gisborne Farmers Market
 brand: Gisborne Farmers Market
-type: farmers-market
+type: market
 category: market
 description: East Coast farmers’ market showcasing local growers
 country: NZ

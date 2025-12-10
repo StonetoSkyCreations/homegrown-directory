@@ -3,7 +3,7 @@ layout: listing
 slug: coroglen-farmers-market
 name: Coroglen Farmers Market
 brand: Coroglen Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Seasonal Coroglen market featuring local spray-free and organic produce.
 country: NZ

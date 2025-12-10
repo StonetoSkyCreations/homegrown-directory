@@ -3,7 +3,7 @@ layout: listing
 slug: jan-powers-farmers-market-manly
 name: Jan Powers Farmers Market (Manly)
 brand: Jan Powers Farmers Markets
-type: farmers-market
+type: market
 category: market
 description: Bi-weekly Saturday market at Manly Harbour with local produce and artisan foods.
 country: AU

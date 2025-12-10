@@ -4,7 +4,7 @@ slug: "old-packhouse-market"
 name: "The Old Packhouse Market"
 brand: "The Old Packhouse Market"
 published: true
-type: market-hall
+type: market
 country: "New Zealand"
 country_slug: new-zealand
 region: "Northland"

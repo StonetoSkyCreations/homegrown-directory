@@ -2,7 +2,7 @@
 layout: market
 title: Oamaru Organics
 slug: oamaru-organics
-type: farmers-market
+type: market
 country_slug: new-zealand
 country: New Zealand
 region: Otago

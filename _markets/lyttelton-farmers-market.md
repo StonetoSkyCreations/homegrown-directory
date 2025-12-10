@@ -3,7 +3,7 @@ layout: listing
 slug: lyttelton-farmers-market
 name: Lyttelton Farmers Market
 brand: Lyttelton Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Popular farmers’ market with local organic produce & crafts
 country: NZ

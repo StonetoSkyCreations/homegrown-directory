@@ -3,7 +3,7 @@ layout: listing
 slug: palmerston-north-farmers-market
 name: Palmerston North Farmers Market
 brand: Palmerston North Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Sunday market at The Square featuring local growers with organic and free-range options.
 country: NZ

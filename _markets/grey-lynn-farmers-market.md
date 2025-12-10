@@ -3,7 +3,7 @@ layout: listing
 slug: grey-lynn-farmers-market
 name: Grey Lynn Farmers Market
 brand: Grey Lynn Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Community-run inner Auckland farmers’ market (many organic vendors)
 country: NZ

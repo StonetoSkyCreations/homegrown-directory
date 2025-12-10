@@ -3,7 +3,7 @@ layout: listing
 slug: clevedon-village-farmers-market
 name: Clevedon Village Farmers Market
 brand: Clevedon Village Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Rural Auckland farmers’ market with wide range of fresh produce
 country: NZ

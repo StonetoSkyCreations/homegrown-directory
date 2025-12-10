@@ -3,7 +3,7 @@ layout: listing
 slug: cambridge-farmers-market
 name: Cambridge Farmers Market
 brand: Cambridge Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Waikato farmers’ market featuring local growers (some organic)
 country: NZ

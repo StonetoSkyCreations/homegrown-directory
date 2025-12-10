@@ -3,7 +3,7 @@ layout: listing
 slug: wanaka-farmers-market
 name: Wānaka Farmers Market
 brand: Wānaka Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Thursday market where everything is grown, baked, made or caught locally, with organic and spray-free stalls.
 country: NZ

@@ -3,7 +3,7 @@ layout: listing
 slug: bay-of-islands-farmers-market-kerikeri
 name: Bay of Islands Farmers Market – Kerikeri
 brand: Bay of Islands Farmers Market – Kerikeri
-type: farmers-market
+type: market
 category: market
 description: Local farmers’ market featuring Far North growers (Kerikeri site)
 country: NZ

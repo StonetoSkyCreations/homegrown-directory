@@ -3,7 +3,7 @@ layout: listing
 slug: kapiti-coast-farmers-market
 name: Kapiti Coast Farmers Market
 brand: Kapiti Coast Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Thursday market in Paraparaumu featuring local stallholders, organic sourdoughs, and regenerative/organic veg.
 country: NZ

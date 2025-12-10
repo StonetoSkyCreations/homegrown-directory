@@ -3,7 +3,7 @@ layout: listing
 slug: coburg-farmers-market
 name: Coburg Farmers Market
 brand: Coburg Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Weekly Saturday market at Coburg Primary School with certified organic growers and seasonal produce.
 country: AU

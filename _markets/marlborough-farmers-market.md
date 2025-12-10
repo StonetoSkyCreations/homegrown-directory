@@ -3,7 +3,7 @@ layout: listing
 slug: marlborough-farmers-market
 name: Marlborough Farmers Market
 brand: Marlborough Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Community farmers’ market featuring Marlborough growers (seasonal organics)
 country: NZ

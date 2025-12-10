@@ -3,7 +3,7 @@ layout: listing
 slug: nelson-farmers-market
 name: Nelson Farmers Market
 brand: Nelson Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Mid-week farmers’ market with local produce in Nelson city
 country: NZ

@@ -3,7 +3,7 @@ layout: listing
 slug: mansfield-farmers-market
 name: Mansfield Farmers Market
 brand: Mansfield Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Regional market offering organically and sustainably grown produce, including certified organic fruits, vegetables, meats, and artisanal goods.
 country: AU

@@ -3,7 +3,7 @@ layout: listing
 slug: rotorua-farmers-market
 name: Rotorua Farmers Market
 brand: Rotorua Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Sunday market at Te Manawa with local organic produce, free-range eggs, and fresh bread.
 country: NZ

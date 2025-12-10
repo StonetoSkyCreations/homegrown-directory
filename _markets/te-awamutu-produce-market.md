@@ -3,7 +3,7 @@ layout: listing
 slug: te-awamutu-produce-market
 name: Te Awamutu Produce Market
 brand: Te Awamutu Produce Market
-type: farmers-market
+type: market
 category: market
 description: Community market with local produce in Te Awamutu
 country: NZ

@@ -3,7 +3,7 @@ layout: listing
 slug: queen-victoria-market
 name: Queen Victoria Market
 brand: Queen Victoria Market
-type: food-market
+type: market
 category: market
 description: Iconic Melbourne market with a dedicated organic section for certified organic produce, dairy, eggs, and specialty foods.
 country: AU

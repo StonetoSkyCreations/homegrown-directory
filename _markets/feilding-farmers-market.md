@@ -3,7 +3,7 @@ layout: listing
 slug: feilding-farmers-market
 name: Feilding Farmers Market
 brand: Feilding Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Authentic farmers’ market in Manawatū with local growers
 country: NZ

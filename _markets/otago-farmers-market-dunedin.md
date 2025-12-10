@@ -3,7 +3,7 @@ layout: listing
 slug: otago-farmers-market-dunedin
 name: Otago Farmers Market (Dunedin)
 brand: Otago Farmers Market (Dunedin)
-type: farmers-market
+type: market
 category: market
 description: Large authentic farmers’ market at Dunedin Railway Station
 country: NZ

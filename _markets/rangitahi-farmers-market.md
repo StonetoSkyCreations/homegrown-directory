@@ -3,7 +3,7 @@ layout: listing
 slug: rangitahi-farmers-market
 name: Rangitahi Farmers Market
 brand: Rangitahi Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Coastal Raglan market showcasing local producers with minimal-waste ethos.
 country: NZ

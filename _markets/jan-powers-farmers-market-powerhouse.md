@@ -3,7 +3,7 @@ layout: listing
 slug: jan-powers-farmers-market-powerhouse
 name: Jan Powers Farmers Market (Powerhouse)
 brand: Jan Powers Farmers Markets
-type: farmers-market
+type: market
 category: market
 description: Saturday market at Brisbane Powerhouse with local fresh produce and artisanal products.
 country: AU

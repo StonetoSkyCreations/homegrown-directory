@@ -1,7 +1,7 @@
 ---
 title: "Harbour Harvest Market"
 slug: harbour-harvest-market
-type: farmers-market
+type: market
 country: "New Zealand"
 country_slug: new-zealand
 region: "Wellington"

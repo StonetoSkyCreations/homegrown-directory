@@ -3,7 +3,7 @@ layout: listing
 slug: west-coast-farmers-market-greymouth
 name: West Coast Farmers Market
 brand: West Coast Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Greymouth farmers market with local producers and spray-free/organic vendors.
 country: NZ

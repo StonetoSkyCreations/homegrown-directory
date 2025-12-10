@@ -3,7 +3,7 @@ layout: listing
 slug: northey-street-organic-farmers-market
 name: Northey Street Organic Farmers Market
 brand: Northey Street Organic Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Brisbane’s certified organic Sunday market with fresh produce and artisan foods at Northey Street City Farm.
 country: AU

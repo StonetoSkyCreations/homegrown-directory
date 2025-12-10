@@ -3,7 +3,7 @@ layout: listing
 slug: bendigo-community-farmers-market
 name: Bendigo Community Farmers Market
 brand: Bendigo Community Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Regional Bendigo market with biodynamic and organic vendors offering produce, honey, dairy, and meats.
 country: AU

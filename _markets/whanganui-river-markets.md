@@ -3,7 +3,7 @@ layout: listing
 slug: whanganui-river-markets
 name: Whanganui River Markets
 brand: Whanganui River Markets
-type: farmers-market
+type: market
 category: market
 description: Large outdoor market by Whanganui River (mix of produce and craft stalls)
 country: NZ

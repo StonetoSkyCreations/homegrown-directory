@@ -3,7 +3,7 @@ layout: listing
 slug: whangarei-growers-market
 name: Whangarei Growers Market
 brand: Whangarei Growers Market
-type: farmers-market
+type: market
 category: market
 description: NZ’s oldest growers-only market (strong focus on spray-free produce)
 country: NZ

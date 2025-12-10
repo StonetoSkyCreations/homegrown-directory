@@ -2,7 +2,7 @@
 layout: listing
 title: Vegan Night Mākete
 slug: vegan-night-makete
-type: night-market
+type: market
 country_slug: new-zealand
 country: New Zealand
 region: Canterbury

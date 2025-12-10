@@ -3,7 +3,7 @@ layout: listing
 slug: golden-bay-farmers-market
 name: Golden Bay Farmers Market
 brand: Golden Bay Farmers Market
-type: farmers-market
+type: market
 category: market
 description: Local-only market in Takaka with organic and spray-free produce vendors.
 country: NZ

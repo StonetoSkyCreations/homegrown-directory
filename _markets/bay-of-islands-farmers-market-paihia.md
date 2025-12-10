@@ -3,7 +3,7 @@ layout: listing
 slug: bay-of-islands-farmers-market-paihia
 name: Bay of Islands Farmers Market – Paihia
 brand: Bay of Islands Farmers Market – Paihia
-type: farmers-market
+type: market
 category: market
 description: Local farmers’ market featuring Far North growers (Paihia site)
 country: NZ

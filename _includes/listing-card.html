@@ -39,7 +39,7 @@
   data-region="{{ listing.region | escape }}"
   data-city="{{ listing.city | default: listing.city_town | escape }}"
   data-name="{{ card_title | escape }}"
-  data-type="{% if listing.collection == 'markets' %}{{ listing.type | default: listing.collection | escape }} market{% else %}{{ listing.type | default: listing.collection | escape }}{% endif %}"
+  data-type="{{ listing.type | default: listing.collection | escape }}"
   data-category="{{ card_type | escape }}"
   data-country="{{ listing.country_slug | escape }}"
   data-practices="{{ practices_joined | escape }}">
