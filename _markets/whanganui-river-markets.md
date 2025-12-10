@@ -8,7 +8,7 @@ category: market
 description: Large outdoor market by Whanganui River (mix of produce and craft stalls)
 country: NZ
 country_slug: new-zealand
-region: Manawatu-Wanganui
+region: Manawatū-Whanganui
 suburb: Whanganui
 address: Whanganui Riverbank, Taupo Quay
 postcode: '4500'

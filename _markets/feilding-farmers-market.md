@@ -8,7 +8,7 @@ category: market
 description: Authentic farmers’ market in Manawatū with local growers
 country: NZ
 country_slug: new-zealand
-region: Manawatu-Wanganui
+region: Manawatū-Whanganui
 suburb: Feilding
 address: Manchester Square
 postcode: '4702'

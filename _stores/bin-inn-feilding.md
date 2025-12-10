@@ -8,7 +8,7 @@ category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ
 country_slug: new-zealand
-region: Manawatu-Wanganui
+region: Manawatū-Whanganui
 suburb: Feilding
 address: 25 Fergusson Street
 postcode: '4702'

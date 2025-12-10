@@ -8,7 +8,7 @@ category: retailer
 description: Produce store in Palmerston North stocking organic, local, and spray-free fruit and veg.
 country: NZ
 country_slug: new-zealand
-region: Manawatu
+region: Manawatū-Whanganui
 address: 239 Broadway Avenue
 phone: ''
 email: ''

@@ -7,7 +7,7 @@ type: Farm
 description: Certified organic egg producer from Christchurch.
 country: NZ
 country_slug: new-zealand
-region: Manawatu-Wanganui
+region: Manawatū-Whanganui
 city: Levin
 address: 25 Sheffield Street, Levin 5510, New Zealand
 postcode: '5510'

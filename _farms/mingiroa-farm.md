@@ -3,7 +3,7 @@ title: "Mingiroa Farm"
 slug: mingiroa-farm
 country: "New Zealand"
 country_slug: new-zealand
-region: "Manawatu-Wanganui"
+region: "Manawatū-Whanganui"
 city: "Halcombe"
 address: "30 Mingaroa Road, Halcombe 4779, Manawatū, New Zealand"
 postcode: "4779"

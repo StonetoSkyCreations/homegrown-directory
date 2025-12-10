@@ -4,7 +4,7 @@ slug: river-valley-kitchen-taihape
 published: true
 country: New Zealand
 country_slug: new-zealand
-region: Manawatu-Wanganui
+region: Manawatū-Whanganui
 city: Taihape
 practices:
 - Regenerative

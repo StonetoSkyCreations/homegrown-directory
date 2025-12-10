@@ -8,7 +8,7 @@ category: market
 description: Sunday market at The Square featuring local growers with organic and free-range options.
 country: NZ
 country_slug: new-zealand
-region: Manawatu
+region: Manawatū-Whanganui
 address: The Square
 phone: ''
 email: ''

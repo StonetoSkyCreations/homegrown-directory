@@ -8,7 +8,7 @@ category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ
 country_slug: new-zealand
-region: Manawatu-Wanganui
+region: Manawatū-Whanganui
 suburb: Palmerston North
 address: 313 Church Street
 postcode: '4410'
