@@ -22,6 +22,8 @@ map: false
   {% assign website_url = "https://" | append: website_url %}
 {% endif %}
 {% assign phone_href = page.phone | default: "" | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
+{% assign short_description = page.description | default: page.excerpt | default: "" %}
+{% assign trimmed_body = content | strip %}
 {% case page.collection %}
   {% when 'farms' %}{% assign schema_type = 'Farm' %}{% assign display_label = 'Farm' %}
   {% when 'restaurants' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Eatery' %}
@@ -50,7 +52,21 @@ map: false
   </header>
 
   <div class="listing__content">
-    {{ content }}
+    {% if short_description != "" %}
+    <div class="listing__intro">
+      <p>{{ short_description }}</p>
+    </div>
+    {% endif %}
+
+    {% if trimmed_body != "" %}
+    <div class="listing__body">
+      {{ content }}
+    </div>
+    {% endif %}
+
+    <section class="listing-updates-reviews">
+      <!-- Future: injected updates, user reviews, or extra content blocks -->
+    </section>
   </div>
 
   <div class="listing__meta">

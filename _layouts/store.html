@@ -6,6 +6,8 @@ map: false
 {% assign review_target = page.slug | default: page.title | slugify %}
 {% assign encoded_title = page.title | default: page.name | uri_escape %}
 {% assign website_url = page.website | default: "" %}
+{% assign short_description = page.description | default: page.excerpt | default: "" %}
+{% assign trimmed_body = content | strip %}
 {% if website_url != "" and website_url contains "://" %}
 {% elsif website_url != "" %}
   {% assign website_url = "https://" | append: website_url %}
@@ -30,7 +32,21 @@ map: false
   </header>
 
   <div class="listing__content">
-    {{ content | default: page.description }}
+    {% if short_description != "" %}
+    <div class="listing__intro">
+      <p>{{ short_description }}</p>
+    </div>
+    {% endif %}
+
+    {% if trimmed_body != "" %}
+    <div class="listing__body">
+      {{ content }}
+    </div>
+    {% endif %}
+
+    <section class="listing-updates-reviews">
+      <!-- Future: injected updates, user reviews, or extra content blocks -->
+    </section>
   </div>
 
   <div class="listing__meta">
