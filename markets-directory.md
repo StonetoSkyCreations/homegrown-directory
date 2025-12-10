@@ -11,7 +11,7 @@ permalink: /markets/
     <div>
       <p class="eyebrow">Markets</p>
       <h1>Markets close to home</h1>
-      <p class="lead">Browse farmers' markets, market halls, and local hubs where growers and eaters meet.</p>
+      <p class="lead">Community marketplaces woven from local food, craft, and connection.</p>
       <div class="filter-row">
         <p class="filter-label">Looking for</p>
         <div class="pill-group">
