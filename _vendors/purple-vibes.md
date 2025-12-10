@@ -1,0 +1,29 @@
+---
+layout: vendor
+title: Purple Vibes
+slug: purple-vibes
+type: food-truck
+country_slug: new-zealand
+country: New Zealand
+region: Auckland
+city: Auckland
+address: Auckland (mobile)
+description: Food trailer specialising in premium açaí bowls and smoothies made with 100% organic açaí and high-quality ingredients.
+practices:
+  - Organic
+products:
+  - Açaí bowls
+  - Smoothies
+services:
+  - Food trailer
+  - Event catering
+website: https://purplevibes.co.nz
+email: info@purplevibes.co.nz
+phone: "+64 20 4060 8009"
+social: ''
+hours: ''
+lat: ''
+lon: ''
+supplies_to: []
+sources: []
+---
