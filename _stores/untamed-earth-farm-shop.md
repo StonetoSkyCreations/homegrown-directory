@@ -2,9 +2,10 @@
 layout: store
 title: Untamed Earth Farm Shop
 slug: untamed-earth-farm-shop
+collection: stores
 name: Untamed Earth Farm Shop
 type: Organic Shop
-description: Community-focused organic shop selling Untamed Earth's certified organic vegetables, mushrooms, seedlings, and seasonal produce.
+description: Neighbourhood organic grocer stocking Untamed Earth's certified produce plus local bread, fruit, and pantry staples.
 country: New Zealand
 country_slug: new-zealand
 region: Canterbury
