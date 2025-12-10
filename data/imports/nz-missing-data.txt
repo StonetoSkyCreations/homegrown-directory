@@ -167,7 +167,6 @@ _stores/commonsense-lower-hutt.md: lat, phone, hours
 _stores/commonsense-mt-eden.md: lat, phone, hours
 _stores/commonsense-wellington-city.md: lat, phone, hours
 _stores/cornucopia-organics-hastings.md: lat, phone, hours
-_stores/countdown-all-nz-branches.md: postcode, lat, phone, email, hours
 _stores/down-to-earth-organics-new-plymouth.md: postcode, lat, lon, phone, email, hours
 _stores/earth-food-store-waikanae.md: address, postcode, lat, lon, phone, email, website, hours
 _stores/earthbound-organics-richmond.md: address, postcode, lat, lon, phone, email, hours
@@ -178,8 +177,6 @@ _stores/farro-fresh-mt-eden.md: lat, website, hours
 _stores/farro-fresh-mt-wellington.md: lat, website, hours
 _stores/farro-fresh-orakei.md: lat, website, hours
 _stores/farro-fresh-smales-farm.md: lat, website, hours
-_stores/four-square-selected-stores.md: postcode, lat, phone, website, hours
-_stores/freshchoice-all-locations.md: postcode, lat, phone, website, hours
 _stores/golden-bay-organics.md: address, postcode, lat, lon, phone, email, website, hours
 _stores/green-grocer-palmerston-north.md: postcode, lat, lon, phone, email, website, hours
 _stores/harbour-co-op-lyttelton.md: lat, phone, hours
@@ -196,17 +193,14 @@ _stores/liberty-market-chch.md: lat, phone, hours
 _stores/mapua-organics.md: address, postcode, lat, lon, phone, email, website, hours
 _stores/mrs-woollys-general-store-glenorchy.md: postcode, lat, lon, phone, email, hours
 _stores/naturally-organic-invercargill.md: postcode, lat, lon, phone, email, website, hours
-_stores/new-world-all-locations.md: postcode, lat, phone, website, hours
 _stores/ooooby-online-organic-boxes.md: lat, lon, hours
 _stores/organic-corner-deli-whangarei.md: address, postcode, lat, lon, phone, email, website, hours
-_stores/pak-nsave-all-locations.md: postcode, lat, phone, website, hours
 _stores/pembroke-wines-and-spirits-wanaka.md: postcode, lat, lon, phone, email, hours
 _stores/picton-organic-store.md: address, postcode, lat, lon, phone, email, website, hours
 _stores/piko-wholefoods-chch.md: lat, phone, hours
 _stores/riverton-organic-shop.md: address, postcode, lat, lon, phone, email, website, hours
 _stores/soulfood-organic-wanaka.md: address, postcode, lat, lon, phone, email, website, hours
 _stores/source-bulk-foods-queenstown.md: postcode, lat, lon, phone, email, hours
-_stores/supervalue-all-locations.md: postcode, lat, phone, website, hours
 _stores/taste-nature-dunedin.md: postcode, lat, lon, phone, email, hours
 _stores/thames-organic-shop.md: postcode, lat, lon, phone, email, website, hours
 _stores/the-grocer-kaikoura.md: postcode, lat, lon, phone, email, website, hours
