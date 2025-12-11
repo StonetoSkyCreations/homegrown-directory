@@ -6,4 +6,4 @@ global:
 collections:
   eateries:
     collection: "restaurants"
-    slug: "gatherings"
+    slug: "gatherings-christchurch"
