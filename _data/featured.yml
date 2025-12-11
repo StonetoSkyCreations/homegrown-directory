@@ -13,3 +13,6 @@ collections:
   markets:
     collection: "markets"
     slug: "matakana-village-farmers-market"
+  farms:
+    collection: "farms"
+    slug: "little-farms-market-garden"

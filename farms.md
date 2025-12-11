@@ -51,6 +51,8 @@ permalink: /farms/
     </div>
   </div>
 
+  {% include featured-card.html scope="collections" key="farms" %}
+
   <div class="listing-grid listing-grid--tight">
     {% for listing in items %}
       {% include listing-card.html listing=listing %}
