@@ -7,3 +7,6 @@ collections:
   eateries:
     collection: "restaurants"
     slug: "gatherings-christchurch"
+  grocers:
+    collection: "stores"
+    slug: "taste-nature-dunedin"
