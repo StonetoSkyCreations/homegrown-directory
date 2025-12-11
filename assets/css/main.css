@@ -1094,6 +1094,10 @@ a:focus-visible {
   width: 100%;
 }
 
+.listing-card.hidden {
+  display: none;
+}
+
 /* Highlighted Featured Card */
 .listing-card--featured {
   border: 2px solid #c7a869;

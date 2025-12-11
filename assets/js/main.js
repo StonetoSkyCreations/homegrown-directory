@@ -174,12 +174,27 @@
     };
 
     runDirectoryFilters = () => {
+      const active = hasActiveFilters();
       const selectedRegion = regionSelect ? regionSelect.value : "all";
       const query = textFilter ? textFilter.value.toLowerCase().trim() : "";
       const selectedTags = tagFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
       const selectedSubtypes = subtypeFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
       const activeCountry = getActiveCountry();
       let visibleCount = 0;
+
+      if (!active) {
+        cards.forEach((card) => {
+          const isFeatured = card.classList.contains("listing-card--featured") || card.dataset.featured === "true";
+          const hide = !isFeatured;
+          card.classList.toggle("hidden", hide);
+          card.style.display = hide ? "none" : "";
+          if (!hide) visibleCount += 1;
+        });
+        if (dirResultsCount) {
+          dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
+        }
+        return;
+      }
 
       cards.forEach((card) => {
         const region = (card.dataset.region || "").toLowerCase();
@@ -196,6 +211,7 @@
         const textOk = !query || name.includes(query) || region.includes(query) || city.includes(query) || practices.join(" ").includes(query);
 
         const show = regionOk && tagsOk && subtypeOk && countryOk && textOk;
+        card.classList.remove("hidden");
         card.style.display = show ? "" : "none";
         if (show) visibleCount += 1;
       });
@@ -244,10 +260,12 @@
     `;
   };
 
-  function renderList(items) {
+  function renderList(items, active) {
     if (!resultsContainer) return;
+    const hasActive = Boolean(active);
     if (!items.length) {
-      resultsContainer.innerHTML = `<p class="muted">No listings match those filters yet.</p>`;
+      const message = hasActive ? "No listings match your filters yet." : "No featured listings are available yet.";
+      resultsContainer.innerHTML = `<p class="muted">${message}</p>`;
     } else {
       resultsContainer.innerHTML = items.map(cardTemplate).join("");
     }
@@ -305,8 +323,26 @@
     );
   }
 
+  function hasActiveFilters() {
+    const q = (document.querySelector("#searchInput, #dirSearch")?.value || "").trim();
+    const regionEl = document.querySelector("#heroRegion, #regionFilter");
+    const region = regionEl ? regionEl.value : "";
+
+    const typeChecked = !!document.querySelector('input[name="type"]:checked, input[name="subtype"]:checked');
+    const tagChecked = !!document.querySelector('input[name="tag"]:checked');
+    const extraChecked = !!document.querySelector(
+      'input[name="practice"]:checked, input[name="product"]:checked, input[name="service"]:checked, input[name="practices"]:checked, input[name="products"]:checked, input[name="services"]:checked'
+    );
+
+    const heroTypeActive = Array.isArray(heroTypeFilters) && heroTypeFilters.length > 0;
+    const hashTypeActive = Array.isArray(hashTypes) && hashTypes.length > 0;
+
+    return !!(q || (region && region !== "all") || typeChecked || tagChecked || extraChecked || heroTypeActive || hashTypeActive);
+  }
+
   function applyFilters() {
     if (!hasSearchUI) return;
+    const active = hasActiveFilters();
     const selections = {
       query: searchInput ? searchInput.value : "",
       region: heroRegionSelect ? heroRegionSelect.value : "all",
@@ -317,13 +353,18 @@
     };
 
     document.querySelectorAll('input[name="type"]:checked').forEach((el) => selections.types.push(el.value.toLowerCase()));
+    document.querySelectorAll('input[name="practice"]:checked').forEach((el) => selections.practices.push(el.value));
     document.querySelectorAll('input[name="practices"]:checked').forEach((el) => selections.practices.push(el.value));
+    document.querySelectorAll('input[name="product"]:checked').forEach((el) => selections.products.push(el.value));
     document.querySelectorAll('input[name="products"]:checked').forEach((el) => selections.products.push(el.value));
+    document.querySelectorAll('input[name="service"]:checked').forEach((el) => selections.services.push(el.value));
     document.querySelectorAll('input[name="services"]:checked').forEach((el) => selections.services.push(el.value));
 
-    filtered = listings.filter((item) => matchesFilters(item, selections));
-    renderList(filtered);
-    refreshMap(filtered);
+    const source = window.HG_INDEX || listings || [];
+    filtered = active
+      ? source.filter((item) => matchesFilters(item, selections))
+      : source.filter((item) => item.featured === true || item.featured === "true");
+    renderList(filtered, active);
   }
 
   function clearFilters() {
@@ -424,6 +465,7 @@
       const url = window.HG_INDEX_URL || "/search.json";
       const response = await fetch(url);
       const data = await response.json();
+      window.HG_INDEX = data;
       listings = data;
       filtered = data;
       populateHeroRegions(getActiveCountry());
