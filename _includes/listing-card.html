@@ -49,11 +49,13 @@
   data-category="{{ card_type | escape }}"
   data-country="{{ listing.country_slug | escape }}"
   data-practices="{{ practices_joined | escape }}">
-  {% if include.featured %}
-    <div class="featured-badge">⭐ Featured</div>
-  {% endif %}
   <div class="listing-card__meta">
-    <span class="pill pill--type">{{ card_label }}</span>
+    <div>
+      <span class="pill pill--type">{{ card_label }}</span>
+      {% if include.featured %}
+        <span class="featured-badge">⭐ Featured</span>
+      {% endif %}
+    </div>
     {% if has_street or has_coords %}
       <a class="listing-card__location-link"
         href="https://www.google.com/maps/search/?api=1&query={{ card_address | uri_escape }}"

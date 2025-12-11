@@ -1059,15 +1059,15 @@ a:focus-visible {
 
 /* Badge */
 .featured-badge {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 999px;
+  border: 1px solid #c7a869;
   background: #faf7f1;
   color: #8c7344;
-  border: 1px solid #c7a869;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
-  border-radius: 4px;
   font-weight: 600;
-  z-index: 2;
+  line-height: 1.2;
+  vertical-align: middle;
 }
