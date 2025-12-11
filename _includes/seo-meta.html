@@ -26,20 +26,31 @@ SEO/AEO meta builder
     {% assign type_label = page.type | default: page.collection | default: 'Page' %}
 {% endcase %}
 
-{% assign desc_fallback = page.description | default: page.summary | default: page.intro | default: page.excerpt | default: site.description %}
-{% if page.seo_description %}
-  {% assign raw_description = page.seo_description %}
-{% else %}
-  {% capture desc_base %}
-    {% if page.collection and page.collection != 'posts' %}
-      {{ page.title | default: type_label }}{% if location_text != "" %} in {{ location_text }}{% endif %}{% if primary_practice != "" %} — {{ primary_practice }}{% endif %}. {{ desc_fallback }}
-    {% else %}
-      {{ desc_fallback }}
-    {% endif %}
-  {% endcapture %}
-  {% assign raw_description = desc_base %}
-{% endif %}
-{% assign page_description = raw_description | strip_html | strip_newlines | replace: "  ", " " | strip | truncate: 155 %}
+{%- assign raw_desc = page.seo_description
+  | default: page.summary
+  | default: page.description
+  | default: page.intro
+  | default: page.excerpt
+  | default: site.description
+-%}
+{%- assign cleaned_desc = raw_desc
+  | markdownify
+  | strip_html
+  | strip_newlines
+  | replace: "  ", " "
+  | replace: "  ", " "
+  | strip
+-%}
+{%- assign base_description = cleaned_desc | truncate: 155, "…" -%}
+
+{% capture desc_with_context %}
+  {% if page.collection and page.collection != 'posts' %}
+    {{ page.title | default: type_label }}{% if location_text != "" %} in {{ location_text }}{% endif %}{% if primary_practice != "" %} — {{ primary_practice }}{% endif %}. {{ base_description }}
+  {% else %}
+    {{ base_description }}
+  {% endif %}
+{% endcapture %}
+{% assign page_description = desc_with_context | strip | replace: "  ", " " | replace: "  ", " " | truncate: 155, "…" %}
 
 {% capture auto_title %}
   {% if page.collection and page.collection != 'posts' %}
