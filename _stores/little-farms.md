@@ -1,7 +1,7 @@
 ---
 title: Little Farms
 slug: little-farms
-collection: farms
+collection: stores
 country_slug: new-zealand
 country: New Zealand
 region: Wellington
@@ -89,5 +89,3 @@ Little Farms also runs hands-on workshops—no-dig gardening, regenerative growi
 - Home-compostable packaging wherever possible.  
 - Boxes and packaging can be returned for reuse or composting.  
 - Transparency is central to their ethos—visits are welcome, and their Instagram accounts show daily life on the farm.  
-
-Little Farms exists to build a resilient local food system by supporting small growers, caring for soil, and delivering honest, seasonal produce to the community.
