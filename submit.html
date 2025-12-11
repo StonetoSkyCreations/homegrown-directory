@@ -15,11 +15,11 @@ permalink: /submit.html
       <label>Submission type</label>
       <div class="pill-group">
         <label class="pill pill--checkbox">
-          <input type="radio" name="submission_type" value="Add new listing" checked>
+          <input type="radio" name="submission_type" value="new" checked>
           <span>Add new listing</span>
         </label>
         <label class="pill pill--checkbox">
-          <input type="radio" name="submission_type" value="Update existing listing">
+          <input type="radio" name="submission_type" value="update">
           <span>Update existing listing</span>
         </label>
       </div>
@@ -37,15 +37,26 @@ permalink: /submit.html
     </div>
 
     <div class="form-group">
-      <label for="place_type">Type of place</label>
+      <label for="submitter_name">Your name</label>
+      <input type="text" id="submitter_name" name="submitter_name" placeholder="For follow-up">
+    </div>
+
+    <div class="form-group">
+      <label for="submitter_email">Your email</label>
+      <input type="email" id="submitter_email" name="submitter_email" placeholder="you@example.com">
+    </div>
+
+    <div class="form-group">
+      <label for="place_type">Type of place (collection)</label>
       <select id="place_type" name="place_type" required>
         <option value="">Select type</option>
-        <option>Farm / Producer</option>
-        <option>Grocery / Wholefood store / Refill</option>
-        <option>Café / Restaurant / Food truck</option>
-        <option>Market / Farmers’ market</option>
-        <option>Distributor / Food hub</option>
-        <option>Community / grassroots initiative</option>
+        <option value="farms">Farm / Producer</option>
+        <option value="stores">Grocery / Wholefood store / Refill</option>
+        <option value="restaurants">Café / Restaurant</option>
+        <option value="vendors">Food truck / Mobile vendor</option>
+        <option value="markets">Market / Farmers’ market</option>
+        <option value="distributors">Distributor / Food hub</option>
+        <option value="community">Community / grassroots initiative</option>
       </select>
     </div>
 
@@ -55,8 +66,43 @@ permalink: /submit.html
     </div>
 
     <div class="form-group">
-      <label for="address">Address (street, suburb, city/town, region)</label>
-      <input type="text" id="address" name="address" placeholder="123 Example St, Suburb, City, Region">
+      <label for="slug">Preferred slug (lowercase, hyphenated)</label>
+      <input type="text" id="slug" name="slug" placeholder="e.g. little-farms-market-garden">
+    </div>
+
+    <div class="form-group split">
+      <div>
+        <label for="country_slug">Country</label>
+        <select id="country_slug" name="country_slug">
+          <option value="new-zealand" selected>New Zealand</option>
+          <option value="australia">Australia</option>
+        </select>
+      </div>
+      <div>
+        <label for="region">Region</label>
+        <input type="text" id="region" name="region" placeholder="e.g. Wellington">
+      </div>
+    </div>
+
+    <div class="form-group split">
+      <div>
+        <label for="city">City / town</label>
+        <input type="text" id="city" name="city" placeholder="e.g. Masterton">
+      </div>
+      <div>
+        <label for="suburb">Suburb</label>
+        <input type="text" id="suburb" name="suburb" placeholder="e.g. Brooklyn">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Street address</label>
+      <input type="text" id="address" name="address" placeholder="123 Example St">
+    </div>
+
+    <div class="form-group">
+      <label for="postcode">Postcode (optional)</label>
+      <input type="text" id="postcode" name="postcode" placeholder="e.g. 6011">
     </div>
 
     <div class="form-group split">
@@ -66,7 +112,7 @@ permalink: /submit.html
       </div>
       <div>
         <label for="social">Social links</label>
-        <input type="text" id="social" name="social" placeholder="https:// (comma separated)">
+        <textarea id="social" name="social" rows="2" placeholder="https:// (one per line or comma separated)"></textarea>
       </div>
     </div>
 
@@ -79,6 +125,21 @@ permalink: /submit.html
         <label for="phone">Contact phone</label>
         <input type="text" id="phone" name="phone" placeholder="+64...">
       </div>
+    </div>
+
+    <div class="form-group">
+      <label for="short_description">Short description (card preview)</label>
+      <textarea id="short_description" name="short_description" rows="3" placeholder="Shows on the listing card; 1–2 sentences."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="full_description">Full description (for the main listing page)</label>
+      <textarea id="full_description" name="full_description" rows="6" placeholder="Markdown accepted."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="seo_description">Meta description (search engines – 140–160 characters)</label>
+      <textarea id="seo_description" name="seo_description" rows="2" placeholder="Optional but recommended."></textarea>
     </div>
 
     <div class="form-group">
@@ -95,13 +156,56 @@ permalink: /submit.html
     </div>
 
     <div class="form-group">
-      <label for="description">Description / notes</label>
-      <textarea id="description" name="description" rows="3" placeholder="Short context about practices, sourcing, services..."></textarea>
+      <label for="products">Products (one per line or comma separated)</label>
+      <textarea id="products" name="products" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="services">Services / channels (one per line or comma separated)</label>
+      <textarea id="services" name="services" rows="3"></textarea>
+    </div>
+
+    <div class="form-group split">
+      <div>
+        <label for="hours">Hours / schedule</label>
+        <textarea id="hours" name="hours" rows="2" placeholder="e.g. Mon–Fri 9–5"></textarea>
+      </div>
+      <div>
+        <label for="market_days">Market days (one per line)</label>
+        <textarea id="market_days" name="market_days" rows="2" placeholder="e.g. Sat 8–12pm"></textarea>
+      </div>
+    </div>
+
+    <div class="form-group split">
+      <div>
+        <label for="supplies_to">Supplies to (slugs, one per line)</label>
+        <textarea id="supplies_to" name="supplies_to" rows="2"></textarea>
+      </div>
+      <div>
+        <label for="sources">Sources / sourced from (slugs, one per line)</label>
+        <textarea id="sources" name="sources" rows="2"></textarea>
+      </div>
+    </div>
+
+    <div class="form-group split">
+      <div>
+        <label for="lat">Latitude (optional)</label>
+        <input type="text" id="lat" name="lat" placeholder="-41.1234">
+      </div>
+      <div>
+        <label for="lon">Longitude (optional)</label>
+        <input type="text" id="lon" name="lon" placeholder="174.9876">
+      </div>
     </div>
 
     <div class="form-group">
       <label for="updates">What needs to be updated or corrected? (for updates)</label>
       <textarea id="updates" name="updates" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="notes">Extra comments (anything else we should know)</label>
+      <textarea id="notes" name="notes" rows="3"></textarea>
     </div>
 
     <button type="submit" class="button">Send via email</button>
@@ -112,19 +216,20 @@ permalink: /submit.html
   const submitForm = document.getElementById('submitForm');
   const params = new URLSearchParams(window.location.search);
   const nameInput = document.getElementById('name');
+  const slugInput = document.getElementById('slug');
   const submissionTypeRadios = submitForm.querySelectorAll('input[name="submission_type"]');
   const ownerCheckbox = document.getElementById('owner_checkbox');
   const ownerNameField = document.getElementById('owner_name');
   const ownerWrapper = document.getElementById('owner_name_wrapper');
+  const placeType = document.getElementById('place_type');
 
   const listingRef = params.get('listing') || '';
   const presetName = params.get('name');
   const presetSubmissionType = params.get('submission_type');
   const presetOwner = params.get('owner_name');
 
-  if (params.get('type') === 'community') {
-    const placeType = document.getElementById('place_type');
-    if (placeType) placeType.value = 'Community / grassroots initiative';
+  if (params.get('type') === 'community' && placeType) {
+    placeType.value = 'community';
   }
 
   if (presetName && nameInput) {
@@ -132,12 +237,15 @@ permalink: /submit.html
   } else if (listingRef && nameInput) {
     nameInput.value = listingRef;
   }
+  if (listingRef && slugInput && !slugInput.value) {
+    slugInput.value = listingRef;
+  }
 
   const shouldSetUpdate =
     (presetSubmissionType && presetSubmissionType.toLowerCase().includes('update')) || Boolean(listingRef);
   if (shouldSetUpdate && submissionTypeRadios.length) {
     submissionTypeRadios.forEach((radio) => {
-      radio.checked = radio.value.toLowerCase().includes('update');
+      radio.checked = radio.value === 'update';
     });
   }
 
@@ -156,33 +264,124 @@ permalink: /submit.html
     ownerCheckbox.addEventListener('change', () => toggleOwnerField());
   }
 
+  const slugify = (value) =>
+    (value || '')
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9\\s-]/g, '')
+      .replace(/\\s+/g, '-')
+      .replace(/-+/g, '-');
+
+  const splitList = (value) =>
+    (value || '')
+      .split(/[,\\n]/)
+      .map((v) => v.trim())
+      .filter(Boolean);
+
+  const formatList = (label, items) => {
+    if (!items.length) return `${label}: []`;
+    return `${label}:\n${items.map((item) => `  - ${item}`).join('\\n')}`;
+  };
+
+  const formatMultiline = (label, value) => {
+    const text = (value || '').trim();
+    return `${label}: >\\n  ${text.replace(/\\r?\\n/g, '\\n  ')}`;
+  };
+
+  const buildYaml = (data, action, targetSlug) => {
+    const listFields = {
+      practices: splitList(data.getAll('practices').join(',')),
+      products: splitList(data.get('products')),
+      services: splitList(data.get('services')),
+      social: splitList(data.get('social')),
+      market_days: splitList(data.get('market_days')),
+      supplies_to: splitList(data.get('supplies_to')),
+      sources: splitList(data.get('sources'))
+    };
+    const name = data.get('name') || '';
+    const countrySlug = data.get('country_slug') || 'new-zealand';
+    const countryLabel = countrySlug === 'australia' ? 'AU' : 'New Zealand';
+    const slug = data.get('slug') || targetSlug || slugify(name);
+    const collection = data.get('place_type') || '';
+
+    const yamlLines = [
+      '---',
+      `title: ${name}`,
+      `slug: ${slug}`,
+      `collection: ${collection}`,
+      `country_slug: ${countrySlug}`,
+      `country: ${countryLabel}`,
+      `region: ${data.get('region') || ''}`,
+      `city: ${data.get('city') || ''}`,
+      `address: ${data.get('address') || ''}`,
+      `suburb: ${data.get('suburb') || ''}`,
+      `postcode: ${data.get('postcode') || ''}`,
+      formatMultiline('description', data.get('short_description')),
+      formatMultiline('seo_description', data.get('seo_description')),
+      formatList('practices', listFields.practices),
+      formatList('products', listFields.products),
+      formatList('services', listFields.services),
+      `website: ${data.get('website') || ''}`,
+      `email: ${data.get('email') || ''}`,
+      `phone: ${data.get('phone') || ''}`,
+      formatList('social', listFields.social),
+      `hours: ${data.get('hours') || ''}`,
+      formatList('market_days', listFields.market_days),
+      `lat: ${data.get('lat') || ''}`,
+      `lon: ${data.get('lon') || ''}`,
+      formatList('supplies_to', listFields.supplies_to),
+      formatList('sources', listFields.sources),
+      '---'
+    ];
+
+    const ownerIsContact = data.get('owner_checkbox') ? 'yes' : 'no';
+    const submitterNotes = [
+      '# Submitter notes',
+      `owner_is_contact: ${ownerIsContact}`,
+      `owner_name: ${data.get('owner_name') || ''}`,
+      `submitter_name: ${data.get('submitter_name') || ''}`,
+      `submitter_email: ${data.get('submitter_email') || ''}`
+    ];
+    if (action === 'update') {
+      submitterNotes.push('what_changed: |');
+      submitterNotes.push(`  ${(data.get('updates') || '').replace(/\\r?\\n/g, '\\n  ')}`);
+    } else {
+      submitterNotes.push('extra_comments: |');
+      submitterNotes.push(`  ${(data.get('notes') || '').replace(/\\r?\\n/g, '\\n  ')}`);
+    }
+
+    const fullDescription = (data.get('full_description') || '').trim();
+
+    const headerLines = [
+      `# ACTION: ${action === 'update' ? 'UPDATE_LISTING' : 'NEW_LISTING'}`,
+      action === 'update' ? `# TARGET_SLUG: ${targetSlug || slug}` : null
+    ].filter(Boolean);
+
+    const sections = [
+      headerLines.join('\\n'),
+      yamlLines.join('\\n'),
+      '# Full description (markdown)',
+      fullDescription || '[add long-form description here]',
+      submitterNotes.join('\\n')
+    ];
+
+    return sections.join('\\n\\n');
+  };
+
   submitForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = new FormData(submitForm);
-    const subType = data.get('submission_type') || 'Add new listing';
-    const subject = subType === 'Update existing listing'
-      ? 'Listing Update Request – Homegrown Directory'
-      : 'New Listing Submission – Homegrown Directory';
+    const subType = data.get('submission_type') || 'new';
+    const name = data.get('name') || '';
+    const targetSlug = listingRef || data.get('slug') || slugify(name);
+    const action = subType === 'update' ? 'update' : 'new';
+    const subject =
+      action === 'update'
+        ? `[HOMEGROWN] UPDATE_LISTING: ${targetSlug || name}`
+        : `[HOMEGROWN] NEW_LISTING: ${name}`;
 
-    const practices = data.getAll('practices').join(', ');
-
-    const bodyLines = [
-      `Submission type: ${subType}`,
-      `Type of place: ${data.get('place_type') || ''}`,
-      `Business name: ${data.get('name') || ''}`,
-      `Business owner (if applicable): ${data.get('owner_checkbox') ? data.get('owner_name') || '' : ''}`,
-      `Address: ${data.get('address') || ''}`,
-      `Website: ${data.get('website') || ''}`,
-      `Social links: ${data.get('social') || ''}`,
-      `Contact email: ${data.get('email') || ''}`,
-      `Contact phone: ${data.get('phone') || ''}`,
-      `Practices: ${practices}`,
-      `Description / notes: ${data.get('description') || ''}`,
-      `Updates needed: ${data.get('updates') || ''}`,
-      `Listing reference: ${listingRef}`
-    ];
-
-    const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+    const body = buildYaml(data, action, targetSlug);
+    const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
   });
 </script>

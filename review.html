@@ -17,6 +17,11 @@ permalink: /review.html
     </div>
 
     <div class="form-group">
+      <label for="business_slug">Listing slug (if known)</label>
+      <input type="text" id="business_slug" name="business_slug" placeholder="e.g. streamside-organics">
+    </div>
+
+    <div class="form-group">
       <label>Star rating</label>
       <div class="stars" role="radiogroup" aria-label="Star rating">
         {% for i in (1..5) %}
@@ -26,6 +31,11 @@ permalink: /review.html
         </label>
         {% endfor %}
       </div>
+    </div>
+
+    <div class="form-group">
+      <label for="review_title">Review title (optional)</label>
+      <input type="text" id="review_title" name="review_title" placeholder="Short headline">
     </div>
 
     <div class="form-group">
@@ -41,7 +51,7 @@ permalink: /review.html
     <div class="form-group split">
       <div>
         <label for="visit">When did you last visit? (optional)</label>
-        <input type="text" id="visit" name="visit" placeholder="e.g. June 2025">
+        <input type="date" id="visit" name="visit">
       </div>
       <div>
         <label for="reviewer_name">Your name (optional)</label>
@@ -54,6 +64,24 @@ permalink: /review.html
       <input type="email" id="reviewer_email" name="reviewer_email">
     </div>
 
+    <div class="form-group">
+      <label for="relationship">Your relationship to the business</label>
+      <select id="relationship" name="relationship">
+        <option value="customer" selected>Customer</option>
+        <option value="owner">Owner</option>
+        <option value="staff">Staff</option>
+        <option value="supplier">Supplier</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="pill pill--checkbox">
+        <input type="checkbox" id="ok_to_publish" name="ok_to_publish" checked>
+        <span>Okay to publish this review (with name)</span>
+      </label>
+    </div>
+
     <button type="submit" class="button">Send via email</button>
   </form>
 </section>
@@ -62,9 +90,13 @@ permalink: /review.html
   (function() {
     const params = new URLSearchParams(window.location.search);
     const listing = params.get('listing') || '';
+    const presetName = params.get('name');
     const nameField = document.getElementById('business_name');
+    const slugField = document.getElementById('business_slug');
     if (listing) {
-      nameField.value = decodeURIComponent(listing.replace(/\\+/g, ' '));
+      const decoded = decodeURIComponent(listing.replace(/\\+/g, ' '));
+      nameField.value = presetName || decoded;
+      if (slugField) slugField.value = decoded;
     }
 
     const form = document.getElementById('reviewForm');
@@ -72,16 +104,29 @@ permalink: /review.html
       e.preventDefault();
       const data = new FormData(form);
       const business = data.get('business_name') || '';
+      const slug = data.get('business_slug') || listing || '';
       const rating = data.get('rating') || '5';
-      const subject = `New Review – ${business}`;
+      const subject = `[HOMEGROWN] REVIEW: ${business}`;
+      const reviewText = (data.get('review_text') || '').trim();
+      const corrections = (data.get('corrections') || '').trim();
       const bodyLines = [
-        `Business name: ${business}`,
-        `Star rating: ${rating}/5`,
-        `Review: ${data.get('review_text') || ''}`,
-        `Corrections: ${data.get('corrections') || ''}`,
-        `Last visit: ${data.get('visit') || ''}`,
-        `Reviewer name: ${data.get('reviewer_name') || ''}`,
-        `Reviewer email: ${data.get('reviewer_email') || ''}`
+        '# ACTION: NEW_REVIEW',
+        '',
+        `business_name: ${business}`,
+        `business_slug: ${slug}`,
+        `rating: ${rating}`,
+        `last_visit_date: ${data.get('visit') || ''}`,
+        `review_title: ${data.get('review_title') || ''}`,
+        'review_text: |',
+        `  ${reviewText.replace(/\\r?\\n/g, '\\n  ')}`,
+        '',
+        'corrections_or_updates: |',
+        `  ${corrections.replace(/\\r?\\n/g, '\\n  ')}`,
+        '',
+        `reviewer_name: ${data.get('reviewer_name') || ''}`,
+        `reviewer_email: ${data.get('reviewer_email') || ''}`,
+        `relationship_to_business: ${data.get('relationship') || ''}`,
+        `ok_to_publish: ${data.get('ok_to_publish') ? 'yes' : 'no'}`
       ];
       const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
       window.location.href = mailto;
