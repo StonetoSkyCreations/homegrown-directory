@@ -18,20 +18,33 @@ social_links:
 - https://www.facebook.com/streamsideorganics
 - https://www.instagram.com/streamsideorganics
 products:
-- Fruit
-- Vegetables
+- Seasonal vegetables
 - Salad greens
-- Herbs
+- Leafy greens
+- Fresh herbs
+- Root vegetables
+- Brassicas
+- Alliums (onions, leeks, spring onions)
+- Fruit (seasonal, limited)
+- Microgreens (seasonal partners)
 practices_tags:
 - certified-organic
 services:
 - CSA boxes
-- Wholesale supply
-- Farmers market sales
+- Weekly veggie boxes (Christchurch)
+- Wholesale supply to restaurants and cafés
+- Supply to wholefood and organic stores
+- Supply to supermarkets
+- Farmers market sales (Saturday & Sunday)
+- Online ordering via partner hubs (Bliss Box / Ooooby, Live2Give Organics)
+- GoodFor mid-week pickup (The Welder, Christchurch)
 certifications: []
 supply_role: Producer
 source_urls: []
-hours: ''
+hours: "CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch Farmers Market: Saturday 9am–1pm; South Christchurch Farmers Market: Sunday 9am–12pm; GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon–Fri (varies by venue)"
+market_days:
+  - Christchurch Farmers Market: Saturday 9am–1pm
+  - South Christchurch Farmers Market: Sunday 9am–12pm
 last_checked: user-submitted
 notes: ''
 rating_average: 5
