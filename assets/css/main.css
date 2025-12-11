@@ -673,6 +673,7 @@ a:focus-visible {
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.05);
   display: grid;
   gap: 0.35rem;
+  position: relative;
 }
 .listing-card__meta {
   display: flex;
@@ -1068,4 +1069,5 @@ a:focus-visible {
   font-size: 0.75rem;
   border-radius: 4px;
   font-weight: 600;
+  z-index: 2;
 }
