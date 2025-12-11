@@ -1038,3 +1038,34 @@ a:focus-visible {
     order: 3;
   }
 }
+
+/* Featured Card Block */
+.featured-section {
+  margin: 2rem 0;
+}
+
+.featured-card-wrapper {
+  width: 100%;
+}
+
+/* Highlighted Featured Card */
+.listing-card--featured {
+  border: 2px solid #c7a869;
+  background: #faf7f1;
+  padding: 1rem;
+  position: relative;
+}
+
+/* Badge */
+.featured-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background: #faf7f1;
+  color: #8c7344;
+  border: 1px solid #c7a869;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+}

@@ -1,0 +1,18 @@
+{% assign coll_name = include.collection %}
+{% assign slug = include.slug %}
+
+{% if coll_name and slug %}
+  {% assign coll = site[coll_name] %}
+  {% assign item = coll | where: "slug", slug | first %}
+{% endif %}
+
+{% if item %}
+<section class="featured-section">
+  <div class="featured-card-wrapper">
+    {% include listing-card.html
+      item=item
+      featured=true
+    %}
+  </div>
+</section>
+{% endif %}

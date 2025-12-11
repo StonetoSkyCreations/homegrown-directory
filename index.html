@@ -23,6 +23,15 @@ title: Home
   </div>
 </section>
 
+{% assign featured_home = site.data.featured.global.home %}
+
+{% if featured_home %}
+  {% include featured-card.html
+     collection=featured_home.collection
+     slug=featured_home.slug
+  %}
+{% endif %}
+
 <section class="search-section search-section--home">
   <div class="search-controls">
     <label for="searchInput" class="muted">Search by region, city, or business name…</label>

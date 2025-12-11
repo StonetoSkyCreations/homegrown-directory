@@ -1,3 +1,4 @@
+{% assign listing = include.listing | default: include.item | default: listing %}
 {% assign practices_tags = listing.practices | default: listing.practices_tags | default: listing.sourcing_tags | default: listing.services | default: empty %}
 {% assign practices_joined = practices_tags | join: ',' %}
 {% assign review_target = listing.slug | default: listing.title | default: listing.name | slugify %}
@@ -35,7 +36,12 @@
     {% assign card_type = 'hub' %}
     {% assign card_label = 'Hub' %}
 {% endcase %}
-<article class="listing-card"
+{%- assign card_classes = "listing-card" -%}
+{%- if include.featured -%}
+  {%- assign card_classes = card_classes | append: " listing-card--featured" -%}
+{%- endif -%}
+
+<article class="{{ card_classes }}"
   data-region="{{ listing.region | escape }}"
   data-city="{{ listing.city | default: listing.city_town | escape }}"
   data-name="{{ card_title | escape }}"
@@ -43,6 +49,9 @@
   data-category="{{ card_type | escape }}"
   data-country="{{ listing.country_slug | escape }}"
   data-practices="{{ practices_joined | escape }}">
+  {% if include.featured %}
+    <div class="featured-badge">⭐ Featured</div>
+  {% endif %}
   <div class="listing-card__meta">
     <span class="pill pill--type">{{ card_label }}</span>
     {% if has_street or has_coords %}

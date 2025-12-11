@@ -1,0 +1,4 @@
+global:
+  home:
+    collection: "farms"
+    slug: "streamside-organics"
