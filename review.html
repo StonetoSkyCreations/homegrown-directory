@@ -17,11 +17,6 @@ permalink: /review.html
     </div>
 
     <div class="form-group">
-      <label for="business_slug">Listing slug (if known)</label>
-      <input type="text" id="business_slug" name="business_slug" placeholder="e.g. streamside-organics">
-    </div>
-
-    <div class="form-group">
       <label>Star rating</label>
       <div class="stars" role="radiogroup" aria-label="Star rating">
         {% for i in (1..5) %}
@@ -44,7 +39,7 @@ permalink: /review.html
     </div>
 
     <div class="form-group">
-      <label for="corrections">Anything that’s changed or needs correcting? (optional)</label>
+      <label for="corrections">Anything that’s changed or needs correcting?</label>
       <textarea id="corrections" name="corrections" rows="3"></textarea>
     </div>
 
@@ -82,6 +77,8 @@ permalink: /review.html
       </label>
     </div>
 
+    <input type="hidden" id="business_slug" name="business_slug">
+
     <button type="submit" class="button">Send via email</button>
   </form>
 </section>
@@ -93,8 +90,15 @@ permalink: /review.html
     const presetName = params.get('name');
     const nameField = document.getElementById('business_name');
     const slugField = document.getElementById('business_slug');
+    const slugify = (value) =>
+      (value || '')
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-');
     if (listing) {
-      const decoded = decodeURIComponent(listing.replace(/\\+/g, ' '));
+      const decoded = decodeURIComponent(listing.replace(/\+/g, ' '));
       nameField.value = presetName || decoded;
       if (slugField) slugField.value = decoded;
     }
@@ -104,7 +108,10 @@ permalink: /review.html
       e.preventDefault();
       const data = new FormData(form);
       const business = data.get('business_name') || '';
-      const slug = data.get('business_slug') || listing || '';
+      if (slugField && !slugField.value) {
+        slugField.value = listing || slugify(business);
+      }
+      const slug = data.get('business_slug') || listing || slugify(business);
       const rating = data.get('rating') || '5';
       const subject = `[HOMEGROWN] REVIEW: ${business}`;
       const reviewText = (data.get('review_text') || '').trim();
@@ -128,7 +135,7 @@ permalink: /review.html
         `relationship_to_business: ${data.get('relationship') || ''}`,
         `ok_to_publish: ${data.get('ok_to_publish') ? 'yes' : 'no'}`
       ];
-      const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+      const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
       window.location.href = mailto;
     });
   })();
