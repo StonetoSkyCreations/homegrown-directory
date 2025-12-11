@@ -5,3 +5,18 @@
   review_text: Fabulous market, my favourite market in Christchurch area.
   reviewer_name: Amanda
   last_visit_date: 2025-12-05
+- business_slug: ohoka-farmers-market
+  business_name: Ohoka Farmers Market
+  rating: 5
+  last_visit_date: 2025-12-05
+  review_title: Fabulous market
+  review_text: Fabulous market, my favourite market in Christchurch area.
+  corrections_or_updates: ""
+  reviewer_name: Amanda
+  reviewer_email: ""
+  relationship_to_business: customer
+  ok_to_publish: yes
+## Reviews captured from email intake. Keys mirror review.html payload:
+## business_name, business_slug, rating, last_visit_date, review_title,
+## review_text, corrections_or_updates, reviewer_name, reviewer_email,
+## relationship_to_business, ok_to_publish
