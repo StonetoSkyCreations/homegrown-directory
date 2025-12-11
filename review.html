@@ -39,7 +39,7 @@ permalink: /review.html
     </div>
 
     <div class="form-group">
-      <label for="corrections">Anything that’s changed or needs correcting?</label>
+      <label for="corrections">Anything that’s changed or needs correcting? (optional)</label>
       <textarea id="corrections" name="corrections" rows="3"></textarea>
     </div>
 
@@ -54,29 +54,6 @@ permalink: /review.html
       </div>
     </div>
 
-    <div class="form-group">
-      <label for="reviewer_email">Your email (optional, for follow-up)</label>
-      <input type="email" id="reviewer_email" name="reviewer_email">
-    </div>
-
-    <div class="form-group">
-      <label for="relationship">Your relationship to the business</label>
-      <select id="relationship" name="relationship">
-        <option value="customer" selected>Customer</option>
-        <option value="owner">Owner</option>
-        <option value="staff">Staff</option>
-        <option value="supplier">Supplier</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label class="pill pill--checkbox">
-        <input type="checkbox" id="ok_to_publish" name="ok_to_publish" checked>
-        <span>Okay to publish this review (with name)</span>
-      </label>
-    </div>
-
     <input type="hidden" id="business_slug" name="business_slug">
 
     <button type="submit" class="button">Send via email</button>
@@ -86,7 +63,7 @@ permalink: /review.html
 <script>
   (function() {
     const params = new URLSearchParams(window.location.search);
-    const listing = params.get('listing') || '';
+    const listingParam = params.get('listing') || '';
     const presetName = params.get('name');
     const nameField = document.getElementById('business_name');
     const slugField = document.getElementById('business_slug');
@@ -97,10 +74,14 @@ permalink: /review.html
         .replace(/[^a-z0-9\s-]/g, '')
         .replace(/\s+/g, '-')
         .replace(/-+/g, '-');
-    if (listing) {
-      const decoded = decodeURIComponent(listing.replace(/\+/g, ' '));
-      nameField.value = presetName || decoded;
-      if (slugField) slugField.value = decoded;
+
+    const decodedListing = listingParam ? decodeURIComponent(listingParam.replace(/\+/g, ' ')) : '';
+    const presetBusinessName = presetName || decodedListing;
+    if (presetBusinessName && nameField) {
+      nameField.value = presetBusinessName;
+    }
+    if (slugField && listingParam) {
+      slugField.value = listingParam;
     }
 
     const form = document.getElementById('reviewForm');
@@ -108,10 +89,16 @@ permalink: /review.html
       e.preventDefault();
       const data = new FormData(form);
       const business = data.get('business_name') || '';
-      if (slugField && !slugField.value) {
-        slugField.value = listing || slugify(business);
+      const listingHint = params.get('listing') || '';
+      let slug = '';
+
+      if (listingHint) {
+        slug = listingHint;
+      } else {
+        slug = slugify(business);
       }
-      const slug = data.get('business_slug') || listing || slugify(business);
+
+      if (slugField) slugField.value = slug;
       const rating = data.get('rating') || '5';
       const subject = `[HOMEGROWN] REVIEW: ${business}`;
       const reviewText = (data.get('review_text') || '').trim();
@@ -133,7 +120,7 @@ permalink: /review.html
         `reviewer_name: ${data.get('reviewer_name') || ''}`,
         `reviewer_email: ${data.get('reviewer_email') || ''}`,
         `relationship_to_business: ${data.get('relationship') || ''}`,
-        `ok_to_publish: ${data.get('ok_to_publish') ? 'yes' : 'no'}`
+        'ok_to_publish: yes'
       ];
       const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
       window.location.href = mailto;

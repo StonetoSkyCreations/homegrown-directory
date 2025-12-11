@@ -26,26 +26,9 @@ permalink: /submit.html
     </div>
 
     <div class="form-group">
-      <label class="pill pill--checkbox">
-        <input type="checkbox" id="owner_checkbox" name="owner_checkbox">
-        <span>I’m the business owner</span>
-      </label>
-    </div>
-
-    <div class="form-group">
-      <label for="submitter_name">Your name (optional)</label>
-      <input type="text" id="submitter_name" name="submitter_name" placeholder="For follow-up">
-    </div>
-
-    <div class="form-group">
-      <label for="submitter_email">Your email (optional)</label>
-      <input type="email" id="submitter_email" name="submitter_email" placeholder="you@example.com">
-    </div>
-
-    <div class="form-group">
       <label for="place_type">Type of place</label>
       <select id="place_type" name="place_type" required>
-        <option value="" disabled selected>Select type</option>
+        <option value="">Select type</option>
         <option value="farms">Farm / Producer</option>
         <option value="stores">Grocery / Wholefood store / Refill</option>
         <option value="restaurants">Café / Restaurant</option>
@@ -87,7 +70,7 @@ permalink: /submit.html
     </div>
 
     <div class="form-group">
-      <label for="address">Street address (optional)</label>
+      <label for="address">Street address</label>
       <input type="text" id="address" name="address" placeholder="123 Example St">
     </div>
 
@@ -98,34 +81,34 @@ permalink: /submit.html
 
     <div class="form-group split">
       <div>
-        <label for="website">Website (optional)</label>
+        <label for="website">Website</label>
         <input type="url" id="website" name="website" placeholder="https://">
       </div>
       <div>
-        <label for="social">Social links (optional)</label>
+        <label for="social">Social links</label>
         <textarea id="social" name="social" rows="2" placeholder="https:// (one per line or comma separated)"></textarea>
       </div>
     </div>
 
     <div class="form-group split">
       <div>
-        <label for="email">Contact email (optional)</label>
+        <label for="email">Contact email</label>
         <input type="email" id="email" name="email" placeholder="you@example.com">
       </div>
       <div>
-        <label for="phone">Contact phone (optional)</label>
+        <label for="phone">Contact phone</label>
         <input type="text" id="phone" name="phone" placeholder="+64...">
       </div>
     </div>
 
     <div class="form-group">
-      <label for="short_description">Short description</label>
-      <textarea id="short_description" name="short_description" rows="3" placeholder="1–2 sentences for the listing card"></textarea>
+      <label for="short_description">Short description (card preview)</label>
+      <textarea id="short_description" name="short_description" rows="3" placeholder="Shows on the listing card; 1–2 sentences."></textarea>
     </div>
 
     <div class="form-group">
-      <label for="full_description">More details (optional)</label>
-      <textarea id="full_description" name="full_description" rows="6" placeholder="Extra context or story. Markdown accepted."></textarea>
+      <label for="full_description">Full description (for the main listing page)</label>
+      <textarea id="full_description" name="full_description" rows="6" placeholder="Markdown accepted."></textarea>
     </div>
 
     <div class="form-group">
@@ -139,7 +122,6 @@ permalink: /submit.html
         </label>
         {% endfor %}
       </div>
-      <textarea id="other_practices" name="other_practices" rows="2" placeholder="Other practices (optional)"></textarea>
     </div>
 
     <div class="form-group">
@@ -154,32 +136,37 @@ permalink: /submit.html
 
     <div class="form-group split">
       <div>
-        <label for="hours">Hours / schedule (optional)</label>
+        <label for="hours">Hours / schedule</label>
         <textarea id="hours" name="hours" rows="2" placeholder="e.g. Mon–Fri 9–5"></textarea>
       </div>
       <div>
-        <label for="market_days">Market days (optional, one per line)</label>
+        <label for="market_days">Market days (one per line)</label>
         <textarea id="market_days" name="market_days" rows="2" placeholder="e.g. Sat 8–12pm"></textarea>
       </div>
     </div>
 
-    <div class="form-group" id="update_field" style="display: none;">
-      <label for="updates">What needs to be updated or corrected?</label>
+    <div class="form-group split">
+      <div>
+        <label for="supplies_to">Who do they supply to? (optional)</label>
+        <textarea id="supplies_to" name="supplies_to" rows="2"></textarea>
+      </div>
+      <div>
+        <label for="sources">Who do they source from? (optional)</label>
+        <textarea id="sources" name="sources" rows="2"></textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="updates">What needs to be updated or corrected? (for updates)</label>
       <textarea id="updates" name="updates" rows="3"></textarea>
     </div>
 
-    <div class="form-group" id="extra_field">
-      <label for="notes">Anything else we should know?</label>
+    <div class="form-group">
+      <label for="notes">Extra comments (anything else we should know)</label>
       <textarea id="notes" name="notes" rows="3"></textarea>
     </div>
 
     <input type="hidden" id="slug" name="slug">
-    <input type="hidden" id="owner_name" name="owner_name">
-    <input type="hidden" id="lat" name="lat">
-    <input type="hidden" id="lon" name="lon">
-    <input type="hidden" id="supplies_to" name="supplies_to">
-    <input type="hidden" id="sources" name="sources">
-    <input type="hidden" id="seo_description" name="seo_description">
 
     <button type="submit" class="button">Send via email</button>
   </form>
@@ -191,17 +178,11 @@ permalink: /submit.html
   const nameInput = document.getElementById('name');
   const slugInput = document.getElementById('slug');
   const submissionTypeRadios = submitForm.querySelectorAll('input[name="submission_type"]');
-  const ownerCheckbox = document.getElementById('owner_checkbox');
-  const ownerNameField = document.getElementById('owner_name');
-  const submitterNameField = document.getElementById('submitter_name');
   const placeType = document.getElementById('place_type');
-  const updateField = document.getElementById('update_field');
-  const extraField = document.getElementById('extra_field');
 
   const listingRef = params.get('listing') || '';
   const presetName = params.get('name');
   const presetSubmissionType = params.get('submission_type');
-  const presetOwner = params.get('owner_name');
 
   if (params.get('type') === 'community' && placeType) {
     placeType.value = 'community';
@@ -222,11 +203,6 @@ permalink: /submit.html
     submissionTypeRadios.forEach((radio) => {
       radio.checked = radio.value === 'update';
     });
-  }
-
-  if (presetOwner && submitterNameField) {
-    submitterNameField.value = presetOwner;
-    if (ownerCheckbox) ownerCheckbox.checked = true;
   }
 
   const slugify = (value) =>
@@ -253,10 +229,9 @@ permalink: /submit.html
     return `${label}: >\n  ${text.replace(/\r?\n/g, '\n  ')}`;
   };
 
-  const buildYaml = (data, action, targetSlug) => {
-    const otherPractices = splitList(data.get('other_practices'));
+  const buildYaml = (data, action, targetSlug = listingRef) => {
     const listFields = {
-      practices: [...splitList(data.getAll('practices').join(',')), ...otherPractices],
+      practices: splitList(data.getAll('practices').join(',')),
       products: splitList(data.get('products')),
       services: splitList(data.get('services')),
       social: splitList(data.get('social')),
@@ -266,14 +241,14 @@ permalink: /submit.html
     };
     const name = data.get('name') || '';
     const countrySlug = data.get('country_slug') || 'new-zealand';
-    const countryLabel = countrySlug === 'australia' ? 'Australia' : 'New Zealand';
-    const slug = data.get('slug') || targetSlug || slugify(name);
+    const countryLabel = countrySlug === 'australia' ? 'AU' : 'New Zealand';
+    const slug = targetSlug || slugify(name);
     const collection = data.get('place_type') || '';
     const shortDescription = data.get('short_description') || '';
     const fullDescription = (data.get('full_description') || '').trim();
     const descriptionText = shortDescription || fullDescription;
     const submitterName = data.get('submitter_name') || '';
-    const ownerName = data.get('owner_checkbox') ? submitterName || data.get('owner_name') || '' : data.get('owner_name') || '';
+    const ownerName = data.get('owner_name') || '';
 
     const yamlLines = [
       '---',
@@ -298,8 +273,6 @@ permalink: /submit.html
       formatList('social', listFields.social),
       `hours: ${data.get('hours') || ''}`,
       formatList('market_days', listFields.market_days),
-      `lat: ${data.get('lat') || ''}`,
-      `lon: ${data.get('lon') || ''}`,
       formatList('supplies_to', listFields.supplies_to),
       formatList('sources', listFields.sources),
       '---'
@@ -337,36 +310,22 @@ permalink: /submit.html
     return sections.join('\n\n');
   };
 
-  const toggleNotesFields = () => {
-    const action = Array.from(submissionTypeRadios).find((r) => r.checked)?.value || 'new';
-    if (updateField) updateField.style.display = action === 'update' ? 'block' : 'none';
-    if (extraField) extraField.style.display = action === 'update' ? 'none' : 'block';
-  };
-
-  submissionTypeRadios.forEach((radio) => {
-    radio.addEventListener('change', toggleNotesFields);
-  });
-  toggleNotesFields();
-
   submitForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const currentName = nameInput ? nameInput.value : '';
-    if (slugInput && !slugInput.value) {
-      slugInput.value = slugify(currentName);
-    }
-    if (ownerNameField && submitterNameField && ownerCheckbox && ownerCheckbox.checked) {
-      ownerNameField.value = submitterNameField.value || '';
-    }
     const data = new FormData(submitForm);
     const subType = data.get('submission_type') || 'new';
     const name = data.get('name') || '';
-    const targetSlug = listingRef || data.get('slug') || slugify(name);
+    const targetSlug = listingRef || '';
+    const slug = targetSlug || slugify(name);
     const action = subType === 'update' ? 'update' : 'new';
     const subject =
       action === 'update'
         ? `[HOMEGROWN] UPDATE_LISTING: ${targetSlug || name}`
         : `[HOMEGROWN] NEW_LISTING: ${name}`;
 
+    if (slugInput) {
+      slugInput.value = slug;
+    }
     const body = buildYaml(data, action, targetSlug);
     const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
