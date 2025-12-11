@@ -42,6 +42,12 @@ certifications: []
 supply_role: Producer
 source_urls: []
 hours: "CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch Farmers Market: Saturday 9am–1pm; South Christchurch Farmers Market: Sunday 9am–12pm; GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon–Fri (varies by venue)"
+hours_list:
+  - CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb)
+  - Christchurch Farmers Market: Saturday 9am–1pm
+  - South Christchurch Farmers Market: Sunday 9am–12pm
+  - GoodFor pickup: mid-week (usually Wednesday)
+  - Wholesale deliveries: Mon–Fri (varies by venue)
 market_days:
   - Christchurch Farmers Market — Saturday 9am–1pm
   - South Christchurch Farmers Market — Sunday 9am–12pm

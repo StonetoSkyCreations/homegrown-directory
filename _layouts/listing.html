@@ -128,7 +128,16 @@ map: false
       </div>
     {% endif %}
 
-    {% if page.hours %}
+    {% if page.hours_list %}
+      <div>
+        <h2>Hours / schedule</h2>
+        <ul class="tag-list">
+          {% for entry in page.hours_list %}
+          <li>{{ entry }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% elsif page.hours %}
       <div>
         <h2>Hours / schedule</h2>
         <p class="muted">{{ page.hours }}</p>
