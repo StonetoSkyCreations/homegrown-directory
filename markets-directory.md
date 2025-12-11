@@ -40,6 +40,8 @@ permalink: /markets/
     </div>
   </div>
 
+  {% include featured-card.html scope="collections" key="markets" %}
+
   <div class="listing-grid listing-grid--tight">
     {% for listing in items %}
       {% include listing-card.html listing=listing %}

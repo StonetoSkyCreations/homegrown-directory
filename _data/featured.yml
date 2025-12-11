@@ -10,3 +10,6 @@ collections:
   grocers:
     collection: "stores"
     slug: "taste-nature-dunedin"
+  markets:
+    collection: "markets"
+    slug: "matakana-village-farmers-market"
