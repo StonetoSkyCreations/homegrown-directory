@@ -43,11 +43,11 @@ supply_role: Producer
 source_urls: []
 hours: "CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch Farmers Market: Saturday 9am–1pm; South Christchurch Farmers Market: Sunday 9am–12pm; GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon–Fri (varies by venue)"
 hours_list:
-  - CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb)
-  - Christchurch Farmers Market: Saturday 9am–1pm
-  - South Christchurch Farmers Market: Sunday 9am–12pm
-  - GoodFor pickup: mid-week (usually Wednesday)
-  - Wholesale deliveries: Mon–Fri (varies by venue)
+  - "CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb)"
+  - "Christchurch Farmers Market: Saturday 9am–1pm"
+  - "South Christchurch Farmers Market: Sunday 9am–12pm"
+  - "GoodFor pickup: mid-week (usually Wednesday)"
+  - "Wholesale deliveries: Mon–Fri (varies by venue)"
 market_days:
   - Christchurch Farmers Market — Saturday 9am–1pm
   - South Christchurch Farmers Market — Sunday 9am–12pm
@@ -80,7 +80,7 @@ supplies_to_text:
 last_checked: user-submitted
 notes: ''
 rating_average: 5
-rating_count: 1
+rating_count: 2
 ---
 Streamside Organics began in 2014 on a single acre of leased land. What started as a small, hands-on experiment in feeding a local community has grown into one of Canterbury's most respected organic market gardens: a 50-acre certified organic farm supplying thousands of households each week.
 
