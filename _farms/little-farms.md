@@ -37,6 +37,17 @@ lat:
 lon:
 supplies_to: []
 sources:
+  - little-farms-market-garden
+  - vagabond-vege
+  - te-manaia-organics
+  - four-corners-organics
+  - bella-olea
+  - cameron-family-farms
+  - martinborough-manor
+  - rebel-gardens
+  - t-gasper
+  - wharerata-farm
+source_urls:
   - https://wearelittlefarms.com
 last_checked: 2025-12-11
 ---
