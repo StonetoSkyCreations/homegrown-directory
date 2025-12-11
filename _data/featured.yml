@@ -2,3 +2,8 @@ global:
   home:
     collection: "farms"
     slug: "streamside-organics"
+
+collections:
+  eateries:
+    collection: "restaurants"
+    slug: "gatherings"
