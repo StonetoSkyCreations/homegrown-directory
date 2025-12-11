@@ -63,3 +63,31 @@ Streamside maintains long-standing relationships with other organic producers to
 They remain deeply connected to the community that supported them from the beginning. Every weekend, Streamside is present at the Christchurch Farmers Market and South Christchurch Farmers Market -- rain, wind, heat, or cold -- showing up to share vegetables, talk recipes, discuss organic growing, and maintain the relationships that have shaped the farm's identity.
 
 Today, more than a decade after its beginnings, Streamside Organics continues to evolve without losing sight of its core purpose: to grow healthy food with integrity, support the land that sustains them, make organic produce accessible for everyday households, and strengthen community through fresh, seasonal, nutrient-dense vegetables delivered right to your door.
+
+## Sourced from
+Certified organic mixed-vegetable farm in Leeston, Central Canterbury  
+Grows 40+ seasonal crops using regenerative, soil-focused methods
+
+## Supplies to
+Ilex Cafe Botanic Gardens  
+Gatherings Restaurant  
+Black Estate (Waipara)  
+Greystone Wines (Waipara)  
+Pomeroy’s Pub (Christchurch)  
+Cellar Door (Christchurch)  
+Alpine Grind (Methven)  
+Green Dinner Table  
+Piko Wholefoods  
+GoodFor (The Welder, Welles St)  
+Selwyn Co-op  
+Soul Food Organics (Queenstown)  
+New World St Martins  
+New World Durham St  
+New World Fendalton  
+New World Lincoln  
+New World Halswell  
+New World Queenstown  
+FreshChoice Merivale  
+FreshChoice Nelson City  
+Bliss Box (formerly Ooooby)  
+Live2Give Organics
