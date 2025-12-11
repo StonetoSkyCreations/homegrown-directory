@@ -300,7 +300,7 @@ permalink: /submit.html
     };
     const name = data.get('name') || '';
     const countrySlug = data.get('country_slug') || 'new-zealand';
-    const countryLabel = countrySlug === 'australia' ? 'AU' : 'New Zealand';
+    const countryLabel = countrySlug === 'australia' ? 'Australia' : 'New Zealand';
     const slug = data.get('slug') || targetSlug || slugify(name);
     const collection = data.get('place_type') || '';
 
