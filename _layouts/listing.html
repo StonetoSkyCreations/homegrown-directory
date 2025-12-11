@@ -155,7 +155,7 @@ map: false
       </div>
     {% endif %}
 
-    {% if source_partners %}
+    {% if source_partners and source_partners.size > 0 %}
       <div>
         <h2>Sourced from</h2>
         <ul class="link-list">
@@ -175,7 +175,7 @@ map: false
       </div>
     {% endif %}
 
-    {% if outgoing_supplies %}
+    {% if outgoing_supplies and outgoing_supplies.size > 0 %}
       <div>
         <h2>Supplies to</h2>
         <ul class="link-list">
