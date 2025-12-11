@@ -208,8 +208,8 @@ map: false
   {% if page.lat and page.lon %}
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": {{ page.lat }},
-    "longitude": {{ page.lon }}
+    "latitude": {{ page.lat | jsonify }},
+    "longitude": {{ page.lon | jsonify }}
   },
   {% endif %}
   {% if page.hours %}"openingHours": "{{ page.hours | escape }}",{% endif %}
