@@ -45,6 +45,32 @@ hours: "CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchu
 market_days:
   - Christchurch Farmers Market — Saturday 9am–1pm
   - South Christchurch Farmers Market — Sunday 9am–12pm
+sourced_from_text:
+  - Certified organic mixed-vegetable farm in Leeston, Central Canterbury
+  - Grows 40+ seasonal crops using regenerative, soil-focused methods
+supplies_to_text:
+  - Ilex Cafe Botanic Gardens
+  - Gatherings Restaurant
+  - Black Estate (Waipara)
+  - Greystone Wines (Waipara)
+  - Pomeroy’s Pub (Christchurch)
+  - Cellar Door (Christchurch)
+  - Alpine Grind (Methven)
+  - Green Dinner Table
+  - Piko Wholefoods
+  - GoodFor (The Welder, Welles St)
+  - Selwyn Co-op
+  - Soul Food Organics (Queenstown)
+  - New World St Martins
+  - New World Durham St
+  - New World Fendalton
+  - New World Lincoln
+  - New World Halswell
+  - New World Queenstown
+  - FreshChoice Merivale
+  - FreshChoice Nelson City
+  - Bliss Box (formerly Ooooby)
+  - Live2Give Organics
 last_checked: user-submitted
 notes: ''
 rating_average: 5

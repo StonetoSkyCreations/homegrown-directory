@@ -155,6 +155,15 @@ map: false
           {% endfor %}
         </ul>
       </div>
+    {% elsif page.sourced_from_text %}
+      <div>
+        <h2>Sourced from</h2>
+        <ul class="tag-list">
+          {% for line in page.sourced_from_text %}
+          <li>{{ line }}</li>
+          {% endfor %}
+        </ul>
+      </div>
     {% endif %}
 
     {% if outgoing_supplies %}
@@ -163,6 +172,15 @@ map: false
         <ul class="link-list">
           {% for item in outgoing_supplies %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% elsif page.supplies_to_text %}
+      <div>
+        <h2>Supplies to</h2>
+        <ul class="tag-list">
+          {% for line in page.supplies_to_text %}
+          <li>{{ line }}</li>
           {% endfor %}
         </ul>
       </div>
