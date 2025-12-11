@@ -43,8 +43,8 @@ supply_role: Producer
 source_urls: []
 hours: "CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch Farmers Market: Saturday 9am–1pm; South Christchurch Farmers Market: Sunday 9am–12pm; GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon–Fri (varies by venue)"
 market_days:
-  - Christchurch Farmers Market: Saturday 9am–1pm
-  - South Christchurch Farmers Market: Sunday 9am–12pm
+  - Christchurch Farmers Market — Saturday 9am–1pm
+  - South Christchurch Farmers Market — Sunday 9am–12pm
 last_checked: user-submitted
 notes: ''
 rating_average: 5
@@ -63,66 +63,3 @@ Streamside maintains long-standing relationships with other organic producers to
 They remain deeply connected to the community that supported them from the beginning. Every weekend, Streamside is present at the Christchurch Farmers Market and South Christchurch Farmers Market -- rain, wind, heat, or cold -- showing up to share vegetables, talk recipes, discuss organic growing, and maintain the relationships that have shaped the farm's identity.
 
 Today, more than a decade after its beginnings, Streamside Organics continues to evolve without losing sight of its core purpose: to grow healthy food with integrity, support the land that sustains them, make organic produce accessible for everyday households, and strengthen community through fresh, seasonal, nutrient-dense vegetables delivered right to your door.
-
-## Products
-Seasonal vegetables
-Salad greens
-Leafy greens
-Fresh herbs
-Root vegetables
-Brassicas
-Alliums (onions, leeks, spring onions)
-Fruit (seasonal, limited)
-Microgreens (seasonal partners)
-
-## Services & Sales Channels
-CSA boxes
-Weekly veggie boxes (Christchurch)
-Wholesale supply to restaurants and cafés
-Supply to wholefood and organic stores
-Supply to supermarkets
-Farmers market sales (Saturday & Sunday)
-Online ordering via partner hubs (Bliss Box / Ooooby, Live2Give Organics)
-GoodFor mid-week pickup (The Welder, Christchurch)
-
-## Hours / Schedule
-CSA / veggie boxes: weekly cycle (delivery & pick-up by suburb)
-Christchurch Farmers Market: Saturday 9am–1pm
-South Christchurch Farmers Market: Sunday 9am–12pm
-GoodFor pickup: mid-week collection (usually Wednesday)
-Wholesale deliveries: Monday–Friday (varies by venue)
-
-## Sourced From
-Certified organic mixed-vegetable farm in Leeston, Central Canterbury
-Grows 40+ seasonal crops using regenerative, soil-focused methods
-
-## Supplies To
-Ilex Cafe Botanic Gardens
-Gatherings Restaurant
-Black Estate (Waipara)
-Greystone Wines (Waipara)
-Pomeroy’s Pub (Christchurch)
-Cellar Door (Christchurch)
-Alpine Grind (Methven)
-Green Dinner Table
-Piko Wholefoods
-GoodFor (The Welder, Welles St)
-Selwyn Co-op
-Soul Food Organics (Queenstown)
-New World St Martins
-New World Durham St
-New World Fendalton
-New World Lincoln
-New World Halswell
-New World Queenstown
-FreshChoice Merivale
-FreshChoice Nelson City
-Bliss Box (formerly Ooooby)
-Live2Give Organics
-
-## Also Referenced By
-Christchurch Farmers Market vendor listings
-South Christchurch Farmers Market vendor listings
-GoodFor blog and pickup partner info
-Live2Give Organics product catalogue
-Local organic / real food directories and regional food maps
