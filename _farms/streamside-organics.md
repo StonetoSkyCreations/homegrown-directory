@@ -34,6 +34,8 @@ source_urls: []
 hours: ''
 last_checked: user-submitted
 notes: ''
+rating_average: 5
+rating_count: 1
 ---
 Streamside Organics began in 2014 on a single acre of leased land. What started as a small, hands-on experiment in feeding a local community has grown into one of Canterbury's most respected organic market gardens: a 50-acre certified organic farm supplying thousands of households each week.
 
@@ -50,81 +52,74 @@ They remain deeply connected to the community that supported them from the begin
 Today, more than a decade after its beginnings, Streamside Organics continues to evolve without losing sight of its core purpose: to grow healthy food with integrity, support the land that sustains them, make organic produce accessible for everyday households, and strengthen community through fresh, seasonal, nutrient-dense vegetables delivered right to your door.
 
 ## Products
-- Seasonal vegetables  
-- Salad greens  
-- Fresh herbs  
-- Root crops  
-- Brassicas  
-- Allium family crops (onions, leeks, spring onions)  
-- Fruit (limited seasonal varieties)  
-- Microgreens (seasonal partners)  
+- Seasonal vegetables
+- Salad greens
+- Leafy greens
+- Fresh herbs
+- Root vegetables
+- Brassicas
+- Alliums (onions, leeks, spring onions)
+- Fruit (seasonal, limited)
+- Microgreens (seasonal partners)
 
 ---
 
 ## Services & Sales Channels
-- CSA-style seasonal vegetable boxes  
-- Weekly subscription boxes (Christchurch area)  
-- Wholesale supply to restaurants and cafés  
-- Supply to wholefood and organic stores  
-- Supply to supermarkets  
-- Farmers’ market sales (Saturday & Sunday markets)  
-- Online ordering via partner hubs (Bliss Box / Ooooby, Live2Give Organics)  
-- Mid-week pickup from GoodFor – The Welder (Christchurch)  
+- CSA boxes
+- Weekly veggie boxes (Christchurch)
+- Wholesale supply to restaurants and cafés
+- Supply to wholefood and organic stores
+- Supply to supermarkets
+- Farmers market sales (Saturday & Sunday)
+- Online ordering via partner hubs (Bliss Box / Ooooby, Live2Give Organics)
+- GoodFor mid-week pickup (The Welder, Christchurch)
 
 ---
 
 ## Hours / Schedule
-- **CSA / veggie boxes:** weekly cycle, delivery & pick-up schedule varies by suburb  
-- **Christchurch Farmers’ Market:** Saturday, 9am–1pm  
-- **South Christchurch Farmers’ Market:** Sunday, 9am–12pm  
-- **GoodFor pick-up:** mid-week collections (typically Wednesday; confirmed on order)  
-- **Wholesale deliveries:** Mon–Fri (varies by venue)
+- CSA / veggie boxes: weekly cycle (delivery & pick-up by suburb)
+- Christchurch Farmers Market: Saturday 9am–1pm
+- South Christchurch Farmers Market: Sunday 9am–12pm
+- GoodFor pickup: mid-week collection (usually Wednesday)
+- Wholesale deliveries: Monday–Friday (varies by venue)
 
 ---
 
 ## Sourced From
-Streamside is a certified organic mixed-vegetable farm operating in Central Canterbury, supplying over 40 different seasonal crops throughout the year. Produce is grown using regenerative, soil-focused organic methods on their market-garden-scale farm in Leeston, Canterbury.
+- Certified organic mixed-vegetable farm in Leeston, Central Canterbury
+- Grows 40+ seasonal crops using regenerative, soil-focused methods
 
 ---
 
 ## Supplies To
-**Restaurants & Cafés**  
-- Ilex Cafe Botanic Gardens  
-- Gatherings Restaurant  
-- Black Estate (Waipara)  
-- Greystone Wines (Waipara)  
-- Pomeroy’s Pub  
-- Cellar Door (Christchurch)  
+- Ilex Cafe Botanic Gardens
+- Gatherings Restaurant
+- Black Estate (Waipara)
+- Greystone Wines (Waipara)
+- Pomeroy’s Pub (Christchurch)
+- Cellar Door (Christchurch)
 - Alpine Grind (Methven)
-
-**Wholefood Stores / Meal Companies**  
-- Green Dinner Table  
-- Piko Wholefoods  
-- GoodFor (Welles St / The Welder)  
-- Soul Food Organics (Queenstown)  
-- Selwyn Co-op  
-
-**Supermarkets**  
-- New World St Martins  
-- New World Durham St  
-- New World Fendalton  
-- New World Lincoln  
-- New World Halswell  
-- New World Queenstown  
-- Fresh Choice Merivale  
-- Fresh Choice Nelson City  
-
-**Online Retailers / Delivery Hubs**  
-- Bliss Box (formerly Ooooby)  
-- Live2Give Organics  
-- GoodFor mid-week pickup (Christchurch)
+- Green Dinner Table
+- Piko Wholefoods
+- GoodFor (The Welder, Welles St)
+- Selwyn Co-op
+- Soul Food Organics (Queenstown)
+- New World St Martins
+- New World Durham St
+- New World Fendalton
+- New World Lincoln
+- New World Halswell
+- New World Queenstown
+- FreshChoice Merivale
+- FreshChoice Nelson City
+- Bliss Box (formerly Ooooby)
+- Live2Give Organics
 
 ---
 
 ## Also Referenced By
-- Local chefs and restaurants prioritising certified organic, Canterbury-grown vegetables  
-- Christchurch Farmers’ Market weekly vendor list  
-- South Christchurch Farmers’ Market vendor list  
-- GoodFor blog / pickup partner updates  
-- Live2Give Organics product catalogue  
-- Various “support local / organic” directories and regional food maps  
+- Christchurch Farmers Market vendor listings
+- South Christchurch Farmers Market vendor listings
+- GoodFor blog and pickup partner info
+- Live2Give Organics product catalogue
+- Local organic / real food directories and regional food maps
