@@ -1,0 +1,46 @@
+{%- assign listing_ref = include.listing | default: page -%}
+{%- assign listing_slug = listing_ref.slug | default: listing_ref.title | default: listing_ref.name | slugify -%}
+{%- assign listing_name = listing_ref.title | default: listing_ref.name -%}
+{%- assign reviews_data = site.data.reviews | default: empty -%}
+{%- assign collected_reviews = "" | split: "" -%}
+{%- if reviews_data and reviews_data != empty -%}
+  {%- assign slug_matches = reviews_data | where: "business_slug", listing_slug -%}
+  {%- assign collected_reviews = collected_reviews | concat: slug_matches -%}
+  {%- if collected_reviews == empty -%}
+    {%- assign name_matches = reviews_data | where_exp: 'review', 'review.business_name == listing_name' -%}
+    {%- assign collected_reviews = collected_reviews | concat: name_matches -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if listing_ref.reviews -%}
+  {%- assign collected_reviews = collected_reviews | concat: listing_ref.reviews -%}
+{%- endif -%}
+<section class="listing-reviews">
+  <h2>Reviews</h2>
+  {% if collected_reviews and collected_reviews.size > 0 %}
+    <ul class="review-list">
+      {% for review in collected_reviews %}
+        <li class="review">
+          <div class="review__header">
+            {% if review.rating %}
+              <span class="review__rating">{{ review.rating }}★</span>
+            {% endif %}
+            {% if review.review_title %}
+              <h3 class="review__title">{{ review.review_title }}</h3>
+            {% endif %}
+          </div>
+          {% if review.review_text %}
+            <p class="review__text">{{ review.review_text }}</p>
+          {% endif %}
+          {% if review.reviewer_name or review.last_visit_date %}
+            <p class="review__meta">
+              {% if review.reviewer_name %}{{ review.reviewer_name }}{% endif %}
+              {% if review.last_visit_date %}{% if review.reviewer_name %} · {% endif %}Visited {{ review.last_visit_date }}{% endif %}
+            </p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">No reviews yet. Be the first to share your experience.</p>
+  {% endif %}
+</section>

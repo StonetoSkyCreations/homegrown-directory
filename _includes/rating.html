@@ -1,5 +1,6 @@
-{% assign avg = listing.rating_average | default: 0 %}
-{% assign count = listing.rating_count | default: 0 %}
+{%- assign rating_source = include.listing | default: listing | default: page -%}
+{%- assign avg = rating_source.rating_average | default: 0 -%}
+{%- assign count = rating_source.rating_count | default: 0 -%}
 {% assign full_stars = avg | floor %}
 {% assign half_star = 0 %}
 {% if avg > full_stars and avg < full_stars | plus: 1 %}{% assign half_star = 1 %}{% endif %}

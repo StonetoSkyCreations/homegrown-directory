@@ -784,6 +784,51 @@ a:focus-visible {
   color: var(--muted);
   font-size: 0.95rem;
 }
+.listing-reviews {
+  margin-top: 1rem;
+}
+.review-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.review {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  background: #f8f7f3;
+}
+.review__header {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.2rem;
+}
+.review__rating {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  font-size: 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #c7a869;
+  background: #faf7f1;
+  color: #8c7344;
+  font-weight: 600;
+}
+.review__title {
+  margin: 0;
+  font-size: 1rem;
+}
+.review__text {
+  margin: 0;
+  color: var(--text);
+}
+.review__meta {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
 .link-list {
   list-style: none;
   padding: 0;
