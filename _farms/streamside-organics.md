@@ -48,3 +48,83 @@ Streamside maintains long-standing relationships with other organic producers to
 They remain deeply connected to the community that supported them from the beginning. Every weekend, Streamside is present at the Christchurch Farmers Market and South Christchurch Farmers Market -- rain, wind, heat, or cold -- showing up to share vegetables, talk recipes, discuss organic growing, and maintain the relationships that have shaped the farm's identity.
 
 Today, more than a decade after its beginnings, Streamside Organics continues to evolve without losing sight of its core purpose: to grow healthy food with integrity, support the land that sustains them, make organic produce accessible for everyday households, and strengthen community through fresh, seasonal, nutrient-dense vegetables delivered right to your door.
+
+## Products
+- Seasonal vegetables  
+- Salad greens  
+- Fresh herbs  
+- Root crops  
+- Brassicas  
+- Allium family crops (onions, leeks, spring onions)  
+- Fruit (limited seasonal varieties)  
+- Microgreens (seasonal partners)  
+
+---
+
+## Services & Sales Channels
+- CSA-style seasonal vegetable boxes  
+- Weekly subscription boxes (Christchurch area)  
+- Wholesale supply to restaurants and cafés  
+- Supply to wholefood and organic stores  
+- Supply to supermarkets  
+- Farmers’ market sales (Saturday & Sunday markets)  
+- Online ordering via partner hubs (Bliss Box / Ooooby, Live2Give Organics)  
+- Mid-week pickup from GoodFor – The Welder (Christchurch)  
+
+---
+
+## Hours / Schedule
+- **CSA / veggie boxes:** weekly cycle, delivery & pick-up schedule varies by suburb  
+- **Christchurch Farmers’ Market:** Saturday, 9am–1pm  
+- **South Christchurch Farmers’ Market:** Sunday, 9am–12pm  
+- **GoodFor pick-up:** mid-week collections (typically Wednesday; confirmed on order)  
+- **Wholesale deliveries:** Mon–Fri (varies by venue)
+
+---
+
+## Sourced From
+Streamside is a certified organic mixed-vegetable farm operating in Central Canterbury, supplying over 40 different seasonal crops throughout the year. Produce is grown using regenerative, soil-focused organic methods on their market-garden-scale farm in Leeston, Canterbury.
+
+---
+
+## Supplies To
+**Restaurants & Cafés**  
+- Ilex Cafe Botanic Gardens  
+- Gatherings Restaurant  
+- Black Estate (Waipara)  
+- Greystone Wines (Waipara)  
+- Pomeroy’s Pub  
+- Cellar Door (Christchurch)  
+- Alpine Grind (Methven)
+
+**Wholefood Stores / Meal Companies**  
+- Green Dinner Table  
+- Piko Wholefoods  
+- GoodFor (Welles St / The Welder)  
+- Soul Food Organics (Queenstown)  
+- Selwyn Co-op  
+
+**Supermarkets**  
+- New World St Martins  
+- New World Durham St  
+- New World Fendalton  
+- New World Lincoln  
+- New World Halswell  
+- New World Queenstown  
+- Fresh Choice Merivale  
+- Fresh Choice Nelson City  
+
+**Online Retailers / Delivery Hubs**  
+- Bliss Box (formerly Ooooby)  
+- Live2Give Organics  
+- GoodFor mid-week pickup (Christchurch)
+
+---
+
+## Also Referenced By
+- Local chefs and restaurants prioritising certified organic, Canterbury-grown vegetables  
+- Christchurch Farmers’ Market weekly vendor list  
+- South Christchurch Farmers’ Market vendor list  
+- GoodFor blog / pickup partner updates  
+- Live2Give Organics product catalogue  
+- Various “support local / organic” directories and regional food maps  
