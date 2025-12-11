@@ -3,6 +3,9 @@ layout: default
 title: Markets
 description: "Find farmers' markets, market halls, and local food hubs near you."
 permalink: /markets/
+seo_title: "Farmers’ Markets & Local Food Hubs | Homegrown Directory"
+seo_description: >
+  Find New Zealand markets where local growers, artisans and communities come together to trade fresh, seasonal food.
 ---
 {% assign items = site.markets | sort: 'slug' %}
 {% assign regions = items | map: 'region' | uniq %}

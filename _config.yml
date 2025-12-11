@@ -1,6 +1,7 @@
 title: Homegrown Directory
-description: >-
-  A global, integrity-first food directory mapping producers, markets, grocers, eateries, and hubs — starting in Aotearoa New Zealand.
+tagline: Find food grown with care
+description: >
+  Explore Aotearoa’s directory for transparent, ethically grown food — organic, spray-free and regenerative producers, markets and eateries.
 baseurl: "" # empty for custom domain
 url: "https://homegrowndirectory.com"
 timezone: Pacific/Auckland

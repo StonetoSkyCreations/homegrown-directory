@@ -2,6 +2,9 @@
 layout: default
 title: Groceries
 permalink: /groceries/
+seo_title: "Organic & Wholefood Grocers | Homegrown Directory"
+seo_description: >
+  Locate wholefood stores, organic grocers and refilleries across Aotearoa stocking responsibly sourced, nutrient-dense food.
 ---
 {% assign items = site.stores | sort: 'slug' %}
 {% assign regions = items | map: 'region' | uniq %}

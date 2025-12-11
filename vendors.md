@@ -2,6 +2,9 @@
 layout: default
 title: Vendors
 permalink: /vendors/
+seo_title: "Food Trucks Using Local, Seasonal Ingredients | Homegrown"
+seo_description: >
+  Discover mobile vendors serving meals made with locally sourced, seasonal and ethically produced ingredients.
 ---
 
 <section class="directory-page">
