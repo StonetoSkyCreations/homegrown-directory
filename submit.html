@@ -26,17 +26,45 @@ permalink: /submit.html
     </div>
 
     <div class="form-group">
-      <label for="place_type">Type of place</label>
-      <select id="place_type" name="place_type" required>
-        <option value="">Select type</option>
-        <option value="farms">Farm / Producer</option>
-        <option value="stores">Grocery / Wholefood store / Refill</option>
-        <option value="restaurants">Café / Restaurant</option>
-        <option value="vendors">Food truck / Mobile vendor</option>
-        <option value="markets">Market / Farmers’ market</option>
-        <option value="distributors">Distributor / Food hub</option>
-        <option value="community">Community / grassroots initiative</option>
+      <label for="collection">Listing category</label>
+      <select id="collection" name="collection" required>
+        <option value="">Select a category…</option>
+        <option value="farms">Farms &amp; producers</option>
+        <option value="markets">Markets</option>
+        <option value="stores">Grocers / stores</option>
+        <option value="restaurants">Eateries (restaurants &amp; cafés)</option>
+        <option value="vendors">Food trucks / mobile vendors</option>
+        <option value="distributors">Distributors / hubs</option>
       </select>
+    </div>
+
+    <div class="form-group" id="subtype-group" style="display:none">
+      <label for="subtype">Subtype</label>
+      <select id="subtype" name="subtype">
+        <option value="">Select a subtype…</option>
+        <option data-collections="restaurants" value="cafe">Cafe</option>
+        <option data-collections="restaurants" value="restaurant">Restaurant</option>
+        <option data-collections="vendors" value="food-truck">Food truck</option>
+        <option data-collections="stores" value="supermarket">Supermarket</option>
+        <option data-collections="stores" value="organic-store">Organic store</option>
+        <option data-collections="stores" value="wholefoods-store">Wholefoods store</option>
+        <option data-collections="stores" value="bulk-refillery">Bulk refillery</option>
+        <option data-collections="stores" value="co-op">Co-op</option>
+        <option data-collections="stores" value="specialty-grocer">Specialty grocer</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="specialty-group" style="display:none">
+      <label>Specialty (optional)</label>
+      <div class="pill-group">
+        {% assign specialty_tags = "bakery,butcher,fish-monger,chocolatier,kombucha,kefir,dairy,cheese,coffee-roaster,fermenter" | split: "," %}
+        {% for tag in specialty_tags %}
+        <label class="pill pill--checkbox">
+          <input type="checkbox" name="specialty_tags" value="{{ tag }}">
+          <span>{{ tag | replace: '-', ' ' | capitalize }}</span>
+        </label>
+        {% endfor %}
+      </div>
     </div>
 
     <div class="form-group">
@@ -114,11 +142,24 @@ permalink: /submit.html
     <div class="form-group">
       <label>Practices</label>
       <div class="pill-group">
-        {% assign tags = "Certified organic,Spray-free / organic but uncertified,Regenerative / agroecological,Biodynamic,Wild / foraged,Pasture-raised,Local / regional focus" | split: "," %}
-        {% for tag in tags %}
+        {% assign practice_tokens = "organic,spray-free,regenerative,biodynamic,wild,pasture-raised,local" | split: "," %}
+        {% for tag in practice_tokens %}
         <label class="pill pill--checkbox">
-          <input type="checkbox" name="practices" value="{{ tag }}">
-          <span>{{ tag }}</span>
+          <input type="checkbox" name="practices_tags" value="{{ tag }}">
+          <span>{{ tag | replace: '-', ' ' | capitalize }}</span>
+        </label>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="form-group" id="farm-products-group" style="display:none">
+      <label>Products (farms only)</label>
+      <div class="pill-group">
+        {% assign farm_products = "meat,dairy,seed" | split: "," %}
+        {% for tag in farm_products %}
+        <label class="pill pill--checkbox">
+          <input type="checkbox" name="products_tags" value="{{ tag }}">
+          <span>{{ tag | capitalize }}</span>
         </label>
         {% endfor %}
       </div>
@@ -178,15 +219,25 @@ permalink: /submit.html
   const nameInput = document.getElementById('name');
   const slugInput = document.getElementById('slug');
   const submissionTypeRadios = submitForm.querySelectorAll('input[name="submission_type"]');
-  const placeType = document.getElementById('place_type');
+  const collectionSelect = document.getElementById('collection');
+  const subtypeSelect = document.getElementById('subtype');
+  const subtypeGroup = document.getElementById('subtype-group');
+  const farmProductsGroup = document.getElementById('farm-products-group');
+  const specialtyGroup = document.getElementById('specialty-group');
+
+  // Canonical tokens: collection (farms, markets, stores, restaurants, vendors, distributors)
+  // subtype is only emitted for restaurants/vendors/stores; markets have no subtype.
+  // practices_tags always emitted (even empty). products_tags only for farms. specialty_tags only for stores + specialty-grocer.
+  const PRACTICE_TOKENS = ['organic', 'spray-free', 'regenerative', 'biodynamic', 'wild', 'pasture-raised', 'local'];
+  const FARM_PRODUCT_TOKENS = ['meat', 'dairy', 'seed'];
+  const RESTAURANT_SUBTYPES = ['cafe', 'restaurant'];
+  const VENDOR_SUBTYPES = ['food-truck'];
+  const STORE_SUBTYPES = ['supermarket', 'organic-store', 'wholefoods-store', 'bulk-refillery', 'co-op', 'specialty-grocer'];
+  const SPECIALTY_TOKENS = ['bakery', 'butcher', 'fish-monger', 'chocolatier', 'kombucha', 'kefir', 'dairy', 'cheese', 'coffee-roaster', 'fermenter'];
 
   const listingRef = params.get('listing') || '';
   const presetName = params.get('name');
   const presetSubmissionType = params.get('submission_type');
-
-  if (params.get('type') === 'community' && placeType) {
-    placeType.value = 'community';
-  }
 
   if (presetName && nameInput) {
     nameInput.value = presetName;
@@ -205,6 +256,18 @@ permalink: /submit.html
     });
   }
 
+  if (collectionSelect) {
+    const presetCollection = params.get('collection');
+    if (presetCollection) {
+      collectionSelect.value = presetCollection;
+    }
+    collectionSelect.addEventListener('change', updateCategoryFields);
+  }
+  if (subtypeSelect) {
+    subtypeSelect.addEventListener('change', updateCategoryFields);
+  }
+  updateCategoryFields();
+
   const slugify = (value) =>
     (value || '')
       .toLowerCase()
@@ -213,11 +276,70 @@ permalink: /submit.html
       .replace(/\s+/g, '-')
       .replace(/-+/g, '-');
 
+  const normalizeToken = (value) => (value || '').toString().trim().toLowerCase();
+
   const splitList = (value) =>
     (value || '')
       .split(/[,\n]/)
       .map((v) => v.trim())
       .filter(Boolean);
+
+  const uniqueAllowed = (values, allowed) => {
+    const set = new Set();
+    values.forEach((val) => {
+      const token = normalizeToken(val);
+      if (allowed.includes(token)) set.add(token);
+    });
+    return Array.from(set);
+  };
+
+  const getCheckedValues = (name, allowed) => {
+    const values = Array.from(submitForm.querySelectorAll(`input[name="${name}"]:checked`)).map((el) => el.value);
+    return uniqueAllowed(values, allowed);
+  };
+
+  const clearChecked = (name) => {
+    submitForm.querySelectorAll(`input[name="${name}"]`).forEach((el) => {
+      el.checked = false;
+    });
+  };
+
+  const updateCategoryFields = () => {
+    const collection = collectionSelect ? collectionSelect.value : '';
+    const subtypeAllowedCollections = ['restaurants', 'vendors', 'stores'];
+    const showSubtype = subtypeAllowedCollections.includes(collection);
+    if (subtypeGroup) subtypeGroup.style.display = showSubtype ? '' : 'none';
+    if (subtypeSelect) {
+      const current = subtypeSelect.value;
+      let keepCurrent = false;
+      Array.from(subtypeSelect.options).forEach((opt) => {
+        if (!opt.value) {
+          opt.hidden = false;
+          return;
+        }
+        const allowedFor = (opt.dataset.collections || '').split(',').map((v) => v.trim());
+        const allowed = allowedFor.includes(collection);
+        opt.hidden = !allowed;
+        if (!allowed && current === opt.value) {
+          subtypeSelect.value = '';
+        }
+        if (allowed && current === opt.value) {
+          keepCurrent = true;
+        }
+      });
+      if (!keepCurrent && !showSubtype) {
+        subtypeSelect.value = '';
+      }
+    }
+
+    const isFarm = collection === 'farms';
+    if (farmProductsGroup) farmProductsGroup.style.display = isFarm ? '' : 'none';
+    if (!isFarm) clearChecked('products_tags');
+
+    const showSpecialty = collection === 'stores' && subtypeSelect && subtypeSelect.value === 'specialty-grocer';
+    if (specialtyGroup) specialtyGroup.style.display = showSpecialty ? '' : 'none';
+    if (!showSpecialty) clearChecked('specialty_tags');
+  };
 
   const formatList = (label, items) => {
     if (!items.length) return `${label}: []`;
@@ -231,7 +353,6 @@ permalink: /submit.html
 
   const buildYaml = (data, action, targetSlug = listingRef) => {
     const listFields = {
-      practices: splitList(data.getAll('practices').join(',')),
       products: splitList(data.get('products')),
       services: splitList(data.get('services')),
       social: splitList(data.get('social')),
@@ -243,7 +364,19 @@ permalink: /submit.html
     const countrySlug = data.get('country_slug') || 'new-zealand';
     const countryLabel = countrySlug === 'australia' ? 'AU' : 'New Zealand';
     const slug = targetSlug || slugify(name);
-    const collection = data.get('place_type') || '';
+    const collection = data.get('collection') || '';
+    const subtypeRaw = normalizeToken(data.get('subtype'));
+    const practicesTags = uniqueAllowed(data.getAll('practices_tags'), PRACTICE_TOKENS);
+    const productsTags = collection === 'farms' ? uniqueAllowed(data.getAll('products_tags'), FARM_PRODUCT_TOKENS) : [];
+    const specialtyTags =
+      collection === 'stores' && subtypeRaw === 'specialty-grocer'
+        ? uniqueAllowed(data.getAll('specialty_tags'), SPECIALTY_TOKENS)
+        : [];
+    const subtypeAllowed =
+      (collection === 'restaurants' && RESTAURANT_SUBTYPES.includes(subtypeRaw)) ||
+      (collection === 'vendors' && VENDOR_SUBTYPES.includes(subtypeRaw)) ||
+      (collection === 'stores' && STORE_SUBTYPES.includes(subtypeRaw));
+    const subtype = subtypeAllowed ? subtypeRaw : '';
     const shortDescription = data.get('short_description') || '';
     const fullDescription = (data.get('full_description') || '').trim();
     const descriptionText = shortDescription || fullDescription;
@@ -255,6 +388,7 @@ permalink: /submit.html
       `title: ${name}`,
       `slug: ${slug}`,
       `collection: ${collection}`,
+      subtype ? `subtype: ${subtype}` : null,
       `country_slug: ${countrySlug}`,
       `country: ${countryLabel}`,
       `region: ${data.get('region') || ''}`,
@@ -264,7 +398,9 @@ permalink: /submit.html
       `postcode: ${data.get('postcode') || ''}`,
       formatMultiline('description', descriptionText),
       formatMultiline('seo_description', data.get('seo_description')),
-      formatList('practices', listFields.practices),
+      formatList('practices_tags', practicesTags),
+      collection === 'farms' ? formatList('products_tags', productsTags) : null,
+      collection === 'stores' && specialtyTags.length ? formatList('specialty_tags', specialtyTags) : null,
       formatList('products', listFields.products),
       formatList('services', listFields.services),
       `website: ${data.get('website') || ''}`,
@@ -277,6 +413,7 @@ permalink: /submit.html
       formatList('sources', listFields.sources),
       '---'
     ];
+    const yamlContent = yamlLines.filter(Boolean).join('\n');
 
     const ownerIsContact = data.get('owner_checkbox') ? 'yes' : 'no';
     const submitterNotes = [
@@ -301,7 +438,7 @@ permalink: /submit.html
 
     const sections = [
       headerLines.join('\n'),
-      yamlLines.join('\n'),
+      yamlContent,
       '# Full description (markdown)',
       fullDescription || '[add long-form description here]',
       submitterNotes.join('\n')
