@@ -17,13 +17,30 @@ seo_description: >
       <div class="filter-row">
         <p class="filter-label">Looking for</p>
         <div class="pill-group">
-          {% assign subtypes = "farm,vineyard,meat,dairy,seed,flowers" | split: "," %}
-          {% for sub in subtypes %}
           <label class="pill pill--checkbox">
-            <input type="checkbox" name="subtype" value="{{ sub }}">
-            <span>{{ sub | replace: '-', ' ' | capitalize }}</span>
+            <input type="checkbox" name="subtype" value="farm">
+            <span>Farm</span>
           </label>
-          {% endfor %}
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="subtype" value="vineyard">
+            <span>Vineyard</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="subtype" value="flowers">
+            <span>Flowers</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="products" value="meat">
+            <span>Meat</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="products" value="dairy">
+            <span>Dairy</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="products" value="seed">
+            <span>Seed</span>
+          </label>
         </div>
       </div>
     </div>
@@ -49,19 +66,6 @@ seo_description: >
       <label class="pill pill--checkbox">
         <input type="checkbox" name="tag" value="{{ tag | downcase }}">
         <span>{{ tag }}</span>
-      </label>
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="filter-row">
-    <p class="filter-label">Products</p>
-    <div class="pill-group">
-      {% assign products = "meat,dairy,seed" | split: "," %}
-      {% for product in products %}
-      <label class="pill pill--checkbox">
-        <input type="checkbox" name="products" value="{{ product }}">
-        <span>{{ product | capitalize }}</span>
       </label>
       {% endfor %}
     </div>
