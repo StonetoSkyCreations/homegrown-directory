@@ -3,6 +3,7 @@ layout: vendor
 slug: volcanoview-restaurant-bar
 name: Volcanoview Restaurant & Bar
 type: bar-restaurant
+subtype: restaurant
 category: eatery
 description: Restaurant and bar serving homemade meals with organic and locally sourced ingredients, including organic coffee.
 country: NZ

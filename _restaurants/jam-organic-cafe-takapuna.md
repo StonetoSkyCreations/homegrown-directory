@@ -25,4 +25,5 @@ email: ''
 phone: "+64 9 486 1600"
 description: Café serving organic delights and crafted coffees, specialising in wholesome meals and drinks.
 notes: Updated with latest address and website.
+subtype: cafe
 ---

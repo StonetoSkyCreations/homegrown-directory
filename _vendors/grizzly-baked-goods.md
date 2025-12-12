@@ -3,6 +3,7 @@ layout: vendor
 slug: grizzly-baked-goods
 name: Grizzly Baked Goods
 type: producer
+subtype: cafe
 category: bakery
 description: Christchurch bakery using organic and locally grown flour for sourdough bread.
 country: NZ

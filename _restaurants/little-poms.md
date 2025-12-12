@@ -33,4 +33,5 @@ hours: "Open 7 days: 6:30am–3:00pm; Kitchen 7:00am–2:30pm"
 rating_average: 5
 rating_count: 1
 description: "Neighbourhood café serving seasonal, locally sourced and organic ingredients with free-range produce and an ethical approach to dining. Offers generous breakfasts, brunches and lunches made in-house, including nut butters and almond milk."
+subtype: cafe
 ---

@@ -3,6 +3,7 @@ layout: vendor
 slug: daily-bread-pt-chevalier
 name: Daily Bread
 type: bakery
+subtype: cafe
 category: mixed
 description: Artisan bakery using 100% organic or spray-free New Zealand grains.
 country: NZ

@@ -24,4 +24,5 @@ description: Eco-retreat café serving organic, locally sourced, seasonal dishes
 rating_average: 5
 rating_count: 1
 Cafe at Solscape eco-retreat offering organic, locally sourced cuisine with an emphasis on seasonal, sustainable ingredients. Source: https://solscape.co.nz/eat/
+subtype: restaurant
 ---

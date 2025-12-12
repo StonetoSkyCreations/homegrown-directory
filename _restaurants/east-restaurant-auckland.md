@@ -21,4 +21,5 @@ email: book@easteats.co.nz
 phone: '09 399 2361'
 description: Pan-Asian restaurant with a 100% organic or biodynamic vegan wine list supporting artisanal producers.
 Wine list is fully organic/biodynamic and vegan; supports artisanal producers. Source: user-provided listing
+subtype: restaurant
 ---

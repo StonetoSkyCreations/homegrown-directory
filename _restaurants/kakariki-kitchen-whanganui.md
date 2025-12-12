@@ -21,4 +21,5 @@ email: ''
 phone: ''
 description: Whanganui café using organic coffee and aiming for local, ethical ingredients.
 Café focused on organic coffee and sourcing local, ethical ingredients where possible. Source: user-supplied list
+subtype: cafe
 ---

@@ -38,5 +38,6 @@ sources:
   - streamside-organics
 description: Cozy Methven cafe serving fair-trade coffee and wholesome meals made from fresh, seasonal ingredients with organic options.
 last_checked: "2025-12-12"
+subtype: cafe
 ---
 Alpine Grind is a homely cafe in the centre of Methven offering creative breakfast, brunch and lunch dishes that celebrate fresh, seasonal produce. The kitchen produces hearty plates like Avalanche Brekkie and Buckwheat Waffles alongside lighter options, all made with locally sourced ingredients and organic touches where possible. Coffee lovers enjoy Kokako fair-trade coffee and Nitro Cold Brew, and the cafe bakes its own breads and bagels; vegan and gluten-free options are available. Open from early morning, it's a favourite stop for skiers and locals alike, with free Wi-Fi, takeaway and dine-in service.

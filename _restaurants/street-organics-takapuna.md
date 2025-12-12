@@ -26,4 +26,5 @@ email: ''
 phone: "(09) 216 5991"
 description: Real‑food café and store making meals, cakes and treats from scratch using local organic ingredients whenever possible.
 notes: Updated with latest address and services.
+subtype: cafe
 ---

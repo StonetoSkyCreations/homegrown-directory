@@ -22,4 +22,5 @@ email: info@theorigin.co.nz
 phone: 03 3555 939
 description: St Albans cafe offering crop-to-cup organic Zealong tea, vegan cuisine, and sustainably sourced coffee.
 Offers certified organic Zealong tea and vegan dishes with sustainably sourced coffee. Source: user-provided listing
+subtype: cafe
 ---

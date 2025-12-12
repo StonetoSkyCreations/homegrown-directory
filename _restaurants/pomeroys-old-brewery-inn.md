@@ -32,4 +32,5 @@ hours: "Dining: 7 days 5–8:30pm; Lunch Fri–Sun 12–5pm"
 rating_average: 5
 rating_count: 1
 description: "Historic Christchurch brewpub offering a full restaurant menu with selected organic ingredients, including organic chicken wings and organic broccoli."
+subtype: restaurant
 ---

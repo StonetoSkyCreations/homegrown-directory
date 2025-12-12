@@ -22,4 +22,5 @@ email: ''
 phone: ''
 description: Beachside restaurant with a homegrown ethos, using organic ingredients where possible.
 Chef-led menu built on homegrown, seasonal ingredients, aiming for organic sourcing whenever possible. Source: http://www.tairuabeachclub.co.nz/
+subtype: restaurant
 ---

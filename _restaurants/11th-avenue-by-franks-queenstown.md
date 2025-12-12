@@ -23,4 +23,5 @@ email: hello@11thavebyfranks.co.nz
 phone: 03 222 7030
 description: Lower Shotover café offering free-range local produce and fair trade organic coffee.
 Sister cafe to Frank’s serving free-range dishes and fair trade organic coffee. Source: user-provided listing
+subtype: cafe
 ---

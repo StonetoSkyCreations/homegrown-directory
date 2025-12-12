@@ -28,4 +28,5 @@ social_links:
 - https://www.instagram.com/odewanaka
 description: Hyper-local restaurant using organic produce, wild-shot game, and ethically caught kai moana with a seasonal, integrity-based menu.
 Organic, ethical, and seasonal menus reflecting Central Otago’s terroir, featuring wild-shot game and sustainably caught seafood. Source: user-provided details
+subtype: restaurant
 ---

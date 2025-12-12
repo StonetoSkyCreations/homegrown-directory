@@ -27,4 +27,5 @@ email: ''
 phone: "+64 27 648 4757"
 description: Plant‑based café serving seasonal dishes made with local organic produce and emphasising circular economy practices.
 notes: Updated with location and hours from latest listing details.
+subtype: cafe
 ---

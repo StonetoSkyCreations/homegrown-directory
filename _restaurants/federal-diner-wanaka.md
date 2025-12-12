@@ -22,4 +22,5 @@ email: eat@federaldiner.co.nz
 phone: 03 443 5152
 description: Wānaka diner serving organic eggs and free-range meats all day.
 Focuses on organic eggs and free-range meats for breakfast and all-day dining. Source: user-provided listing
+subtype: cafe
 ---

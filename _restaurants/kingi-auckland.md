@@ -22,4 +22,5 @@ email: kingi@thehotelbritomart.com
 phone: "+64 9 300 9596"
 description: Britomart restaurant championing sustainably caught local seafood with an ingredient-led menu.
 Celebrates sustainable NZ seafood with dishes connecting ocean and land; strong advocate for responsible fishing practices. Source: user-provided details
+subtype: restaurant
 ---
