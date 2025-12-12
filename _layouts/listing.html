@@ -222,11 +222,18 @@ map: false
   {% endif %}
   "mainEntityOfPage": "{{ page.url | absolute_url }}",
   {% if page.address or page.city or page.region or page.country or page.postcode %}
+  {% assign locality = nil %}
+  {% if page.suburb and page.city %}
+    {% assign locality = page.suburb | append: ", " | append: page.city %}
+  {% elsif page.city %}
+    {% assign locality = page.city %}
+  {% elsif page.suburb %}
+    {% assign locality = page.suburb %}
+  {% endif %}
   "address": {
     "@type": "PostalAddress",
     {% if page.address %}"streetAddress": "{{ page.address | escape }}",{% endif %}
-    {% if page.suburb %}"addressLocality": "{{ page.suburb | escape }}",{% endif %}
-    {% if page.city %}"addressLocality": "{{ page.city | escape }}",{% endif %}
+    {% if locality %}"addressLocality": "{{ locality | escape }}",{% endif %}
     {% if page.region %}"addressRegion": "{{ page.region | escape }}",{% endif %}
     {% if page.postcode %}"postalCode": "{{ page.postcode | escape }}",{% endif %}
     {% if page.country %}"addressCountry": "{{ page.country | escape }}"{% endif %}
