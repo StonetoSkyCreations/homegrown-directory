@@ -322,24 +322,45 @@
 
   function matchesFilters(item, selections, options = {}) {
     const includePageFilters = options.includePageFilters !== false;
-    const rawQuery = selections.query || "";
-    const textQuery = normalizeToken(rawQuery);
-    const queryTokens = textQuery ? textQuery.split(/\\s+/).filter(Boolean) : [];
-    const haystackParts = [
-      item.title,
-      item.description,
-      item.collection,
-      item.region,
-      item.city,
-      item.country,
-      item.type_token,
-      item.subtype_token
-    ];
-    if (Array.isArray(item.practices)) haystackParts.push(item.practices.join(" "));
-    if (Array.isArray(item.products)) haystackParts.push(item.products.join(" "));
-    if (Array.isArray(item.services)) haystackParts.push(item.services.join(" "));
-    const haystack = normalizeToken(haystackParts.join(" "));
-    const textMatches = !queryTokens.length || queryTokens.every((token) => haystack.includes(token));
+    // TEXT SEARCH: multi-word, AND-of-tokens over a combined haystack
+    const rawQuery = (selections.query || "").toString().trim().toLowerCase();
+    const queryTokens = rawQuery
+      ? rawQuery.split(/\s+/).filter(Boolean)
+      : [];
+
+    // Build a combined haystack from core fields
+    const haystackParts = [];
+
+    if (item.title) haystackParts.push(item.title);
+    if (item.description) haystackParts.push(item.description);
+    if (item.collection) haystackParts.push(item.collection);
+    if (item.region) haystackParts.push(item.region);
+    if (item.city) haystackParts.push(item.city);
+    if (item.country) haystackParts.push(item.country);
+    if (item.type_token) haystackParts.push(item.type_token);
+    if (item.subtype_token) haystackParts.push(item.subtype_token);
+
+    // Add tags/arrays: practices, products, services
+    if (Array.isArray(item.practices)) {
+      haystackParts.push(item.practices.join(" "));
+    }
+    if (Array.isArray(item.products)) {
+      haystackParts.push(item.products.join(" "));
+    }
+    if (Array.isArray(item.services)) {
+      haystackParts.push(item.services.join(" "));
+    }
+
+    const haystack = haystackParts
+      .filter(Boolean)
+      .join(" ")
+      .toString()
+      .toLowerCase()
+      .trim();
+
+    const textMatches =
+      !queryTokens.length ||
+      queryTokens.every((token) => haystack.includes(token));
     const selectedRegion = normalizeRegion(selections.region || "all");
     const itemRegion = normalizeRegion(item.region);
     const regionMatches = selectedRegion === "all" || itemRegion === selectedRegion;
