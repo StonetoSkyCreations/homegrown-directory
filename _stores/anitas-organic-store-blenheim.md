@@ -37,4 +37,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://anitasshop.co.nz
+subtype: organic-store
 ---

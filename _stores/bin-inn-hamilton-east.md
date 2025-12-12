@@ -4,6 +4,7 @@ slug: bin-inn-hamilton-east
 name: Bin Inn Hamilton East
 brand: Bin Inn Hamilton East
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

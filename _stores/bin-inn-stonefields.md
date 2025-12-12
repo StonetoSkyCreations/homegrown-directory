@@ -4,6 +4,7 @@ slug: bin-inn-stonefields
 name: Bin Inn Stonefields
 brand: Bin Inn Stonefields
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

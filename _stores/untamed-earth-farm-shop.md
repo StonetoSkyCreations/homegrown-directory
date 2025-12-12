@@ -5,6 +5,7 @@ slug: untamed-earth-farm-shop
 collection: stores
 name: Untamed Earth Farm Shop
 type: Organic Shop
+subtype: organic-store
 description: Neighbourhood organic grocer stocking Untamed Earth's certified produce plus local bread, fruit, and pantry staples.
 country: New Zealand
 country_slug: new-zealand

@@ -4,6 +4,7 @@ slug: replenish-for-health-williamstown
 name: Replenish for Health (Williamstown)
 brand: Replenish for Health
 type: organic-grocery
+subtype: organic-store
 category: retail
 description: Organic supermarket in Williamstown with produce, pantry staples, and sustainable household products.
 country: AU

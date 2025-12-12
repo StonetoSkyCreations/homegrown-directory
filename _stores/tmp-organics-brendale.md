@@ -4,6 +4,7 @@ slug: tmp-organics-brendale
 name: TMP Organics Butcher & Supermarket
 brand: TMP Organics
 type: butcher-supermarket
+subtype: supermarket
 category: retail
 description: Organic butcher and small-format supermarket focusing on certified organic meats and groceries.
 country: AU

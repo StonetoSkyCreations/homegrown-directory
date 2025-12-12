@@ -4,6 +4,7 @@ slug: earth-food-store-waikanae
 name: Earth Food Store
 brand: Earth Food Store
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Waikanae organic and wholefood store with local goods.
 country: NZ

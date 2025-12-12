@@ -40,5 +40,6 @@ sources:
   - https://wanderlog.com/place/details/780643/new-world-queenstown
   - https://pg.maptons.com/p/10593406594
 last_checked: "2025-12-12"
+subtype: supermarket
 ---
 Nestled in the Remarkables Park shopping area, New World Queenstown provides a convenient shopping experience for locals and travellers. Travel guides describe the store as tucked away near residential areas, smaller than some supermarkets yet clean with friendly staff and a solid selection of quality products including fresh meats and baked goods. Set against lush greenery and mountains, the store offers fresh and artisanal items and provides personalised service from helpful staff. It stocks certified organic vegetables from Streamside Organics, a farm where almost all produce is certified organic. Store services include catering, takeaway coffee, online shopping, Wi-Fi and an ATM. New World Queenstown is open from 7am to 10pm daily.

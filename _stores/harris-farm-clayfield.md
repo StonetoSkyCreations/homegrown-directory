@@ -4,6 +4,7 @@ slug: harris-farm-clayfield
 name: Harris Farm Markets (Clayfield)
 brand: Harris Farm Markets
 type: market-grocer
+subtype: specialty-grocer
 category: retail
 description: Market grocer in Clayfield with organic and local produce.
 country: AU

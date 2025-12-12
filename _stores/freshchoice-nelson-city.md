@@ -38,5 +38,6 @@ supplies_to:
 also_referenced_by:
 sources: []
 last_checked: "2025-12-12"
+subtype: specialty-grocer
 ---
 FreshChoice Nelson City is a locally owned supermarket that has served the Nelson community for more than thirty years. The store runs a "less than 200 km" initiative that sources produce from suppliers within a 200-kilometre radius, reducing carbon footprints and keeping produce fresh. It has been an environmental trailblazer, offering reusable bags, cardboard boxes and biodegradable paper bags instead of single-use plastic, installing energy-saving LED lighting and transitioning to electric warehouse equipment. The community fund donates $500 each month to local organisations and individuals. Open seven days from 7 am to 9 pm, the store stocks a broad range of groceries, fresh fruit and vegetables, bakery goods, meat and dairy products, including certified-organic vegetables from Streamside Organics.

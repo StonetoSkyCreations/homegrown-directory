@@ -4,6 +4,7 @@ title: "The Foodland Organic Store"
 slug: the-foodland-organic-store
 name: "The Foodland Organic Store"
 type: organic-store
+subtype: organic-store
 description: "Indian-owned organic grocery offering a wide range of certified organic and natural bulk foods, pulses, grains, flours, dried fruit, nuts, seeds, canned goods and pantry staples."
 country: New Zealand
 country_slug: new-zealand

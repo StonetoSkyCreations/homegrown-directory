@@ -4,6 +4,7 @@ slug: honest-wholefoods-invercargill
 name: Honest Wholefoods
 brand: Honest Wholefoods
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bulk organic and wholefood store in Invercargill.
 country: NZ

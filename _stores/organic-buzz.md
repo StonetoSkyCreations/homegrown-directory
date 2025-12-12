@@ -4,6 +4,7 @@ title: "Organic Buzz"
 slug: organic-buzz
 name: "Organic Buzz"
 type: "Organic grocer"
+subtype: organic-store
 description: "Organic food grocer with an emphasis on supporting local growers, offering in-store shopping only with a wide range of organic, spray-free and ethically raised products."
 country: New Zealand
 country_slug: new-zealand

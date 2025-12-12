@@ -4,6 +4,7 @@ slug: bin-inn-browns-bay
 name: Bin Inn Browns Bay
 brand: Bin Inn Browns Bay
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

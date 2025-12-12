@@ -28,4 +28,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://compleatwellness.co.nz
+subtype: specialty-grocer
 ---

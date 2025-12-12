@@ -4,6 +4,7 @@ slug: kaikoura-quality-store
 name: Kaikōura Quality Store
 brand: Kaikōura Quality Store
 type: produce-store
+subtype: specialty-grocer
 category: retailer
 description: Local grocery in Kaikōura stocking organic and free-range eggs plus seasonal produce.
 country: NZ

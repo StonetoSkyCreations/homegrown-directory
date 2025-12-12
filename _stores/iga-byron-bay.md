@@ -4,6 +4,7 @@ slug: iga-byron-bay
 name: IGA Byron Bay
 brand: IGA
 type: supermarket
+subtype: supermarket
 category: retail
 description: Local IGA supermarket with groceries and regional produce in Byron Bay.
 country: AU

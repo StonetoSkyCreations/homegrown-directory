@@ -4,6 +4,7 @@ slug: friends-of-the-earth-food-co-op
 name: Friends of the Earth Food Co-op & Cafe
 brand: Friends of the Earth Food Co-op & Cafe
 type: co-op
+subtype: co-op
 category: retail
 description: Community-run organic wholefoods store and cafe with bulk groceries and produce.
 country: AU

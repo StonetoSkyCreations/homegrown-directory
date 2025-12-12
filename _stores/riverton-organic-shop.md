@@ -4,6 +4,7 @@ slug: riverton-organic-shop
 name: Riverton Organic Shop
 brand: Riverton Organic Shop
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Riverton store focused on organic and wholefood products from Southland producers.
 country: NZ

@@ -4,6 +4,7 @@ slug: the-source-bulk-foods-byron-bay
 name: The Source Bulk Foods (Byron Bay)
 brand: The Source Bulk Foods
 type: bulk-foods
+subtype: bulk-refillery
 category: retail
 description: Zero-waste bulk wholefoods store with organic groceries in Byron Bay.
 country: AU

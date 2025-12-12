@@ -4,6 +4,7 @@ slug: commonsense-wellington-city
 name: Commonsense Wellington City
 brand: Commonsense Wellington City
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Commonsense Organics – large organic/natural foods supermarket
 country: NZ

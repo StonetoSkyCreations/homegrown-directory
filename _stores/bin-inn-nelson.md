@@ -4,6 +4,7 @@ slug: bin-inn-nelson
 name: Bin Inn Nelson
 brand: Bin Inn Nelson
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

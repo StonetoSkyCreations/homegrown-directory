@@ -4,6 +4,7 @@ slug: bin-inn-timaru
 name: Bin Inn Timaru
 brand: Bin Inn Timaru
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

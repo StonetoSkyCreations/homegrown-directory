@@ -4,6 +4,7 @@ slug: cornucopia-organics-hastings
 name: Cornucopia Organics (Hastings)
 brand: Cornucopia Organics (Hastings)
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Organic & wholefoods store with supplements (est. 1980s)
 country: NZ

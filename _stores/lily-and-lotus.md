@@ -4,6 +4,7 @@ title: "Lily and Lotus"
 slug: lily-and-lotus
 name: "Lily and Lotus"
 type: boutique
+subtype: specialty-grocer
 description: "Ethical clothing boutique specialising in organic cotton garments and repurposed fabrics, promoting conscious consumption and sustainable fashion."
 country: New Zealand
 country_slug: new-zealand

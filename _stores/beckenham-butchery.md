@@ -5,6 +5,7 @@ slug: beckenham-butchery
 collection: stores
 name: Beckenham Butchery
 type: Butcher
+subtype: specialty-grocer
 description: Certified organic butcher in Beckenham offering pasture-raised meats with a whole-animal, nose-to-tail approach.
 country: New Zealand
 country_slug: new-zealand

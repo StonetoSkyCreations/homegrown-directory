@@ -4,6 +4,7 @@ slug: farro-fresh-grey-lynn
 name: Farro Fresh Grey Lynn
 brand: Farro Fresh Grey Lynn
 type: supermarket
+subtype: supermarket
 category: retailer
 description: Farro Fresh – premium grocer focusing on local & artisan foods (significant organic range)
 country: NZ

@@ -4,6 +4,7 @@ slug: farro-fresh-smales-farm
 name: Farro Fresh Smales Farm
 brand: Farro Fresh Smales Farm
 type: supermarket
+subtype: supermarket
 category: retailer
 description: Farro Fresh – newest North Shore store (premium grocer with organic range)
 country: NZ

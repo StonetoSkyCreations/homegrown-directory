@@ -4,6 +4,7 @@ slug: bin-inn-whakatane
 name: Bin Inn Whakatane
 brand: Bin Inn Whakatane
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

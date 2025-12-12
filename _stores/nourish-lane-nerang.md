@@ -4,6 +4,7 @@ slug: nourish-lane-nerang
 name: Nourish Lane (Nerang)
 brand: Nourish Lane
 type: health-food-store
+subtype: specialty-grocer
 category: retail
 description: Organic-leaning health food shop with bulk foods and supplements in Nerang.
 country: AU

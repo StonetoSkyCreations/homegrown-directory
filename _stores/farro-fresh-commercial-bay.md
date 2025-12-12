@@ -4,6 +4,7 @@ slug: farro-fresh-commercial-bay
 name: Farro Fresh Commercial Bay
 brand: Farro Fresh Commercial Bay
 type: supermarket
+subtype: supermarket
 category: retailer
 description: Farro Fresh – city-center boutique branch with organic selection
 country: NZ

@@ -37,6 +37,7 @@ lat:
 lon:
 supplies_to:
 sources:
+subtype: specialty-grocer
 ---
 St Martins is Bohemian Bakery’s neighbourhood hub — a friendly corner stop positioned beside New World and moments from Hansen Park, where dog-walkers, families, and commuters drift through from dawn to afternoon.
 

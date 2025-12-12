@@ -3,6 +3,7 @@ layout: store
 title: Bin Inn Waitara
 slug: bin-inn-waitara
 type: bulk refillery
+subtype: bulk-refillery
 country_slug: new-zealand
 country: New Zealand
 region: Taranaki

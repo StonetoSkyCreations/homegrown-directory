@@ -4,6 +4,7 @@ slug: bin-inn-hastings-taradale
 name: Bin Inn Hastings (Taradale)
 brand: Bin Inn Hastings (Taradale)
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

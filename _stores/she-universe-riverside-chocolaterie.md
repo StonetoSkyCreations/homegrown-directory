@@ -4,6 +4,7 @@ title: "She Universe Riverside Chocolaterie"
 slug: she-universe-riverside-chocolaterie
 name: "She Universe Riverside Chocolaterie"
 type: "Cafe & chocolaterie"
+subtype: specialty-grocer
 category: cafe
 description: "Organic chocolate alchemists crafting unique chocolates with real, organic ingredients and ethically sourced cacao, located inside Riverside Market."
 country: "New Zealand"

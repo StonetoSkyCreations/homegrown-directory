@@ -50,6 +50,7 @@ sources:
 source_urls:
   - https://wearelittlefarms.com
 last_checked: 2025-12-11
+subtype: specialty-grocer
 ---
 Little Farms is a collective of small organic and regenerative growers across the Wairarapa, bringing fresh, local, transparently grown produce straight to homes throughout the Wairarapa, Hutt Valley, and Wellington. Their own market garden in Pirinoa follows strict regenerative organic principles: no synthetic sprays, no tilling, and a deep commitment to building healthy soil.
 

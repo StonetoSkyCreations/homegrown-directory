@@ -4,6 +4,7 @@ slug: bin-inn-pukekohe
 name: Bin Inn Pukekohe
 brand: Bin Inn Pukekohe
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

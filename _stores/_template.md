@@ -21,5 +21,6 @@ website: ''
 email: ''
 phone: ''
 description: One-sentence description for cards and SEO.
+subtype: co-op
 ---
 Explain what the store carries, how it sources, and any refill or provenance notes. Use `sources` to link back to the producers that stock the shelves.

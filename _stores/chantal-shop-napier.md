@@ -4,6 +4,7 @@ slug: chantal-shop-napier
 name: Chantal Shop (Napier)
 brand: Chantal Shop (Napier)
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Organic grocery store & cafe (run by Chantal Organics)
 country: NZ

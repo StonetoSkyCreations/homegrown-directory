@@ -4,6 +4,7 @@ slug: the-gap-local-organic-co-op
 name: The Gap Local Organic Co-Op
 brand: The Gap LOCO
 type: co-op
+subtype: co-op
 category: retail
 description: Community organic food co-op offering certified organic produce and groceries in Brisbane.
 country: AU

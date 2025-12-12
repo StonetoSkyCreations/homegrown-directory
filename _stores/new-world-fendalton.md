@@ -41,5 +41,6 @@ sources:
   - https://findchch.com/places/10-new-world-fendalton
   - https://www.rankers.co.nz/experiences/8255-New_World_Fendalton_Christchurch
 last_checked: "2025-12-12"
+subtype: supermarket
 ---
 Established in 1936, New World Fendalton is a family-owned supermarket that prides itself on friendly service and fresh produce. The store stocks certified organic vegetables from Streamside Organics, a BioGro-certified farm where nearly everything is organically grown. Shoppers note that fruit and vegetables are beautifully displayed and staff are helpful and attentive. Located on Memorial Avenue in the Christchurch suburb of Fendalton, the supermarket offers catering, florist services, online shopping, free Wi-Fi, ATMs and an electric-car charging station. It is open daily from 7:30am to 9pm and provides a convenient stop for quality groceries and locally grown organic produce.

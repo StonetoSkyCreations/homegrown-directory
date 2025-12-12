@@ -4,6 +4,7 @@ slug: terra-madre-northcote
 name: Terra Madre (Northcote)
 brand: Terra Madre
 type: organic-supermarket
+subtype: supermarket
 category: retail
 description: Organic supermarket stocking a wide range of ACO-certified products in Melbourne’s north.
 country: AU

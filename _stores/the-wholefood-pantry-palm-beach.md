@@ -4,6 +4,7 @@ slug: the-wholefood-pantry-palm-beach
 name: The Wholefood Pantry (Palm Beach)
 brand: The Wholefood Pantry
 type: organic-grocery
+subtype: organic-store
 category: retail
 description: Organic grocery and cafe with certified organic wholefoods in Palm Beach.
 country: AU

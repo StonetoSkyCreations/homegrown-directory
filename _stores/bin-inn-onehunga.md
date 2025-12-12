@@ -4,6 +4,7 @@ slug: bin-inn-onehunga
 name: Bin Inn Onehunga
 brand: Bin Inn Onehunga
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

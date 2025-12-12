@@ -4,6 +4,7 @@ slug: taste-nature-dunedin
 name: Taste Nature
 brand: Taste Nature
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Dunedin’s dedicated organic and wholefood supermarket with deli and bulk refillery.
 country: NZ

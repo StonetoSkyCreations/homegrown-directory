@@ -4,6 +4,7 @@ slug: green-grocer-palmerston-north
 name: Green Grocer
 brand: Green Grocer
 type: produce-store
+subtype: specialty-grocer
 category: retailer
 description: Produce store in Palmerston North stocking organic, local, and spray-free fruit and veg.
 country: NZ

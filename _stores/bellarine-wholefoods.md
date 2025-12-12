@@ -4,6 +4,7 @@ slug: bellarine-wholefoods
 name: Bellarine Wholefoods
 brand: Bellarine Wholefoods
 type: bulk-foods
+subtype: bulk-refillery
 category: retail
 description: Sustainable grocery with zero-waste refills for bulk foods and eco products on the Bellarine Peninsula.
 country: AU

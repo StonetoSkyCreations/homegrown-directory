@@ -4,6 +4,7 @@ slug: bin-inn-dunedin
 name: Bin Inn Dunedin
 brand: Bin Inn Dunedin
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

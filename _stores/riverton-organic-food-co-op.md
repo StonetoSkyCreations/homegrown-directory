@@ -26,4 +26,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://www.sces.org.nz/
+subtype: co-op
 ---

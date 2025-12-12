@@ -4,6 +4,7 @@ slug: commonsense-mt-eden
 name: Commonsense Mt Eden
 brand: Commonsense Mt Eden
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Certified organic and fair‑trade store selling a wide range of organic food, groceries and household items.
 country: NZ

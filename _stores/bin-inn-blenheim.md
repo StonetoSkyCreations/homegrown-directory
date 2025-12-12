@@ -3,6 +3,7 @@ layout: store
 title: Bin Inn Blenheim
 slug: bin-inn-blenheim
 type: bulk refillery
+subtype: bulk-refillery
 country_slug: new-zealand
 country: New Zealand
 region: Marlborough

@@ -4,6 +4,7 @@ title: "Liberty Market"
 slug: liberty-market
 name: "Liberty Market"
 type: organic-store
+subtype: organic-store
 description: "Large certified organic retailer offering over 8,000 organic, natural, and special-diet products, including fresh produce, meat, eggs, bulk foods, bakery goods, personal care items, and eco-friendly household products."
 country: New Zealand
 country_slug: new-zealand

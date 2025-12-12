@@ -4,6 +4,7 @@ slug: commons-unity-remakery-lower-hutt
 name: Commons Unity / Remakery (Lower Hutt)
 brand: Commons Unity / Remakery (Lower Hutt)
 type: community-hub
+subtype: specialty-grocer
 category: retailer
 description: Common Unity’s Urban Kai Network – co-op buying & urban farming collective
 country: NZ

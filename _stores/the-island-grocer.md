@@ -4,6 +4,7 @@ title: "The Island Grocer"
 slug: the-island-grocer
 name: "The Island Grocer"
 type: organic-store
+subtype: organic-store
 description: "Local grocer offering organic and gluten-free foods, fair-trade goods and spray-free vegetables, with an emphasis on ethical sourcing."
 country: New Zealand
 country_slug: new-zealand

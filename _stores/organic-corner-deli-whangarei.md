@@ -4,6 +4,7 @@ slug: organic-corner-deli-whangarei
 name: Organic Corner Deli
 brand: Organic Corner Deli
 type: deli
+subtype: specialty-grocer
 category: retailer
 description: Whangārei deli selling certified organic meat, dairy, and deli items.
 country: NZ

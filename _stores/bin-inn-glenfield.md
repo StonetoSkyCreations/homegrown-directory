@@ -4,6 +4,7 @@ slug: bin-inn-glenfield
 name: Bin Inn Glenfield
 brand: Bin Inn Glenfield
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

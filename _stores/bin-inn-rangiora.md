@@ -4,6 +4,7 @@ slug: bin-inn-rangiora
 name: Bin Inn Rangiora
 brand: Bin Inn Rangiora
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

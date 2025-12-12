@@ -4,6 +4,7 @@ slug: farro-fresh-mt-wellington
 name: Farro Fresh Mt Wellington
 brand: Farro Fresh Mt Wellington
 type: supermarket
+subtype: supermarket
 category: retailer
 description: Farro Fresh – premium grocer with organic range
 country: NZ

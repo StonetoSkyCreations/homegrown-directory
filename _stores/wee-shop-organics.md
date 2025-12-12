@@ -31,4 +31,5 @@ lon: ''
 supplies_to: []
 sources:
   - http://weeshoporganics.co.nz
+subtype: organic-store
 ---

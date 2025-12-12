@@ -4,6 +4,7 @@ slug: ie-produce-takapuna
 name: IE Produce (Takapuna)
 brand: IE Produce (Takapuna)
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Independent organic health food store (BioGro-certified retailer)
 country: NZ

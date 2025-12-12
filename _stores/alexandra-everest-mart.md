@@ -26,4 +26,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://www.google.com/maps/place/38+Tarbert+Street,+Alexandra+9320
+subtype: specialty-grocer
 ---

@@ -4,6 +4,7 @@ slug: commonsense-lower-hutt
 name: Commonsense Lower Hutt
 brand: Commonsense Lower Hutt
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Commonsense Organics – organic grocery & refillery
 country: NZ

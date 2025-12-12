@@ -4,6 +4,7 @@ slug: harbour-co-op-lyttelton
 name: Harbour Co-op (Lyttelton)
 brand: Harbour Co-op (Lyttelton)
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Community-owned co-operative organic grocery store
 country: NZ

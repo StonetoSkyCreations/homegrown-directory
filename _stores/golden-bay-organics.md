@@ -3,6 +3,7 @@ layout: store
 title: Golden Bay Organics
 slug: golden-bay-organics
 type: grocer
+subtype: organic-store
 country_slug: new-zealand
 country: New Zealand
 region: Tasman

@@ -29,4 +29,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+subtype: organic-store
 ---

@@ -4,6 +4,7 @@ title: "Greenspace Organic Shop"
 slug: greenspace-organic-shop
 name: "Greenspace Organic Shop"
 type: organic-store
+subtype: organic-store
 description: "Community-oriented plastic-free shop offering organic and local produce, natural bodycare and zero-waste homeware, supporting organic, biodynamic and regenerative agriculture."
 country: New Zealand
 country_slug: new-zealand

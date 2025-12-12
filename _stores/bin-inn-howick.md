@@ -4,6 +4,7 @@ slug: bin-inn-howick
 name: Bin Inn Howick
 brand: Bin Inn Howick
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

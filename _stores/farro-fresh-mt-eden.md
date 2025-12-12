@@ -4,6 +4,7 @@ slug: farro-fresh-mt-eden
 name: Farro Fresh Mt Eden
 brand: Farro Fresh Mt Eden
 type: supermarket
+subtype: supermarket
 category: retailer
 description: Farro Fresh – premium grocer focusing on organic & artisan goods
 country: NZ

@@ -4,6 +4,7 @@ slug: wholefood-heaven-wanaka
 name: Wholefood Heaven
 brand: Wholefood Heaven
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Wānaka organic and wholefoods store supporting local suppliers.
 country: NZ

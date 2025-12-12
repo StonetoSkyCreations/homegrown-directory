@@ -4,6 +4,7 @@ slug: naturally-organic-invercargill
 name: Naturally Organic
 brand: Naturally Organic
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Invercargill organic store with certified organic produce, wholefoods, and supplements.
 country: NZ

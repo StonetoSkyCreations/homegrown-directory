@@ -4,6 +4,7 @@ slug: zany-zeus-lower-hutt
 name: Zany Zeus
 brand: Zany Zeus
 type: dairy-store
+subtype: specialty-grocer
 category: retailer
 description: Lower Hutt dairy shop and cafe using organic milk for ice cream and dairy products.
 country: NZ

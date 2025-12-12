@@ -41,5 +41,6 @@ sources:
   - https://new-world-lincoln.wheree.com
   - https://pg.maptons.com/p/10597585345
 last_checked: "2025-12-12"
+subtype: supermarket
 ---
 New World Lincoln is a Kiwi-owned supermarket known for clean premises, helpful staff and a strong focus on customer satisfaction. The store sources certified organic vegetables and fruit from Streamside Organics, where produce is grown without chemical fertilisers or pesticides. It is easy to access with ample parking and offers services such as catering, takeaway coffee, online shopping, Wi-Fi, an ATM and e-car charging. Shoppers highlight the selection of fresh local produce and friendly staff. The store is open daily from 7:30am to 9pm.

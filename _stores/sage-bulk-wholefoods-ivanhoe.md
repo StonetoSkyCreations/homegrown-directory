@@ -4,6 +4,7 @@ slug: sage-bulk-wholefoods-ivanhoe
 name: Sage Bulk Wholefoods - Ivanhoe
 brand: Sage Bulk Wholefoods
 type: bulk-foods
+subtype: bulk-refillery
 category: retail
 description: Zero-plastic grocery offering organic bulk foods, pantry staples, and eco household goods.
 country: AU

@@ -4,6 +4,7 @@ slug: mapua-organics
 name: Mapua Organics
 brand: Mapua Organics
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Certified organic produce supplier/store in Mapua.
 country: NZ

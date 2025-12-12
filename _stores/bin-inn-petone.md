@@ -4,6 +4,7 @@ slug: bin-inn-petone
 name: Bin Inn Petone
 brand: Bin Inn Petone
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

@@ -29,4 +29,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://soulfoodorganic.co.nz
+subtype: organic-store
 ---

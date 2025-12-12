@@ -4,6 +4,7 @@ slug: passionfoods-organic-south-melbourne
 name: Passionfoods Organic (South Melbourne)
 brand: Passionfoods Organic
 type: organic-grocery
+subtype: organic-store
 category: retail
 description: Longstanding organic supermarket selling fresh organic produce and wholefood groceries.
 country: AU

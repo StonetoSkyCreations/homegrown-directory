@@ -4,6 +4,7 @@ slug: picton-organic-store
 name: Picton Organic Store
 brand: Picton Organic Store
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Organic food, produce, and health goods store in Picton.
 country: NZ

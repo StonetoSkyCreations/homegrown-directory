@@ -3,6 +3,7 @@ layout: store
 title: Down to Earth Organics
 slug: down-to-earth-organics-new-plymouth
 type: grocer
+subtype: organic-store
 country_slug: new-zealand
 country: New Zealand
 region: Taranaki

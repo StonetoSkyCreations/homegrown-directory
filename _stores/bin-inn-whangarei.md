@@ -4,6 +4,7 @@ slug: bin-inn-whangarei
 name: Bin Inn Whangarei
 brand: Bin Inn Whangarei
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

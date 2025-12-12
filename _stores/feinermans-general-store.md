@@ -27,4 +27,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://feinermans.shop
+subtype: specialty-grocer
 ---

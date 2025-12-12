@@ -4,6 +4,7 @@ slug: bin-inn-dinsdale
 name: Bin Inn Dinsdale
 brand: Bin Inn Dinsdale
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

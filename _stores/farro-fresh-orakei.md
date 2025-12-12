@@ -4,6 +4,7 @@ slug: farro-fresh-orakei
 name: Farro Fresh Orakei
 brand: Farro Fresh Orakei
 type: supermarket
+subtype: supermarket
 category: retailer
 description: Farro Fresh – premium grocer with organic & local foods
 country: NZ

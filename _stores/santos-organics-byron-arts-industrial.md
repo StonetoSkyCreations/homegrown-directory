@@ -4,6 +4,7 @@ slug: santos-organics-byron-arts-industrial
 name: Santos Organics (Byron Arts & Industrial)
 brand: Santos Organics
 type: organic-grocery
+subtype: organic-store
 category: retail
 description: Organic bulk foods warehouse store in Byron’s Arts & Industrial precinct.
 country: AU

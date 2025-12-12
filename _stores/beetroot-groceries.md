@@ -34,4 +34,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://beetroot.nz
+subtype: specialty-grocer
 ---

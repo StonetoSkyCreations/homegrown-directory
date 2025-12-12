@@ -4,6 +4,7 @@ slug: sage-bulk-wholefoods-eltham
 name: Sage Bulk Wholefoods - Eltham
 brand: Sage Bulk Wholefoods
 type: bulk-foods
+subtype: bulk-refillery
 category: retail
 description: Zero-plastic grocery offering organic bulk foods, pantry staples, and eco household goods.
 country: AU

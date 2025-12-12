@@ -4,6 +4,7 @@ slug: commonsense-kilbirnie
 name: Commonsense Kilbirnie
 brand: Commonsense Kilbirnie
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Commonsense Organics – organic grocery & health products
 country: NZ

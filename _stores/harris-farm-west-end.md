@@ -4,6 +4,7 @@ slug: harris-farm-west-end
 name: Harris Farm Markets (West End)
 brand: Harris Farm Markets
 type: market-grocer
+subtype: specialty-grocer
 category: retail
 description: Market grocer at West Village with organic and local produce.
 country: AU

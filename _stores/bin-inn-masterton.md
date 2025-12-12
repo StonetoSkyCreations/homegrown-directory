@@ -4,6 +4,7 @@ slug: bin-inn-masterton
 name: Bin Inn Masterton
 brand: Bin Inn Masterton
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

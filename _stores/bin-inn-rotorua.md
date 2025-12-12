@@ -4,6 +4,7 @@ slug: bin-inn-rotorua
 name: Bin Inn Rotorua
 brand: Bin Inn Rotorua
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

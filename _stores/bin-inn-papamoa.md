@@ -4,6 +4,7 @@ slug: bin-inn-papamoa
 name: Bin Inn Papamoa
 brand: Bin Inn Papamoa
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

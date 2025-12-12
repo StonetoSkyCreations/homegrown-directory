@@ -35,5 +35,6 @@ sources:
   - https://eap.mcgill.ca/MagRack/COG/COG_P_95_05.htm
 sourced_from: streamside-organics
 last_checked: "2025-12-12"
+subtype: supermarket
 ---
 New World St Martins is a full-service supermarket whose fresh produce department includes a substantial organic section supplied by dozens of local growers. When visited by organic advocates, about one quarter of the produce on display was certified organic, beautifully presented and clearly labelled; organic oranges, lemons, kiwifruit, avocados, berries and artichokes were featured alongside conventional vegetables. Organic meat and dairy are also available, though mixed among conventional products. The store relies on 50-60 organic farmers to keep its shelves stocked. Located on Wilsons Road, it is open seven days a week from 7:30am to 10pm and offers online shopping and catering services. Despite being a mainstream supermarket, its commitment to organic produce makes it a key stockist for Streamside Organics.

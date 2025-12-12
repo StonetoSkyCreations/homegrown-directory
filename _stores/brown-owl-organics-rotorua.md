@@ -4,6 +4,7 @@ slug: brown-owl-organics-rotorua
 name: Brown Owl Organics (Rotorua)
 brand: Brown Owl Organics
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Rotorua organic grocer supporting local and NZ certified growers.
 country: NZ

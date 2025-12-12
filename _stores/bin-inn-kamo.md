@@ -4,6 +4,7 @@ slug: bin-inn-kamo
 name: Bin Inn Kamo
 brand: Bin Inn Kamo
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery (franchise)
 country: NZ

@@ -3,6 +3,7 @@ layout: store
 title: Bin Inn Richmond
 slug: bin-inn-richmond
 type: bulk refillery
+subtype: bulk-refillery
 country_slug: new-zealand
 country: New Zealand
 region: Tasman

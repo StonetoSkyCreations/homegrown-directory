@@ -4,6 +4,7 @@ slug: iga-mullumbimby
 name: IGA Mullumbimby
 brand: IGA
 type: supermarket
+subtype: supermarket
 category: retail
 description: Local IGA supermarket carrying groceries and produce in Mullumbimby.
 country: AU

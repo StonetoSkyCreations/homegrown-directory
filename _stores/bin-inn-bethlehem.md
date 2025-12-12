@@ -4,6 +4,7 @@ slug: bin-inn-bethlehem
 name: Bin Inn Bethlehem
 brand: Bin Inn Bethlehem
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

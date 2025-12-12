@@ -4,6 +4,7 @@ slug: organically-grown-malvern
 name: Organically Grown (Malvern)
 brand: Organically Grown
 type: organic-grocery
+subtype: organic-store
 category: retail
 description: Family-run store providing 100% certified organic fruit, vegetables, and groceries.
 country: AU

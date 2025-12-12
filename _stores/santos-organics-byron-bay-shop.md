@@ -4,6 +4,7 @@ slug: santos-organics-byron-bay-shop
 name: Santos Organics (Byron Bay Shop)
 brand: Santos Organics
 type: organic-grocery
+subtype: organic-store
 category: retail
 description: Organic bulk foods shop in Byron Bay with refill and pantry staples.
 country: AU

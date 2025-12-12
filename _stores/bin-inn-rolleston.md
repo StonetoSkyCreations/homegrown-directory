@@ -4,6 +4,7 @@ slug: bin-inn-rolleston
 name: Bin Inn Rolleston
 brand: Bin Inn Rolleston
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

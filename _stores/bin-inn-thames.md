@@ -4,6 +4,7 @@ slug: bin-inn-thames
 name: Bin Inn Thames
 brand: Bin Inn Thames
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

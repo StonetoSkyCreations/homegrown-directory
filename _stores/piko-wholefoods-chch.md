@@ -4,6 +4,7 @@ slug: piko-wholefoods-chch
 name: Piko Wholefoods (Chch)
 brand: Piko Wholefoods (Chch)
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Worker-owned co-op wholefoods store (100% vegetarian)
 country: NZ

@@ -4,6 +4,7 @@ slug: santos-organics-mullumbimby
 name: Santos Organics (Mullumbimby)
 brand: Santos Organics
 type: organic-grocery
+subtype: organic-store
 category: retail
 description: Not-for-profit organic bulk food store in central Mullumbimby.
 country: AU

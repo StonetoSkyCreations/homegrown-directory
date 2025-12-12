@@ -4,6 +4,7 @@ slug: the-grocer-kaikoura
 name: The Grocer (Kaikōura)
 brand: The Grocer
 type: produce-store
+subtype: specialty-grocer
 category: retailer
 description: Kaikōura specialty grocer focusing on fresh local produce and organic pantry staples.
 country: NZ

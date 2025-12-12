@@ -4,6 +4,7 @@ slug: whanganui-organic-food-co-op
 name: Whanganui Organic Food Co-op
 brand: Whanganui Organic Food Co-op
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Community co-op supplying certified organic food and wholefoods in Whanganui.
 country: NZ

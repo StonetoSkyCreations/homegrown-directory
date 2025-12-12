@@ -22,5 +22,6 @@ sources: []
 supplies_to: []
 hours: ""
 description: "Community-focused organic grocery with fresh produce, pantry staples, and local honey."
+subtype: specialty-grocer
 ---
 Organic grocer and refill hub in Paihia offering a broad range of organic fresh produce, dry goods, and locally sourced honey. Acts as a sustainability-focused community space for Bay of Islands locals. Source: https://evendo.com/locations/new-zealand/paihia/shop/the-ecohive-collective-paihia

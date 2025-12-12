@@ -4,6 +4,7 @@ slug: the-source-bulk-foods-southport
 name: The Source Bulk Foods (Southport)
 brand: The Source Bulk Foods
 type: bulk-foods
+subtype: bulk-refillery
 category: retail
 description: Bulk wholefoods refillery with organic groceries at Southport’s Brickworks Centre.
 country: AU

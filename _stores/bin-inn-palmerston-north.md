@@ -4,6 +4,7 @@ slug: bin-inn-palmerston-north
 name: Bin Inn Palmerston North
 brand: Bin Inn Palmerston North
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

@@ -4,6 +4,7 @@ slug: bin-inn-lincoln-rd-chch
 name: Bin Inn Lincoln Rd (Chch)
 brand: Bin Inn Lincoln Rd (Chch)
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

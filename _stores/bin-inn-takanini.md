@@ -4,6 +4,7 @@ slug: bin-inn-takanini
 name: Bin Inn Takanini
 brand: Bin Inn Takanini
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

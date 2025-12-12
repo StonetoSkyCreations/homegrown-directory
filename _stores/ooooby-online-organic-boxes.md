@@ -4,6 +4,7 @@ slug: ooooby-online-organic-boxes
 name: Ooooby (Online Organic Boxes)
 brand: Ooooby (Online Organic Boxes)
 type: community-hub
+subtype: specialty-grocer
 category: retailer
 description: Ooooby (Out Of Our Own Backyards) – organic produce box delivery service
 country: NZ

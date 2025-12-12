@@ -4,6 +4,7 @@ slug: nourish-lane-mudgeeraba
 name: Nourish Lane (Mudgeeraba)
 brand: Nourish Lane
 type: health-food-store
+subtype: specialty-grocer
 category: retail
 description: Health food store offering organic groceries, bulk foods, and supplements in Mudgeeraba.
 country: AU

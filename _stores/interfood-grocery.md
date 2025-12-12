@@ -33,4 +33,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://www.interfood.co.nz
+subtype: specialty-grocer
 ---

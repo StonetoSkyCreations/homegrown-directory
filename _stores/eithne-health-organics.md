@@ -35,4 +35,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://www.eithne.co.nz
+subtype: organic-store
 ---

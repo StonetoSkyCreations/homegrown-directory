@@ -39,5 +39,6 @@ sources:
   - https://kw.maptons.com/p/10578892715
   - https://merivale.store.freshchoice.co.nz/
 last_checked: "2025-12-12"
+subtype: specialty-grocer
 ---
 FreshChoice Merivale is a prominent supermarket located at Merivale Mall in Christchurch. Reviewers praise its inviting atmosphere, well-organized layout and appealing product displays, noting that the store is clean and provides a diverse range of products. The supermarket offers gourmet foods, fine wines, cheeses and pantry staples, and customers appreciate the friendly and professional staff. Map-based listings highlight that it stocks a wide variety of items, including deli salads, gluten-free foods and NZ-made products, and that the store is big, bright and well-stocked. FreshChoice Merivale carries certified organic vegetables and salad greens from Streamside Organics, whose produce is grown organically and labelled "spray free" only when not certified. The supermarket provides online shopping with delivery or pickup, and is open daily from 7am to 9pm.

@@ -4,6 +4,7 @@ slug: bin-inn-kapiti-paraparaumu
 name: Bin Inn Kapiti (Paraparaumu)
 brand: Bin Inn Kapiti (Paraparaumu)
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

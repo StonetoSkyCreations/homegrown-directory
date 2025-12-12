@@ -4,6 +4,7 @@ slug: bin-inn-st-andrews
 name: Bin Inn St Andrews
 brand: Bin Inn St Andrews
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

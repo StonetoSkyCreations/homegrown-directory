@@ -4,6 +4,7 @@ slug: commonsense-kapiti
 name: Commonsense Kapiti
 brand: Commonsense Kapiti
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Commonsense Organics – organic grocery (Kapiti Coast)
 country: NZ

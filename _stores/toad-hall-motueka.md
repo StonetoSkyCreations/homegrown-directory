@@ -31,4 +31,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://www.toadhallmotueka.co.nz
+subtype: specialty-grocer
 ---

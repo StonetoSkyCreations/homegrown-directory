@@ -23,5 +23,6 @@ sources:
   - supply-circle-hub
 description: "Neighbourhood grocer with refill options, local veg tables, and shelf labels naming every producer."
 website: "https://cityhonestgrocer.example.nz"
+subtype: specialty-grocer
 ---
 City Honest Grocer blends refillery bins with seasonal produce crates, marking each item with farm, practice tags, and harvest week. A weekly “know your grower” tasting features one producer supplying the store.

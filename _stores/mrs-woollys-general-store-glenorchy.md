@@ -4,6 +4,7 @@ slug: mrs-woollys-general-store-glenorchy
 name: Mrs. Woolly's General Store
 brand: Mrs. Woolly's General Store
 type: produce-store
+subtype: specialty-grocer
 category: retailer
 description: Glenorchy general store selling local and organic produce and ethically sourced goods.
 country: NZ

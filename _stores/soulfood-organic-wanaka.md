@@ -4,6 +4,7 @@ slug: soulfood-organic-wanaka
 name: Soulfood Organic
 brand: Soulfood Organic
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Wānaka organic store and cafe focused on wholefoods.
 country: NZ

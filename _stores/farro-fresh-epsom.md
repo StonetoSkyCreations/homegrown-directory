@@ -4,6 +4,7 @@ slug: farro-fresh-epsom
 name: Farro Fresh Epsom
 brand: Farro Fresh Epsom
 type: supermarket
+subtype: supermarket
 category: retailer
 description: Farro Fresh – premium grocer with organic produce, meats, etc.
 country: NZ

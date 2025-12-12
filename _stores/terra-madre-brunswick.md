@@ -4,6 +4,7 @@ slug: terra-madre-brunswick
 name: Terra Madre (Brunswick)
 brand: Terra Madre
 type: organic-supermarket
+subtype: supermarket
 category: retail
 description: Organic supermarket offering a wide range of organic foods and pantry staples in Brunswick.
 country: AU

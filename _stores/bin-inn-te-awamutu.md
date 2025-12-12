@@ -4,6 +4,7 @@ slug: bin-inn-te-awamutu
 name: Bin Inn Te Awamutu
 brand: Bin Inn Te Awamutu
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

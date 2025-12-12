@@ -37,4 +37,5 @@ lon: ''
 supplies_to: []
 sources:
   - https://westlandwholefoods.co.nz
+subtype: wholefoods-store
 ---

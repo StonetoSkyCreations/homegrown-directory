@@ -4,6 +4,7 @@ slug: bin-inn-gisborne
 name: Bin Inn Gisborne
 brand: Bin Inn Gisborne
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

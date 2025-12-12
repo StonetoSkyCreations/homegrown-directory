@@ -4,6 +4,7 @@ slug: herbal-dispensary-raglan
 name: The Herbal Dispensary Raglan
 brand: The Herbal Dispensary
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Organic grocer and dispensary in Raglan stocking fresh organic fruit, veg, and wholefoods.
 country: NZ

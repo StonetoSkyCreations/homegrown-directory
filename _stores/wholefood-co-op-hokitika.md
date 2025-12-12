@@ -4,6 +4,7 @@ slug: wholefood-co-op-hokitika
 name: Wholefood Co-op Hokitika
 brand: Wholefood Co-op Hokitika
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Volunteer-run organic and wholefood co-op serving Hokitika.
 country: NZ

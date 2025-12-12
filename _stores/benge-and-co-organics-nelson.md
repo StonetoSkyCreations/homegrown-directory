@@ -4,6 +4,7 @@ slug: benge-and-co-organics-nelson
 name: Benge & Co Organics
 brand: Benge & Co Organics
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Nelson organic grocer with certified organic produce and pantry staples.
 country: NZ

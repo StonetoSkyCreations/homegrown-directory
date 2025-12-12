@@ -4,6 +4,7 @@ slug: pembroke-wines-and-spirits-wanaka
 name: Pembroke Wines & Spirits
 brand: Pembroke Wines & Spirits
 type: specialty-store
+subtype: specialty-grocer
 category: retailer
 description: Wānaka retailer stocking organic and biodynamic wines from Central Otago and beyond.
 country: NZ

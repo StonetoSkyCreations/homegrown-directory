@@ -4,6 +4,7 @@ slug: bin-inn-stanmore-rd-chch
 name: Bin Inn Stanmore Rd (Chch)
 brand: Bin Inn Stanmore Rd (Chch)
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

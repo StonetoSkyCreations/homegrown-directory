@@ -42,5 +42,6 @@ sources:
   - https://ie.maptons.com/p/10580097105
   - https://www.rankers.co.nz/experiences/8256-New_World_Halswell_Christchurch
 last_checked: "2025-12-12"
+subtype: supermarket
 ---
 New World Halswell is a modern supermarket serving the growing suburb of Halswell. Customer reviews describe it as well-stocked, clean and bright, with plenty of parking and friendly staff. Shoppers praise the fresh vegetables, meat and seafood and note the excellent range of products available. The store sources certified organic vegetables from Streamside Organics, which grows produce organically and labels non-certified items as spray-free. Services include online shopping, a cafe, catering, florist, Wi-Fi, ATM and e-car charging. New World Halswell is open daily from 7:30am to 9pm.

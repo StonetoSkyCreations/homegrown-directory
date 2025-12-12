@@ -4,6 +4,7 @@ slug: bin-inn-burnside-chch
 name: Bin Inn Burnside (Chch)
 brand: Bin Inn Burnside (Chch)
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bin Inn – bulk wholefoods & specialty grocery
 country: NZ

@@ -4,6 +4,7 @@ slug: earthbound-organics-richmond
 name: Earthbound Organics (Richmond)
 brand: Earthbound Organics
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Richmond organic store focusing on certified organic and biodynamic produce.
 country: NZ

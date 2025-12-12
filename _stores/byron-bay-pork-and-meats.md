@@ -4,6 +4,7 @@ slug: byron-bay-pork-and-meats
 name: Byron Bay Pork & Meats (Mullumbimby)
 brand: Byron Bay Pork & Meats
 type: butcher
+subtype: specialty-grocer
 category: retail
 description: Butcher specialising in organic and free-range meats in Mullumbimby.
 country: AU

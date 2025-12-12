@@ -4,6 +4,7 @@ slug: harris-farm-isle-of-capri
 name: Harris Farm Markets (Isle of Capri)
 brand: Harris Farm Markets
 type: market-grocer
+subtype: specialty-grocer
 category: retail
 description: Family-owned market grocer on the Gold Coast with organic and local produce.
 country: AU

@@ -4,6 +4,7 @@ slug: source-bulk-foods-queenstown
 name: The Source Bulk Foods (Queenstown)
 brand: The Source Bulk Foods
 type: bulk-refillery
+subtype: bulk-refillery
 category: retailer
 description: Bulk wholefoods refillery in Queenstown with many organic options.
 country: NZ

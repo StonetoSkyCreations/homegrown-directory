@@ -4,6 +4,7 @@ slug: bulk-eats-warehouse
 name: Bulk Eats Warehouse
 brand: Bulk Eats Warehouse
 type: bulk-wholesale
+subtype: bulk-refillery
 category: wholesale
 description: Wholesale bulk-food supplier with click-and-collect and delivery for dry goods, groceries, and cleaning supplies.
 country: AU

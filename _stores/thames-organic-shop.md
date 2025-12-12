@@ -4,6 +4,7 @@ slug: thames-organic-shop
 name: Thames Organic Shop (The Organic Co-op)
 brand: The Organic Co-op
 type: organic-store
+subtype: organic-store
 category: retailer
 description: Volunteer-run organic co-op making wholefoods available in Thames.
 country: NZ

@@ -4,6 +4,7 @@ slug: we-love-food-co-op
 name: We Love Food Co-Op
 brand: We Love Food
 type: co-op
+subtype: co-op
 category: retail
 description: Community produce co-op delivering fresh organic produce boxes across Brisbane.
 country: AU
