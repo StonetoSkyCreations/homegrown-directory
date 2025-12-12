@@ -1,5 +1,5 @@
 {% assign listing = include.listing | default: include.item | default: listing %}
-{% assign practices_tags = listing.practices | default: listing.practices_tags | default: listing.sourcing_tags | default: listing.services | default: empty %}
+{% assign practices_tags = listing.practices_tags | default: listing.practices | default: listing.sourcing_tags | default: listing.services | default: empty %}
 {% assign practices_joined = practices_tags | join: ',' %}
 {% assign products_source = '' %}
 {% if listing.products_tags %}

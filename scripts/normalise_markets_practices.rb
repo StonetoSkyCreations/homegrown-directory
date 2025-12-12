@@ -34,7 +34,8 @@ PATTERNS = {
     /\bregeneratively\b/i,
     /\bregeneration\b/i,
     /\bregenerative\s+agriculture\b/i,
-    /\bsoil\s+health\b/i
+    /\bsoil\s+health\b/i,
+    /\bregen\b/i
   ],
   "biodynamic" => [
     /\bbiodynamic\b/i,
@@ -117,6 +118,7 @@ def write_front_matter(path, front, body)
 end
 
 added_counts = Hash.new(0)
+added_slugs = Hash.new { |h, k| h[k] = [] }
 changed_slugs = []
 
 Dir.glob(MARKETS_DIR.join("*.md")).each do |path|
@@ -139,6 +141,7 @@ Dir.glob(MARKETS_DIR.join("*.md")).each do |path|
 
   existing = Array(front["practices_tags"]).map(&:to_s)
   existing_downcased = existing.map(&:downcase)
+  extras = existing.reject { |tag| CANONICAL.include?(tag.to_s.downcase) }
   inferred = Set.new
   PATTERNS.each do |token, regexes|
     regexes.each do |regex|
@@ -152,12 +155,17 @@ Dir.glob(MARKETS_DIR.join("*.md")).each do |path|
   merged = existing_downcased | inferred.to_a
   canonicalised = CANONICAL.select { |token| merged.include?(token) }
 
-  next if canonicalised == existing
+  final_tags = canonicalised + extras
+
+  next if final_tags == existing
 
   added = canonicalised - existing_downcased
-  added.each { |token| added_counts[token] += 1 }
+  added.each do |token|
+    added_counts[token] += 1
+    added_slugs[token] << slug
+  end
 
-  front["practices_tags"] = canonicalised
+  front["practices_tags"] = final_tags
   write_front_matter(path, front, body)
   changed_slugs << slug
   puts "Updated #{slug}: added #{added.join(', ')}" unless added.empty?
@@ -166,6 +174,11 @@ end
 puts "\nTag additions:"
 CANONICAL.each do |token|
   puts "  #{token}: #{added_counts[token]}"
+end
+
+puts "\nSlugs updated per tag:"
+added_slugs.each do |token, slugs|
+  puts "  #{token}: #{slugs.uniq.join(', ')}"
 end
 
 puts "\nChanged slugs (#{changed_slugs.size}):"
