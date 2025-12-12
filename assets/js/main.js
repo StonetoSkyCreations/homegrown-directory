@@ -340,7 +340,7 @@
     if (item.type_token) haystackParts.push(item.type_token);
     if (item.subtype_token) haystackParts.push(item.subtype_token);
 
-    // Add tags/arrays: practices, products, services
+    // Add tags/arrays: practices, products, services, specialty_tags
     if (Array.isArray(item.practices)) {
       haystackParts.push(item.practices.join(" "));
     }
@@ -349,6 +349,9 @@
     }
     if (Array.isArray(item.services)) {
       haystackParts.push(item.services.join(" "));
+    }
+    if (Array.isArray(item.specialty_tags)) {
+      haystackParts.push(item.specialty_tags.join(" "));
     }
 
     const haystack = haystackParts

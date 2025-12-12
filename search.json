@@ -39,6 +39,10 @@ permalink: /search.json
   {% if services %}
     {% assign services = services | join: ',' | downcase | split: ',' | uniq %}
   {% endif %}
+  {% assign specialty = doc.specialty_tags | default: empty %}
+  {% if specialty %}
+    {% assign specialty = specialty | join: ',' | downcase | split: ',' | uniq %}
+  {% endif %}
   {% assign long_desc = doc.long_description | default: doc.description | default: doc.short_description | default: doc.meta_description | default: doc.excerpt %}
   {
     "id": "{{ doc.id | default: doc.slug | slugify }}",
@@ -58,6 +62,7 @@ permalink: /search.json
     "practices": {{ practices | jsonify }},
     "products": {{ products | jsonify }},
     "services": {{ services | jsonify }},
+    "specialty_tags": {{ specialty | jsonify }},
     "supplies_to": {{ doc.supplies_to | jsonify }},
     "sources": {{ doc.sources | jsonify }},
     "hours": {{ doc.hours | jsonify }},
