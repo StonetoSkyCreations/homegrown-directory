@@ -304,7 +304,7 @@ permalink: /submit.html
     });
   };
 
-  const updateCategoryFields = () => {
+  function updateCategoryFields() {
     const collection = collectionSelect ? collectionSelect.value : '';
     const subtypeAllowedCollections = ['restaurants', 'vendors', 'stores'];
     const showSubtype = subtypeAllowedCollections.includes(collection);
@@ -339,7 +339,7 @@ permalink: /submit.html
     const showSpecialty = collection === 'stores' && subtypeSelect && subtypeSelect.value === 'specialty-grocer';
     if (specialtyGroup) specialtyGroup.style.display = showSpecialty ? '' : 'none';
     if (!showSpecialty) clearChecked('specialty_tags');
-  };
+  }
 
   const formatList = (label, items) => {
     if (!items.length) return `${label}: []`;
