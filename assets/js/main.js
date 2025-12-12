@@ -32,6 +32,7 @@
   let runDirectoryFilters;
   let heroTypeFilters = [];
   let populateDirectoryRegions;
+  let auditHasRun = false;
 
   const typeLabels = {
     farms: "Farms",
@@ -51,13 +52,40 @@
     distributors: "#725ac1"
   };
 
+  // Canonical type tokens used across filters and audits
+  const TYPE_TOKENS = {
+    farms: "farm",
+    markets: "market",
+    stores: "grocer",
+    restaurants: "restaurant",
+    vendors: "restaurant",
+    distributors: "distributor"
+  };
+
+  const DIRECTORY_PATHS = {
+    farm: "/farms/",
+    market: "/markets/",
+    grocer: "/groceries/",
+    restaurant: "/eateries/",
+    distributor: "/distributors/"
+  };
+
+  const normalizeToken = (value) => (value || "").toString().trim().toLowerCase();
+  const normalizeList = (arr) => (arr || []).map(normalizeToken).filter(Boolean);
+  const normalizeRegion = (value) => normalizeToken(value);
+  const normalizeCountry = (value) => normalizeToken(value);
+  const getCanonicalType = (value) => {
+    const token = normalizeToken(value);
+    return TYPE_TOKENS[token] || token;
+  };
+
   const populateHeroRegions = (countrySlug) => {
     if (!heroRegionSelect || !listings.length) return;
     const activeCountry = countrySlug || getActiveCountry();
     const regions = Array.from(
       new Set(
         listings
-          .filter((item) => !activeCountry || item.country_slug === activeCountry)
+          .filter((item) => !activeCountry || normalizeCountry(item.country_slug) === normalizeCountry(activeCountry))
           .map((item) => (item.region || "").trim())
           .filter(Boolean)
       )
@@ -106,8 +134,9 @@
   const applyHashPrefill = () => {
     if (!initialHash) return;
     const typeKeys = Object.keys(typeLabels);
-    if (typeKeys.includes(initialHash)) {
-      hashTypes = [initialHash];
+    const canonicalKeys = typeKeys.map(getCanonicalType);
+    if (typeKeys.includes(initialHash) || canonicalKeys.includes(initialHash)) {
+      hashTypes = [getCanonicalType(initialHash)];
       const typeInput = document.querySelector(`input[name="type"][value="${initialHash}"]`);
       if (typeInput) typeInput.checked = true;
       return;
@@ -160,14 +189,14 @@
       const regions = Array.from(
         new Set(
           cards
-            .filter((card) => !activeCountry || (card.dataset.country || "").toLowerCase() === activeCountry)
+            .filter((card) => !activeCountry || normalizeCountry(card.dataset.country) === normalizeCountry(activeCountry))
             .map((card) => (card.dataset.region || "").trim())
             .filter(Boolean)
         )
       ).sort((a, b) => a.localeCompare(b));
       const current = regionSelect.value;
       regionSelect.innerHTML = `<option value=\"all\">All regions</option>${regions
-        .map((region) => `<option value=\"${region.toLowerCase()}\">${region}</option>`)
+        .map((region) => `<option value=\"${normalizeRegion(region)}\">${region}</option>`)
         .join("")}`;
       const restore = Array.from(regionSelect.options).some((opt) => opt.value === current);
       regionSelect.value = restore ? current : "all";
@@ -175,11 +204,11 @@
 
     runDirectoryFilters = () => {
       const active = hasActiveFilters();
-      const selectedRegion = regionSelect ? regionSelect.value : "all";
-      const query = textFilter ? textFilter.value.toLowerCase().trim() : "";
-      const selectedTags = tagFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
-      const selectedSubtypes = subtypeFilters.filter((c) => c.checked).map((c) => c.value.toLowerCase());
-      const activeCountry = getActiveCountry();
+      const selectedRegion = normalizeRegion(regionSelect ? regionSelect.value : "all");
+      const query = textFilter ? normalizeToken(textFilter.value) : "";
+      const selectedTags = normalizeList(tagFilters.filter((c) => c.checked).map((c) => c.value));
+      const selectedSubtypes = normalizeList(subtypeFilters.filter((c) => c.checked).map((c) => c.value));
+      const activeCountry = normalizeCountry(getActiveCountry());
       let visibleCount = 0;
 
       if (!active) {
@@ -197,18 +226,18 @@
       }
 
       cards.forEach((card) => {
-        const region = (card.dataset.region || "").toLowerCase();
-        const practices = (card.dataset.practices || "").toLowerCase().split(",").filter(Boolean);
-        const subtype = (card.dataset.type || "").toLowerCase();
-        const country = (card.dataset.country || "").toLowerCase();
-        const name = (card.dataset.name || "").toLowerCase();
-        const city = (card.dataset.city || "").toLowerCase();
+        const region = normalizeRegion(card.dataset.region);
+        const practices = normalizeList((card.dataset.practices || "").split(","));
+        const subtype = normalizeToken(card.dataset.subtype || card.dataset.type);
+        const country = normalizeCountry(card.dataset.country);
+        const name = normalizeToken(card.dataset.name);
+        const city = normalizeToken(card.dataset.city);
 
-        const regionOk = selectedRegion === "all" || region === selectedRegion.toLowerCase();
+        const regionOk = selectedRegion === "all" || region === selectedRegion;
         const tagsOk = selectedTags.every((t) => practices.includes(t));
         const subtypeOk = selectedSubtypes.length === 0 || selectedSubtypes.includes(subtype);
         const countryOk = !activeCountry || country === activeCountry;
-        const textOk = !query || name.includes(query) || region.includes(query) || city.includes(query) || practices.join(" ").includes(query);
+        const textOk = !query || name.includes(query) || region.includes(query) || city.includes(query) || practices.some((p) => p.includes(query));
 
         const show = regionOk && tagsOk && subtypeOk && countryOk && textOk;
         card.classList.remove("hidden");
@@ -275,8 +304,9 @@
     }
   }
 
-  function matchesFilters(item, selections) {
-    const textQuery = selections.query.toLowerCase().trim();
+  function matchesFilters(item, selections, options = {}) {
+    const includePageFilters = options.includePageFilters !== false;
+    const textQuery = normalizeToken(selections.query || "");
     const haystack = [
       item.title,
       item.city,
@@ -287,30 +317,35 @@
       (item.products || []).join(" "),
       (item.services || []).join(" ")
     ]
-      .join(" ")
-      .toLowerCase();
+      .map((part) => (part || "").toString().toLowerCase())
+      .join(" ");
     const textMatches = !textQuery || haystack.includes(textQuery);
-    const regionMatches =
-      selections.region === "all" ||
-      (item.region || "").toLowerCase() === selections.region;
+    const selectedRegion = normalizeRegion(selections.region || "all");
+    const itemRegion = normalizeRegion(item.region);
+    const regionMatches = selectedRegion === "all" || itemRegion === selectedRegion;
 
-    const typeFilters = selections.types.concat(hashTypes, heroTypeFilters);
-    const collection = (item.collection || "").toLowerCase();
-    const typeMatches = !typeFilters.length || typeFilters.includes(collection);
+    const baseTypes = Array.isArray(selections.types) ? selections.types : [];
+    let typeFilters = baseTypes.slice();
+    if (includePageFilters) {
+      typeFilters = typeFilters.concat(hashTypes, heroTypeFilters);
+    }
+    typeFilters = typeFilters.map(getCanonicalType).filter(Boolean);
+    const itemTypeToken = normalizeToken(item.type_token || getCanonicalType(item.collection || item.type));
+    const typeMatches = !typeFilters.length || typeFilters.includes(itemTypeToken);
 
-    const practicesMatch =
-      !selections.practices.length ||
-      selections.practices.every((p) => (item.practices || []).includes(p));
+    const selectedPractices = normalizeList(selections.practices);
+    const selectedProducts = normalizeList(selections.products);
+    const selectedServices = normalizeList(selections.services);
+    const itemPractices = normalizeList(item.practices || item.practices_tags || item.services);
+    const itemProducts = normalizeList(item.products);
+    const itemServices = normalizeList(item.services);
+    const practicesMatch = !selectedPractices.length || selectedPractices.every((p) => itemPractices.includes(p));
+    const productsMatch = !selectedProducts.length || selectedProducts.every((p) => itemProducts.includes(p));
+    const servicesMatch = !selectedServices.length || selectedServices.every((p) => itemServices.includes(p));
 
-    const productsMatch =
-      !selections.products.length ||
-      selections.products.every((p) => (item.products || []).includes(p));
-
-    const servicesMatch =
-      !selections.services.length ||
-      selections.services.every((p) => (item.services || []).includes(p));
-
-    const countryMatch = !getActiveCountry() || item.country_slug === getActiveCountry();
+    const countrySelection = normalizeCountry(selections.country || (includePageFilters ? getActiveCountry() : ""));
+    const itemCountry = normalizeCountry(item.country_slug || item.country);
+    const countryMatch = !countrySelection || itemCountry === countrySelection;
 
     return (
       textMatches &&
@@ -321,6 +356,40 @@
       servicesMatch &&
       countryMatch
     );
+  }
+
+  // Diagnostic: ensure each listing would pass its own country/region/type filters on its directory page.
+  function runListingSelfFilterAudit(items = []) {
+    if (auditHasRun || !Array.isArray(items) || !items.length || typeof matchesFilters !== "function") return;
+    auditHasRun = true;
+    items.forEach((item) => {
+      const typeToken = normalizeToken(item.type_token || getCanonicalType(item.collection || item.type));
+      const selections = {
+        query: "",
+        region: item.region ? normalizeRegion(item.region) : "all",
+        country: item.country_slug || item.country,
+        types: [typeToken],
+        practices: [],
+        products: [],
+        services: []
+      };
+      const passesSelfFilter = matchesFilters(item, selections, { includePageFilters: false });
+      if (!passesSelfFilter) {
+        const payload = {
+          title: item.title,
+          slug: item.slug,
+          collection: item.collection,
+          expectedDirectory: DIRECTORY_PATHS[typeToken] || "",
+          country_slug: item.country_slug,
+          region: item.region,
+          typeToken
+        };
+        console.warn("Listing fails self-filter audit", payload);
+        if (item.featured) {
+          console.warn("FEATURED listing fails self-filter audit", payload);
+        }
+      }
+    });
   }
 
   function hasActiveFilters() {
@@ -337,7 +406,7 @@
     const heroTypeActive = Array.isArray(heroTypeFilters) && heroTypeFilters.length > 0;
     const hashTypeActive = Array.isArray(hashTypes) && hashTypes.length > 0;
 
-    return !!(q || (region && region !== "all") || typeChecked || tagChecked || extraChecked || heroTypeActive || hashTypeActive);
+    return !!(q || (region && normalizeRegion(region) !== "all") || typeChecked || tagChecked || extraChecked || heroTypeActive || hashTypeActive);
   }
 
   function applyFilters() {
@@ -346,13 +415,14 @@
     const selections = {
       query: searchInput ? searchInput.value : "",
       region: heroRegionSelect ? heroRegionSelect.value : "all",
+      country: getActiveCountry(),
       types: [],
       practices: [],
       products: [],
       services: []
     };
 
-    document.querySelectorAll('input[name="type"]:checked').forEach((el) => selections.types.push(el.value.toLowerCase()));
+    document.querySelectorAll('input[name="type"]:checked').forEach((el) => selections.types.push(getCanonicalType(el.value)));
     document.querySelectorAll('input[name="practice"]:checked').forEach((el) => selections.practices.push(el.value));
     document.querySelectorAll('input[name="practices"]:checked').forEach((el) => selections.practices.push(el.value));
     document.querySelectorAll('input[name="product"]:checked').forEach((el) => selections.products.push(el.value));
@@ -470,6 +540,7 @@
       filtered = data;
       populateHeroRegions(getActiveCountry());
       applyFilters();
+      runListingSelfFilterAudit(listings);
       if (mapShouldStartOpen) openMap();
       refreshMap(filtered);
     } catch (err) {
@@ -486,7 +557,7 @@
     btn.addEventListener("click", () => {
       const filters = (btn.dataset.typeFilter || "")
         .split(",")
-        .map((v) => v.trim().toLowerCase())
+        .map((v) => getCanonicalType(v))
         .filter(Boolean);
       const isActive = btn.classList.contains("is-active");
       heroTypeFilters = isActive ? [] : filters;

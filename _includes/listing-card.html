@@ -4,8 +4,10 @@
 {% assign review_target = listing.slug | default: listing.title | default: listing.name | slugify %}
 {% assign card_title = listing.title | default: listing.name %}
 {% assign encoded_title = card_title | uri_escape %}
-{% assign card_type = listing.collection %}
-{% assign card_label = card_type | capitalize %}
+{% assign collection_key = listing.collection | downcase %}
+{% assign card_label = collection_key | capitalize %}
+{% assign type_token = collection_key %}
+{% assign subtype_raw = listing.type | default: listing.listing_type | default: listing.category %}
 {% assign address_parts = "" | split: "" %}
 {% if listing.address %}{% assign address_parts = address_parts | push: listing.address %}{% endif %}
 {% if listing.suburb %}{% assign address_parts = address_parts | push: listing.suburb %}{% endif %}
@@ -16,37 +18,47 @@
 {% assign has_street = listing.address and listing.address != '' %}
 {% assign has_coords = listing.lat and listing.lon and listing.lat != '' and listing.lon != '' %}
 {% assign map_query = card_address | uri_escape %}
-{% case listing.collection %}
+{% case collection_key %}
   {% when 'stores' %}
-    {% assign card_type = 'grocer' %}
+    {% assign type_token = 'grocer' %}
     {% assign card_label = 'Grocer' %}
   {% when 'restaurants' %}
-    {% assign card_type = 'eatery' %}
+    {% assign type_token = 'restaurant' %}
     {% assign card_label = 'Eatery' %}
   {% when 'vendors' %}
-    {% assign card_type = 'eatery' %}
+    {% assign type_token = 'restaurant' %}
     {% assign card_label = 'Eatery' %}
-{% when 'markets' %}
-    {% assign card_type = 'market' %}
+  {% when 'markets' %}
+    {% assign type_token = 'market' %}
     {% assign card_label = 'Market' %}
   {% when 'farms' %}
-    {% assign card_type = 'farm' %}
+    {% assign type_token = 'farm' %}
     {% assign card_label = 'Farm' %}
   {% when 'distributors' %}
-    {% assign card_type = 'hub' %}
+    {% assign type_token = 'distributor' %}
     {% assign card_label = 'Hub' %}
 {% endcase %}
+{% assign subtype_token = subtype_raw | default: type_token | slugify %}
 {%- assign card_classes = "listing-card" -%}
 {%- if include.featured -%}
   {%- assign card_classes = card_classes | append: " listing-card--featured" -%}
 {%- endif -%}
 
+{%- comment -%}
+Filters read:
+- data-collection: canonical type token per collection (farm, market, grocer, restaurant, distributor)
+- data-type/data-subtype: subtype tokens used on directory pages (cafe, restaurant, vineyard, etc.)
+- data-region/data-country: geographic filters use these values
+- data-practices: comma-joined practices/products/services for tag filters
+{%- endcomment -%}
 <article class="{{ card_classes }}"
   data-region="{{ listing.region | escape }}"
   data-city="{{ listing.city | default: listing.city_town | escape }}"
   data-name="{{ card_title | escape }}"
-  data-type="{{ listing.type | default: listing.collection | escape }}"
-  data-category="{{ card_type | escape }}"
+  data-type="{{ subtype_token | escape }}"
+  data-subtype="{{ subtype_token | escape }}"
+  data-collection="{{ type_token | escape }}"
+  data-category="{{ type_token | escape }}"
   data-country="{{ listing.country_slug | escape }}"
   data-practices="{{ practices_joined | escape }}">
   <div class="listing-card__meta">

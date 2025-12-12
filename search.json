@@ -6,22 +6,36 @@ permalink: /search.json
 {% assign all = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors | concat: site.vendors %}
 {% for doc in all %}
   {% assign display_type = doc.collection | capitalize %}
+  {% assign type_token = doc.collection %}
+  {% assign subtype_raw = doc.type | default: doc.listing_type | default: doc.category %}
   {% case doc.collection %}
     {% when 'stores' %}
       {% assign display_type = 'Grocer' %}
+      {% assign type_token = 'grocer' %}
     {% when 'restaurants' %}
       {% assign display_type = 'Eatery' %}
+      {% assign type_token = 'restaurant' %}
     {% when 'vendors' %}
       {% assign display_type = 'Eatery' %}
+      {% assign type_token = 'restaurant' %}
     {% when 'distributors' %}
       {% assign display_type = 'Hub' %}
+      {% assign type_token = 'distributor' %}
+    {% when 'farms' %}
+      {% assign type_token = 'farm' %}
+    {% when 'markets' %}
+      {% assign type_token = 'market' %}
   {% endcase %}
+  {% assign subtype_token = subtype_raw | default: type_token | slugify %}
   {
     "id": "{{ doc.id | default: doc.slug | slugify }}",
     "title": {{ doc.title | default: doc.name | jsonify }},
     "name": {{ doc.name | default: doc.title | jsonify }},
     "collection": "{{ doc.collection }}",
     "type": "{{ display_type }}",
+    "type_token": "{{ type_token }}",
+    "subtype": {{ subtype_raw | default: type_token | jsonify }},
+    "subtype_token": "{{ subtype_token }}",
     "slug": "{{ doc.slug }}",
     "url": "{{ doc.url | relative_url }}",
     "country": {{ doc.country | jsonify }},
