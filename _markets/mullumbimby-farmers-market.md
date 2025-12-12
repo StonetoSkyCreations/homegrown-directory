@@ -31,5 +31,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Market
 city: Mullumbimby
+practices_tags:
+- organic
+- local
 ---
 Weekly Friday market with certified organic growers, seasonal produce, and local food stalls at the showgrounds.

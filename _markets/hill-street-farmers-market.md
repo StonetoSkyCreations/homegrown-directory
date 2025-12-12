@@ -28,4 +28,7 @@ notes: ''
 published: true
 city: Wellington
 Saturday morning market offering fresh local produce, organic options, and free-range eggs in Thorndon. Source: user-supplied list
+practices_tags:
+- organic
+- local
 ---

@@ -26,5 +26,10 @@ last_checked: ''
 notes: ''
 published: true
 city: Paraparaumu
-Weekly Kapiti market focused on stallholders who grow, make, or bake their own goods, including organic sourdoughs and regenerative/organic vegetable growers. Source: https://www.kapiticoastfarmersmarket.org/
+? Weekly Kapiti market focused on stallholders who grow, make, or bake their own goods, including organic sourdoughs and regenerative/organic vegetable growers. Source
+: https://www.kapiticoastfarmersmarket.org/
+practices_tags:
+- organic
+- regenerative
+- local
 ---

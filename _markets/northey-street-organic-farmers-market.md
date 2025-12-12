@@ -30,5 +30,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Market
 city: Brisbane
+practices_tags:
+- organic
+- local
 ---
 Certified organic Sunday market showcasing local growers, orchardists, and artisan food producers.

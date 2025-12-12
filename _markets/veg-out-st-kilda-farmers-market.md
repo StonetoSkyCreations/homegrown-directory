@@ -32,5 +32,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: VFMA accredited
 city: Melbourne
+practices_tags:
+- organic
+- local
 ---
 Community-run monthly market featuring organic and local producers by the beach.

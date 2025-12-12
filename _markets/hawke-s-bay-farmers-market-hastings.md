@@ -28,4 +28,6 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Hastings
+practices_tags:
+- organic
 ---

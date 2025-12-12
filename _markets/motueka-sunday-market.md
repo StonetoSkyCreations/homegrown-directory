@@ -27,4 +27,8 @@ notes: ''
 published: true
 city: Motueka
 Weekly market known for local organic and spray-free produce and artisan goods from Motueka growers. Source: user-supplied list
+practices_tags:
+- organic
+- spray-free
+- local
 ---

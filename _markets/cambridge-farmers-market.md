@@ -28,4 +28,7 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Cambridge
+practices_tags:
+- organic
+- local
 ---

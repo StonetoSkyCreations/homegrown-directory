@@ -31,5 +31,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: VFMA accredited
 city: Melbourne
+practices_tags:
+- organic
+- local
 ---
 Monthly farmers market in Gasworks Arts Park featuring organic growers and local food makers.

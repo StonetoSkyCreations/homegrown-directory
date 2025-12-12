@@ -28,4 +28,7 @@ notes: ''
 published: true
 city: Rotorua
 Weekly Sunday market offering local organic produce, free-range eggs, fresh bread, and artisan foods in central Rotorua. Source: user-supplied list
+practices_tags:
+- organic
+- local
 ---

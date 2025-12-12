@@ -28,4 +28,8 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Invercargill
+practices_tags:
+- organic
+- spray-free
+- local
 ---

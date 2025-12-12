@@ -82,7 +82,7 @@ Filters read:
   data-collection="{{ type_token | escape }}"
   data-category="{{ type_token | escape }}"
   data-country="{{ listing.country_slug | escape }}"
-  data-practices="{{ practices_joined | escape }}"
+  data-practices="{{ practices_joined | downcase | escape }}"
   data-products="{% if products_array and products_array != empty %}{{ products_array | join: ',' | downcase }}{% endif %}">
   <div class="listing-card__meta">
     <div>

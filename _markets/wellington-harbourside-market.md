@@ -27,5 +27,9 @@ last_checked: ''
 notes: ''
 published: true
 city: Wellington
-Sunday market on Wellington’s waterfront featuring local growers and producers, including organic veg and free-range egg stalls. Source: https://www.wellingtonharboursidemarket.co.nz/
+? Sunday market on Wellington’s waterfront featuring local growers and producers, including organic veg and free-range egg stalls. Source
+: https://www.wellingtonharboursidemarket.co.nz/
+practices_tags:
+- organic
+- local
 ---

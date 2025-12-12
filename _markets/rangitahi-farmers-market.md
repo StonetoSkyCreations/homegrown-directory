@@ -25,5 +25,8 @@ last_checked: ''
 notes: ''
 published: true
 city: Raglan
-Raglan market with local producers such as Soul Food Farm, Dreamview Creamery, and Hunt & Gather Bee Co; runs plastic-free with a focus on local supply. Source: https://www.rangitahi.co.nz/journal/rangitahi-farmers-market
+? Raglan market with local producers such as Soul Food Farm, Dreamview Creamery, and Hunt & Gather Bee Co; runs plastic-free with a focus on local supply. Source
+: https://www.rangitahi.co.nz/journal/rangitahi-farmers-market
+practices_tags:
+- local
 ---

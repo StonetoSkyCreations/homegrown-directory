@@ -26,5 +26,10 @@ last_checked: ''
 notes: ''
 published: true
 city: Whangārei
-Locally focused Saturday market on Rust Ave featuring growers and makers from Northland, including organic and spray-free vegetable stalls. Source: user-supplied list
+? Locally focused Saturday market on Rust Ave featuring growers and makers from Northland, including organic and spray-free vegetable stalls. Source
+: user-supplied list
+practices_tags:
+- organic
+- spray-free
+- local
 ---

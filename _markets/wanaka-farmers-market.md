@@ -26,5 +26,9 @@ last_checked: ''
 notes: ''
 published: true
 city: Wānaka
-Weekly Wānaka market requiring stallholders to grow, bake, make, or catch their goods locally, including organic and spray-free producers. Source: https://wanakafarmersmarket.org.nz/
+? Weekly Wānaka market requiring stallholders to grow, bake, make, or catch their goods locally, including organic and spray-free producers. Source
+: https://wanakafarmersmarket.org.nz/
+practices_tags:
+- organic
+- spray-free
 ---

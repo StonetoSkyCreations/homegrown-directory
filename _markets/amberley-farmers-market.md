@@ -30,4 +30,7 @@ notes: Market
 city: Hurunui
 rating_average: 5
 rating_count: 1
+practices_tags:
+- organic
+- local
 ---

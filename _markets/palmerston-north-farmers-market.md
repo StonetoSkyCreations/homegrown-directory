@@ -27,4 +27,7 @@ notes: ''
 published: true
 city: Palmerston North
 Weekly market in central Palmerston North showcasing local producers, including organic and free-range vendors. Source: user-supplied list
+practices_tags:
+- organic
+- local
 ---

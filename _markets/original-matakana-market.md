@@ -10,35 +10,37 @@ city: Matakana
 address: 30 Matakana Valley Road, Matakana 0985
 description: Historic Old Dairy Factory market where local artisans sell art, crafts, clothing, antiques, collectables, produce and sweet treats every Saturday 9 am–2 pm.
 practices:
-  - community-market
-  - local-artisans
-  - historic-building
+- community-market
+- local-artisans
+- historic-building
 products:
-  - art and crafts
-  - clothing
-  - antiques
-  - collectables
-  - produce
-  - sweet treats
+- art and crafts
+- clothing
+- antiques
+- collectables
+- produce
+- sweet treats
 services:
-  - general market
-  - boutique indoor stalls
-  - courtyard stalls
-  - community events
+- general market
+- boutique indoor stalls
+- courtyard stalls
+- community events
 website: https://www.thematakanamarket.co.nz
-email:
-phone:
-social:
+email: 
+phone: 
+social: 
 hours: Saturday 9 am–2 pm
 market_days:
-  - Saturday 09:00-14:00
-lat:
-lon:
+- Saturday 09:00-14:00
+lat: 
+lon: 
 supplies_to: []
 sources:
-  - https://www.thematakanamarket.co.nz/about-9
-  - https://jsart.co.nz/Matakana Markets/Matakana Markets.htm
+- https://www.thematakanamarket.co.nz/about-9
+- https://jsart.co.nz/Matakana Markets/Matakana Markets.htm
 last_checked: 2025-12-11
+practices_tags:
+- local
 ---
 The Original Matakana Market is held inside and around the historic Old Dairy Factory, a building that has anchored the village since 1902. Running every Saturday from 9 am to 2 pm, the market invites visitors to explore a diverse array of art, crafts, clothing, antiques, collectables, produce and sweet treats. Stallholders set up both inside the restored factory and in the courtyard outside, creating a vibrant maze of treasures.
 

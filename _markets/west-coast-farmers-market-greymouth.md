@@ -26,5 +26,10 @@ last_checked: ''
 notes: ''
 published: true
 city: Greymouth
-Weekly Greymouth market for local producers—“grow it, bake it, catch it, make it”—including spray-free and organic stalls. Source: user-supplied list
+? Weekly Greymouth market for local producers—“grow it, bake it, catch it, make it”—including spray-free and organic stalls. Source
+: user-supplied list
+practices_tags:
+- organic
+- spray-free
+- local
 ---
