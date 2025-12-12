@@ -54,6 +54,19 @@ seo_description: >
     </div>
   </div>
 
+  <div class="filter-row">
+    <p class="filter-label">Products</p>
+    <div class="pill-group">
+      {% assign products = "meat,dairy,seed" | split: "," %}
+      {% for product in products %}
+      <label class="pill pill--checkbox">
+        <input type="checkbox" name="products" value="{{ product }}">
+        <span>{{ product | capitalize }}</span>
+      </label>
+      {% endfor %}
+    </div>
+  </div>
+
   {% include featured-card.html scope="collections" key="farms" %}
 
   <div class="listing-grid listing-grid--tight">

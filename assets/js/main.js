@@ -185,6 +185,7 @@
     const textFilter = document.getElementById("dirSearch");
     const tagFilters = Array.from(document.querySelectorAll('input[name="tag"]'));
     const subtypeFilters = Array.from(document.querySelectorAll('input[name="subtype"]'));
+    const productFilters = Array.from(document.querySelectorAll('input[name="products"]'));
     const cards = Array.from(directoryContainer.querySelectorAll(".listing-card"));
     const dirResultsCount = document.getElementById("dirResultsCount");
 
@@ -213,6 +214,7 @@
       const query = textFilter ? normalizeToken(textFilter.value) : "";
       const selectedTags = normalizeList(tagFilters.filter((c) => c.checked).map((c) => c.value));
       const selectedSubtypes = normalizeList(subtypeFilters.filter((c) => c.checked).map((c) => c.value));
+      const selectedProducts = normalizeList(productFilters.filter((c) => c.checked).map((c) => c.value));
       const activeCountry = normalizeCountry(getActiveCountry());
       let visibleCount = 0;
 
@@ -233,6 +235,7 @@
       cards.forEach((card) => {
         const region = normalizeRegion(card.dataset.region);
         const practices = normalizeList((card.dataset.practices || "").split(","));
+        const products = normalizeList((card.dataset.products || "").split(","));
         const subtype = normalizeToken(card.dataset.subtype || card.dataset.type);
         const country = normalizeCountry(card.dataset.country);
         const name = normalizeToken(card.dataset.name);
@@ -240,11 +243,18 @@
 
         const regionOk = selectedRegion === "all" || region === selectedRegion;
         const tagsOk = selectedTags.every((t) => practices.includes(t));
+        const productsOk = selectedProducts.length === 0 || selectedProducts.every((p) => products.includes(p));
         const subtypeOk = selectedSubtypes.length === 0 || selectedSubtypes.includes(subtype);
         const countryOk = !activeCountry || country === activeCountry;
-        const textOk = !query || name.includes(query) || region.includes(query) || city.includes(query) || practices.some((p) => p.includes(query));
+        const textOk =
+          !query ||
+          name.includes(query) ||
+          region.includes(query) ||
+          city.includes(query) ||
+          practices.some((p) => p.includes(query)) ||
+          products.some((p) => p.includes(query));
 
-        const show = regionOk && tagsOk && subtypeOk && countryOk && textOk;
+        const show = regionOk && tagsOk && subtypeOk && productsOk && countryOk && textOk;
         card.classList.remove("hidden");
         card.style.display = show ? "" : "none";
         if (show) visibleCount += 1;
