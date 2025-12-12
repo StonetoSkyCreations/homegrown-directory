@@ -163,19 +163,6 @@ permalink: /submit.html
       </div>
     </div>
 
-    <div class="form-group" id="farm-products-group" style="display:none">
-      <label>Products (farms only)</label>
-      <div class="pill-group">
-        {% assign farm_products = "meat,dairy,seed" | split: "," %}
-        {% for tag in farm_products %}
-        <label class="pill pill--checkbox">
-          <input type="checkbox" name="products_tags" value="{{ tag }}">
-          <span>{{ tag | capitalize }}</span>
-        </label>
-        {% endfor %}
-      </div>
-    </div>
-
     <div class="form-group">
       <label for="products">Products (one per line or comma separated)</label>
       <textarea id="products" name="products" rows="3"></textarea>
@@ -233,14 +220,12 @@ permalink: /submit.html
   const collectionSelect = document.getElementById('collection');
   const subtypeSelect = document.getElementById('subtype');
   const subtypeGroup = document.getElementById('subtype-group');
-  const farmProductsGroup = document.getElementById('farm-products-group');
   const specialtyGroup = document.getElementById('specialty-group');
 
   // Canonical tokens: collection (farms, markets, stores, restaurants, vendors, distributors)
   // subtype is only emitted for restaurants/vendors/stores; markets have no subtype.
-  // practices_tags always emitted (even empty). products_tags only for farms. specialty_tags only for stores + specialty-grocer.
+  // practices_tags always emitted (even empty). specialty_tags only for stores + specialty-grocer.
   const PRACTICE_TOKENS = ['organic', 'spray-free', 'regenerative', 'biodynamic', 'wild', 'pasture-raised', 'local'];
-  const FARM_PRODUCT_TOKENS = ['meat', 'dairy', 'seed'];
   const FARM_SUBTYPES = ['market-garden', 'orchard', 'vineyard', 'livestock', 'dairy-farm', 'apiary', 'eggs', 'mushrooms', 'seeds', 'flowers', 'mixed'];
   const RESTAURANT_SUBTYPES = ['cafe', 'restaurant'];
   const VENDOR_SUBTYPES = ['food-truck'];
@@ -344,10 +329,6 @@ permalink: /submit.html
       }
     }
 
-    const isFarm = collection === 'farms';
-    if (farmProductsGroup) farmProductsGroup.style.display = isFarm ? '' : 'none';
-    if (!isFarm) clearChecked('products_tags');
-
     const showSpecialty = collection === 'stores' && subtypeSelect && subtypeSelect.value === 'specialty-grocer';
     if (specialtyGroup) specialtyGroup.style.display = showSpecialty ? '' : 'none';
     if (!showSpecialty) clearChecked('specialty_tags');
@@ -379,8 +360,7 @@ permalink: /submit.html
     const collection = data.get('collection') || '';
     const subtypeRaw = normalizeToken(data.get('subtype'));
     const practicesTags = uniqueAllowed(data.getAll('practices_tags'), PRACTICE_TOKENS);
-  const productsTags = collection === 'farms' ? uniqueAllowed(data.getAll('products_tags'), FARM_PRODUCT_TOKENS) : [];
-  const specialtyTags =
+    const specialtyTags =
       collection === 'stores' && subtypeRaw === 'specialty-grocer'
         ? uniqueAllowed(data.getAll('specialty_tags'), SPECIALTY_TOKENS)
         : [];
@@ -412,7 +392,6 @@ permalink: /submit.html
       formatMultiline('description', descriptionText),
       formatMultiline('seo_description', data.get('seo_description')),
       formatList('practices_tags', practicesTags),
-      collection === 'farms' ? formatList('products_tags', productsTags) : null,
       collection === 'stores' && specialtyTags.length ? formatList('specialty_tags', specialtyTags) : null,
       formatList('products', listFields.products),
       formatList('services', listFields.services),

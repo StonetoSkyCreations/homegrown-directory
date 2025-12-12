@@ -79,19 +79,6 @@ seo_description: >
   </div>
 
   <div class="filter-row">
-    <p class="filter-label">Products</p>
-    <div class="pill-group">
-      {% assign product_tags = "meat,dairy,seed" | split: "," %}
-      {% for tag in product_tags %}
-      <label class="pill pill--checkbox">
-        <input type="checkbox" name="products" value="{{ tag }}">
-        <span>{{ tag | capitalize }}</span>
-      </label>
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="filter-row">
     <p class="filter-label">Practices</p>
     <div class="pill-group">
       {% assign tags = "Organic,Spray-free,Regenerative,Biodynamic,Wild,Pasture-raised,Local" | split: "," %}
