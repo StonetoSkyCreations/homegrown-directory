@@ -9,35 +9,36 @@ city: Martinborough
 address: Between Martinborough and Greytown
 description: Small-scale market garden run by Griff Griffiths, growing microgreens, gourmet potatoes and assorted vegetables for local markets and online delivery.
 practices:
-  - spray-free
-  - organic-principles
-  - compost-rich soil
+- spray-free
+- organic-principles
+- compost-rich soil
 products:
-  - gourmet Jersey Benne potatoes
-  - carrots and beetroot
-  - courgettes (including Constanta Romanesco)
-  - microgreens and baby leaf mixes
-  - herbs
+- gourmet Jersey Benne potatoes
+- carrots and beetroot
+- courgettes (including Constanta Romanesco)
+- microgreens and baby leaf mixes
+- herbs
 services:
-  - farm stall at Martinborough Memorial Square (Saturdays)
-  - TK Market and Greytown Country Market (seasonal)
-  - online delivery (South Wairarapa)
+- farm stall at Martinborough Memorial Square (Saturdays)
+- TK Market and Greytown Country Market (seasonal)
+- online delivery (South Wairarapa)
 website: https://rebelgardens.co.nz
 email: griff@rebelgardens.co.nz
-phone: "027 307 8821"
+phone: 027 307 8821
 social:
-  - https://facebook.com/rebelgardens
-  - https://instagram.com/rebel_gardens
-hours:
+- https://facebook.com/rebelgardens
+- https://instagram.com/rebel_gardens
+hours: 
 market_days: []
-lat:
-lon:
+lat: 
+lon: 
 supplies_to:
-  - little-farms
+- little-farms
 sources:
-  - https://www.wairarapalifestyle.com/landing-page/pick-of-the-crop
-  - https://rebelgardens.co.nz/contact/
+- https://www.wairarapalifestyle.com/landing-page/pick-of-the-crop
+- https://rebelgardens.co.nz/contact/
 last_checked: 2025-12-11
+subtype: market-garden
 ---
 Rebel Gardens is the passion project of Craig "Griff" Griffiths, who cultivates a "lovely bit of paradise" between Martinborough and Greytown. Griff specialises in small batches of diverse vegetables, focusing on flavour over appearance. His main summer crop is gourmet Jersey Benne potatoes, dug, packed in biodegradable bags and sold within 24 hours. When the potatoes finish, carrots and beetroot take their place, and he grows specialty courgettes such as the nutty Constanta Romanesco variety. He continually experiments with new crops to meet customer requests.
 

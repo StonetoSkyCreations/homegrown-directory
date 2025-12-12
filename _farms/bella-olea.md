@@ -9,31 +9,32 @@ city: Greytown
 address: Tauherenikau / outskirts of Greytown
 description: Family-owned BioGro-certified olive grove producing award-winning organic extra virgin olive oil, table olives and natural skincare.
 practices:
-  - certified-organic
-  - spray-free
-  - regenerative
+- certified-organic
+- spray-free
+- regenerative
 products:
-  - extra virgin olive oil (Koroneiki, Grove Blend, lemon-infused)
-  - table olives
-  - olive leaf tincture
-  - body lotions and skin balms
+- extra virgin olive oil (Koroneiki, Grove Blend, lemon-infused)
+- table olives
+- olive leaf tincture
+- body lotions and skin balms
 services:
-  - direct sales via Facebook and local markets
-  - supplies Little Farms pantry items
-website:
+- direct sales via Facebook and local markets
+- supplies Little Farms pantry items
+website: 
 email: chris@bellaolea.co.nz
-phone: "021 611 343"
+phone: 021 611 343
 social:
-  - https://facebook.com/BellaOleaOlives/
-hours:
+- https://facebook.com/BellaOleaOlives/
+hours: 
 market_days: []
-lat:
-lon:
+lat: 
+lon: 
 supplies_to:
-  - little-farms
+- little-farms
 sources:
-  - https://www.olivesnz.org.nz/our-growers/wairarapa/
+- https://www.olivesnz.org.nz/our-growers/wairarapa/
 last_checked: 2025-12-11
+subtype: mixed
 ---
 Bella Olea is a family-owned olive grove on the outskirts of Greytown. With just under 1,000 trees, the grove produces award-winning certified-organic olive oil along with table olives, body lotions, skin balms and olive leaf tincture. The olives are grown without synthetic chemicals, and the family manages the entire process from grove to bottle. Their oils – such as the Koroneiki single-variety and the blended Grove oil – have earned medals in national competitions.
 

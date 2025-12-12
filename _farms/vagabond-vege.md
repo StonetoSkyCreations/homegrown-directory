@@ -9,32 +9,33 @@ city: Greytown
 address: Monty's Lane, Te Hupenui/Greytown
 description: A human-scale market garden using agroecological principles and no-till growing to produce nutrient-dense vegetables on the Waiohine River terraces.
 practices:
-  - hua-parakore
-  - regenerative
-  - no-till
-  - spray-free
+- hua-parakore
+- regenerative
+- no-till
+- spray-free
 products:
-  - seasonal vegetables
-  - herbs
-  - microgreens
-  - wholesale produce
+- seasonal vegetables
+- herbs
+- microgreens
+- wholesale produce
 services:
-  - farm boxes via Little Farms
-  - wholesale supply (fresh list)
-  - education about agroecology
+- farm boxes via Little Farms
+- wholesale supply (fresh list)
+- education about agroecology
 website: https://www.vagabondvege.nz
 email: kiaora@vagabondvege.nz
-phone: "027 845 4569"
-social:
-hours:
+phone: 027 845 4569
+social: 
+hours: 
 market_days: []
-lat:
-lon:
+lat: 
+lon: 
 supplies_to:
-  - little-farms
+- little-farms
 sources:
-  - https://www.vagabondvege.nz/
+- https://www.vagabondvege.nz/
 last_checked: 2025-12-11
+subtype: market-garden
 ---
 Vagabond Vege is a collaborative, human-scale market garden based on the old river terraces of the Waiohine River in Greytown. The farmers use agroecological principles to grow high-quality, nutrient-dense food. They are committed to no-till horticulture, removing chemical inputs and cultivating dense, diverse plantings to enhance soil life, improve carbon sequestration and build resilience. Vagabond Vege is working through the three-year Hua Parakore certification, a kaupapa Maori framework that ensures foods are free from GMOs, pesticides and synthetic fertilisers.
 

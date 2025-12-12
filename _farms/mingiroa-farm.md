@@ -26,8 +26,8 @@ hours: ''
 website: https://www.mingiroafarm.com
 email: mingiroafarm@gmail.com
 phone: ''
-description: Certified organic regenerative farm using long grazing rotations, diverse
-  pastures and no synthetic sprays to raise pasture-fed beef.
+description: Certified organic regenerative farm using long grazing rotations, diverse pastures and no synthetic sprays to raise pasture-fed beef.
 products_tags:
 - meat
+subtype: livestock
 ---

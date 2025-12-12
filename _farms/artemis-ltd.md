@@ -26,4 +26,5 @@ source_urls:
 - https://www.biogro.co.nz/organic-business-profiles
 last_checked: '2025-12-09'
 notes: ''
+subtype: market-garden
 ---

@@ -23,12 +23,12 @@ supplies_to:
 - city-honest-grocer
 - kopupako-kitchen
 - supply-circle-hub
-description: Mixed livestock on diverse pastures with long rest periods and low stocking
-  rates.
+description: Mixed livestock on diverse pastures with long rest periods and low stocking rates.
 website: https://waipunapastures.example.nz
 phone: "+64 27 555 0192"
 products_tags:
 - dairy
 - meat
+subtype: dairy-farm
 ---
 Waipuna Pastures keeps cattle, sheep, and hens moving across long-rotation pastures, using multi-species swards and no synthetic nitrogen. Offal, bones, and hides are kept in circular use with local butchers, while customers can order bulk packs direct.

@@ -21,4 +21,5 @@ email: ''
 phone: ''
 description: Organic gardens in Waikanae supplying local produce.
 Operates organic gardens growing vegetables and herbs for local customers on the Kapiti Coast. Source: user-supplied list
+subtype: mixed
 ---

@@ -9,30 +9,31 @@ city: Masterton
 address: Masterton, Wairarapa
 description: Biogrow-certified family farm producing seasonal organic vegetables in eco-friendly greenhouses using rainwater, solar power and natural fertilisers.
 practices:
-  - certified-organic
-  - rainwater-irrigation
-  - solar-powered
-  - spray-free
+- certified-organic
+- rainwater-irrigation
+- solar-powered
+- spray-free
 products:
-  - winter celery, broccoli, wombok cabbage
-  - summer tomatoes, cucumbers, courgettes
-  - seasonal organic vegetables
+- winter celery, broccoli, wombok cabbage
+- summer tomatoes, cucumbers, courgettes
+- seasonal organic vegetables
 services:
-  - supplies Little Farms boxes
-  - wholesale supply
-website:
-email:
-phone:
-social:
-hours:
+- supplies Little Farms boxes
+- wholesale supply
+website: 
+email: 
+phone: 
+social: 
+hours: 
 market_days: []
-lat:
-lon:
+lat: 
+lon: 
 supplies_to:
-  - little-farms
+- little-farms
 sources:
-  - https://wearelittlefarms.com/blogs/meet-the-growers/four-corners-organics
+- https://wearelittlefarms.com/blogs/meet-the-growers/four-corners-organics
 last_checked: 2025-12-11
+subtype: market-garden
 ---
 Established in 2008 by Jos and Rita Paans and now run alongside their son Hendrik, Four Corners Organics has been part of the Little Farms network from the start. The farm is Biogrow-certified and minimises its environmental impact through several innovative practices: they irrigate crops solely with rainwater, micro-irrigating to conserve water; generate as much electricity as possible with solar panels; and use only natural Biogrow-approved fertilisers. Crops are grown in unheated greenhouses to extend the season without burning fossil fuels.
 

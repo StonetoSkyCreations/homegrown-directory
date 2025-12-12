@@ -9,13 +9,13 @@ city: Himatangi Beach
 address: Himatangi Beach, Manawatū-Whanganui
 description: Certified organic free-range egg producer with hens roaming on pasture and pine nut plantations, delivering eggs to homes and retailers.
 practices:
-  - Certified organic
-  - Free-range
-  - Pasture-raised
+- Certified organic
+- Free-range
+- Pasture-raised
 products:
-  - Eggs
+- Eggs
 services:
-  - Home delivery
+- Home delivery
 website: https://theeggproject.co.nz
 email: enquiries@theeggproject.co.nz
 phone: ''
@@ -25,5 +25,6 @@ lat: ''
 lon: ''
 supplies_to: []
 sources:
-  - https://theeggproject.co.nz
+- https://theeggproject.co.nz
+subtype: eggs
 ---

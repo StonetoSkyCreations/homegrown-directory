@@ -1,27 +1,28 @@
 ---
-title: "Pikikiruna Organic Farm"
+title: Pikikiruna Organic Farm
 slug: pikikiruna-organic-farm
-country: "New Zealand"
+country: New Zealand
 country_slug: new-zealand
-region: "Waikato"
-city: "Parawera"
+region: Waikato
+city: Parawera
 lat: -38.06822
-lon: 175.42020
+lon: 175.4202
 practices:
-  - "Organic (certified)"
+- Organic (certified)
 products:
-  - "Vegetables"
+- Vegetables
 services:
-  - "Farm stand"
-  - "Wholesale"
+- Farm stand
+- Wholesale
 sources: []
 supplies_to: []
-hours: ""
-website: "https://pikiroaorganicfarm.co.nz"
-email: "info@pikiroaorganicfarm.co.nz"
+hours: ''
+website: https://pikiroaorganicfarm.co.nz
+email: info@pikiroaorganicfarm.co.nz
 phone: "+64 27 363 3220"
-description: "Certified organic farm in Parawera producing vegetables."
-address: "496 Owairaka Valley Road, Parawera 3877, New Zealand"
-postcode: "3877"
+description: Certified organic farm in Parawera producing vegetables.
+address: 496 Owairaka Valley Road, Parawera 3877, New Zealand
+postcode: '3877'
+subtype: market-garden
 ---
 Certified organic producer in Parawera supplying vegetables locally. Source: user-supplied list

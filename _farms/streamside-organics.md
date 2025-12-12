@@ -41,46 +41,47 @@ services:
 certifications: []
 supply_role: Producer
 source_urls: []
-hours: "CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch Farmers Market: Saturday 9am–1pm; South Christchurch Farmers Market: Sunday 9am–12pm; GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon–Fri (varies by venue)"
+hours: 'CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch Farmers Market: Saturday 9am–1pm; South Christchurch Farmers Market: Sunday 9am–12pm; GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon–Fri (varies by venue)'
 hours_list:
-  - "CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb)"
-  - "Christchurch Farmers Market: Saturday 9am–1pm"
-  - "South Christchurch Farmers Market: Sunday 9am–12pm"
-  - "GoodFor pickup: mid-week (usually Wednesday)"
-  - "Wholesale deliveries: Mon–Fri (varies by venue)"
+- 'CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb)'
+- 'Christchurch Farmers Market: Saturday 9am–1pm'
+- 'South Christchurch Farmers Market: Sunday 9am–12pm'
+- 'GoodFor pickup: mid-week (usually Wednesday)'
+- 'Wholesale deliveries: Mon–Fri (varies by venue)'
 market_days:
-  - Christchurch Farmers Market — Saturday 9am–1pm
-  - South Christchurch Farmers Market — Sunday 9am–12pm
+- Christchurch Farmers Market — Saturday 9am–1pm
+- South Christchurch Farmers Market — Sunday 9am–12pm
 sourced_from_text:
-  - Certified organic mixed-vegetable farm in Leeston, Central Canterbury
-  - Grows 40+ seasonal crops using regenerative, soil-focused methods
+- Certified organic mixed-vegetable farm in Leeston, Central Canterbury
+- Grows 40+ seasonal crops using regenerative, soil-focused methods
 supplies_to_text:
-  - Ilex Cafe Botanic Gardens
-  - Gatherings Restaurant
-  - Black Estate (Waipara)
-  - Greystone Wines (Waipara)
-  - Pomeroy’s Pub (Christchurch)
-  - Cellar Door (Christchurch)
-  - Alpine Grind (Methven)
-  - Green Dinner Table
-  - Piko Wholefoods
-  - GoodFor (The Welder, Welles St)
-  - Selwyn Co-op
-  - Soul Food Organics (Queenstown)
-  - New World St Martins
-  - New World Durham St
-  - New World Fendalton
-  - New World Lincoln
-  - New World Halswell
-  - New World Queenstown
-  - FreshChoice Merivale
-  - FreshChoice Nelson City
-  - Bliss Box (formerly Ooooby)
-  - Live2Give Organics
+- Ilex Cafe Botanic Gardens
+- Gatherings Restaurant
+- Black Estate (Waipara)
+- Greystone Wines (Waipara)
+- Pomeroy’s Pub (Christchurch)
+- Cellar Door (Christchurch)
+- Alpine Grind (Methven)
+- Green Dinner Table
+- Piko Wholefoods
+- GoodFor (The Welder, Welles St)
+- Selwyn Co-op
+- Soul Food Organics (Queenstown)
+- New World St Martins
+- New World Durham St
+- New World Fendalton
+- New World Lincoln
+- New World Halswell
+- New World Queenstown
+- FreshChoice Merivale
+- FreshChoice Nelson City
+- Bliss Box (formerly Ooooby)
+- Live2Give Organics
 last_checked: user-submitted
 notes: ''
 rating_average: 5
 rating_count: 2
+subtype: market-garden
 ---
 Streamside Organics began in 2014 on a single acre of leased land. What started as a small, hands-on experiment in feeding a local community has grown into one of Canterbury's most respected organic market gardens: a 50-acre certified organic farm supplying thousands of households each week.
 

@@ -18,28 +18,48 @@ seo_description: >
         <p class="filter-label">Looking for</p>
         <div class="pill-group">
           <label class="pill pill--checkbox">
-            <input type="checkbox" name="subtype" value="farm">
-            <span>Farm</span>
+            <input type="checkbox" name="subtype" value="market-garden">
+            <span>Market garden</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="subtype" value="orchard">
+            <span>Orchard</span>
           </label>
           <label class="pill pill--checkbox">
             <input type="checkbox" name="subtype" value="vineyard">
             <span>Vineyard</span>
           </label>
           <label class="pill pill--checkbox">
+            <input type="checkbox" name="subtype" value="livestock">
+            <span>Livestock</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="subtype" value="dairy-farm">
+            <span>Dairy farm</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="subtype" value="apiary">
+            <span>Apiary / honey</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="subtype" value="eggs">
+            <span>Eggs</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="subtype" value="mushrooms">
+            <span>Mushrooms</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="subtype" value="seeds">
+            <span>Seeds / nursery</span>
+          </label>
+          <label class="pill pill--checkbox">
             <input type="checkbox" name="subtype" value="flowers">
             <span>Flowers</span>
           </label>
           <label class="pill pill--checkbox">
-            <input type="checkbox" name="products" value="meat">
-            <span>Meat</span>
-          </label>
-          <label class="pill pill--checkbox">
-            <input type="checkbox" name="products" value="dairy">
-            <span>Dairy</span>
-          </label>
-          <label class="pill pill--checkbox">
-            <input type="checkbox" name="products" value="seed">
-            <span>Seed</span>
+            <input type="checkbox" name="subtype" value="mixed">
+            <span>Mixed</span>
           </label>
         </div>
       </div>
@@ -55,6 +75,19 @@ seo_description: >
       <label for="dirSearch">Search</label>
       <input id="dirSearch" type="search" placeholder="Search farms by name or city">
       <div id="dirResultsCount" class="muted"></div>
+    </div>
+  </div>
+
+  <div class="filter-row">
+    <p class="filter-label">Products</p>
+    <div class="pill-group">
+      {% assign product_tags = "meat,dairy,seed" | split: "," %}
+      {% for tag in product_tags %}
+      <label class="pill pill--checkbox">
+        <input type="checkbox" name="products" value="{{ tag }}">
+        <span>{{ tag | capitalize }}</span>
+      </label>
+      {% endfor %}
     </div>
   </div>
 

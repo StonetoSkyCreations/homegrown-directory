@@ -24,9 +24,9 @@ hours: ''
 website: ''
 email: ''
 phone: "+64 6 855 6861"
-description: Organic sheep milk yoghurt and pasture-raised organic eggs from Hawke's
-  Bay.
+description: Organic sheep milk yoghurt and pasture-raised organic eggs from Hawke's Bay.
 products_tags:
 - dairy
+subtype: dairy-farm
 ---
 Certified organic producer of sheep milk yoghurt and pasture-raised organic eggs, supplying retailers across Hawke's Bay. Source: https://sentryhillorganics.co.nz/

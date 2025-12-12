@@ -31,4 +31,5 @@ last_checked: '2025-12-09'
 notes: ''
 products_tags:
 - seed
+subtype: seeds
 ---

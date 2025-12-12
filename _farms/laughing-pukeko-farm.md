@@ -27,4 +27,5 @@ source_urls:
 - https://laughingpukeko.co.nz
 last_checked: '2025-12-09'
 notes: ''
+subtype: market-garden
 ---

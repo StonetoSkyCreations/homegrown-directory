@@ -21,5 +21,7 @@ website: https://www.bayleaforganics.co.nz
 email: info@bayleaforganics.co.nz
 phone: "+64 274 506899 / +64 274 555356"
 description: Organic apple grower selling premium apples at Hawke's Bay Farmers’ Market.
-Family orchards producing organic apples without chemical fertilisers or sprays, sold at the Hawke's Bay Farmers’ Market. Source: https://hawkesbayfarmersmarket.co.nz/bayleaf-organics/
+? Family orchards producing organic apples without chemical fertilisers or sprays, sold at the Hawke's Bay Farmers’ Market. Source
+: https://hawkesbayfarmersmarket.co.nz/bayleaf-organics/
+subtype: orchard
 ---

@@ -17,10 +17,9 @@ hours: ''
 website: ''
 email: ''
 phone: ''
-description: Regenerative merino farm producing pasture-raised meat in the Cardrona
-  Valley.
-Farm using regenerative practices for merino sheep, emphasising pasture-raised, high-welfare meat. Source: user-supplied
-  list
+description: Regenerative merino farm producing pasture-raised meat in the Cardrona Valley.
+Farm using regenerative practices for merino sheep, emphasising pasture-raised, high-welfare meat. Source: user-supplied list
 products_tags:
 - meat
+subtype: livestock
 ---

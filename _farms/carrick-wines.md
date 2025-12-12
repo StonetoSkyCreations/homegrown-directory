@@ -25,4 +25,5 @@ source_urls: []
 hours: ''
 last_checked: user-submitted
 notes: ''
+subtype: vineyard
 ---

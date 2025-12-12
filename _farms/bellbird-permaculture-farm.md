@@ -9,13 +9,13 @@ city: Mangamahu
 address: Mangamahu, Whanganui
 description: Permaculture farm delivering organically grown vegetables to the Whanganui area and selling at the Whanganui River Market.
 practices:
-  - Organic
-  - Permaculture
+- Organic
+- Permaculture
 products:
-  - Vegetables
+- Vegetables
 services:
-  - Delivery
-  - Farmers market stall
+- Delivery
+- Farmers market stall
 website: https://bellbirdfarm.co.nz
 email: bellbirdfarmnz@protonmail.com
 phone: ''
@@ -25,5 +25,6 @@ lat: -39.9333
 lon: 175.05
 supplies_to: []
 sources:
-  - https://bellbirdfarm.co.nz
+- https://bellbirdfarm.co.nz
+subtype: market-garden
 ---

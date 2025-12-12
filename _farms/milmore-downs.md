@@ -7,9 +7,7 @@ country: New Zealand
 region: Canterbury
 city: Scargill Valley
 address: Panets Road, Scargill Valley, Canterbury
-description: 'A 302-hectare third-generation Demeter and BioGro certified biodynamic
-  farm producing organic grains, flours, sheep and beef through mixed cropping, herbal
-  leys, and regenerative grazing.
+description: 'A 302-hectare third-generation Demeter and BioGro certified biodynamic farm producing organic grains, flours, sheep and beef through mixed cropping, herbal leys, and regenerative grazing.
 
 '
 practices:
@@ -49,6 +47,7 @@ sources:
 products_tags:
 - meat
 - seed
+subtype: livestock
 ---
 Milmore Downs is a 302-hectare, third-generation biodynamic and certified organic farm in the Scargill Valley, north of Christchurch. Managed by the family team of Matthew, Alice, Ian and Eva, the farm integrates mixed cropping with livestock to build long-term soil fertility. Dinkel/spelt, wheat, rye, and barley are grown in rotation alongside deep-rooted herbal leys grazed by sheep and cattle, creating a resilient, self-renewing system.
 

@@ -25,4 +25,5 @@ source_urls:
 - https://maikai.nz/pages/mai-kai-suppliers
 last_checked: '2025-12-09'
 notes: ''
+subtype: market-garden
 ---

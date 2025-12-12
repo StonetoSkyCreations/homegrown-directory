@@ -9,33 +9,34 @@ city: Martinborough
 address: 59 Cromarty Drive, Martinborough 5784
 description: Spray-free boutique farm offering seasonal fruits, flowers, preserves, eggs and guided farm tours in the heart of Martinborough.
 practices:
-  - spray-free
-  - organic-principles
-  - diversified
+- spray-free
+- organic-principles
+- diversified
 products:
-  - seasonal fruit (apricots, mandarins, grapefruit)
-  - cut flowers and bouquets
-  - farm eggs
-  - preserves
-  - vegetables (as available)
+- seasonal fruit (apricots, mandarins, grapefruit)
+- cut flowers and bouquets
+- farm eggs
+- preserves
+- vegetables (as available)
 services:
-  - farm store
-  - guided farm and garden tours
-  - pick-your-own experiences (by booking)
+- farm store
+- guided farm and garden tours
+- pick-your-own experiences (by booking)
 website: https://www.martinboroughmanor.co.nz
-email:
-phone: "027 655 9786"
+email: 
+phone: 027 655 9786
 social:
-  - https://facebook.com
+- https://facebook.com
 hours: Saturdays and Sundays 10:30 am and 2:30 pm
 market_days: []
-lat:
-lon:
+lat: 
+lon: 
 supplies_to:
-  - little-farms
+- little-farms
 sources:
-  - https://wairarapanz.com/products/martinborough-manor
+- https://wairarapanz.com/products/martinborough-manor
 last_checked: 2025-12-11
+subtype: market-garden
 ---
 Martinborough Manor is a spray-free boutique farm nestled just minutes from the town square. Visitors can enjoy guided tours of the working farm, where they bottle-feed lambs or goats in spring, wander through stunning gardens and browse the farm store for preserves, fresh fruit, flowers, eggs and vegetables. Tours last about 1.5 hours and are available on Saturdays and Sundays at 10:30 am and 2:30 pm.
 

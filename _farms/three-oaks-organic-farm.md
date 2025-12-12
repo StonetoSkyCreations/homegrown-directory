@@ -7,9 +7,7 @@ country: New Zealand
 region: Manawatū-Whanganui
 city: Kairanga
 address: 141 Aranui Road, RD5, Kairanga, Palmerston North
-description: Certified organic dairy and farm practising regenerative agriculture
-  for over 16 years, producing raw and pasteurised milk, yogurt and eggs with a farmgate
-  shop.
+description: Certified organic dairy and farm practising regenerative agriculture for over 16 years, producing raw and pasteurised milk, yogurt and eggs with a farmgate shop.
 practices:
 - Certified organic
 - Regenerative
@@ -34,4 +32,5 @@ sources:
 - https://threeoaksorganic.co.nz
 products_tags:
 - dairy
+subtype: dairy-farm
 ---

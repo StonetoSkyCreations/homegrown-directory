@@ -51,6 +51,17 @@ permalink: /submit.html
         <option data-collections="stores" value="bulk-refillery">Bulk refillery</option>
         <option data-collections="stores" value="co-op">Co-op</option>
         <option data-collections="stores" value="specialty-grocer">Specialty grocer</option>
+        <option data-collections="farms" value="market-garden">Market garden</option>
+        <option data-collections="farms" value="orchard">Orchard</option>
+        <option data-collections="farms" value="vineyard">Vineyard</option>
+        <option data-collections="farms" value="livestock">Livestock</option>
+        <option data-collections="farms" value="dairy-farm">Dairy farm</option>
+        <option data-collections="farms" value="apiary">Apiary / honey</option>
+        <option data-collections="farms" value="eggs">Eggs</option>
+        <option data-collections="farms" value="mushrooms">Mushrooms</option>
+        <option data-collections="farms" value="seeds">Seeds / nursery</option>
+        <option data-collections="farms" value="flowers">Flowers</option>
+        <option data-collections="farms" value="mixed">Mixed</option>
       </select>
     </div>
 
@@ -230,6 +241,7 @@ permalink: /submit.html
   // practices_tags always emitted (even empty). products_tags only for farms. specialty_tags only for stores + specialty-grocer.
   const PRACTICE_TOKENS = ['organic', 'spray-free', 'regenerative', 'biodynamic', 'wild', 'pasture-raised', 'local'];
   const FARM_PRODUCT_TOKENS = ['meat', 'dairy', 'seed'];
+  const FARM_SUBTYPES = ['market-garden', 'orchard', 'vineyard', 'livestock', 'dairy-farm', 'apiary', 'eggs', 'mushrooms', 'seeds', 'flowers', 'mixed'];
   const RESTAURANT_SUBTYPES = ['cafe', 'restaurant'];
   const VENDOR_SUBTYPES = ['food-truck'];
   const STORE_SUBTYPES = ['supermarket', 'organic-store', 'wholefoods-store', 'bulk-refillery', 'co-op', 'specialty-grocer'];
@@ -306,7 +318,7 @@ permalink: /submit.html
 
   function updateCategoryFields() {
     const collection = collectionSelect ? collectionSelect.value : '';
-    const subtypeAllowedCollections = ['restaurants', 'vendors', 'stores'];
+    const subtypeAllowedCollections = ['restaurants', 'vendors', 'stores', 'farms'];
     const showSubtype = subtypeAllowedCollections.includes(collection);
     if (subtypeGroup) subtypeGroup.style.display = showSubtype ? '' : 'none';
     if (subtypeSelect) {
@@ -367,15 +379,16 @@ permalink: /submit.html
     const collection = data.get('collection') || '';
     const subtypeRaw = normalizeToken(data.get('subtype'));
     const practicesTags = uniqueAllowed(data.getAll('practices_tags'), PRACTICE_TOKENS);
-    const productsTags = collection === 'farms' ? uniqueAllowed(data.getAll('products_tags'), FARM_PRODUCT_TOKENS) : [];
-    const specialtyTags =
+  const productsTags = collection === 'farms' ? uniqueAllowed(data.getAll('products_tags'), FARM_PRODUCT_TOKENS) : [];
+  const specialtyTags =
       collection === 'stores' && subtypeRaw === 'specialty-grocer'
         ? uniqueAllowed(data.getAll('specialty_tags'), SPECIALTY_TOKENS)
         : [];
-    const subtypeAllowed =
+  const subtypeAllowed =
       (collection === 'restaurants' && RESTAURANT_SUBTYPES.includes(subtypeRaw)) ||
       (collection === 'vendors' && VENDOR_SUBTYPES.includes(subtypeRaw)) ||
-      (collection === 'stores' && STORE_SUBTYPES.includes(subtypeRaw));
+      (collection === 'stores' && STORE_SUBTYPES.includes(subtypeRaw)) ||
+      (collection === 'farms' && FARM_SUBTYPES.includes(subtypeRaw));
     const subtype = subtypeAllowed ? subtypeRaw : '';
     const shortDescription = data.get('short_description') || '';
     const fullDescription = (data.get('full_description') || '').trim();

@@ -23,4 +23,5 @@ source_urls:
 - https://www.organictradenz.com/member-page/reclPWTSPeTEZD8ow
 last_checked: '2025-12-09'
 notes: Māori whenua development, organic farming
+subtype: mixed
 ---

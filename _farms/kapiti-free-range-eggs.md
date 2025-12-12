@@ -20,4 +20,5 @@ email: ''
 phone: ''
 description: Free-range egg producer on the Kapiti Coast.
 Produces free-range eggs for local outlets around the Kapiti Coast. Source: user-supplied list
+subtype: eggs
 ---

@@ -4,8 +4,7 @@ title: Durham Farms
 slug: durham-farms
 name: Durham Farms
 type: Farm
-description: Certified organic dairy and mixed produce farm with farm shop offerings
-  in Waipu.
+description: Certified organic dairy and mixed produce farm with farm shop offerings in Waipu.
 country: NZ
 country_slug: new-zealand
 region: Northland
@@ -32,4 +31,5 @@ notes: ''
 products_tags:
 - dairy
 - meat
+subtype: dairy-farm
 ---
