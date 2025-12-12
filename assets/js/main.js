@@ -350,10 +350,10 @@
     const typeMatches = !typeFilters.length || typeFilters.includes(itemTypeToken);
 
     const selectedPractices = normalizeList(selections.practices);
-    const selectedProducts = normalizeList(selections.products);
+    const selectedProducts = Array.isArray(selections.products) ? normalizeList(selections.products) : [];
     const selectedServices = normalizeList(selections.services);
     const itemPractices = normalizeList(item.practices || item.practices_tags || item.services);
-    const itemProducts = normalizeList(item.products);
+    const itemProducts = normalizeList(item.products || item.products_tags);
     const itemServices = normalizeList(item.services);
     const practicesMatch = !selectedPractices.length || selectedPractices.every((p) => itemPractices.includes(p));
     const productsMatch = !selectedProducts.length || selectedProducts.every((p) => itemProducts.includes(p));
@@ -441,8 +441,11 @@
     document.querySelectorAll('input[name="type"]:checked').forEach((el) => selections.types.push(getCanonicalType(el.value)));
     document.querySelectorAll('input[name="practice"]:checked').forEach((el) => selections.practices.push(el.value));
     document.querySelectorAll('input[name="practices"]:checked').forEach((el) => selections.practices.push(el.value));
+    const selectedProducts = normalizeList(
+      Array.from(document.querySelectorAll('input[name="products"]:checked')).map((el) => el.value)
+    );
+    selections.products = selectedProducts;
     document.querySelectorAll('input[name="product"]:checked').forEach((el) => selections.products.push(el.value));
-    document.querySelectorAll('input[name="products"]:checked').forEach((el) => selections.products.push(el.value));
     document.querySelectorAll('input[name="service"]:checked').forEach((el) => selections.services.push(el.value));
     document.querySelectorAll('input[name="services"]:checked').forEach((el) => selections.services.push(el.value));
 
