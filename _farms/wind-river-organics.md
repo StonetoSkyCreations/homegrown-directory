@@ -7,13 +7,14 @@ country: New Zealand
 region: Manawatū-Whanganui
 city: Palmerston North
 address: 973 Fitzherbert Road East, RD1, Palmerston North
-description: Organic dairy farm on the Manawatū River certified since 2004 and committed to sustainable practices.
+description: Organic dairy farm on the Manawatū River certified since 2004 and committed
+  to sustainable practices.
 practices:
-  - Certified organic
+- Certified organic
 products:
-  - Dairy products
+- Dairy products
 services:
-  - Farm
+- Farm
 website: ''
 email: windriverorganic@gmail.com
 phone: ''
@@ -23,5 +24,7 @@ lat: ''
 lon: ''
 supplies_to: []
 sources:
-  - Producer submission
+- Producer submission
+products_tags:
+- dairy
 ---

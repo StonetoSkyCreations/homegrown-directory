@@ -4,7 +4,8 @@ title: Zany Zeus
 slug: zany-zeus
 name: Zany Zeus
 type: Business
-description: Producer of cheese and ice cream using certified organic ingredients in Wellington.
+description: Producer of cheese and ice cream using certified organic ingredients
+  in Wellington.
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -28,4 +29,6 @@ source_urls:
 hours: Mon–Sat 10:00–20:00; Sun closed
 last_checked: '2025-12-09'
 notes: ''
+products_tags:
+- dairy
 ---

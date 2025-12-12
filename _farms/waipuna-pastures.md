@@ -1,30 +1,34 @@
 ---
-title: "Waipuna Pastures"
+title: Waipuna Pastures
 slug: waipuna-pastures
-country: "New Zealand"
+country: New Zealand
 country_slug: new-zealand
-region: "Canterbury"
-city: "Geraldine"
+region: Canterbury
+city: Geraldine
 lat: -44.094
 lon: 171.243
 practices:
-  - "Pasture-raised"
-  - "Regenerative"
-  - "Humane handling"
+- Pasture-raised
+- Regenerative
+- Humane handling
 products:
-  - "Meat"
-  - "Eggs"
-  - "Dairy"
+- Meat
+- Eggs
+- Dairy
 services:
-  - "Wholesale"
-  - "Restaurant supply"
-  - "Online ordering"
+- Wholesale
+- Restaurant supply
+- Online ordering
 supplies_to:
-  - city-honest-grocer
-  - kopupako-kitchen
-  - supply-circle-hub
-description: "Mixed livestock on diverse pastures with long rest periods and low stocking rates."
-website: "https://waipunapastures.example.nz"
+- city-honest-grocer
+- kopupako-kitchen
+- supply-circle-hub
+description: Mixed livestock on diverse pastures with long rest periods and low stocking
+  rates.
+website: https://waipunapastures.example.nz
 phone: "+64 27 555 0192"
+products_tags:
+- dairy
+- meat
 ---
 Waipuna Pastures keeps cattle, sheep, and hens moving across long-rotation pastures, using multi-species swards and no synthetic nitrogen. Offal, bones, and hides are kept in circular use with local butchers, while customers can order bulk packs direct.

@@ -7,24 +7,27 @@ country: New Zealand
 region: Manawatū-Whanganui
 city: Palmerston North
 address: Te Matai Road, Palmerston North
-description: One of New Zealand’s oldest certified organic farms producing yoghurt and milk using biodynamic and regenerative principles with on-site processing.
+description: One of New Zealand’s oldest certified organic farms producing yoghurt
+  and milk using biodynamic and regenerative principles with on-site processing.
 practices:
-  - Certified organic
-  - Biodynamic
-  - Regenerative
+- Certified organic
+- Biodynamic
+- Regenerative
 products:
-  - Yoghurt
-  - Milk
+- Yoghurt
+- Milk
 services:
-  - Dairy production
+- Dairy production
 website: https://biofarm.co.nz
 email: ''
-phone: "06 354 8600"
+phone: 06 354 8600
 social: ''
 hours: ''
 lat: ''
 lon: ''
 supplies_to: []
 sources:
-  - https://biofarm.co.nz
+- https://biofarm.co.nz
+products_tags:
+- dairy
 ---

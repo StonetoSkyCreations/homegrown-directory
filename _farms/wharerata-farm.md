@@ -7,35 +7,39 @@ country: New Zealand
 region: Wellington
 city: Pirinoa
 address: Pirinoa, South Wairarapa
-description: Fourth-generation certified-organic mixed farm raising deer, sheep, beef and organic dairy grazers while restoring native biodiversity in the Haurangi foothills.
+description: Fourth-generation certified-organic mixed farm raising deer, sheep, beef
+  and organic dairy grazers while restoring native biodiversity in the Haurangi foothills.
 practices:
-  - certified-organic
-  - regenerative
-  - biodiversity conservation
-  - multi-species pastures
+- certified-organic
+- regenerative
+- biodiversity conservation
+- multi-species pastures
 products:
-  - venison
-  - organic lamb and beef
-  - certified organic dairy grazing
-  - honey (from on-farm hives)
+- venison
+- organic lamb and beef
+- certified organic dairy grazing
+- honey (from on-farm hives)
 services:
-  - farm tours and educational visits (by arrangement)
-  - wholesale venison through First Light
-  - supplies Little Farms lamb and meat boxes
-website:
-email:
-phone:
-social:
-hours:
+- farm tours and educational visits (by arrangement)
+- wholesale venison through First Light
+- supplies Little Farms lamb and meat boxes
+website: 
+email: 
+phone: 
+social: 
+hours: 
 market_days: []
-lat:
-lon:
+lat: 
+lon: 
 supplies_to:
-  - little-farms
+- little-farms
 sources:
-  - https://wearelittlefarms.com/blogs/meet-the-growers/wharerata-farm
-  - https://goldpine.co.nz/over-the-fence/wharerata-farm
+- https://wearelittlefarms.com/blogs/meet-the-growers/wharerata-farm
+- https://goldpine.co.nz/over-the-fence/wharerata-farm
 last_checked: 2025-12-11
+products_tags:
+- dairy
+- meat
 ---
 Wharerata Farm sits in the heart of South Wairarapa's Pirinoa district, framed by the Haurangi Ranges and near Palliser Bay. The Atkinson family has farmed here for almost a century and achieved certified organic status in 1990. Fourth-generation farmer Sophie Atkinson and her partner Tim manage a diverse enterprise spanning deer, beef cattle, sheep and around 100 organic dairy grazers. The 200-hectare effective area benefits from fertile soils and a temperate microclimate.
 
