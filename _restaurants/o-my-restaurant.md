@@ -9,6 +9,7 @@ suburb: "Beaconsfield"
 address: "70 Princes Highway"
 postcode: "3807"
 type: "restaurant"
+subtype: restaurant
 practices:
   - "Farm-to-table"
   - "Organic"

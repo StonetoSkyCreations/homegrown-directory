@@ -9,6 +9,7 @@ suburb: "Currumbin Valley"
 address: "618 Tomewin Mountain Road"
 postcode: "4223"
 type: "farm-cafe"
+subtype: cafe
 practices:
   - "Organic"
   - "Biodynamic"

@@ -3,6 +3,7 @@ layout: vendor
 slug: flagship-eatery
 name: Flagship Eatery
 type: cafe
+subtype: cafe
 category: eatery
 description: Farm-to-fork café using locally sourced seasonal ingredients in Gisborne.
 country: NZ

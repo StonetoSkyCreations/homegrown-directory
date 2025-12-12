@@ -3,6 +3,7 @@ layout: vendor
 slug: origin-northland
 name: Origin Northland
 type: cafe
+subtype: cafe
 category: mixed
 description: Café and deli inside an organic, spray-free grocer stocking organic meats, spray-free veg, and artisan goods.
 country: NZ

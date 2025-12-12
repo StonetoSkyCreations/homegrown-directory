@@ -9,6 +9,7 @@ suburb: "Elwood"
 address: "138-140 Ormond Road"
 postcode: "3184"
 type: "cafe"
+subtype: cafe
 practices:
   - "Organic"
   - "Raw"

@@ -9,6 +9,7 @@ suburb: "Collingwood"
 address: "312 Smith Street"
 postcode: "3066"
 type: "cafe"
+subtype: cafe
 practices:
   - "Organic"
   - "Vegan"

@@ -3,6 +3,7 @@ layout: vendor
 title: Bhanga Coffee Cart
 slug: bhanga-coffee-cart
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Bay of Plenty

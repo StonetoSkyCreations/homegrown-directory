@@ -3,6 +3,7 @@ layout: vendor
 slug: the-bikery-cafe
 name: The Bikery Café
 type: cafe
+subtype: cafe
 category: eatery
 description: Local-focused brunch café at the Velodrome using free-range and some organic produce.
 country: NZ

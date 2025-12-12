@@ -9,6 +9,7 @@ suburb: "Palm Beach"
 address: "Shop 23 Nineteenth Avenue S/C"
 postcode: "4221"
 type: "cafe"
+subtype: cafe
 practices:
   - "Organic"
 products:

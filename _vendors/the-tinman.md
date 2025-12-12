@@ -3,6 +3,7 @@ layout: vendor
 title: The Tinman
 slug: the-tinman
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

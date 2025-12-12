@@ -3,6 +3,7 @@ layout: vendor
 slug: farm-house-cafe
 name: Farm House Café
 type: cafe
+subtype: cafe
 category: eatery
 description: Paddock-to-plate café on a farm with buffalo dairy, orchard, and honey; serves seasonal local meals.
 country: NZ

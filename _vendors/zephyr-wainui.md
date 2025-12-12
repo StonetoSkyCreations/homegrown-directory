@@ -3,6 +3,7 @@ layout: vendor
 slug: zephyr-wainui
 name: Zephyr Wainui
 type: cafe
+subtype: cafe
 category: eatery
 description: Plant-based café offering organic coffee and seasonal local produce at Wainui Beach.
 country: NZ

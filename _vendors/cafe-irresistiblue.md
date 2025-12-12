@@ -3,6 +3,7 @@ layout: vendor
 slug: cafe-irresistiblue
 name: Café Irresistiblue
 type: cafe
+subtype: cafe
 category: eatery
 description: Café set on NZ’s largest BioGro-certified organic blueberry farm in Monavale.
 country: NZ

@@ -9,6 +9,7 @@ suburb: "Armadale"
 address: "17 Morey Street"
 postcode: "3143"
 type: "cafe"
+subtype: cafe
 practices:
   - "Organic"
   - "Local"

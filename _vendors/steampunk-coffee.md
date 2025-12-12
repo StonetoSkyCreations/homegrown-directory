@@ -3,6 +3,7 @@ layout: vendor
 title: Steampunk Coffee
 slug: steampunk-coffee
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Taranaki

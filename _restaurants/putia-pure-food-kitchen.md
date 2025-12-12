@@ -9,6 +9,7 @@ suburb: "Banyo"
 address: "17 Royal Parade"
 postcode: "4014"
 type: "restaurant"
+subtype: restaurant
 practices:
   - "Free-range"
   - "Sustainable"

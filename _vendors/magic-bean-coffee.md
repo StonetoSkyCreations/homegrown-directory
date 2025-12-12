@@ -3,6 +3,7 @@ layout: vendor
 title: Magic Bean Coffee
 slug: magic-bean-coffee
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

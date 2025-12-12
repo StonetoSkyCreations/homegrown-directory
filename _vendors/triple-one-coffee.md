@@ -3,6 +3,7 @@ layout: vendor
 title: Triple One Coffee
 slug: triple-one-coffee
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Bay of Plenty

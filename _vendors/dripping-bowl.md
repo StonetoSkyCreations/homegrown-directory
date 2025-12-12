@@ -3,6 +3,7 @@ layout: vendor
 title: Dripping Bowl
 slug: dripping-bowl
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Otago

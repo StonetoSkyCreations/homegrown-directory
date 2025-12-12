@@ -3,6 +3,7 @@ layout: vendor
 slug: mapu-test-kitchen
 name: MAPU Test Kitchen
 type: restaurant
+subtype: restaurant
 category: eatery
 description: Foraging-based micro-restaurant in Lyttelton using wild and home-grown ingredients.
 country: NZ

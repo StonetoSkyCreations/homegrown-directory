@@ -3,6 +3,7 @@ layout: vendor
 title: The Coffee Store (Coffee Cart Hire)
 slug: the-coffee-store-coffee-cart-hire
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

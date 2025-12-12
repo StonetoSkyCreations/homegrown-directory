@@ -3,6 +3,7 @@ layout: vendor
 slug: the-wholemeal-cafe
 name: The Wholemeal Café
 type: cafe
+subtype: cafe
 category: eatery
 description: Vegetarian café in Tākaka using organic produce grown onsite or sourced locally.
 country: NZ

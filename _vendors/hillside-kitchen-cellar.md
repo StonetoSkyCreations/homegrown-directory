@@ -3,6 +3,7 @@ layout: vendor
 slug: hillside-kitchen-cellar
 name: Hillside Kitchen & Cellar
 type: restaurant
+subtype: restaurant
 category: eatery
 description: Sustainable vegetarian restaurant featuring foraged and locally grown produce in Thorndon.
 country: NZ

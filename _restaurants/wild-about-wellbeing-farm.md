@@ -9,6 +9,7 @@ suburb: "Wandin North"
 address: "38-40 Hunter Road"
 postcode: "3139"
 type: "restaurant"
+subtype: restaurant
 practices:
   - "Organic"
   - "Seasonal"

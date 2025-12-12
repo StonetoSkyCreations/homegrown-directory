@@ -3,6 +3,7 @@ layout: vendor
 title: Yolanda and Wolfe Coffee Caravan
 slug: yolanda-and-wolfe-coffee-caravan
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

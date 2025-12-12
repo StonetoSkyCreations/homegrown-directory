@@ -3,6 +3,7 @@ layout: vendor
 slug: hill-house-cafe
 name: Hill House Café
 type: cafe
+subtype: cafe
 category: eatery
 description: City café counterpart to Farm House, using the same seasonal farm-sourced ingredients.
 country: NZ

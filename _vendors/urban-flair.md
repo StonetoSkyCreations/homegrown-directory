@@ -3,6 +3,7 @@ layout: vendor
 title: Urban Flair
 slug: urban-flair
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

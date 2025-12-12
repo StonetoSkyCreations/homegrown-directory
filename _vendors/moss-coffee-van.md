@@ -3,6 +3,7 @@ layout: vendor
 title: Moss Coffee Van
 slug: moss-coffee-van
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

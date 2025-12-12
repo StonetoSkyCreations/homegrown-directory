@@ -3,6 +3,7 @@ layout: vendor
 slug: ahi-restaurant
 name: Ahi Restaurant
 type: restaurant
+subtype: restaurant
 category: eatery
 description: Fine dining restaurant using hyper-seasonal NZ ingredients and produce from its own organic/regenerative farm.
 country: NZ

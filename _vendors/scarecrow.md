@@ -3,6 +3,7 @@ layout: vendor
 slug: scarecrow
 name: Scarecrow
 type: cafe
+subtype: cafe
 category: mixed
 description: Urban kitchen and grocery offering a seasonal menu with organic coffees and teas alongside fresh, nourishing food.
 country: NZ

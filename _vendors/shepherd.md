@@ -3,6 +3,7 @@ layout: vendor
 slug: shepherd
 name: Shepherd
 type: restaurant
+subtype: restaurant
 category: eatery
 description: Restaurant in Te Aro using ethically and locally sourced ingredients, collaborating with regional farmers and foragers.
 country: NZ

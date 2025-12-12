@@ -9,6 +9,7 @@ suburb: "Surfers Paradise"
 address: "2932 Gold Coast Hwy"
 postcode: "4217"
 type: "cafe"
+subtype: cafe
 practices:
   - "Organic"
   - "Chemical-free"

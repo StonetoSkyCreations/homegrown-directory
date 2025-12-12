@@ -9,6 +9,7 @@ suburb: "Tugun"
 address: "570 Gold Coast Highway"
 postcode: "4224"
 type: "cafe"
+subtype: cafe
 practices:
   - "Ethical meat"
   - "Organic"

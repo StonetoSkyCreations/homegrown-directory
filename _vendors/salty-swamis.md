@@ -3,6 +3,7 @@ layout: vendor
 title: Salty Swamis
 slug: salty-swamis
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Tasman

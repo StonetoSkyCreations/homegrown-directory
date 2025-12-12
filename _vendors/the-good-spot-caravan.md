@@ -3,6 +3,7 @@ layout: vendor
 title: The Good Spot Caravan
 slug: the-good-spot-caravan
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Otago

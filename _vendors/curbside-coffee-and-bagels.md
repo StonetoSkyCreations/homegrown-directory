@@ -3,6 +3,7 @@ layout: vendor
 title: Curbside Coffee & Bagels
 slug: curbside-coffee-and-bagels
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Otago

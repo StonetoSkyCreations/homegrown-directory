@@ -9,6 +9,7 @@ suburb: "Kyogle"
 address: "82 Summerland Way"
 postcode: "2474"
 type: "cafe"
+subtype: cafe
 practices:
   - "Organic"
   - "Local"

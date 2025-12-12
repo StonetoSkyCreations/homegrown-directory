@@ -3,6 +3,7 @@ layout: vendor
 title: Little Black Coffee Truck
 slug: little-black-coffee-truck
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Wellington

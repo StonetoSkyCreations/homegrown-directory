@@ -9,6 +9,7 @@ suburb: "Melbourne"
 address: "Level 6, Curtin House, 252 Swanston Street"
 postcode: "3000"
 type: "restaurant"
+subtype: restaurant
 practices:
   - "Seasonal"
   - "Local"

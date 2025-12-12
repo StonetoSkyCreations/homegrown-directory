@@ -3,6 +3,7 @@ layout: vendor
 title: Charlie Grace Mobile Café
 slug: charlie-grace-mobile-cafe
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

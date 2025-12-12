@@ -9,6 +9,7 @@ suburb: "Ballina"
 address: "75-77 River St"
 postcode: "2478"
 type: "cafe"
+subtype: cafe
 practices:
   - "Local"
   - "Seasonal"

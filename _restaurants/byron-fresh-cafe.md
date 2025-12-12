@@ -9,6 +9,7 @@ suburb: "Byron Bay"
 address: "7 Jonson St"
 postcode: "2481"
 type: "cafe"
+subtype: cafe
 practices:
   - "Organic"
   - "Free-range"

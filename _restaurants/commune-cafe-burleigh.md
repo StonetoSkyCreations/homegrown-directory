@@ -9,6 +9,7 @@ suburb: "Burleigh Heads"
 address: "1844 Gold Coast Hwy"
 postcode: "4220"
 type: "cafe"
+subtype: cafe
 practices:
   - "Organic"
   - "Local"

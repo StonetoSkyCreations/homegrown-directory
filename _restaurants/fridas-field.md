@@ -9,6 +9,7 @@ suburb: "Nashua"
 address: "76 Booyong Rd"
 postcode: "2479"
 type: "restaurant"
+subtype: restaurant
 practices:
   - "Regenerative"
   - "Seasonal"

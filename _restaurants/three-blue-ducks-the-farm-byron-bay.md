@@ -9,6 +9,7 @@ suburb: "Ewingsdale"
 address: "11 Ewingsdale Road"
 postcode: "2481"
 type: "restaurant"
+subtype: restaurant
 practices:
   - "Organic"
   - "Spray-free"

@@ -9,6 +9,7 @@ suburb: "Kensington"
 address: "399 Macaulay Road"
 postcode: "3031"
 type: "cafe"
+subtype: cafe
 practices:
   - "Local"
   - "Seasonal"

@@ -3,6 +3,7 @@ layout: vendor
 title: Pixie Truck
 slug: pixie-truck
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Hawke's Bay

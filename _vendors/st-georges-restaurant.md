@@ -3,6 +3,7 @@ layout: vendor
 slug: st-georges-restaurant
 name: St Georges Restaurant
 type: restaurant
+subtype: restaurant
 category: eatery
 description: Farm-to-table dining where around 90% of produce comes from on-site organic gardens.
 country: NZ

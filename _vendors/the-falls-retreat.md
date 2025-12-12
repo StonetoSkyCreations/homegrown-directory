@@ -3,6 +3,7 @@ layout: vendor
 slug: the-falls-retreat
 name: The Falls Retreat
 type: restaurant
+subtype: restaurant
 category: eatery
 description: Garden-to-table restaurant with extensive organic gardens and seasonal menus in Waihi/Karangahake.
 country: NZ

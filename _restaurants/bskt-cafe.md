@@ -9,6 +9,7 @@ suburb: "Mermaid Beach"
 address: "4 Lavarack Rd"
 postcode: "4218"
 type: "cafe"
+subtype: cafe
 practices:
   - "Free-range"
   - "Organic"

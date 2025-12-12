@@ -2,6 +2,7 @@
 title: Gatherings
 slug: gatherings-christchurch
 type: restaurant
+subtype: restaurant
 published: true
 country: New Zealand
 country_slug: new-zealand

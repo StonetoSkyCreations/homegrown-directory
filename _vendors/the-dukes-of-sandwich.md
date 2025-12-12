@@ -3,6 +3,7 @@ layout: vendor
 title: The Dukes of Sandwich
 slug: the-dukes-of-sandwich
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Canterbury

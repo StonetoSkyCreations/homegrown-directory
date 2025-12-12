@@ -9,6 +9,7 @@ suburb: "Brunswick East"
 address: "Corner of Roberts & Stewart Streets"
 postcode: "3057"
 type: "cafe"
+subtype: cafe
 practices:
   - "Organic"
   - "Local"

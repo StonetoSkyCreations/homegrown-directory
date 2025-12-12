@@ -3,6 +3,7 @@ layout: vendor
 title: Brotisserie
 slug: brotisserie
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Auckland

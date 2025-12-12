@@ -3,6 +3,7 @@ layout: vendor
 title: Georgies Coffee Cart
 slug: georgies-coffee-cart
 type: food-truck
+subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Waikato

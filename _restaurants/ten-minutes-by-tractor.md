@@ -9,6 +9,7 @@ suburb: "Main Ridge"
 address: "1333 Mornington-Flinders Road"
 postcode: "3928"
 type: "restaurant"
+subtype: restaurant
 practices:
   - "Regenerative"
   - "Seasonal"

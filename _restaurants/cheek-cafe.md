@@ -9,6 +9,7 @@ suburb: "Southport"
 address: "412/1 Como Crescent"
 postcode: "4215"
 type: "cafe"
+subtype: cafe
 practices:
   - "Pasture-raised"
   - "Grass-fed"

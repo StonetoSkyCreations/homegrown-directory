@@ -9,6 +9,7 @@ suburb: "Teneriffe"
 address: "Winchcombe Carson Woolstores, 54 Vernon Terrace"
 postcode: "4005"
 type: "cafe"
+subtype: cafe
 practices:
   - "Organic"
   - "Pasture-raised"

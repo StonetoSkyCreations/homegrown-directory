@@ -3,6 +3,7 @@ layout: vendor
 slug: no7-balmac
 name: No.7 Balmac
 type: restaurant
+subtype: restaurant
 category: eatery
 description: Bistro with a large organic kitchen garden and locally sourced free-range meat and eggs.
 country: NZ

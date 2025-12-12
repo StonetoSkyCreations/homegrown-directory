@@ -3,6 +3,7 @@ layout: vendor
 slug: sherwood-queenstown
 name: Sherwood Queenstown
 type: restaurant
+subtype: restaurant
 category: eatery
 description: Destination restaurant with on-site organic gardens and a foraging program in Queenstown.
 country: NZ

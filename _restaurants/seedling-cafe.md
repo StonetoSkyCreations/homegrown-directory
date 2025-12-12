@@ -9,6 +9,7 @@ suburb: "Melbourne"
 address: "275 Flinders Lane"
 postcode: "3000"
 type: "cafe"
+subtype: cafe
 practices:
   - "Free-range"
   - "Grass-fed"
