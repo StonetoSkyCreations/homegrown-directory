@@ -85,16 +85,33 @@
   };
   const canonicalizePractices = (list) => {
     const result = [];
-    list.forEach((token) => {
-      let t = token;
-      if (t.includes("organic")) t = "organic";
-      else if (t.includes("spray") || t.includes("chemical")) t = "spray-free";
-      else if (t.includes("regen")) t = "regenerative";
-      else if (t.includes("biodynamic") || t.includes("demeter")) t = "biodynamic";
-      else if (t.includes("wild")) t = "wild";
-      else if (t.includes("pasture") || t.includes("grass-fed") || t.includes("grassfed")) t = "pasture-raised";
-      else if (t.includes("local")) t = "local";
-      result.push(t);
+    list.forEach((value) => {
+      const token = normalizeToken(value);
+      if (!token) return;
+      let mapped = "";
+      if (token.includes("organic") || token.includes("biogro") || token.includes("asurequality")) {
+        mapped = "organic";
+      } else if (token.includes("spray-free") || token.includes("spray free") || token.includes("no-spray") || token.includes("no spray")) {
+        mapped = "spray-free";
+      } else if (token.includes("regenerative") || token.includes("regen") || token.includes("regeneration")) {
+        mapped = "regenerative";
+      } else if (token.includes("biodynamic") || token.includes("demeter")) {
+        mapped = "biodynamic";
+      } else if (token.includes("wild-foraged") || token.includes("wild harvested") || token.includes("wild-harvest") || token.includes("foraged")) {
+        mapped = "wild";
+      } else if (token.includes("pasture-raised") || token.includes("pasture raised") || token.includes("100% grass")) {
+        mapped = "pasture-raised";
+      } else if (
+        token.includes("local") ||
+        token.includes("locally grown") ||
+        token.includes("local growers") ||
+        token.includes("local producers") ||
+        token.includes("made locally") ||
+        token.includes("nz-made")
+      ) {
+        mapped = "local";
+      }
+      result.push(mapped || token);
     });
     return Array.from(new Set(result.filter(Boolean)));
   };
@@ -395,7 +412,7 @@
     const selectedPractices = normalizeList(selections.practices);
     const selectedProducts = Array.isArray(selections.products) ? normalizeList(selections.products) : [];
     const selectedServices = normalizeList(selections.services);
-    const itemPractices = canonicalizePractices(normalizeList(item.practices || item.practices_tags || item.services));
+    const itemPractices = canonicalizePractices(normalizeList(item.practices || item.practices_tags));
     const itemProducts = normalizeList(item.products || item.products_tags);
     const itemServices = normalizeList(item.services);
     const practicesMatch = !selectedPractices.length || selectedPractices.every((p) => itemPractices.includes(p));
