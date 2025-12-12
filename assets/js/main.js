@@ -83,6 +83,21 @@
     const token = normalizeToken(value);
     return TYPE_TOKENS[token] || token;
   };
+  const canonicalizePractices = (list) => {
+    const result = [];
+    list.forEach((token) => {
+      let t = token;
+      if (t.includes("organic")) t = "organic";
+      else if (t.includes("spray") || t.includes("chemical")) t = "spray-free";
+      else if (t.includes("regen")) t = "regenerative";
+      else if (t.includes("biodynamic") || t.includes("demeter")) t = "biodynamic";
+      else if (t.includes("wild")) t = "wild";
+      else if (t.includes("pasture") || t.includes("grass-fed") || t.includes("grassfed")) t = "pasture-raised";
+      else if (t.includes("local")) t = "local";
+      result.push(t);
+    });
+    return Array.from(new Set(result.filter(Boolean)));
+  };
 
   const populateHeroRegions = (countrySlug) => {
     if (!heroRegionSelect || !listings.length) return;
@@ -234,7 +249,7 @@
 
       cards.forEach((card) => {
         const region = normalizeRegion(card.dataset.region);
-        const practices = normalizeList((card.dataset.practices || "").split(","));
+        const practices = canonicalizePractices(normalizeList((card.dataset.practices || "").split(",")));
         const products = normalizeList((card.dataset.products || "").split(","));
         const subtype = normalizeToken(card.dataset.subtype || card.dataset.type);
         const country = normalizeCountry(card.dataset.country);
@@ -342,7 +357,7 @@
 
     // Add tags/arrays: practices, products, services, specialty_tags
     if (Array.isArray(item.practices)) {
-      haystackParts.push(item.practices.join(" "));
+      haystackParts.push(canonicalizePractices(item.practices).join(" "));
     }
     if (Array.isArray(item.products)) {
       haystackParts.push(item.products.join(" "));
@@ -380,7 +395,7 @@
     const selectedPractices = normalizeList(selections.practices);
     const selectedProducts = Array.isArray(selections.products) ? normalizeList(selections.products) : [];
     const selectedServices = normalizeList(selections.services);
-    const itemPractices = normalizeList(item.practices || item.practices_tags || item.services);
+    const itemPractices = canonicalizePractices(normalizeList(item.practices || item.practices_tags || item.services));
     const itemProducts = normalizeList(item.products || item.products_tags);
     const itemServices = normalizeList(item.services);
     const practicesMatch = !selectedPractices.length || selectedPractices.every((p) => itemPractices.includes(p));
