@@ -4,6 +4,7 @@ title: "The Waiheke Bean"
 slug: the-waiheke-bean
 name: "The Waiheke Bean"
 type: producer
+subtype: cafe
 category: roastery
 description: "Coffee roastery offering certified organic, fair-trade coffee beans roasted on Waiheke Island, dedicated to sustainability and ethical sourcing."
 country: New Zealand

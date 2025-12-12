@@ -3,6 +3,7 @@ layout: vendor
 slug: oatery-wellington
 name: The Oatery
 type: producer
+subtype: cafe
 category: grocer
 description: Wellington oat producer using spray-free New Zealand-grown oats.
 country: NZ

@@ -3,6 +3,7 @@ layout: vendor
 slug: power-plant-wholefood-organic-store
 name: Power Plant Wholefood & Organic Store
 type: wholefoods-store
+subtype: cafe
 category: mixed
 description: Organic vegan café and wholefoods store featuring local produce and organic ingredients.
 country: NZ

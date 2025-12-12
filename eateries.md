@@ -17,7 +17,7 @@ seo_description: >
       <div class="filter-row">
         <p class="filter-label">Looking for</p>
         <div class="pill-group">
-          {% assign subtypes = "cafe,restaurant,bar-restaurant,bakery,deli,food-truck" | split: "," %}
+          {% assign subtypes = "cafe,restaurant,food-truck" | split: "," %}
           {% for sub in subtypes %}
           <label class="pill pill--checkbox">
             <input type="checkbox" name="subtype" value="{{ sub }}">

@@ -28,4 +28,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+subtype: cafe
 ---

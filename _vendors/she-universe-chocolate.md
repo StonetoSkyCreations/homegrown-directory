@@ -3,6 +3,7 @@ layout: vendor
 slug: she-universe-chocolate
 name: She Universe Chocolate
 type: producer
+subtype: cafe
 category: cafe
 description: Organic and ethically sourced chocolate crafted by She Universe across Christchurch locations, offering artisan chocolates and cacao-based drinks.
 country: NZ

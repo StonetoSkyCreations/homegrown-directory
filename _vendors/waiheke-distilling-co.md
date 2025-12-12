@@ -4,6 +4,7 @@ title: "Waiheke Distilling Co."
 slug: waiheke-distilling-co
 name: "Waiheke Distilling Co."
 type: producer
+subtype: cafe
 category: distillery
 description: "Craft distillery producing gin and spirits from botanicals grown in a spray-free, bee-friendly garden, offering tastings and a garden-to-glass experience."
 country: New Zealand

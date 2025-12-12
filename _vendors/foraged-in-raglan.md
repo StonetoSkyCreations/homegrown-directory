@@ -3,6 +3,7 @@ layout: vendor
 slug: foraged-in-raglan
 name: Foraged In Raglan
 type: producer
+subtype: cafe
 category: grocer
 description: Small-batch preserves made from local spray-free produce that would otherwise go to waste.
 country: NZ

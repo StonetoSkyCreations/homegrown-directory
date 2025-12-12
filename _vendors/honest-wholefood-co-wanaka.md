@@ -3,6 +3,7 @@ layout: vendor
 slug: honest-wholefood-co-wanaka
 name: Honest Wholefood Co.
 type: producer
+subtype: cafe
 category: grocer
 description: Wānaka producer making plant-based snacks with organic ingredients where possible.
 country: NZ

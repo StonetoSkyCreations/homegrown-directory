@@ -3,6 +3,7 @@ layout: vendor
 slug: sandfire-seedlings-hawkes-bay
 name: Sandfire Seedlings
 type: producer
+subtype: cafe
 category: nursery
 description: Heritage seedlings grown organically for Hawke's Bay markets.
 country: NZ

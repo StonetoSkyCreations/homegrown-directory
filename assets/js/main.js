@@ -271,6 +271,7 @@
     if (textFilter) textFilter.addEventListener("input", () => runDirectoryFilters && runDirectoryFilters());
     tagFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
     subtypeFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
+    productFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
   }
 
   if (typeof runDirectoryFilters === "function") runDirectoryFilters();

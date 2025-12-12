@@ -3,6 +3,7 @@ layout: vendor
 slug: green-dinner-table
 name: Green Dinner Table
 type: meal-kit
+subtype: cafe
 category: delivery
 description: Plant-based meal kit service delivering vegan recipes using seasonal vegetables and locally sourced ingredients across New Zealand.
 country: NZ

@@ -3,6 +3,7 @@ layout: vendor
 slug: wildflour-whangarei
 name: Wildflour NZ (Whangārei)
 type: producer
+subtype: cafe
 category: bakery
 description: Bakery using organic flour and sourdough starters, selling via Whangārei markets.
 country: NZ

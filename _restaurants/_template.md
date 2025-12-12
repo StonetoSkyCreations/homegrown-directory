@@ -20,5 +20,6 @@ website: ''
 email: ''
 phone: ''
 description: One-sentence description for cards and SEO.
+subtype: restaurant
 ---
 Describe the food, sourcing philosophy, and any sourcing notes on the menu. Add farms and hubs in `sources` so they appear as cross-links.

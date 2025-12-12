@@ -3,6 +3,7 @@ layout: vendor
 slug: selwyn-co-op
 name: Selwyn Organics Co-op
 type: food-coop
+subtype: cafe
 category: co-op
 description: Community-run co-operative in Rolleston making certified organic, spray-free and natural foods accessible through bulk purchasing.
 country: NZ

@@ -3,6 +3,7 @@ layout: vendor
 slug: havana-coffee-works
 name: Havana Coffee Works
 type: producer
+subtype: cafe
 category: cafe
 description: Wellington roastery and café serving Fair Trade Organic certified coffee.
 country: NZ

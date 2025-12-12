@@ -3,6 +3,7 @@ layout: vendor
 slug: tasman-bay-salt-co
 name: Tasman Bay Salt Co.
 type: producer
+subtype: cafe
 category: grocer
 description: Wild-harvested sea salt from the clean waters of Tasman Bay.
 country: NZ
