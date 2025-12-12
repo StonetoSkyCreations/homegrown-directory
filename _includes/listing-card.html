@@ -7,7 +7,7 @@
 {% assign collection_key = listing.collection | downcase %}
 {% assign card_label = collection_key | capitalize %}
 {% assign type_token = collection_key %}
-{% assign subtype_raw = listing.type | default: listing.listing_type | default: listing.category %}
+{% assign subtype_raw = listing.subtype | default: listing.type | default: listing.listing_type | default: listing.category %}
 {% assign address_parts = "" | split: "" %}
 {% if listing.address %}{% assign address_parts = address_parts | push: listing.address %}{% endif %}
 {% if listing.suburb %}{% assign address_parts = address_parts | push: listing.suburb %}{% endif %}

@@ -7,7 +7,7 @@ permalink: /search.json
 {% for doc in all %}
   {% assign display_type = doc.collection | capitalize %}
   {% assign type_token = doc.collection %}
-  {% assign subtype_raw = doc.type | default: doc.listing_type | default: doc.category %}
+  {% assign subtype_raw = doc.subtype | default: doc.type | default: doc.listing_type | default: doc.category %}
   {% case doc.collection %}
     {% when 'stores' %}
       {% assign display_type = 'Grocer' %}
