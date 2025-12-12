@@ -27,6 +27,19 @@ permalink: /search.json
       {% assign type_token = 'market' %}
   {% endcase %}
   {% assign subtype_token = subtype_raw | default: type_token | slugify %}
+  {% assign practices = doc.practices_tags | default: empty %}
+  {% if practices %}
+    {% assign practices = practices | join: ',' | downcase | split: ',' | uniq %}
+  {% endif %}
+  {% assign products = doc.products_tags | default: doc.products | default: empty %}
+  {% if products %}
+    {% assign products = products | join: ',' | downcase | split: ',' | uniq %}
+  {% endif %}
+  {% assign services = doc.services_tags | default: doc.services | default: empty %}
+  {% if services %}
+    {% assign services = services | join: ',' | downcase | split: ',' | uniq %}
+  {% endif %}
+  {% assign long_desc = doc.long_description | default: doc.description | default: doc.short_description | default: doc.meta_description | default: doc.excerpt %}
   {
     "id": "{{ doc.id | default: doc.slug | slugify }}",
     "title": {{ doc.title | default: doc.name | jsonify }},
@@ -42,16 +55,16 @@ permalink: /search.json
     "country_slug": {{ doc.country_slug | jsonify }},
     "region": {{ doc.region | jsonify }},
     "city": {{ doc.city | jsonify }},
-    "practices": {{ doc.practices | jsonify }},
-    "products": {{ doc.products | jsonify }},
-    "services": {{ doc.services | jsonify }},
+    "practices": {{ practices | jsonify }},
+    "products": {{ products | jsonify }},
+    "services": {{ services | jsonify }},
     "supplies_to": {{ doc.supplies_to | jsonify }},
     "sources": {{ doc.sources | jsonify }},
     "hours": {{ doc.hours | jsonify }},
     "lat": {{ doc.lat | jsonify }},
     "lon": {{ doc.lon | jsonify }},
     "featured": {{ doc.featured | default: false | jsonify }},
-    "description": {{ doc.description | default: doc.excerpt | strip_html | strip_newlines | jsonify }}
+    "description": {{ long_desc | strip_html | strip_newlines | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]

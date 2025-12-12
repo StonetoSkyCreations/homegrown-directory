@@ -322,20 +322,24 @@
 
   function matchesFilters(item, selections, options = {}) {
     const includePageFilters = options.includePageFilters !== false;
-    const textQuery = normalizeToken(selections.query || "");
-    const haystack = [
+    const rawQuery = selections.query || "";
+    const textQuery = normalizeToken(rawQuery);
+    const queryTokens = textQuery ? textQuery.split(/\\s+/).filter(Boolean) : [];
+    const haystackParts = [
       item.title,
-      item.city,
-      item.region,
-      item.country,
       item.description,
-      (item.practices || []).join(" "),
-      (item.products || []).join(" "),
-      (item.services || []).join(" ")
-    ]
-      .map((part) => (part || "").toString().toLowerCase())
-      .join(" ");
-    const textMatches = !textQuery || haystack.includes(textQuery);
+      item.collection,
+      item.region,
+      item.city,
+      item.country,
+      item.type_token,
+      item.subtype_token
+    ];
+    if (Array.isArray(item.practices)) haystackParts.push(item.practices.join(" "));
+    if (Array.isArray(item.products)) haystackParts.push(item.products.join(" "));
+    if (Array.isArray(item.services)) haystackParts.push(item.services.join(" "));
+    const haystack = normalizeToken(haystackParts.join(" "));
+    const textMatches = !queryTokens.length || queryTokens.every((token) => haystack.includes(token));
     const selectedRegion = normalizeRegion(selections.region || "all");
     const itemRegion = normalizeRegion(item.region);
     const regionMatches = selectedRegion === "all" || itemRegion === selectedRegion;
