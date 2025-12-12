@@ -55,11 +55,16 @@
   // Canonical type tokens used across filters and audits
   const TYPE_TOKENS = {
     farms: "farm",
+    farm: "farm",
     markets: "market",
+    market: "market",
     stores: "grocer",
+    grocer: "grocer",
     restaurants: "restaurant",
+    restaurant: "restaurant",
     vendors: "restaurant",
-    distributors: "distributor"
+    distributors: "distributor",
+    distributor: "distributor"
   };
 
   const DIRECTORY_PATHS = {
