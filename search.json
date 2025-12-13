@@ -59,7 +59,7 @@ permalink: /search.json
     "type_token": "{{ type_token }}",
     "subtype": {{ subtype_raw | default: type_token | jsonify }},
     "subtype_token": "{{ subtype_token }}",
-    "slug": "{{ doc.slug }}",
+    "slug": "{{ doc.slug | default: doc.id | default: doc.title | slugify }}",
     "url": "{{ doc.url | relative_url }}",
     "country": {{ doc.country | jsonify }},
     "country_slug": {{ doc.country_slug | jsonify }},

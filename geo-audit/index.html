@@ -145,7 +145,8 @@ noindex: true
     const tabCounts = {
       missing: document.querySelector('[data-tab-count="missing"]'),
       review: document.querySelector('[data-tab-count="review"]'),
-      weak: document.querySelector('[data-tab-count="weak"]')
+      weak: document.querySelector('[data-tab-count="weak"]'),
+      invalid: document.querySelector('[data-tab-count="invalid"]')
     };
     const downloadCurrentBtn = document.getElementById("downloadCsvTab");
     const downloadAllBtn = document.getElementById("downloadCsvAll");
@@ -163,6 +164,8 @@ noindex: true
       const lon = typeof item.lon === "number" ? item.lon : parseFloat(item.lon);
       return lat >= -90 && lat <= 90 && lon >= -180 && lon <= 180;
     };
+
+    const coordsProvided = (item) => item.lat !== null || item.lon !== null;
 
     const countBy = (arr, key, fallback = "unknown") => {
       return arr.reduce((acc, item) => {
@@ -242,10 +245,11 @@ noindex: true
       const snippetBtn = event.target.closest("[data-copy-snippet]");
       if (snippetBtn) {
         const snippet = snippetBtn.dataset.copySnippet;
+        const original = snippetBtn.textContent;
         copyToClipboard(snippet);
         snippetBtn.textContent = "Copied";
         setTimeout(() => {
-          snippetBtn.textContent = "Copy update snippet";
+          snippetBtn.textContent = original;
         }, 1000);
       }
     });
@@ -334,7 +338,8 @@ noindex: true
         allData = data;
         const total = data.length;
         const withCoords = data.filter(hasCoords);
-        const withoutCoords = data.filter((item) => !hasCoords(item));
+        const missingCoords = data.filter((item) => !hasCoords(item) && !coordsProvided(item));
+        const withoutCoords = data.filter((item) => !hasCoords(item)); /* includes invalid + missing for summary */
         const needsReview = data.filter(
           (item) =>
             hasCoords(item) &&
@@ -347,6 +352,7 @@ noindex: true
         const weakQueries = data.filter(
           (item) => (!item.geo_query || item.geo_query === "") && isWeakQuery(item)
         );
+        const invalidCoords = data.filter((item) => coordsProvided(item) && !hasCoords(item));
         const collectionCounts = countBy(data, "collection");
         const precisionCounts = countBy(data, "geo_precision", "none");
 
@@ -366,15 +372,17 @@ noindex: true
         const updateCount = (key, value) => {
           if (tabCounts[key]) tabCounts[key].textContent = value;
         };
-        updateCount("missing", withoutCoords.length);
+        updateCount("missing", missingCoords.length);
         updateCount("review", needsReview.length);
         updateCount("weak", weakQueries.length);
+        updateCount("invalid", invalidCoords.length);
         document.querySelector(".geo-audit__tabs").hidden = false;
 
         const getRowsForTab = (tab) => {
           if (tab === "review") return needsReview;
           if (tab === "weak") return weakQueries;
-          return withoutCoords;
+          if (tab === "invalid") return invalidCoords;
+          return missingCoords;
         };
 
         const renderTable = (rows) => {
@@ -382,6 +390,7 @@ noindex: true
             rows.length === 0
               ? "No listings in this queue."
               : "Use the actions to copy a geo query, open in maps, or prepare update snippets.";
+          const today = todayNZ();
           tableBody.innerHTML = rows
             .map((item) => {
               const location = buildLocation(item) || "—";
@@ -389,8 +398,11 @@ noindex: true
               const precision = item.geo_precision || "none";
               const mapLink = query ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}` : "";
               const slug = item.slug || "";
-              const snippet = slug
-                ? `lat: \nlon: \ngeo_precision: exact\ngeo_source: manual\ngeo_last_verified: ${todayNZ()}`
+              const updateSnippet = slug
+                ? `# Paste numeric coordinates only\nlat: \nlon: \ngeo_precision: exact\ngeo_source: manual\ngeo_last_verified: ${today}`
+                : "";
+              const fixSnippet = slug
+                ? `# Paste numeric coordinates only\nlat: \nlon: \ngeo_precision: none\ngeo_source: \ngeo_last_verified: ${today}`
                 : "";
               return `
                 <tr>
@@ -403,7 +415,8 @@ noindex: true
                     ${query ? `<button type="button" data-copy="${escapeHtml(query)}">Copy</button>` : ""}
                     ${mapLink ? `<a href="${mapLink}" target="_blank" rel="noopener">Open</a>` : ""}
                     ${slug ? `<button type="button" data-copy-slug="${escapeHtml(slug)}">Copy slug</button>` : ""}
-                    ${slug ? `<button type="button" data-copy-snippet="${encodeAttr(snippet)}">Copy update snippet</button>` : ""}
+                    ${slug ? `<button type="button" data-copy-snippet="${encodeAttr(updateSnippet)}">Copy update snippet</button>` : ""}
+                    ${slug ? `<button type="button" data-copy-snippet="${encodeAttr(fixSnippet)}">Copy fix snippet</button>` : ""}
                   </td>
                 </tr>
               `;
