@@ -4,7 +4,7 @@ slug: live2give-organics
 collection: stores
 country_slug: new-zealand
 country: New Zealand
-region: Manawatu-Whanganui
+region: Manawatū-Whanganui
 city: Palmerston North
 address: 15 Cyprus Place, Fitzherbert, Palmerston North, New Zealand
 description: Regenerative organic farm and online grocer delivering organic fruit,
