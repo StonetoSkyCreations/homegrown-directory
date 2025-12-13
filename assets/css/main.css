@@ -795,6 +795,11 @@ a:focus-visible {
   background: #f5f7f2;
   outline: none;
 }
+@media (min-width: 768px) {
+  .share-control {
+    display: none;
+  }
+}
 
 .tag-list {
   list-style: none;
