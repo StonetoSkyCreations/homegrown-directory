@@ -1,0 +1,65 @@
+# Missing Entities Ranked
+
+## Top 10 Missing Producers/Distributors
+- Farmers Mill — score 6 (3+ mentions, producer-like) — mentions 5 — listings: bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins, bohemian-bakery-cbd
+- Bohemian Bakery — score 6 (3+ mentions, producer-like) — mentions 4 — listings: bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins
+- Commonsense Organics — score 6 (3+ mentions, producer-like) — mentions 4 — listings: commonsense-wellington-city, commonsense-kapiti, commonsense-kilbirnie, commonsense-lower-hutt
+- Harris Farm Markets — score 6 (3+ mentions, producer-like) — mentions 3 — listings: harris-farm-west-end, harris-farm-isle-of-capri, harris-farm-clayfield
+- Hawke's Bay Farmers — score 6 (3+ mentions, producer-like) — mentions 3 — listings: jj-organics-napier, bayleaf-organics-haumoana, sandfire-seedlings-hawkes-bay
+- Islands Farmers Market — score 6 (3+ mentions, producer-like) — mentions 3 — listings: bay-of-islands-farmers-market-kerikeri, bay-of-islands-farmers-market-paihia, organic-corner-kerikeri
+- Jan Powers Farmers Market — score 6 (3+ mentions, producer-like) — mentions 3 — listings: jan-powers-farmers-market-powerhouse, jan-powers-farmers-market-mitchelton, jan-powers-farmers-market-manly
+- Jan Powers Farmers Markets — score 6 (3+ mentions, producer-like) — mentions 3 — listings: jan-powers-farmers-market-powerhouse, jan-powers-farmers-market-mitchelton, jan-powers-farmers-market-manly
+- Santos Organics — score 6 (3+ mentions, producer-like) — mentions 3 — listings: santos-organics-byron-arts-industrial, santos-organics-byron-bay-shop, santos-organics-mullumbimby
+- Black Estate — score 5 (hub mention, producer-like) — mentions 2 — listings: streamside-organics, black-estate-waipara
+
+## Top 50 Missing Entities
+- Farmers Mill — score 6 (3+ mentions, producer-like) — mentions 5 — listings: bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins, bohemian-bakery-cbd
+- Bohemian Bakery — score 6 (3+ mentions, producer-like) — mentions 4 — listings: bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins
+- Commonsense Organics — score 6 (3+ mentions, producer-like) — mentions 4 — listings: commonsense-wellington-city, commonsense-kapiti, commonsense-kilbirnie, commonsense-lower-hutt
+- Harris Farm Markets — score 6 (3+ mentions, producer-like) — mentions 3 — listings: harris-farm-west-end, harris-farm-isle-of-capri, harris-farm-clayfield
+- Hawke's Bay Farmers — score 6 (3+ mentions, producer-like) — mentions 3 — listings: jj-organics-napier, bayleaf-organics-haumoana, sandfire-seedlings-hawkes-bay
+- Islands Farmers Market — score 6 (3+ mentions, producer-like) — mentions 3 — listings: bay-of-islands-farmers-market-kerikeri, bay-of-islands-farmers-market-paihia, organic-corner-kerikeri
+- Jan Powers Farmers Market — score 6 (3+ mentions, producer-like) — mentions 3 — listings: jan-powers-farmers-market-powerhouse, jan-powers-farmers-market-mitchelton, jan-powers-farmers-market-manly
+- Jan Powers Farmers Markets — score 6 (3+ mentions, producer-like) — mentions 3 — listings: jan-powers-farmers-market-powerhouse, jan-powers-farmers-market-mitchelton, jan-powers-farmers-market-manly
+- Santos Organics — score 6 (3+ mentions, producer-like) — mentions 3 — listings: santos-organics-byron-arts-industrial, santos-organics-byron-bay-shop, santos-organics-mullumbimby
+- Black Estate — score 5 (hub mention, producer-like) — mentions 2 — listings: streamside-organics, black-estate-waipara
+- Ashley River Organics — score 5 (hub mention, producer-like) — mentions 1 — listings: streamside-organics
+- Gatherings Restaurant — score 5 (hub mention, producer-like) — mentions 1 — listings: streamside-organics
+- Greystone Wines — score 5 (hub mention, producer-like) — mentions 1 — listings: streamside-organics
+- Soul Food Organics — score 5 (hub mention, producer-like) — mentions 1 — listings: streamside-organics
+- Bay Farmers Market — score 2 (producer-like) — mentions 2 — listings: napier-urban-farmers-market, hawke-s-bay-farmers-market-hastings
+- Brown Owl Organics — score 2 (producer-like) — mentions 2 — listings: lux-organics-rotorua, brown-owl-organics-rotorua
+- Earth Food Co-op — score 2 (producer-like) — mentions 2 — listings: friends-of-the-earth-food-co-op, friends-of-the-earth-cafe
+- Organic Store — score 2 (producer-like) — mentions 2 — listings: anitas-organic-store-blenheim, power-plant-wholefood-organic-store
+- Riverside Market — score 2 (producer-like) — mentions 2 — listings: riverside-market-christchurch, barefoot-eatery-christchurch
+- Riverside Market Lane — score 2 (producer-like) — mentions 2 — listings: she-universe-riverside-chocolaterie, she-universe-chocolate
+- Amore Food Shop — score 2 (producer-like) — mentions 1 — listings: amore-food-shop-cafe-timaru
+- Aotearoa. Paired — score 2 (producer-like) — mentions 1 — listings: beckenham-butchery
+- Ave Shopping Centre — score 2 (producer-like) — mentions 1 — listings: the-wholefood-pantry-palm-beach
+- Bohemian Bakery Caf — score 2 (producer-like) — mentions 1 — listings: bohemian-bakery-cbd
+- Bostock Brothers Organic Free-Range — score 2 (producer-like) — mentions 1 — listings: beckenham-butchery
+- Bostock Certified Organic — score 2 (producer-like) — mentions 1 — listings: bostock-organic-kitchen-queenstown
+- Britomart Market — score 2 (producer-like) — mentions 1 — listings: oh-acai
+- Byron Bay Industrial Estate — score 2 (producer-like) — mentions 1 — listings: santos-organics-byron-arts-industrial
+- Byron Bay Shop — score 2 (producer-like) — mentions 1 — listings: santos-organics-byron-bay-shop
+- Catalina Bay Farmers Market — score 2 (producer-like) — mentions 1 — listings: sunshine-gelato
+- Chantal Shop — score 2 (producer-like) — mentions 1 — listings: chantal-shop-napier
+- Christchurch Farmers — score 2 (producer-like) — mentions 1 — listings: christchurch-farmers-market
+- City Bakery Cafe — score 2 (producer-like) — mentions 1 — listings: bohemian-bakery-cbd
+- City Bakery Cafe. It — score 2 (producer-like) — mentions 1 — listings: bohemian-bakery-cbd
+- Co Organics — score 2 (producer-like) — mentions 1 — listings: benge-and-co-organics-nelson
+- Coffee Cart Hire — score 2 (producer-like) — mentions 1 — listings: the-coffee-store-coffee-cart-hire
+- Coffee La La — score 2 (producer-like) — mentions 1 — listings: charlie-grace-mobile-cafe
+- Coffee Supreme — score 2 (producer-like) — mentions 1 — listings: the-tinman
+- Cornucopia Organics — score 2 (producer-like) — mentions 1 — listings: cornucopia-organics-hastings
+- Curbside Coffee — score 2 (producer-like) — mentions 1 — listings: curbside-coffee-and-bagels
+- Earth Co-op — score 2 (producer-like) — mentions 1 — listings: friends-of-the-earth-cafe
+- Earth Organics — score 2 (producer-like) — mentions 1 — listings: down-to-earth-organics-new-plymouth
+- Earthbound Organics — score 2 (producer-like) — mentions 1 — listings: earthbound-organics-richmond
+- Envirohub Chch — score 2 (producer-like) — mentions 1 — listings: piko-wholefoods-chch
+- Fair Trade Organic — score 2 (producer-like) — mentions 1 — listings: havana-coffee-works
+- Farm House — score 2 (producer-like) — mentions 1 — listings: hill-house-cafe
+- Farmers Market — score 2 (producer-like) — mentions 1 — listings: wanaka-farmers-market
+- Farmers Mill. — score 2 (producer-like) — mentions 1 — listings: bohemian-bakery-merivale
+- Farmers' Market — score 2 (producer-like) — mentions 1 — listings: veg-out-st-kilda-farmers-market
+- First Light Farms — score 2 (producer-like) — mentions 1 — listings: wharerata-farm
