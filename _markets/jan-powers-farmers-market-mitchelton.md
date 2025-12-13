@@ -30,6 +30,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Market
 city: Brisbane
+brand_slug: jan-powers-farmers-market
 practices_tags:
 - local
 ---

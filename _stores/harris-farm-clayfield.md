@@ -11,6 +11,7 @@ country: AU
 country_slug: australia
 region: Queensland
 suburb: Clayfield
+brand_slug: harris-farm-markets
 address: 823 Sandgate Rd
 postcode: '4011'
 phone: "(07) 2112 1200"

@@ -46,6 +46,7 @@ sources:
 - milmore-downs
 subtype: specialty-grocer
 source_urls: []
+brand_slug: bohemian-bakery
 ---
 Sumner’s Bohemian Bakery is the seaside extension of everything Bohemian stands for: slow-fermented bread, honest pastries, and ingredients grounded in Canterbury’s soils. The shelves are filled daily with sourdoughs made from Milmore Downs organic whole-wheat and rye, spray-free Farmers Mill flour, and honest food crafted the long way — never rushed, never improvised with additives.
 

@@ -11,6 +11,7 @@ country: AU
 country_slug: australia
 region: Queensland
 suburb: Isle of Capri
+brand_slug: harris-farm-markets
 address: 15-21 Via Roma
 postcode: '4217'
 phone: "(07) 2112 1212"

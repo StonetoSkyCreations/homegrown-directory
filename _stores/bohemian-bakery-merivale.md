@@ -38,6 +38,7 @@ sources:
 - milmore-downs
 subtype: specialty-grocer
 source_urls: []
+brand_slug: bohemian-bakery
 ---
 Merivale’s Bohemian Bakery is a warm, refined neighbourhood spot — a quieter corner of the city where the bakery’s craft meets a more boutique environment. Surrounded by established homes, tree-lined streets, and steady foot traffic, this location brings the full Bohemian sourdough and pastry ethos into one of Christchurch’s most walkable suburbs.
 

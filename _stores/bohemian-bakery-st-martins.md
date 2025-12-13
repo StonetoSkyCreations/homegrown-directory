@@ -43,6 +43,7 @@ sources:
 - milmore-downs
 subtype: specialty-grocer
 source_urls: []
+brand_slug: bohemian-bakery
 ---
 St Martins is Bohemian Bakery’s neighbourhood hub — a friendly corner stop positioned beside New World and moments from Hansen Park, where dog-walkers, families, and commuters drift through from dawn to afternoon.
 

@@ -11,6 +11,7 @@ country: AU
 country_slug: australia
 region: Queensland
 suburb: West End
+brand_slug: harris-farm-markets
 address: West Village, 111 Boundary St
 postcode: '4101'
 phone: "(07) 2112 1220"

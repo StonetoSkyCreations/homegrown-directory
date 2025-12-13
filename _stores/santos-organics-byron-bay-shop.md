@@ -32,5 +32,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer; certified organic supply focus.
 city: Byron Bay
+brand_slug: santos-organics
 ---
 Community-minded organic grocer with refill options, certified organic pantry goods, and regenerative-focused sourcing.

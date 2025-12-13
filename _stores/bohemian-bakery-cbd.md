@@ -41,6 +41,7 @@ sources:
 - milmore-downs
 subtype: specialty-grocer
 source_urls: []
+brand_slug: bohemian-bakery
 ---
 In the heart of Christchurch’s SALT District — a pocket of grit, creativity, and post-quake reinvention — sits Bohemian’s City Bakery Cafe. It’s where the craft of slow-fermented sourdough meets the energy of an evolving urban neighbourhood.
 

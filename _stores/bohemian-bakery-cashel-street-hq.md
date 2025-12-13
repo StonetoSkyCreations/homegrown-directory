@@ -44,6 +44,7 @@ sources:
 - milmore-downs
 subtype: specialty-grocer
 source_urls: []
+brand_slug: bohemian-bakery
 ---
 Cashel Street HQ is the beating heart of Bohemian Bakery — the place where the craft is fully visible, where sourdough and pastry are shaped in the open, and where customers can watch the entire process unfold.
 
