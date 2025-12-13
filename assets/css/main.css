@@ -1120,3 +1120,16 @@ a:focus-visible {
   line-height: 1.2;
   vertical-align: middle;
 }
+
+.empty-panel {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  background: #f7f8f4;
+  color: var(--text);
+  display: grid;
+  gap: 0.35rem;
+}
+.empty-panel p {
+  margin: 0;
+}
