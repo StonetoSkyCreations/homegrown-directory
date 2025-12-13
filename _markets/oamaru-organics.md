@@ -1,5 +1,5 @@
 ---
-layout: market
+layout: listing
 title: Oamaru Organics
 slug: oamaru-organics
 type: market
