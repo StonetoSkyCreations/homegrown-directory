@@ -2,6 +2,8 @@
 layout: default
 title: Geo coverage audit
 permalink: /geo-audit/
+sitemap: false
+noindex: true
 ---
 
 <section class="content">
@@ -9,6 +11,17 @@ permalink: /geo-audit/
   <p class="muted">Internal helper to track coordinate coverage. Not linked in navigation.</p>
 
   <div id="geoSummary" class="geo-audit__summary">Loading…</div>
+
+  <div class="geo-audit__tabs" hidden>
+    <button type="button" class="geo-audit__tab is-active" data-tab="missing">Missing coords (<span data-tab-count="missing">0</span>)</button>
+    <button type="button" class="geo-audit__tab" data-tab="review">Needs review (<span data-tab-count="review">0</span>)</button>
+    <button type="button" class="geo-audit__tab" data-tab="weak">Bad queries (<span data-tab-count="weak">0</span>)</button>
+    <button type="button" class="geo-audit__tab" data-tab="invalid">Invalid coords (<span data-tab-count="invalid">0</span>)</button>
+    <div class="geo-audit__tab-actions">
+      <button type="button" id="downloadCsvTab" class="button ghost button--sm">Download CSV (current tab)</button>
+      <button type="button" id="downloadCsvAll" class="button ghost button--sm">Download CSV (all listings)</button>
+    </div>
+  </div>
 
   <div class="geo-audit__grid" hidden>
     <div>
@@ -22,7 +35,9 @@ permalink: /geo-audit/
   </div>
 
   <div class="geo-audit__table" hidden>
-    <h2>Listings missing coordinates</h2>
+    <div class="geo-audit__table-header">
+      <h2>Geocode queue</h2>
+    </div>
     <p class="muted" id="missingMeta"></p>
     <div class="table-wrapper">
       <table>
@@ -52,9 +67,44 @@ permalink: /geo-audit/
     gap: 1rem;
     margin-bottom: 1rem;
   }
+  .geo-audit__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+  .geo-audit__tab {
+    border: 1px solid var(--border, #e2e8f0);
+    background: #fff;
+    border-radius: 10px;
+    padding: 0.35rem 0.75rem;
+    cursor: pointer;
+  }
+  .geo-audit__tab.is-active {
+    border-color: var(--accent, #25582f);
+    color: var(--accent, #25582f);
+  }
+  .geo-audit__tab-actions {
+    margin-left: auto;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+  .button--sm {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.95rem;
+  }
   .geo-audit__table table {
     width: 100%;
     border-collapse: collapse;
+  }
+  .geo-audit__table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
   .geo-audit__table th,
   .geo-audit__table td {
@@ -91,13 +141,28 @@ permalink: /geo-audit/
     const tableWrapper = document.querySelector(".geo-audit__table");
     const tableBody = document.getElementById("missingTableBody");
     const missingMeta = document.getElementById("missingMeta");
+    const tabControls = Array.from(document.querySelectorAll("[data-tab]"));
+    const tabCounts = {
+      missing: document.querySelector('[data-tab-count="missing"]'),
+      review: document.querySelector('[data-tab-count="review"]'),
+      weak: document.querySelector('[data-tab-count="weak"]')
+    };
+    const downloadCurrentBtn = document.getElementById("downloadCsvTab");
+    const downloadAllBtn = document.getElementById("downloadCsvAll");
+    let allData = [];
+    let currentTab = "missing";
 
     const isNumber = (value) => {
       const num = typeof value === "number" ? value : parseFloat(value);
       return Number.isFinite(num);
     };
 
-    const hasCoords = (item) => isNumber(item.lat) && isNumber(item.lon);
+    const hasCoords = (item) => {
+      if (!isNumber(item.lat) || !isNumber(item.lon)) return false;
+      const lat = typeof item.lat === "number" ? item.lat : parseFloat(item.lat);
+      const lon = typeof item.lon === "number" ? item.lon : parseFloat(item.lon);
+      return lat >= -90 && lat <= 90 && lon >= -180 && lon <= 180;
+    };
 
     const countBy = (arr, key, fallback = "unknown") => {
       return arr.reduce((acc, item) => {
@@ -112,8 +177,19 @@ permalink: /geo-audit/
       return [item.address, item.city, item.region, item.country].filter(Boolean).join(", ");
     };
 
-    const buildGeoQuery = (item) => {
-      return item.geo_query || buildLocation(item);
+    const buildGeoQuery = (item) => item.geo_query || buildLocation(item);
+
+    const isWeakQuery = (item) => {
+      const query = buildGeoQuery(item) || "";
+      const components = query
+        .split(",")
+        .map((part) => part.trim())
+        .filter(Boolean);
+      const len = query.trim().length;
+      const tooFew = components.length < 2;
+      const tooShort = len > 0 && len < 12;
+      const missingCore = !item.address && !item.city;
+      return tooFew || tooShort || missingCore;
     };
 
     const escapeHtml = (str = "") =>
@@ -123,6 +199,7 @@ permalink: /geo-audit/
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#39;");
+    const encodeAttr = (value = "") => escapeHtml(value).replace(/\n/g, "&#10;");
 
     const renderList = (target, data) => {
       target.innerHTML = Object.entries(data)
@@ -151,49 +228,209 @@ permalink: /geo-audit/
       }, 1000);
     });
 
+    document.addEventListener("click", (event) => {
+      const slugBtn = event.target.closest("[data-copy-slug]");
+      if (slugBtn) {
+        const slug = slugBtn.dataset.copySlug;
+        copyToClipboard(slug);
+        slugBtn.textContent = "Copied";
+        setTimeout(() => {
+          slugBtn.textContent = "Copy slug";
+        }, 1000);
+        return;
+      }
+      const snippetBtn = event.target.closest("[data-copy-snippet]");
+      if (snippetBtn) {
+        const snippet = snippetBtn.dataset.copySnippet;
+        copyToClipboard(snippet);
+        snippetBtn.textContent = "Copied";
+        setTimeout(() => {
+          snippetBtn.textContent = "Copy update snippet";
+        }, 1000);
+      }
+    });
+
+    const setupCsv = (rows) => {
+      const headers = [
+        "title",
+        "collection",
+        "country_slug",
+        "country",
+        "region",
+        "city",
+        "address",
+        "geo_precision",
+        "geo_query",
+        "geo_source",
+        "geo_last_verified",
+        "lat",
+        "lon",
+        "url"
+      ];
+      const escapeCsv = (value) => {
+        const str = value === undefined || value === null ? "" : String(value);
+        if (str.includes(",") || str.includes('"') || str.includes("\n")) {
+          return `"${str.replace(/"/g, '""')}"`;
+        }
+        return str;
+      };
+      const lines = [headers.join(",")];
+      rows.forEach((item) => {
+        const query = buildGeoQuery(item) || "";
+        const line = [
+          item.title || item.name || "",
+          item.collection || "",
+          item.country_slug || "",
+          item.country || "",
+          item.region || "",
+          item.city || "",
+          item.address || "",
+          item.geo_precision || "none",
+          query,
+          item.geo_label || "",
+          item.geo_source || "",
+          item.geo_last_verified || "",
+          item.lat || "",
+          item.lon || "",
+          item.url || ""
+        ].map(escapeCsv);
+        lines.push(line.join(","));
+      });
+      const blob = new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "geocode-queue.csv";
+      a.style.display = "none";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    };
+
+    const todayNZ = () => {
+      const now = new Date();
+      const nzTime = new Intl.DateTimeFormat("en-NZ", {
+        timeZone: "Pacific/Auckland",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      })
+        .formatToParts(now)
+        .reduce((acc, part) => {
+          if (part.type === "year") acc.year = part.value;
+          if (part.type === "month") acc.month = part.value;
+          if (part.type === "day") acc.day = part.value;
+          return acc;
+        }, {});
+      return `${nzTime.year}-${nzTime.month}-${nzTime.day}`;
+    };
+
     const load = async () => {
       try {
         const response = await fetch("{{ '/search.json' | relative_url }}");
         if (!response.ok) throw new Error("Failed to load search.json");
         const data = await response.json();
+        allData = data;
         const total = data.length;
         const withCoords = data.filter(hasCoords);
         const withoutCoords = data.filter((item) => !hasCoords(item));
+        const needsReview = data.filter(
+          (item) =>
+            hasCoords(item) &&
+            (!item.geo_precision ||
+              item.geo_precision === "" ||
+              item.geo_precision === "none" ||
+              item.geo_precision === "approx" ||
+              item.geo_precision === "region")
+        );
+        const weakQueries = data.filter(
+          (item) => (!item.geo_query || item.geo_query === "") && isWeakQuery(item)
+        );
         const collectionCounts = countBy(data, "collection");
         const precisionCounts = countBy(data, "geo_precision", "none");
 
+        const percent = (value) => {
+          if (!total) return "0%";
+          return `${((value / total) * 100).toFixed(1)}%`;
+        };
+
         summaryEl.innerHTML = `
           <p>Total listings: <strong>${total}</strong></p>
-          <p>With coordinates: <strong>${withCoords.length}</strong> | Missing coordinates: <strong>${withoutCoords.length}</strong></p>
+          <p>With coordinates: <strong>${withCoords.length}</strong> (${percent(withCoords.length)}) | Missing coordinates: <strong>${withoutCoords.length}</strong> (${percent(withoutCoords.length)})</p>
         `;
 
         renderList(collectionList, collectionCounts);
         renderList(precisionList, precisionCounts);
         gridEl.hidden = false;
+        const updateCount = (key, value) => {
+          if (tabCounts[key]) tabCounts[key].textContent = value;
+        };
+        updateCount("missing", withoutCoords.length);
+        updateCount("review", needsReview.length);
+        updateCount("weak", weakQueries.length);
+        document.querySelector(".geo-audit__tabs").hidden = false;
 
-        missingMeta.textContent = withoutCoords.length
-          ? "Listings lacking lat/lon. Use the geo query to populate coordinates."
-          : "All listings have coordinates.";
+        const getRowsForTab = (tab) => {
+          if (tab === "review") return needsReview;
+          if (tab === "weak") return weakQueries;
+          return withoutCoords;
+        };
 
-        tableBody.innerHTML = withoutCoords
-          .map((item) => {
-            const location = buildLocation(item) || "—";
-            const query = buildGeoQuery(item) || "";
-            const precision = item.geo_precision || "none";
-            return `
-              <tr>
-                <td>${escapeHtml(item.title || item.name)}</td>
-                <td><span class="geo-audit__pill">${escapeHtml(item.collection)}</span></td>
-                <td>${escapeHtml(precision)}</td>
-                <td>${escapeHtml(location)}</td>
-                <td>${query ? escapeHtml(query) : "—"}</td>
-                <td>${query ? `<button type="button" data-copy="${escapeHtml(query)}">Copy</button>` : ""}</td>
-              </tr>
-            `;
-          })
-          .join("");
+        const renderTable = (rows) => {
+          missingMeta.textContent =
+            rows.length === 0
+              ? "No listings in this queue."
+              : "Use the actions to copy a geo query, open in maps, or prepare update snippets.";
+          tableBody.innerHTML = rows
+            .map((item) => {
+              const location = buildLocation(item) || "—";
+              const query = buildGeoQuery(item) || "";
+              const precision = item.geo_precision || "none";
+              const mapLink = query ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}` : "";
+              const slug = item.slug || "";
+              const snippet = slug
+                ? `lat: \nlon: \ngeo_precision: exact\ngeo_source: manual\ngeo_last_verified: ${todayNZ()}`
+                : "";
+              return `
+                <tr>
+                  <td>${escapeHtml(item.title || item.name)}</td>
+                  <td><span class="geo-audit__pill">${escapeHtml(item.collection)}</span></td>
+                  <td>${escapeHtml(precision)}</td>
+                  <td>${escapeHtml(location)}</td>
+                  <td>${query ? escapeHtml(query) : "—"}</td>
+                  <td>
+                    ${query ? `<button type="button" data-copy="${escapeHtml(query)}">Copy</button>` : ""}
+                    ${mapLink ? `<a href="${mapLink}" target="_blank" rel="noopener">Open</a>` : ""}
+                    ${slug ? `<button type="button" data-copy-slug="${escapeHtml(slug)}">Copy slug</button>` : ""}
+                    ${slug ? `<button type="button" data-copy-snippet="${encodeAttr(snippet)}">Copy update snippet</button>` : ""}
+                  </td>
+                </tr>
+              `;
+            })
+            .join("");
+          tableWrapper.hidden = false;
+        };
 
-        tableWrapper.hidden = false;
+        const setTab = (tab) => {
+          currentTab = tab;
+          tabControls.forEach((btn) => btn.classList.toggle("is-active", btn.dataset.tab === tab));
+          renderTable(getRowsForTab(tab));
+          if (downloadCurrentBtn) downloadCurrentBtn.disabled = getRowsForTab(tab).length === 0;
+        };
+
+        tabControls.forEach((btn) => {
+          btn.addEventListener("click", () => setTab(btn.dataset.tab));
+        });
+
+        if (downloadCurrentBtn) {
+          downloadCurrentBtn.addEventListener("click", () => setupCsv(getRowsForTab(currentTab)));
+        }
+        if (downloadAllBtn) {
+          downloadAllBtn.addEventListener("click", () => setupCsv(allData));
+        }
+
+        setTab("missing");
       } catch (err) {
         console.error(err);
         summaryEl.textContent = "Failed to load geo data.";

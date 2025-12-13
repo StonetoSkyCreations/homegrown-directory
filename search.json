@@ -48,6 +48,8 @@ permalink: /search.json
   {% endif %}
   {% assign long_desc = doc.description | default: doc.short_description | default: doc.meta_description | default: doc.excerpt | default: doc.long_description %}
   {% assign geo_precision = doc.geo_precision | default: 'none' %}
+  {% assign lat_val = doc.lat %}
+  {% assign lon_val = doc.lon %}
   {
     "id": "{{ doc.id | default: doc.slug | slugify }}",
     "title": {{ doc.title | default: doc.name | jsonify }},
@@ -71,8 +73,8 @@ permalink: /search.json
     "supplies_to": {{ doc.supplies_to | jsonify }},
     "sources": {{ doc.sources | jsonify }},
     "hours": {{ doc.hours | jsonify }},
-    "lat": {{ doc.lat | jsonify }},
-    "lon": {{ doc.lon | jsonify }},
+    "lat": {% if lat_val == nil or lat_val == '' %}null{% else %}{{ lat_val | jsonify }}{% endif %},
+    "lon": {% if lon_val == nil or lon_val == '' %}null{% else %}{{ lon_val | jsonify }}{% endif %},
     "geo_precision": {{ geo_precision | jsonify }},
     "geo_source": {{ doc.geo_source | jsonify }},
     "geo_query": {{ doc.geo_query | jsonify }},

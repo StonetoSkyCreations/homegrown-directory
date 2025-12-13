@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#305c24">
   <meta name="copyright" content="All rights reserved – Homegrown Directory © 2025. Reproduction or reuse prohibited.">
+  {% if page.noindex %}
+  <meta name="robots" content="noindex,nofollow">
+  {% endif %}
   <link rel="icon" href="{{ '/Favicon-32.png' | relative_url }}" sizes="32x32">
   {% comment %}SEO/AEO meta built from page data and practices{% endcomment %}
   {% include seo-meta.html %}
