@@ -208,6 +208,10 @@ permalink: /submit.html
     <input type="hidden" id="slug" name="slug">
 
     <p id="submitError" role="alert" style="display:none; color:#b43b3b; margin:0.35rem 0 0.5rem;"></p>
+    <div id="submitDebug" style="display:none; margin:0.5rem 0;">
+      <p style="margin:0 0 0.4rem; color:#2d2d2d; font-size:0.95rem;">Attempted to open your email client. If nothing happened, your browser/mail app may be blocking mailto links. Copy the content below.</p>
+      <textarea id="submitDebugBody" readonly rows="6" style="width:100%; font-family:monospace;"></textarea>
+    </div>
     <button type="submit" class="button">Send via email</button>
   </form>
 </section>
@@ -525,6 +529,13 @@ permalink: /submit.html
           : 'Homegrown Directory submission';
 
         const mailtoUrl = buildMailtoUrl(subject, sections);
+        console.log('[submit] mailto length:', mailtoUrl.length, 'preview:', mailtoUrl.slice(0, 200));
+        const debugEl = document.getElementById('submitDebug');
+        const debugBody = document.getElementById('submitDebugBody');
+        if (debugEl && debugBody) {
+          debugBody.value = buildBodyWithTruncation(subject, sections);
+          debugEl.style.display = 'block';
+        }
         window.location.href = mailtoUrl;
       } catch (err) {
         showError('Sorry, we could not prepare the email draft. Please copy your answers and email josh@stonetosky.nz.', err);

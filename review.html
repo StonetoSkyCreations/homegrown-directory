@@ -57,6 +57,10 @@ permalink: /review.html
     <input type="hidden" id="business_slug" name="business_slug">
 
     <p id="reviewError" role="alert" style="display:none; color:#b43b3b; margin:0.35rem 0 0.5rem;"></p>
+    <div id="reviewDebug" style="display:none; margin:0.5rem 0;">
+      <p style="margin:0 0 0.4rem; color:#2d2d2d; font-size:0.95rem;">Attempted to open your email client. If nothing happened, your browser/mail app may be blocking mailto links. Copy the content below.</p>
+      <textarea id="reviewDebugBody" readonly rows="6" style="width:100%; font-family:monospace;"></textarea>
+    </div>
     <button type="submit" class="button">Send via email</button>
   </form>
 </section>
@@ -175,6 +179,13 @@ permalink: /review.html
         const reviewTextRaw = (data.get('review_text') || '').trim();
         const body = truncateBody(subject, data, slug, reviewTextRaw);
         const mailto = `mailto:${MAILTO_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        console.log('[review] mailto length:', mailto.length, 'preview:', mailto.slice(0, 200));
+        const debugEl = document.getElementById('reviewDebug');
+        const debugBody = document.getElementById('reviewDebugBody');
+        if (debugEl && debugBody) {
+          debugBody.value = body;
+          debugEl.style.display = 'block';
+        }
         window.location.href = mailto;
       } catch (err) {
         showError('Sorry, we could not prepare the email draft. Please copy your answers and email josh@stonetosky.nz.', err);
