@@ -84,3 +84,6 @@ plugins:
 
 exclude:
   - reports
+  - vendor
+  - vendor/bundle
+  - .bundle
