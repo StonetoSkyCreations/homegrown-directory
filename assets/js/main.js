@@ -341,16 +341,14 @@
     if (!resultsContainer) return;
     const hasActive = Boolean(active);
     if (!items.length) {
-      const message = hasActive
-        ? "No listings match your filters yet."
-        : "Listings will appear here once added.";
+      const message = hasActive ? "No listings match your filters yet." : "No featured listings are available yet.";
       resultsContainer.innerHTML = `<p class="muted">${message}</p>`;
     } else {
       resultsContainer.innerHTML = items.map(cardTemplate).join("");
     }
     if (resultsCount) {
       const noun = items.length === 1 ? "listing" : "listings";
-      resultsCount.textContent = hasActive ? `${items.length} ${noun}` : `${items.length} ${noun} ready to browse.`;
+      resultsCount.textContent = `${items.length} ${noun}`;
     }
   }
 
@@ -512,9 +510,9 @@
     document.querySelectorAll('input[name="services"]:checked').forEach((el) => selections.services.push(el.value));
 
     const source = window.HG_INDEX || listings || [];
-    const defaultSet = source.filter((item) => item.featured === true || item.featured === "true");
-    const fallback = defaultSet.length ? defaultSet : source.slice(0, Math.min(source.length, 12));
-    filtered = active ? source.filter((item) => matchesFilters(item, selections)) : fallback;
+    filtered = active
+      ? source.filter((item) => matchesFilters(item, selections))
+      : source.filter((item) => item.featured === true || item.featured === "true");
     renderList(filtered, active);
   }
 
