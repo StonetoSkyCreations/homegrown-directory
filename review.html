@@ -56,6 +56,7 @@ permalink: /review.html
 
     <input type="hidden" id="business_slug" name="business_slug">
 
+    <p id="reviewError" role="alert" style="display:none; color:#b43b3b; margin:0.35rem 0 0.5rem;"></p>
     <button type="submit" class="button">Send via email</button>
   </form>
 </section>
@@ -67,6 +68,15 @@ permalink: /review.html
     const presetName = params.get('name');
     const nameField = document.getElementById('business_name');
     const slugField = document.getElementById('business_slug');
+    const form = document.getElementById('reviewForm');
+    const errorEl = document.getElementById('reviewError');
+
+    const MAILTO_TO = 'josh@stonetosky.nz';
+    const MAILTO_MAX_LENGTH = 1800;
+    const TRUNCATION_NOTICE = '[truncated — paste the rest manually]';
+    const TRUNCATION_PREAMBLE =
+      'Note: this draft was shortened to fit the email link. Please paste the remaining review text manually if needed.\n\n';
+
     const slugify = (value) =>
       (value || '')
         .toLowerCase()
@@ -74,6 +84,21 @@ permalink: /review.html
         .replace(/[^a-z0-9\s-]/g, '')
         .replace(/\s+/g, '-')
         .replace(/-+/g, '-');
+
+    const showError = (message, err) => {
+      if (err) console.error(err);
+      if (errorEl) {
+        errorEl.textContent = message;
+        errorEl.style.display = 'block';
+      }
+    };
+
+    const clearError = () => {
+      if (errorEl) {
+        errorEl.textContent = '';
+        errorEl.style.display = 'none';
+      }
+    };
 
     const decodedListing = listingParam ? decodeURIComponent(listingParam.replace(/\+/g, ' ')) : '';
     const presetBusinessName = presetName || decodedListing;
@@ -84,26 +109,12 @@ permalink: /review.html
       slugField.value = listingParam;
     }
 
-    const form = document.getElementById('reviewForm');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
+    const buildBody = (data, slug, reviewTextOverride, correctionsOverride) => {
       const business = data.get('business_name') || '';
-      const listingHint = params.get('listing') || '';
-      let slug = '';
-
-      if (listingHint) {
-        slug = listingHint;
-      } else {
-        slug = slugify(business);
-      }
-
-      if (slugField) slugField.value = slug;
       const rating = data.get('rating') || '5';
-      const subject = `[HOMEGROWN] REVIEW: ${business}`;
-      const reviewText = (data.get('review_text') || '').trim();
-      const corrections = (data.get('corrections') || '').trim();
-      const bodyLines = [
+      const reviewText = (reviewTextOverride !== undefined ? reviewTextOverride : (data.get('review_text') || '')).trim();
+      const corrections = (correctionsOverride !== undefined ? correctionsOverride : (data.get('corrections') || '')).trim();
+      return [
         '# ACTION: NEW_REVIEW',
         '',
         `business_name: ${business}`,
@@ -121,9 +132,53 @@ permalink: /review.html
         `reviewer_email: ${data.get('reviewer_email') || ''}`,
         `relationship_to_business: ${data.get('relationship') || ''}`,
         'ok_to_publish: yes'
-      ];
-      const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
-      window.location.href = mailto;
+      ].join('\n');
+    };
+
+    const mailtoLength = (subject, body) =>
+      `mailto:${MAILTO_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`.length;
+
+    const truncateBody = (subject, data, slug, reviewText) => {
+      const baseBody = buildBody(data, slug, reviewText);
+      if (mailtoLength(subject, baseBody) <= MAILTO_MAX_LENGTH) return baseBody;
+
+      let snippet = reviewText || '';
+      const rebuild = (text) => `${TRUNCATION_PREAMBLE.trim()}\n\n${buildBody(data, slug, text)}`;
+
+      let truncated = rebuild(`${snippet}${snippet ? '\n\n' : ''}${TRUNCATION_NOTICE}`);
+      while (mailtoLength(subject, truncated) > MAILTO_MAX_LENGTH && snippet.length > 80) {
+        snippet = snippet.slice(0, Math.max(80, Math.floor(snippet.length * 0.7)));
+        truncated = rebuild(`${snippet}${snippet ? '\n\n' : ''}${TRUNCATION_NOTICE}`);
+      }
+
+      if (mailtoLength(subject, truncated) > MAILTO_MAX_LENGTH) {
+        truncated = `${TRUNCATION_PREAMBLE}${TRUNCATION_NOTICE}`;
+      }
+
+      return truncated;
+    };
+
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      clearError();
+      try {
+        const data = new FormData(form);
+        const business = data.get('business_name') || '';
+        const listingHint = params.get('listing') || '';
+        const slug = listingHint || slugify(business);
+
+        if (slugField) slugField.value = slug;
+
+        const subject = business ? `Homegrown Directory review: ${business}` : 'Homegrown Directory review';
+        const reviewTextRaw = (data.get('review_text') || '').trim();
+        const body = truncateBody(subject, data, slug, reviewTextRaw);
+        const mailto = `mailto:${MAILTO_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailto;
+      } catch (err) {
+        showError('Sorry, we could not prepare the email draft. Please copy your answers and email josh@stonetosky.nz.', err);
+      }
     });
   })();
 </script>

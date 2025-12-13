@@ -207,256 +207,328 @@ permalink: /submit.html
 
     <input type="hidden" id="slug" name="slug">
 
+    <p id="submitError" role="alert" style="display:none; color:#b43b3b; margin:0.35rem 0 0.5rem;"></p>
     <button type="submit" class="button">Send via email</button>
   </form>
 </section>
 
 <script>
-  const submitForm = document.getElementById('submitForm');
-  const params = new URLSearchParams(window.location.search);
-  const nameInput = document.getElementById('name');
-  const slugInput = document.getElementById('slug');
-  const submissionTypeRadios = submitForm.querySelectorAll('input[name="submission_type"]');
-  const collectionSelect = document.getElementById('collection');
-  const subtypeSelect = document.getElementById('subtype');
-  const subtypeGroup = document.getElementById('subtype-group');
-  const specialtyGroup = document.getElementById('specialty-group');
+  (function () {
+    const submitForm = document.getElementById('submitForm');
+    if (!submitForm) return;
 
-  // Canonical tokens: collection (farms, markets, stores, restaurants, vendors, distributors)
-  // subtype is only emitted for restaurants/vendors/stores; markets have no subtype.
-  // practices_tags always emitted (even empty). specialty_tags only for stores + specialty-grocer.
-  const PRACTICE_TOKENS = ['organic', 'spray-free', 'regenerative', 'biodynamic', 'wild', 'pasture-raised', 'local'];
-  const FARM_SUBTYPES = ['market-garden', 'orchard', 'vineyard', 'livestock', 'dairy-farm', 'apiary', 'eggs', 'mushrooms', 'seeds', 'flowers', 'mixed'];
-  const RESTAURANT_SUBTYPES = ['cafe', 'restaurant'];
-  const VENDOR_SUBTYPES = ['food-truck'];
-  const STORE_SUBTYPES = ['supermarket', 'organic-store', 'wholefoods-store', 'bulk-refillery', 'co-op', 'specialty-grocer'];
-  const SPECIALTY_TOKENS = ['bakery', 'butcher', 'fish-monger', 'chocolatier', 'kombucha', 'kefir', 'dairy', 'cheese', 'coffee-roaster', 'fermenter'];
+    const params = new URLSearchParams(window.location.search);
+    const nameInput = document.getElementById('name');
+    const slugInput = document.getElementById('slug');
+    const submissionTypeRadios = submitForm.querySelectorAll('input[name="submission_type"]');
+    const collectionSelect = document.getElementById('collection');
+    const subtypeSelect = document.getElementById('subtype');
+    const subtypeGroup = document.getElementById('subtype-group');
+    const specialtyGroup = document.getElementById('specialty-group');
+    const errorEl = document.getElementById('submitError');
 
-  const listingRef = params.get('listing') || '';
-  const presetName = params.get('name');
-  const presetSubmissionType = params.get('submission_type');
+    const MAILTO_TO = 'josh@stonetosky.nz';
+    const MAILTO_MAX_LENGTH = 1800;
+    const TRUNCATION_NOTICE = '[truncated — paste the rest manually]';
+    const TRUNCATION_PREAMBLE =
+      'Note: this draft was shortened to fit the email link. The YAML is intact; please paste the remaining description manually if needed.\n\n';
 
-  if (presetName && nameInput) {
-    nameInput.value = presetName;
-  } else if (listingRef && nameInput) {
-    nameInput.value = listingRef;
-  }
-  if (listingRef && slugInput && !slugInput.value) {
-    slugInput.value = listingRef;
-  }
+    // Canonical tokens: collection (farms, markets, stores, restaurants, vendors, distributors)
+    // subtype is only emitted for restaurants/vendors/stores; markets have no subtype.
+    // practices_tags always emitted (even empty). specialty_tags only for stores + specialty-grocer.
+    const PRACTICE_TOKENS = ['organic', 'spray-free', 'regenerative', 'biodynamic', 'wild', 'pasture-raised', 'local'];
+    const FARM_SUBTYPES = ['market-garden', 'orchard', 'vineyard', 'livestock', 'dairy-farm', 'apiary', 'eggs', 'mushrooms', 'seeds', 'flowers', 'mixed'];
+    const RESTAURANT_SUBTYPES = ['cafe', 'restaurant'];
+    const VENDOR_SUBTYPES = ['food-truck'];
+    const STORE_SUBTYPES = ['supermarket', 'organic-store', 'wholefoods-store', 'bulk-refillery', 'co-op', 'specialty-grocer'];
+    const SPECIALTY_TOKENS = ['bakery', 'butcher', 'fish-monger', 'chocolatier', 'kombucha', 'kefir', 'dairy', 'cheese', 'coffee-roaster', 'fermenter'];
 
-  const shouldSetUpdate =
-    (presetSubmissionType && presetSubmissionType.toLowerCase().includes('update')) || Boolean(listingRef);
-  if (shouldSetUpdate && submissionTypeRadios.length) {
-    submissionTypeRadios.forEach((radio) => {
-      radio.checked = radio.value === 'update';
-    });
-  }
+    const listingRef = params.get('listing') || '';
+    const presetName = params.get('name');
+    const presetSubmissionType = params.get('submission_type');
 
-  if (collectionSelect) {
-    const presetCollection = params.get('collection');
-    if (presetCollection) {
-      collectionSelect.value = presetCollection;
-    }
-    collectionSelect.addEventListener('change', updateCategoryFields);
-  }
-  if (subtypeSelect) {
-    subtypeSelect.addEventListener('change', updateCategoryFields);
-  }
-  updateCategoryFields();
+    const showError = (message, err) => {
+      if (err) console.error(err);
+      if (errorEl) {
+        errorEl.textContent = message;
+        errorEl.style.display = 'block';
+      }
+    };
 
-  const slugify = (value) =>
-    (value || '')
-      .toLowerCase()
-      .trim()
-      .replace(/[^a-z0-9\s-]/g, '')
-      .replace(/\s+/g, '-')
-      .replace(/-+/g, '-');
+    const clearError = () => {
+      if (errorEl) {
+        errorEl.textContent = '';
+        errorEl.style.display = 'none';
+      }
+    };
 
-  const normalizeToken = (value) => (value || '').toString().trim().toLowerCase();
+    const slugify = (value) =>
+      (value || '')
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-');
 
-  const splitList = (value) =>
-    (value || '')
-      .split(/[,\n]/)
-      .map((v) => v.trim())
-      .filter(Boolean);
+    const normalizeToken = (value) => (value || '').toString().trim().toLowerCase();
 
-  const uniqueAllowed = (values, allowed) => {
-    const set = new Set();
-    values.forEach((val) => {
-      const token = normalizeToken(val);
-      if (allowed.includes(token)) set.add(token);
-    });
-    return Array.from(set);
-  };
+    const splitList = (value) =>
+      (value || '')
+        .split(/[,\n]/)
+        .map((v) => v.trim())
+        .filter(Boolean);
 
-  const getCheckedValues = (name, allowed) => {
-    const values = Array.from(submitForm.querySelectorAll(`input[name="${name}"]:checked`)).map((el) => el.value);
-    return uniqueAllowed(values, allowed);
-  };
+    const uniqueAllowed = (values, allowed) => {
+      const set = new Set();
+      values.forEach((val) => {
+        const token = normalizeToken(val);
+        if (allowed.includes(token)) set.add(token);
+      });
+      return Array.from(set);
+    };
 
-  const clearChecked = (name) => {
-    submitForm.querySelectorAll(`input[name="${name}"]`).forEach((el) => {
-      el.checked = false;
-    });
-  };
+    const clearChecked = (name) => {
+      submitForm.querySelectorAll(`input[name="${name}"]`).forEach((el) => {
+        el.checked = false;
+      });
+    };
 
-  function updateCategoryFields() {
-    const collection = collectionSelect ? collectionSelect.value : '';
-    const subtypeAllowedCollections = ['restaurants', 'vendors', 'stores', 'farms'];
-    const showSubtype = subtypeAllowedCollections.includes(collection);
-    if (subtypeGroup) subtypeGroup.style.display = showSubtype ? '' : 'none';
-    if (subtypeSelect) {
-      const current = subtypeSelect.value;
-      let keepCurrent = false;
-      Array.from(subtypeSelect.options).forEach((opt) => {
-        if (!opt.value) {
-          opt.hidden = false;
-          return;
-        }
-        const allowedFor = (opt.dataset.collections || '').split(',').map((v) => v.trim());
-        const allowed = allowedFor.includes(collection);
-        opt.hidden = !allowed;
-        if (!allowed && current === opt.value) {
+    const updateCategoryFields = () => {
+      const collection = collectionSelect ? collectionSelect.value : '';
+      const subtypeAllowedCollections = ['restaurants', 'vendors', 'stores', 'farms'];
+      const showSubtype = subtypeAllowedCollections.includes(collection);
+      if (subtypeGroup) subtypeGroup.style.display = showSubtype ? '' : 'none';
+      if (subtypeSelect) {
+        const current = subtypeSelect.value;
+        let keepCurrent = false;
+        Array.from(subtypeSelect.options).forEach((opt) => {
+          if (!opt.value) {
+            opt.hidden = false;
+            return;
+          }
+          const allowedFor = (opt.dataset.collections || '').split(',').map((v) => v.trim());
+          const allowed = allowedFor.includes(collection);
+          opt.hidden = !allowed;
+          if (!allowed && current === opt.value) {
+            subtypeSelect.value = '';
+          }
+          if (allowed && current === opt.value) {
+            keepCurrent = true;
+          }
+        });
+        if (!keepCurrent && !showSubtype) {
           subtypeSelect.value = '';
         }
-        if (allowed && current === opt.value) {
-          keepCurrent = true;
-        }
-      });
-      if (!keepCurrent && !showSubtype) {
-        subtypeSelect.value = '';
       }
-    }
 
-    const showSpecialty = collection === 'stores' && subtypeSelect && subtypeSelect.value === 'specialty-grocer';
-    if (specialtyGroup) specialtyGroup.style.display = showSpecialty ? '' : 'none';
-    if (!showSpecialty) clearChecked('specialty_tags');
-  }
-
-  const formatList = (label, items) => {
-    if (!items.length) return `${label}: []`;
-    return `${label}:\n${items.map((item) => `  - ${item}`).join('\n')}`;
-  };
-
-  const formatMultiline = (label, value) => {
-    const text = (value || '').trim();
-    return `${label}: >\n  ${text.replace(/\r?\n/g, '\n  ')}`;
-  };
-
-  const buildYaml = (data, action, targetSlug = listingRef) => {
-    const listFields = {
-      products: splitList(data.get('products')),
-      services: splitList(data.get('services')),
-      social: splitList(data.get('social')),
-      market_days: splitList(data.get('market_days')),
-      supplies_to: splitList(data.get('supplies_to')),
-      sources: splitList(data.get('sources'))
+      const showSpecialty = collection === 'stores' && subtypeSelect && subtypeSelect.value === 'specialty-grocer';
+      if (specialtyGroup) specialtyGroup.style.display = showSpecialty ? '' : 'none';
+      if (!showSpecialty) clearChecked('specialty_tags');
     };
-    const name = data.get('name') || '';
-    const countrySlug = data.get('country_slug') || 'new-zealand';
-    const countryLabel = countrySlug === 'australia' ? 'AU' : 'New Zealand';
-    const slug = targetSlug || slugify(name);
-    const collection = data.get('collection') || '';
-    const subtypeRaw = normalizeToken(data.get('subtype'));
-    const practicesTags = uniqueAllowed(data.getAll('practices_tags'), PRACTICE_TOKENS);
-    const specialtyTags =
-      collection === 'stores' && subtypeRaw === 'specialty-grocer'
-        ? uniqueAllowed(data.getAll('specialty_tags'), SPECIALTY_TOKENS)
-        : [];
-  const subtypeAllowed =
-      (collection === 'restaurants' && RESTAURANT_SUBTYPES.includes(subtypeRaw)) ||
-      (collection === 'vendors' && VENDOR_SUBTYPES.includes(subtypeRaw)) ||
-      (collection === 'stores' && STORE_SUBTYPES.includes(subtypeRaw)) ||
-      (collection === 'farms' && FARM_SUBTYPES.includes(subtypeRaw));
-    const subtype = subtypeAllowed ? subtypeRaw : '';
-    const shortDescription = data.get('short_description') || '';
-    const fullDescription = (data.get('full_description') || '').trim();
-    const descriptionText = shortDescription || fullDescription;
-    const submitterName = data.get('submitter_name') || '';
-    const ownerName = data.get('owner_name') || '';
 
-    const yamlLines = [
-      '---',
-      `title: ${name}`,
-      `slug: ${slug}`,
-      `collection: ${collection}`,
-      subtype ? `subtype: ${subtype}` : null,
-      `country_slug: ${countrySlug}`,
-      `country: ${countryLabel}`,
-      `region: ${data.get('region') || ''}`,
-      `city: ${data.get('city') || ''}`,
-      `address: ${data.get('address') || ''}`,
-      `suburb: ${data.get('suburb') || ''}`,
-      `postcode: ${data.get('postcode') || ''}`,
-      formatMultiline('description', descriptionText),
-      formatMultiline('seo_description', data.get('seo_description')),
-      formatList('practices_tags', practicesTags),
-      collection === 'stores' && specialtyTags.length ? formatList('specialty_tags', specialtyTags) : null,
-      formatList('products', listFields.products),
-      formatList('services', listFields.services),
-      `website: ${data.get('website') || ''}`,
-      `email: ${data.get('email') || ''}`,
-      `phone: ${data.get('phone') || ''}`,
-      formatList('social', listFields.social),
-      `hours: ${data.get('hours') || ''}`,
-      formatList('market_days', listFields.market_days),
-      formatList('supplies_to', listFields.supplies_to),
-      formatList('sources', listFields.sources),
-      '---'
-    ];
-    const yamlContent = yamlLines.filter(Boolean).join('\n');
+    const applyPrefills = () => {
+      if (presetName && nameInput) {
+        nameInput.value = presetName;
+      } else if (listingRef && nameInput) {
+        nameInput.value = listingRef;
+      }
+      if (listingRef && slugInput && !slugInput.value) {
+        slugInput.value = listingRef;
+      }
 
-    const ownerIsContact = data.get('owner_checkbox') ? 'yes' : 'no';
-    const submitterNotes = [
-      '# Submitter notes',
-      `owner_is_contact: ${ownerIsContact}`,
-      `owner_name: ${ownerName}`,
-      `submitter_name: ${submitterName}`,
-      `submitter_email: ${data.get('submitter_email') || ''}`
-    ];
-    if (action === 'update') {
-      submitterNotes.push('what_changed: |');
-      submitterNotes.push(`  ${(data.get('updates') || '').replace(/\r?\n/g, '\n  ')}`);
-    } else {
-      submitterNotes.push('extra_comments: |');
-      submitterNotes.push(`  ${(data.get('notes') || '').replace(/\r?\n/g, '\n  ')}`);
+      const shouldSetUpdate =
+        (presetSubmissionType && presetSubmissionType.toLowerCase().includes('update')) || Boolean(listingRef);
+      if (shouldSetUpdate && submissionTypeRadios.length) {
+        submissionTypeRadios.forEach((radio) => {
+          radio.checked = radio.value === 'update';
+        });
+      }
+
+      if (collectionSelect) {
+        const presetCollection = params.get('collection');
+        if (presetCollection) {
+          collectionSelect.value = presetCollection;
+        }
+        collectionSelect.addEventListener('change', updateCategoryFields);
+      }
+      if (subtypeSelect) {
+        subtypeSelect.addEventListener('change', updateCategoryFields);
+      }
+      updateCategoryFields();
+    };
+
+    const formatList = (label, items) => {
+      if (!items.length) return `${label}: []`;
+      return `${label}:\n${items.map((item) => `  - ${item}`).join('\n')}`;
+    };
+
+    const formatMultiline = (label, value) => {
+      const text = (value || '').trim();
+      return `${label}: >\n  ${text.replace(/\r?\n/g, '\n  ')}`;
+    };
+
+    const buildEmailSections = (data, action, targetSlug) => {
+      const listFields = {
+        products: splitList(data.get('products')),
+        services: splitList(data.get('services')),
+        social: splitList(data.get('social')),
+        market_days: splitList(data.get('market_days')),
+        supplies_to: splitList(data.get('supplies_to')),
+        sources: splitList(data.get('sources'))
+      };
+      const name = data.get('name') || '';
+      const countrySlug = data.get('country_slug') || 'new-zealand';
+      const countryLabel = countrySlug === 'australia' ? 'AU' : 'New Zealand';
+      const slug = targetSlug || slugify(name);
+      const collection = data.get('collection') || '';
+      const subtypeRaw = normalizeToken(data.get('subtype'));
+      const practicesTags = uniqueAllowed(data.getAll('practices_tags'), PRACTICE_TOKENS);
+      const specialtyTags =
+        collection === 'stores' && subtypeRaw === 'specialty-grocer'
+          ? uniqueAllowed(data.getAll('specialty_tags'), SPECIALTY_TOKENS)
+          : [];
+      const subtypeAllowed =
+        (collection === 'restaurants' && RESTAURANT_SUBTYPES.includes(subtypeRaw)) ||
+        (collection === 'vendors' && VENDOR_SUBTYPES.includes(subtypeRaw)) ||
+        (collection === 'stores' && STORE_SUBTYPES.includes(subtypeRaw)) ||
+        (collection === 'farms' && FARM_SUBTYPES.includes(subtypeRaw));
+      const subtype = subtypeAllowed ? subtypeRaw : '';
+      const shortDescription = data.get('short_description') || '';
+      const fullDescription = (data.get('full_description') || '').trim();
+      const descriptionText = shortDescription || fullDescription;
+      const submitterName = data.get('submitter_name') || '';
+      const ownerName = data.get('owner_name') || '';
+
+      const yamlLines = [
+        '---',
+        `title: ${name}`,
+        `slug: ${slug}`,
+        `collection: ${collection}`,
+        subtype ? `subtype: ${subtype}` : null,
+        `country_slug: ${countrySlug}`,
+        `country: ${countryLabel}`,
+        `region: ${data.get('region') || ''}`,
+        `city: ${data.get('city') || ''}`,
+        `address: ${data.get('address') || ''}`,
+        `suburb: ${data.get('suburb') || ''}`,
+        `postcode: ${data.get('postcode') || ''}`,
+        formatMultiline('description', descriptionText),
+        formatMultiline('seo_description', data.get('seo_description')),
+        formatList('practices_tags', practicesTags),
+        collection === 'stores' && specialtyTags.length ? formatList('specialty_tags', specialtyTags) : null,
+        formatList('products', listFields.products),
+        formatList('services', listFields.services),
+        `website: ${data.get('website') || ''}`,
+        `email: ${data.get('email') || ''}`,
+        `phone: ${data.get('phone') || ''}`,
+        formatList('social', listFields.social),
+        `hours: ${data.get('hours') || ''}`,
+        formatList('market_days', listFields.market_days),
+        formatList('supplies_to', listFields.supplies_to),
+        formatList('sources', listFields.sources),
+        '---'
+      ];
+      const yamlContent = yamlLines.filter(Boolean).join('\n');
+
+      const ownerIsContact = data.get('owner_checkbox') ? 'yes' : 'no';
+      const submitterNotes = [
+        '# Submitter notes',
+        `owner_is_contact: ${ownerIsContact}`,
+        `owner_name: ${ownerName}`,
+        `submitter_name: ${submitterName}`,
+        `submitter_email: ${data.get('submitter_email') || ''}`
+      ];
+      if (action === 'update') {
+        submitterNotes.push('what_changed: |');
+        submitterNotes.push(`  ${(data.get('updates') || '').replace(/\r?\n/g, '\n  ')}`);
+      } else {
+        submitterNotes.push('extra_comments: |');
+        submitterNotes.push(`  ${(data.get('notes') || '').replace(/\r?\n/g, '\n  ')}`);
+      }
+
+      const headerLines = [
+        `# ACTION: ${action === 'update' ? 'UPDATE_LISTING' : 'NEW_LISTING'}`,
+        action === 'update' ? `# TARGET_SLUG: ${targetSlug || slug}` : null
+      ].filter(Boolean);
+
+      return {
+        header: headerLines.join('\n'),
+        yaml: yamlContent,
+        fullDescription: fullDescription || '[add long-form description here]',
+        notes: submitterNotes.join('\n'),
+        slug,
+        name
+      };
+    };
+
+    const composeBody = (sections, descriptionOverride) =>
+      [sections.header, sections.yaml, '# Full description (markdown)', descriptionOverride || sections.fullDescription, sections.notes].join('\n\n');
+
+    const mailtoLength = (subject, body) =>
+      `mailto:${MAILTO_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`.length;
+
+    const buildBodyWithTruncation = (subject, sections) => {
+      const baseBody = composeBody(sections);
+      if (mailtoLength(subject, baseBody) <= MAILTO_MAX_LENGTH) return baseBody;
+
+      const description = sections.fullDescription || '';
+      let snippet = description;
+      let truncatedBody = `${TRUNCATION_PREAMBLE}${composeBody(sections, `${snippet}${snippet ? '\n\n' : ''}${TRUNCATION_NOTICE}`)}`;
+
+      while (mailtoLength(subject, truncatedBody) > MAILTO_MAX_LENGTH && snippet.length > 80) {
+        snippet = snippet.slice(0, Math.max(80, Math.floor(snippet.length * 0.7)));
+        truncatedBody = `${TRUNCATION_PREAMBLE}${composeBody(
+          sections,
+          `${snippet}${snippet ? '\n\n' : ''}${TRUNCATION_NOTICE}`
+        )}`;
+      }
+
+      if (mailtoLength(subject, truncatedBody) > MAILTO_MAX_LENGTH) {
+        truncatedBody = `${TRUNCATION_PREAMBLE}${sections.header}\n\n${sections.yaml}\n\n# Full description (markdown)\n${TRUNCATION_NOTICE}\n\n${sections.notes}`;
+      }
+
+      if (mailtoLength(subject, truncatedBody) > MAILTO_MAX_LENGTH) {
+        truncatedBody = `${TRUNCATION_PREAMBLE}${sections.header}\n\n${sections.yaml}\n\n${TRUNCATION_NOTICE}`;
+      }
+
+      return truncatedBody;
+    };
+
+    const buildMailtoUrl = (subject, sections) => {
+      const body = buildBodyWithTruncation(subject, sections);
+      return `mailto:${MAILTO_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    };
+
+    try {
+      applyPrefills();
+    } catch (err) {
+      showError('We had trouble preparing the form; you can still send via email.', err);
     }
 
-    const headerLines = [
-      `# ACTION: ${action === 'update' ? 'UPDATE_LISTING' : 'NEW_LISTING'}`,
-      action === 'update' ? `# TARGET_SLUG: ${targetSlug || slug}` : null
-    ].filter(Boolean);
+    submitForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      clearError();
+      try {
+        const data = new FormData(submitForm);
+        const action = (data.get('submission_type') || 'new') === 'update' ? 'update' : 'new';
+        const name = data.get('name') || '';
+        const targetSlug = listingRef || '';
+        const slug = targetSlug || slugify(name);
+        if (slugInput) {
+          slugInput.value = slug;
+        }
 
-    const sections = [
-      headerLines.join('\n'),
-      yamlContent,
-      '# Full description (markdown)',
-      fullDescription || '[add long-form description here]',
-      submitterNotes.join('\n')
-    ];
+        const sections = buildEmailSections(data, action, targetSlug || slug);
+        const subjectToken = sections.slug || sections.name || slug || name;
+        const subject = subjectToken
+          ? `Homegrown Directory submission: ${subjectToken}`
+          : 'Homegrown Directory submission';
 
-    return sections.join('\n\n');
-  };
-
-  submitForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const data = new FormData(submitForm);
-    const subType = data.get('submission_type') || 'new';
-    const name = data.get('name') || '';
-    const targetSlug = listingRef || '';
-    const slug = targetSlug || slugify(name);
-    const action = subType === 'update' ? 'update' : 'new';
-    const subject =
-      action === 'update'
-        ? `[HOMEGROWN] UPDATE_LISTING: ${targetSlug || name}`
-        : `[HOMEGROWN] NEW_LISTING: ${name}`;
-
-    if (slugInput) {
-      slugInput.value = slug;
-    }
-    const body = buildYaml(data, action, targetSlug);
-    const mailto = `mailto:josh@stonetosky.nz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
-  });
+        const mailtoUrl = buildMailtoUrl(subject, sections);
+        window.location.href = mailtoUrl;
+      } catch (err) {
+        showError('Sorry, we could not prepare the email draft. Please copy your answers and email josh@stonetosky.nz.', err);
+      }
+    });
+  })();
 </script>
