@@ -1,0 +1,97 @@
+# Missing Entities Ranked v2
+
+## Top 10 truly missing producers/distributors to add next
+- Farmers Mill — score 6 — mentions 5 — listings: bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins, bohemian-bakery-cbd
+- Ashley River Organics — score 5 — mentions 1 — listings: streamside-organics
+- Commonsense Organics — score 4 — mentions 4 — listings: commonsense-wellington-city, commonsense-kapiti, commonsense-kilbirnie, commonsense-lower-hutt
+- Community co-op since 2012 — score 3 — mentions 1 — listings: harbour-co-op-lyttelton
+- Greystone Wines — score 3 — mentions 1 — listings: streamside-organics
+- Local co-op ensuring organic food access in Thames — score 3 — mentions 1 — listings: thames-organic-shop
+- Catalina Bay Farmers Market — score 2 — mentions 1 — listings: sunshine-gelato
+- Coffee La La — score 2 — mentions 1 — listings: charlie-grace-mobile-cafe
+- Coffee Supreme — score 2 — mentions 1 — listings: the-tinman
+- Fair Trade Organic — score 2 — mentions 1 — listings: havana-coffee-works
+
+## Top 30 high-impact missing entities
+- Farmers Mill — score 6 — mentions 5 — listings: bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins, bohemian-bakery-cbd
+- Ashley River Organics — score 5 — mentions 1 — listings: streamside-organics
+- Commonsense Organics — score 4 — mentions 4 — listings: commonsense-wellington-city, commonsense-kapiti, commonsense-kilbirnie, commonsense-lower-hutt
+- Community co-op since 2012 — score 3 — mentions 1 — listings: harbour-co-op-lyttelton
+- Greystone Wines — score 3 — mentions 1 — listings: streamside-organics
+- Local co-op ensuring organic food access in Thames — score 3 — mentions 1 — listings: thames-organic-shop
+- Catalina Bay Farmers Market — score 2 — mentions 1 — listings: sunshine-gelato
+- Coffee La La — score 2 — mentions 1 — listings: charlie-grace-mobile-cafe
+- Coffee Supreme — score 2 — mentions 1 — listings: the-tinman
+- Fair Trade Organic — score 2 — mentions 1 — listings: havana-coffee-works
+- First Light Farms — score 2 — mentions 1 — listings: wharerata-farm
+- Food Forest Organics — score 2 — mentions 1 — listings: cameron-family-farms
+- Free-farmed NZ — score 2 — mentions 1 — listings: westland-whole-foods
+- Govett-Brewster Art Gallery — score 2 — mentions 1 — listings: govett-brewster-cafe
+- Harris Farms — score 2 — mentions 1 — listings: beckenham-butchery
+- Historic Old Dairy Factory — score 2 — mentions 1 — listings: original-matakana-market
+- Hokowhitu Market. — score 2 — mentions 1 — listings: woodhouse-farm-organics
+- New Farm — score 2 — mentions 1 — listings: jan-powers-farmers-market-powerhouse
+- New Zealand Organic Meats — score 2 — mentions 1 — listings: beckenham-butchery
+- Nitro Cold Brew — score 2 — mentions 1 — listings: alpine-grind-methven
+- Northey Street City Farm. — score 2 — mentions 1 — listings: northey-street-organic-farmers-market
+- Old Dairy Factory — score 2 — mentions 1 — listings: original-matakana-market
+- Opawa Farmers' Market — score 2 — mentions 1 — listings: south-christchurch-farmers-market
+- Organic Chicken — score 2 — mentions 1 — listings: beckenham-butchery
+- Organic Lamb — score 2 — mentions 1 — listings: beckenham-butchery
+- Peanut Farm Reserve — score 2 — mentions 1 — listings: veg-out-st-kilda-farmers-market
+- Prima Coffee — score 2 — mentions 1 — listings: bohemian-bakery-cbd
+- Raw Milk — score 2 — mentions 1 — listings: lindsay-farm
+- Serves AllPress Coffee — score 2 — mentions 1 — listings: bohemian-bakery-cashel-street-hq
+- The Lyttelton Farmers — score 2 — mentions 1 — listings: lyttelton-farmers-market
+
+## Resolved mentions that look like relationship opportunities
+- Ahi Restaurant — matches: ahi-restaurant — mentioned by: ahi-restaurant — Consider adding sources/supplies_to link if appropriate
+- Allandale Regenerative Farm — matches: allandale-regenerative-farm — mentioned by: allandale-regenerative-farm — Consider adding sources/supplies_to link if appropriate
+- Amberley Farmers Market — matches: amberley-farmers-market — mentioned by: amberley-farmers-market — Consider adding sources/supplies_to link if appropriate
+- Amore Food Shop — matches: amore-food-shop-cafe-timaru — mentioned by: amore-food-shop-cafe-timaru — Consider adding sources/supplies_to link if appropriate
+- Arcadia Restaurant — matches: arcadia-restaurant-waiheke — mentioned by: arcadia-restaurant-waiheke — Consider adding sources/supplies_to link if appropriate
+- Aro Cafe — matches: aro-cafe-wellington — mentioned by: aro-cafe-wellington — Consider adding sources/supplies_to link if appropriate
+- Awaroa Organic Winery — matches: awaroa-organic-winery — mentioned by: awaroa-organic-winery — Consider adding sources/supplies_to link if appropriate
+- AwaRua Organics — matches: awarua-organics — mentioned by: awarua-organics — Consider adding sources/supplies_to link if appropriate
+- Babich Wines — matches: babich-wines — mentioned by: babich-wines — Consider adding sources/supplies_to link if appropriate
+- Ballarat Farmers Market — matches: ballarat-farmers-market — mentioned by: ballarat-farmers-market — Consider adding sources/supplies_to link if appropriate
+- Bangalow Farmers Market — matches: bangalow-farmers-market — mentioned by: bangalow-farmers-market — Consider adding sources/supplies_to link if appropriate
+- Bay Farmers Market — matches: bay-of-islands-farmers-market-kerikeri, byron-bay-farmers-market, bay-of-islands-farmers-market-paihia, hawke-s-bay-farmers-market-hastings, golden-bay-farmers-market — mentioned by: napier-urban-farmers-market, hawke-s-bay-farmers-market-hastings — Consider adding sources/supplies_to link if appropriate
+- Bayleaf Organics — matches: bayleaf-organics-haumoana — mentioned by: bayleaf-organics-haumoana — Consider adding sources/supplies_to link if appropriate
+- Beach Road Milk Co — matches: beach-road-milk-co — mentioned by: beach-road-milk-co — Consider adding sources/supplies_to link if appropriate
+- Beckenham Butchery — matches: beckenham-butchery — mentioned by: untamed-earth-farm-shop, beckenham-butchery — Consider adding sources/supplies_to link if appropriate
+- BeetRoot Groceries — matches: beetroot-groceries — mentioned by: beetroot-groceries — Consider adding sources/supplies_to link if appropriate
+- Bellbird Permaculture Farm — matches: bellbird-permaculture-farm — mentioned by: bellbird-permaculture-farm — Consider adding sources/supplies_to link if appropriate
+- Bendigo Community Farmers Market — matches: bendigo-community-farmers-market — mentioned by: bendigo-community-farmers-market — Consider adding sources/supplies_to link if appropriate
+- Betsy Coffee Truck — matches: betsy-coffee-truck — mentioned by: betsy-coffee-truck — Consider adding sources/supplies_to link if appropriate
+- Bhanga Coffee Cart — matches: bhanga-coffee-cart — mentioned by: bhanga-coffee-cart — Consider adding sources/supplies_to link if appropriate
+- Black Estate — matches: black-estate-waipara — mentioned by: streamside-organics, black-estate-waipara — Consider adding sources/supplies_to link if appropriate
+- Bohemian Bakery — matches: bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins, bohemian-bakery-cbd — mentioned by: bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins — Consider adding sources/supplies_to link if appropriate
+- Bohemian Bakery Caf — matches: bohemian-bakery-cbd — mentioned by: bohemian-bakery-cbd — Consider adding sources/supplies_to link if appropriate
+- Bostock Brothers Organic Free-Range — matches: bostock-brothers — mentioned by: beckenham-butchery — Consider adding sources/supplies_to link if appropriate
+- Bostock Organic Kitchen Queenstown — matches: bostock-organic-kitchen-queenstown — mentioned by: bostock-organic-kitchen-queenstown — Consider adding sources/supplies_to link if appropriate
+- Brown Owl Organics — matches: brown-owl-organics-rotorua — mentioned by: lux-organics-rotorua, brown-owl-organics-rotorua — Consider adding sources/supplies_to link if appropriate
+- BSKT Cafe — matches: bskt-cafe — mentioned by: bskt-cafe — Consider adding sources/supplies_to link if appropriate
+- Byron Bay Farmers Market — matches: byron-bay-farmers-market — mentioned by: byron-bay-farmers-market — Consider adding sources/supplies_to link if appropriate
+- Byron Bay Shop — matches: santos-organics-byron-bay-shop — mentioned by: santos-organics-byron-bay-shop — Consider adding sources/supplies_to link if appropriate
+- Byron Fresh Cafe — matches: byron-fresh-cafe — mentioned by: byron-fresh-cafe — Consider adding sources/supplies_to link if appropriate
+- Cacao Pod — matches: she-universe-cacao-pod — mentioned by: she-universe-chocolate — Consider adding sources/supplies_to link if appropriate
+- Cambridge Farmers Market — matches: cambridge-farmers-market — mentioned by: cambridge-farmers-market — Consider adding sources/supplies_to link if appropriate
+- Cameron Family Farms — matches: cameron-family-farms — mentioned by: cameron-family-farms — Consider adding sources/supplies_to link if appropriate
+- Carrick Wines — matches: carrick-wines — mentioned by: carrick-wines — Consider adding sources/supplies_to link if appropriate
+- Ceres Organics — matches: ceres-organics — mentioned by: ceres-organics — Consider adding sources/supplies_to link if appropriate
+- Chantal Organics — matches: chantal-organics — mentioned by: chantal-organics, chantal-shop-napier — Consider adding sources/supplies_to link if appropriate
+- Chantal Shop — matches: chantal-shop-napier — mentioned by: chantal-shop-napier — Consider adding sources/supplies_to link if appropriate
+- Charlie Grace Mobile Caf — matches: charlie-grace-mobile-cafe — mentioned by: charlie-grace-mobile-cafe — Consider adding sources/supplies_to link if appropriate
+- Charlotte's Kitchen — matches: charlottes-kitchen-paihia — mentioned by: charlottes-kitchen-paihia — Consider adding sources/supplies_to link if appropriate
+- Cheek Cafe — matches: cheek-cafe — mentioned by: cheek-cafe — Consider adding sources/supplies_to link if appropriate
+- Christchurch Farmers — matches: south-christchurch-farmers-market, christchurch-farmers-market — mentioned by: christchurch-farmers-market — Consider adding sources/supplies_to link if appropriate
+- Christchurch Farmers Market — matches: christchurch-farmers-market, south-christchurch-farmers-market — mentioned by: streamside-organics — Consider adding sources/supplies_to link if appropriate
+- Churton Wines — matches: churton-wines — mentioned by: churton-wines — Consider adding sources/supplies_to link if appropriate
+- City Honest Grocer — matches: city-honest-grocer — mentioned by: city-honest-grocer — Consider adding sources/supplies_to link if appropriate
+- Clarence Kitchen Collective — matches: clarence-kitchen-collective — mentioned by: clarence-kitchen-collective — Consider adding sources/supplies_to link if appropriate
+- Clarks Organic Meat — matches: clarks-organic-meat — mentioned by: clarks-organic-meat — Consider adding sources/supplies_to link if appropriate
+- Clevedon Village Farmers Market — matches: clevedon-village-farmers-market — mentioned by: clevedon-village-farmers-market — Consider adding sources/supplies_to link if appropriate
+- Co Organics — matches: benge-and-co-organics-nelson — mentioned by: benge-and-co-organics-nelson — Consider adding sources/supplies_to link if appropriate
+- Coastal Market Garden — matches: coastal-market-garden — mentioned by: coastal-market-garden — Consider adding sources/supplies_to link if appropriate
+- Coburg Farmers Market — matches: coburg-farmers-market — mentioned by: coburg-farmers-market — Consider adding sources/supplies_to link if appropriate
