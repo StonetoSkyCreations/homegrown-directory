@@ -27,6 +27,7 @@ hours: ''
 lat: ''
 lon: ''
 supplies_to: []
-sources: []
+sources:
+- coffee-la-la
 source_urls: []
 ---

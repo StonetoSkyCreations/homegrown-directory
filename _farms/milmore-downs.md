@@ -50,6 +50,7 @@ supplies_to:
 - bohemian-bakery-cashel-street-hq
 - bohemian-bakery-st-martins
 - bohemian-bakery-cbd
+- farmers-mill
 sources: []
 products_tags:
 - meat

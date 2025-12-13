@@ -38,6 +38,7 @@ lat:
 lon: 
 supplies_to: []
 sources:
+- farmers-mill
 - milmore-downs
 subtype: specialty-grocer
 source_urls: []

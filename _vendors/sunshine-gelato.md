@@ -28,7 +28,8 @@ social: ''
 hours: ''
 lat: ''
 lon: ''
-supplies_to: []
+supplies_to:
+- catalina-bay-farmers-market
 sources: []
 source_urls: []
 ---

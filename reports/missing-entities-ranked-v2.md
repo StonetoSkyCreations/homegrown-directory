@@ -3,26 +3,19 @@
 ## Top 10 truly missing producers/distributors to add next
 - Farmers Mill — score 6 — mentions 5 — listings: bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins, bohemian-bakery-cbd
 - Ashley River Organics — score 5 — mentions 1 — listings: streamside-organics
-- Commonsense Organics — score 4 — mentions 4 — listings: commonsense-wellington-city, commonsense-kapiti, commonsense-kilbirnie, commonsense-lower-hutt
 - Community co-op since 2012 — score 3 — mentions 1 — listings: harbour-co-op-lyttelton
 - Greystone Wines — score 3 — mentions 1 — listings: streamside-organics
-- Local co-op ensuring organic food access in Thames — score 3 — mentions 1 — listings: thames-organic-shop
 - Catalina Bay Farmers Market — score 2 — mentions 1 — listings: sunshine-gelato
 - Coffee La La — score 2 — mentions 1 — listings: charlie-grace-mobile-cafe
 - Coffee Supreme — score 2 — mentions 1 — listings: the-tinman
-- Fair Trade Organic — score 2 — mentions 1 — listings: havana-coffee-works
 
 ## Top 30 high-impact missing entities
 - Farmers Mill — score 6 — mentions 5 — listings: bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins, bohemian-bakery-cbd
 - Ashley River Organics — score 5 — mentions 1 — listings: streamside-organics
-- Commonsense Organics — score 4 — mentions 4 — listings: commonsense-wellington-city, commonsense-kapiti, commonsense-kilbirnie, commonsense-lower-hutt
-- Community co-op since 2012 — score 3 — mentions 1 — listings: harbour-co-op-lyttelton
 - Greystone Wines — score 3 — mentions 1 — listings: streamside-organics
-- Local co-op ensuring organic food access in Thames — score 3 — mentions 1 — listings: thames-organic-shop
 - Catalina Bay Farmers Market — score 2 — mentions 1 — listings: sunshine-gelato
 - Coffee La La — score 2 — mentions 1 — listings: charlie-grace-mobile-cafe
 - Coffee Supreme — score 2 — mentions 1 — listings: the-tinman
-- Fair Trade Organic — score 2 — mentions 1 — listings: havana-coffee-works
 - First Light Farms — score 2 — mentions 1 — listings: wharerata-farm
 - Food Forest Organics — score 2 — mentions 1 — listings: cameron-family-farms
 - Free-farmed NZ — score 2 — mentions 1 — listings: westland-whole-foods
@@ -43,6 +36,9 @@
 - Raw Milk — score 2 — mentions 1 — listings: lindsay-farm
 - Serves AllPress Coffee — score 2 — mentions 1 — listings: bohemian-bakery-cashel-street-hq
 - The Lyttelton Farmers — score 2 — mentions 1 — listings: lyttelton-farmers-market
+
+## Brand umbrella candidates
+- Commonsense Organics — already exists as multiple store listings
 
 ## Resolved mentions that look like relationship opportunities
 - Ahi Restaurant — matches: ahi-restaurant — mentioned by: ahi-restaurant — Consider adding sources/supplies_to link if appropriate

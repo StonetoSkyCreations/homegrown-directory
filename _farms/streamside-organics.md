@@ -65,6 +65,8 @@ supplies_to:
 - bliss-box
 - live2give-organics
 source_urls: []
+sources:
+- ashley-river-organics
 hours: 'CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch
   Farmers Market: Saturday 9am–1pm; South Christchurch Farmers Market: Sunday 9am–12pm;
   GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon–Fri (varies

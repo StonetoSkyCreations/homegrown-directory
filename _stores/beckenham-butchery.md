@@ -44,6 +44,7 @@ notes: ''
 supplies_to: []
 sources:
 - bostock-brothers
+- new-zealand-organic-meats
 ---
 Beckenham Butchery is a cornerstone of organic food culture in Otautahi Christchurch -- a fully certified organic butcher committed to ethical sourcing, whole-animal respect, and transparent origins. Located right next door to Untamed Earth Organic Grocer in Beckenham, it creates a rare pairing: organic meat and organic produce side by side. For customers, it means one simple thing -- you can complete your entire organic shop in one stop, confident that everything you are buying has been raised or grown with integrity.
 
