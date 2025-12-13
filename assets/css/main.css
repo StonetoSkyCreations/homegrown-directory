@@ -1131,7 +1131,6 @@ a:focus-visible {
   gap: 0.5rem;
   max-width: 960px;
   box-shadow: 0 14px 38px rgba(0, 0, 0, 0.04);
-  border-left: 4px solid var(--accent);
 }
 .empty-panel p {
   margin: 0;
