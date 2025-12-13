@@ -557,6 +557,13 @@ a:focus-visible {
   color: var(--text);
   border-color: var(--border);
 }
+.button--sm {
+  padding: 0.45rem 0.75rem;
+  font-size: 0.95rem;
+}
+.near-me-status {
+  margin-left: 0.4rem;
+}
 
 .search-section {
   margin-top: 1.6rem;
@@ -711,6 +718,12 @@ a:focus-visible {
   text-align: right;
   word-break: break-word;
   justify-self: end;
+}
+.listing-card__distance {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: right;
 }
 .listing-card__location-link {
   display: block;

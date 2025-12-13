@@ -82,6 +82,8 @@ Filters read:
   data-collection="{{ type_token | escape }}"
   data-category="{{ type_token | escape }}"
   data-country="{{ listing.country_slug | escape }}"
+  data-lat="{{ listing.lat | default: '' }}"
+  data-lon="{{ listing.lon | default: '' }}"
   data-practices="{{ practices_joined | downcase | escape }}"
   data-products="{% if products_array and products_array != empty %}{{ products_array | join: ',' | downcase }}{% endif %}">
   <div class="listing-card__meta">
@@ -103,6 +105,7 @@ Filters read:
     {% else %}
       <span class="listing-card__location muted">Location not provided</span>
     {% endif %}
+    <p class="listing-card__distance" data-distance hidden></p>
   </div>
   <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ card_title }}</a></h3>
   <p class="listing-card__summary">{{ listing.description | default: listing.excerpt | strip_html | truncate: 130 }}</p>

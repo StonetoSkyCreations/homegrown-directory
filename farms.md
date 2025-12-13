@@ -75,6 +75,8 @@ seo_description: >
       <label for="dirSearch">Search</label>
       <input id="dirSearch" type="search" placeholder="Search farms by name or city">
       <div id="dirResultsCount" class="muted"></div>
+      <button type="button" class="button ghost button--sm" id="nearMeBtn">Near me</button>
+      <span class="muted near-me-status" id="nearMeStatus"></span>
     </div>
   </div>
 

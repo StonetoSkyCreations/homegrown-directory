@@ -323,6 +323,99 @@
     const productFilters = Array.from(document.querySelectorAll('input[name="products"]'));
     const cards = Array.from(directoryContainer.querySelectorAll(".listing-card"));
     const dirResultsCount = document.getElementById("dirResultsCount");
+    const nearMeBtn = document.getElementById("nearMeBtn");
+    const nearMeStatus = document.getElementById("nearMeStatus");
+    let userLocation = null;
+    let nearMeActive = false;
+
+    const parseCoord = (value) => {
+      const num = parseFloat(value);
+      return Number.isFinite(num) ? num : null;
+    };
+
+    const haversineKm = (lat1, lon1, lat2, lon2) => {
+      const R = 6371;
+      const toRad = (deg) => (deg * Math.PI) / 180;
+      const dLat = toRad(lat2 - lat1);
+      const dLon = toRad(lon2 - lon1);
+      const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      return R * c;
+    };
+
+    const formatDistance = (value) => {
+      if (!Number.isFinite(value)) return "";
+      if (value < 10) return `${value.toFixed(1)} km away`;
+      return `${Math.round(value)} km away`;
+    };
+
+    const setDistanceBadge = (card, distance) => {
+      const badge = card.querySelector("[data-distance]");
+      if (!badge) return distance;
+      if (!Number.isFinite(distance)) {
+        badge.hidden = true;
+        badge.textContent = "";
+      } else {
+        badge.hidden = false;
+        badge.textContent = formatDistance(distance);
+      }
+      return distance;
+    };
+
+    const clearDistances = (cardList) => {
+      cardList.forEach((card) => setDistanceBadge(card, Infinity));
+    };
+
+    const sortByDistance = (cardList, location) => {
+      let anyDistance = false;
+      const sorted = cardList.slice().sort((a, b) => {
+        const latA = parseCoord(a.dataset.lat);
+        const lonA = parseCoord(a.dataset.lon);
+        const latB = parseCoord(b.dataset.lat);
+        const lonB = parseCoord(b.dataset.lon);
+        const distA =
+          latA !== null && lonA !== null ? haversineKm(location.lat, location.lon, latA, lonA) : Infinity;
+        const distB =
+          latB !== null && lonB !== null ? haversineKm(location.lat, location.lon, latB, lonB) : Infinity;
+        if (Number.isFinite(distA) || Number.isFinite(distB)) anyDistance = true;
+        setDistanceBadge(a, distA);
+        setDistanceBadge(b, distB);
+        return distA - distB;
+      });
+      sorted.forEach((card) => card.parentNode.appendChild(card));
+      if (!anyDistance && nearMeStatus) {
+        nearMeStatus.textContent = "No listings with coordinates";
+      }
+    };
+
+    const requestLocation = () => {
+      if (!nearMeBtn) return;
+      if (!navigator.geolocation) {
+        if (nearMeStatus) nearMeStatus.textContent = "Geolocation not supported";
+        return;
+      }
+      if (nearMeStatus) nearMeStatus.textContent = "Locating…";
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          userLocation = {
+            lat: position.coords.latitude,
+            lon: position.coords.longitude
+          };
+          nearMeActive = true;
+          if (nearMeStatus) nearMeStatus.textContent = "Sorted by distance";
+          if (typeof runDirectoryFilters === "function") runDirectoryFilters();
+        },
+        () => {
+          nearMeActive = false;
+          if (nearMeStatus) nearMeStatus.textContent = "Location blocked";
+        },
+        { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
+      );
+    };
+
+    if (nearMeBtn) nearMeBtn.addEventListener("click", requestLocation);
 
     populateDirectoryRegions = (countrySlug) => {
       if (!regionSelect) return;
@@ -364,6 +457,11 @@
         if (dirResultsCount) {
           dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
         }
+        if (nearMeActive && userLocation) {
+          sortByDistance(cards, userLocation);
+        } else {
+          clearDistances(cards);
+        }
         return;
       }
 
@@ -398,6 +496,11 @@
       if (dirResultsCount) {
         dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
       }
+      if (nearMeActive && userLocation) {
+        sortByDistance(cards.filter((card) => card.style.display !== "none"), userLocation);
+      } else {
+        clearDistances(cards);
+      }
     };
 
     populateDirectoryRegions(selectedCountry);
@@ -422,12 +525,13 @@
         : item.services || [];
     const tagsMarkup = (tags || []).slice(0, 4).map((tag) => `<li>${tag}</li>`).join("");
     return `
-      <article class="listing-card">
+      <article class="listing-card" data-lat="${item.lat ?? ""}" data-lon="${item.lon ?? ""}">
         <div class="listing-card__meta">
           <div>
             <span class="pill pill--type">${typeLabels[item.collection] || item.type}</span>
           </div>
           <span class="listing-card__location">${item.city || ""}${item.city && item.region ? ", " : ""}${item.region || ""}</span>
+          <p class="listing-card__distance" data-distance hidden></p>
         </div>
         <h3 class="listing-card__title"><a href="${item.url}">${item.title}</a></h3>
         <p class="listing-card__summary">${item.description || ""}</p>
