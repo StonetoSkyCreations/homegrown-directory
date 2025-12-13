@@ -23,6 +23,10 @@ sourcing_tags:
 products: []
 market_days:
 - Market
+sources:
+- jj-organics-napier
+- hohepa-hawkes-bay
+- bayleaf-organics-haumoana
 source_urls:
 - Sundays 8:30am–12:30pm
 last_checked: FMNZ member list

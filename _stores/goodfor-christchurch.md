@@ -33,6 +33,7 @@ lat:
 lon:
 supplies_to:
 sources:
+  - streamside-organics
   - https://goodfor.co.nz/pages/stores
   - https://goodfor.co.nz/
 sourced_from: streamside-organics

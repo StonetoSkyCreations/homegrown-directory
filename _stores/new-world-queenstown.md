@@ -35,6 +35,7 @@ sourced_from: streamside-organics
 supplies_to:
 also_referenced_by:
 sources:
+  - streamside-organics
   - https://www.streamsideorganics.co.nz/pages/about
   - https://www.newworld.co.nz/south-island/otago-and-southland/queenstown
   - https://wanderlog.com/place/details/780643/new-world-queenstown

@@ -31,6 +31,7 @@ lat:
 lon:
 supplies_to:
 sources:
+  - streamside-organics
   - https://www.newworld.co.nz/south-island/canterbury/durham-street
   - https://www.atly.com/gluten-free/location/NewWorldDurhamStreet
 sourced_from: streamside-organics

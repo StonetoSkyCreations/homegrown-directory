@@ -13,8 +13,7 @@ products:
 services:
 - CSA / veggie box
 - Wholesale
-supplies_to:
-- slug-of-market-or-store
+supplies_to: []
 sources: []
 hours: ''
 website: ''

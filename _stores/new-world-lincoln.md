@@ -36,6 +36,7 @@ sourced_from: streamside-organics
 supplies_to:
 also_referenced_by:
 sources:
+  - streamside-organics
   - https://www.streamsideorganics.co.nz/pages/about
   - https://www.newworld.co.nz/south-island/canterbury/lincoln
   - https://new-world-lincoln.wheree.com

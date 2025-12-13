@@ -40,6 +40,29 @@ services:
 - GoodFor mid-week pickup (The Welder, Christchurch)
 certifications: []
 supply_role: Producer
+supplies_to:
+- ilex-cafe-botanic-gardens
+- gatherings-christchurch
+- black-estate-waipara
+- greystone-wines-waipara
+- pomeroys-old-brewery-inn
+- cellar-door-christchurch
+- alpine-grind-methven
+- green-dinner-table
+- piko-wholefoods-chch
+- goodfor-christchurch
+- selwyn-co-op
+- soul-food-organic
+- new-world-st-martins
+- new-world-durham-street
+- new-world-fendalton
+- new-world-lincoln
+- new-world-halswell
+- new-world-queenstown
+- freshchoice-merivale
+- freshchoice-nelson-city
+- bliss-box
+- live2give-organics
 source_urls: []
 hours: 'CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch Farmers Market: Saturday 9am–1pm; South Christchurch Farmers Market: Sunday 9am–12pm; GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon–Fri (varies by venue)'
 hours_list:

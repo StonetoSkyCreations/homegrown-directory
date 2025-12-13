@@ -21,7 +21,8 @@ products:
 - Vegetables
 services:
 - Restaurant supply
-sources: []
+sources:
+- streamside-organics
 supplies_to: []
 hours: ''
 website: https://www.gatherings.co.nz

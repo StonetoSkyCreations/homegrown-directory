@@ -23,6 +23,7 @@ supplies_to:
 - city-honest-grocer
 - kopupako-kitchen
 - supply-circle-hub
+- harbour-harvest-market
 description: Mixed livestock on diverse pastures with long rest periods and low stocking rates.
 website: https://waipunapastures.example.nz
 phone: "+64 27 555 0192"

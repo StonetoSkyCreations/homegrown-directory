@@ -26,6 +26,8 @@ products_or_cuisine:
 services:
   - Meal kit subscription
   - Nationwide delivery
+sources:
+  - streamside-organics
 suppliers:
   - streamside-organics
 source_urls:

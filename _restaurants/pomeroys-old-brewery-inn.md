@@ -22,6 +22,8 @@ services:
   - Lunch service
   - Dinner service
   - Bookings
+sources:
+  - streamside-organics
 website: https://pomspub.co.nz
 email: restaurant@pomspub.co.nz
 phone: "+64 3 365 1523"

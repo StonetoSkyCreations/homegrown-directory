@@ -15,10 +15,8 @@ services:
 - Aggregation / hub
 - Delivery
 - Wholesale
-sources:
-- slug-of-farm
-supplies_to:
-- slug-of-store-or-restaurant
+sources: []
+supplies_to: []
 hours: ''
 website: ''
 email: ''

@@ -32,6 +32,7 @@ lat: ''
 lon: ''
 supplies_to: []
 sources:
+- untamed-earth
 - https://ccc.govt.nz/news-and-events/whats-on/event/south-christchurch-farmers-market
 practices_tags:
 - organic

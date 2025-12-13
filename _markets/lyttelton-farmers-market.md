@@ -23,6 +23,8 @@ sourcing_tags:
 products: []
 market_days:
 - Market
+sources:
+- untamed-earth
 source_urls:
 - Saturdays 10am–1pm
 last_checked: FMNZ member list

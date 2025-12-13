@@ -31,6 +31,7 @@ lat:
 lon:
 supplies_to:
 sources:
+  - streamside-organics
   - https://www.newworld.co.nz/south-island/canterbury/st-martins
   - https://eap.mcgill.ca/MagRack/COG/COG_P_95_05.htm
 sourced_from: streamside-organics

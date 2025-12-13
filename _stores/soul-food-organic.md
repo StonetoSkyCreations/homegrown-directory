@@ -28,6 +28,7 @@ lat: ''
 lon: ''
 supplies_to: []
 sources:
+  - streamside-organics
   - https://soulfoodorganic.co.nz
 subtype: organic-store
 ---

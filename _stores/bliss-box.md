@@ -38,7 +38,8 @@ lon:
 sourced_from: streamside-organics
 supplies_to:
 also_referenced_by: Ooooby
-sources: []
+sources:
+- streamside-organics
 last_checked: "2025-12-12"
 subtype: specialty-grocer
 ---

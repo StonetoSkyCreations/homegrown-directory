@@ -33,6 +33,7 @@ sourced_from: streamside-organics
 supplies_to:
 also_referenced_by:
 sources:
+  - streamside-organics
   - https://www.streamsideorganics.co.nz/pages/about
   - https://freshchoice-merivale.wheree.com
   - https://www.look4.net.nz/nz/reg/Christchurch/loc/East/cat/Supermarkets/b_start/0/id/Fresh_Choice_Merivale

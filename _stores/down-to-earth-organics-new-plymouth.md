@@ -29,5 +29,7 @@ lat: -39.0517323
 lon: 174.095274
 supplies_to: []
 sources:
+  - kaitake-farm
+  - coastal-market-garden
   - https://downtoearthorganics.co.nz
 ---

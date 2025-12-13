@@ -23,6 +23,9 @@ sourcing_tags:
 products: []
 market_days:
 - Market
+sources:
+- let-food-be-thy-medicine-kawakawa
+- oromahoe-pauls-garden
 source_urls:
 - Sundays 8:30am–12pm (Kerikeri)
 last_checked: FMNZ member list

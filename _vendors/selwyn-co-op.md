@@ -27,6 +27,8 @@ products_or_cuisine:
 services:
   - Food co-op membership
   - Bulk ordering and distribution
+sources:
+  - streamside-organics
 suppliers:
   - streamside-organics
 source_urls:

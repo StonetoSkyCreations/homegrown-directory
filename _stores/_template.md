@@ -13,8 +13,7 @@ products:
 services:
 - Retail shop
 - Online ordering
-sources:
-- slug-of-farm-or-hub
+sources: []
 supplies_to: []
 hours: ''
 website: ''

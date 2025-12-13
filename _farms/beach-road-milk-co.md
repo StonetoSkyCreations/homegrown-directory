@@ -27,6 +27,7 @@ lat: -39.0868578
 lon: 174.020033
 supplies_to: []
 sources:
+- kaitake-farm
 - https://www.beachroadmilk.co.nz
 products_tags:
 - dairy

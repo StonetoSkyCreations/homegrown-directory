@@ -22,6 +22,8 @@ social_links:
 sourcing_tags:
 - organic
 products: []
+sources:
+- streamside-organics
 market_days: []
 source_urls:
 - Established 1979
