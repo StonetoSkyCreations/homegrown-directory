@@ -714,13 +714,11 @@ a:focus-visible {
   display: grid;
   gap: 1.25rem;
 }
-.listing__header-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
+.listing__header {
+  position: relative;
 }
-.listing__header-row > :first-child {
-  flex: 1;
+.listing__header-row {
+  display: block;
 }
 .listing__header h1 {
   margin: 0.1rem 0 0.3rem;
@@ -772,7 +770,9 @@ a:focus-visible {
   position: relative;
 }
 .listing__header .share-control {
-  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: inline-flex;
 }
 .share-button__icon {
