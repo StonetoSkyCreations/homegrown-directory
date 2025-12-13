@@ -718,7 +718,14 @@ a:focus-visible {
   position: relative;
 }
 .listing__header-row {
-  display: block;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.listing__header-row > :first-child {
+  flex: 1;
+  min-width: 0;
 }
 .listing__header h1 {
   margin: 0.1rem 0 0.3rem;
@@ -768,16 +775,22 @@ a:focus-visible {
 }
 .share-control {
   position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
 }
 .listing__header .share-control {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: inline-flex;
+  margin-left: auto;
+  align-self: flex-start;
+}
+.share-button {
+  padding: 0.55rem 0.85rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.2;
 }
 .share-button__icon {
-  margin-right: 0.35rem;
-  font-size: 1rem;
+  margin-right: 0.25rem;
+  font-size: 0.95rem;
   line-height: 1;
 }
 .share-menu {
@@ -814,6 +827,13 @@ a:focus-visible {
   outline: none;
 }
 @media (min-width: 768px) {
+  .listing__header-row {
+    align-items: center;
+  }
+  .share-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
   .share-control {
     display: none;
   }
