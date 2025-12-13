@@ -352,8 +352,12 @@
       resultsContainer.innerHTML = items.map(cardTemplate).join("");
     }
     if (resultsCount) {
-      const noun = items.length === 1 ? "listing" : "listings";
-      resultsCount.textContent = `${items.length} ${noun}`;
+      if (!hasActive && items.length === 0) {
+        resultsCount.textContent = "";
+      } else {
+        const noun = items.length === 1 ? "listing" : "listings";
+        resultsCount.textContent = `${items.length} ${noun}`;
+      }
     }
   }
 
