@@ -5,6 +5,9 @@ permalink: /search.json
 [
 {% assign all = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors | concat: site.vendors %}
 {% for doc in all %}
+  {% if doc.type == "brand" or doc.subtype == "brand" or doc.listing_type == "brand" %}
+    {% continue %}
+  {% endif %}
   {% assign display_type = doc.collection | capitalize %}
   {% assign type_token = doc.collection %}
   {% assign subtype_raw = doc.subtype | default: doc.type | default: doc.listing_type | default: doc.category %}

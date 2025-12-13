@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-{% assign items = site[page.collection_key] | sort: 'title' %}
+{% assign items_raw = site[page.collection_key] | sort: 'title' %}
+{% assign items = items_raw | where_exp: 'item', 'item.type != "brand"' %}
 <section class="collection-index">
   <header class="collection-index__header">
     <p class="eyebrow">{{ page.collection_label }}</p>
