@@ -56,5 +56,3 @@ In winter, the market contracts into a smaller, more intimate version of itself.
 What makes Ohoka stand out is that it remains a true farmers’ market: a place where producers sell directly, where the supply chain is short and transparent, and where conversations about soil, weather, seeds, and seasonality are as much part of the experience as the food itself. Many of the stalls follow organic, spray-free, or regenerative methods, even if not formally certified, and the market draws in ethical artisans whose values align with sustainable, community-rooted food systems.
 
 Whether you visit in the height of summer or the stillness of winter, Ohoka Farmers’ Market offers nourishment beyond produce. It offers relationship — between neighbours, growers, makers, and the land itself. It is a weekly reminder of how food culture thrives when built close to home.
-
-**User review (5 Dec 2025):** “Fabulous market, my favourite market in Christchurch area.” — Amanda (5/5)
