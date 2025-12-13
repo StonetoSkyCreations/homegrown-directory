@@ -11,6 +11,7 @@ country: NZ
 country_slug: new-zealand
 region: Wellington
 suburb: Te Aro
+brand_slug: commonsense-organics
 address: 147 Tory Street
 postcode: '6011'
 lon: -41.2959

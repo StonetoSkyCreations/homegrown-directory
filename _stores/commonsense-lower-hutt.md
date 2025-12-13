@@ -11,6 +11,7 @@ country: NZ
 country_slug: new-zealand
 region: Wellington
 suburb: Lower Hutt
+brand_slug: commonsense-organics
 address: 37 Waterloo Road
 postcode: '5010'
 lon: -41.2121

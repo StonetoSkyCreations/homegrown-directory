@@ -11,6 +11,7 @@ country: NZ
 country_slug: new-zealand
 region: Wellington
 suburb: Kilbirnie
+brand_slug: commonsense-organics
 address: 37 Rongotai Road
 postcode: '6022'
 lon: -41.3275

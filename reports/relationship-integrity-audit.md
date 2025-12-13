@@ -21,3 +21,7 @@
 - Listings updated: 487
 - Keys removed: suppliers (23), sourced_from_text (1)
 - Ambiguous or skipped: none
+
+## Brand umbrellas added
+- commonsense-organics with locations: commonsense-wellington-city, commonsense-kapiti, commonsense-kilbirnie, commonsense-lower-hutt
+- Missing slugs detected: none

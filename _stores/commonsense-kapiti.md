@@ -11,6 +11,7 @@ country: NZ
 country_slug: new-zealand
 region: Wellington
 suburb: Paraparaumu
+brand_slug: commonsense-organics
 address: Coastlands Mall, State Highway 1
 postcode: '5032'
 lon: -40.9158
