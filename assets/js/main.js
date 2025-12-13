@@ -510,9 +510,7 @@
     document.querySelectorAll('input[name="services"]:checked').forEach((el) => selections.services.push(el.value));
 
     const source = window.HG_INDEX || listings || [];
-    filtered = active
-      ? source.filter((item) => matchesFilters(item, selections))
-      : source.filter((item) => item.featured === true || item.featured === "true");
+    filtered = active ? source.filter((item) => matchesFilters(item, selections)) : [];
     renderList(filtered, active);
   }
 
