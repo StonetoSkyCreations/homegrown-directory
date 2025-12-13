@@ -17,6 +17,10 @@ seo_description: >
         <option value="all">All regions</option>
       </select>
     </div>
+    <div class="search-controls">
+      <label for="searchInput" class="muted">Search by city, region, product, or business name…</label>
+      <input id="searchInput" type="search" placeholder="Try “Wellington organic”" autocomplete="off">
+    </div>
   </div>
   <div class="hero__actions">
     <button class="button" type="button" data-type-filter="grocer">Find Groceries</button>
@@ -36,14 +40,27 @@ seo_description: >
 {% endif %}
 
 <section class="search-section search-section--home">
-  <div class="search-controls">
-    <label for="searchInput" class="muted">Search by region, city, or business name…</label>
-    <input id="searchInput" type="search" placeholder="Try “Wellington organic”" autocomplete="off">
-  </div>
   <div class="results-toolbar">
     <div id="resultsCount" class="muted">Loading listings…</div>
   </div>
   <div class="results-layout">
     <div id="listingResults" class="listing-grid listing-grid--tight" aria-live="polite"></div>
   </div>
+  <template id="emptyStateTemplate">
+    <article class="listing-card">
+      <div class="listing-card__meta">
+        <span class="pill pill--type">Guide</span>
+        <span class="listing-card__location"></span>
+      </div>
+      <h3 class="listing-card__title">How to use Homegrown</h3>
+      <p class="listing-card__summary">Homegrown is a map of relationships—local growers, ethical retailers, farmers, markets, cafes and restaurants who keep integrity at the centre. A living ecosystem in digital form.</p>
+      <div class="listing-card__tags">
+        <p class="muted">Use the search bar to type anything (place, business, product, or practice), or browse by region and category to explore.</p>
+        <ul class="tag-list">
+          <li>Guide</li>
+          <li>Start here</li>
+        </ul>
+      </div>
+    </article>
+  </template>
 </section>

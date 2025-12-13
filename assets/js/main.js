@@ -340,9 +340,14 @@
   function renderList(items, active) {
     if (!resultsContainer) return;
     const hasActive = Boolean(active);
+    const emptyTemplate = document.querySelector("#emptyStateTemplate");
     if (!items.length) {
-      const message = hasActive ? "No listings match your filters yet." : "No featured listings are available yet.";
-      resultsContainer.innerHTML = `<p class="muted">${message}</p>`;
+      if (emptyTemplate) {
+        resultsContainer.innerHTML = emptyTemplate.innerHTML;
+      } else {
+        const message = hasActive ? "No listings match your filters yet." : "No featured listings are available yet.";
+        resultsContainer.innerHTML = `<p class="muted">${message}</p>`;
+      }
     } else {
       resultsContainer.innerHTML = items.map(cardTemplate).join("");
     }
