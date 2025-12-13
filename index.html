@@ -8,42 +8,110 @@ seo_description: >
 
 <section class="hero hero--home">
   <div class="hero__text">
-    <h1>Good food starts close to home.</h1>
-    <p class="lead">A directory for finding food grown with care.</p>
-    <p class="lead">Explore farms, markets, grocers, and eateries near you.</p>
-    <div class="hero__filters">
-      <label for="heroRegion" class="muted">Browse by region</label>
-      <select id="heroRegion">
-        <option value="all">All regions</option>
-      </select>
+    <p class="eyebrow">Homegrown Directory</p>
+    <h1>Find food grown with care.</h1>
+    <p class="lead">Search farms, markets, grocers, and eateries without the noise. Choose a country, set your focus, and start exploring.</p>
+    <div class="hero__grid">
+      <div class="hero__panel">
+        <label for="searchInput" class="muted">Search the directory</label>
+        <div class="hero__search">
+          <input id="searchInput" type="search" placeholder="Try “Wellington organic”" autocomplete="off">
+        </div>
+        <p class="muted small">Tip: combine a place and product (e.g. “Auckland veg box”) to narrow results fast.</p>
+      </div>
+      <div class="hero__panel hero__panel--scope">
+        <div class="country-scope">
+          <div class="country-scope__label">Listing scope</div>
+          <div class="country-scope__options">
+            <button type="button" class="pill country-option" data-country-option="new-zealand" aria-label="Show New Zealand listings">
+              <span class="country-option__code">NZ</span>
+              <span class="country-option__name">New Zealand listings</span>
+            </button>
+            <button type="button" class="pill country-option" data-country-option="australia" aria-label="Show Australia listings">
+              <span class="country-option__code">AU</span>
+              <span class="country-option__name">Australia listings</span>
+            </button>
+          </div>
+        </div>
+        <div class="hero__filters hero__filters--inline">
+          <div>
+            <label for="heroRegion" class="muted">Region</label>
+            <select id="heroRegion">
+              <option value="all">All regions</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="hero__panel hero__panel--actions">
+        <p class="muted">Browse by focus</p>
+        <div class="pill-row">
+          <button class="pill pill--filter" type="button" data-type-filter="grocer">Grocers</button>
+          <button class="pill pill--filter" type="button" data-type-filter="restaurant,vendor">Eateries</button>
+          <button class="pill pill--filter" type="button" data-type-filter="market">Markets</button>
+          <button class="pill pill--filter" type="button" data-type-filter="farm">Farms &amp; producers</button>
+        </div>
+        <p class="muted small">Filters are optional—results stay visible while you refine.</p>
+      </div>
     </div>
-  </div>
-  <div class="hero__actions">
-    <button class="button" type="button" data-type-filter="grocer">Find Groceries</button>
-    <button class="button" type="button" data-type-filter="restaurant">Find Eateries</button>
-    <button class="button" type="button" data-type-filter="market">Find Markets</button>
-    <button class="button ghost" type="button" data-type-filter="farm">Find Farms &amp; Producers (for businesses)</button>
   </div>
 </section>
 
 {% assign featured_home = site.data.featured.global.home %}
 
+{% assign featured_all = site.data.featured.collections %}
+{% assign featured_cards = "" | split: "" %}
 {% if featured_home %}
-  {% include featured-card.html
-     collection=featured_home.collection
-     slug=featured_home.slug
-  %}
+  {% assign primary_feature = site[featured_home.collection] | where: "slug", featured_home.slug | first %}
+{% endif %}
+{% if featured_all %}
+  {% for group in featured_all %}
+    {% assign pick = site[group[1].collection] | where: "slug", group[1].slug | first %}
+    {% if pick %}{% assign featured_cards = featured_cards | push: pick %}{% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if primary_feature or featured_cards %}
+<section class="featured-section">
+  <div class="featured-section__header">
+    <p class="eyebrow">Featured</p>
+    <h2>Worth a look right now</h2>
+    <p class="muted">These are handpicked to illustrate what’s possible in the directory. They don’t replace your search—just help you start confidently.</p>
+  </div>
+  <div class="featured-grid">
+    {% if primary_feature %}
+      {% include featured-card.html collection=primary_feature.collection slug=primary_feature.slug %}
+    {% endif %}
+    {% for item in featured_cards %}
+      {% include listing-card.html listing=item featured=true %}
+    {% endfor %}
+  </div>
+</section>
 {% endif %}
 
 <section class="search-section search-section--home">
-  <div class="search-controls">
-    <label for="searchInput" class="muted">Search by region, city, or business name…</label>
-    <input id="searchInput" type="search" placeholder="Try “Wellington organic”" autocomplete="off">
+  <div class="search-intro">
+    <div>
+      <p class="eyebrow">Directory</p>
+      <h2>Browse everything</h2>
+      <p class="muted">Start typing, pick a focus, or change the country scope above. You can’t break it—results stay visible while you refine.</p>
+    </div>
+    <div class="info-card">
+      <p class="info-card__title">New here?</p>
+      <p class="muted">Use search or filters; we preload a handful of listings so the page never feels empty.</p>
+    </div>
   </div>
   <div class="results-toolbar">
-    <div id="resultsCount" class="muted">Loading listings…</div>
+    <div id="resultsCount" class="muted">Curated starters are ready.</div>
   </div>
   <div class="results-layout">
-    <div id="listingResults" class="listing-grid listing-grid--tight" aria-live="polite"></div>
+    <div id="listingResults" class="listing-grid listing-grid--tight" aria-live="polite">
+      {% comment %}Server-rendered starters so the page is never empty without JS{% endcomment %}
+      {% assign starter_cards = site.stores | concat: site.farms | concat: site.markets | concat: site.restaurants | slice: 0,6 %}
+      {% if starter_cards %}
+        {% for item in starter_cards %}
+          {% include listing-card.html listing=item %}
+        {% endfor %}
+      {% endif %}
+    </div>
   </div>
 </section>
