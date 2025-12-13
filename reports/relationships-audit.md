@@ -26,3 +26,8 @@
 - Listings updated: 469
 - Citation entries moved from `sources` to `source_urls`: 83
 - Unresolved slug-like references left in `sources` for manual review: 0
+
+### Formalised Resolved Mentions (current task)
+- Relationships added: 16 edges across 12 listings
+- Listings updated: chantal-shop-napier, chantal-organics, little-farms, bin-inn-masterton, bohemian-bakery-sumner, bohemian-bakery-merivale, bohemian-bakery-cashel-street-hq, bohemian-bakery-st-martins, bohemian-bakery-cbd, milmore-downs, beckenham-butchery, bostock-brothers
+- Skipped (ambiguous/not explicit): four-corners-organics↔combi-elwood (word fragment only); ohoka-farmers-market→gatherings-christchurch (no explicit mention); original-matakana-market→the-origin-christchurch (no explicit mention); taste-nature↔taste-nature-kitchen (adjacent brand, supply direction unclear); taste-nature-dunedin→combi-elwood (word fragment only); untamed-earth-farm-shop→beckenham-butchery/untamed-earth (neighbourhood mention, not supply); beckenham-butchery→untamed-earth/untamed-earth-farm-shop (neighbour mention only); greystone-wines-waipara→gatherings-christchurch (no explicit mention)

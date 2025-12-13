@@ -44,7 +44,12 @@ social: https://www.facebook.com/milmoredowns.co.nz/
 hours: Mo-Fr 9am-5pm
 lat: 
 lon: 
-supplies_to: []
+supplies_to:
+- bohemian-bakery-sumner
+- bohemian-bakery-merivale
+- bohemian-bakery-cashel-street-hq
+- bohemian-bakery-st-martins
+- bohemian-bakery-cbd
 sources: []
 products_tags:
 - meat

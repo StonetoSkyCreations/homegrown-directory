@@ -28,5 +28,6 @@ last_checked: '2025-12-09'
 notes: ''
 city: Masterton
 supplies_to: []
-sources: []
+sources:
+- little-farms
 ---

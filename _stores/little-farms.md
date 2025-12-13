@@ -35,7 +35,8 @@ hours:
 market_days: []
 lat:
 lon:
-supplies_to: []
+supplies_to:
+- bin-inn-masterton
 sources:
   - little-farms-market-garden
   - vagabond-vege

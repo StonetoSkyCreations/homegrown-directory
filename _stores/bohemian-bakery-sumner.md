@@ -42,7 +42,8 @@ hours: Mon–Sun 7:30–15:30
 lat: 
 lon: 
 supplies_to: []
-sources: []
+sources:
+- milmore-downs
 subtype: specialty-grocer
 source_urls: []
 ---
