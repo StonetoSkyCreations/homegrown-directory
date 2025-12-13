@@ -294,8 +294,8 @@ noindex: true
           item.geo_label || "",
           item.geo_source || "",
           item.geo_last_verified || "",
-          item.lat || "",
-          item.lon || "",
+          item.lat ?? "",
+          item.lon ?? "",
           item.url || ""
         ].map(escapeCsv);
         lines.push(line.join(","));
