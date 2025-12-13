@@ -424,7 +424,9 @@
     return `
       <article class="listing-card">
         <div class="listing-card__meta">
-          <span class="pill pill--type">${typeLabels[item.collection] || item.type}</span>
+          <div>
+            <span class="pill pill--type">${typeLabels[item.collection] || item.type}</span>
+          </div>
           <span class="listing-card__location">${item.city || ""}${item.city && item.region ? ", " : ""}${item.region || ""}</span>
         </div>
         <h3 class="listing-card__title"><a href="${item.url}">${item.title}</a></h3>
