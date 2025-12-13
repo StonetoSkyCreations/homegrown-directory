@@ -7,7 +7,8 @@ country: New Zealand
 region: Wellington
 city: Pirinoa
 address: Pirinoa, South Wairarapa
-description: The regenerative market garden of Little Farms, growing vegetables and herbs on no-till, chemical-free beds in Pirinoa.
+description: The regenerative market garden of Little Farms, growing vegetables and
+  herbs on no-till, chemical-free beds in Pirinoa.
 practices:
 - regenerative
 - organic-principles
@@ -31,10 +32,11 @@ lat:
 lon: 
 supplies_to:
 - little-farms
-sources:
-- https://wearelittlefarms.com/pages/the-farm
+sources: []
 last_checked: 2025-12-11
 subtype: market-garden
+source_urls:
+- https://wearelittlefarms.com/pages/the-farm
 ---
 The Little Farms Market Garden is the beating heart of the Little Farms collective. Located in Pirinoa, South Wairarapa, this small market garden grows its crops regeneratively, using no synthetic fertilisers, herbicides or insecticides. Instead, farmers build fertile soil by layering natural organic matter on top of the existing ground and maintain the beds using no-dig methods. These practices protect soil biology and help sequester carbon while yielding nutrient-dense produce.
 

@@ -9,17 +9,18 @@ country: New Zealand
 region: Bay of Plenty
 city: Mount Maunganui
 address: 322 Maunganui Road, Mount Maunganui 3116
-description: Mobile organic smoothie bar and café serving matcha drinks, smoothies, bowls and coffee from two trucks.
+description: Mobile organic smoothie bar and café serving matcha drinks, smoothies,
+  bowls and coffee from two trucks.
 practices:
-  - Organic
+- Organic
 products:
-  - Smoothies
-  - Bowls
-  - Coffee
-  - Matcha
+- Smoothies
+- Bowls
+- Coffee
+- Matcha
 services:
-  - Food truck
-  - Mobile cafe
+- Food truck
+- Mobile cafe
 website: https://vitalityorganics.co.nz
 email: ''
 phone: "+64 27 278 9963"
@@ -29,4 +30,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

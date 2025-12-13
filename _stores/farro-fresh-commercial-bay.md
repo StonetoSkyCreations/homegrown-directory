@@ -27,4 +27,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Located in Commercial Bay shopping center
 city: Auckland
+supplies_to: []
+sources: []
 ---

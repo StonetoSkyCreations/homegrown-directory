@@ -20,7 +20,9 @@ hours: ''
 website: http://www.peppertree.co.nz/
 email: ''
 phone: ''
-description: Coromandel Town restaurant featuring local seafood, mussels, and organic local produce.
+description: Coromandel Town restaurant featuring local seafood, mussels, and organic
+  local produce.
 Dinner menu highlighting local seafood and organic produce from the Coromandel region. Source: http://www.peppertree.co.nz/
 subtype: restaurant
+source_urls: []
 ---

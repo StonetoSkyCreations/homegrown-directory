@@ -7,7 +7,8 @@ country: New Zealand
 region: Auckland
 city: Ardmore
 address: 140 Hamlin Road, Ardmore, Papakura 2582, Auckland
-description: Certified organic farm in South Auckland growing fresh organic produce and seedlings.
+description: Certified organic farm in South Auckland growing fresh organic produce
+  and seedlings.
 practices:
 - Certified organic
 products:
@@ -26,4 +27,5 @@ lon: ''
 supplies_to: []
 sources: []
 subtype: seeds
+source_urls: []
 ---

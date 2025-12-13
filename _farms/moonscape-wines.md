@@ -4,7 +4,8 @@ title: Moonscape Wines
 slug: moonscape-wines
 name: Moonscape Wines
 type: Vineyard
-description: Boutique Central Otago vineyard producing minimal-intervention wines using organic and biodynamic-leaning soil practices.
+description: Boutique Central Otago vineyard producing minimal-intervention wines
+  using organic and biodynamic-leaning soil practices.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -26,4 +27,6 @@ hours: ''
 last_checked: user-submitted
 notes: ''
 subtype: vineyard
+supplies_to: []
+sources: []
 ---

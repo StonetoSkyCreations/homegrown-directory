@@ -5,7 +5,8 @@ name: Wānaka Farmers Market
 brand: Wānaka Farmers Market
 type: market
 category: market
-description: Thursday market where everything is grown, baked, made or caught locally, with organic and spray-free stalls.
+description: Thursday market where everything is grown, baked, made or caught locally,
+  with organic and spray-free stalls.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -26,9 +27,12 @@ last_checked: ''
 notes: ''
 published: true
 city: Wānaka
-? Weekly Wānaka market requiring stallholders to grow, bake, make, or catch their goods locally, including organic and spray-free producers. Source
+? Weekly Wānaka market requiring stallholders to grow, bake, make, or catch their
+  goods locally, including organic and spray-free producers. Source
 : https://wanakafarmersmarket.org.nz/
 practices_tags:
 - organic
 - spray-free
+supplies_to: []
+sources: []
 ---

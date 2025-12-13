@@ -4,7 +4,8 @@ title: Fallow Ridge
 slug: fallow-ridge
 name: Fallow Ridge
 type: Farm
-description: Regenerative family farm producing wool and pasture-raised livestock through holistic, land-healing grazing systems.
+description: Regenerative family farm producing wool and pasture-raised livestock
+  through holistic, land-healing grazing systems.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -30,4 +31,6 @@ notes: ''
 products_tags:
 - meat
 subtype: livestock
+supplies_to: []
+sources: []
 ---

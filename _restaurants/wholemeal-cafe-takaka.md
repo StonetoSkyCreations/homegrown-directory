@@ -21,6 +21,8 @@ website: ''
 email: ''
 phone: ''
 description: Golden Bay cafe with a long history of using organic, local produce.
-Established Takaka cafe emphasizing organic and locally sourced ingredients in its vegetarian-friendly menu. Source: user-supplied list
+Established Takaka cafe emphasizing organic and locally sourced ingredients in its vegetarian-friendly menu. Source: user-supplied
+  list
 subtype: cafe
+source_urls: []
 ---

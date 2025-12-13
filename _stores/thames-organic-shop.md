@@ -28,5 +28,9 @@ last_checked: ''
 notes: ''
 published: true
 city: Thames
-Community organic co-op created by volunteers to keep certified organic food and sustainable products available in the Thames area. Source: user-supplied list
+? Community organic co-op created by volunteers to keep certified organic food and
+  sustainable products available in the Thames area. Source
+: user-supplied list
+supplies_to: []
+sources: []
 ---

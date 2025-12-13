@@ -5,7 +5,8 @@ name: Bendigo Community Farmers Market
 brand: Bendigo Community Farmers Market
 type: market
 category: market
-description: Regional Bendigo market with biodynamic and organic vendors offering produce, honey, dairy, and meats.
+description: Regional Bendigo market with biodynamic and organic vendors offering
+  produce, honey, dairy, and meats.
 country: AU
 country_slug: australia
 region: Victoria
@@ -37,5 +38,7 @@ city: Bendigo
 practices_tags:
 - organic
 - biodynamic
+supplies_to: []
+sources: []
 ---
 Regional farmers market featuring organic and biodynamic growers with seasonal produce and meats.

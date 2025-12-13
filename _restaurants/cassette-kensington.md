@@ -1,32 +1,34 @@
 ---
-title: "Cassette"
+title: Cassette
 slug: cassette-kensington
-country: "Australia"
+country: Australia
 country_slug: australia
-region: "Victoria"
-city: "Melbourne"
-suburb: "Kensington"
-address: "399 Macaulay Road"
-postcode: "3031"
-type: "cafe"
+region: Victoria
+city: Melbourne
+suburb: Kensington
+address: 399 Macaulay Road
+postcode: '3031'
+type: cafe
 subtype: cafe
 practices:
-  - "Local"
-  - "Seasonal"
-  - "Zero-waste"
+- Local
+- Seasonal
+- Zero-waste
 products:
-  - "Coffee"
-  - "Brunch"
-  - "Juice"
-  - "Snacks"
+- Coffee
+- Brunch
+- Juice
+- Snacks
 services:
-  - "Retail"
+- Retail
 sources: []
 supplies_to: []
-hours: ""
-website: "https://cassettekensington.com"
-email: ""
+hours: ''
+website: https://cassettekensington.com
+email: ''
 phone: "+61 3 9070 0999"
-description: "Sustainability-focused cafe with seasonal local-produce menus and on-site composting."
+description: Sustainability-focused cafe with seasonal local-produce menus and on-site
+  composting.
+source_urls: []
 ---
 Cassette centres local, seasonal sourcing and composts kitchen waste on-site as part of its zero-waste approach.

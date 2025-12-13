@@ -9,13 +9,14 @@ country: New Zealand
 region: Bay of Plenty
 city: Tauranga
 address: 832 Cameron Road, Tauranga 3112
-description: Mobile boutique organic coffee van serving premium organic coffee in Tauranga.
+description: Mobile boutique organic coffee van serving premium organic coffee in
+  Tauranga.
 practices:
-  - Organic
+- Organic
 products:
-  - Coffee
+- Coffee
 services:
-  - Coffee van
+- Coffee van
 website: ''
 email: tripleone@xtra.co.nz
 phone: "+64 27 223 2111"
@@ -25,4 +26,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

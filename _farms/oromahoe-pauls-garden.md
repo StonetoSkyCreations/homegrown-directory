@@ -24,7 +24,9 @@ email: ''
 phone: ''
 address: 19 Oromahoe School Road, Oromahoe, Kaikohe 0472, New Zealand
 postcode: '0472'
-description: Organic edible garden in Oromahoe selling produce through local Bay of Islands markets.
+description: Organic edible garden in Oromahoe selling produce through local Bay of
+  Islands markets.
 subtype: mixed
+source_urls: []
 ---
 Family garden with organic edible landscapes where children roam free and wildlife is welcome. Shares seasonal produce locally, including through Bay of Islands farmers markets. Source: https://www.northlandediblegardentrail.org.nz/mid-north-gardens-2025

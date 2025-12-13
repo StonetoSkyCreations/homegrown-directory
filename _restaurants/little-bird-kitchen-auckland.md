@@ -25,7 +25,9 @@ hours: Daily 8am–4pm
 website: https://littlebirdorganics.co.nz
 email: ''
 phone: "+64 27 648 4757"
-description: Plant‑based café serving seasonal dishes made with local organic produce and emphasising circular economy practices.
+description: Plant‑based café serving seasonal dishes made with local organic produce
+  and emphasising circular economy practices.
 notes: Updated with location and hours from latest listing details.
 subtype: cafe
+source_urls: []
 ---

@@ -5,7 +5,8 @@ name: Jan Powers Farmers Market (Manly)
 brand: Jan Powers Farmers Markets
 type: market
 category: market
-description: Bi-weekly Saturday market at Manly Harbour with local produce and artisan foods.
+description: Bi-weekly Saturday market at Manly Harbour with local produce and artisan
+  foods.
 country: AU
 country_slug: australia
 region: Queensland
@@ -31,5 +32,7 @@ notes: Market
 city: Brisbane
 practices_tags:
 - local
+supplies_to: []
+sources: []
 ---
 Waterfront market featuring seasonal produce and local food makers every second Saturday.

@@ -32,4 +32,5 @@ notes: Retail/Co-op
 city: Christchurch
 rating_average: 5
 rating_count: 1
+supplies_to: []
 ---

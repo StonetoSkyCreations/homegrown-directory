@@ -6,7 +6,8 @@ brand: Nourish Lane
 type: health-food-store
 subtype: specialty-grocer
 category: retail
-description: Health food store offering organic groceries, bulk foods, and supplements in Mudgeeraba.
+description: Health food store offering organic groceries, bulk foods, and supplements
+  in Mudgeeraba.
 country: AU
 country_slug: australia
 region: Queensland
@@ -30,5 +31,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Gold Coast
+supplies_to: []
+sources: []
 ---
 Organic-focused health food shop with bulk refills, pantry staples, and supplements.

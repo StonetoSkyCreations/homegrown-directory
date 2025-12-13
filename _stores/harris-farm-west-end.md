@@ -31,5 +31,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Brisbane
+supplies_to: []
+sources: []
 ---
 Inner-city market grocer with organic options, local produce, and specialty deli lines.

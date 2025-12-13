@@ -29,4 +29,6 @@ notes: ''
 published: true
 city: Queenstown
 Zero-waste bulk store offering organic wholefoods, nuts, grains, and eco goods in Queenstown. Source: https://thesourcebulkfoods.co.nz/
+supplies_to: []
+sources: []
 ---

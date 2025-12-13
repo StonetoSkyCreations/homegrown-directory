@@ -5,7 +5,8 @@ name: MAPU Test Kitchen
 type: restaurant
 subtype: restaurant
 category: eatery
-description: Foraging-based micro-restaurant in Lyttelton using wild and home-grown ingredients.
+description: Foraging-based micro-restaurant in Lyttelton using wild and home-grown
+  ingredients.
 country: NZ
 country_slug: new-zealand
 region: Canterbury
@@ -27,4 +28,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Lyttelton
+supplies_to: []
+sources: []
 ---

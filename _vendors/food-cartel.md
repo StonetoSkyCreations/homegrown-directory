@@ -9,16 +9,17 @@ country: New Zealand
 region: Gisborne
 city: Gisborne
 address: 151 Grey Street, Gisborne 4010
-description: Local food cart and catering service creating grazing platters and boxes from locally sourced ingredients, including freshly picked organic fruit.
+description: Local food cart and catering service creating grazing platters and boxes
+  from locally sourced ingredients, including freshly picked organic fruit.
 practices:
-  - Organic
-  - Locally sourced
+- Organic
+- Locally sourced
 products:
-  - Grazing platters
-  - Food boxes
+- Grazing platters
+- Food boxes
 services:
-  - Food truck
-  - Catering
+- Food truck
+- Catering
 website: https://foodcartel.nz
 email: foodcartel.nz@gmail.com
 phone: "+64 22 602 2185"
@@ -28,4 +29,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

@@ -9,15 +9,16 @@ country: New Zealand
 region: Tasman
 city: Marahau
 address: 14 Harvey Road, Marahau
-description: Food truck offering nutritious organic vegetarian cuisine with Middle Eastern influences in Marahau near Abel Tasman National Park.
+description: Food truck offering nutritious organic vegetarian cuisine with Middle
+  Eastern influences in Marahau near Abel Tasman National Park.
 practices:
-  - Organic
-  - Vegetarian
+- Organic
+- Vegetarian
 products:
-  - Vegetarian dishes
-  - Coffee
+- Vegetarian dishes
+- Coffee
 services:
-  - Food truck
+- Food truck
 website: ''
 email: ''
 phone: "+64 21 090 22888"
@@ -27,4 +28,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

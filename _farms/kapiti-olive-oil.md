@@ -24,5 +24,6 @@ email: david@kapitiolives.com
 phone: "+64 27 555 0111"
 description: Waikanae olive grove producing spray-free olive oil.
 subtype: mixed
+source_urls: []
 ---
 Produces spray-free olives and olive oil on the Kapiti Coast, supplying locally. Source: user-supplied list

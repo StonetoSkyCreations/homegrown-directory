@@ -9,7 +9,10 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: Next to South Christchurch Library, 70 Colombo Street, Cashmere, Christchurch
-description: Formerly the Opawa Farmers' Market, this is a relaxed, down-to-earth growers' market known for fresh produce, artisan bread, pastries, free-range eggs, local cheeses, seasonal fruit, and organic offerings. A true community market centred on real growers and makers.
+description: Formerly the Opawa Farmers' Market, this is a relaxed, down-to-earth
+  growers' market known for fresh produce, artisan bread, pastries, free-range eggs,
+  local cheeses, seasonal fruit, and organic offerings. A true community market centred
+  on real growers and makers.
 practices:
 - Organic (stated in description; not a certification)
 products:
@@ -33,9 +36,10 @@ lon: ''
 supplies_to: []
 sources:
 - untamed-earth
-- https://ccc.govt.nz/news-and-events/whats-on/event/south-christchurch-farmers-market
 practices_tags:
 - organic
 - local
+source_urls:
+- https://ccc.govt.nz/news-and-events/whats-on/event/south-christchurch-farmers-market
 ---
 Formerly known as the Opawa Farmers' Market, South Christchurch Farmers' Market is a relaxed, grower-led Sunday gathering beside the South Christchurch Library. Expect fresh seasonal produce, artisan breads and pastries, free-range eggs, local cheeses, and organic-minded offerings, all in a down-to-earth setting that keeps the focus on real growers and makers.

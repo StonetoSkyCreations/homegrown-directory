@@ -9,14 +9,15 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Auckland (mobile)
-description: Mobile coffee van offering premium organic coffee drinks for events across Auckland.
+description: Mobile coffee van offering premium organic coffee drinks for events across
+  Auckland.
 practices:
-  - Organic
+- Organic
 products:
-  - Coffee
+- Coffee
 services:
-  - Coffee van
-  - Event catering
+- Coffee van
+- Event catering
 website: https://mosscoffeevan.nz
 email: chrisz@mosscoffeevan.nz
 phone: "+64 21 082 76210"
@@ -26,4 +27,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

@@ -6,7 +6,8 @@ collection: stores
 name: Beckenham Butchery
 type: Butcher
 subtype: specialty-grocer
-description: Certified organic butcher in Beckenham offering pasture-raised meats with a whole-animal, nose-to-tail approach.
+description: Certified organic butcher in Beckenham offering pasture-raised meats
+  with a whole-animal, nose-to-tail approach.
 country: New Zealand
 country_slug: new-zealand
 region: Canterbury
@@ -40,6 +41,8 @@ source_urls: []
 hours: ''
 last_checked: user-submitted
 notes: ''
+supplies_to: []
+sources: []
 ---
 Beckenham Butchery is a cornerstone of organic food culture in Otautahi Christchurch -- a fully certified organic butcher committed to ethical sourcing, whole-animal respect, and transparent origins. Located right next door to Untamed Earth Organic Grocer in Beckenham, it creates a rare pairing: organic meat and organic produce side by side. For customers, it means one simple thing -- you can complete your entire organic shop in one stop, confident that everything you are buying has been raised or grown with integrity.
 

@@ -4,7 +4,8 @@ title: Awaroa Organic Winery
 slug: awaroa-organic-winery
 name: Awaroa Organic Winery
 type: Vineyard
-description: Award-winning boutique winery producing premium organic wines and olive products, with a commitment to organic and sustainable practices.
+description: Award-winning boutique winery producing premium organic wines and olive
+  products, with a commitment to organic and sustainable practices.
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
@@ -29,4 +30,5 @@ supplies_to: []
 sources: []
 published: true
 subtype: vineyard
+source_urls: []
 ---

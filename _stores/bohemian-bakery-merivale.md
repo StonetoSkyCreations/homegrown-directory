@@ -7,32 +7,36 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 2/121 Papanui Road, Merivale Boutique, Christchurch 8014
-description: >
-  Boutique bakery offering fresh sourdough, pastries, and baked goods daily. Upholds the same natural ingredient standards, long fermentation, and flour sourcing from Milmore Downs and Farmers Mill.
+description: 'Boutique bakery offering fresh sourdough, pastries, and baked goods
+  daily. Upholds the same natural ingredient standards, long fermentation, and flour
+  sourcing from Milmore Downs and Farmers Mill.
+
+'
 practices:
-  - organic flour (Milmore Downs)
-  - spray-free flour (Farmers Mill)
-  - natural ingredients
-  - long cold fermentation
+- organic flour (Milmore Downs)
+- spray-free flour (Farmers Mill)
+- natural ingredients
+- long cold fermentation
 products:
-  - sourdough bread
-  - pastries
-  - baked goods
-  - coffee
+- sourdough bread
+- pastries
+- baked goods
+- coffee
 services:
-  - bakery
-  - takeaway pastries & coffee
-  - cafe
+- bakery
+- takeaway pastries & coffee
+- cafe
 website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
 phone: "+64 3-355 0576"
 social: https://www.facebook.com/bohemianbakerychristchurch/, https://www.instagram.com/bohemianbakerychristchurch
-hours: "Mon–Sun 7:30–16:00"
-lat:
-lon:
-supplies_to:
-sources:
+hours: Mon–Sun 7:30–16:00
+lat: 
+lon: 
+supplies_to: []
+sources: []
 subtype: specialty-grocer
+source_urls: []
 ---
 Merivale’s Bohemian Bakery is a warm, refined neighbourhood spot — a quieter corner of the city where the bakery’s craft meets a more boutique environment. Surrounded by established homes, tree-lined streets, and steady foot traffic, this location brings the full Bohemian sourdough and pastry ethos into one of Christchurch’s most walkable suburbs.
 

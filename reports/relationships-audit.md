@@ -19,3 +19,10 @@
 - Decide how to handle citation URLs currently stored in `sources` (83 unresolved references across the listings listed above). Consider moving URLs to `source_urls`/`source_links` or keeping relationships slug-only.
 - Beckenham Butchery (`_stores/beckenham-butchery.md`) mentions sourcing organic beef from Harris Farms (no matching listing); needs a listing or confirmation before adding a relationship.
 - Streamside Organics body text mentions Ashley River Organics and Bellbird Baked Goods, but no matching listings exist; leave for future listing creation if appropriate.
+
+---
+
+### Addendum — Relationship/Citation Separation
+- Listings updated: 469
+- Citation entries moved from `sources` to `source_urls`: 83
+- Unresolved slug-like references left in `sources` for manual review: 0

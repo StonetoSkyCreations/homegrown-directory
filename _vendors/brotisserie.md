@@ -9,17 +9,18 @@ country: New Zealand
 region: Auckland
 city: Remuera
 address: 81 Greenlane East, Remuera, Auckland 1050
-description: Food truck specialising in organic and free‑range rotisserie chicken with heritage free‑range pork and seasonal salads.
+description: Food truck specialising in organic and free‑range rotisserie chicken
+  with heritage free‑range pork and seasonal salads.
 practices:
-  - Organic
-  - Free-range
+- Organic
+- Free-range
 products:
-  - Rotisserie chicken
-  - Pork
-  - Salads
+- Rotisserie chicken
+- Pork
+- Salads
 services:
-  - Food truck
-  - Catering
+- Food truck
+- Catering
 website: ''
 email: ''
 phone: ''
@@ -29,4 +30,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

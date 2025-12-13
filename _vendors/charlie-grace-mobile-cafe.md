@@ -9,15 +9,16 @@ country: New Zealand
 region: Auckland
 city: Whitford
 address: Whitford, Auckland
-description: Mobile bar caravan serving award-winning organic Coffee La La coffee brewed locally in Coromandel for events and weddings.
+description: Mobile bar caravan serving award-winning organic Coffee La La coffee
+  brewed locally in Coromandel for events and weddings.
 practices:
-  - Organic
-  - Locally sourced
+- Organic
+- Locally sourced
 products:
-  - Coffee
+- Coffee
 services:
-  - Mobile coffee cart
-  - Event catering
+- Mobile coffee cart
+- Event catering
 website: https://charliegrace.co.nz
 email: events.charliegrace@gmail.com
 phone: "+64 21 273 3968"
@@ -27,4 +28,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

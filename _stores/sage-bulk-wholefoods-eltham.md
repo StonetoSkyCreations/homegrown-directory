@@ -6,7 +6,8 @@ brand: Sage Bulk Wholefoods
 type: bulk-foods
 subtype: bulk-refillery
 category: retail
-description: Zero-plastic grocery offering organic bulk foods, pantry staples, and eco household goods.
+description: Zero-plastic grocery offering organic bulk foods, pantry staples, and
+  eco household goods.
 country: AU
 country_slug: australia
 region: Victoria
@@ -31,5 +32,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+supplies_to: []
+sources: []
 ---
 Local zero-waste refillery with organic bulk foods and low-waste household products.

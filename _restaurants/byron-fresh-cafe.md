@@ -1,29 +1,31 @@
 ---
-title: "Byron Fresh Cafe"
+title: Byron Fresh Cafe
 slug: byron-fresh-cafe
-country: "Australia"
+country: Australia
 country_slug: australia
-region: "New South Wales"
-city: "Byron Bay"
-suburb: "Byron Bay"
-address: "7 Jonson St"
-postcode: "2481"
-type: "cafe"
+region: New South Wales
+city: Byron Bay
+suburb: Byron Bay
+address: 7 Jonson St
+postcode: '2481'
+type: cafe
 subtype: cafe
 practices:
-  - "Organic"
-  - "Free-range"
+- Organic
+- Free-range
 products:
-  - "Breakfast"
-  - "Lunch"
+- Breakfast
+- Lunch
 services:
-  - "Retail"
+- Retail
 sources: []
 supplies_to: []
-hours: ""
-website: "https://byronfresh.com.au"
-email: ""
-phone: "02 6685 7810"
-description: "Cafe using fresh ingredients including organic, free-range eggs for breakfasts and lunches."
+hours: ''
+website: https://byronfresh.com.au
+email: ''
+phone: 02 6685 7810
+description: Cafe using fresh ingredients including organic, free-range eggs for breakfasts
+  and lunches.
+source_urls: []
 ---
 Byron Fresh Cafe keeps its menu simple with organic, free-range eggs and fresh seasonal produce.

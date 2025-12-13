@@ -7,7 +7,8 @@ country: New Zealand
 region: Manawatū-Whanganui
 city: Ōhau
 address: Ōhau, Horowhenua
-description: Sustainable permaculture farm cultivating gourmet mushrooms and fermented foods with 100% organic principles and natural pest control.
+description: Sustainable permaculture farm cultivating gourmet mushrooms and fermented
+  foods with 100% organic principles and natural pest control.
 practices:
 - Organic
 - Permaculture
@@ -26,7 +27,8 @@ hours: ''
 lat: ''
 lon: ''
 supplies_to: []
-sources:
-- https://www.mycobio.co.nz
+sources: []
 subtype: mushrooms
+source_urls:
+- https://www.mycobio.co.nz
 ---

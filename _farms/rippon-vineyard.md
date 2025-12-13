@@ -4,7 +4,8 @@ title: Rippon Vineyard
 slug: rippon-vineyard
 name: Rippon Vineyard
 type: Vineyard
-description: A pioneering biodynamic vineyard overlooking Lake Wānaka, farmed with regenerative soil practices and biodynamic principles.
+description: A pioneering biodynamic vineyard overlooking Lake Wānaka, farmed with
+  regenerative soil practices and biodynamic principles.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -31,4 +32,6 @@ hours: Daily 12pm–5pm (cellar door)
 last_checked: '2025-12-09'
 notes: ''
 subtype: vineyard
+supplies_to: []
+sources: []
 ---

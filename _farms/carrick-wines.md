@@ -4,7 +4,8 @@ title: Carrick Wines
 slug: carrick-wines
 name: Carrick Wines
 type: Vineyard
-description: Certified organic vineyard and winery producing estate-grown Central Otago wines through low-input, ecological practices.
+description: Certified organic vineyard and winery producing estate-grown Central
+  Otago wines through low-input, ecological practices.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -26,4 +27,6 @@ hours: ''
 last_checked: user-submitted
 notes: ''
 subtype: vineyard
+supplies_to: []
+sources: []
 ---

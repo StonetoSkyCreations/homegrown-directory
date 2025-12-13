@@ -7,7 +7,8 @@ country: New Zealand
 region: Wellington
 city: Martinborough
 address: Between Martinborough and Greytown
-description: Small-scale market garden run by Griff Griffiths, growing microgreens, gourmet potatoes and assorted vegetables for local markets and online delivery.
+description: Small-scale market garden run by Griff Griffiths, growing microgreens,
+  gourmet potatoes and assorted vegetables for local markets and online delivery.
 practices:
 - spray-free
 - organic-principles
@@ -34,11 +35,12 @@ lat:
 lon: 
 supplies_to:
 - little-farms
-sources:
-- https://www.wairarapalifestyle.com/landing-page/pick-of-the-crop
-- https://rebelgardens.co.nz/contact/
+sources: []
 last_checked: 2025-12-11
 subtype: market-garden
+source_urls:
+- https://www.wairarapalifestyle.com/landing-page/pick-of-the-crop
+- https://rebelgardens.co.nz/contact/
 ---
 Rebel Gardens is the passion project of Craig "Griff" Griffiths, who cultivates a "lovely bit of paradise" between Martinborough and Greytown. Griff specialises in small batches of diverse vegetables, focusing on flavour over appearance. His main summer crop is gourmet Jersey Benne potatoes, dug, packed in biodegradable bags and sold within 24 hours. When the potatoes finish, carrots and beetroot take their place, and he grows specialty courgettes such as the nutty Constanta Romanesco variety. He continually experiments with new crops to meet customer requests.
 

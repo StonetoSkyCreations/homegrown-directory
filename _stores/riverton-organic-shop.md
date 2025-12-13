@@ -6,7 +6,8 @@ brand: Riverton Organic Shop
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Riverton store focused on organic and wholefood products from Southland producers.
+description: Riverton store focused on organic and wholefood products from Southland
+  producers.
 country: NZ
 country_slug: new-zealand
 region: Southland
@@ -27,5 +28,8 @@ last_checked: ''
 notes: ''
 published: true
 city: Riverton
-Local organic shop in Riverton supporting Southland’s ethical and organic producers. Source: user-supplied list
+Local organic shop in Riverton supporting Southland’s ethical and organic producers. Source: user-supplied
+  list
+supplies_to: []
+sources: []
 ---

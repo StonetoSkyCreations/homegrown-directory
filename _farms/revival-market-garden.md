@@ -4,7 +4,8 @@ title: Revival Market Garden
 slug: revival-market-garden
 name: Revival Market Garden
 type: Farm
-description: Sustainable market garden producing Waiheke-grown vegetables with emphasis on spray-free salad crops, soil health and community involvement.
+description: Sustainable market garden producing Waiheke-grown vegetables with emphasis
+  on spray-free salad crops, soil health and community involvement.
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
@@ -30,4 +31,5 @@ supplies_to: []
 sources: []
 published: true
 subtype: market-garden
+source_urls: []
 ---

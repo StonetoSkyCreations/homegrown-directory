@@ -23,4 +23,5 @@ phone: ''
 description: Napier cafe focused on organic kai and wholefoods.
 Cafe and maara serving organic, wholefood dishes and drinks with a focus on locally sourced ingredients. Source: https://hapi.nz/
 subtype: cafe
+source_urls: []
 ---

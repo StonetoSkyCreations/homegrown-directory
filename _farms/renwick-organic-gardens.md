@@ -25,5 +25,6 @@ email: windsongorchard@gmail.com
 phone: "+64 21 236 7783"
 description: Organic gardens supplying fresh produce around Renwick.
 subtype: market-garden
+source_urls: []
 ---
 Local organic grower providing vegetables and herbs from Renwick. Source: user-supplied list

@@ -6,7 +6,8 @@ brand: Friends of the Earth Food Co-op & Cafe
 type: co-op
 subtype: co-op
 category: retail
-description: Community-run organic wholefoods store and cafe with bulk groceries and produce.
+description: Community-run organic wholefoods store and cafe with bulk groceries and
+  produce.
 country: AU
 country_slug: australia
 region: Victoria
@@ -32,5 +33,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+supplies_to: []
+sources: []
 ---
 Community food co-op with organic bulk refills, vegan options, and a cafe serving seasonal meals.

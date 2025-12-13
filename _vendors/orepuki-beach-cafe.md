@@ -5,7 +5,8 @@ name: Orepuki Beach Café
 type: cafe
 subtype: cafe
 category: eatery
-description: Farm-and-sea-to-table café serving what they grow, hunt, or gather locally in Orepuki.
+description: Farm-and-sea-to-table café serving what they grow, hunt, or gather locally
+  in Orepuki.
 country: NZ
 country_slug: new-zealand
 region: Southland
@@ -29,4 +30,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Orepuki
+supplies_to: []
+sources: []
 ---

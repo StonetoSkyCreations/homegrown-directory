@@ -25,7 +25,9 @@ hours: ''
 website: https://tehoroharvest.com
 email: harlas@xtra.co.nz
 phone: "+64 27 388 8523"
-description: Farm gate shop and cafe using produce from its own minimally sprayed gardens.
+description: Farm gate shop and cafe using produce from its own minimally sprayed
+  gardens.
 subtype: mixed
+source_urls: []
 ---
 Farm shop and cafe selling seasonal produce grown on-site with minimal sprays, serving meals built from their gardens. Source: https://www.tehoroharvest.co.nz/

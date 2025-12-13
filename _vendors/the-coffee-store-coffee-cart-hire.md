@@ -9,16 +9,17 @@ country: New Zealand
 region: Auckland
 city: North Shore
 address: North Shore, Auckland
-description: Coffee cart hire company sourcing organic, sustainably grown beans from ethical plantations and roasting them locally for events and functions.
+description: Coffee cart hire company sourcing organic, sustainably grown beans from
+  ethical plantations and roasting them locally for events and functions.
 practices:
-  - Organic
-  - Sustainable
-  - Ethical sourcing
+- Organic
+- Sustainable
+- Ethical sourcing
 products:
-  - Coffee
+- Coffee
 services:
-  - Coffee cart hire
-  - Event catering
+- Coffee cart hire
+- Event catering
 website: https://coffeecarthire.co.nz
 email: bookings@thecoffeestore.co.nz
 phone: "+64 21 458 007"
@@ -28,4 +29,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

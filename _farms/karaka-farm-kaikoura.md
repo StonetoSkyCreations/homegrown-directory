@@ -19,8 +19,10 @@ website: ''
 email: ''
 phone: ''
 description: Regenerative farm near Kaikōura producing 100% grass-fed meat.
-Pasture-based regenerative farm in the Kaikōura Flats focused on soil health and grass-fed livestock. Source: user-supplied list
+Pasture-based regenerative farm in the Kaikōura Flats focused on soil health and grass-fed livestock. Source: user-supplied
+  list
 products_tags:
 - meat
 subtype: livestock
+source_urls: []
 ---

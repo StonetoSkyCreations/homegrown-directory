@@ -21,4 +21,5 @@ phone: ''
 description: Certified organic honey and beeswax products from Northland.
 Certified organic apiarists producing honey and beeswax products and supplying across Northland. Source: https://earthboundhoney.co.nz/
 subtype: apiary
+source_urls: []
 ---

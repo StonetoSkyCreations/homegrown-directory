@@ -5,7 +5,8 @@ name: Gasworks Farmers Market
 brand: Gasworks Farmers Market
 type: market
 category: market
-description: Monthly VFMA-accredited market in Albert Park with certified organic produce, dairy, and eggs.
+description: Monthly VFMA-accredited market in Albert Park with certified organic
+  produce, dairy, and eggs.
 country: AU
 country_slug: australia
 region: Victoria
@@ -34,5 +35,7 @@ city: Melbourne
 practices_tags:
 - organic
 - local
+supplies_to: []
+sources: []
 ---
 Monthly farmers market in Gasworks Arts Park featuring organic growers and local food makers.

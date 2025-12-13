@@ -6,7 +6,8 @@ brand: Naturally Organic
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Invercargill organic store with certified organic produce, wholefoods, and supplements.
+description: Invercargill organic store with certified organic produce, wholefoods,
+  and supplements.
 country: NZ
 country_slug: new-zealand
 region: Southland
@@ -28,5 +29,8 @@ last_checked: ''
 notes: ''
 published: true
 city: Invercargill
-Organic grocer in Invercargill stocking certified organic produce, wholefoods, and health products. Source: user-supplied list
+Organic grocer in Invercargill stocking certified organic produce, wholefoods, and health products. Source: user-supplied
+  list
+supplies_to: []
+sources: []
 ---

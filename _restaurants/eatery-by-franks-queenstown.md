@@ -21,7 +21,10 @@ hours: ''
 website: https://eaterybyfranks.co.nz
 email: manager@eaterybyfranks.co.nz
 phone: 03 451 1085
-description: Family-run Frankton café serving free-range local produce and fair trade organic coffee.
-Breakfast and lunch spot using free-range local produce and fair trade organic coffee. Source: user-provided listing
+description: Family-run Frankton café serving free-range local produce and fair trade
+  organic coffee.
+Breakfast and lunch spot using free-range local produce and fair trade organic coffee. Source: user-provided
+  listing
 subtype: cafe
+source_urls: []
 ---

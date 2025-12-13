@@ -28,4 +28,6 @@ source_urls:
 last_checked: Chantal Shop contact
 notes: Retail
 city: Napier
+supplies_to: []
+sources: []
 ---

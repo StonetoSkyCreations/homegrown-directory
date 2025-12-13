@@ -28,5 +28,8 @@ last_checked: ''
 notes: ''
 published: true
 city: Whangārei
-Certified organic deli offering meat, dairy, and specialty items in Whangārei. Source: user-supplied list
+Certified organic deli offering meat, dairy, and specialty items in Whangārei. Source: user-supplied
+  list
+supplies_to: []
+sources: []
 ---

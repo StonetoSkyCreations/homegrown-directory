@@ -4,7 +4,8 @@ title: Bostock New Zealand
 slug: bostock-new-zealand
 name: Bostock New Zealand
 type: Farm
-description: Certified organic horticulture producer growing apples and onions from Hastings.
+description: Certified organic horticulture producer growing apples and onions from
+  Hastings.
 country: NZ
 country_slug: new-zealand
 region: Hawke's Bay
@@ -30,4 +31,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Multiple organic farms
 subtype: orchard
+supplies_to: []
+sources: []
 ---

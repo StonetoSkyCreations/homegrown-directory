@@ -9,15 +9,16 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Britomart Market, Auckland
-description: Food stall serving organic açaí bowls, smoothies and matcha drinks at the Saturday Britomart Market and the Mokki store in Commercial Bay.
+description: Food stall serving organic açaí bowls, smoothies and matcha drinks at
+  the Saturday Britomart Market and the Mokki store in Commercial Bay.
 practices:
-  - Organic
+- Organic
 products:
-  - Açaí bowls
-  - Smoothies
-  - Matcha drinks
+- Açaí bowls
+- Smoothies
+- Matcha drinks
 services:
-  - Market stall
+- Market stall
 website: ''
 email: ''
 phone: ''
@@ -27,4 +28,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

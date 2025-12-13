@@ -9,17 +9,18 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: 340 Point Chevalier Road, Point Chevalier, Auckland 1022
-description: Italian street food truck serving dishes made with fresh, seasonal free‑range ingredients and organic ingredients where possible.
+description: Italian street food truck serving dishes made with fresh, seasonal free‑range
+  ingredients and organic ingredients where possible.
 practices:
-  - Free-range
-  - Organic
+- Free-range
+- Organic
 products:
-  - Pasta
-  - Gnocchi
-  - Cannoli
+- Pasta
+- Gnocchi
+- Cannoli
 services:
-  - Food truck
-  - Catering
+- Food truck
+- Catering
 website: https://amaranto.co.nz
 email: info@amaranto.co.nz
 phone: "+64 21 0229 5941, +64 21 0229 5938"
@@ -29,4 +30,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

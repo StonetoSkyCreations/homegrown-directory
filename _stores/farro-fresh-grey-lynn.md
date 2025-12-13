@@ -6,7 +6,8 @@ brand: Farro Fresh Grey Lynn
 type: supermarket
 subtype: supermarket
 category: retailer
-description: Farro Fresh – premium grocer focusing on local & artisan foods (significant organic range)
+description: Farro Fresh – premium grocer focusing on local & artisan foods (significant
+  organic range)
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -27,4 +28,6 @@ source_urls: []
 last_checked: Farro Fresh Grey Lynn – Yelp; Farro Facebook
 notes: Retail
 city: Auckland
+supplies_to: []
+sources: []
 ---

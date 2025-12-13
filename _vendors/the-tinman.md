@@ -9,15 +9,16 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Auckland (mobile)
-description: Mobile bar and coffee van using Coffee Supreme beans with organic barista milk, serving premium coffee at events across Auckland.
+description: Mobile bar and coffee van using Coffee Supreme beans with organic barista
+  milk, serving premium coffee at events across Auckland.
 practices:
-  - Organic
+- Organic
 products:
-  - Coffee
-  - Beverages
+- Coffee
+- Beverages
 services:
-  - Coffee van
-  - Event bar
+- Coffee van
+- Event bar
 website: https://thetinman.co.nz
 email: john@thetinman.co.nz
 phone: "+64 21 244 4411"
@@ -27,4 +28,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

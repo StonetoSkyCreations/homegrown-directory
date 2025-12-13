@@ -7,7 +7,8 @@ country: New Zealand
 region: Taranaki
 city: Paraite
 address: 175 Paraite Road, Paraite 4373
-description: BioGro-certified organic feijoa orchard producing feijoas, apples, juice and surplus vegetables with on-site tours.
+description: BioGro-certified organic feijoa orchard producing feijoas, apples, juice
+  and surplus vegetables with on-site tours.
 practices:
 - Certified organic
 products:
@@ -26,7 +27,8 @@ hours: ''
 lat: ''
 lon: ''
 supplies_to: []
-sources:
-- Producer submission
+sources: []
 subtype: market-garden
+source_urls:
+- Producer submission
 ---

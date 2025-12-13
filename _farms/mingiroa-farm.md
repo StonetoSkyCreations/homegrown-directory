@@ -19,15 +19,17 @@ products:
 - Farm produce
 services:
 - Farm
-sources:
-- https://www.mingiroafarm.com
+sources: []
 supplies_to: []
 hours: ''
 website: https://www.mingiroafarm.com
 email: mingiroafarm@gmail.com
 phone: ''
-description: Certified organic regenerative farm using long grazing rotations, diverse pastures and no synthetic sprays to raise pasture-fed beef.
+description: Certified organic regenerative farm using long grazing rotations, diverse
+  pastures and no synthetic sprays to raise pasture-fed beef.
 products_tags:
 - meat
 subtype: livestock
+source_urls:
+- https://www.mingiroafarm.com
 ---

@@ -4,7 +4,8 @@ title: Tidal Organics
 slug: tidal-organics
 name: Tidal Organics
 type: Farm
-description: Certified organic, biodiverse farm producing eggs, olive oil, fruit, vegetables and herbs for the local market.
+description: Certified organic, biodiverse farm producing eggs, olive oil, fruit,
+  vegetables and herbs for the local market.
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
@@ -31,4 +32,5 @@ supplies_to: []
 sources: []
 published: true
 subtype: market-garden
+source_urls: []
 ---

@@ -25,5 +25,6 @@ email: sayhello@riwakariverestate.com
 phone: "+64 21 277 2553"
 description: Certified organic farm near Motueka selling fruit and vegetables.
 subtype: market-garden
+source_urls: []
 ---
 Produces certified organic produce in Riwaka for local customers and markets. Source: user-supplied list

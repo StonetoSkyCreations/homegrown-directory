@@ -9,19 +9,20 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: The Commons, corner of Kilmore & Durham Streets, Christchurch 8013
-description: Gourmet sandwich food truck serving organic sandwiches and salads with organic beef, free-range pork and locally sourced ingredients.
+description: Gourmet sandwich food truck serving organic sandwiches and salads with
+  organic beef, free-range pork and locally sourced ingredients.
 practices:
-  - Organic
-  - Free-range
-  - Locally sourced
+- Organic
+- Free-range
+- Locally sourced
 products:
-  - Sandwiches
-  - Salads
-  - Pork
-  - Beef
+- Sandwiches
+- Salads
+- Pork
+- Beef
 services:
-  - Food truck
-  - Catering
+- Food truck
+- Catering
 website: ''
 email: dukesofsandwich@gmail.com
 phone: "+64 27 588 1508"
@@ -31,4 +32,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

@@ -27,10 +27,13 @@ last_checked: ''
 notes: ''
 published: true
 city: Coroglen
-? Summer-season Sunday market at Coroglen Gumtown Hall with local growers selling seasonal veg, fruit, honey, organic skin products, and fresh organic produce. Source
+? Summer-season Sunday market at Coroglen Gumtown Hall with local growers selling
+  seasonal veg, fruit, honey, organic skin products, and fresh organic produce. Source
 : user-supplied list
 practices_tags:
 - organic
 - spray-free
 - local
+supplies_to: []
+sources: []
 ---

@@ -5,7 +5,8 @@ name: Zephyr Wainui
 type: cafe
 subtype: cafe
 category: eatery
-description: Plant-based café offering organic coffee and seasonal local produce at Wainui Beach.
+description: Plant-based café offering organic coffee and seasonal local produce at
+  Wainui Beach.
 country: NZ
 country_slug: new-zealand
 region: Gisborne
@@ -29,4 +30,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Gisborne
+supplies_to: []
+sources: []
 ---

@@ -21,7 +21,9 @@ website: ''
 email: ''
 phone: ''
 description: Regenerative Coroglen grower supplying spray-free produce to local markets.
-? Local grower using minimal soil disturbance and regenerative methods to supply spray-free produce around Coroglen and the Coromandel. Source
+? Local grower using minimal soil disturbance and regenerative methods to supply spray-free
+  produce around Coroglen and the Coromandel. Source
 : user-supplied list
 subtype: mixed
+source_urls: []
 ---

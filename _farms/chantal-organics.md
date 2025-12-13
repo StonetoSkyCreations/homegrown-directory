@@ -29,4 +29,6 @@ hours: Mon–Fri 08:00–17:00; Sat–Sun closed
 last_checked: '2025-12-09'
 notes: Founded as organic co-op farm
 subtype: mixed
+supplies_to: []
+sources: []
 ---

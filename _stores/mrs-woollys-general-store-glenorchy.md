@@ -6,7 +6,8 @@ brand: Mrs. Woolly's General Store
 type: produce-store
 subtype: specialty-grocer
 category: retailer
-description: Glenorchy general store selling local and organic produce and ethically sourced goods.
+description: Glenorchy general store selling local and organic produce and ethically
+  sourced goods.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -28,5 +29,9 @@ last_checked: ''
 notes: ''
 published: true
 city: Glenorchy
-Community general store offering local and organic produce alongside ethically sourced groceries for Glenorchy residents and visitors. Source: https://glenorchycommunitytrust.co.nz/mrs-woollys-general-store/
+? Community general store offering local and organic produce alongside ethically sourced
+  groceries for Glenorchy residents and visitors. Source
+: https://glenorchycommunitytrust.co.nz/mrs-woollys-general-store/
+supplies_to: []
+sources: []
 ---

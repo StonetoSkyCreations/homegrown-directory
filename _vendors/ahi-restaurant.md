@@ -5,7 +5,8 @@ name: Ahi Restaurant
 type: restaurant
 subtype: restaurant
 category: eatery
-description: Fine dining restaurant using hyper-seasonal NZ ingredients and produce from its own organic/regenerative farm.
+description: Fine dining restaurant using hyper-seasonal NZ ingredients and produce
+  from its own organic/regenerative farm.
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -30,4 +31,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Auckland
+supplies_to: []
+sources: []
 ---

@@ -5,7 +5,8 @@ name: Mornington Peninsula Farmers Market
 brand: Mornington Peninsula Farmers Market
 type: market
 category: market
-description: Monthly Mornington market featuring certified organic fruits, vegetables, olives, and cheese from Peninsula growers.
+description: Monthly Mornington market featuring certified organic fruits, vegetables,
+  olives, and cheese from Peninsula growers.
 country: AU
 country_slug: australia
 region: Victoria
@@ -33,5 +34,7 @@ notes: Market
 city: Melbourne
 practices_tags:
 - organic
+supplies_to: []
+sources: []
 ---
 Monthly market bringing certified organic and seasonal produce from Mornington Peninsula growers.

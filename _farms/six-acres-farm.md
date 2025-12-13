@@ -7,7 +7,8 @@ country: New Zealand
 region: Taranaki
 city: Brixton
 address: 141 Richmond Road, RD3, New Plymouth 4373
-description: BioGro-certified organic market garden specialising in heritage vegetables and citrus grown with traditional organic methods.
+description: BioGro-certified organic market garden specialising in heritage vegetables
+  and citrus grown with traditional organic methods.
 practices:
 - Certified organic
 - Spray-free
@@ -26,7 +27,8 @@ hours: ''
 lat: ''
 lon: ''
 supplies_to: []
-sources:
-- https://www.sixacres.co.nz
+sources: []
 subtype: market-garden
+source_urls:
+- https://www.sixacres.co.nz
 ---

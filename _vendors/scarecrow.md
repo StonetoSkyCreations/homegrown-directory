@@ -5,7 +5,8 @@ name: Scarecrow
 type: cafe
 subtype: cafe
 category: mixed
-description: Urban kitchen and grocery offering a seasonal menu with organic coffees and teas alongside fresh, nourishing food.
+description: Urban kitchen and grocery offering a seasonal menu with organic coffees
+  and teas alongside fresh, nourishing food.
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -34,4 +35,6 @@ source_urls:
 - https://scarecrow.co.nz
 last_checked: '2025-12-09'
 notes: Updated with address and contact details.
+supplies_to: []
+sources: []
 ---

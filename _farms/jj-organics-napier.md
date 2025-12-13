@@ -20,8 +20,11 @@ hours: Shop Tue/Fri
 website: ''
 email: ''
 phone: ''
-description: Napier growers selling spray-free/organic fruit and veg via farm shop and Hawke's Bay Farmers’ Market.
-? Long-running growers who dropped sprays and now sell organic fruit and vegetables at their Riverbend Rd shop (Tue/Fri) and the Hawke's Bay Farmers’ Market. Source
+description: Napier growers selling spray-free/organic fruit and veg via farm shop
+  and Hawke's Bay Farmers’ Market.
+? Long-running growers who dropped sprays and now sell organic fruit and vegetables
+  at their Riverbend Rd shop (Tue/Fri) and the Hawke's Bay Farmers’ Market. Source
 : https://hawkesbayfarmersmarket.co.nz/jj-organics/
 subtype: mixed
+source_urls: []
 ---

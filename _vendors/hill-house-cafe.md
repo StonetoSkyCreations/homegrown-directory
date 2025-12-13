@@ -5,7 +5,8 @@ name: Hill House Café
 type: cafe
 subtype: cafe
 category: eatery
-description: City café counterpart to Farm House, using the same seasonal farm-sourced ingredients.
+description: City café counterpart to Farm House, using the same seasonal farm-sourced
+  ingredients.
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -28,4 +29,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Auckland
+supplies_to: []
+sources: []
 ---

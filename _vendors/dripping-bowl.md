@@ -9,16 +9,17 @@ country: New Zealand
 region: Otago
 city: Wānaka
 address: 82 Anderson Road, Wānaka 9305
-description: Vibrant food cart serving 100% wholefoods and organic ingredients with açaí bowls, Buddha bowls, smoothies and adaptogenic coffee.
+description: Vibrant food cart serving 100% wholefoods and organic ingredients with
+  açaí bowls, Buddha bowls, smoothies and adaptogenic coffee.
 practices:
-  - Organic
+- Organic
 products:
-  - Açaí bowls
-  - Buddha bowls
-  - Smoothies
-  - Coffee
+- Açaí bowls
+- Buddha bowls
+- Smoothies
+- Coffee
 services:
-  - Food truck
+- Food truck
 website: https://drippingbowl.co.nz
 email: ''
 phone: "+64 20 111 1556"
@@ -28,4 +29,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

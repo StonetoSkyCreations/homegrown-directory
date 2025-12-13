@@ -9,15 +9,16 @@ country: New Zealand
 region: Auckland
 city: North Shore
 address: North Shore, Auckland
-description: Mobile smoothie bar offering organic smoothies made from locally sourced produce with sugar‑free, dairy‑free and vegan options.
+description: Mobile smoothie bar offering organic smoothies made from locally sourced
+  produce with sugar‑free, dairy‑free and vegan options.
 practices:
-  - Organic
-  - Locally sourced
+- Organic
+- Locally sourced
 products:
-  - Smoothies
+- Smoothies
 services:
-  - Food truck
-  - Mobile catering
+- Food truck
+- Mobile catering
 website: ''
 email: ''
 phone: ''
@@ -27,4 +28,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

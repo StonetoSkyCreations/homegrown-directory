@@ -5,7 +5,8 @@ name: Bangalow Farmers Market
 brand: Bangalow Farmers Market
 type: market
 category: market
-description: Saturday morning farmers market with organic fruits, vegetables, and local farm produce in Bangalow.
+description: Saturday morning farmers market with organic fruits, vegetables, and
+  local farm produce in Bangalow.
 country: AU
 country_slug: australia
 region: New South Wales
@@ -33,5 +34,7 @@ city: Bangalow
 practices_tags:
 - organic
 - local
+supplies_to: []
+sources: []
 ---
 Weekly Saturday market bringing organic and seasonal produce to Bangalow.

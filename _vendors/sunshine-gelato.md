@@ -9,17 +9,18 @@ country: New Zealand
 region: Auckland
 city: Hobsonville
 address: Catalina Bay Farmers Market, Hobsonville Point, Auckland
-description: Market stall and mobile caravan serving organic gelato, fresh hot waffles and real fruit smoothies at farmers markets and events.
+description: Market stall and mobile caravan serving organic gelato, fresh hot waffles
+  and real fruit smoothies at farmers markets and events.
 practices:
-  - Organic
+- Organic
 products:
-  - Gelato
-  - Waffles
-  - Smoothies
+- Gelato
+- Waffles
+- Smoothies
 services:
-  - Market stall
-  - Food truck
-  - Event catering
+- Market stall
+- Food truck
+- Event catering
 website: https://sunshinegelato.co.nz
 email: ''
 phone: ''
@@ -29,4 +30,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

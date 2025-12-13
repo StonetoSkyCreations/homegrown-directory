@@ -6,7 +6,8 @@ brand: The Herbal Dispensary
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Organic grocer and dispensary in Raglan stocking fresh organic fruit, veg, and wholefoods.
+description: Organic grocer and dispensary in Raglan stocking fresh organic fruit,
+  veg, and wholefoods.
 country: NZ
 country_slug: new-zealand
 region: Waikato
@@ -30,5 +31,9 @@ published: true
 city: Raglan
 rating_average: 5
 rating_count: 1
-Raglan’s organic and wholefood store offering fresh organic fruit and veg, organic dairy, and bulk goods, with a focus on sourcing local where possible. Source: https://www.raglanherbaldispensary.nz/
+? Raglan’s organic and wholefood store offering fresh organic fruit and veg, organic
+  dairy, and bulk goods, with a focus on sourcing local where possible. Source
+: https://www.raglanherbaldispensary.nz/
+supplies_to: []
+sources: []
 ---

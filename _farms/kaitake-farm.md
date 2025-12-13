@@ -7,7 +7,8 @@ country: New Zealand
 region: Taranaki
 city: New Plymouth
 address: 22 Kaitake Road, RD4, New Plymouth 4374
-description: Half-acre market garden near Ōākura relying on organic inputs and homemade compost to grow vegetables for local outlets.
+description: Half-acre market garden near Ōākura relying on organic inputs and homemade
+  compost to grow vegetables for local outlets.
 practices:
 - Organic inputs
 - Spray-free
@@ -25,9 +26,10 @@ lon: ''
 supplies_to:
 - beach-road-milk-co
 - down-to-earth-organics-new-plymouth
-sources:
-- https://kaitakefarm.co.nz
+sources: []
 products_tags:
 - dairy
 subtype: dairy-farm
+source_urls:
+- https://kaitakefarm.co.nz
 ---

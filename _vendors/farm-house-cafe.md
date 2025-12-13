@@ -5,7 +5,8 @@ name: Farm House Café
 type: cafe
 subtype: cafe
 category: eatery
-description: Paddock-to-plate café on a farm with buffalo dairy, orchard, and honey; serves seasonal local meals.
+description: Paddock-to-plate café on a farm with buffalo dairy, orchard, and honey;
+  serves seasonal local meals.
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -28,4 +29,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Clevedon
+supplies_to: []
+sources: []
 ---

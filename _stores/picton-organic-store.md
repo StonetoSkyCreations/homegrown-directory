@@ -28,5 +28,8 @@ last_checked: ''
 notes: ''
 published: true
 city: Picton
-Dedicated organic store in Picton carrying organic produce, groceries, and health items. Source: user-supplied list
+Dedicated organic store in Picton carrying organic produce, groceries, and health items. Source: user-supplied
+  list
+supplies_to: []
+sources: []
 ---

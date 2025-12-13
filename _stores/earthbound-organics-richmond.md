@@ -29,4 +29,6 @@ notes: ''
 published: true
 city: Richmond
 Organic and biodynamic grocery store in Richmond selling certified organic produce and staples with a local focus. Source: https://www.earthboundorganics.co.nz/
+supplies_to: []
+sources: []
 ---

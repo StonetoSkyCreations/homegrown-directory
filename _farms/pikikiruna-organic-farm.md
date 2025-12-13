@@ -24,5 +24,6 @@ description: Certified organic farm in Parawera producing vegetables.
 address: 496 Owairaka Valley Road, Parawera 3877, New Zealand
 postcode: '3877'
 subtype: market-garden
+source_urls: []
 ---
 Certified organic producer in Parawera supplying vegetables locally. Source: user-supplied list

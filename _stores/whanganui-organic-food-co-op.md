@@ -27,5 +27,8 @@ last_checked: ''
 notes: ''
 published: true
 city: Whanganui
-Community-run co-op providing certified organic food, produce, and wholefoods to Whanganui residents. Source: user-supplied list
+Community-run co-op providing certified organic food, produce, and wholefoods to Whanganui residents. Source: user-supplied
+  list
+supplies_to: []
+sources: []
 ---

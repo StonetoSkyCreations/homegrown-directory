@@ -6,7 +6,8 @@ brand: Commonsense Mt Eden
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Certified organic and fair‑trade store selling a wide range of organic food, groceries and household items.
+description: Certified organic and fair‑trade store selling a wide range of organic
+  food, groceries and household items.
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -34,4 +35,6 @@ last_checked: Updated listing
 notes: Retail; updated with latest details.
 rating_average: 5
 rating_count: 1
+supplies_to: []
+sources: []
 ---

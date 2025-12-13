@@ -6,7 +6,8 @@ brand: TMP Organics
 type: butcher-supermarket
 subtype: supermarket
 category: retail
-description: Organic butcher and small-format supermarket focusing on certified organic meats and groceries.
+description: Organic butcher and small-format supermarket focusing on certified organic
+  meats and groceries.
 country: AU
 country_slug: australia
 region: Queensland
@@ -30,5 +31,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail butcher and grocer
 city: Brendale
+supplies_to: []
+sources: []
 ---
 Certified organic butcher with a small supermarket range of organic groceries and pantry staples.

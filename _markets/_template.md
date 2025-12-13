@@ -22,5 +22,6 @@ phone: ''
 description: One-sentence description for cards and SEO.
 practices_tags:
 - organic
+source_urls: []
 ---
 Short paragraph about the market, its focus, and how to visit. Use `sources` to point to farms and food hubs that vend here.

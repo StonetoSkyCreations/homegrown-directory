@@ -32,5 +32,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer; not-for-profit; ACO accredited.
 city: Mullumbimby
+supplies_to: []
+sources: []
 ---
 Santos Organics’ Mullumbimby store carries certified organic and biodynamic bulk foods, groceries, and pantry staples, run as a not-for-profit with a focus on regenerative supply chains.

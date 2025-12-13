@@ -7,37 +7,41 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 6 Beckford Road, St Martins, Christchurch
-description: >
-  Neighbourhood bakery shop near Hansen Park offering pastries, sourdough bread, pies, rolls, toasties, sandwiches, and desserts. Serves C4 Krank blend coffee with fresh bread and pastries delivered daily.
+description: 'Neighbourhood bakery shop near Hansen Park offering pastries, sourdough
+  bread, pies, rolls, toasties, sandwiches, and desserts. Serves C4 Krank blend coffee
+  with fresh bread and pastries delivered daily.
+
+'
 practices:
-  - organic flour (Milmore Downs)
-  - spray-free flour (Farmers Mill)
-  - natural ingredients
-  - long cold fermentation
+- organic flour (Milmore Downs)
+- spray-free flour (Farmers Mill)
+- natural ingredients
+- long cold fermentation
 products:
-  - sourdough bread
-  - pastries
-  - pies
-  - rolls
-  - toasties
-  - sandwiches
-  - desserts
-  - coffee
+- sourdough bread
+- pastries
+- pies
+- rolls
+- toasties
+- sandwiches
+- desserts
+- coffee
 services:
-  - bakery shop
-  - takeaway coffee
-  - lunch options
-  - cafe
+- bakery shop
+- takeaway coffee
+- lunch options
+- cafe
 website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
 phone: "+64 3-331 6109"
 social: https://www.facebook.com/bohemianbakerychristchurch/, https://www.instagram.com/bohemianbakerychristchurch
-hours: "Mon–Sun 8:00–15:30"
-lat:
-lon:
-supplies_to:
-sources:
+hours: Mon–Sun 8:00–15:30
+lat: 
+lon: 
+supplies_to: []
+sources: []
 subtype: specialty-grocer
+source_urls: []
 ---
 St Martins is Bohemian Bakery’s neighbourhood hub — a friendly corner stop positioned beside New World and moments from Hansen Park, where dog-walkers, families, and commuters drift through from dawn to afternoon.
 

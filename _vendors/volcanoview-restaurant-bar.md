@@ -5,7 +5,8 @@ name: Volcanoview Restaurant & Bar
 type: bar-restaurant
 subtype: restaurant
 category: eatery
-description: Restaurant and bar serving homemade meals with organic and locally sourced ingredients, including organic coffee.
+description: Restaurant and bar serving homemade meals with organic and locally sourced
+  ingredients, including organic coffee.
 country: NZ
 country_slug: new-zealand
 region: Taranaki
@@ -27,4 +28,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: New Plymouth
+supplies_to: []
+sources: []
 ---

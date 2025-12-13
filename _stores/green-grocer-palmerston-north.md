@@ -6,7 +6,8 @@ brand: Green Grocer
 type: produce-store
 subtype: specialty-grocer
 category: retailer
-description: Produce store in Palmerston North stocking organic, local, and spray-free fruit and veg.
+description: Produce store in Palmerston North stocking organic, local, and spray-free
+  fruit and veg.
 country: NZ
 country_slug: new-zealand
 region: Manawatū-Whanganui
@@ -28,5 +29,8 @@ last_checked: ''
 notes: ''
 published: true
 city: Palmerston North
-Local produce shop known for organic, spray-free, and locally grown fruit and vegetables in Palmerston North. Source: user-supplied list
+Local produce shop known for organic, spray-free, and locally grown fruit and vegetables in Palmerston North. Source: user-supplied
+  list
+supplies_to: []
+sources: []
 ---

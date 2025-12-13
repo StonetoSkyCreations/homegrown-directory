@@ -5,7 +5,8 @@ name: The Bikery Café
 type: cafe
 subtype: cafe
 category: eatery
-description: Local-focused brunch café at the Velodrome using free-range and some organic produce.
+description: Local-focused brunch café at the Velodrome using free-range and some
+  organic produce.
 country: NZ
 country_slug: new-zealand
 region: Waikato
@@ -27,4 +28,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Cambridge
+supplies_to: []
+sources: []
 ---

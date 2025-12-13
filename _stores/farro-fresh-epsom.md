@@ -27,4 +27,6 @@ source_urls: []
 last_checked: Farro Fresh Epsom – Kin & Crop
 notes: Retail
 city: Auckland
+supplies_to: []
+sources: []
 ---

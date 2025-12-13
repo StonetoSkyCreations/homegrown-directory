@@ -6,7 +6,8 @@ brand: We Love Food
 type: co-op
 subtype: co-op
 category: retail
-description: Community produce co-op delivering fresh organic produce boxes across Brisbane.
+description: Community produce co-op delivering fresh organic produce boxes across
+  Brisbane.
 country: AU
 country_slug: australia
 region: Queensland
@@ -31,5 +32,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Cooperative; delivery boxes
 city: Brisbane
+supplies_to: []
+sources: []
 ---
 Organic produce box co-op connecting local growers to households across Brisbane.

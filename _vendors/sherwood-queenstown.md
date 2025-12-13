@@ -5,7 +5,8 @@ name: Sherwood Queenstown
 type: restaurant
 subtype: restaurant
 category: eatery
-description: Destination restaurant with on-site organic gardens and a foraging program in Queenstown.
+description: Destination restaurant with on-site organic gardens and a foraging program
+  in Queenstown.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -30,4 +31,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Queenstown
+supplies_to: []
+sources: []
 ---

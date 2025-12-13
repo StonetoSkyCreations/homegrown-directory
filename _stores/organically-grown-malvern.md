@@ -6,7 +6,8 @@ brand: Organically Grown
 type: organic-grocery
 subtype: organic-store
 category: retail
-description: Family-run store providing 100% certified organic fruit, vegetables, and groceries.
+description: Family-run store providing 100% certified organic fruit, vegetables,
+  and groceries.
 country: AU
 country_slug: australia
 region: Victoria
@@ -35,5 +36,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: NASAA certified organic
 city: Melbourne
+supplies_to: []
+sources: []
 ---
 Certified organic grocer focused on Australian-sourced produce and pantry goods.

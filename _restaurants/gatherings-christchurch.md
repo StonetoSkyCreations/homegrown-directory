@@ -28,8 +28,13 @@ hours: ''
 website: https://www.gatherings.co.nz
 email: info@gatherings.co.nz
 phone: 021 029 35641
-description: Christchurch restaurant focused on certified-organic vegetables, wild meats, and ethically sourced kaimoana; natural wine bar.
+description: Christchurch restaurant focused on certified-organic vegetables, wild
+  meats, and ethically sourced kaimoana; natural wine bar.
 rating_average: 5
 rating_count: 1
-Menu built on certified-organic veg (including Streamside Organics), wild meats, and ethically sourced NZ seafood, paired with natural wines. Weekly menus change with seasonal ethical supply. Source: user-provided details
+? Menu built on certified-organic veg (including Streamside Organics), wild meats,
+  and ethically sourced NZ seafood, paired with natural wines. Weekly menus change
+  with seasonal ethical supply. Source
+: user-provided details
+source_urls: []
 ---

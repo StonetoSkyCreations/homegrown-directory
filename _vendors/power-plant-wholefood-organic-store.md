@@ -5,7 +5,8 @@ name: Power Plant Wholefood & Organic Store
 type: wholefoods-store
 subtype: cafe
 category: mixed
-description: Organic vegan café and wholefoods store featuring local produce and organic ingredients.
+description: Organic vegan café and wholefoods store featuring local produce and organic
+  ingredients.
 country: NZ
 country_slug: new-zealand
 region: Northland
@@ -27,4 +28,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Whangārei
+supplies_to: []
+sources: []
 ---

@@ -28,4 +28,6 @@ notes: ''
 published: true
 city: Mapua
 Supplies certified organic produce from Mapua, Tasman. Source: user-supplied list
+supplies_to: []
+sources: []
 ---

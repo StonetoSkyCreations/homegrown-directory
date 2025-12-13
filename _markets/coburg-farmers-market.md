@@ -5,7 +5,8 @@ name: Coburg Farmers Market
 brand: Coburg Farmers Market
 type: market
 category: market
-description: Weekly Saturday market at Coburg Primary School with certified organic growers and seasonal produce.
+description: Weekly Saturday market at Coburg Primary School with certified organic
+  growers and seasonal produce.
 country: AU
 country_slug: australia
 region: Victoria
@@ -35,5 +36,7 @@ city: Melbourne
 practices_tags:
 - organic
 - local
+supplies_to: []
+sources: []
 ---
 VFMA-accredited Saturday market featuring organic growers and local artisan foods; plastic-bag free.

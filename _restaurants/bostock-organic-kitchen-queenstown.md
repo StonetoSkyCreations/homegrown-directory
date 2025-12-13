@@ -22,7 +22,10 @@ website: https://bostockorganic.nz/pages/bostock-organic-kitchen
 email: ''
 phone: ''
 social_links: []
-description: Eatery serving exclusively Bostock Certified Organic chicken with a focus on clean, ethical ingredients.
-Eatery featuring Bostock Certified Organic chicken, prepared with minimal additives and an ethical sourcing focus. Source: user-provided details
+description: Eatery serving exclusively Bostock Certified Organic chicken with a focus
+  on clean, ethical ingredients.
+Eatery featuring Bostock Certified Organic chicken, prepared with minimal additives and an ethical sourcing focus. Source: user-provided
+  details
 subtype: restaurant
+source_urls: []
 ---

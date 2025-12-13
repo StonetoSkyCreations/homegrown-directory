@@ -26,11 +26,14 @@ supplies_to:
 - city-honest-grocer
 - kopupako-kitchen
 - supply-circle-hub
-description: Coastal vegetable growers with compost-heavy beds, native shelter belts, and hens in orchard alleys.
+description: Coastal vegetable growers with compost-heavy beds, native shelter belts,
+  and hens in orchard alleys.
 website: https://moanaorganics.example.nz
 email: kiaora@moanaorganics.example.nz
 products_tags:
 - seed
 subtype: seeds
+sources: []
+source_urls: []
 ---
 Moana Organics tends mixed vegetable beds on sandy loam, rotating hens through orchard alleys to keep pest pressure low without sprays. They prioritise seed diversity, living compost, and delivering weekly boxes across Kāpiti and Wellington City.

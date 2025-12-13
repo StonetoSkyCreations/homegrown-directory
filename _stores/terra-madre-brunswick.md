@@ -6,7 +6,8 @@ brand: Terra Madre
 type: organic-supermarket
 subtype: supermarket
 category: retail
-description: Organic supermarket offering a wide range of organic foods and pantry staples in Brunswick.
+description: Organic supermarket offering a wide range of organic foods and pantry
+  staples in Brunswick.
 country: AU
 country_slug: australia
 region: Victoria
@@ -30,5 +31,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ACO certified
 city: Melbourne
+supplies_to: []
+sources: []
 ---
 Second Terra Madre outlet with organic pantry staples and ACO-certified lines.

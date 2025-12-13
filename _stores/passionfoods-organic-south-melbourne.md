@@ -6,7 +6,8 @@ brand: Passionfoods Organic
 type: organic-grocery
 subtype: organic-store
 category: retail
-description: Longstanding organic supermarket selling fresh organic produce and wholefood groceries.
+description: Longstanding organic supermarket selling fresh organic produce and wholefood
+  groceries.
 country: AU
 country_slug: australia
 region: Victoria
@@ -30,5 +31,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+supplies_to: []
+sources: []
 ---
 Organic supermarket with fresh produce, pantry staples, and natural personal care lines.

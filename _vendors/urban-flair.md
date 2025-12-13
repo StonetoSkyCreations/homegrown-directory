@@ -9,19 +9,20 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Auckland (mobile food truck)
-description: Food truck and private chef service using free‑range and organic products from local suppliers with biodegradable, eco‑friendly packaging.
+description: Food truck and private chef service using free‑range and organic products
+  from local suppliers with biodegradable, eco‑friendly packaging.
 practices:
-  - Organic
-  - Free-range
-  - Sustainable packaging
+- Organic
+- Free-range
+- Sustainable packaging
 products:
-  - Burgers
-  - Tacos
-  - Catering dishes
+- Burgers
+- Tacos
+- Catering dishes
 services:
-  - Food truck
-  - Catering
-  - Private chef
+- Food truck
+- Catering
+- Private chef
 website: https://urbanflair.co.nz
 email: urban.flair.nz@gmail.com
 phone: "+64 20 4082 5841"
@@ -31,4 +32,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

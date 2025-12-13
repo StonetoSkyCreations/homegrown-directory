@@ -6,7 +6,8 @@ brand: Bulk Eats Warehouse
 type: bulk-wholesale
 subtype: bulk-refillery
 category: wholesale
-description: Wholesale bulk-food supplier with click-and-collect and delivery for dry goods, groceries, and cleaning supplies.
+description: Wholesale bulk-food supplier with click-and-collect and delivery for
+  dry goods, groceries, and cleaning supplies.
 country: AU
 country_slug: australia
 region: Victoria
@@ -33,5 +34,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Wholesale and retail
 city: Melbourne
+supplies_to: []
+sources: []
 ---
 Bulk supplier serving households and businesses with pantry staples and cleaning products.

@@ -7,7 +7,8 @@ country: New Zealand
 region: Wellington
 city: Martinborough
 address: 59 Cromarty Drive, Martinborough 5784
-description: Spray-free boutique farm offering seasonal fruits, flowers, preserves, eggs and guided farm tours in the heart of Martinborough.
+description: Spray-free boutique farm offering seasonal fruits, flowers, preserves,
+  eggs and guided farm tours in the heart of Martinborough.
 practices:
 - spray-free
 - organic-principles
@@ -33,10 +34,11 @@ lat:
 lon: 
 supplies_to:
 - little-farms
-sources:
-- https://wairarapanz.com/products/martinborough-manor
+sources: []
 last_checked: 2025-12-11
 subtype: market-garden
+source_urls:
+- https://wairarapanz.com/products/martinborough-manor
 ---
 Martinborough Manor is a spray-free boutique farm nestled just minutes from the town square. Visitors can enjoy guided tours of the working farm, where they bottle-feed lambs or goats in spring, wander through stunning gardens and browse the farm store for preserves, fresh fruit, flowers, eggs and vegetables. Tours last about 1.5 hours and are available on Saturdays and Sundays at 10:30 am and 2:30 pm.
 

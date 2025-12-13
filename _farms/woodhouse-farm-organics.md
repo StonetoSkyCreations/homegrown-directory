@@ -7,7 +7,9 @@ country: New Zealand
 region: Manawatū-Whanganui
 city: Kairanga
 address: Kairanga, Palmerston North
-description: Five-acre farm working toward Demeter certification, growing berries, orchard fruit, vegetables, poultry and cattle with organic and biodynamic methods; produce sold at Hokowhitu Market.
+description: Five-acre farm working toward Demeter certification, growing berries,
+  orchard fruit, vegetables, poultry and cattle with organic and biodynamic methods;
+  produce sold at Hokowhitu Market.
 practices:
 - Organic
 - Biodynamic
@@ -28,9 +30,10 @@ hours: ''
 lat: ''
 lon: ''
 supplies_to: []
-sources:
-- https://woodhousefarmorganics.co.nz
+sources: []
 products_tags:
 - meat
 subtype: livestock
+source_urls:
+- https://woodhousefarmorganics.co.nz
 ---

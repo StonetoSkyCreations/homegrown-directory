@@ -4,7 +4,8 @@ title: Kennedy Point Vineyard
 slug: kennedy-point-vineyard
 name: Kennedy Point Vineyard
 type: Vineyard
-description: Fully certified organic vineyard and winery practising biodynamic viticulture and wild yeast fermentation to produce terroir-driven wines.
+description: Fully certified organic vineyard and winery practising biodynamic viticulture
+  and wild yeast fermentation to produce terroir-driven wines.
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
@@ -28,4 +29,5 @@ supplies_to: []
 sources: []
 published: true
 subtype: vineyard
+source_urls: []
 ---

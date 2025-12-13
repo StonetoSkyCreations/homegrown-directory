@@ -30,4 +30,6 @@ notes: Market
 city: Whangārei
 practices_tags:
 - spray-free
+supplies_to: []
+sources: []
 ---

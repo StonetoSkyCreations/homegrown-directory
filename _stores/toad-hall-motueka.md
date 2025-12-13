@@ -7,29 +7,32 @@ country: New Zealand
 region: Tasman
 city: Motueka
 address: 502 High Street, Motueka, Tasman
-description: Family-run cafe and store with produce from its onsite organic market garden plus artisan foods, breads, cheeses, meats, chocolates, ready-to-go meals and giftware.
+description: Family-run cafe and store with produce from its onsite organic market
+  garden plus artisan foods, breads, cheeses, meats, chocolates, ready-to-go meals
+  and giftware.
 practices:
-  - Organic
+- Organic
 products:
-  - Fresh local produce
-  - Artisan foods
-  - Sourdough bread
-  - Cheeses and meats
-  - Chocolates and giftware
-  - Ready-to-go meals, salads and snacks
+- Fresh local produce
+- Artisan foods
+- Sourdough bread
+- Cheeses and meats
+- Chocolates and giftware
+- Ready-to-go meals, salads and snacks
 services:
-  - Cafe
-  - Market garden
-  - Grocery store
+- Cafe
+- Market garden
+- Grocery store
 website: https://www.toadhallmotueka.co.nz
 email: info@toadhallmotueka.co.nz
-phone: "03 528 6456"
+phone: 03 528 6456
 social: ''
-hours: "Daily 8am–4pm"
+hours: Daily 8am–4pm
 lat: ''
 lon: ''
 supplies_to: []
-sources:
-  - https://www.toadhallmotueka.co.nz
+sources: []
 subtype: specialty-grocer
+source_urls:
+- https://www.toadhallmotueka.co.nz
 ---

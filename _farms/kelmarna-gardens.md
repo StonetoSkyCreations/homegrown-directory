@@ -4,7 +4,8 @@ title: Kelmarna Gardens
 slug: kelmarna-gardens
 name: Kelmarna Gardens
 type: Farm
-description: Urban organic farm and community garden dedicated to climate‑friendly food systems and regenerative practices.
+description: Urban organic farm and community garden dedicated to climate‑friendly
+  food systems and regenerative practices.
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -36,4 +37,6 @@ hours: Wed & Sat (farm shop open)
 last_checked: '2025-12-09'
 notes: Updated with community services.
 subtype: mixed
+supplies_to: []
+sources: []
 ---

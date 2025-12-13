@@ -23,7 +23,9 @@ hours: By appointment only
 website: https://luxorganics.co.nz
 email: jenny.k.lux@gmail.com
 phone: "+64 21 246 9526"
-description: Certified organic market garden delivering produce within 24 hours of harvest around Rotorua.
+description: Certified organic market garden delivering produce within 24 hours of
+  harvest around Rotorua.
 subtype: market-garden
+source_urls: []
 ---
 Certified BioGro organic farm supplying fresh vegetables through Brown Owl Organics, online orders, and electric van delivery. Source: https://luxorganics.co.nz/

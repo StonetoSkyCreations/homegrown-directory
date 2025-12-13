@@ -4,7 +4,9 @@ title: Te Matuku Grove
 slug: te-matuku-grove
 name: Te Matuku Grove
 type: Farm
-description: Permaculture orchard on Waiheke’s eastern end growing spray-free olives using syntropic permaculture, with free-range chickens and ducks aiding pest control and soil health.
+description: Permaculture orchard on Waiheke’s eastern end growing spray-free olives
+  using syntropic permaculture, with free-range chickens and ducks aiding pest control
+  and soil health.
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
@@ -31,4 +33,5 @@ supplies_to: []
 sources: []
 published: true
 subtype: orchard
+source_urls: []
 ---

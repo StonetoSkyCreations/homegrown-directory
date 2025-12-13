@@ -9,27 +9,29 @@ country: New Zealand
 region: Taranaki
 city: New Plymouth
 address: 460 Devon Street East, Strandon, New Plymouth 4312
-description: Certified organic and ethically sourced grocery supporting local producers with a wide range of fresh produce, bulk foods, and pantry goods.
+description: Certified organic and ethically sourced grocery supporting local producers
+  with a wide range of fresh produce, bulk foods, and pantry goods.
 practices:
-  - Certified organic
-  - Ethical sourcing
+- Certified organic
+- Ethical sourcing
 products:
-  - Organic groceries
-  - Fresh produce
-  - Local goods
-  - Bulk foods
+- Organic groceries
+- Fresh produce
+- Local goods
+- Bulk foods
 services:
-  - Retail store
+- Retail store
 website: https://downtoearthorganics.co.nz
 email: hello@downtoearthorganics.co.nz
-phone: "06 758 3700"
+phone: 06 758 3700
 social: ''
-hours: "Mon–Fri 9:00–17:30; Sat 9:00–15:00"
+hours: Mon–Fri 9:00–17:30; Sat 9:00–15:00
 lat: -39.0517323
 lon: 174.095274
 supplies_to: []
 sources:
-  - kaitake-farm
-  - coastal-market-garden
-  - https://downtoearthorganics.co.nz
+- kaitake-farm
+- coastal-market-garden
+source_urls:
+- https://downtoearthorganics.co.nz
 ---

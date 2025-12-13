@@ -19,7 +19,9 @@ hours: ''
 website: http://www.matatoki.co.nz/
 email: ''
 phone: ''
-description: Cheese barn and café near Thames known for award-winning organic cheeses and yoghurts.
+description: Cheese barn and café near Thames known for award-winning organic cheeses
+  and yoghurts.
 Cheesemaker and café offering organic cheeses, yoghurts, and light meals just outside Thames. Source: http://www.matatoki.co.nz/
 subtype: cafe
+source_urls: []
 ---

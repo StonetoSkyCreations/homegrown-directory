@@ -6,7 +6,8 @@ brand: Replenish for Health
 type: organic-grocery
 subtype: organic-store
 category: retail
-description: Organic supermarket in Williamstown with produce, pantry staples, and sustainable household products.
+description: Organic supermarket in Williamstown with produce, pantry staples, and
+  sustainable household products.
 country: AU
 country_slug: australia
 region: Victoria
@@ -29,5 +30,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+supplies_to: []
+sources: []
 ---
 Organic-focused grocer offering produce, staples, and low-tox household goods.

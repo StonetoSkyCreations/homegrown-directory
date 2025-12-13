@@ -9,15 +9,16 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Auckland (mobile food truck)
-description: Burger food truck delivering tasty meals using only the freshest produce and highest quality free‑range meats.
+description: Burger food truck delivering tasty meals using only the freshest produce
+  and highest quality free‑range meats.
 practices:
-  - Free-range
+- Free-range
 products:
-  - Burgers
-  - Fries
+- Burgers
+- Fries
 services:
-  - Food truck
-  - Catering
+- Food truck
+- Catering
 website: ''
 email: ''
 phone: ''
@@ -27,4 +28,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

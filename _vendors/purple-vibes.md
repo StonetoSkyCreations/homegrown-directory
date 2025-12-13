@@ -9,15 +9,16 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Auckland (mobile)
-description: Food trailer specialising in premium açaí bowls and smoothies made with 100% organic açaí and high-quality ingredients.
+description: Food trailer specialising in premium açaí bowls and smoothies made with
+  100% organic açaí and high-quality ingredients.
 practices:
-  - Organic
+- Organic
 products:
-  - Açaí bowls
-  - Smoothies
+- Açaí bowls
+- Smoothies
 services:
-  - Food trailer
-  - Event catering
+- Food trailer
+- Event catering
 website: https://purplevibes.co.nz
 email: info@purplevibes.co.nz
 phone: "+64 20 4060 8009"
@@ -27,4 +28,5 @@ lat: ''
 lon: ''
 supplies_to: []
 sources: []
+source_urls: []
 ---

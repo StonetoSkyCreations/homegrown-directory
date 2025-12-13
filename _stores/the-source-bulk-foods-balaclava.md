@@ -6,7 +6,8 @@ brand: The Source Bulk Foods
 type: bulk-foods
 subtype: bulk-refillery
 category: retail
-description: Zero-waste grocery selling 400+ bulk wholefoods and eco products; bring your own containers.
+description: Zero-waste grocery selling 400+ bulk wholefoods and eco products; bring
+  your own containers.
 country: AU
 country_slug: australia
 region: Victoria
@@ -37,5 +38,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+supplies_to: []
+sources: []
 ---
 Zero-waste refillery with organic options across bulk foods and household staples.

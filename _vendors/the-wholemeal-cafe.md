@@ -5,7 +5,8 @@ name: The Wholemeal Café
 type: cafe
 subtype: cafe
 category: eatery
-description: Vegetarian café in Tākaka using organic produce grown onsite or sourced locally.
+description: Vegetarian café in Tākaka using organic produce grown onsite or sourced
+  locally.
 country: NZ
 country_slug: new-zealand
 region: Tasman
@@ -28,4 +29,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Tākaka
+supplies_to: []
+sources: []
 ---

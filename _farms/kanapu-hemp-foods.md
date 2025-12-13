@@ -32,4 +32,6 @@ notes: ''
 products_tags:
 - seed
 subtype: seeds
+supplies_to: []
+sources: []
 ---

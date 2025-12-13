@@ -22,5 +22,6 @@ website: ''
 email: ''
 phone: ''
 description: One-sentence description for cards and SEO.
+source_urls: []
 ---
 Explain what the hub aggregates, who it serves, and how to join. Use `sources` and `supplies_to` to show both sides of the supply chain.

@@ -6,7 +6,8 @@ brand: The Gap LOCO
 type: co-op
 subtype: co-op
 category: retail
-description: Community organic food co-op offering certified organic produce and groceries in Brisbane.
+description: Community organic food co-op offering certified organic produce and groceries
+  in Brisbane.
 country: AU
 country_slug: australia
 region: Queensland
@@ -31,5 +32,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Cooperative
 city: Brisbane
+supplies_to: []
+sources: []
 ---
 Member-driven organic co-op supplying certified organic produce and pantry goods to the local community.

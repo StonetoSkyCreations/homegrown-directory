@@ -7,7 +7,9 @@ country: New Zealand
 region: Taranaki
 city: Omata
 address: 20 Beach Road, Omata, New Plymouth 4374
-description: Raw-milk producer following bio-organic principles with pasture-fed herd and self-service farm shop selling raw milk, organic vegetables, free-range eggs and bread.
+description: Raw-milk producer following bio-organic principles with pasture-fed herd
+  and self-service farm shop selling raw milk, organic vegetables, free-range eggs
+  and bread.
 practices:
 - Bio-organic
 - Pasture-raised
@@ -28,8 +30,9 @@ lon: 174.020033
 supplies_to: []
 sources:
 - kaitake-farm
-- https://www.beachroadmilk.co.nz
 products_tags:
 - dairy
 subtype: dairy-farm
+source_urls:
+- https://www.beachroadmilk.co.nz
 ---

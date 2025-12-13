@@ -7,7 +7,8 @@ country: New Zealand
 region: Taranaki
 city: Ōakura
 address: PO Box 34, Oakura 4375
-description: Small market garden between the Tasman Sea and Kaitake Ranges using regenerative organic, spray-free practices to supply seasonal veg boxes and market sales.
+description: Small market garden between the Tasman Sea and Kaitake Ranges using regenerative
+  organic, spray-free practices to supply seasonal veg boxes and market sales.
 practices:
 - Organic
 - Regenerative
@@ -26,7 +27,8 @@ lat: -39.1167
 lon: 173.95
 supplies_to:
 - down-to-earth-organics-new-plymouth
-sources:
-- https://coastalmarketgarden.com
+sources: []
 subtype: market-garden
+source_urls:
+- https://coastalmarketgarden.com
 ---
