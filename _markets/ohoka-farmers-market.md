@@ -38,7 +38,7 @@ lon: ''
 sources:
 - untamed-earth
 rating_average: 5
-rating_count: 2
+rating_count: 1
 practices_tags:
 - organic
 - spray-free
