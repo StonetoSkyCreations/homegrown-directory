@@ -13,7 +13,7 @@ region: New South Wales
 suburb: Mullumbimby
 address: 70 Dalley St
 postcode: '2482'
-phone: "(02) 6684 2137"
+phone: (02) 6684 2137
 email: punjab@byronbaypork.com.au
 website: http://www.byronbaypork.com.au
 social_links:
@@ -30,5 +30,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail butcher
 city: Mullumbimby
+lat: -28.5526375
+lon: 153.4999759
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Byron Bay Pork and Meats
+geo_query: 70 Dalley St, Mullumbimby, New South Wales, AU
 ---
 Local butcher offering organic and free-range pork and meats with transparent provenance.

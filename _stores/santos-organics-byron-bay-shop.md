@@ -13,7 +13,7 @@ region: New South Wales
 suburb: Byron Bay
 address: 105 Jonson St
 postcode: '2481'
-phone: "(02) 6685 7071"
+phone: (02) 6685 7071
 email: ''
 website: https://santosorganics.com.au
 social_links:
@@ -33,5 +33,12 @@ last_checked: '2025-12-09'
 notes: Retailer; certified organic supply focus.
 city: Byron Bay
 brand_slug: santos-organics
+lat: -28.6475673
+lon: 153.6128394
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Jonson Street
+geo_query: 105 Jonson St, Byron Bay, New South Wales, AU
 ---
 Community-minded organic grocer with refill options, certified organic pantry goods, and regenerative-focused sourcing.

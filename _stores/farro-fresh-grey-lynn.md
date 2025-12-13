@@ -14,9 +14,9 @@ region: Auckland
 suburb: Grey Lynn
 address: 34 Westmoreland Street West
 postcode: '1021'
-lon: -36.857
+lon: 174.7328465
 phone: '174.7445'
-email: '09 360 0499'
+email: 09 360 0499
 website: ''
 social_links:
 - https://www.farro.co.nz/
@@ -28,4 +28,10 @@ source_urls: []
 last_checked: Farro Fresh Grey Lynn – Yelp; Farro Facebook
 notes: Retail
 city: Auckland
+lat: -36.8556127
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Farro Fresh
+geo_query: 34 Westmoreland Street West, Auckland, Auckland, New Zealand
 ---

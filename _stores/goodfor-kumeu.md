@@ -21,11 +21,16 @@ services:
 - Click and collect
 website: https://goodfor.co.nz
 email: hello@goodfor.co.nz
-phone: "+64 9 412 2589"
+phone: +64 9 412 2589
 social: ''
 hours: 'Open 7 days: 9am–6pm'
-lat: ''
-lon: ''
+lat: -36.777534
+lon: 174.5589539
 subtype: specialty-grocer
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '49'
+geo_query: 49 Main Road, Kumeū, Auckland, Kumeu, Auckland, New Zealand
 ---

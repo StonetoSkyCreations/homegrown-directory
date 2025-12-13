@@ -23,19 +23,24 @@ services:
 - educational content online
 website: https://wearelittlefarms.com
 email: info@littlefarmsnz.com
-phone: 
+phone: null
 social:
 - https://instagram.com/growing._goodness
-hours: 
+hours: null
 market_days: []
-lat: 
-lon: 
+lat: -41.3522552
+lon: 175.2060882
 supplies_to:
 - little-farms
 last_checked: 2025-12-11
 subtype: market-garden
 source_urls:
 - https://wearelittlefarms.com/pages/the-farm
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Pirinoa Hall
+geo_query: Pirinoa, South Wairarapa, Pirinoa, Wellington, New Zealand
 ---
 The Little Farms Market Garden is the beating heart of the Little Farms collective. Located in Pirinoa, South Wairarapa, this small market garden grows its crops regeneratively, using no synthetic fertilisers, herbicides or insecticides. Instead, farmers build fertile soil by layering natural organic matter on top of the existing ground and maintain the beds using no-dig methods. These practices protect soil biology and help sequester carbon while yielding nutrient-dense produce.
 

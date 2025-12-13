@@ -13,7 +13,7 @@ region: Auckland
 suburb: Stonefields (Mt Wellington)
 address: 30 Stonefields Ave
 postcode: '1072'
-phone: '09 570 2544'
+phone: 09 570 2544
 email: stonefields@bininn.co.nz
 website: https://www.bininn.co.nz/auckland/stonefields
 social_links: []
@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Auckland
+lat: -36.8870129
+lon: 174.8448971
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '30'
+geo_query: 30 Stonefields Ave, Auckland, Auckland, New Zealand
 ---

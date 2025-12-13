@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Waimakariri
+lat: -43.3037192
+lon: 172.5992785
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '9'
+geo_query: 9 High Street, Waimakariri, Canterbury, New Zealand
 ---

@@ -31,4 +31,11 @@ city: Rotorua
 ? Community-focused organic and wholefood store in Rotorua offering certified organic
   foods, sustainable living products, and supporting local growers. Source
 : https://brownowlorganics.nz/
+lat: -38.1393409
+lon: 176.2470278
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Ranolf Street
+geo_query: 197 Ranolf Street, Rotorua, Bay of Plenty, New Zealand
 ---

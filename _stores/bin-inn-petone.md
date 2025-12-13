@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Lower Hutt
+lat: -41.2096126
+lon: 174.9282444
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: 8/123
+geo_query: 8 Cambridge Terrace, Lower Hutt, Wellington, New Zealand
 ---

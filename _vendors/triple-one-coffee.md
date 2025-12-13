@@ -19,10 +19,15 @@ services:
 - Coffee van
 website: ''
 email: tripleone@xtra.co.nz
-phone: "+64 27 223 2111"
+phone: +64 27 223 2111
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -37.707837
+lon: 176.1499639
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '832'
+geo_query: 832 Cameron Road, Tauranga 3112, Tauranga, Bay of Plenty, New Zealand
 ---

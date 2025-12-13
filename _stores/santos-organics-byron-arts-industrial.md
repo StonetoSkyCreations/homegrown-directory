@@ -13,7 +13,7 @@ region: New South Wales
 suburb: Byron Bay Industrial Estate
 address: 3/7 Brigantine St
 postcode: '2481'
-phone: "(02) 6685 5685"
+phone: (02) 6685 5685
 email: ''
 website: https://santosorganics.com.au
 social_links:
@@ -33,5 +33,12 @@ last_checked: '2025-12-09'
 notes: Retailer; warehouse format.
 city: Byron Bay
 brand_slug: santos-organics
+lat: -28.6350732
+lon: 153.5814492
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Brigantine Street
+geo_query: 3/7 Brigantine St, Byron Bay, New South Wales, AU
 ---
 Bulk-focused organic grocery with refill stations and certified organic lines for the Byron Bay area.

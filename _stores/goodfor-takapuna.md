@@ -21,11 +21,16 @@ services:
 - Click and collect
 website: https://goodfor.co.nz
 email: hello@goodfor.co.nz
-phone: "+64 9 486 0760"
+phone: +64 9 486 0760
 social: ''
 hours: 'Open 7 days: 9:30am–6:00pm'
-lat: ''
-lon: ''
+lat: -36.7947877
+lon: 174.7770375
 subtype: specialty-grocer
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: GoodFor
+geo_query: 360 Lake Road, Takapuna, Auckland, Takapuna, Auckland, New Zealand
 ---

@@ -14,7 +14,7 @@ region: Queensland
 suburb: Brendale
 address: 18 Bult Drive
 postcode: '4500'
-phone: "(07) 3205 2969"
+phone: (07) 3205 2969
 email: ''
 website: https://www.tmporganics.com.au/
 social_links:
@@ -31,5 +31,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail butcher and grocer
 city: Brendale
+lat: -27.3141625
+lon: 152.9827574
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Bult Drive
+geo_query: 18 Bult Drive, Brendale, Queensland, AU
 ---
 Certified organic butcher with a small supermarket range of organic groceries and pantry staples.

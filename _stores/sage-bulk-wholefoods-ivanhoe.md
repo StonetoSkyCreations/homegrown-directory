@@ -14,7 +14,7 @@ region: Victoria
 suburb: Ivanhoe
 address: 206 Upper Heidelberg Road
 postcode: '3079'
-phone: '0482 059 897'
+phone: 0482 059 897
 email: sageivanhoe@gmail.com
 website: https://sagebulkwholefoods.com.au
 social_links: []
@@ -32,5 +32,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+lat: -37.7674668
+lon: 145.0443112
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '206'
+geo_query: 206 Upper Heidelberg Road, Melbourne, Victoria, AU
 ---
 Local refill store with organic bulk foods and low-waste household items.

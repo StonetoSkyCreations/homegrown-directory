@@ -22,10 +22,15 @@ services:
 - Catering
 website: https://foodcartel.nz
 email: foodcartel.nz@gmail.com
-phone: "+64 22 602 2185"
+phone: +64 22 602 2185
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -38.6655963
+lon: 178.0225752
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '151'
+geo_query: 151 Grey Street, Gisborne 4010, Gisborne, Gisborne, New Zealand
 ---

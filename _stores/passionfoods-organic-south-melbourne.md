@@ -14,7 +14,7 @@ region: Victoria
 suburb: South Melbourne
 address: 219 Ferrars Street
 postcode: '3205'
-phone: "(03) 9690 9339"
+phone: (03) 9690 9339
 email: ''
 website: https://passionfoods.com.au
 social_links: []
@@ -31,5 +31,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+lat: -37.8333283
+lon: 144.9552435
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '219'
+geo_query: 219 Ferrars Street, Melbourne, Victoria, AU
 ---
 Organic supermarket with fresh produce, pantry staples, and natural personal care lines.

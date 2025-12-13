@@ -21,12 +21,17 @@ services:
 - Deli
 website: https://compleatwellness.co.nz
 email: compleatwellness@gmail.com
-phone: "+64 3 217 9010"
+phone: +64 3 217 9010
 social: https://www.instagram.com/compleatwellness
 hours: Mon–Fri 8am–6pm; Sat 9am–4pm; Sun 9am–3pm
-lat: ''
-lon: ''
+lat: -46.3970004
+lon: 168.3654198
 subtype: specialty-grocer
 source_urls:
 - https://compleatwellness.co.nz
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '24'
+geo_query: 24 Windsor Street, Invercargill 9810, Invercargill, Southland, New Zealand
 ---

@@ -23,4 +23,11 @@ products_tags:
 - meat
 subtype: livestock
 source_urls: []
+lat: -44.7495794
+lon: 169.1197983
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Cardrona Valley Road
+geo_query: Cardrona Valley, Otago, New Zealand
 ---

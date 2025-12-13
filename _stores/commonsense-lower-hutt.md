@@ -14,7 +14,7 @@ suburb: Lower Hutt
 brand_slug: commonsense-organics
 address: 37 Waterloo Road
 postcode: '5010'
-lon: -41.2121
+lon: 174.907235
 phone: ''
 email: hutt@commonsenseorganics.co.nz
 website: https://commonsenseorganics.co.nz/stores/lower-hutt-commonsense-organics/
@@ -30,4 +30,10 @@ notes: Retail
 city: Wellington
 rating_average: 5
 rating_count: 1
+lat: -41.2088679
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Commonsense
+geo_query: 37 Waterloo Road, Wellington, Wellington, New Zealand
 ---

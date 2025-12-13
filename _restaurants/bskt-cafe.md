@@ -26,5 +26,12 @@ phone: 07 5526 6565
 description: Beachside health cafe using organic açaí and free-range eggs with a focus
   on nourishing meals.
 source_urls: []
+lat: -28.0591605
+lon: 153.4414861
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '4'
+geo_query: 4 Lavarack Rd, Gold Coast, Queensland, Australia
 ---
 BSKT Cafe serves coastal brunch plates featuring organic açaí bowls, free-range eggs, and locally sourced ingredients.

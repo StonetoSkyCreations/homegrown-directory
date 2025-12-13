@@ -13,7 +13,7 @@ region: Auckland
 city: Auckland
 suburb: Auckland CBD
 address: 33 Victoria Street East, Auckland
-phone: "+64 9 377 1333"
+phone: +64 9 377 1333
 email: store@scarecrow.co.nz
 website: https://scarecrow.co.nz
 social_links: []
@@ -34,4 +34,11 @@ source_urls:
 - https://scarecrow.co.nz
 last_checked: '2025-12-09'
 notes: Updated with address and contact details.
+lat: -36.8495617
+lon: 174.7665582
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '33'
+geo_query: 33 Victoria Street East, Auckland, Auckland, Auckland, New Zealand
 ---

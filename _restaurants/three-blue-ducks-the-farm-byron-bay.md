@@ -24,9 +24,16 @@ services:
 hours: ''
 website: https://threeblueducks.com
 email: enquiries@threeblueducks.com
-phone: "(02) 6190 8966"
+phone: (02) 6190 8966
 description: Farm restaurant by Three Blue Ducks using organic or spray-free produce
   and seasonal ingredients grown onsite and nearby.
 source_urls: []
+lat: -28.6377129
+lon: 153.5742337
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Ewingsdale Road
+geo_query: 11 Ewingsdale Road, Byron Bay, New South Wales, Australia
 ---
 Menus follow what is grown and raised at The Farm and nearby producers, keeping dishes organic, spray-free, and seasonal.

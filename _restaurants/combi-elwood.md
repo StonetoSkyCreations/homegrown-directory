@@ -25,9 +25,16 @@ services:
 hours: ''
 website: https://combielwood.com.au
 email: manager@combielwood.com.au
-phone: "+61 431 862 139"
+phone: +61 431 862 139
 description: Organic raw vegan cafe serving cakes, smoothies, and fair-trade coffee
   with gluten-free options.
 source_urls: []
+lat: -37.8862143
+lon: 144.9886886
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Combi
+geo_query: 138-140 Ormond Road, Melbourne, Victoria, Australia
 ---
 Combi uses organic ingredients for its raw vegan treats, smoothies, and coffee, keeping the menu gluten-free friendly.

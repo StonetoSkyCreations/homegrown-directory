@@ -21,10 +21,15 @@ services:
 - Food cart
 website: https://zenskitchen.co.nz
 email: zen@zenskitchen.co.nz
-phone: "+64 22 645 3756"
+phone: +64 22 645 3756
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -41.8001918
+lon: 172.3244446
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Zen’s Kitchen
+geo_query: 38 Waller Street, Murchison 7007, Murchison, Tasman, New Zealand
 ---

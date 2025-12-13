@@ -14,7 +14,7 @@ region: Victoria
 suburb: Williamstown
 address: 34 Douglas Parade
 postcode: '3016'
-phone: "(03) 9397 7363"
+phone: (03) 9397 7363
 email: ''
 website: https://passionfoods.com.au
 social_links: []
@@ -30,5 +30,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+lat: -37.7870519
+lon: 145.6211871
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '34'
+geo_query: 34 Douglas Parade, Melbourne, Victoria, AU
 ---
 Organic-focused grocer offering produce, staples, and low-tox household goods.

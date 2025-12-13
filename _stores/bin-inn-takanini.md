@@ -13,7 +13,7 @@ region: Auckland
 suburb: Takanini
 address: 230 Great South Road
 postcode: '2112'
-phone: '09 299 0618'
+phone: 09 299 0618
 email: takanini@bininn.co.nz
 website: https://www.bininn.co.nz/auckland/takanini
 social_links: []
@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Auckland
+lat: -36.8848982
+lon: 174.7875881
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '230'
+geo_query: 230 Great South Road, Auckland, Auckland, New Zealand
 ---

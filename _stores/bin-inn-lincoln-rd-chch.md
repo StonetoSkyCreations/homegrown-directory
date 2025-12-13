@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Christchurch
+lat: -43.5433841
+lon: 172.6137972
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: 15/336
+geo_query: 15 Lincoln Road, Christchurch, Canterbury, New Zealand
 ---

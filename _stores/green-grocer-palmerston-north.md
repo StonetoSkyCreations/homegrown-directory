@@ -31,4 +31,11 @@ published: true
 city: Palmerston North
 Local produce shop known for organic, spray-free, and locally grown fruit and vegetables in Palmerston North. Source: user-supplied
   list
+lat: -40.353329
+lon: 175.6144417
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Broadway Avenue
+geo_query: 239 Broadway Avenue, Palmerston North, Manawatū-Whanganui, New Zealand
 ---

@@ -22,9 +22,16 @@ services:
 hours: ''
 website: https://freemansorganicfarm.org
 email: davidgowerfreeman@icloud.com
-phone: '0438 777 763'
+phone: 0438 777 763
 description: Family-run certified organic farm with a farm stall and cafe in Currumbin
   Valley.
 source_urls: []
+lat: -28.2125749
+lon: 153.4041019
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Tomewin Mountain Road
+geo_query: 618 Tomewin Mountain Road, Gold Coast, Queensland, Australia
 ---
 Freeman's Organic Farm sells certified organic produce and pasture-raised goods alongside a farm cafe. Note: closed Sep–Dec 2025 for new cafe construction.

@@ -13,7 +13,7 @@ region: Hawke's Bay
 suburb: St Leonards
 address: 221E Heretaunga Street East
 postcode: '4122'
-lon: -39.6403
+lon: 176.8446806
 phone: ''
 email: cornucopiaorganic@gmail.com
 website: http://cornucopiaorganics.co.nz/
@@ -28,4 +28,10 @@ source_urls:
 last_checked: Cornucopia contact; Be Nourished dir.
 notes: Retail
 city: Hastings
+lat: -39.6432712
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Heretaunga Street East
+geo_query: 221E Heretaunga Street East, Hastings, Hawke's Bay, New Zealand
 ---

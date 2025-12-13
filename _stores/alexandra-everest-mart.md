@@ -19,12 +19,17 @@ services:
 - Grocery store
 website: ''
 email: ''
-phone: "+64 3 448 8691"
+phone: +64 3 448 8691
 social: ''
 hours: Mon–Fri 9am–5:30pm; Sat 9:30am–4:30pm; Sun closed
-lat: ''
-lon: ''
+lat: -45.2499614
+lon: 169.3967489
 subtype: specialty-grocer
 source_urls:
 - https://www.google.com/maps/place/38+Tarbert+Street,+Alexandra+9320
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Tarbert Street
+geo_query: 38 Tarbert Street, Alexandra 9320, Alexandra, Otago, New Zealand
 ---

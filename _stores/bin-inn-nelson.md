@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Nelson
+lat: -41.2731434
+lon: 173.2798874
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '25'
+geo_query: 25 Vanguard Street, Nelson, Nelson, New Zealand
 ---

@@ -11,7 +11,7 @@ description: 'Central-city bakery café in the SALT District serving slow-fermen
   sourdough, pastries, brunch, and drinks including Prima Coffee, T-leaf teas, Karma,
   Chia Sisters, Wildwood, and Hakanoa. Hosts live music on Saturdays.
 
-'
+  '
 practices:
 - organic flour (Milmore Downs)
 - spray-free flour (Farmers Mill)
@@ -31,17 +31,23 @@ services:
 - cafe
 website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
-phone: "+64 3-365 0456"
+phone: +64 3-365 0456
 social: https://www.facebook.com/bohemianbakerychristchurch/, https://www.instagram.com/bohemianbakerychristchurch
 hours: Mon–Fri 7:30–15:00; Sat–Sun 8:30–15:00
-lat: 
-lon: 
+lat: -43.5361016
+lon: 172.6407015
 sources:
 - farmers-mill
 - milmore-downs
 subtype: specialty-grocer
 source_urls: []
 brand_slug: bohemian-bakery
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '255'
+geo_query: 255 Saint Asaph Street, Christchurch 8011, Christchurch, Canterbury, New
+  Zealand
 ---
 In the heart of Christchurch’s SALT District — a pocket of grit, creativity, and post-quake reinvention — sits Bohemian’s City Bakery Cafe. It’s where the craft of slow-fermented sourdough meets the energy of an evolving urban neighbourhood.
 

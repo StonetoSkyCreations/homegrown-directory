@@ -34,4 +34,11 @@ rating_count: 1
 ? Raglan’s organic and wholefood store offering fresh organic fruit and veg, organic
   dairy, and bulk goods, with a focus on sourcing local where possible. Source
 : https://www.raglanherbaldispensary.nz/
+lat: -37.7991565
+lon: 174.868082
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '6'
+geo_query: 6 Wallis Street, Raglan, Waikato, New Zealand
 ---

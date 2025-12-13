@@ -14,7 +14,7 @@ suburb: Kilbirnie
 brand_slug: commonsense-organics
 address: 37 Rongotai Road
 postcode: '6022'
-lon: -41.3275
+lon: 174.7953011
 phone: ''
 email: kilbirnie@commonsenseorganics.co.nz
 website: https://commonsenseorganics.co.nz/stores/kilbirnie-commonsense-organics/
@@ -30,4 +30,10 @@ notes: Retail
 city: Wellington
 rating_average: 5
 rating_count: 1
+lat: -41.317808
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Commonsense Organics
+geo_query: 37 Rongotai Road, Wellington, Wellington, New Zealand
 ---

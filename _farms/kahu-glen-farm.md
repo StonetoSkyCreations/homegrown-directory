@@ -24,9 +24,14 @@ email: ''
 phone: 021 069 5325
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -39.0458485
+lon: 174.1578091
 subtype: market-garden
 source_urls:
 - Producer submission
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '175'
+geo_query: 175 Paraite Road, Paraite 4373, Paraite, Taranaki, New Zealand
 ---

@@ -24,7 +24,12 @@ email: ''
 phone: ''
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.7816887
+lon: 174.7553283
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: North Shore Hospital Road
+geo_query: North Shore, Auckland, North Shore, Auckland, New Zealand
 ---

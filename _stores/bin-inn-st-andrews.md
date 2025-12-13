@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Hamilton
+lat: -37.7548516
+lon: 175.2576638
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Sandwich Road
+geo_query: 84 Sandwich Road, Hamilton, Waikato, New Zealand
 ---

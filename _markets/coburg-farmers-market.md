@@ -13,7 +13,7 @@ region: Victoria
 suburb: Coburg
 address: Coburg Primary School, 92 Bell Street
 postcode: '3058'
-phone: '0429 146 627'
+phone: 0429 146 627
 email: ''
 website: https://mfm.com.au
 social_links:
@@ -36,5 +36,12 @@ city: Melbourne
 practices_tags:
 - organic
 - local
+lat: -37.7410151
+lon: 144.9682159
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Coburg Primary School
+geo_query: Coburg Primary School, 92 Bell Street, Melbourne, Victoria, AU
 ---
 VFMA-accredited Saturday market featuring organic growers and local artisan foods; plastic-bag free.

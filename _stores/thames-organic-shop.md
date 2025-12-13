@@ -31,4 +31,11 @@ city: Thames
 ? Community organic co-op created by volunteers to keep certified organic food and
   sustainable products available in the Thames area. Source
 : user-supplied list
+lat: -37.1352473
+lon: 175.5406267
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '736'
+geo_query: 736 Pollen Street, Thames, Waikato, New Zealand
 ---

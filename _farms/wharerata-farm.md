@@ -23,14 +23,14 @@ services:
 - farm tours and educational visits (by arrangement)
 - wholesale venison through First Light
 - supplies Little Farms lamb and meat boxes
-website: 
-email: 
-phone: 
-social: 
-hours: 
+website: null
+email: null
+phone: null
+social: null
+hours: null
 market_days: []
-lat: 
-lon: 
+lat: -41.3522552
+lon: 175.2060882
 supplies_to:
 - little-farms
 - first-light-farms
@@ -42,6 +42,11 @@ subtype: dairy-farm
 source_urls:
 - https://wearelittlefarms.com/blogs/meet-the-growers/wharerata-farm
 - https://goldpine.co.nz/over-the-fence/wharerata-farm
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Pirinoa Hall
+geo_query: Pirinoa, South Wairarapa, Pirinoa, Wellington, New Zealand
 ---
 Wharerata Farm sits in the heart of South Wairarapa's Pirinoa district, framed by the Haurangi Ranges and near Palliser Bay. The Atkinson family has farmed here for almost a century and achieved certified organic status in 1990. Fourth-generation farmer Sophie Atkinson and her partner Tim manage a diverse enterprise spanning deer, beef cattle, sheep and around 100 organic dairy grazers. The 200-hectare effective area benefits from fertile soils and a temperate microclimate.
 

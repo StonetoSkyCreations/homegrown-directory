@@ -12,7 +12,7 @@ region: Hawke's Bay
 suburb: Napier
 address: Clive Square
 postcode: '4110'
-lon: -39.4921
+lon: 176.9136186
 phone: 06 876 5938
 email: info@hawkesbayfarmersmarket.co.nz
 website: https://www.hawkesbayfarmersmarket.co.nz/napier-market/
@@ -28,4 +28,10 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Napier
+lat: -39.491882
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Clive Square
+geo_query: Clive Square, Napier, Hawke's Bay, New Zealand
 ---

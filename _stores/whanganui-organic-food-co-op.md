@@ -29,4 +29,11 @@ published: true
 city: Whanganui
 Community-run co-op providing certified organic food, produce, and wholefoods to Whanganui residents. Source: user-supplied
   list
+lat: -39.9322575
+lon: 175.0494037
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '99'
+geo_query: 99 Guyton Street, Whanganui, Manawatū-Whanganui, New Zealand
 ---

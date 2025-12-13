@@ -13,7 +13,7 @@ region: Victoria
 suburb: Albert Park
 address: 21 Graham Street
 postcode: '3206'
-phone: '0419 351 878'
+phone: 0419 351 878
 email: info@gasworks.org.au
 website: https://gasworks.org.au
 social_links: []
@@ -35,5 +35,12 @@ city: Melbourne
 practices_tags:
 - organic
 - local
+lat: -37.7512854
+lon: 144.9435765
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '21'
+geo_query: 21 Graham Street, Melbourne, Victoria, AU
 ---
 Monthly farmers market in Gasworks Arts Park featuring organic growers and local food makers.

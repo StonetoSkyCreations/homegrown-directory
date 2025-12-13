@@ -29,4 +29,11 @@ notes: ''
 published: true
 city: Queenstown
 Zero-waste bulk store offering organic wholefoods, nuts, grains, and eco goods in Queenstown. Source: https://thesourcebulkfoods.co.nz/
+lat: -45.012389
+lon: 168.7430236
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Kiwibank
+geo_query: 19 Grant Road, Queenstown, Otago, New Zealand
 ---

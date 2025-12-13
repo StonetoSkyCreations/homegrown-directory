@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Palmerston North
+lat: -40.3582686
+lon: 175.6091548
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '313'
+geo_query: 313 Church Street, Palmerston North, Manawatū-Whanganui, New Zealand
 ---

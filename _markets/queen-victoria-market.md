@@ -13,7 +13,7 @@ region: Victoria
 suburb: Melbourne
 address: 513 Elizabeth Street
 postcode: '3000'
-phone: "(03) 9320 5822"
+phone: (03) 9320 5822
 email: info@qvm.com.au
 website: https://qvm.com.au
 social_links:
@@ -35,5 +35,12 @@ notes: Market
 city: Melbourne
 practices_tags:
 - organic
+lat: -37.8068913
+lon: 144.9595173
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: 3 Brothersss
+geo_query: 513 Elizabeth Street, Melbourne, Victoria, AU
 ---
 Central city market with a certified organic produce precinct plus specialty food stalls.

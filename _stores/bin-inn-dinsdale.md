@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Hamilton
+lat: -37.7963914
+lon: 175.2459564
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: 28/47
+geo_query: 47 Whatawhata Road, Hamilton, Waikato, New Zealand
 ---

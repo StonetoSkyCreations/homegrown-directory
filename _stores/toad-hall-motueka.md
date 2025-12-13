@@ -28,9 +28,14 @@ email: info@toadhallmotueka.co.nz
 phone: 03 528 6456
 social: ''
 hours: Daily 8am–4pm
-lat: ''
-lon: ''
+lat: -41.1007886
+lon: 173.0124585
 subtype: specialty-grocer
 source_urls:
 - https://www.toadhallmotueka.co.nz
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: High Street
+geo_query: 502 High Street, Motueka, Tasman, Motueka, Tasman, New Zealand
 ---

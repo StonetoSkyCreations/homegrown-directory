@@ -13,7 +13,7 @@ region: Auckland
 suburb: Takapuna
 address: 1 Barrys Point Road
 postcode: '0622'
-lon: -36.787
+lon: 174.764601
 phone: ''
 email: info@ieproduce.com
 website: http://www.ieproduce.com/
@@ -28,4 +28,10 @@ source_urls:
 last_checked: IE Produce contact
 notes: Retail
 city: Auckland
+lat: -36.7905833
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: I E Produce
+geo_query: 1 Barrys Point Road, Auckland, Auckland, New Zealand
 ---

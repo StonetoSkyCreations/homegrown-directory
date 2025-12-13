@@ -14,7 +14,7 @@ region: Victoria
 suburb: Sunshine West
 address: 101 Proximity Drive
 postcode: '3020'
-phone: "(03) 8771 4168"
+phone: (03) 8771 4168
 email: ''
 website: https://bulkeatswarehouse.com.au
 social_links:
@@ -34,5 +34,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Wholesale and retail
 city: Melbourne
+lat: -37.8111897
+lon: 144.8231892
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '101'
+geo_query: 101 Proximity Drive, Melbourne, Victoria, AU
 ---
 Bulk supplier serving households and businesses with pantry staples and cleaning products.

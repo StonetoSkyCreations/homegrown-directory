@@ -21,11 +21,17 @@ services:
 - Retail butchery
 website: ''
 email: ''
-phone: "+64 9 818 6526"
+phone: +64 9 818 6526
 social: ''
 hours: Mon–Fri 8am–6pm; Sat 8am–4pm
-lat: ''
-lon: ''
+lat: -36.9121619
+lon: 174.6564797
 subtype: organic-store
 source_urls: []
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: West Coast Road
+geo_query: 356 West Coast Road, Glen Eden, Auckland 0602, Glen Eden, Auckland, New
+  Zealand
 ---

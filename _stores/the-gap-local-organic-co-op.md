@@ -32,5 +32,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Cooperative
 city: Brisbane
+lat: -27.4249509
+lon: 153.034155
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: The Atrium
+geo_query: 15 High Street, Brisbane, Queensland, AU
 ---
 Member-driven organic co-op supplying certified organic produce and pantry goods to the local community.

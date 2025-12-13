@@ -34,4 +34,11 @@ practices_tags:
 - organic
 - regenerative
 - local
+lat: -40.9020098
+lon: 175.0213117
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Lindale Farm Park
+geo_query: Lindale, Paraparaumu, Wellington, New Zealand
 ---

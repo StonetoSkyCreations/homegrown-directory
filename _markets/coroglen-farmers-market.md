@@ -34,4 +34,11 @@ practices_tags:
 - organic
 - spray-free
 - local
+lat: -36.9230256
+lon: 175.6972105
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Gumtown Hall
+geo_query: Gumtown Hall, Coroglen, Waikato, New Zealand
 ---

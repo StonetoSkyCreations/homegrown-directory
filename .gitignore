@@ -1,2 +1,7 @@
 
 /_site
+
+# Geocoding artefacts
+tools/geocode_results.csv
+tools/apply_geocode_log.txt
+tools/backup/

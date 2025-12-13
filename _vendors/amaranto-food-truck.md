@@ -23,10 +23,16 @@ services:
 - Catering
 website: https://amaranto.co.nz
 email: info@amaranto.co.nz
-phone: "+64 21 0229 5941, +64 21 0229 5938"
+phone: +64 21 0229 5941, +64 21 0229 5938
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.8596629
+lon: 174.7021348
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '340'
+geo_query: 340 Point Chevalier Road, Point Chevalier, Auckland 1022, Auckland, Auckland,
+  New Zealand
 ---

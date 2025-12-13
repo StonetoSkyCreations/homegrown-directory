@@ -22,10 +22,16 @@ services:
 - Event catering
 website: https://misterbaristacoffeevan.co.nz
 email: ''
-phone: "+64 21 625 600"
+phone: +64 21 625 600
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.7767126
+lon: 174.6700487
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '1'
+geo_query: 1 Greenhithe Road, Greenhithe, Auckland 0632, Greenhithe, Auckland, New
+  Zealand
 ---

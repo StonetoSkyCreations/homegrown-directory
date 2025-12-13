@@ -27,11 +27,16 @@ email: info@woodhousefarmorganics.co.nz
 phone: 06 329 0943
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -40.3476803
+lon: 175.533834
 products_tags:
 - meat
 subtype: livestock
 source_urls:
 - https://woodhousefarmorganics.co.nz
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Kairanga School
+geo_query: Kairanga, Palmerston North, Kairanga, Manawatū-Whanganui, New Zealand
 ---

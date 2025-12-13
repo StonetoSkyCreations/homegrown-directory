@@ -14,7 +14,7 @@ suburb: Clayfield
 brand_slug: harris-farm-markets
 address: 823 Sandgate Rd
 postcode: '4011'
-phone: "(07) 2112 1200"
+phone: (07) 2112 1200
 email: hello@harrisfarm.com.au
 website: https://www.harrisfarm.com.au/pages/clayfield
 social_links:
@@ -32,5 +32,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Brisbane
+lat: -27.4156814
+lon: 153.0588755
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '823'
+geo_query: 823 Sandgate Rd, Brisbane, Queensland, AU
 ---
 Family-run market grocer with organic lines and local produce in Brisbane’s north.

@@ -26,4 +26,11 @@ Eatery featuring Bostock Certified Organic chicken, prepared with minimal additi
   details
 subtype: restaurant
 source_urls: []
+lat: -45.0329939
+lon: 168.66206
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Church Lane
+geo_query: 5 Church Lane, Queenstown, Queenstown, Otago, New Zealand
 ---

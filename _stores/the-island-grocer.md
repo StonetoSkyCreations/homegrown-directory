@@ -26,9 +26,16 @@ services:
 - Retail grocery
 website: https://theislandgrocer.co.nz
 email: ''
-phone: "+64 9 372 8866"
+phone: +64 9 372 8866
 social_links: []
 hours: Daily 8am–6pm
 published: true
 source_urls: []
+lat: -36.7817667
+lon: 175.0083175
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Recycle Boutique
+geo_query: 110 Ocean View Road, Oneroa, Waiheke Island, Oneroa, Auckland, New Zealand
 ---

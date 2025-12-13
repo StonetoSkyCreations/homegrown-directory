@@ -33,5 +33,12 @@ city: Brisbane
 brand_slug: jan-powers-farmers-market
 practices_tags:
 - local
+lat: -27.4690829
+lon: 153.0543895
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Brisbane Powerhouse
+geo_query: Brisbane Powerhouse, 119 Lamington St, Brisbane, Queensland, AU
 ---
 Weekly Saturday market beside the Brisbane Powerhouse featuring local growers and artisan food stalls.

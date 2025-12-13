@@ -22,10 +22,15 @@ services:
 - Food truck
 website: https://drippingbowl.co.nz
 email: ''
-phone: "+64 20 111 1556"
+phone: +64 20 111 1556
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -44.6873112
+lon: 169.1445518
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '82'
+geo_query: 82 Anderson Road, Wānaka 9305, Wānaka, Otago, New Zealand
 ---

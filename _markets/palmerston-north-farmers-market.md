@@ -32,4 +32,11 @@ Weekly market in central Palmerston North showcasing local producers, including 
 practices_tags:
 - organic
 - local
+lat: -40.3562278
+lon: 175.6111936
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: The Square
+geo_query: The Square, Palmerston North, Manawatū-Whanganui, New Zealand
 ---

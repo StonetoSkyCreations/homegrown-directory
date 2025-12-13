@@ -25,12 +25,12 @@ services:
 - education and permaculture courses
 website: https://www.cameronfamilyfarms.nz
 email: market@cameronfamilyfarms.nz
-phone: "(642) 166-3598"
-social: 
+phone: (642) 166-3598
+social: null
 hours: 24 hours (depot listing)
 market_days: []
-lat: 
-lon: 
+lat: -41.1172486
+lon: 175.3241354
 supplies_to:
 - little-farms
 - food-forest-organics
@@ -40,6 +40,11 @@ source_urls:
 - https://commonsenseorganics.co.nz/blog/cameron-family-farms
 - https://www.ecohubmap.com/company/business/t-base-2-limited-depot-cameron-family-farms/83q4m1e0rl1xyeh0o
 - https://www.chamberofcommerce.co.nz/business-directory/wellington/featherston/organic-shop/197971-t-base-2-limited-depot-cameron-family-farms
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '10'
+geo_query: 10 Daniell Street, Featherston 5710, Featherston, Wellington, New Zealand
 ---
 Cameron Family Farms (registered as T Base 2 Limited) is a pioneering organic farm near Featherston. Founded by filmmaker James Cameron and author Suzy Cameron, the operation is guided by values of ethical, organic and plant-based farming. The farm managers produce nutrient-rich compost, use only organic fertilisers and constantly experiment with sustainable practices aimed at improving soil health. They advocate for plant-based diets and share knowledge with local farmers through field days and permaculture courses.
 

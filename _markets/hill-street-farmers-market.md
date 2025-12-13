@@ -33,4 +33,11 @@ Saturday morning market offering fresh local produce, organic options, and free-
 practices_tags:
 - organic
 - local
+lat: -41.2769731
+lon: 174.7738723
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '93'
+geo_query: 93 Hill Street, Wellington, Wellington, New Zealand
 ---

@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Christchurch
+lat: -43.5293164
+lon: 172.6578321
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: 104/116
+geo_query: 104 Stanmore Road, Christchurch, Canterbury, New Zealand
 ---

@@ -22,7 +22,7 @@ services:
 - Private functions
 website: https://goodcompany.nz/ilex-cafe
 email: manager@goodcompany.nz
-phone: "+64 3 338 8339"
+phone: +64 3 338 8339
 social_links:
 - https://instagram.com/ilexbotanicgardens
 - https://facebook.com/ilexbotanicgardens
@@ -34,5 +34,13 @@ description: Light-filled cafe inside the Christchurch Botanic Gardens offering 
 last_checked: '2025-12-12'
 subtype: cafe
 source_urls: []
+lat: -43.5301947
+lon: 172.6225932
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Christchurch Botanic Gardens Visitor Centre
+geo_query: Christchurch Botanic Gardens, Christchurch 8013, Christchurch, Canterbury,
+  New Zealand
 ---
 Set within the Christchurch Botanic Gardens, Ilex Cafe is a spacious, glass-walled eatery where floor-to-ceiling windows frame views of lawns and palm-filled nursery beds. The kitchen follows a "from garden to plate" philosophy, with chef-driven menus based on produce grown and sourced locally and changing with the seasons. Guests can dine indoors or enjoy a large outdoor area surrounded by nature, and the space also doubles as a venue for weddings, conferences and special events. Seasonal hours run 9am-4pm in winter and 9am-5pm in spring and summer, and a resident event team can tailor celebrations.

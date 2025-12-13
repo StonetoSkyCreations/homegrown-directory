@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Taupō
+lat: -38.68707
+lon: 176.0696118
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Tongariro Street
+geo_query: 83 Tongariro Street, Taupō, Waikato, New Zealand
 ---

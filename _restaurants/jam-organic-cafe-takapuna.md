@@ -20,10 +20,17 @@ services:
 hours: ''
 website: https://jamorganiccafe.co.nz
 email: ''
-phone: "+64 9 486 1600"
+phone: +64 9 486 1600
 description: Café serving organic delights and crafted coffees, specialising in wholesome
   meals and drinks.
 notes: Updated with latest address and website.
 subtype: cafe
 source_urls: []
+lat: -36.7794561
+lon: 174.7746642
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Hurstmere Road
+geo_query: 33–45 Hurstmere Road, Takapuna, Auckland, Takapuna, Auckland, New Zealand
 ---

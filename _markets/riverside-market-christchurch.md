@@ -12,7 +12,7 @@ region: Canterbury
 suburb: Christchurch Central
 address: 96 Oxford Terrace
 postcode: '8011'
-lon: -43.532
+lon: 172.6340017
 phone: 03 260 0605
 email: info@riverside.nz
 website: https://riverside.nz/
@@ -29,4 +29,10 @@ notes: Market/Hub
 city: Christchurch
 rating_average: 5
 rating_count: 1
+lat: -43.5339149
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Riverside Market
+geo_query: 96 Oxford Terrace, Christchurch, Canterbury, New Zealand
 ---

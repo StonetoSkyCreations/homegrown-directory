@@ -32,5 +32,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+lat: -37.7136951
+lon: 145.1489813
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: 972-974
+geo_query: 972 Main Road, Melbourne, Victoria, AU
 ---
 Local zero-waste refillery with organic bulk foods and low-waste household products.

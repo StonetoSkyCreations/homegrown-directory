@@ -30,4 +30,11 @@ city: Raglan
 : https://www.rangitahi.co.nz/journal/rangitahi-farmers-market
 practices_tags:
 - local
+lat: -37.8151633
+lon: 174.8658072
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '29'
+geo_query: 29 Rangitahi Road, Raglan, Waikato, New Zealand
 ---

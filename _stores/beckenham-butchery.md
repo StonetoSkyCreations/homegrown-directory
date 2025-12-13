@@ -15,7 +15,7 @@ city: Christchurch
 suburb: Beckenham
 address: 140 Colombo Street, Beckenham, Christchurch 8023
 postcode: '8023'
-phone: "+64 3 332 7012"
+phone: +64 3 332 7012
 email: ''
 website: https://beckenhambutchery.co.nz
 social_links:
@@ -44,6 +44,14 @@ notes: ''
 sources:
 - bostock-brothers
 - new-zealand-organic-meats
+lat: -43.5608289
+lon: 172.6369014
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Colombo Street
+geo_query: 140 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Canterbury,
+  New Zealand
 ---
 Beckenham Butchery is a cornerstone of organic food culture in Otautahi Christchurch -- a fully certified organic butcher committed to ethical sourcing, whole-animal respect, and transparent origins. Located right next door to Untamed Earth Organic Grocer in Beckenham, it creates a rare pairing: organic meat and organic produce side by side. For customers, it means one simple thing -- you can complete your entire organic shop in one stop, confident that everything you are buying has been raised or grown with integrity.
 

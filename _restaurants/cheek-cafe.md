@@ -26,5 +26,12 @@ phone: 07 5535 2959
 description: Bright brunch cafe using pasture-raised eggs and grass-fed beef from
   local farmers.
 source_urls: []
+lat: -27.974743
+lon: 153.4186359
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Como Crescent
+geo_query: 412/1 Como Crescent, Gold Coast, Queensland, Australia
 ---
 Cheek Cafe plates brunch made with pasture-raised eggs, grass-fed beef, and locally sourced produce.

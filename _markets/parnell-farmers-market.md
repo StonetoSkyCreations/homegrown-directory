@@ -12,8 +12,8 @@ region: Auckland
 suburb: Parnell
 address: Jubilee Building, 545 Parnell Road
 postcode: '1052'
-lon: -36.8543
-phone: '09 555 5164'
+lon: 174.780066
+phone: 09 555 5164
 email: market@parnell.org.nz
 website: https://parnell.org.nz/farmers-market/
 social_links:
@@ -30,4 +30,10 @@ notes: Market
 city: Auckland
 practices_tags:
 - local
+lat: -36.8633007
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Jubilee Building
+geo_query: Jubilee Building, 545 Parnell Road, Auckland, Auckland, New Zealand
 ---

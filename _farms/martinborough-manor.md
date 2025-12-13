@@ -24,20 +24,25 @@ services:
 - guided farm and garden tours
 - pick-your-own experiences (by booking)
 website: https://www.martinboroughmanor.co.nz
-email: 
+email: null
 phone: 027 655 9786
 social:
 - https://facebook.com
 hours: Saturdays and Sundays 10:30 am and 2:30 pm
 market_days: []
-lat: 
-lon: 
+lat: -41.2334317
+lon: 175.4807949
 supplies_to:
 - little-farms
 last_checked: 2025-12-11
 subtype: market-garden
 source_urls:
 - https://wairarapanz.com/products/martinborough-manor
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '59'
+geo_query: 59 Cromarty Drive, Martinborough 5784, Martinborough, Wellington, New Zealand
 ---
 Martinborough Manor is a spray-free boutique farm nestled just minutes from the town square. Visitors can enjoy guided tours of the working farm, where they bottle-feed lambs or goats in spring, wander through stunning gardens and browse the farm store for preserves, fresh fruit, flowers, eggs and vegetables. Tours last about 1.5 hours and are available on Saturdays and Sundays at 10:30 am and 2:30 pm.
 

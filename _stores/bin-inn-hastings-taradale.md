@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Napier
+lat: -39.5289831
+lon: 176.8569978
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Gloucester Street
+geo_query: 370 Gloucester Street, Napier, Hawke's Bay, New Zealand
 ---

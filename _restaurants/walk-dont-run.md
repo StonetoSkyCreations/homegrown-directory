@@ -23,9 +23,16 @@ services:
 hours: ''
 website: https://walkdontrun.com.au
 email: ''
-phone: "+61 3 9500 0823"
+phone: +61 3 9500 0823
 description: Armadale cafe using 100% organic, locally sourced ingredients for its
   mindful brunch menu.
 source_urls: []
+lat: -37.856186
+lon: 145.019862
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Fancy Pantry
+geo_query: 17 Morey Street, Melbourne, Victoria, Australia
 ---
 Walk Don't Run keeps its brunch menu fully organic and draws ingredients from local suppliers.

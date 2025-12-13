@@ -31,4 +31,11 @@ published: true
 city: Kaikōura
 Independent grocer offering organic and free-range eggs and local seasonal produce in Kaikōura. Source: user-supplied
   list
+lat: -42.4006639
+lon: 173.6815242
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: New Zealand Post
+geo_query: West End, Kaikōura, Canterbury, New Zealand
 ---

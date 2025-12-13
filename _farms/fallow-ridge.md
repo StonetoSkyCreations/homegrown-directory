@@ -31,4 +31,11 @@ notes: ''
 products_tags:
 - meat
 subtype: livestock
+lat: -45.2491403
+lon: 169.3846438
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Alexandra
+geo_query: Alexandra, Otago, Alexandra, Otago, New Zealand
 ---

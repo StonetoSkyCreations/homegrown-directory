@@ -24,8 +24,13 @@ email: hello@goodfor.co.nz
 phone: ''
 social: ''
 hours: 'Open 7 days: 9:00am–6:00pm weekdays; 8:30am–6:00pm weekends'
-lat: ''
-lon: ''
+lat: -36.8547976
+lon: 174.7321775
 subtype: specialty-grocer
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: 274A
+geo_query: 274A Richmond Road, Grey Lynn, Auckland, Grey Lynn, Auckland, New Zealand
 ---

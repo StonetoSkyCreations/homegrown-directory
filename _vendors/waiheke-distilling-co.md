@@ -25,9 +25,16 @@ services:
 - Tastings
 website: https://waihekedistilling.co.nz
 email: info@waihekedistilling.co.nz
-phone: "+64 9 372 7797"
+phone: +64 9 372 7797
 social_links: []
 hours: Wed–Sun 11am–6pm
 published: true
 source_urls: []
+lat: -36.8141634
+lon: 175.1581605
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '258'
+geo_query: 258 Cowes Bay Road, Waiheke Island, Waiheke Island, Auckland, New Zealand
 ---

@@ -13,9 +13,9 @@ region: Auckland
 suburb: Mount Eden
 address: 422 Dominion Road
 postcode: '1024'
-lon: -36.8841
+lon: 174.7494029
 phone: '174.7522'
-email: '09 623 0900'
+email: 09 623 0900
 website: ''
 social_links:
 - https://www.farro.co.nz/
@@ -28,4 +28,10 @@ source_urls:
 last_checked: Farro ToastieTakeover listing
 notes: Retail
 city: Auckland
+lat: -36.881594
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '422'
+geo_query: 422 Dominion Road, Auckland, Auckland, New Zealand
 ---

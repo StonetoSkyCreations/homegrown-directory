@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Kapiti Coast
+lat: -40.9211246
+lon: 175.0016787
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Spotlight
+geo_query: 3 Ihakara Street, Kapiti Coast, Wellington, New Zealand
 ---

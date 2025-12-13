@@ -13,7 +13,7 @@ region: Auckland
 suburb: Onehunga
 address: 180 Onehunga Mall
 postcode: '1061'
-phone: '09 600 1483'
+phone: 09 600 1483
 email: onehunga@bininn.co.nz
 website: https://www.bininn.co.nz/auckland/onehunga
 social_links: []
@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Auckland
+lat: -36.9268299
+lon: 174.7859063
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Onehunga Mall
+geo_query: 180 Onehunga Mall, Auckland, Auckland, New Zealand
 ---

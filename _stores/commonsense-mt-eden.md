@@ -15,8 +15,8 @@ suburb: Mount Eden
 city: Auckland
 address: 284 Dominion Road, Mt Eden, Auckland
 postcode: '1024'
-lon: -36.8828
-phone: "+64 9 973 4133"
+lon: 174.7507712
+phone: +64 9 973 4133
 email: ''
 website: https://commonsenseorganics.co.nz
 social_links: []
@@ -35,4 +35,10 @@ last_checked: Updated listing
 notes: Retail; updated with latest details.
 rating_average: 5
 rating_count: 1
+lat: -36.8773612
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '284'
+geo_query: 284 Dominion Road, Mt Eden, Auckland, Auckland, Auckland, New Zealand
 ---

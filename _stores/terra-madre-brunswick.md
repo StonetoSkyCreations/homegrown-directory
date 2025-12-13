@@ -14,7 +14,7 @@ region: Victoria
 suburb: Brunswick
 address: 775–781 Sydney Road
 postcode: '3056'
-phone: "(03) 9384 0970"
+phone: (03) 9384 0970
 email: enquiries@terramadre.com.au
 website: https://terramadre.com.au
 social_links: []
@@ -31,5 +31,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ACO certified
 city: Melbourne
+lat: -37.7585741
+lon: 144.9634205
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Terra Madre
+geo_query: 775–781 Sydney Road, Melbourne, Victoria, AU
 ---
 Second Terra Madre outlet with organic pantry staples and ACO-certified lines.

@@ -23,11 +23,16 @@ services:
 - Online orders
 website: https://wellhung.nz
 email: info@wellhung.nz
-phone: "+64 9 486 0936"
+phone: +64 9 486 0936
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.7726442
+lon: 174.7650717
 subtype: specialty-grocer
 source_urls: []
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Kitchener Road
+geo_query: 210 Kitchener Road, Milford, Auckland 0620, Milford, Auckland, New Zealand
 ---

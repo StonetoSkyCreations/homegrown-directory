@@ -30,4 +30,11 @@ published: true
 city: Kaikōura
 Local specialty grocer carrying organic pantry staples and fresh local produce. Source: user-supplied
   list
+lat: -42.4006639
+lon: 173.6815242
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: New Zealand Post
+geo_query: West End, Kaikōura, Canterbury, New Zealand
 ---

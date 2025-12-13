@@ -35,5 +35,12 @@ notes: Market
 city: Mansfield
 practices_tags:
 - organic
+lat: -37.052299
+lon: 146.0905751
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: High Street
+geo_query: High Street, Mansfield, Victoria, AU
 ---
 Regional farmers market highlighting organic growers and seasonal foods from Mansfield district.

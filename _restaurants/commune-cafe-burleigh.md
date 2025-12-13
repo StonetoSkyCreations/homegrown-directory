@@ -26,5 +26,12 @@ phone: ''
 description: Organic-focused cafe in Burleigh Heads highlighting organic produce across
   its menu.
 source_urls: []
+lat: -28.0810445
+lon: 153.4468274
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '1844'
+geo_query: 1844 Gold Coast Hwy, Gold Coast, Queensland, Australia
 ---
 Commune Cafe is known for organic-focused brunch plates and coffee with locally sourced ingredients.

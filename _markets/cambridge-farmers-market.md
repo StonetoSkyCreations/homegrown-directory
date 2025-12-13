@@ -12,7 +12,7 @@ region: Waikato
 suburb: Cambridge
 address: Victoria Square, Victoria Street
 postcode: '3434'
-lon: -37.8916
+lon: 175.4674736
 phone: 027 290 3032
 email: enquiries@waikatofarmersmarkets.co.nz
 website: https://www.waikatofarmersmarkets.co.nz/
@@ -31,4 +31,10 @@ city: Cambridge
 practices_tags:
 - organic
 - local
+lat: -37.8921275
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Victoria Square (opp Town Hall)
+geo_query: Victoria Square, Victoria Street, Cambridge, Waikato, New Zealand
 ---

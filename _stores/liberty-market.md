@@ -13,7 +13,7 @@ country_slug: new-zealand
 region: Canterbury
 city: Christchurch
 address: 493 Moorhouse Avenue, Christchurch Central City, Christchurch 8011
-phone: "+64 3 366 0887"
+phone: +64 3 366 0887
 email: shop@libertymarketnz.com
 website: https://libertymarket.co.nz
 products:
@@ -36,4 +36,12 @@ hours: Mon–Sat 9am–6pm; Sun 10am–3pm
 source_urls:
 - https://libertymarket.co.nz
 published: true
+lat: -43.5398022
+lon: 172.651221
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '493'
+geo_query: 493 Moorhouse Avenue, Christchurch Central City, Christchurch 8011, Christchurch,
+  Canterbury, New Zealand
 ---

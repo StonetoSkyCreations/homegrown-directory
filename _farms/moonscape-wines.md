@@ -27,4 +27,11 @@ hours: ''
 last_checked: user-submitted
 notes: ''
 subtype: vineyard
+lat: -45.0610634
+lon: 169.1927714
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Cromwell Starlink Earth Station
+geo_query: Cromwell, Otago, Cromwell, Otago, New Zealand
 ---

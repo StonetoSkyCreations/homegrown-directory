@@ -34,5 +34,12 @@ notes: Market
 city: Melbourne
 practices_tags:
 - organic
+lat: -38.0080345
+lon: 145.0874164
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Main Street
+geo_query: Main Street, Melbourne, Victoria, AU
 ---
 Monthly market bringing certified organic and seasonal produce from Mornington Peninsula growers.

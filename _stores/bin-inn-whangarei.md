@@ -13,7 +13,7 @@ region: Northland
 suburb: Whangārei
 address: 75 Walton Street
 postcode: '0110'
-phone: '09 430 7208'
+phone: 09 430 7208
 email: whangarei@bininn.co.nz
 website: https://www.bininn.co.nz/northland/whangarei
 social_links: []
@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Whangārei
+lat: -35.7251019
+lon: 174.3233842
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Binn Inn
+geo_query: 75 Walton Street, Whangārei, Northland, New Zealand
 ---

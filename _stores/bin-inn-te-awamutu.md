@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Waipa
+lat: -38.0078859
+lon: 175.3215734
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Mutu Street
+geo_query: 43 Mutu Street, Waipa, Waikato, New Zealand
 ---

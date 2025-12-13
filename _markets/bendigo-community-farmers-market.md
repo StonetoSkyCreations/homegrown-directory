@@ -38,5 +38,12 @@ city: Bendigo
 practices_tags:
 - organic
 - biodynamic
+lat: -36.7579623
+lon: 144.2795478
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Sidney Myer Place
+geo_query: Sidney Myer Place, Bendigo, Victoria, AU
 ---
 Regional farmers market featuring organic and biodynamic growers with seasonal produce and meats.

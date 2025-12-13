@@ -14,7 +14,7 @@ suburb: Isle of Capri
 brand_slug: harris-farm-markets
 address: 15-21 Via Roma
 postcode: '4217'
-phone: "(07) 2112 1212"
+phone: (07) 2112 1212
 email: hello@harrisfarm.com.au
 website: https://www.harrisfarm.com.au/pages/isle-of-capri
 social_links:
@@ -32,5 +32,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Gold Coast
+lat: -28.0110257
+lon: 153.4242133
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: 15-21
+geo_query: 15-21 Via Roma, Gold Coast, Queensland, AU
 ---
 Market-style grocer with organic options, local produce, and pantry goods on the Isle of Capri.

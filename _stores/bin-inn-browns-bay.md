@@ -13,7 +13,7 @@ region: Auckland
 suburb: Browns Bay
 address: 12 Inverness Road
 postcode: '0630'
-phone: '09 476 9090'
+phone: 09 476 9090
 email: brownsbay@bininn.co.nz
 website: https://www.bininn.co.nz/auckland/browns-bay
 social_links: []
@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Auckland
+lat: -36.7159292
+lon: 174.746052
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: 10/12
+geo_query: 12 Inverness Road, Auckland, Auckland, New Zealand
 ---

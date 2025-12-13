@@ -14,7 +14,7 @@ region: Victoria
 suburb: Collingwood
 address: 312 Smith Street
 postcode: '3066'
-phone: "(03) 9417 4382"
+phone: (03) 9417 4382
 email: food@foe.org.au
 website: https://foefood.org
 social_links:
@@ -33,5 +33,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+lat: -37.7999187
+lon: 144.9842634
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Friends of the Earth
+geo_query: 312 Smith Street, Melbourne, Victoria, AU
 ---
 Community food co-op with organic bulk refills, vegan options, and a cafe serving seasonal meals.

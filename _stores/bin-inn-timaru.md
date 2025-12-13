@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Timaru
+lat: -44.3899401
+lon: 171.245666
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Theodosia Street
+geo_query: 9 Theodosia Street, Timaru, Canterbury, New Zealand
 ---

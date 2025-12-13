@@ -21,4 +21,11 @@ Produces free-range eggs for local outlets around the Kapiti Coast. Source: user
   list
 subtype: eggs
 source_urls: []
+lat: -40.9047357
+lon: 174.9861365
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Kapiti Coast Airport
+geo_query: Kapiti Coast, Wellington, New Zealand
 ---

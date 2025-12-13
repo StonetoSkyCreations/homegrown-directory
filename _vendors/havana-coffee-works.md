@@ -26,4 +26,11 @@ last_checked: ''
 notes: ''
 city: Wellington
 Roastery and cafe offering Fair Trade Organic certified coffee, supplying wholesale and serving in-house. Source: https://havana.co.nz/
+lat: -41.2976451
+lon: 174.7789763
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Havana Coffee
+geo_query: 163 Tory St, Wellington, Wellington, New Zealand
 ---

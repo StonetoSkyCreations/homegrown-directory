@@ -14,7 +14,7 @@ region: Victoria
 suburb: Balaclava
 address: 171 Carlisle Street
 postcode: '3183'
-phone: "(03) 9525 7643"
+phone: (03) 9525 7643
 email: ''
 website: https://thesourcebulkfoods.com.au
 social_links:
@@ -38,5 +38,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
+lat: -37.8688085
+lon: 144.9925689
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '171'
+geo_query: 171 Carlisle Street, Melbourne, Victoria, AU
 ---
 Zero-waste refillery with organic options across bulk foods and household staples.

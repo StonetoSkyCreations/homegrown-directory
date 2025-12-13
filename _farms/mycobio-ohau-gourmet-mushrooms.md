@@ -21,12 +21,17 @@ services:
 - Farm shop
 website: https://www.mycobio.co.nz
 email: info@mycobio.co.nz
-phone: "+64 204 098 5657"
+phone: +64 204 098 5657
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -40.66817
+lon: 175.2483288
 subtype: mushrooms
 source_urls:
 - https://www.mycobio.co.nz
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Ōhau Vineyard
+geo_query: Ōhau, Horowhenua, Ōhau, Manawatū-Whanganui, New Zealand
 ---

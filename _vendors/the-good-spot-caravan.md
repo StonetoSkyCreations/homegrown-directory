@@ -24,7 +24,12 @@ email: info@thegoodspotcaravan.com
 phone: ''
 social: ''
 hours: Mon–Thu 7am–3pm; Fri–Sat 7am–2pm
-lat: ''
-lon: ''
+lat: -44.690357
+lon: 169.1443225
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '34'
+geo_query: 34 Anderson Road, Wānaka, Wānaka, Otago, New Zealand
 ---

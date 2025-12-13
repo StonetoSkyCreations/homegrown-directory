@@ -21,7 +21,13 @@ email: hi@magicbeancoffee.co.nz
 phone: ''
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.7742178
+lon: 174.5882393
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '1261'
+geo_query: 1261 Coatesville-Riverhead Highway, Riverhead, Auckland 0892, Riverhead,
+  Auckland, New Zealand
 ---

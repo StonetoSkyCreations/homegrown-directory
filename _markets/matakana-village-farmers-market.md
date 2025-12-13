@@ -32,15 +32,15 @@ services:
 - zero-waste operations
 website: https://www.matakanavillage.co.nz/market
 email: amanda@brickbay.co.nz
-phone: "+64 9 423 0218"
+phone: +64 9 423 0218
 social:
 - https://www.facebook.com/MatakanaVillage
 - https://www.instagram.com/matakanavillage
 hours: Saturday 8 am–1 pm
 market_days:
 - Saturday 08:00-13:00
-lat: 
-lon: 
+lat: -36.351276
+lon: 174.7178187
 last_checked: 2025-12-11
 practices_tags:
 - local
@@ -48,6 +48,11 @@ source_urls:
 - https://www.matakanavillage.co.nz/market
 - https://www.matakanacoast.co.nz/listing/matakana-village-farmers-market
 - https://www.matakanavillage.co.nz/contact
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Matakana Bacon Company
+geo_query: 2 Matakana Valley Road, Matakana, Auckland, Matakana, Auckland, New Zealand
 ---
 The Matakana Village Farmers' Market is the beating heart of this coastal village. Open every Saturday morning from 8 am to 1 pm year-round, the riverside market invites visitors to start their day with award-winning coffee and gourmet brunch dishes. Stalls overflow with seasonal local produce, flowers, artisan breads, deli treats and sweet delights, all grown or made by passionate producers. Live musicians provide a laid-back soundtrack while children play in a rustic treehouse and natural playground.
 

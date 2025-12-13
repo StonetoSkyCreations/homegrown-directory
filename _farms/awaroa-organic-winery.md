@@ -23,10 +23,17 @@ services:
 - Tastings
 website: https://awaroa.co.nz
 email: sales@awaroa.co.nz
-phone: "+64 22 450 7613"
+phone: +64 22 450 7613
 social_links: []
 hours: Sat–Sun 11am–4pm
 published: true
 subtype: vineyard
 source_urls: []
+lat: -36.7985961
+lon: 175.099484
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Awaroa Organic Winery
+geo_query: 324 Waiheke Road, Waiheke Island, Waiheke Island, Auckland, New Zealand
 ---

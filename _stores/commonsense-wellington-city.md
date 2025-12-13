@@ -14,7 +14,7 @@ suburb: Te Aro
 brand_slug: commonsense-organics
 address: 147 Tory Street
 postcode: '6011'
-lon: -41.2959
+lon: 174.7793316
 phone: ''
 email: wellington@commonsenseorganics.co.nz
 website: https://commonsenseorganics.co.nz/stores/wellington-city-commonsense-organics/
@@ -31,4 +31,10 @@ notes: Retail
 city: Wellington
 rating_average: 5
 rating_count: 1
+lat: -41.2971866
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Commonsense Wellington City
+geo_query: 147 Tory Street, Wellington, Wellington, New Zealand
 ---

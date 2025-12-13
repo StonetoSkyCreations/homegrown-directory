@@ -13,7 +13,7 @@ region: Canterbury
 suburb: Christchurch Central
 address: 229 Kilmore Street
 postcode: '8011'
-lon: -43.529
+lon: 172.6453631
 phone: ''
 email: shop@pikowholefoods.co.nz
 website: https://pikowholefoods.co.nz/
@@ -32,4 +32,10 @@ notes: Retail/Co-op
 city: Christchurch
 rating_average: 5
 rating_count: 1
+lat: -43.5263968
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Piko Education Space
+geo_query: 229 Kilmore Street, Christchurch, Canterbury, New Zealand
 ---

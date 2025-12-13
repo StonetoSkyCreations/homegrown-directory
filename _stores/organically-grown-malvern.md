@@ -14,7 +14,7 @@ region: Victoria
 suburb: Malvern
 address: 196 Glenferrie Road
 postcode: '3144'
-phone: "(03) 9500 9796"
+phone: (03) 9500 9796
 email: organicallygrownmalvern@gmail.com
 website: https://organicallygrown.com.au
 social_links:
@@ -36,5 +36,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: NASAA certified organic
 city: Melbourne
+lat: -37.8595097
+lon: 145.0289864
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '196'
+geo_query: 196 Glenferrie Road, Melbourne, Victoria, AU
 ---
 Certified organic grocer focused on Australian-sourced produce and pantry goods.

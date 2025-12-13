@@ -23,11 +23,17 @@ email: ''
 phone: 06 354 8600
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -40.3415064
+lon: 175.6669024
 products_tags:
 - dairy
 subtype: dairy-farm
 source_urls:
 - https://biofarm.co.nz
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Te Matai Road
+geo_query: Te Matai Road, Palmerston North, Palmerston North, Manawatū-Whanganui,
+  New Zealand
 ---

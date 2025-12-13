@@ -13,7 +13,7 @@ region: Canterbury
 suburb: Lyttelton
 address: 12 London Street
 postcode: '8082'
-lon: -43.6021
+lon: 172.6519448
 phone: ''
 email: shop@harbourcoop.co.nz
 website: http://www.harbourcoop.co.nz/
@@ -30,4 +30,10 @@ notes: Retail/Co-op
 city: Christchurch
 rating_average: 5
 rating_count: 1
+lat: -43.5212527
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: 4/12
+geo_query: 12 London Street, Christchurch, Canterbury, New Zealand
 ---

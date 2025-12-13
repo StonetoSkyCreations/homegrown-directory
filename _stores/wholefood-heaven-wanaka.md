@@ -29,4 +29,11 @@ published: true
 city: Wānaka
 Organic and wholefood retailer in Wānaka specialising in organic products and local suppliers. Source: user-supplied
   list
+lat: -44.6909568
+lon: 169.1434513
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Butcher's Block
+geo_query: 33 Reece Crescent, Wānaka, Otago, New Zealand
 ---

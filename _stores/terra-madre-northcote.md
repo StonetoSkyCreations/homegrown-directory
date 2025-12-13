@@ -14,7 +14,7 @@ region: Victoria
 suburb: Northcote
 address: 103 High Street
 postcode: '3070'
-phone: "(03) 9489 5824"
+phone: (03) 9489 5824
 email: enquiries@terramadre.com.au
 website: https://terramadre.com.au
 social_links:
@@ -32,5 +32,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ACO certified
 city: Melbourne
+lat: -37.7810032
+lon: 145.1111192
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '103'
+geo_query: 103 High Street, Melbourne, Victoria, AU
 ---
 Well-known organic supermarket with a broad ACO-certified range of produce and pantry staples.

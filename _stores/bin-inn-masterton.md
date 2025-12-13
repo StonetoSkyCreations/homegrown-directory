@@ -29,4 +29,11 @@ notes: ''
 city: Masterton
 sources:
 - little-farms
+lat: -40.9518215
+lon: 175.6607298
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Dixon Street
+geo_query: 146 Dixon Street, Masterton, Wellington, New Zealand
 ---

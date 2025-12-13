@@ -13,7 +13,7 @@ region: Hawke's Bay
 suburb: Napier South
 address: 45 Hastings Street
 postcode: '4110'
-lon: -39.4929
+lon: 176.9176507
 phone: ''
 email: manager@chantalshop.nz
 website: https://www.chantalshop.nz/
@@ -30,4 +30,10 @@ notes: Retail
 city: Napier
 sources:
 - chantal-organics
+lat: -39.489251
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Chantal Shop
+geo_query: 45 Hastings Street, Napier, Hawke's Bay, New Zealand
 ---

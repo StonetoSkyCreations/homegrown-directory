@@ -32,5 +32,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Cooperative; delivery boxes
 city: Brisbane
+lat: -27.4581982
+lon: 153.1423136
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Wells Place
+geo_query: Wells Place, Brisbane, Queensland, AU
 ---
 Organic produce box co-op connecting local growers to households across Brisbane.

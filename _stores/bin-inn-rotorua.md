@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Rotorua
+lat: -38.1320274
+lon: 176.2337426
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Old Taupo Road
+geo_query: 21 Old Taupo Road, Rotorua, Bay of Plenty, New Zealand
 ---

@@ -11,7 +11,7 @@ country_slug: new-zealand
 region: Otago
 city: Bannockburn
 address: 247 Cairnmuir Road, Bannockburn
-phone: "+64 3 445 3484"
+phone: +64 3 445 3484
 email: info@carrick.co.nz
 website: https://carrick.co.nz
 social_links: []
@@ -27,4 +27,11 @@ hours: ''
 last_checked: user-submitted
 notes: ''
 subtype: vineyard
+lat: -45.0812723
+lon: 169.1792868
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '247'
+geo_query: 247 Cairnmuir Road, Bannockburn, Bannockburn, Otago, New Zealand
 ---

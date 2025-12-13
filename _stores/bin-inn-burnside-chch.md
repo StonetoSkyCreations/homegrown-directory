@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Christchurch
+lat: -43.4889409
+lon: 172.5669967
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '526'
+geo_query: 526 Wairakei Road, Christchurch, Canterbury, New Zealand
 ---

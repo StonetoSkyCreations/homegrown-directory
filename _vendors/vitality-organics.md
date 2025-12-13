@@ -23,10 +23,16 @@ services:
 - Mobile cafe
 website: https://vitalityorganics.co.nz
 email: ''
-phone: "+64 27 278 9963"
+phone: +64 27 278 9963
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -37.6429159
+lon: 176.1863566
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '322'
+geo_query: 322 Maunganui Road, Mount Maunganui 3116, Mount Maunganui, Bay of Plenty,
+  New Zealand
 ---

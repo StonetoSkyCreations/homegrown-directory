@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Thames-Coromandel
+lat: -37.1348286
+lon: 175.5402444
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Pollen Street
+geo_query: 426 Pollen Street, Thames-Coromandel, Coromandel, New Zealand
 ---

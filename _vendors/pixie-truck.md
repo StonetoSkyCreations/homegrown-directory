@@ -21,10 +21,15 @@ services:
 - Food truck
 website: https://pixiebowls.co.nz
 email: info@pixiebowls.co.nz
-phone: "+64 27 870 9954"
+phone: +64 27 870 9954
 social: ''
 hours: Mon–Fri 7:30am–2pm; Sat–Sun 8am–2pm
-lat: ''
-lon: ''
+lat: -39.6695469
+lon: 176.8779825
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Diva's
+geo_query: 10 Napier Road, Havelock North 4130, Havelock North, Hawke's Bay, New Zealand
 ---

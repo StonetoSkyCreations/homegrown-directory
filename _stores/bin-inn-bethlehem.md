@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Tauranga
+lat: -37.6858076
+lon: 176.1332933
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Brookfield Terrace
+geo_query: 229 Brookfield Terrace, Tauranga, Bay of Plenty, New Zealand
 ---

@@ -30,9 +30,14 @@ email: info@beetroot.nz
 phone: 03 528 0909
 social: ''
 hours: Mon–Fri 9am–5pm; Sat–Sun closed
-lat: ''
-lon: ''
+lat: -41.1007886
+lon: 173.0124585
 subtype: specialty-grocer
 source_urls:
 - https://beetroot.nz
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: High Street
+geo_query: 211 High Street, Motueka, Tasman, Motueka, Tasman, New Zealand
 ---

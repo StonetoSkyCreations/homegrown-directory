@@ -12,7 +12,7 @@ description: 'Open bakery and café where customers can watch bakers create past
   Good Shi*t soda, and specialty hot drinks from Hakanoa and Wildwood. Wholesale production
   site for pastries and bread across all branches.
 
-'
+  '
 practices:
 - organic flour (Milmore Downs)
 - spray-free flour (Farmers Mill)
@@ -34,17 +34,22 @@ services:
 - cafe
 website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
-phone: "+64 3-365 1335"
+phone: +64 3-365 1335
 social: https://www.facebook.com/bohemianbakerychristchurch/, https://www.instagram.com/bohemianbakerychristchurch
 hours: Mon–Sat 7:00–14:00
-lat: 
-lon: 
+lat: -43.5332206
+lon: 172.6520073
 sources:
 - farmers-mill
 - milmore-downs
 subtype: specialty-grocer
 source_urls: []
 brand_slug: bohemian-bakery
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '372'
+geo_query: 372 Cashel Street, Christchurch 8011, Christchurch, Canterbury, New Zealand
 ---
 Cashel Street HQ is the beating heart of Bohemian Bakery — the place where the craft is fully visible, where sourdough and pastry are shaped in the open, and where customers can watch the entire process unfold.
 

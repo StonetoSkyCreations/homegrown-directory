@@ -25,5 +25,12 @@ phone: 02 6685 7810
 description: Cafe using fresh ingredients including organic, free-range eggs for breakfasts
   and lunches.
 source_urls: []
+lat: -28.6436091
+lon: 153.6122542
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Jonson Street
+geo_query: 7 Jonson St, Byron Bay, New South Wales, Australia
 ---
 Byron Fresh Cafe keeps its menu simple with organic, free-range eggs and fresh seasonal produce.

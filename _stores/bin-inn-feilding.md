@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Manawatū
+lat: -39.9268455
+lon: 175.0311316
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '25'
+geo_query: 25 Fergusson Street, Manawatū, Manawatū-Whanganui, New Zealand
 ---

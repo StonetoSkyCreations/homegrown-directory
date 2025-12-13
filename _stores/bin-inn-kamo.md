@@ -13,7 +13,7 @@ region: Northland
 suburb: Kamo
 address: 386 Kamo Road
 postcode: '0112'
-lon: -35.6709
+lon: 174.3013637
 phone: ''
 email: kamo@bininn.co.nz
 website: https://www.bininn.co.nz/northland/kamo
@@ -27,4 +27,10 @@ source_urls:
 last_checked: Bin Inn Kamo page
 notes: Retail
 city: Whangārei
+lat: -35.6838312
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '386'
+geo_query: 386 Kamo Road, Whangārei, Northland, New Zealand
 ---

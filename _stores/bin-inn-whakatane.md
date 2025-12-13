@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Whakatane
+lat: -37.952246
+lon: 176.9927161
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '252'
+geo_query: 252 The Strand, Whakatane, Bay of Plenty, New Zealand
 ---

@@ -27,4 +27,11 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Gisborne
+lat: -38.6666187
+lon: 178.025346
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: '61'
+geo_query: 61 Peel Street, Gisborne, Gisborne, New Zealand
 ---

@@ -33,5 +33,12 @@ notes: Market
 city: Ballarat
 practices_tags:
 - organic
+lat: -37.5501895
+lon: 143.8350306
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Lake Wendouree
+geo_query: Lake Wendouree, Ballarat, Victoria, AU
 ---
 Lakefront farmers market showcasing organic produce and artisan foods from the Ballarat region.

@@ -22,9 +22,15 @@ email: enquiries@theeggproject.co.nz
 phone: ''
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -40.3849738
+lon: 175.2773713
 subtype: eggs
 source_urls:
 - https://theeggproject.co.nz
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Himatangi Beach Road
+geo_query: Himatangi Beach, Manawatū-Whanganui, Himatangi Beach, Manawatū-Whanganui,
+  New Zealand
 ---

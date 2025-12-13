@@ -13,7 +13,7 @@ region: New South Wales
 suburb: Byron Bay
 address: Bayshore Drive
 postcode: '2481'
-phone: "(02) 6680 7455"
+phone: (02) 6680 7455
 email: ''
 website: https://www.iga.com.au/stores/iga-byron-bay
 social_links:
@@ -29,5 +29,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Byron Bay
+lat: -28.6370517
+lon: 153.5818476
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Bayshore Drive
+geo_query: Bayshore Drive, Byron Bay, New South Wales, AU
 ---
 Community supermarket stocking everyday groceries alongside local produce.

@@ -20,10 +20,15 @@ services:
 - Coffee truck
 website: ''
 email: ''
-phone: "+64 27 701 4787"
+phone: +64 27 701 4787
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -41.1232588
+lon: 174.8522097
 source_urls: []
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Gear Homestead
+geo_query: 1 Okowai Road, Aotea, Porirua 5024, Porirua, Wellington, New Zealand
 ---

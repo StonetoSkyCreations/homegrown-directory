@@ -29,4 +29,11 @@ notes: ''
 published: true
 city: Lower Hutt
 Family-owned dairy producer with a retail shop and cafe, known for organic milk ice cream and cheeses. Source: https://zanyzeus.co.nz/
+lat: -41.238468
+lon: 174.917185
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2025-12-14'
+geo_label: Gracefield Road
+geo_query: 103-109 Gracefield Rd, Lower Hutt, Wellington, New Zealand
 ---
