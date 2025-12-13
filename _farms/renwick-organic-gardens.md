@@ -17,8 +17,6 @@ products:
 services:
 - Farm stand
 - Wholesale
-sources: []
-supplies_to: []
 hours: Gate sales Dec–Jun
 website: ''
 email: windsongorchard@gmail.com

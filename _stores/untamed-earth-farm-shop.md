@@ -42,7 +42,6 @@ last_checked: user-submitted
 notes: ''
 rating_average: 5
 rating_count: 1
-supplies_to: []
 ---
 The Untamed Earth Farm Shop in Beckenham is a neighbourhood hub for fresh, seasonal, organically grown produce -- located right next door to the Organic Beckenham Butchery. Together, the two create a rare pairing in the city: certified organic vegetables and ethically raised organic meat available side by side, making it easy for customers to shop with integrity in one stop.
 

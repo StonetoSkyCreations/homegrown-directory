@@ -17,8 +17,6 @@ products:
 services:
 - Farm stand
 - Wholesale
-sources: []
-supplies_to: []
 hours: Mon–Sun 9:30am–6:30pm
 website: https://wilderland.org.nz
 email: ''

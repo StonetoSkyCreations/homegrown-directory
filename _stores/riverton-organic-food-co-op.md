@@ -24,8 +24,6 @@ social: https://www.youtube.com/channel/UCMlrthbYudJsg-R9oXd__yQ, https://www.fa
 hours: Mon–Fri 10:00–16:30; Sat 10:30–16:30; Sun 13:30–16:30
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: co-op
 source_urls:
 - https://www.sces.org.nz/

@@ -15,8 +15,6 @@ services:
 - Aggregation / hub
 - Delivery
 - Wholesale
-sources: []
-supplies_to: []
 hours: ''
 website: ''
 email: ''

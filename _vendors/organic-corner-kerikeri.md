@@ -5,7 +5,8 @@ name: Organic Corner (Lisa’s Stall)
 type: producer
 subtype: cafe
 category: farmers-market-vendor
-description: Certified organic vegetable stall with heirloom varieties at Bay of Islands Farmers Market (Kerikeri).
+description: Certified organic vegetable stall with heirloom varieties at Bay of Islands
+  Farmers Market (Kerikeri).
 country: NZ
 country_slug: new-zealand
 region: Northland
@@ -21,13 +22,13 @@ products:
 - Herbs
 services:
 - Farmers market stall
-sources: []
-supplies_to: []
 market_days: []
 source_urls:
 - https://www.kerigoldchalets.co.nz/kerikeri-blog/kerikeri-farmers-market
 last_checked: ''
 notes: ''
 city: Kerikeri
-Certified organic vegetable stall at the Kerikeri Farmers Market (Bay of Islands), specialising in heirloom tomato varieties. Source: https://www.kerigoldchalets.co.nz/kerikeri-blog/kerikeri-farmers-market
+? Certified organic vegetable stall at the Kerikeri Farmers Market (Bay of Islands),
+  specialising in heirloom tomato varieties. Source
+: https://www.kerigoldchalets.co.nz/kerikeri-blog/kerikeri-farmers-market
 ---

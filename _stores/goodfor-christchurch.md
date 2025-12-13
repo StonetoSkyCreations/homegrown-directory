@@ -32,7 +32,6 @@ social:
 hours: 9:30am-6pm weekdays; 9am-5pm weekends
 lat: 
 lon: 
-supplies_to: []
 sources:
 - streamside-organics
 sourced_from: streamside-organics

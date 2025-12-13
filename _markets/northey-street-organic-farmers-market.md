@@ -34,7 +34,5 @@ city: Brisbane
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---
 Certified organic Sunday market showcasing local growers, orchardists, and artisan food producers.

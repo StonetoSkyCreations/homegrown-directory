@@ -33,6 +33,4 @@ city: Coromandel
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---

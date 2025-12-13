@@ -36,8 +36,6 @@ market_days:
 - last Saturday of each month
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 rating_average: 5
 rating_count: 1
 practices_tags:

@@ -32,7 +32,5 @@ notes: Market
 city: Brisbane
 practices_tags:
 - local
-supplies_to: []
-sources: []
 ---
 Waterfront market featuring seasonal produce and local food makers every second Saturday.

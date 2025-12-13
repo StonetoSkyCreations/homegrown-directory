@@ -28,7 +28,6 @@ social_links:
 - https://facebook.com/CellarDoorNZ
 - https://instagram.com/cellardoor.nz
 hours: Daily 12pm-late
-supplies_to: []
 sources:
 - streamside-organics
 description: Award-winning wine bar and restaurant in Christchurch's Arts Centre offering

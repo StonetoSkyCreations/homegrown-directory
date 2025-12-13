@@ -26,8 +26,6 @@ social: ''
 hours: 7 days 9am–6pm
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: eggs
 source_urls: []
 ---

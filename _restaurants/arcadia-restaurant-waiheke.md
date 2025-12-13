@@ -23,8 +23,6 @@ email: info@arcadiawaiheke.com
 phone: ''
 social_links: []
 hours: Wed–Thu 5pm–Late; Fri 9am–Late; Sat 9am–Late; Sun 9am–2:30pm
-supplies_to: []
-sources: []
 description: Relaxed restaurant supporting local suppliers, featuring organic salad
   greens and sustainably caught fish on a seasonal menu with a variety of dishes and
   drinks.

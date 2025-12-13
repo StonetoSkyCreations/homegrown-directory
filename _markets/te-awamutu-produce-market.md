@@ -30,6 +30,4 @@ notes: Market
 city: Waipa
 practices_tags:
 - local
-supplies_to: []
-sources: []
 ---

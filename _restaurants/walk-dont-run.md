@@ -20,8 +20,6 @@ products:
 - Toast
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://walkdontrun.com.au
 email: ''

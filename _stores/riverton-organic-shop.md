@@ -30,6 +30,4 @@ published: true
 city: Riverton
 Local organic shop in Riverton supporting Southland’s ethical and organic producers. Source: user-supplied
   list
-supplies_to: []
-sources: []
 ---

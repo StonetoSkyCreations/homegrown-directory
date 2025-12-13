@@ -29,7 +29,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Mullumbimby
-supplies_to: []
-sources: []
 ---
 IGA with local produce and everyday essentials for the Mullumbimby community.

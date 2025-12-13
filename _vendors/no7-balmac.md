@@ -19,7 +19,6 @@ sourcing_tags:
 - organic
 - local
 - direct-from-farm
-suppliers: []
 products_or_cuisine:
 - Bistro
 - Garden-to-table
@@ -28,6 +27,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Dunedin
-supplies_to: []
-sources: []
 ---

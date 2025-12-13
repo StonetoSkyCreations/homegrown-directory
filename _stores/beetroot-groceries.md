@@ -32,8 +32,6 @@ social: ''
 hours: Mon–Fri 9am–5pm; Sat–Sun closed
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls:
 - https://beetroot.nz

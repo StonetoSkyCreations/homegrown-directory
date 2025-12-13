@@ -34,7 +34,6 @@ lat:
 lon: 
 supplies_to:
 - little-farms
-sources: []
 last_checked: 2025-12-11
 subtype: market-garden
 source_urls:

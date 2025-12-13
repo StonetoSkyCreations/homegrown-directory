@@ -19,8 +19,6 @@ sourcing_tags:
 products:
 - Pantry goods
 services: []
-sources: []
-supplies_to: []
 market_days: []
 source_urls:
 - https://tasmanbaysalt.co.nz/

@@ -13,8 +13,6 @@ products:
 - Coffee and tea
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: ''
 email: ''

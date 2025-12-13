@@ -36,6 +36,4 @@ hours: Mon–Sat 9am–6pm; Sun 10am–3pm
 source_urls:
 - https://libertymarket.co.nz
 published: true
-supplies_to: []
-sources: []
 ---

@@ -25,8 +25,6 @@ email: info@kennedypointvineyard.com
 phone: "+64 9 372 5600"
 social_links: []
 hours: Thu–Sun 11am–4pm
-supplies_to: []
-sources: []
 published: true
 subtype: vineyard
 source_urls: []

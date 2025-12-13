@@ -27,7 +27,6 @@ social: ''
 hours: 06:00–20:00 daily
 lat: -39.0868578
 lon: 174.020033
-supplies_to: []
 sources:
 - kaitake-farm
 products_tags:

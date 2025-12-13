@@ -43,7 +43,6 @@ supplies_to:
 - south-christchurch-farmers-market
 - untamed-earth-farm-shop
 subtype: market-garden
-sources: []
 ---
 Untamed Earth is an Otautahi-based organic farm rooted in a simple principle: when we care for the soil, the soil cares for us. Founded by Penny, Ollie, and Isaac--three growers who spent years working side by side on organic farms across Canterbury--the farm is the result of long conversations in the field about what matters, why it matters, and how food should be grown.
 

@@ -39,8 +39,6 @@ social: ''
 hours: Mon–Fri 8:30–17:30; Sat 8:30–14:30; Sun closed
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 source_urls:
 - https://www.bininn.co.nz/marlborough/blenheim
 ---

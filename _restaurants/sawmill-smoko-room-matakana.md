@@ -15,8 +15,6 @@ products:
 - Beer
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://sawmillbrewery.co.nz
 email: smokoroom@sawmillbrewery.co.nz

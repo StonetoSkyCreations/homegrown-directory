@@ -15,8 +15,6 @@ products:
 - Breakfast
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://11thavebyfranks.co.nz
 email: hello@11thavebyfranks.co.nz

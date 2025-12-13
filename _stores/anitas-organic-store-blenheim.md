@@ -36,8 +36,6 @@ social: ''
 hours: Mon–Sat 9am–7pm; Sun 10am–7pm
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: organic-store
 source_urls:
 - https://anitasshop.co.nz

@@ -30,6 +30,4 @@ hours: Tours Fri–Sun (morning & afternoon)
 last_checked: '2025-12-09'
 notes: ''
 subtype: mixed
-supplies_to: []
-sources: []
 ---

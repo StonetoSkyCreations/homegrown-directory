@@ -21,8 +21,6 @@ products:
 - Brunch
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://threeblueducks.com
 email: enquiries@threeblueducks.com

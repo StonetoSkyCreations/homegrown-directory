@@ -30,6 +30,4 @@ published: true
 city: Paraparaumu
 Local wholefoods retailer selling certified organic food and supporting Kapiti growers. Source: user-supplied
   list
-supplies_to: []
-sources: []
 ---

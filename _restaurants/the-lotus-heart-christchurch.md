@@ -14,8 +14,6 @@ products:
 - Vegetarian
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://www.thelotusheart.co.nz
 email: ''

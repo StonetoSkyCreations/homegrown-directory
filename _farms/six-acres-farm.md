@@ -26,8 +26,6 @@ social: ''
 hours: ''
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: market-garden
 source_urls:
 - https://www.sixacres.co.nz

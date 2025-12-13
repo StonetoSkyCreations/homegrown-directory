@@ -22,7 +22,6 @@ sourcing_tags:
 - local
 - seasonal
 - direct-from-farm
-suppliers: []
 products_or_cuisine:
 - Café meals
 - Organic coffee
@@ -35,6 +34,4 @@ source_urls:
 - https://scarecrow.co.nz
 last_checked: '2025-12-09'
 notes: Updated with address and contact details.
-supplies_to: []
-sources: []
 ---

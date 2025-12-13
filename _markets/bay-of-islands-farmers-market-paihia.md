@@ -30,6 +30,4 @@ notes: Market
 city: Paihia
 practices_tags:
 - local
-supplies_to: []
-sources: []
 ---

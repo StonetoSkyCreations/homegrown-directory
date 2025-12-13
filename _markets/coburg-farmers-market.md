@@ -36,7 +36,5 @@ city: Melbourne
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---
 VFMA-accredited Saturday market featuring organic growers and local artisan foods; plastic-bag free.

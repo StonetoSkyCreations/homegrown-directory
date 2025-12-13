@@ -21,8 +21,6 @@ products:
 - Salads
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://seedlingcafe.com.au
 email: seedlingcafeau@gmail.com

@@ -13,8 +13,6 @@ products:
 services:
 - Retail shop
 - Online ordering
-sources: []
-supplies_to: []
 hours: ''
 website: ''
 email: ''

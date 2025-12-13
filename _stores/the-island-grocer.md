@@ -30,7 +30,5 @@ phone: "+64 9 372 8866"
 social_links: []
 hours: Daily 8am–6pm
 published: true
-supplies_to: []
-sources: []
 source_urls: []
 ---

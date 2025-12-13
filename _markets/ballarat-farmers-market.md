@@ -33,7 +33,5 @@ notes: Market
 city: Ballarat
 practices_tags:
 - organic
-supplies_to: []
-sources: []
 ---
 Lakefront farmers market showcasing organic produce and artisan foods from the Ballarat region.

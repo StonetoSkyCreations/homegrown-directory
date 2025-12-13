@@ -15,8 +15,6 @@ products:
 - Wine
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://thelindisgroup.com/properties/paroa-bay-winery/
 email: ''

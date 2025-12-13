@@ -34,7 +34,5 @@ notes: Market
 city: Melbourne
 practices_tags:
 - organic
-supplies_to: []
-sources: []
 ---
 Monthly market bringing certified organic and seasonal produce from Mornington Peninsula growers.

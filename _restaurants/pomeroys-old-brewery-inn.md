@@ -36,6 +36,5 @@ rating_count: 1
 description: Historic Christchurch brewpub offering a full restaurant menu with selected
   organic ingredients, including organic chicken wings and organic broccoli.
 subtype: restaurant
-supplies_to: []
 source_urls: []
 ---

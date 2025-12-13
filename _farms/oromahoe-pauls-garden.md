@@ -15,7 +15,6 @@ products:
 services:
 - Farmers market stall
 - Farm stand
-sources: []
 supplies_to:
 - bay-of-islands-farmers-market-kerikeri
 hours: Sat 8 Feb 9am–4pm; Sun 9 Feb 9am–4pm

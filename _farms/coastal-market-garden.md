@@ -27,7 +27,6 @@ lat: -39.1167
 lon: 173.95
 supplies_to:
 - down-to-earth-organics-new-plymouth
-sources: []
 subtype: market-garden
 source_urls:
 - https://coastalmarketgarden.com

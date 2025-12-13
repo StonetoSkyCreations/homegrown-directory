@@ -15,8 +15,6 @@ products:
 services:
 - Dine-in
 - Takeaway
-sources: []
-supplies_to: []
 hours: ''
 website: https://bostockorganic.nz/pages/bostock-organic-kitchen
 email: ''

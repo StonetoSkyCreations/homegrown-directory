@@ -14,8 +14,6 @@ products:
 - Meat
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: http://www.tairuabeachclub.co.nz/
 email: ''

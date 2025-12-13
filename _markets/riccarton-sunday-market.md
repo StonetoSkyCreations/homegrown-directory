@@ -32,8 +32,6 @@ market_days:
 - Sunday
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 rating_average: 5
 rating_count: 1
 practices_tags:

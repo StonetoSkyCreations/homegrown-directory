@@ -35,7 +35,5 @@ notes: Market
 city: Mansfield
 practices_tags:
 - organic
-supplies_to: []
-sources: []
 ---
 Regional farmers market highlighting organic growers and seasonal foods from Mansfield district.

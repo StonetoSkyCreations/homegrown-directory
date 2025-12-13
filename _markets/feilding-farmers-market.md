@@ -30,6 +30,4 @@ notes: Market
 city: Manawatū
 practices_tags:
 - local
-supplies_to: []
-sources: []
 ---

@@ -35,7 +35,6 @@ market_days:
 - Friday
 lat: ''
 lon: ''
-supplies_to: []
 sources:
 - untamed-earth
 rating_average: 5

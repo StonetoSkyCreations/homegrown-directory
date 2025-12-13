@@ -19,8 +19,6 @@ products:
 - Farm produce
 services:
 - Farm
-sources: []
-supplies_to: []
 hours: ''
 website: https://www.mingiroafarm.com
 email: mingiroafarm@gmail.com

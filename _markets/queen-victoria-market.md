@@ -35,7 +35,5 @@ notes: Market
 city: Melbourne
 practices_tags:
 - organic
-supplies_to: []
-sources: []
 ---
 Central city market with a certified organic produce precinct plus specialty food stalls.

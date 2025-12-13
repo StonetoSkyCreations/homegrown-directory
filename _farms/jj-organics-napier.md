@@ -13,7 +13,6 @@ products:
 services:
 - Farmers market stall
 - Farm stand
-sources: []
 supplies_to:
 - hawke-s-bay-farmers-market-hastings
 hours: Shop Tue/Fri

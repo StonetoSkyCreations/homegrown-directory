@@ -33,5 +33,4 @@ notes: Market
 city: Kerikeri
 practices_tags:
 - local
-supplies_to: []
 ---

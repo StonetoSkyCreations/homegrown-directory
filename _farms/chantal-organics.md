@@ -31,5 +31,4 @@ notes: Founded as organic co-op farm
 subtype: mixed
 supplies_to:
 - chantal-shop-napier
-sources: []
 ---

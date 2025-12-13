@@ -31,7 +31,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail butcher and grocer
 city: Brendale
-supplies_to: []
-sources: []
 ---
 Certified organic butcher with a small supermarket range of organic groceries and pantry staples.

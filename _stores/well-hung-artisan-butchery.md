@@ -28,8 +28,6 @@ social: ''
 hours: ''
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls: []
 ---

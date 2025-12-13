@@ -28,8 +28,6 @@ email: info@waihekedistilling.co.nz
 phone: "+64 9 372 7797"
 social_links: []
 hours: Wed–Sun 11am–6pm
-supplies_to: []
-sources: []
 published: true
 source_urls: []
 ---

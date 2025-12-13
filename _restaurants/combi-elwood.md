@@ -22,8 +22,6 @@ products:
 - Coffee
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://combielwood.com.au
 email: manager@combielwood.com.au

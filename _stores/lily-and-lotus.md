@@ -27,8 +27,6 @@ email: ''
 phone: ''
 social_links: []
 hours: ''
-supplies_to: []
-sources: []
 published: true
 source_urls: []
 ---

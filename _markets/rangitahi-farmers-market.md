@@ -30,6 +30,4 @@ city: Raglan
 : https://www.rangitahi.co.nz/journal/rangitahi-farmers-market
 practices_tags:
 - local
-supplies_to: []
-sources: []
 ---

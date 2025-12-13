@@ -30,6 +30,4 @@ notes: Market
 city: Nelson
 practices_tags:
 - local
-supplies_to: []
-sources: []
 ---

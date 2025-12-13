@@ -27,7 +27,6 @@ social: https://www.facebook.com/soulfoodorganic.co.nz
 hours: Mon–Sat 9am–5:30pm; Sun 10am–5pm
 lat: ''
 lon: ''
-supplies_to: []
 sources:
 - streamside-organics
 subtype: organic-store

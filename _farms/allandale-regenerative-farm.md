@@ -12,8 +12,6 @@ products:
 services:
 - Wholesale
 - Farm stand
-sources: []
-supplies_to: []
 hours: ''
 website: https://www.allandale.farm/
 email: ''

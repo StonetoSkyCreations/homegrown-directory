@@ -19,8 +19,6 @@ sourcing_tags:
 products:
 - Coffee and tea
 services: []
-sources: []
-supplies_to: []
 market_days: []
 source_urls:
 - https://havana.co.nz/

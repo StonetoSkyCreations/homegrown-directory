@@ -27,8 +27,6 @@ email: ''
 phone: "+64 21 0298 4951"
 social_links: []
 hours: ''
-supplies_to: []
-sources: []
 published: true
 subtype: market-garden
 source_urls: []

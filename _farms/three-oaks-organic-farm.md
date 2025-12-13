@@ -29,8 +29,6 @@ social: ''
 hours: 07:30–19:00 daily
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 products_tags:
 - dairy
 subtype: dairy-farm

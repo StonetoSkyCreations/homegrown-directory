@@ -14,8 +14,6 @@ products:
 - Bread and bakery
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: http://www.drivingcreekrailway.co.nz/
 email: ''

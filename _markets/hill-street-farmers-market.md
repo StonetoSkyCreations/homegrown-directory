@@ -33,6 +33,4 @@ Saturday morning market offering fresh local produce, organic options, and free-
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---

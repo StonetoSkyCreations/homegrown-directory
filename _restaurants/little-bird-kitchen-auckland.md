@@ -19,8 +19,6 @@ products:
 services:
 - Café
 - Dine-in
-sources: []
-supplies_to: []
 hours: Daily 8am–4pm
 website: https://littlebirdorganics.co.nz
 email: ''

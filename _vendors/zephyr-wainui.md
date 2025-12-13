@@ -20,7 +20,6 @@ sourcing_tags:
 - organic
 - local
 - seasonal
-suppliers: []
 products_or_cuisine:
 - Plant-based
 - Cafe
@@ -30,6 +29,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Gisborne
-supplies_to: []
-sources: []
 ---

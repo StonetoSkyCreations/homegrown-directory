@@ -34,7 +34,5 @@ city: Bangalow
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---
 Weekly Saturday market bringing organic and seasonal produce to Bangalow.

@@ -26,8 +26,6 @@ social: https://www.instagram.com/compleatwellness
 hours: Mon–Fri 8am–6pm; Sat 9am–4pm; Sun 9am–3pm
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls:
 - https://compleatwellness.co.nz

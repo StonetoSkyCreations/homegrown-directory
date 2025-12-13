@@ -43,8 +43,6 @@ market_days:
 - Saturday
 lat: -43.5305
 lon: 172.584
-supplies_to: []
-sources: []
 rating_average: 5
 rating_count: 1
 practices_tags:

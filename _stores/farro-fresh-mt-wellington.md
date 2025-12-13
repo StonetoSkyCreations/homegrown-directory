@@ -27,6 +27,4 @@ source_urls: []
 last_checked: Farro Fresh Mt Wellington – Eventfinda
 notes: Retail
 city: Auckland
-supplies_to: []
-sources: []
 ---

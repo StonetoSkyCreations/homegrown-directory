@@ -19,8 +19,6 @@ services:
 - Farm stand
 - Restaurant supply
 - Cafe
-sources: []
-supplies_to: []
 hours: ''
 website: https://tehoroharvest.com
 email: harlas@xtra.co.nz

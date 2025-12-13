@@ -14,8 +14,6 @@ products:
 - Pantry goods
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://more2u.co.nz
 email: orders@more2u.co.nz

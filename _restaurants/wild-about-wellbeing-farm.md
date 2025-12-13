@@ -21,8 +21,6 @@ products:
 - Gelato
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://wildaboutwellbeing.au
 email: hello@wildaboutwellbeing.au

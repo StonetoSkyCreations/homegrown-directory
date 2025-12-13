@@ -19,8 +19,6 @@ products:
 - Coffee
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://minoripantry.com.au
 email: orders@minoripantry.com.au

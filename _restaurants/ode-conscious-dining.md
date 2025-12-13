@@ -18,8 +18,6 @@ products:
 services:
 - Dine-in
 - Seasonal menu
-sources: []
-supplies_to: []
 hours: ''
 website: https://odehospo.com
 email: eat@odewanaka.com

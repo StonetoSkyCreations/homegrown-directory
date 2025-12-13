@@ -29,6 +29,4 @@ published: true
 city: Waikanae
 Small Waikanae organic store focused on local goods and wholefoods. Source: user-supplied
   list
-supplies_to: []
-sources: []
 ---

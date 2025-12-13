@@ -16,8 +16,6 @@ products:
 - Meat
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://amisfield.co.nz
 email: restaurant@amisfield.co.nz

@@ -31,6 +31,4 @@ published: true
 city: Palmerston North
 Local produce shop known for organic, spray-free, and locally grown fruit and vegetables in Palmerston North. Source: user-supplied
   list
-supplies_to: []
-sources: []
 ---

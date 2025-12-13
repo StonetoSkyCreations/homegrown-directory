@@ -5,7 +5,8 @@ name: Grizzly Baked Goods
 type: producer
 subtype: cafe
 category: bakery
-description: Christchurch bakery using organic and locally grown flour for sourdough bread.
+description: Christchurch bakery using organic and locally grown flour for sourdough
+  bread.
 country: NZ
 country_slug: new-zealand
 region: Canterbury
@@ -19,8 +20,6 @@ sourcing_tags:
 products:
 - Bread and bakery
 services: []
-sources: []
-supplies_to: []
 market_days: []
 source_urls:
 - https://www.grizzly.co.nz/

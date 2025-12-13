@@ -21,7 +21,6 @@ sourcing_tags:
 - organic
 - local
 - seasonal
-suppliers: []
 products_or_cuisine:
 - Restaurant
 - Foraged
@@ -31,6 +30,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Queenstown
-supplies_to: []
-sources: []
 ---

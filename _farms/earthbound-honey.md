@@ -12,8 +12,6 @@ products:
 services:
 - Wholesale
 - Farmers market stall
-sources: []
-supplies_to: []
 hours: ''
 website: https://earthboundhoney.co.nz/
 email: ''

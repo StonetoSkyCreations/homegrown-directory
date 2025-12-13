@@ -33,6 +33,4 @@ city: Wānaka
 practices_tags:
 - organic
 - spray-free
-supplies_to: []
-sources: []
 ---

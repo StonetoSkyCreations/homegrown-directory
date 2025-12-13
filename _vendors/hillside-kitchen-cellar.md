@@ -19,7 +19,6 @@ social_links: []
 sourcing_tags:
 - local
 - seasonal
-suppliers: []
 products_or_cuisine:
 - Vegetarian
 - Foraged
@@ -29,6 +28,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Wellington
-supplies_to: []
-sources: []
 ---

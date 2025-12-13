@@ -36,8 +36,6 @@ market_days:
 - Saturday 09:00-14:00
 lat: 
 lon: 
-supplies_to: []
-sources: []
 last_checked: 2025-12-11
 practices_tags:
 - local

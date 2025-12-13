@@ -24,8 +24,6 @@ social: ''
 hours: Mon–Fri 9am–5:30pm; Sat 9:30am–4:30pm; Sun closed
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls:
 - https://www.google.com/maps/place/38+Tarbert+Street,+Alexandra+9320

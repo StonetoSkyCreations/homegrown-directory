@@ -20,7 +20,6 @@ sourcing_tags:
 - organic
 - local
 - seasonal
-suppliers: []
 products_or_cuisine:
 - Garden-to-table
 - Seasonal menus
@@ -29,6 +28,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Waihi
-supplies_to: []
-sources: []
 ---

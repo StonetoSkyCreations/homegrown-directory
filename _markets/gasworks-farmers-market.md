@@ -35,7 +35,5 @@ city: Melbourne
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---
 Monthly farmers market in Gasworks Arts Park featuring organic growers and local food makers.

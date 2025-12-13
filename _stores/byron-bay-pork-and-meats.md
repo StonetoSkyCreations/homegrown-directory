@@ -30,7 +30,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail butcher
 city: Mullumbimby
-supplies_to: []
-sources: []
 ---
 Local butcher offering organic and free-range pork and meats with transparent provenance.

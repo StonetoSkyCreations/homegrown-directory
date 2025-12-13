@@ -36,7 +36,6 @@ practices_tags:
 - organic
 - regenerative
 - local
-supplies_to: []
 ---
 The Lyttelton Farmers’ Market sits in the heart of the port town, surrounded by steep hills, sea air, and the hum of a community that knows its growers by name. Saturday mornings see the main street transformed into a lively, compact marketplace where local producers line the road with seasonal vegetables, fruit, bread, preserves, chutneys, honey, seedlings, and handmade goods.
 

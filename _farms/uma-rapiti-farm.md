@@ -23,8 +23,6 @@ email: ''
 phone: ''
 social_links: []
 hours: ''
-supplies_to: []
-sources: []
 published: true
 subtype: mixed
 source_urls: []

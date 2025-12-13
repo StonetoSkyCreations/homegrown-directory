@@ -28,7 +28,6 @@ social_links:
 - https://instagram.com/blackestate
 - https://facebook.com/blackestate
 hours: Cellar door daily 10am-4pm; restaurant Thu-Mon 11:30am-3pm
-supplies_to: []
 sources:
 - streamside-organics
 description: Two-hatted winery restaurant in Waipara serving organic wines and seasonal

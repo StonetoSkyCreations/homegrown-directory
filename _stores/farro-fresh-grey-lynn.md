@@ -28,6 +28,4 @@ source_urls: []
 last_checked: Farro Fresh Grey Lynn – Yelp; Farro Facebook
 notes: Retail
 city: Auckland
-supplies_to: []
-sources: []
 ---

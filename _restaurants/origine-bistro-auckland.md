@@ -15,8 +15,6 @@ products:
 - Seafood
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://origine.nz
 email: ''

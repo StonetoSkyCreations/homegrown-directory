@@ -32,6 +32,4 @@ hours: Daily 12pm–5pm (cellar door)
 last_checked: '2025-12-09'
 notes: ''
 subtype: vineyard
-supplies_to: []
-sources: []
 ---

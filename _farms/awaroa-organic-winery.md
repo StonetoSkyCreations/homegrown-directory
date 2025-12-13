@@ -26,8 +26,6 @@ email: sales@awaroa.co.nz
 phone: "+64 22 450 7613"
 social_links: []
 hours: Sat–Sun 11am–4pm
-supplies_to: []
-sources: []
 published: true
 subtype: vineyard
 source_urls: []

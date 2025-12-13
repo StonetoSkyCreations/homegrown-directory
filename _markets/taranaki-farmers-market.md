@@ -30,6 +30,4 @@ notes: Market
 city: New Plymouth
 practices_tags:
 - organic
-supplies_to: []
-sources: []
 ---

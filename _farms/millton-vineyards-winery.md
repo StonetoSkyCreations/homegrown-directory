@@ -30,6 +30,4 @@ hours: Mon–Sat (wine tastings)
 last_checked: '2025-12-09'
 notes: ''
 subtype: vineyard
-supplies_to: []
-sources: []
 ---

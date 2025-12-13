@@ -33,6 +33,4 @@ Weekly Sunday market offering local organic produce, free-range eggs, fresh brea
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---

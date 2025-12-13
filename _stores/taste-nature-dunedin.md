@@ -67,8 +67,6 @@ rating_count: 1
 ? Long-standing organic grocer and wholefood store in Dunedin with certified organic
   produce, bulk wholefoods, refillery, deli, and ethically sourced groceries. Source
 : https://www.tastenature.co.nz/
-supplies_to: []
-sources: []
 ---
 Taste Nature is one of Ōtepoti Dunedin’s cornerstone organic hubs — a place where food, wellbeing, and community are held together under one roof. For more than three decades, it has operated as a locally owned, socially conscious business committed to supporting sustainable living and strengthening the relationship between people and the land.
 

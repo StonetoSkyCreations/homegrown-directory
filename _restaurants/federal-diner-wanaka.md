@@ -14,8 +14,6 @@ products:
 - Coffee and tea
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://federaldiner.co.nz
 email: eat@federaldiner.co.nz

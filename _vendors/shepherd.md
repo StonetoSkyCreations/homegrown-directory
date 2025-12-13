@@ -19,7 +19,6 @@ social_links: []
 sourcing_tags:
 - local
 - direct-from-farm
-suppliers: []
 products_or_cuisine:
 - Seasonal menu
 - Collaborative sourcing
@@ -28,6 +27,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Wellington
-supplies_to: []
-sources: []
 ---

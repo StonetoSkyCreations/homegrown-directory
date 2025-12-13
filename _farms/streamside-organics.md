@@ -65,8 +65,6 @@ supplies_to:
 - bliss-box
 - live2give-organics
 source_urls: []
-sources:
-- ashley-river-organics
 hours: 'CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch
   Farmers Market: Saturday 9am–1pm; South Christchurch Farmers Market: Sunday 9am–12pm;
   GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon–Fri (varies
@@ -80,9 +78,6 @@ hours_list:
 market_days:
 - Christchurch Farmers Market — Saturday 9am–1pm
 - South Christchurch Farmers Market — Sunday 9am–12pm
-sourced_from_text:
-- Certified organic mixed-vegetable farm in Leeston, Central Canterbury
-- Grows 40+ seasonal crops using regenerative, soil-focused methods
 supplies_to_text:
 - Ilex Cafe Botanic Gardens
 - Gatherings Restaurant
@@ -111,7 +106,6 @@ notes: ''
 rating_average: 5
 rating_count: 2
 subtype: market-garden
-sources: []
 ---
 Streamside Organics began in 2014 on a single acre of leased land. What started as a small, hands-on experiment in feeding a local community has grown into one of Canterbury's most respected organic market gardens: a 50-acre certified organic farm supplying thousands of households each week.
 

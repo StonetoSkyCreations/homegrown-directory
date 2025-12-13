@@ -35,7 +35,5 @@ city: Byron Bay
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---
 Thursday morning market with a mix of organic and local growers, fresh produce, and seasonal farm goods at Butler St Reserve.

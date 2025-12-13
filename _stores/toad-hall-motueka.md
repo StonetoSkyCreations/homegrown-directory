@@ -30,8 +30,6 @@ social: ''
 hours: Daily 8am–4pm
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls:
 - https://www.toadhallmotueka.co.nz

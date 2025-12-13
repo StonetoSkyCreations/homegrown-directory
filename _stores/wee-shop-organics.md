@@ -30,8 +30,6 @@ social: ''
 hours: ''
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: organic-store
 source_urls:
 - http://weeshoporganics.co.nz

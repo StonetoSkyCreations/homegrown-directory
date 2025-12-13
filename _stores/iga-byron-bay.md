@@ -29,7 +29,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Byron Bay
-supplies_to: []
-sources: []
 ---
 Community supermarket stocking everyday groceries alongside local produce.

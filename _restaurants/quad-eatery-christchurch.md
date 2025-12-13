@@ -15,8 +15,6 @@ products:
 - Breakfast
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://quadeatery.co.nz
 email: hello@quadeatery.co.nz

@@ -33,7 +33,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Melbourne
-supplies_to: []
-sources: []
 ---
 Community food co-op with organic bulk refills, vegan options, and a cafe serving seasonal meals.

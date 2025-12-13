@@ -27,8 +27,6 @@ social: ''
 hours: ''
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 practices_tags:
 - organic
 - local

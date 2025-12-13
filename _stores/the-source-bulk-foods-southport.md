@@ -32,7 +32,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer; zero-waste refillery
 city: Gold Coast
-supplies_to: []
-sources: []
 ---
 Bulk foods shop with organic pantry staples and refillable household goods at Brickworks Centre.

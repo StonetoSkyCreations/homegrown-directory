@@ -21,8 +21,6 @@ products:
 - Salads
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://ceres.org.au
 email: info@ceres.org.au

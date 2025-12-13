@@ -13,8 +13,6 @@ products:
 services:
 - Farmers market stall
 - Education / farm tours
-sources: []
-supplies_to: []
 hours: Day and time range
 website: ''
 email: ''

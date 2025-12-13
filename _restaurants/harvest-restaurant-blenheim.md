@@ -15,8 +15,6 @@ products:
 - Wine
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://www.harvestrestaurant.co.nz
 email: reservations@harvestrestaurant.co.nz

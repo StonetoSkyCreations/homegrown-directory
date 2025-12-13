@@ -35,7 +35,6 @@ social: ''
 hours: Mon–Fri 9am–5:30pm; Sat 10am–2pm; Sun closed
 lat: ''
 lon: ''
-supplies_to: []
 sources:
 - free-farmed-nz
 subtype: wholefoods-store

@@ -26,8 +26,6 @@ social: ''
 hours: Mon–Fri 8am–6pm; Sat 8am–4pm
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: organic-store
 source_urls: []
 ---

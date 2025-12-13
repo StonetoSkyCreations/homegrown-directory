@@ -23,8 +23,6 @@ products:
 - Groceries
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://foefood.org
 email: food@foe.org.au

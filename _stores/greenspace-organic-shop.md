@@ -33,7 +33,5 @@ phone: "+64 9 372 6144"
 social_links: []
 hours: Tue–Sat 10am–4pm
 published: true
-supplies_to: []
-sources: []
 source_urls: []
 ---

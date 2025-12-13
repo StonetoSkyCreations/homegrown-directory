@@ -33,6 +33,4 @@ products_tags:
 - dairy
 - meat
 subtype: dairy-farm
-supplies_to: []
-sources: []
 ---

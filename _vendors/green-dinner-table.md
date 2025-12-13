@@ -29,13 +29,10 @@ services:
 - Nationwide delivery
 sources:
 - streamside-organics
-suppliers:
-- streamside-organics
 source_urls:
 - https://www.greendinnertable.co.nz/contact-us/
 - https://www.greendinnertable.co.nz/
 last_checked: '2025-12-12'
 notes: ''
-supplies_to: []
 ---
 Green Dinner Table is a Christchurch-based meal-kit company that designs weekly vegan recipes and sends all the ingredients straight to customers' doors. Each kit uses fresh seasonal fruit and vegetables, quality sauces and locally sourced produce to create nutritious plant-based meals. The service operates nationwide, with menus changing weekly and packaging that is recyclable or compostable. Subscribers receive pre-measured ingredients, spices and easy instructions, and can add fruit boxes or select gluten-free options. Headquartered in Sydenham, Green Dinner Table champions sustainable eating and supports organic growers like Streamside Organics.

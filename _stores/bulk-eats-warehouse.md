@@ -34,7 +34,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Wholesale and retail
 city: Melbourne
-supplies_to: []
-sources: []
 ---
 Bulk supplier serving households and businesses with pantry staples and cleaning products.

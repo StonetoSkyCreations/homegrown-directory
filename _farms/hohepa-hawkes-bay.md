@@ -17,7 +17,6 @@ products:
 services:
 - Wholesale
 - Farmers market stall
-sources: []
 supplies_to:
 - hawke-s-bay-farmers-market-hastings
 hours: Mon–Fri 09:00–16:30; Sat–Sun closed

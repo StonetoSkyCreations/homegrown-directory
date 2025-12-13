@@ -30,7 +30,6 @@ social:
 hours: 7:00am-10pm daily
 lat: 
 lon: 
-supplies_to: []
 sources:
 - streamside-organics
 sourced_from: streamside-organics

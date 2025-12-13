@@ -18,8 +18,6 @@ products:
 services:
 - Retail shop
 - Online ordering
-sources: []
-supplies_to: []
 hours: ''
 description: Community-focused organic grocery with fresh produce, pantry staples,
   and local honey.

@@ -41,7 +41,6 @@ source_urls: []
 hours: ''
 last_checked: user-submitted
 notes: ''
-supplies_to: []
 sources:
 - bostock-brothers
 - new-zealand-organic-meats

@@ -22,8 +22,6 @@ email: info@mudbrick.co.nz
 phone: "+64 9 372 9050"
 social_links: []
 hours: ''
-supplies_to: []
-sources: []
 description: Vineyard and restaurant practising organic viticulture and transitioning
   to certified organic winegrowing, with a farm-to-table ethos.
 subtype: restaurant

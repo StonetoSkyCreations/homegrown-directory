@@ -15,8 +15,6 @@ products:
 - Lunch
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://misters.co
 email: ''

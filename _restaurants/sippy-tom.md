@@ -21,8 +21,6 @@ products:
 - Lunch
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://sippytom.com.au
 email: ''

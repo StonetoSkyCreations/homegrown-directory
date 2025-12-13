@@ -37,6 +37,4 @@ hours: Wed & Sat (farm shop open)
 last_checked: '2025-12-09'
 notes: Updated with community services.
 subtype: mixed
-supplies_to: []
-sources: []
 ---

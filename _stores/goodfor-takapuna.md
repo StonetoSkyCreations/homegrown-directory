@@ -26,8 +26,6 @@ social: ''
 hours: 'Open 7 days: 9:30am–6:00pm'
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls: []
 ---

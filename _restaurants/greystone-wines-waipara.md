@@ -30,7 +30,6 @@ social_links:
 - https://facebook.com/greystonewines
 - https://instagram.com/greystonewines
 hours: Thu-Mon 11am-4:30pm
-supplies_to: []
 sources:
 - streamside-organics
 description: Certified-organic vineyard and cellar-door restaurant pairing award-winning

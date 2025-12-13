@@ -14,8 +14,6 @@ products:
 services:
 - Farm stand
 - Wholesale
-sources: []
-supplies_to: []
 hours: ''
 website: https://pikiroaorganicfarm.co.nz
 email: info@pikiroaorganicfarm.co.nz

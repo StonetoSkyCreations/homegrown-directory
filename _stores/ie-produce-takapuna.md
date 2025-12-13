@@ -28,6 +28,4 @@ source_urls:
 last_checked: IE Produce contact
 notes: Retail
 city: Auckland
-supplies_to: []
-sources: []
 ---

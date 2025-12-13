@@ -17,8 +17,6 @@ products:
 services:
 - Wholesale
 - Farm stand
-sources: []
-supplies_to: []
 hours: ''
 website: https://churtonwines.co.nz
 email: ben@churtonwines.co.nz

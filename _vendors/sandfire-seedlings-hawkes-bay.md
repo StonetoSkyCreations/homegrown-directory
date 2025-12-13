@@ -21,12 +21,11 @@ products:
 - Vegetables
 services:
 - Farmers market stall
-sources: []
-supplies_to: []
 market_days: []
 source_urls:
 - https://hawkesbayfarmersmarket.co.nz/
 last_checked: ''
 notes: ''
-Sells organically grown heritage seedlings at the Hawke's Bay Farmers’ Market. Source: Hawke's Bay Farmers’ Market vendor listings
+Sells organically grown heritage seedlings at the Hawke's Bay Farmers’ Market. Source: Hawke's
+  Bay Farmers’ Market vendor listings
 ---

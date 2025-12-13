@@ -21,8 +21,6 @@ products:
 - Snacks
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://cassettekensington.com
 email: ''

@@ -19,7 +19,6 @@ sourcing_tags:
 - local
 - seasonal
 - direct-from-farm
-suppliers: []
 products_or_cuisine:
 - Cafe
 - Paddock-to-plate
@@ -29,6 +28,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Clevedon
-supplies_to: []
-sources: []
 ---

@@ -5,7 +5,8 @@ name: Foraged In Raglan
 type: producer
 subtype: cafe
 category: grocer
-description: Small-batch preserves made from local spray-free produce that would otherwise go to waste.
+description: Small-batch preserves made from local spray-free produce that would otherwise
+  go to waste.
 country: NZ
 country_slug: new-zealand
 region: Waikato
@@ -19,8 +20,6 @@ sourcing_tags:
 products:
 - Ferments and preserves
 services: []
-sources: []
-supplies_to: []
 market_days: []
 source_urls:
 - https://www.foragedinraglan.co.nz/my-story

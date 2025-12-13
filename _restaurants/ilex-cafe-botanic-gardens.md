@@ -27,7 +27,6 @@ social_links:
 - https://instagram.com/ilexbotanicgardens
 - https://facebook.com/ilexbotanicgardens
 hours: June-August 9am-4pm; September-May 9am-5pm
-supplies_to: []
 sources:
 - streamside-organics
 description: Light-filled cafe inside the Christchurch Botanic Gardens offering garden-to-plate

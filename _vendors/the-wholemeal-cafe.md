@@ -19,7 +19,6 @@ sourcing_tags:
 - organic
 - local
 - direct-from-farm
-suppliers: []
 products_or_cuisine:
 - Vegetarian
 - Cafe
@@ -29,6 +28,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Tākaka
-supplies_to: []
-sources: []
 ---

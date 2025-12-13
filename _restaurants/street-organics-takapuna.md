@@ -18,8 +18,6 @@ products:
 services:
 - Café
 - Retail store
-sources: []
-supplies_to: []
 hours: ''
 website: https://streetorganics.co.nz
 email: ''

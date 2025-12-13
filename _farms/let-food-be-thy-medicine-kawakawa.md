@@ -15,7 +15,6 @@ products:
 services:
 - Farmers market stall
 - Farm stand
-sources: []
 supplies_to:
 - bay-of-islands-farmers-market-kerikeri
 hours: ''

@@ -18,7 +18,6 @@ social_links: []
 sourcing_tags:
 - organic
 - local
-suppliers: []
 products_or_cuisine:
 - Vegan café
 - Wholefoods
@@ -28,6 +27,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Whangārei
-supplies_to: []
-sources: []
 ---

@@ -15,8 +15,6 @@ products:
 - Breakfast
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://eaterybyfranks.co.nz
 email: manager@eaterybyfranks.co.nz

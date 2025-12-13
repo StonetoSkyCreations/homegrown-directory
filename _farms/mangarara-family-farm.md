@@ -16,8 +16,6 @@ products:
 services:
 - Wholesale
 - Education / farm tours
-sources: []
-supplies_to: []
 hours: ''
 website: https://thefamilyfarm.co.nz
 email: rachel@thefamilyfarm.co.nz

@@ -20,8 +20,6 @@ products:
 - Wine
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://tenminutesbytractor.com.au
 email: ''

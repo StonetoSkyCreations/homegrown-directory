@@ -14,8 +14,6 @@ products:
 - Bread and bakery
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://solscape.co.nz/eat/
 email: info@solscape.co.nz

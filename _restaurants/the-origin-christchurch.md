@@ -14,8 +14,6 @@ products:
 - Vegan
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://theorigin.co.nz
 email: info@theorigin.co.nz

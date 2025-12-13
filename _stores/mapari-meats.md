@@ -27,8 +27,6 @@ social: ''
 hours: Mon–Thu 9am–6pm; Fri 7:30am–6pm; Sat 7:30am–5pm; Sun 9am–4pm
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls: []
 ---

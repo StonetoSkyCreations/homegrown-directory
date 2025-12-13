@@ -31,7 +31,5 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ACO certified
 city: Melbourne
-supplies_to: []
-sources: []
 ---
 Second Terra Madre outlet with organic pantry staples and ACO-certified lines.

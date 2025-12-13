@@ -38,7 +38,6 @@ market_days: []
 lat: 
 lon: 
 sourced_from: streamside-organics
-supplies_to: []
 also_referenced_by: Ooooby
 sources:
 - streamside-organics

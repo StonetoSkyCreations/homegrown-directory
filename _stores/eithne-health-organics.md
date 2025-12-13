@@ -34,8 +34,6 @@ social: ''
 hours: Mon–Fri 9:30am–5:30pm; Sat 10am–1pm; Sun closed
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: organic-store
 source_urls:
 - https://www.eithne.co.nz

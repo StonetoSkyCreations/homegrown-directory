@@ -19,8 +19,6 @@ sourcing_tags:
 products:
 - Grains and pulses
 services: []
-sources: []
-supplies_to: []
 market_days: []
 source_urls:
 - https://www.theoatery.co.nz/

@@ -23,8 +23,6 @@ email: hello@akito.co.nz
 phone: "+64 9 372 7659"
 social_links: []
 hours: Mon–Sat 7:30am–3pm; Sun 7am–3pm
-supplies_to: []
-sources: []
 description: Plant-based eatery embracing slow food and regenerative principles, serving
   seasonal breakfasts, brunches and lunches made from local ingredients.
 subtype: cafe

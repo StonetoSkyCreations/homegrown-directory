@@ -20,8 +20,6 @@ products:
 - Tequila cocktails
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://mesaverde.net.au
 email: hello@mesaverde.net.au

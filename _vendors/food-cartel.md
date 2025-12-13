@@ -27,7 +27,5 @@ social: ''
 hours: ''
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 source_urls: []
 ---

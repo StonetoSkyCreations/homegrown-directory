@@ -35,7 +35,5 @@ services:
 - Online ordering
 hours: Mon–Sun 9am–8pm
 published: true
-supplies_to: []
-sources: []
 source_urls: []
 ---

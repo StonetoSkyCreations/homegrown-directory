@@ -32,6 +32,4 @@ notes: ''
 products_tags:
 - dairy
 subtype: dairy-farm
-supplies_to: []
-sources: []
 ---

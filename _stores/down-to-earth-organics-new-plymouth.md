@@ -28,7 +28,6 @@ social: ''
 hours: Mon–Fri 9:00–17:30; Sat 9:00–15:00
 lat: -39.0517323
 lon: 174.095274
-supplies_to: []
 sources:
 - kaitake-farm
 - coastal-market-garden

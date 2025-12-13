@@ -29,8 +29,6 @@ social: ''
 hours: ''
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 products_tags:
 - meat
 subtype: livestock

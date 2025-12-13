@@ -14,8 +14,6 @@ products:
 - Breakfast
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: ''
 email: drippingbowl@gmail.com

@@ -29,8 +29,6 @@ email: ''
 phone: ''
 social_links: []
 hours: ''
-supplies_to: []
-sources: []
 published: true
 subtype: orchard
 source_urls: []

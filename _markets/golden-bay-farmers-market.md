@@ -32,6 +32,4 @@ practices_tags:
 - organic
 - spray-free
 - local
-supplies_to: []
-sources: []
 ---

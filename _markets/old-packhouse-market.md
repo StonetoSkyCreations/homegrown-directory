@@ -20,8 +20,6 @@ products:
 services:
 - Farmers market stall
 - Retail shop
-sources: []
-supplies_to: []
 hours: Sat–Sun, 6am–1:30pm; daily store and café on-site
 website: http://www.theoldpackhousemarket.co.nz
 email: ''

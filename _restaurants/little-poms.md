@@ -36,7 +36,5 @@ description: Neighbourhood café serving seasonal, locally sourced and organic i
   with free-range produce and an ethical approach to dining. Offers generous breakfasts,
   brunches and lunches made in-house, including nut butters and almond milk.
 subtype: cafe
-supplies_to: []
-sources: []
 source_urls: []
 ---

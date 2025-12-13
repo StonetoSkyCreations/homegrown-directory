@@ -18,8 +18,6 @@ products:
 - Coffee
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://twppalmbeach.com.au
 email: shop@twppalmbeach.com.au

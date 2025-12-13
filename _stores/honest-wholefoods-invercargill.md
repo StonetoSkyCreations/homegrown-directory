@@ -28,6 +28,4 @@ published: true
 city: Invercargill
 Invercargill specialty store offering bulk organic and wholefood products. Source: user-supplied
   list
-supplies_to: []
-sources: []
 ---

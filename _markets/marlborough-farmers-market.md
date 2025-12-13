@@ -28,6 +28,4 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Blenheim
-supplies_to: []
-sources: []
 ---

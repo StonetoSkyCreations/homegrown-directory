@@ -32,7 +32,6 @@ products_tags:
 - dairy
 - meat
 subtype: dairy-farm
-sources: []
 source_urls: []
 ---
 Waipuna Pastures keeps cattle, sheep, and hens moving across long-rotation pastures, using multi-species swards and no synthetic nitrogen. Offal, bones, and hides are kept in circular use with local butchers, while customers can order bulk packs direct.

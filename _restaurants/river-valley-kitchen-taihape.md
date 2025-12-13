@@ -15,8 +15,6 @@ products:
 - Vegetables
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://rivervalley.co.nz
 email: thelodge@rivervalley.co.nz

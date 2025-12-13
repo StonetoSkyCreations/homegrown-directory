@@ -33,5 +33,4 @@ products_tags:
 subtype: livestock
 supplies_to:
 - beckenham-butchery
-sources: []
 ---

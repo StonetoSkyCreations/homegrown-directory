@@ -26,7 +26,6 @@ social: ''
 hours: ''
 lat: ''
 lon: ''
-supplies_to: []
 sources:
 - coffee-la-la
 source_urls: []

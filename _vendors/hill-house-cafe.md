@@ -20,7 +20,6 @@ sourcing_tags:
 - local
 - seasonal
 - direct-from-farm
-suppliers: []
 products_or_cuisine:
 - Cafe
 - Seasonal menu
@@ -29,6 +28,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Auckland
-supplies_to: []
-sources: []
 ---

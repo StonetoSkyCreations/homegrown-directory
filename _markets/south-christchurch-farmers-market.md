@@ -33,7 +33,6 @@ market_days:
 - Sunday
 lat: ''
 lon: ''
-supplies_to: []
 sources:
 - untamed-earth
 practices_tags:

@@ -26,8 +26,6 @@ social: ''
 hours: 'Open 7 days: 9:00am–6:00pm weekdays; 8:30am–6:00pm weekends'
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls: []
 ---

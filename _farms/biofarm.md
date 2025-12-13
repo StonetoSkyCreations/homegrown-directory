@@ -25,8 +25,6 @@ social: ''
 hours: ''
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 products_tags:
 - dairy
 subtype: dairy-farm

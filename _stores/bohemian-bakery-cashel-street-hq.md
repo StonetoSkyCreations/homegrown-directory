@@ -39,7 +39,6 @@ social: https://www.facebook.com/bohemianbakerychristchurch/, https://www.instag
 hours: Mon–Sat 7:00–14:00
 lat: 
 lon: 
-supplies_to: []
 sources:
 - farmers-mill
 - milmore-downs

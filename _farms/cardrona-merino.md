@@ -11,8 +11,6 @@ products:
 - Meat
 services:
 - Wholesale
-sources: []
-supplies_to: []
 hours: ''
 website: ''
 email: ''

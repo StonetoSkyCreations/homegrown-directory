@@ -33,6 +33,4 @@ rating_count: 1
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---

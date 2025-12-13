@@ -32,6 +32,4 @@ Weekly market in central Palmerston North showcasing local producers, including 
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---

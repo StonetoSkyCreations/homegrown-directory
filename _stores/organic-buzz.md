@@ -45,7 +45,5 @@ hours: Mon–Fri 8:30am–5:30pm; Sat 9:00am–2:00pm; Sun closed
 rating_average: 5
 rating_count: 1
 published: true
-supplies_to: []
-sources: []
 source_urls: []
 ---

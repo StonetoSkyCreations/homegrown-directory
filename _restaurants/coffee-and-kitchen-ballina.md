@@ -19,8 +19,6 @@ products:
 - Coffee
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://coffeeandkitchen.com.au
 email: hello@coffeeandkitchen.com.au

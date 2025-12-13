@@ -16,3 +16,8 @@
 - Listings scanned: 489
 - Relationship references: 78
 - Missing references: 0
+
+## Normalisation summary (latest run)
+- Listings updated: 487
+- Keys removed: suppliers (23), sourced_from_text (1)
+- Ambiguous or skipped: none

@@ -18,7 +18,6 @@ social_links: []
 sourcing_tags:
 - local
 - seasonal
-suppliers: []
 products_or_cuisine:
 - Tasting menu
 - Foraged
@@ -28,6 +27,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Lyttelton
-supplies_to: []
-sources: []
 ---

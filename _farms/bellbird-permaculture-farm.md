@@ -24,8 +24,6 @@ social: ''
 hours: ''
 lat: -39.9333
 lon: 175.05
-supplies_to: []
-sources: []
 subtype: market-garden
 source_urls:
 - https://bellbirdfarm.co.nz

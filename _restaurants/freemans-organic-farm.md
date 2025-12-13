@@ -19,8 +19,6 @@ products:
 - Cafe
 services:
 - Producer
-sources: []
-supplies_to: []
 hours: ''
 website: https://freemansorganicfarm.org
 email: davidgowerfreeman@icloud.com

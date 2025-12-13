@@ -16,8 +16,6 @@ products:
 - Eggs
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: Breakfast for guests
 website: https://sanctuarybayofislands.co.nz/
 email: ''

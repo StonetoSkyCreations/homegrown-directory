@@ -20,8 +20,6 @@ products:
 - Coffee
 services:
 - Retail
-sources: []
-supplies_to: []
 hours: ''
 website: https://farmandco.com.au
 email: michele@farmandco.com.au

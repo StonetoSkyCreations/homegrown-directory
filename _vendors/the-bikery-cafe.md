@@ -19,7 +19,6 @@ social_links:
 sourcing_tags:
 - local
 - organic
-suppliers: []
 products_or_cuisine:
 - Brunch
 - Cafe
@@ -28,6 +27,4 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Cambridge
-supplies_to: []
-sources: []
 ---

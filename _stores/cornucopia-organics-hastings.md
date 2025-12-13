@@ -28,6 +28,4 @@ source_urls:
 last_checked: Cornucopia contact; Be Nourished dir.
 notes: Retail
 city: Hastings
-supplies_to: []
-sources: []
 ---

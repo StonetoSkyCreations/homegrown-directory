@@ -5,7 +5,8 @@ name: Wildflour NZ (Whangārei)
 type: producer
 subtype: cafe
 category: bakery
-description: Bakery using organic flour and sourdough starters, selling via Whangārei markets.
+description: Bakery using organic flour and sourdough starters, selling via Whangārei
+  markets.
 country: NZ
 country_slug: new-zealand
 region: Northland
@@ -19,13 +20,12 @@ sourcing_tags:
 products:
 - Bread and bakery
 services: []
-sources: []
-supplies_to: []
 market_days: []
 source_urls:
 - User-supplied list
 last_checked: ''
 notes: ''
 city: Whangārei
-Local bakery using organic flour and sourdough starters, selling at Whangārei markets. Source: user-supplied list
+Local bakery using organic flour and sourdough starters, selling at Whangārei markets. Source: user-supplied
+  list
 ---

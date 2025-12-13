@@ -38,7 +38,5 @@ city: Bendigo
 practices_tags:
 - organic
 - biodynamic
-supplies_to: []
-sources: []
 ---
 Regional farmers market featuring organic and biodynamic growers with seasonal produce and meats.

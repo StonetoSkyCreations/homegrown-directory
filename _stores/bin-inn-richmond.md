@@ -38,8 +38,6 @@ social: https://www.facebook.com/BinInnRichmond
 hours: Mon–Fri 9:00–17:30; Sat 9:00–14:00; Sun closed
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 source_urls:
 - https://www.bininn.co.nz/tasman/richmond
 ---

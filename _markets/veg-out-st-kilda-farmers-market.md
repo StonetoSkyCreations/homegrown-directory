@@ -36,7 +36,5 @@ city: Melbourne
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---
 Community-run monthly market featuring organic and local producers by the beach.

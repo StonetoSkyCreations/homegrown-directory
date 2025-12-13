@@ -14,8 +14,6 @@ products:
 - Wine
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://www.kingibritomart.com
 email: kingi@thehotelbritomart.com

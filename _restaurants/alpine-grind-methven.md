@@ -33,7 +33,6 @@ social_links:
 - https://facebook.com/thealpinegrind
 - https://instagram.com/thealpinegrind
 hours: Mon-Fri 6am-2pm; Sat-Sun 7am-2pm
-supplies_to: []
 sources:
 - streamside-organics
 description: Cozy Methven cafe serving fair-trade coffee and wholesome meals made

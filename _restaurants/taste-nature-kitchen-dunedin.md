@@ -20,8 +20,6 @@ services:
 - Dine-in
 - Takeaway
 - Espresso bar
-sources: []
-supplies_to: []
 hours: 'Kitchen: Mon–Fri 8am–2pm; Sat 9am–2pm; Sun closed. Espresso: Mon–Fri 8am–5pm;
   Sat 9am–3pm; Sun closed.'
 website: https://www.tastenature.co.nz/

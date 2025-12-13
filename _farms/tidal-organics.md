@@ -28,8 +28,6 @@ email: ''
 phone: ''
 social_links: []
 hours: ''
-supplies_to: []
-sources: []
 published: true
 subtype: market-garden
 source_urls: []

@@ -13,7 +13,6 @@ products:
 - Fruit
 services:
 - Farmers market stall
-sources: []
 supplies_to:
 - hawke-s-bay-farmers-market-hastings
 hours: ''

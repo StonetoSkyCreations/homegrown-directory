@@ -26,7 +26,6 @@ lon: ''
 supplies_to:
 - beach-road-milk-co
 - down-to-earth-organics-new-plymouth
-sources: []
 products_tags:
 - dairy
 subtype: dairy-farm

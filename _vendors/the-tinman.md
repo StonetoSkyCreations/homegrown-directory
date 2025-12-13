@@ -26,7 +26,6 @@ social: ''
 hours: ''
 lat: ''
 lon: ''
-supplies_to: []
 sources:
 - coffee-supreme
 source_urls: []

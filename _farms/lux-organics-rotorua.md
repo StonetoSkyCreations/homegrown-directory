@@ -17,8 +17,6 @@ products:
 services:
 - CSA / veggie box
 - Delivery
-sources: []
-supplies_to: []
 hours: By appointment only
 website: https://luxorganics.co.nz
 email: jenny.k.lux@gmail.com

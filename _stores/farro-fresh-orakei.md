@@ -27,6 +27,4 @@ source_urls: []
 last_checked: Farro Fresh Orakei – Brewé
 notes: Retail
 city: Auckland
-supplies_to: []
-sources: []
 ---

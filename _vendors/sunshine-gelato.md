@@ -30,6 +30,5 @@ lat: ''
 lon: ''
 supplies_to:
 - catalina-bay-farmers-market
-sources: []
 source_urls: []
 ---

@@ -32,7 +32,5 @@ notes: Market
 city: Brisbane
 practices_tags:
 - local
-supplies_to: []
-sources: []
 ---
 Monthly market bringing local growers and artisan makers to Mitchelton’s main street.

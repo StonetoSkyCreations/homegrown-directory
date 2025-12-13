@@ -23,7 +23,6 @@ services:
 - Restaurant supply
 sources:
 - streamside-organics
-supplies_to: []
 hours: ''
 website: https://www.gatherings.co.nz
 email: info@gatherings.co.nz

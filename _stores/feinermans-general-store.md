@@ -25,8 +25,6 @@ social: https://www.facebook.com/Feinermans/, https://www.instagram.com/feinerma
 hours: Mon–Fri 9am–5pm; Sat 10am–4pm; Sun closed
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls:
 - https://feinermans.shop

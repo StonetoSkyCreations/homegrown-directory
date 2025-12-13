@@ -35,7 +35,5 @@ city: Mullumbimby
 practices_tags:
 - organic
 - local
-supplies_to: []
-sources: []
 ---
 Weekly Friday market with certified organic growers, seasonal produce, and local food stalls at the showgrounds.

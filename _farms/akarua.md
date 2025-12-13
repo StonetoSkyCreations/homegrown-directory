@@ -28,6 +28,4 @@ hours: ''
 last_checked: user-submitted
 notes: ''
 subtype: vineyard
-supplies_to: []
-sources: []
 ---

@@ -36,7 +36,6 @@ market_days: []
 lat: -43.5805248496604
 lon: 172.565535211563
 sourced_from: streamside-organics
-supplies_to: []
 also_referenced_by: 
 sources:
 - streamside-organics

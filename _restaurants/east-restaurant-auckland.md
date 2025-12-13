@@ -13,8 +13,6 @@ products:
 - Vegetarian
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: https://easteats.co.nz
 email: book@easteats.co.nz

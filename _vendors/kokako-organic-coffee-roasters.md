@@ -27,8 +27,6 @@ social: ''
 hours: Weekdays 8am–4:30pm
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: cafe
 source_urls: []
 ---

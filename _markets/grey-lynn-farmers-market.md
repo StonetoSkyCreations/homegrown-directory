@@ -30,6 +30,4 @@ notes: Market
 city: Auckland
 practices_tags:
 - organic
-supplies_to: []
-sources: []
 ---

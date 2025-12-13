@@ -16,8 +16,6 @@ products:
 services:
 - Farm stand
 - Wholesale
-sources: []
-supplies_to: []
 hours: ''
 website: https://kapitiolives.co.nz
 email: david@kapitiolives.com

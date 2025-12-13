@@ -31,8 +31,6 @@ social: ''
 hours: Mon–Thu 10am–4pm; Fri 12pm–4pm; Sat–Sun closed
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls:
 - https://www.interfood.co.nz

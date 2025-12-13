@@ -27,8 +27,6 @@ social: https://www.facebook.com
 hours: Mon–Fri 6am–6:30pm; Sat–Sun 6am–4:30pm
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 subtype: specialty-grocer
 source_urls: []
 ---

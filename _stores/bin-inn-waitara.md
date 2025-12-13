@@ -26,8 +26,6 @@ social: ''
 hours: Mon–Fri 08:30–17:00; Sat 09:00–15:00
 lat: -39.0024865
 lon: 174.235171
-supplies_to: []
-sources: []
 source_urls:
 - https://bininn.co.nz/pages/waitara
 ---

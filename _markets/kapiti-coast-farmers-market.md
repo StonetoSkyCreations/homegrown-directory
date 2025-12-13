@@ -34,6 +34,4 @@ practices_tags:
 - organic
 - regenerative
 - local
-supplies_to: []
-sources: []
 ---

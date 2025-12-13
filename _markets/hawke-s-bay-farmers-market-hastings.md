@@ -34,5 +34,4 @@ notes: Market
 city: Hastings
 practices_tags:
 - organic
-supplies_to: []
 ---

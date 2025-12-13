@@ -25,7 +25,5 @@ social: ''
 hours: Mon–Sun 7am–2:30pm
 lat: ''
 lon: ''
-supplies_to: []
-sources: []
 source_urls: []
 ---

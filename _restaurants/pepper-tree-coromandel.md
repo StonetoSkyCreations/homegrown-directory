@@ -14,8 +14,6 @@ products:
 - Meat
 services:
 - Restaurant supply
-sources: []
-supplies_to: []
 hours: ''
 website: http://www.peppertree.co.nz/
 email: ''
