@@ -43,7 +43,7 @@ permalink: /search.json
   {% if specialty %}
     {% assign specialty = specialty | join: ',' | downcase | split: ',' | uniq %}
   {% endif %}
-  {% assign long_desc = doc.long_description | default: doc.description | default: doc.short_description | default: doc.meta_description | default: doc.excerpt %}
+  {% assign long_desc = doc.description | default: doc.short_description | default: doc.meta_description | default: doc.excerpt | default: doc.long_description %}
   {
     "id": "{{ doc.id | default: doc.slug | slugify }}",
     "title": {{ doc.title | default: doc.name | jsonify }},
