@@ -387,6 +387,8 @@
       sorted.forEach((card) => card.parentNode.appendChild(card));
       if (!anyDistance && nearMeStatus) {
         nearMeStatus.textContent = "No listings with coordinates";
+      } else if (nearMeStatus && nearMeActive) {
+        nearMeStatus.textContent = "Sorted by distance";
       }
     };
 
@@ -396,6 +398,7 @@
         if (nearMeStatus) nearMeStatus.textContent = "Geolocation not supported";
         return;
       }
+      nearMeActive = false;
       if (nearMeStatus) nearMeStatus.textContent = "Locating…";
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -407,11 +410,16 @@
           if (nearMeStatus) nearMeStatus.textContent = "Sorted by distance";
           if (typeof runDirectoryFilters === "function") runDirectoryFilters();
         },
-        () => {
+        (error) => {
           nearMeActive = false;
-          if (nearMeStatus) nearMeStatus.textContent = "Location blocked";
+          console.warn("Near me error", error.code, error.message);
+          if (!nearMeStatus) return;
+          if (error.code === 1) nearMeStatus.textContent = "Location blocked";
+          else if (error.code === 2) nearMeStatus.textContent = "Location unavailable";
+          else if (error.code === 3) nearMeStatus.textContent = "Location timed out — try again";
+          else nearMeStatus.textContent = "Couldn’t get location";
         },
-        { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
+        { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 }
       );
     };
 
@@ -516,23 +524,26 @@
 
   const hasSearchUI = resultsContainer || mapPanel;
 
-  const cardTemplate = (item) => {
-    const tags =
-      item.practices && item.practices.length
-        ? item.practices
-        : item.products && item.products.length
-        ? item.products
-        : item.services || [];
-    const tagsMarkup = (tags || []).slice(0, 4).map((tag) => `<li>${tag}</li>`).join("");
-    return `
-      <article class="listing-card" data-lat="${item.lat ?? ""}" data-lon="${item.lon ?? ""}">
-        <div class="listing-card__meta">
-          <div>
-            <span class="pill pill--type">${typeLabels[item.collection] || item.type}</span>
+    const cardTemplate = (item) => {
+      const tags =
+        item.practices && item.practices.length
+          ? item.practices
+          : item.products && item.products.length
+          ? item.products
+          : item.services || [];
+      const tagsMarkup = (tags || []).slice(0, 4).map((tag) => `<li>${tag}</li>`).join("");
+      const city = item.city || "";
+      const region = item.region || "";
+      const locText = city && region ? `${city}, ${region}` : city || region || "Location not provided";
+      return `
+        <article class="listing-card" data-lat="${item.lat ?? ""}" data-lon="${item.lon ?? ""}">
+          <div class="listing-card__meta">
+            <div>
+              <span class="pill pill--type">${typeLabels[item.collection] || item.type}</span>
+            </div>
+            <span class="listing-card__location">${locText}</span>
+            <p class="listing-card__distance" data-distance hidden></p>
           </div>
-          <span class="listing-card__location">${item.city || ""}${item.city && item.region ? ", " : ""}${item.region || ""}</span>
-          <p class="listing-card__distance" data-distance hidden></p>
-        </div>
         <h3 class="listing-card__title"><a href="${item.url}">${item.title}</a></h3>
         <p class="listing-card__summary">${item.description || ""}</p>
         <div class="listing-card__tags">

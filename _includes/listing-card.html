@@ -36,6 +36,16 @@
 {% if listing.region %}{% assign address_parts = address_parts | push: listing.region %}{% endif %}
 {% if listing.country %}{% assign address_parts = address_parts | push: listing.country %}{% endif %}
 {% assign card_address = address_parts | join: ', ' %}
+{% assign location_city = listing.city | default: listing.city_town | default: '' %}
+{% assign location_region = listing.region | default: '' %}
+{% assign card_location = '' %}
+{% if location_city != '' and location_region != '' %}
+  {% assign card_location = location_city | append: ', ' | append: location_region %}
+{% elsif location_city != '' %}
+  {% assign card_location = location_city %}
+{% elsif location_region != '' %}
+  {% assign card_location = location_region %}
+{% endif %}
 {% assign has_street = listing.address and listing.address != '' %}
 {% assign has_coords = listing.lat and listing.lon and listing.lat != '' and listing.lon != '' %}
 {% assign map_query = card_address | uri_escape %}
@@ -98,12 +108,10 @@ Filters read:
         href="https://www.google.com/maps/search/?api=1&query={{ card_address | uri_escape }}"
         target="_blank"
         rel="noopener">
-        <span class="listing-card__location">{{ card_address | default: "View on map" }}</span>
+        <span class="listing-card__location">{{ card_location | default: "View on map" }}</span>
       </a>
-    {% elsif card_address != "" %}
-      <span class="listing-card__location muted">{{ card_address }}</span>
     {% else %}
-      <span class="listing-card__location muted">Location not provided</span>
+      <span class="listing-card__location muted">{{ card_location | default: "Location not provided" }}</span>
     {% endif %}
     <p class="listing-card__distance" data-distance hidden></p>
   </div>
