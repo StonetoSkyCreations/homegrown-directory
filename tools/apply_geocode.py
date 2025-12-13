@@ -18,7 +18,14 @@ from typing import Any, Dict, List, Optional, Tuple
 import yaml
 
 
-VALID_COLLECTIONS = {"farms", "markets", "stores", "restaurants", "vendors", "distributors"}
+VALID_COLLECTIONS = {
+    "farms",
+    "markets",
+    "stores",
+    "restaurants",
+    "vendors",
+    "distributors"
+}
 
 
 def load_csv(path: Path) -> List[Dict[str, str]]:
@@ -42,10 +49,6 @@ def is_valid_pair(lat: Any, lon: Any) -> bool:
 
 
 def parse_path_from_listing(slug: str, collection: str, url: str) -> Optional[Path]:
-    if collection in VALID_COLLECTIONS and slug:
-        candidate = Path(f"_{collection}") / f"{slug}.md"
-        if candidate.exists():
-            return candidate
     if url:
         parts = url.strip("/").split("/")
         if len(parts) >= 2:
@@ -54,6 +57,10 @@ def parse_path_from_listing(slug: str, collection: str, url: str) -> Optional[Pa
                 candidate = Path(f"_{collection_guess}") / f"{slug_guess}.md"
                 if candidate.exists():
                     return candidate
+    if collection in VALID_COLLECTIONS and slug:
+        candidate = Path(f"_{collection}") / f"{slug}.md"
+        if candidate.exists():
+            return candidate
     return None
 
 
@@ -72,7 +79,8 @@ def load_front_matter(path: Path) -> Tuple[Dict[str, Any], str]:
 
 def write_front_matter(path: Path, data: Dict[str, Any], body: str) -> None:
     yaml_dump = yaml.safe_dump(data, sort_keys=False, allow_unicode=True).strip()
-    path.write_text(f"---\n{yaml_dump}\n---{body}", encoding="utf-8")
+    clean_body = body.lstrip("\n")
+    path.write_text(f"---\n{yaml_dump}\n---\n{clean_body}", encoding="utf-8")
 
 
 def ensure_backup(src: Path, backup_root: Path) -> None:
@@ -140,7 +148,7 @@ def apply_row(row: Dict[str, str], overwrite: bool, backup_root: Path, log_lines
         data["geo_label"] = derive_geo_label(row.get("matched_display_name") or "", row.get("city") or "", row.get("region") or "")
 
     if not data.get("geo_query"):
-        data["geo_query"] = row.get("query_used") or ""
+        data["geo_query"] = row.get("query") or ""
 
     write_front_matter(path, data, body)
     log_lines.append(f"UPDATED {path} lat={lat_new} lon={lon_new} precision={data['geo_precision']}")

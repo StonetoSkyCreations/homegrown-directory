@@ -99,12 +99,12 @@ def bucket_confidence(place_rank: int, result_type: str, result_class: str) -> T
 
 
 def geocode_listing(session: requests.Session, listing: Dict[str, Any]) -> Dict[str, Any]:
-    query, query_label = build_query(listing)
+    query, query_strategy = build_query(listing)
     if not query:
         return {
             "result": None,
             "query": query,
-            "query_used": query_label,
+            "query_strategy": query_strategy,
             "bucket": "none",
             "notes": "no_query"
         }
@@ -115,13 +115,15 @@ def geocode_listing(session: requests.Session, listing: Dict[str, Any]) -> Dict[
         "addressdetails": 0,
         "limit": 1
     }
+    if normalize_country(listing) == "New Zealand" or (listing.get("country_slug") or "").lower() == "new-zealand":
+        params["countrycodes"] = "nz"
     url = "https://nominatim.openstreetmap.org/search"
     response = rate_limited_request(session, url, params, geocode_listing.last_request_time)
     if not response.ok:
         return {
             "result": None,
             "query": query,
-            "query_used": query_label,
+            "query_strategy": query_strategy,
             "bucket": "none",
             "notes": f"http_{response.status_code}"
         }
@@ -131,7 +133,7 @@ def geocode_listing(session: requests.Session, listing: Dict[str, Any]) -> Dict[
         return {
             "result": None,
             "query": query,
-            "query_used": query_label,
+            "query_strategy": query_strategy,
             "bucket": "none",
             "notes": "no_results"
         }
@@ -144,7 +146,7 @@ def geocode_listing(session: requests.Session, listing: Dict[str, Any]) -> Dict[
     return {
         "result": best,
         "query": query,
-        "query_used": query_label,
+        "query_strategy": query_strategy,
         "bucket": bucket,
         "notes": reason
     }
@@ -183,7 +185,8 @@ def main():
         "region",
         "city",
         "address",
-        "query_used",
+        "query",
+        "query_strategy",
         "matched_display_name",
         "matched_type",
         "matched_class",
@@ -217,11 +220,12 @@ def main():
                 "url": listing.get("url") or "",
                 "collection": listing.get("collection") or "",
                 "title": listing.get("title") or listing.get("name") or "",
-                "country": listing.get("country") or "",
+                "country": normalize_country(listing) or "",
                 "region": listing.get("region") or "",
                 "city": listing.get("city") or "",
                 "address": listing.get("address") or "",
-                "query_used": result["query"],
+                "query": result["query"],
+                "query_strategy": result["query_strategy"],
                 "matched_display_name": matched_display_name,
                 "matched_type": best.get("type") or "",
                 "matched_class": best.get("class") or "",
