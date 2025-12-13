@@ -1,0 +1,205 @@
+---
+layout: default
+title: Geo coverage audit
+permalink: /geo-audit/
+---
+
+<section class="content">
+  <h1>Geo coverage audit</h1>
+  <p class="muted">Internal helper to track coordinate coverage. Not linked in navigation.</p>
+
+  <div id="geoSummary" class="geo-audit__summary">Loading…</div>
+
+  <div class="geo-audit__grid" hidden>
+    <div>
+      <h2>Counts by collection</h2>
+      <ul id="byCollection"></ul>
+    </div>
+    <div>
+      <h2>Counts by geo_precision</h2>
+      <ul id="byPrecision"></ul>
+    </div>
+  </div>
+
+  <div class="geo-audit__table" hidden>
+    <h2>Listings missing coordinates</h2>
+    <p class="muted" id="missingMeta"></p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Collection</th>
+            <th>Geo precision</th>
+            <th>Location</th>
+            <th>Geo query</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="missingTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<style>
+  .geo-audit__summary {
+    margin: 0.5rem 0 1rem;
+  }
+  .geo-audit__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .geo-audit__table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .geo-audit__table th,
+  .geo-audit__table td {
+    padding: 0.5rem 0.4rem;
+    border-bottom: 1px solid var(--border, #e2e8f0);
+    vertical-align: top;
+  }
+  .geo-audit__table th {
+    text-align: left;
+    font-weight: 700;
+  }
+  .geo-audit__table td:last-child {
+    white-space: nowrap;
+  }
+  .geo-audit__pill {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background: #f1f5f9;
+    border: 1px solid #d8e2ec;
+    font-size: 0.85rem;
+  }
+  .table-wrapper {
+    overflow-x: auto;
+  }
+</style>
+
+<script>
+  (() => {
+    const summaryEl = document.getElementById("geoSummary");
+    const gridEl = document.querySelector(".geo-audit__grid");
+    const precisionList = document.getElementById("byPrecision");
+    const collectionList = document.getElementById("byCollection");
+    const tableWrapper = document.querySelector(".geo-audit__table");
+    const tableBody = document.getElementById("missingTableBody");
+    const missingMeta = document.getElementById("missingMeta");
+
+    const isNumber = (value) => {
+      const num = typeof value === "number" ? value : parseFloat(value);
+      return Number.isFinite(num);
+    };
+
+    const hasCoords = (item) => isNumber(item.lat) && isNumber(item.lon);
+
+    const countBy = (arr, key, fallback = "unknown") => {
+      return arr.reduce((acc, item) => {
+        const raw = item[key];
+        const val = raw === undefined || raw === null || raw === "" ? fallback : raw;
+        acc[val] = (acc[val] || 0) + 1;
+        return acc;
+      }, {});
+    };
+
+    const buildLocation = (item) => {
+      return [item.address, item.city, item.region, item.country].filter(Boolean).join(", ");
+    };
+
+    const buildGeoQuery = (item) => {
+      return item.geo_query || buildLocation(item);
+    };
+
+    const escapeHtml = (str = "") =>
+      String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+
+    const renderList = (target, data) => {
+      target.innerHTML = Object.entries(data)
+        .sort((a, b) => b[1] - a[1])
+        .map(([label, value]) => `<li><strong>${label}</strong>: ${value}</li>`)
+        .join("");
+    };
+
+    const copyToClipboard = async (text) => {
+      if (!text) return;
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch (err) {
+        console.error("Copy failed", err);
+      }
+    };
+
+    document.addEventListener("click", (event) => {
+      const btn = event.target.closest("[data-copy]");
+      if (!btn) return;
+      const query = btn.dataset.copy;
+      copyToClipboard(query);
+      btn.textContent = "Copied";
+      setTimeout(() => {
+        btn.textContent = "Copy";
+      }, 1000);
+    });
+
+    const load = async () => {
+      try {
+        const response = await fetch("{{ '/search.json' | relative_url }}");
+        if (!response.ok) throw new Error("Failed to load search.json");
+        const data = await response.json();
+        const total = data.length;
+        const withCoords = data.filter(hasCoords);
+        const withoutCoords = data.filter((item) => !hasCoords(item));
+        const collectionCounts = countBy(data, "collection");
+        const precisionCounts = countBy(data, "geo_precision", "none");
+
+        summaryEl.innerHTML = `
+          <p>Total listings: <strong>${total}</strong></p>
+          <p>With coordinates: <strong>${withCoords.length}</strong> | Missing coordinates: <strong>${withoutCoords.length}</strong></p>
+        `;
+
+        renderList(collectionList, collectionCounts);
+        renderList(precisionList, precisionCounts);
+        gridEl.hidden = false;
+
+        missingMeta.textContent = withoutCoords.length
+          ? "Listings lacking lat/lon. Use the geo query to populate coordinates."
+          : "All listings have coordinates.";
+
+        tableBody.innerHTML = withoutCoords
+          .map((item) => {
+            const location = buildLocation(item) || "—";
+            const query = buildGeoQuery(item) || "";
+            const precision = item.geo_precision || "none";
+            return `
+              <tr>
+                <td>${escapeHtml(item.title || item.name)}</td>
+                <td><span class="geo-audit__pill">${escapeHtml(item.collection)}</span></td>
+                <td>${escapeHtml(precision)}</td>
+                <td>${escapeHtml(location)}</td>
+                <td>${query ? escapeHtml(query) : "—"}</td>
+                <td>${query ? `<button type="button" data-copy="${escapeHtml(query)}">Copy</button>` : ""}</td>
+              </tr>
+            `;
+          })
+          .join("");
+
+        tableWrapper.hidden = false;
+      } catch (err) {
+        console.error(err);
+        summaryEl.textContent = "Failed to load geo data.";
+      }
+    };
+
+    load();
+  })();
+</script>

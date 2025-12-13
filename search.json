@@ -47,6 +47,7 @@ permalink: /search.json
     {% assign specialty = specialty | join: ',' | downcase | split: ',' | uniq %}
   {% endif %}
   {% assign long_desc = doc.description | default: doc.short_description | default: doc.meta_description | default: doc.excerpt | default: doc.long_description %}
+  {% assign geo_precision = doc.geo_precision | default: 'none' %}
   {
     "id": "{{ doc.id | default: doc.slug | slugify }}",
     "title": {{ doc.title | default: doc.name | jsonify }},
@@ -62,6 +63,7 @@ permalink: /search.json
     "country_slug": {{ doc.country_slug | jsonify }},
     "region": {{ doc.region | jsonify }},
     "city": {{ doc.city | jsonify }},
+    "address": {{ doc.address | jsonify }},
     "practices": {{ practices | jsonify }},
     "products": {{ products | jsonify }},
     "services": {{ services | jsonify }},
@@ -71,6 +73,11 @@ permalink: /search.json
     "hours": {{ doc.hours | jsonify }},
     "lat": {{ doc.lat | jsonify }},
     "lon": {{ doc.lon | jsonify }},
+    "geo_precision": {{ geo_precision | jsonify }},
+    "geo_source": {{ doc.geo_source | jsonify }},
+    "geo_query": {{ doc.geo_query | jsonify }},
+    "geo_label": {{ doc.geo_label | jsonify }},
+    "geo_last_verified": {{ doc.geo_last_verified | jsonify }},
     "featured": {{ doc.featured | default: false | jsonify }},
     "description": {{ long_desc | strip_html | strip_newlines | jsonify }}
   }{% unless forloop.last %},{% endunless %}
