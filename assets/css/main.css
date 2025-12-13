@@ -714,6 +714,14 @@ a:focus-visible {
   display: grid;
   gap: 1.25rem;
 }
+.listing__header-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.listing__header-row > :first-child {
+  flex: 1;
+}
 .listing__header h1 {
   margin: 0.1rem 0 0.3rem;
   font-family: "Space Grotesk", sans-serif;
@@ -754,9 +762,6 @@ a:focus-visible {
   gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.listing__meta-top .share-control {
-  margin-left: auto;
-}
 .listing__actions {
   display: flex;
   gap: 0.5rem;
@@ -765,6 +770,10 @@ a:focus-visible {
 }
 .share-control {
   position: relative;
+}
+.listing__header .share-control {
+  margin-left: auto;
+  display: inline-flex;
 }
 .share-button__icon {
   margin-right: 0.35rem;
@@ -807,6 +816,9 @@ a:focus-visible {
 @media (min-width: 768px) {
   .share-control {
     display: none;
+  }
+  .listing__header .share-control {
+    display: inline-flex;
   }
 }
 

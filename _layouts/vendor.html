@@ -15,19 +15,32 @@ map: false
 {% assign phone_href = page.phone | default: "" | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
 <section class="listing">
   <header class="listing__header">
-    <div>
-      <p class="listing__type">{{ page.type | default: 'Vendor' | capitalize }}</p>
-      <h1>{{ display_title }}</h1>
-      <p class="listing__location">
-        {% include address-block.html %}
-      </p>
-      {% if website_url != "" or page.email or phone_href != "" %}
-      <div class="listing__contact">
-        {% if website_url != "" %}<a href="{{ website_url }}" rel="noopener">Website</a>{% endif %}
-        {% if page.email %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
-        {% if phone_href != "" %}<a href="tel:{{ phone_href }}">{{ page.phone }}</a>{% endif %}
+    <div class="listing__header-row">
+      <div>
+        <p class="listing__type">{{ page.type | default: 'Vendor' | capitalize }}</p>
+        <h1>{{ display_title }}</h1>
+        <p class="listing__location">
+          {% include address-block.html %}
+        </p>
+        {% if website_url != "" or page.email or phone_href != "" %}
+        <div class="listing__contact">
+          {% if website_url != "" %}<a href="{{ website_url }}" rel="noopener">Website</a>{% endif %}
+          {% if page.email %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
+          {% if phone_href != "" %}<a href="tel:{{ phone_href }}">{{ page.phone }}</a>{% endif %}
+        </div>
+        {% endif %}
       </div>
-      {% endif %}
+      <div class="share-control" data-share>
+        <button type="button" class="button ghost share-button" aria-expanded="false">
+          <span class="share-button__icon" aria-hidden="true">⤴</span>
+          Share
+        </button>
+        <div class="share-menu" role="menu">
+          <button type="button" class="share-menu__item" data-share-copy>Copy link</button>
+          <a class="share-menu__item" data-share-email href="#" role="menuitem">Email</a>
+          <a class="share-menu__item" data-share-facebook href="#" role="menuitem">Facebook</a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -52,17 +65,6 @@ map: false
   <div class="listing__meta">
     <div class="listing__meta-top">
       {% include rating.html listing=page %}
-      <div class="share-control" data-share>
-        <button type="button" class="button ghost share-button" aria-expanded="false">
-          <span class="share-button__icon" aria-hidden="true">⤴</span>
-          Share
-        </button>
-        <div class="share-menu" role="menu">
-          <button type="button" class="share-menu__item" data-share-copy>Copy link</button>
-          <a class="share-menu__item" data-share-email href="#" role="menuitem">Email</a>
-          <a class="share-menu__item" data-share-facebook href="#" role="menuitem">Facebook</a>
-        </div>
-      </div>
     </div>
     <div class="listing__actions">
       <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}">Update listing</a>
