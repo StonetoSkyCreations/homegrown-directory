@@ -754,6 +754,47 @@ a:focus-visible {
   flex-wrap: wrap;
   margin-bottom: 0.75rem;
 }
+.share-control {
+  position: relative;
+}
+.share-button__icon {
+  margin-right: 0.35rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+.share-menu {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  min-width: 180px;
+  display: none;
+  padding: 0.35rem 0;
+  z-index: 10;
+}
+.share-menu--open {
+  display: block;
+}
+.share-menu__item {
+  display: block;
+  width: 100%;
+  padding: 0.55rem 0.9rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.share-menu__item:hover,
+.share-menu__item:focus-visible {
+  background: #f5f7f2;
+  outline: none;
+}
 
 .tag-list {
   list-style: none;

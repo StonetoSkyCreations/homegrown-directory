@@ -90,6 +90,17 @@ map: false
 
   <div class="listing__meta">
     <div class="listing__actions">
+      <div class="share-control" data-share>
+        <button type="button" class="button ghost share-button" aria-expanded="false">
+          <span class="share-button__icon" aria-hidden="true">⤴</span>
+          Share
+        </button>
+        <div class="share-menu" role="menu">
+          <button type="button" class="share-menu__item" data-share-copy>Copy link</button>
+          <a class="share-menu__item" data-share-email href="#" role="menuitem">Email</a>
+          <a class="share-menu__item" data-share-facebook href="#" role="menuitem">Facebook</a>
+        </div>
+      </div>
       <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}">Update listing</a>
       <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}">Review this place</a>
     </div>

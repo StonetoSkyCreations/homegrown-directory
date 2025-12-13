@@ -116,6 +116,109 @@
     return Array.from(new Set(result.filter(Boolean)));
   };
 
+  const initShareControls = () => {
+    const shareControls = Array.from(document.querySelectorAll("[data-share]"));
+    if (!shareControls.length) return;
+
+    const getShareData = () => {
+      const titleEl = document.querySelector(".listing__header h1, h1");
+      const title = titleEl ? titleEl.textContent.trim() : document.title;
+      const url = window.location.href.split("#")[0];
+      return { title, url };
+    };
+
+    const closeAllMenus = () => {
+      shareControls.forEach((control) => {
+        const menu = control.querySelector(".share-menu");
+        const trigger = control.querySelector(".share-button");
+        if (menu) menu.classList.remove("share-menu--open");
+        if (trigger) trigger.setAttribute("aria-expanded", "false");
+      });
+    };
+
+    document.addEventListener("click", (event) => {
+      if (!shareControls.length) return;
+      const isInside = shareControls.some((control) => control.contains(event.target));
+      if (!isInside) closeAllMenus();
+    });
+
+    shareControls.forEach((control) => {
+      const trigger = control.querySelector(".share-button");
+      const menu = control.querySelector(".share-menu");
+      const copyBtn = control.querySelector("[data-share-copy]");
+      const emailLink = control.querySelector("[data-share-email]");
+      const facebookLink = control.querySelector("[data-share-facebook]");
+      if (!trigger || !menu) return;
+
+      const populateLinks = () => {
+        const { title, url } = getShareData();
+        if (emailLink) {
+          emailLink.href = `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(url)}`;
+        }
+        if (facebookLink) {
+          facebookLink.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+          facebookLink.target = "_blank";
+          facebookLink.rel = "noopener";
+        }
+        return { title, url };
+      };
+
+      const toggleMenu = (state) => {
+        const willOpen = typeof state === "boolean" ? state : !menu.classList.contains("share-menu--open");
+        closeAllMenus();
+        if (willOpen) {
+          populateLinks();
+          menu.classList.add("share-menu--open");
+          trigger.setAttribute("aria-expanded", "true");
+        } else {
+          menu.classList.remove("share-menu--open");
+          trigger.setAttribute("aria-expanded", "false");
+        }
+      };
+
+      trigger.addEventListener("click", async () => {
+        const { title, url } = populateLinks();
+        if (navigator.share) {
+          try {
+            await navigator.share({ title, url });
+            return;
+          } catch (err) {
+            if (err && err.name === "AbortError") return;
+          }
+        }
+        toggleMenu(true);
+      });
+
+      if (copyBtn) {
+        copyBtn.addEventListener("click", async () => {
+          const { url } = getShareData();
+          try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              await navigator.clipboard.writeText(url);
+            } else {
+              const textarea = document.createElement("textarea");
+              textarea.value = url;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "absolute";
+              textarea.style.left = "-9999px";
+              document.body.appendChild(textarea);
+              textarea.select();
+              document.execCommand("copy");
+              textarea.remove();
+            }
+            copyBtn.textContent = "Copied";
+            setTimeout(() => {
+              copyBtn.textContent = "Copy link";
+              toggleMenu(false);
+            }, 1200);
+          } catch (err) {
+            console.error("Copy failed", err);
+          }
+        });
+      }
+    });
+  };
+
   const populateHeroRegions = (countrySlug) => {
     if (!heroRegionSelect || !listings.length) return;
     const activeCountry = countrySlug || getActiveCountry();
@@ -677,5 +780,6 @@
     });
   }
 
+  initShareControls();
   fetchListings();
 })();
