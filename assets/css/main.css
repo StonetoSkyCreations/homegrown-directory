@@ -674,6 +674,7 @@ a:focus-visible {
   display: grid;
   gap: 0.35rem;
   position: relative;
+  transition: transform 180ms cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 180ms ease, border-color 180ms ease;
 }
 .listing-card__meta {
   display: flex;
@@ -1191,6 +1192,31 @@ a:focus-visible {
   background: #faf7f1;
   padding: 1rem;
   position: relative;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .listing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.08);
+    border-color: rgba(37, 88, 47, 0.18);
+  }
+}
+
+.listing-card:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08), 0 0 0 1px var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .listing-card {
+    transition: box-shadow 120ms ease, border-color 120ms ease;
+  }
+  .listing-card:hover {
+    transform: none;
+  }
+  .listing-card:focus-within {
+    transform: none;
+  }
 }
 
 /* Badge */
