@@ -748,6 +748,15 @@ a:focus-visible {
 .listing__meta h2 {
   margin-bottom: 0.4rem;
 }
+.listing__meta-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.listing__meta-top .share-control {
+  margin-left: auto;
+}
 .listing__actions {
   display: flex;
   gap: 0.5rem;
