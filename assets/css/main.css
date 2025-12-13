@@ -1133,3 +1133,10 @@ a:focus-visible {
 .empty-panel p {
   margin: 0;
 }
+.empty-panel__actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+}
