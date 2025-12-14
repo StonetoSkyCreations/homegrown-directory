@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Northland
 city: Paihia
+address: "1106 Paihia Road, Ōpua 0241"
 practices:
 - Organic (uncertified)
 - Free-range

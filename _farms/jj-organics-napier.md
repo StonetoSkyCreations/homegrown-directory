@@ -5,6 +5,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Hawke's Bay
 city: Napier
+address: "232 Riverbend Road, Meeanee, Napier 4110"
 practices:
 - Organic (uncertified)
 products:

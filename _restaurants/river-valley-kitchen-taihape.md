@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Manawatū-Whanganui
 city: Taihape
+address: "266 Mangahoata Road, RD2, Taihape 4562"
 practices:
 - Regenerative
 - Spray-free

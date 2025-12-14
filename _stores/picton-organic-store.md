@@ -10,7 +10,7 @@ description: Organic food, produce, and health goods store in Picton.
 country: NZ
 country_slug: new-zealand
 region: Marlborough
-address: ''
+address: "60 Wellington Street, Picton 7220"
 phone: ''
 email: ''
 website: ''

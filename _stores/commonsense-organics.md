@@ -17,6 +17,7 @@ locations:
 - commonsense-kapiti
 - commonsense-kilbirnie
 - commonsense-lower-hutt
+address: "260 Wakefield Street, Wellington 6011"
 lat: -41.5000831
 lon: 172.8344077
 sources: []

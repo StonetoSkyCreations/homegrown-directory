@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Waikato
 city: Raglan
+address: "611 Wainui Road, Raglan 3297"
 practices:
 - Organic (uncertified)
 - Seasonal menu

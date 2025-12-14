@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Hawke's Bay
 city: Te Awanga
+address: "468 Clifton Road, Te Awanga, Hastings 4172"
 practices:
 - Organic (uncertified)
 - Local sourcing

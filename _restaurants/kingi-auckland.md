@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Auckland
 city: Auckland
+address: "29 Galway Street, Britomart, Auckland 1010"
 practices:
 - Sustainable seafood
 - Seasonal menu

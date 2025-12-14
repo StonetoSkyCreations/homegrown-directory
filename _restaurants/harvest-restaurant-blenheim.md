@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Marlborough
 city: Blenheim
+address: "776 Rapaura Road, Rapaura, Blenheim 7273"
 practices:
 - Seasonal menu
 - Organic (uncertified)

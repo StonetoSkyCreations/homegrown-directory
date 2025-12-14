@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Otago
 city: Wānaka
+address: "47 Helwick Street, Wānaka 9305"
 practices:
 - Organic (uncertified)
 - Free-range

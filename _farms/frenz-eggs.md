@@ -9,7 +9,7 @@ country: NZ
 country_slug: new-zealand
 region: Auckland
 city: Papakura
-address: ''
+address: "1–3 Crosbie Road, Pukekohe 2120"
 phone: ''
 email: ''
 website: https://www.frenz.co.nz

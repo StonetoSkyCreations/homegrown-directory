@@ -5,6 +5,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Waikato
 city: Whitianga
+address: "RD1/2486 Tairua–Whitianga Road, Kaimarama 3591"
 lat: -36.8333
 lon: 175.7
 practices:

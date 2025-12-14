@@ -9,7 +9,7 @@ country: NZ
 country_slug: new-zealand
 region: Hawke's Bay
 city: Havelock North
-address: ''
+address: "205 Napier Road, Havelock North, Hawke's Bay 4130"
 phone: ''
 email: ''
 website: ''

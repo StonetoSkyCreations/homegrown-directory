@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Wellington
 city: Wellington
+address: "23 Kate Sheppard Place, Wellington 6011"
 suburb: Pipitea
 practices:
 - Organic (uncertified)

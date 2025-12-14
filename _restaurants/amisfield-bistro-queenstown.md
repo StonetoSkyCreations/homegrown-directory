@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Otago
 city: Queenstown
+address: "10 Lake Hayes Road, RD 1, Queenstown 9371"
 practices:
 - Organic (uncertified)
 - Biodynamic

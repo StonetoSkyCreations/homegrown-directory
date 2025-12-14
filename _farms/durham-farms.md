@@ -10,7 +10,7 @@ country: NZ
 country_slug: new-zealand
 region: Northland
 city: Waipu
-address: ''
+address: "128 Durham Road, Waipu 0582"
 phone: ''
 email: ''
 website: https://www.durhamfarms.co.nz

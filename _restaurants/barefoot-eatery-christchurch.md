@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Canterbury
 city: Christchurch
+address: "20 Welles Street, Christchurch Central City 8011"
 suburb: Riverside Market
 practices:
 - Organic (uncertified)

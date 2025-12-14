@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Otago
 city: Queenstown
+address: "24 Hawthorne Drive, Frankton, Queenstown 9300"
 suburb: Frankton
 practices:
 - Free-range

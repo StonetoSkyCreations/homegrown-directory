@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Auckland
 city: Auckland
+address: "63–67 Nelson Street, Auckland CBD 1010"
 practices:
 - Organic (uncertified)
 products:

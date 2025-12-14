@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Wellington
 city: Wellington
+address: "39B Dixon Street, Te Aro, Wellington 6011"
 practices:
 - Free-range
 - Seasonal menu

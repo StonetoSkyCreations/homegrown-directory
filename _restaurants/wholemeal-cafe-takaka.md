@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Tasman
 city: Takaka
+address: "60 Commercial Street, Tākaka 7110"
 practices:
 - Organic (uncertified)
 - Local sourcing

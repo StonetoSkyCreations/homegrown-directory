@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Waikato
 city: Matatoki
+address: "4 Wainui Road, Matatoki 3578"
 practices:
 - Organic (uncertified)
 products:

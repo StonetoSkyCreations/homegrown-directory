@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Canterbury
 city: Christchurch
+address: "95 Westminster Street, St Albans, Christchurch 8014"
 suburb: St Albans
 practices:
 - Organic (certified)

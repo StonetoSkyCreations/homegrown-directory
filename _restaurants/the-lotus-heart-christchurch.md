@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Canterbury
 city: Christchurch
+address: "363 St Asaph Street, Christchurch 8011"
 practices:
 - Organic (uncertified)
 - Local sourcing

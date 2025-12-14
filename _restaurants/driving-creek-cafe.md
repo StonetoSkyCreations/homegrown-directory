@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Waikato
 city: Coromandel
+address: "180 Driving Creek Road, Coromandel 3506"
 practices:
 - Seasonal menu
 - Organic (uncertified)

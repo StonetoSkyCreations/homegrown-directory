@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Canterbury
 city: Timaru
+address: "1A Sarah Street, Timaru 7910"
 practices:
 - Organic (uncertified)
 - Spray-free

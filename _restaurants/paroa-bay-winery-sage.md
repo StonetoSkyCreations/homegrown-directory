@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Northland
 city: Russell
+address: "31 Otamarua Road, Russell 0204"
 practices:
 - Seasonal menu
 - Local sourcing

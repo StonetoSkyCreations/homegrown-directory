@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Hawke's Bay
 city: Napier
+address: "45 Hastings Street, Napier South, Napier 4110"
 practices:
 - Organic (uncertified)
 - Seasonal menu

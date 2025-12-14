@@ -11,7 +11,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Auckland
 city: Waiheke Island
-address: ''
+address: "599 Orapiu Road, Waiheke Island, Auckland 1971"
 practices_tags:
 - spray-free
 - permaculture

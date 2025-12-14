@@ -10,7 +10,7 @@ description: Wānaka organic store and cafe focused on wholefoods.
 country: NZ
 country_slug: new-zealand
 region: Otago
-address: ''
+address: "74 Ardmore Street, Wānaka 9305"
 phone: ''
 email: ''
 website: ''

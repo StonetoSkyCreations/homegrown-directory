@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Canterbury
 city: Christchurch
+address: "2 Worcester Street, Christchurch 8013"
 suburb: Arts Centre
 practices:
 - Organic (uncertified)

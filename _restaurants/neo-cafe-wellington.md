@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Wellington
 city: Wellington
+address: "132 Willis Street, Wellington 6011"
 practices:
 - Seasonal menu
 - Free-range

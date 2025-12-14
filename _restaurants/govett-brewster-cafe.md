@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Taranaki
 city: New Plymouth
+address: "42 Queen Street, New Plymouth 4310"
 practices:
 - Seasonal menu
 - Local sourcing

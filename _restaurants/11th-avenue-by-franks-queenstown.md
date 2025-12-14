@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Otago
 city: Queenstown
+address: "1/25 Eleventh Avenue, Lower Shotover, Queenstown 9371"
 suburb: Lower Shotover
 practices:
 - Free-range

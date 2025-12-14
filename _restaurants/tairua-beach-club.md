@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Waikato
 city: Tairua
+address: "128 Paku Drive, Tairua 3508"
 practices:
 - Seasonal menu
 - Local sourcing

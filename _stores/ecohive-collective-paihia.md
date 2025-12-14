@@ -8,6 +8,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Northland
 city: Paihia
+address: "2 Selwyn Road, Paihia 0200"
 practices:
 - Organic (uncertified)
 products:

@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Auckland
 city: Matakana
+address: "1004 Leigh Road, Matakana 0985"
 practices:
 - Local sourcing
 - Seasonal menu

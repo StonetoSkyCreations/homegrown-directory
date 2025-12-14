@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Waikato
 city: Coromandel
+address: "31 Kapanga Road, Coromandel 3506"
 practices:
 - Seasonal menu
 - Local sourcing

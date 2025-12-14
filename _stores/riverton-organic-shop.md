@@ -11,7 +11,7 @@ description: Riverton store focused on organic and wholefood products from South
 country: NZ
 country_slug: new-zealand
 region: Southland
-address: ''
+address: "154 Palmerston Street, Riverton 9822"
 phone: ''
 email: ''
 website: ''

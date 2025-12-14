@@ -6,6 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Northland
 city: Paihia
+address: "69 Marsden Road, Paihia 0200"
 practices:
 - Seasonal menu
 - Free-range
