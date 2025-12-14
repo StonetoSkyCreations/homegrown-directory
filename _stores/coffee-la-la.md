@@ -20,6 +20,7 @@ practices:
 - small-batch
 - origin-led roasting
 - award-winning
+- eco-conscious
 products:
 - coffee beans
 - coffee blends
@@ -38,7 +39,7 @@ website: https://coffeelala.com
 email: coffee@coffeelala.com
 phone: "+64 7 866 5373"
 social: ''
-hours: ''
+hours: Mon-Thu 9:00-16:00
 market_days: []
 lat: -36.74246236999414
 lon: 175.7230275806698
