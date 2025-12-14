@@ -1,27 +1,22 @@
 {% assign listing = include.listing | default: include.item | default: listing %}
 {% assign practices_tags = listing.practices_tags | default: listing.practices | default: listing.sourcing_tags | default: listing.services | default: empty %}
 {% assign practices_joined = practices_tags | join: ',' %}
-{% assign products_source = '' %}
-{% if listing.products_tags %}
-  {% assign products_source = listing.products_tags | join: ',' %}
-{% elsif listing.products %}
-  {% if listing.products contains ',' %}
-    {% assign products_source = listing.products %}
-  {% else %}
-    {% assign products_source = listing.products | join: ',' %}
-  {% endif %}
-{% endif %}
 {% assign products_array = "" | split: "" %}
-{% if products_source %}
-  {% assign raw_products = products_source | split: ',' %}
-  {% for product in raw_products %}
-    {% assign product_clean = product | strip %}
-    {% if product_clean != "" %}
-      {% assign products_array = products_array | push: product_clean %}
-    {% endif %}
-  {% endfor %}
-  {% assign products_array = products_array | uniq %}
+{% if listing.products_tags %}
+  {% assign products_array = products_array | concat: listing.products_tags %}
 {% endif %}
+{% if listing.products %}
+  {% assign products_array = products_array | concat: listing.products %}
+{% endif %}
+{% assign cleaned_products = "" | split: "" %}
+{% for product in products_array %}
+  {% assign product_clean = product | strip %}
+  {% if product_clean != "" %}
+    {% assign cleaned_products = cleaned_products | push: product_clean %}
+  {% endif %}
+{% endfor %}
+{% assign products_array = cleaned_products | uniq %}
+{% assign products_array = products_array | uniq %}
 {% assign review_target = listing.slug | default: listing.title | default: listing.name | slugify %}
 {% assign card_title = listing.title | default: listing.name %}
 {% assign encoded_title = card_title | uri_escape %}
