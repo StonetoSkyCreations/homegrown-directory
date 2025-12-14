@@ -13,9 +13,13 @@ seo_description: >
     <p class="lead">Explore farms, markets, grocers, and eateries near you.</p>
     <div class="hero__filters">
       <label for="heroRegion" class="muted">Browse by region</label>
-      <select id="heroRegion">
-        <option value="all">All regions</option>
-      </select>
+      <div class="hero__filters-row">
+        <select id="heroRegion">
+          <option value="all">All regions</option>
+        </select>
+        <button type="button" class="button ghost" data-near-me>Near me</button>
+      </div>
+      <span class="muted near-me-status" data-near-me-status></span>
     </div>
     <div class="search-controls">
       <label for="searchInput" class="muted">Search by city, region, product, or business name…</label>

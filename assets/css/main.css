@@ -242,14 +242,30 @@ a:focus-visible {
 .hero__filters {
   display: grid;
   gap: 0.35rem;
-  max-width: 280px;
+  max-width: 480px;
   margin-top: 0.35rem;
+}
+.hero__filters-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.hero__filters-row select {
+  flex: 1;
+}
+.hero__filters-row .button {
+  white-space: nowrap;
 }
 .hero__filters select {
   padding: 0.7rem 0.85rem;
   border-radius: 10px;
   border: 1px solid var(--border);
   background: #fff;
+}
+.near-me-status {
+  min-height: 1rem;
+  display: block;
 }
 .country-note {
   margin: 0;
@@ -268,6 +284,14 @@ a:focus-visible {
 }
 .hero--home .hero__actions .button {
   min-width: 180px;
+}
+@media (max-width: 640px) {
+  .hero__filters-row {
+    flex-direction: column;
+  }
+  .hero__filters-row .button {
+    width: 100%;
+  }
 }
 
 .directory-hero {
