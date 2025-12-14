@@ -1,50 +1,47 @@
 ---
 layout: store
+title: Thames Organic Shop
 slug: thames-organic-shop
-name: Thames Organic Shop (The Organic Co-op)
-brand: The Organic Co-op
-type: organic-store
-subtype: organic-store
-category: retailer
-description: Volunteer-run organic co-op making wholefoods available in Thames.
-country: NZ
+collection: stores
 country_slug: new-zealand
-region: Waikato
-address: 736 Pollen Street
-phone: ''
-email: ''
-website: ''
-social_links: []
-sourcing_tags:
-- organic
-products:
-- Pantry goods
-- Vegetables
-- Fruit
-market_days: []
-source_urls:
-- Local co-op ensuring organic food access in Thames
-last_checked: ''
-notes: ''
-published: true
+country: New Zealand
+region: Coromandel
 city: Thames
-? Community organic co-op created by volunteers to keep certified organic food and
-  sustainable products available in the Thames area. Source
-: user-supplied list
-lat: -37.1352473
-lon: 175.5406267
-geo_precision: exact
-geo_source: nominatim
-geo_last_verified: '2025-12-14'
-geo_label: '736'
-geo_query: 736 Pollen Street, Thames, Waikato, New Zealand
-title: Thames Organic Shop (The Organic Co-op)
-sources: []
+address: "736 Pollen Street, Thames"
+description: Not‑for‑profit organic co‑op shop in Thames offering locally grown produce, organic groceries and sustainable lifestyle goods.
+long_description: |
+  The Thames Organic Shop is a community‑run cooperative located on Pollen Street. It provides a range of organic and New Zealand‑grown fruit and vegetables along with dried goods, grains, herbs and spices, dairy products and eco‑friendly household supplies. Produce boxes are available for order, making it easy for locals to access fresh seasonal goods. The shop operates on a not‑for‑profit basis, reinvesting earnings to support sustainable living initiatives and educational events within the community. Friendly volunteers offer advice on how to live more sustainably and help customers choose ethically sourced products.
+practices:
+- organic
+- not‑for‑profit
+products:
+- fruit
+- vegetables
+- grains
+- herbs
+- spices
+- dairy products
+- eco household supplies
+- produce boxes
+services:
+- organic grocer
+- produce box orders
+website: ''
+email: thamesorganicshop@gmail.com
+phone: "+64 7 868 8797"
+social: ''
+hours: ''
+market_days: []
+lat: -37.13385430691166
+lon: 175.5407954136953
+sourced_from: []
 supplies_to: []
-practices: []
+also_referenced_by: []
+sources:
+- https://thecoromandel.nz/explore/thames-organic-shop#:~:text=Thames%20Organic%20Shophttps://thecoromandel.nz/explore/thames-organic-shop#:~:text=
+last_checked: 2025-12-12
 practices_tags: []
 products_tags: []
-services: []
 services_tags: []
 certifications: []
 specialty_tags: []
