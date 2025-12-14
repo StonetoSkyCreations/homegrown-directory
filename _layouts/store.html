@@ -58,7 +58,17 @@ map: false
     {% if short_description != "" %}
     <div class="listing__intro">
       <p>{{ short_description }}</p>
-    </div>
+{% if page.long_description %}
+  <div class="listing-long-description">
+    {{ page.long_description | markdownify }}
+  </div>
+{% endif %}
+
+{% if page.hours %}
+  <h2>Hours</h2>
+  <p class="muted">{{ page.hours | escape }}</p>
+{% endif %}    
+</div>
     {% endif %}
 
     {% if trimmed_body != "" %}
