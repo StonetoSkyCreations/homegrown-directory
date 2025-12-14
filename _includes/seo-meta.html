@@ -41,26 +41,40 @@ SEO/AEO meta builder
   | replace: "  ", " "
   | strip
 -%}
-{%- assign base_description = cleaned_desc | truncate: 155, "…" -%}
+{%- assign base_description = cleaned_desc | truncatewords: 28, "…" -%}
+
+{%- assign loc_parts = "" | split: "" -%}
+{%- if page.city %}{% assign loc_parts = loc_parts | push: page.city %}{% endif -%}
+{%- if page.region %}{% assign loc_parts = loc_parts | push: page.region %}{% endif -%}
+{%- assign loc_text = loc_parts | join: ", " -%}
 
 {% capture desc_with_context %}
   {% if page.collection and page.collection != 'posts' %}
-    {{ page.title | default: type_label }}{% if location_text != "" %} in {{ location_text }}{% endif %}{% if primary_practice != "" %} — {{ primary_practice }}{% endif %}. {{ base_description }}
+    {{ page.title | default: type_label }}{% if loc_text != "" %} in {{ loc_text }}{% endif %}. {{ base_description }}
   {% else %}
     {{ base_description }}
   {% endif %}
 {% endcapture %}
 {% assign page_description = desc_with_context | strip | replace: "  ", " " | replace: "  ", " " | truncate: 155, "…" %}
 
+{% assign display_name = page.title | default: page.name | default: site_name %}
+{% assign loc_for_title = "" %}
+{% if page.city %}
+  {% assign loc_for_title = page.city %}
+  {% if page.region %}{% assign loc_for_title = loc_for_title | append: ", " | append: page.region %}{% endif %}
+{% elsif page.region %}
+  {% assign loc_for_title = page.region %}
+{% endif %}
+
 {% capture auto_title %}
   {% if page.collection and page.collection != 'posts' %}
-    {{ page.title | default: type_label }}{% if type_label %} | {{ type_label }}{% endif %}{% if location_text != "" %} in {{ location_text }}{% endif %}{% if primary_practice != "" %} | {{ primary_practice }}{% endif %} | {{ site_name }}
+    {{ display_name }} — {{ type_label }}{% if loc_for_title != "" %} in {{ loc_for_title }}{% endif %} | {{ site_name }}
   {% elsif page.layout == 'home' or page.url == '/' %}
-    {{ site_name }} | {{ site.tagline | default: "Find food grown with care" }}
+    {{ site_name }} — {{ site.tagline | default: "Find food grown with care" }}
   {% elsif page.collection == 'posts' %}
     {{ page.title }} | Insights on organic and local food | {{ site_name }}
   {% else %}
-    {{ page.title | default: site_name }} | {{ site.description | default: "Organic and local food directory" }}
+    {{ display_name }} | {{ site.description | default: "Organic and local food directory" }} | {{ site_name }}
   {% endif %}
 {% endcapture %}
 {% assign page_title = page.seo_title | default: auto_title | strip | replace: "  ", " " %}
