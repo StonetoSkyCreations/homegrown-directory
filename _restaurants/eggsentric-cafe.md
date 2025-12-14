@@ -2,6 +2,7 @@
 title: Eggsentric Cafe
 slug: eggsentric-cafe
 collection: restaurants
+published: true
 country_slug: new-zealand
 country: New Zealand
 region: Coromandel

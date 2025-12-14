@@ -2,6 +2,7 @@
 title: All Things Organic (Tairua)
 slug: all-things-organic-tairua
 collection: restaurants
+published: true
 country_slug: new-zealand
 country: New Zealand
 region: Coromandel

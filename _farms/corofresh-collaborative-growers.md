@@ -4,7 +4,7 @@ slug: corofresh-collaborative-growers
 collection: farms
 country_slug: new-zealand
 country: New Zealand
-region: Coroglen
+region: Coromandel
 city: Coroglen
 address: ''
 description: Collective of spray‑free regenerative growers around Coroglen supplying produce boxes of seasonal vegetables, greens, honey and fruit to local households.

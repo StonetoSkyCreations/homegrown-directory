@@ -2,6 +2,7 @@
 title: Earth Store Whitianga
 slug: earth-store-whitianga
 collection: restaurants
+published: true
 country_slug: new-zealand
 country: New Zealand
 region: Coromandel

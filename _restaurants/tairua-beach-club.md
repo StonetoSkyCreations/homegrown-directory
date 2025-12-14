@@ -2,6 +2,7 @@
 title: Tairua Beach Club
 slug: tairua-beach-club
 collection: restaurants
+published: true
 country_slug: new-zealand
 country: New Zealand
 region: Coromandel

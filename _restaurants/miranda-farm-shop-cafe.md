@@ -2,6 +2,7 @@
 title: Miranda Farm Shop & Cafe
 slug: miranda-farm-shop-cafe
 collection: restaurants
+published: true
 country_slug: new-zealand
 country: New Zealand
 region: Coromandel
