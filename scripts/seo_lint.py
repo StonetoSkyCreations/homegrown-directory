@@ -18,6 +18,7 @@ SITE_DIR = Path(__file__).resolve().parent.parent / "_site"
 class HeadParser(HTMLParser):
     def __init__(self):
         super().__init__()
+        self.in_head = False
         self.in_title = False
         self.titles = []
         self.current_title = []
@@ -25,10 +26,13 @@ class HeadParser(HTMLParser):
         self.ld_json_count = 0
 
     def handle_starttag(self, tag, attrs):
+        if tag.lower() == "head":
+            self.in_head = True
         if tag.lower() == "title":
-            self.in_title = True
-            self.current_title = []
-        if tag.lower() == "meta":
+            if self.in_head:
+                self.in_title = True
+                self.current_title = []
+        if tag.lower() == "meta" and self.in_head:
             attrs_dict = {k.lower(): (v or "") for k, v in attrs}
             name = attrs_dict.get("name", "").lower()
             if name == "description":
@@ -40,6 +44,8 @@ class HeadParser(HTMLParser):
                 self.ld_json_count += 1
 
     def handle_endtag(self, tag):
+        if tag.lower() == "head":
+            self.in_head = False
         if tag.lower() == "title" and self.in_title:
             title_text = "".join(self.current_title).strip()
             self.titles.append(title_text)
@@ -73,11 +79,14 @@ def main():
     ignore_paths = set(config.get("ignore_paths", []))
     allow_dupe_paths = set(config.get("allow_duplicate_titles_for_paths", []))
 
+    html_files = list(SITE_DIR.rglob("*.html"))
     duplicate_map = {}
+    title_issues = []
     desc_issues = []
     ld_json_issues = []
+    parse_issues = []
 
-    for file_path in SITE_DIR.rglob("*.html"):
+    for file_path in html_files:
         url_path = url_path_from_file(file_path)
         if url_path in ignore_paths:
             continue
@@ -86,16 +95,20 @@ def main():
         try:
             parser.feed(file_path.read_text(encoding="utf-8"))
         except Exception as exc:
-            desc_issues.append(
-                (url_path, f"parse_error: {exc.__class__.__name__}: {exc}")
-            )
+            parse_issues.append((url_path, f"{exc.__class__.__name__}: {exc}"))
             continue
 
-        title = parser.titles[0].strip() if parser.titles else ""
+        if not parser.titles:
+            title_issues.append((url_path, "missing_title"))
+            title = ""
+        elif len(parser.titles) > 1:
+            title_issues.append((url_path, "multiple_titles"))
+            title = parser.titles[0].strip()
+        else:
+            title = parser.titles[0].strip()
+
         if title:
             duplicate_map.setdefault(title, []).append(url_path)
-        else:
-            desc_issues.append((url_path, "missing_title"))
 
         if len(parser.meta_descriptions) == 0:
             desc_issues.append((url_path, "missing_description"))
@@ -122,7 +135,7 @@ def main():
     issues_found = any([duplicate_issues, desc_issues, ld_json_issues])
 
     print("\n== SEO Lint Report ==")
-    print(f"Scanned HTML files: {len(list(SITE_DIR.rglob('*.html')))}")
+    print(f"Scanned HTML files: {len(html_files)}")
 
     print("\nDuplicate titles:")
     if duplicate_issues:
@@ -130,6 +143,13 @@ def main():
             print(f'  "{title}":')
             for p in paths:
                 print(f"    - {p}")
+    else:
+        print("  None")
+
+    print("\nTitle issues (missing/multiple):")
+    if title_issues:
+        for path, reason in title_issues:
+            print(f"  {path}: {reason}")
     else:
         print("  None")
 
@@ -147,7 +167,14 @@ def main():
     else:
         print("  None")
 
-    if issues_found:
+    print("\nParse issues:")
+    if parse_issues:
+        for path, reason in parse_issues:
+            print(f"  {path}: {reason}")
+    else:
+        print("  None")
+
+    if issues_found or title_issues or parse_issues:
         print("\nLint FAILED.")
         return 1
     print("\nLint PASSED.")
