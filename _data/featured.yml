@@ -6,7 +6,7 @@ global:
 collections:
   eateries:
     collection: "restaurants"
-    slug: "gatherings-christchurch"
+    slug: "hillside-wellington"
   grocers:
     collection: "stores"
     slug: "taste-nature-dunedin"
