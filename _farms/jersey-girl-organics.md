@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Jersey Girl Organics
 slug: jersey-girl-organics
@@ -12,7 +11,7 @@ region: Waikato
 city: Matamata
 address: 74 Hinuera Road, RD 2, Matamata, 3472, New Zealand
 postcode: '3472'
-phone: '0274705229'
+phone: 0274705229
 email: hello@jerseygirlorganics.co.nz
 website: https://www.jerseygirlorganics.co.nz
 social_links: []
@@ -30,7 +29,13 @@ notes: ''
 products_tags:
 - dairy
 subtype: dairy-farm
-
 lat: -37.8321555
 lon: 175.7664634
+sources: []
+supplies_to: []
+practices: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

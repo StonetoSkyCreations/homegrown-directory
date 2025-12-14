@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: Greenspace Organic Shop
 slug: greenspace-organic-shop
@@ -30,12 +29,19 @@ services:
 - Community hub
 website: https://greenspace.nz
 email: kaitiaki@greenspace.nz
-phone: "+64 9 372 6144"
+phone: +64 9 372 6144
 social_links: []
 hours: Tue–Sat 10am–4pm
 published: true
 source_urls: []
-
 lat: -36.7944853
 lon: 175.0549946
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

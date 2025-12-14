@@ -33,5 +33,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Tomewin Mountain Road
 geo_query: 618 Tomewin Mountain Road, Gold Coast, Queensland, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Freeman's Organic Farm sells certified organic produce and pasture-raised goods alongside a farm cafe. Note: closed Sep–Dec 2025 for new cafe construction.

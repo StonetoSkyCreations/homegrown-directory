@@ -1,5 +1,4 @@
 ---
-
 title: Solscape – The Conscious Kitchen
 slug: solscape-conscious-kitchen
 published: true
@@ -18,7 +17,7 @@ services:
 hours: ''
 website: https://solscape.co.nz/eat/
 email: info@solscape.co.nz
-phone: "+64 7 825 8268"
+phone: +64 7 825 8268
 description: Eco-retreat café serving organic, locally sourced, seasonal dishes in
   Raglan.
 rating_average: 5
@@ -28,7 +27,14 @@ rating_count: 1
 : https://solscape.co.nz/eat/
 subtype: restaurant
 source_urls: []
-
 lat: -37.8256107
 lon: 174.8206956
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

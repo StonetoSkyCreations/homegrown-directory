@@ -36,4 +36,14 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Dixon Street
 geo_query: 146 Dixon Street, Masterton, Wellington, New Zealand
+title: Bin Inn Masterton
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

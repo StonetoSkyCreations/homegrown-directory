@@ -37,4 +37,14 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '29'
 geo_query: 29 Rangitahi Road, Raglan, Waikato, New Zealand
+title: Rangitahi Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -31,4 +31,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Gear Homestead
 geo_query: 1 Okowai Road, Aotea, Porirua 5024, Porirua, Wellington, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

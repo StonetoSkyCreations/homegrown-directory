@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Salty Swamis
 slug: salty-swamis
@@ -22,11 +21,18 @@ services:
 - Food truck
 website: ''
 email: ''
-phone: "+64 21 090 22888"
+phone: +64 21 090 22888
 social: ''
 hours: ''
 lat: -40.994974
 lon: 173.0034876
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

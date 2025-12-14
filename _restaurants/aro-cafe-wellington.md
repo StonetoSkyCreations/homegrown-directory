@@ -1,5 +1,4 @@
 ---
-
 title: Aro Cafe
 slug: aro-cafe-wellington
 published: true
@@ -27,7 +26,14 @@ Seasonal menu with locally sourced ingredients, organic milk products, and free-
   listing
 subtype: cafe
 source_urls: []
-
 lat: -41.2887953
 lon: 174.7772114
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

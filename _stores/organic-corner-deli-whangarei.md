@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: organic-corner-deli-whangarei
 name: Organic Corner Deli
@@ -31,7 +30,17 @@ published: true
 city: Whangārei
 Certified organic deli offering meat, dairy, and specialty items in Whangārei. Source: user-supplied
   list
-
 lat: -35.7275268
 lon: 174.3194202
+title: Organic Corner Deli
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -34,5 +34,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Gold Coast Highway
 geo_query: 570 Gold Coast Highway, Gold Coast, Queensland, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Stable at Cornerstone builds breakfast and lunch plates around ethical meats, organic beef, and local produce.

@@ -1,5 +1,4 @@
 ---
-
 title: Little Bird Kitchen
 slug: little-bird-kitchen-auckland
 published: true
@@ -23,13 +22,20 @@ services:
 hours: Daily 8am–4pm
 website: https://littlebirdorganics.co.nz
 email: ''
-phone: "+64 27 648 4757"
+phone: +64 27 648 4757
 description: Plant‑based café serving seasonal dishes made with local organic produce
   and emphasising circular economy practices.
 notes: Updated with location and hours from latest listing details.
 subtype: cafe
 source_urls: []
-
 lat: -36.8517648
 lon: 174.7443796
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

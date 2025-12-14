@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Revival Market Garden
 slug: revival-market-garden
@@ -25,13 +24,20 @@ services:
 - Produce boxes
 website: ''
 email: ''
-phone: "+64 21 0298 4951"
+phone: +64 21 0298 4951
 social_links: []
 hours: ''
 published: true
 subtype: market-garden
 source_urls: []
-
 lat: -36.79310825
 lon: 175.08838633700125
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

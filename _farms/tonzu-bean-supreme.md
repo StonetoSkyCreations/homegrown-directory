@@ -13,7 +13,7 @@ address: 628 Swanson Road, Swanson, Auckland 0612, New Zealand
 postcode: '0612'
 lat: -36.8648
 lon: 174.575
-phone: "+64 9 835 3617"
+phone: +64 9 835 3617
 email: info@tonzu.co.nz
 website: https://tonzu.co.nz
 social_links: []
@@ -30,4 +30,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 subtype: mixed
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -13,7 +13,7 @@ address: 119 Papatu Road, Manutuke, Gisborne 4072, New Zealand
 postcode: '4072'
 lat: -38.6833
 lon: 177.9167
-phone: "+64 6 862 8680"
+phone: +64 6 862 8680
 email: info@millton.co.nz
 website: https://millton.co.nz
 social_links: []
@@ -30,4 +30,12 @@ hours: Mon–Sat (wine tastings)
 last_checked: '2025-12-09'
 notes: ''
 subtype: vineyard
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

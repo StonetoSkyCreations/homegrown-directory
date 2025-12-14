@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 slug: honest-wholefood-co-wanaka
 name: Honest Wholefood Co.
@@ -28,7 +27,16 @@ last_checked: ''
 notes: ''
 city: Wānaka
 Creates plant-based snacks using organic ingredients where possible and a strong ethical sourcing focus. Source: https://honestwholefood.co.nz/
-
 lat: -44.6941691
 lon: 169.1364637
+title: Honest Wholefood Co.
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -26,5 +26,12 @@ description: Neighbourhood grocer with refill options, local veg tables, and she
 website: https://cityhonestgrocer.example.nz
 subtype: specialty-grocer
 source_urls: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 City Honest Grocer blends refillery bins with seasonal produce crates, marking each item with farm, practice tags, and harvest week. A weekly “know your grower” tasting features one producer supplying the store.

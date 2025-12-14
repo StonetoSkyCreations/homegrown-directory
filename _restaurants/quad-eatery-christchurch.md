@@ -1,5 +1,4 @@
 ---
-
 title: Quad Eatery
 slug: quad-eatery-christchurch
 published: true
@@ -26,7 +25,14 @@ Serves organic Kōkako coffee and brunch dishes built from locally sourced ingre
   listing
 subtype: cafe
 source_urls: []
-
 lat: -43.5311244
 lon: 172.6283429
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

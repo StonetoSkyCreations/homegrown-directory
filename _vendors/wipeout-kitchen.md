@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Wipeout Kitchen
 slug: wipeout-kitchen
@@ -28,5 +27,12 @@ hours: ''
 lat: -36.8172189
 lon: 174.7320885
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -35,5 +35,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Ewingsdale Road
 geo_query: 11 Ewingsdale Road, Byron Bay, New South Wales, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Menus follow what is grown and raised at The Farm and nearby producers, keeping dishes organic, spray-free, and seasonal.

@@ -1,5 +1,4 @@
 ---
-
 title: The Good Earth Cafe
 slug: good-earth-cafe-dunedin
 published: true
@@ -25,7 +24,14 @@ Vegetarian/vegan-friendly cafe using organic ingredients and coffee with an emph
   list
 subtype: cafe
 source_urls: []
-
 lat: -45.8632318
 lon: 170.5129146
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -45,5 +45,16 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '171'
 geo_query: 171 Carlisle Street, Melbourne, Victoria, AU
+title: The Source Bulk Foods (Balaclava)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Zero-waste refillery with organic options across bulk foods and household staples.

@@ -36,4 +36,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: 4/12
 geo_query: 12 London Street, Christchurch, Canterbury, New Zealand
+title: Harbour Co-op (Lyttelton)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

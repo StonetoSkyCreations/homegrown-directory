@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Streamside Organics
 slug: streamside-organics
@@ -13,7 +12,7 @@ region: Canterbury
 city: Southbridge
 address: 1112 Leeston Road, Southbridge 7683
 postcode: '7683'
-phone: "+64 27 751 5659"
+phone: +64 27 751 5659
 email: streamsideorganics@gmail.com
 website: https://streamsideorganics.co.nz
 social_links:
@@ -107,9 +106,14 @@ notes: ''
 rating_average: 5
 rating_count: 2
 subtype: market-garden
-
 lat: -43.80251419440102
 lon: 172.2461488888322
+sources: []
+practices: []
+products_tags: []
+services_tags: []
+specialty_tags: []
+relationships_declared: true
 ---
 Streamside Organics began in 2014 on a single acre of leased land. What started as a small, hands-on experiment in feeding a local community has grown into one of Canterbury's most respected organic market gardens: a 50-acre certified organic farm supplying thousands of households each week.
 

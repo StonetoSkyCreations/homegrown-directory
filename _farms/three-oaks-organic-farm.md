@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Three Oaks Organic Farm
 slug: three-oaks-organic-farm
@@ -35,5 +34,11 @@ products_tags:
 subtype: dairy-farm
 source_urls:
 - https://threeoaksorganic.co.nz
-
+sources: []
+supplies_to: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

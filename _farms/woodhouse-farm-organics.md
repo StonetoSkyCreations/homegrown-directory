@@ -39,4 +39,11 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Kairanga School
 geo_query: Kairanga, Palmerston North, Kairanga, Manawatū-Whanganui, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

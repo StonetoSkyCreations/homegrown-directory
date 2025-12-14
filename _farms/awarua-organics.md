@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: AwaRua Organics
 slug: awarua-organics
@@ -29,7 +28,13 @@ notes: ''
 products_tags:
 - dairy
 subtype: dairy-farm
-
 lat: -46.4118465
 lon: 168.3470632
+sources: []
+supplies_to: []
+practices: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

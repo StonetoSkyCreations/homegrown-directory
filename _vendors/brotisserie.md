@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Brotisserie
 slug: brotisserie
@@ -30,5 +29,12 @@ hours: ''
 lat: -36.887211
 lon: 174.7997
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

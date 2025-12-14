@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: clevedon-village-farmers-market
 name: Clevedon Village Farmers Market
@@ -29,6 +28,16 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Manukau
-
 lat: -36.989771
+title: Clevedon Village Farmers Market
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

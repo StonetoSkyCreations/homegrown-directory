@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: The Foodland Organic Store
 slug: the-foodland-organic-store
@@ -14,7 +13,7 @@ country_slug: new-zealand
 region: Canterbury
 city: Christchurch
 address: 501 Moorhouse Avenue, Waltham, Christchurch 8011, New Zealand
-phone: "+64 3-365 0891; 0274471333"
+phone: +64 3-365 0891; 0274471333
 email: namaste@thefoodland.nz
 website: https://thefoodland.nz
 social_links:
@@ -37,7 +36,14 @@ services:
 hours: Mon–Sun 9am–8pm
 published: true
 source_urls: []
-
 lat: -43.539793
 lon: 172.6519236
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

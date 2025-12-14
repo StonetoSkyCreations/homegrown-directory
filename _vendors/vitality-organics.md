@@ -35,4 +35,12 @@ geo_last_verified: '2025-12-14'
 geo_label: '322'
 geo_query: 322 Maunganui Road, Mount Maunganui 3116, Mount Maunganui, Bay of Plenty,
   New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

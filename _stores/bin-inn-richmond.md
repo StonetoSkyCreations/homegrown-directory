@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: Bin Inn Richmond
 slug: bin-inn-richmond
@@ -41,5 +40,12 @@ lat: -41.3382895
 lon: 173.1832793
 source_urls:
 - https://www.bininn.co.nz/tasman/richmond
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: jan-powers-farmers-market-manly
 name: Jan Powers Farmers Market (Manly)
@@ -34,8 +33,17 @@ city: Brisbane
 brand_slug: jan-powers-farmers-market
 practices_tags:
 - local
-
 lat: -27.4511
 lon: 153.186372
+title: Jan Powers Farmers Market (Manly)
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Waterfront market featuring seasonal produce and local food makers every second Saturday.

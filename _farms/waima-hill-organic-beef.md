@@ -13,7 +13,7 @@ address: Waima Hill, RD 3 Kaikohe 0440, Northland, New Zealand
 postcode: '0440'
 lat: -35.4081
 lon: 173.7986
-phone: "+64 9 405 3833"
+phone: +64 9 405 3833
 email: waimahill@organicbeef.co.nz
 website: https://organicbeef.co.nz
 social_links: []
@@ -32,4 +32,11 @@ notes: ''
 products_tags:
 - meat
 subtype: livestock
+sources: []
+supplies_to: []
+practices: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

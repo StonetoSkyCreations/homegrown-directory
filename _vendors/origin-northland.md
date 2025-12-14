@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 slug: origin-northland
 name: Origin Northland
@@ -29,7 +28,18 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Waipu
-
 lat: -35.9850068
 lon: 174.4474971
+title: Origin Northland
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

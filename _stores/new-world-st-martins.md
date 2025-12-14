@@ -44,5 +44,12 @@ geo_last_verified: '2025-12-14'
 geo_label: New World
 geo_query: 92 Wilsons Road, St Martins, Christchurch 8023, Christchurch, Canterbury,
   New Zealand
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 New World St Martins is a full-service supermarket whose fresh produce department includes a substantial organic section supplied by dozens of local growers. When visited by organic advocates, about one quarter of the produce on display was certified organic, beautifully presented and clearly labelled; organic oranges, lemons, kiwifruit, avocados, berries and artichokes were featured alongside conventional vegetables. Organic meat and dairy are also available, though mixed among conventional products. The store relies on 50-60 organic farmers to keep its shelves stocked. Located on Wilsons Road, it is open seven days a week from 7:30am to 10pm and offers online shopping and catering services. Despite being a mainstream supermarket, its commitment to organic produce makes it a key stockist for Streamside Organics.

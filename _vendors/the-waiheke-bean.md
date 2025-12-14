@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: The Waiheke Bean
 slug: the-waiheke-bean
@@ -30,7 +29,14 @@ social_links: []
 hours: ''
 published: true
 source_urls: []
-
 lat: -36.7944853
 lon: 175.0549946
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -47,6 +47,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '30'
 geo_query: 30 Matakana Valley Road, Matakana 0985, Matakana, Auckland, New Zealand
+sources: []
+supplies_to: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 The Original Matakana Market is held inside and around the historic Old Dairy Factory, a building that has anchored the village since 1902. Running every Saturday from 9 am to 2 pm, the market invites visitors to explore a diverse array of art, crafts, clothing, antiques, collectables, produce and sweet treats. Stallholders set up both inside the restored factory and in the courtyard outside, creating a vibrant maze of treasures.
 

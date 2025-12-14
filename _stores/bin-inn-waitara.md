@@ -28,4 +28,12 @@ lat: -39.0024865
 lon: 174.235171
 source_urls:
 - https://bininn.co.nz/pages/waitara
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

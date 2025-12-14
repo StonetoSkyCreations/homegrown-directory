@@ -1,5 +1,4 @@
 ---
-
 title: Arcadia Restaurant
 slug: arcadia-restaurant-waiheke
 published: true
@@ -29,7 +28,14 @@ description: Relaxed restaurant supporting local suppliers, featuring organic sa
   drinks.
 subtype: restaurant
 source_urls: []
-
 lat: -36.7809944
 lon: 175.046223
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

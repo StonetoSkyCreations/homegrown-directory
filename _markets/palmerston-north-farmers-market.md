@@ -39,4 +39,14 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: The Square
 geo_query: The Square, Palmerston North, Manawatū-Whanganui, New Zealand
+title: Palmerston North Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

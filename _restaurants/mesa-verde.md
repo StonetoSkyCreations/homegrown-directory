@@ -1,5 +1,4 @@
 ---
-
 title: Mesa Verde
 slug: mesa-verde
 country: Australia
@@ -24,12 +23,19 @@ services:
 hours: ''
 website: https://mesaverde.net.au
 email: hello@mesaverde.net.au
-phone: "+61 3 9654 4417"
+phone: +61 3 9654 4417
 description: Mexican restaurant sourcing seasonal local produce and herbs from its
   rooftop garden in Curtin House.
 source_urls: []
-
 lat: -37.8119844
 lon: 144.9651427
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Mesa Verde keeps a seasonal menu, growing herbs and vegetables on its rooftop and sourcing locally for tacos and mezcal-driven dishes.

@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Six Acres Farm
 slug: six-acres-farm
@@ -30,5 +29,12 @@ lon: 174.2196513
 subtype: market-garden
 source_urls:
 - https://www.sixacres.co.nz
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

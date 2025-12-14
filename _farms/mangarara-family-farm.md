@@ -19,12 +19,19 @@ services:
 hours: ''
 website: https://thefamilyfarm.co.nz
 email: rachel@thefamilyfarm.co.nz
-phone: "+64 6 858 4343"
+phone: +64 6 858 4343
 description: Regenerative, holistic-managed farm restoring soil health and producing
   grass-fed meat.
 products_tags:
 - meat
 subtype: livestock
 source_urls: []
+sources: []
+supplies_to: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Integrated livestock farm using regenerative grazing and holistic management, avoiding synthetic fertilisers while rebuilding soil and biodiversity. Source: https://www.mangarara.co.nz/the-farm

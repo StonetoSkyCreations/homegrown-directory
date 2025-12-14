@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 title: South Christchurch Farmers' Market
 slug: south-christchurch-farmers-market
@@ -27,7 +26,7 @@ services:
 - Weekly farmers market
 website: https://www.facebook.com/southchristchurchfarmersmarket
 email: southchristchurchfm@gmail.com
-phone: '0226198430'
+phone: 0226198430
 social: https://www.facebook.com/southchristchurchfarmersmarket, https://www.instagram.com/southchristchurchfarmersmarket/?hl=en
 hours: Every Sunday, 9am–12pm
 market_days:
@@ -41,6 +40,11 @@ practices_tags:
 - local
 source_urls:
 - https://ccc.govt.nz/news-and-events/whats-on/event/south-christchurch-farmers-market
-
+supplies_to: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Formerly known as the Opawa Farmers' Market, South Christchurch Farmers' Market is a relaxed, grower-led Sunday gathering beside the South Christchurch Library. Expect fresh seasonal produce, artisan breads and pastries, free-range eggs, local cheeses, and organic-minded offerings, all in a down-to-earth setting that keeps the focus on real growers and makers.

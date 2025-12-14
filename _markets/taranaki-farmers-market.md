@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: taranaki-farmers-market
 name: Taranaki Farmers Market
@@ -31,6 +30,15 @@ notes: Market
 city: New Plymouth
 practices_tags:
 - organic
-
 lat: -39.0579941
+title: Taranaki Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

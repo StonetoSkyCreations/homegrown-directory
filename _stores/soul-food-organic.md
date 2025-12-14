@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: Soul Food Organic
 slug: soul-food-organic
@@ -23,7 +22,7 @@ services:
 - Online store
 website: https://soulfoodorganic.co.nz
 email: orders@soulfoodorganic.co.nz
-phone: "+64 3 443 7885"
+phone: +64 3 443 7885
 social: https://www.facebook.com/soulfoodorganic.co.nz
 hours: Mon–Sat 9am–5:30pm; Sun 10am–5pm
 lat: -37.7909408
@@ -33,5 +32,11 @@ sources:
 subtype: organic-store
 source_urls:
 - https://soulfoodorganic.co.nz
-
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

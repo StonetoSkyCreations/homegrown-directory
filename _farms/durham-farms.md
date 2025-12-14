@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Durham Farms
 slug: durham-farms
@@ -34,7 +33,13 @@ products_tags:
 - dairy
 - meat
 subtype: dairy-farm
-
 lat: -35.9850068
 lon: 174.4474971
+sources: []
+supplies_to: []
+practices: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -1,5 +1,4 @@
 ---
-
 title: Little Farms
 slug: little-farms
 collection: stores
@@ -8,52 +7,58 @@ country: New Zealand
 region: Wellington
 city: Masterton
 address: Pirinoa / Wairarapa delivery network
-description: Organic and regenerative Wairarapa growers delivering seasonal farm boxes across the region, the Hutt Valley, and Wellington.
+description: Organic and regenerative Wairarapa growers delivering seasonal farm boxes
+  across the region, the Hutt Valley, and Wellington.
 practices:
-  - regenerative
-  - organic-principles
-  - spray-free
-  - no-dig
+- regenerative
+- organic-principles
+- spray-free
+- no-dig
 products:
-  - seasonal vegetable boxes
-  - seconds boxes
-  - choose-your-own produce boxes
-  - pantry items
-  - regenerative meat (frozen)
-  - workshops
+- seasonal vegetable boxes
+- seconds boxes
+- choose-your-own produce boxes
+- pantry items
+- regenerative meat (frozen)
+- workshops
 services:
-  - home delivery
-  - subscriptions
-  - pick-up point (Masterton)
-  - workshops and education
+- home delivery
+- subscriptions
+- pick-up point (Masterton)
+- workshops and education
 website: https://wearelittlefarms.com
 email: info@littlefarmsnz.com
-phone:
+phone: null
 social:
-  - https://instagram.com/wearelittlefarms
-  - https://instagram.com/growing._goodness
-hours:
+- https://instagram.com/wearelittlefarms
+- https://instagram.com/growing._goodness
+hours: null
 market_days: []
 lat: -40.9495524
 lon: 175.6594413
 supplies_to:
 - bin-inn-masterton
 sources:
-  - little-farms-market-garden
-  - vagabond-vege
-  - te-manaia-organics
-  - four-corners-organics
-  - bella-olea
-  - cameron-family-farms
-  - martinborough-manor
-  - rebel-gardens
-  - t-gasper
-  - wharerata-farm
+- little-farms-market-garden
+- vagabond-vege
+- te-manaia-organics
+- four-corners-organics
+- bella-olea
+- cameron-family-farms
+- martinborough-manor
+- rebel-gardens
+- t-gasper
+- wharerata-farm
 source_urls:
-  - https://wearelittlefarms.com
+- https://wearelittlefarms.com
 last_checked: 2025-12-11
 subtype: specialty-grocer
-
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Little Farms is a collective of small organic and regenerative growers across the Wairarapa, bringing fresh, local, transparently grown produce straight to homes throughout the Wairarapa, Hutt Valley, and Wellington. Their own market garden in Pirinoa follows strict regenerative organic principles: no synthetic sprays, no tilling, and a deep commitment to building healthy soil.
 

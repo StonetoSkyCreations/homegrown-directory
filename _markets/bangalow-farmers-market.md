@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: bangalow-farmers-market
 name: Bangalow Farmers Market
@@ -35,8 +34,17 @@ city: Bangalow
 practices_tags:
 - organic
 - local
-
 lat: -28.6827377
 lon: 153.5312741
+title: Bangalow Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Weekly Saturday market bringing organic and seasonal produce to Bangalow.

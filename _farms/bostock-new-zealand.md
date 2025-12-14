@@ -14,7 +14,7 @@ address: 5 Kirkwood Road, Hastings 4175, New Zealand
 postcode: '4175'
 lat: -39.6076593
 lon: 176.7755928
-phone: "+64 6 873 9046"
+phone: +64 6 873 9046
 email: ''
 website: https://www.bostock.nz
 social_links: []
@@ -31,4 +31,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Multiple organic farms
 subtype: orchard
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

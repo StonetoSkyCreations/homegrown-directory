@@ -37,4 +37,14 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Victoria Square (opp Town Hall)
 geo_query: Victoria Square, Victoria Street, Cambridge, Waikato, New Zealand
+title: Cambridge Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

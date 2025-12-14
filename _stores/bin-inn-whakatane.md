@@ -34,4 +34,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '252'
 geo_query: 252 The Strand, Whakatane, Bay of Plenty, New Zealand
+title: Bin Inn Whakatane
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

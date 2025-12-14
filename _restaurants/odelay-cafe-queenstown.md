@@ -1,5 +1,4 @@
 ---
-
 title: Odelay Cafe
 slug: odelay-cafe-queenstown
 published: true
@@ -26,7 +25,14 @@ Serves breakfast and lunch with on-site-grown produce plus free-range and organi
   listing
 subtype: cafe
 source_urls: []
-
 lat: -45.0321923
 lon: 168.661
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

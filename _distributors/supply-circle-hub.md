@@ -30,5 +30,11 @@ description: Co-op owned aggregation hub moving regenerative produce to retailer
 website: https://supplycircle.example.nz
 email: hello@supplycircle.example.nz
 source_urls: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Supply Circle Hub aggregates chilled and ambient goods from trusted growers, offers transparent markup sheets, and delivers to stores, cafés, and buying groups around Canterbury and Wellington.

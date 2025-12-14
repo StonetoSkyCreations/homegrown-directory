@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Oh Açaí
 slug: oh-acai
@@ -28,5 +27,12 @@ hours: ''
 lat: -36.844968
 lon: 174.770663
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

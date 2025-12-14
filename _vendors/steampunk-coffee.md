@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Steampunk Coffee
 slug: steampunk-coffee
@@ -22,11 +21,18 @@ services:
 - Event catering
 website: ''
 email: teamgold1977@gmail.com
-phone: "+64 27 384 1069"
+phone: +64 27 384 1069
 social: ''
 hours: Mon–Fri 8am–2pm
 lat: -39.5893462
 lon: 174.2837207
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

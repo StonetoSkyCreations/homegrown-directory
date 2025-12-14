@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: She Universe Malthouse Chocolaterie
 slug: she-universe-malthouse-chocolaterie
@@ -14,7 +13,7 @@ country_slug: new-zealand
 region: Canterbury
 city: Christchurch
 address: The Malthouse Cottage, 69 Colombo Street, Beckenham, Christchurch
-phone: "+64 22 644 0177"
+phone: +64 22 644 0177
 email: malthouse@sheuniverse.com
 website: https://sheuniverse.com
 products:
@@ -34,7 +33,14 @@ published: true
 rating_average: 5
 rating_count: 1
 source_urls: []
-
 lat: -43.5611472
 lon: 172.636633
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -26,5 +26,12 @@ description: A short chalkboard menu that changes with each delivery and credits
 website: https://kopupakokitchen.example.nz
 subtype: cafe
 source_urls: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Kopupako Kitchen keeps a rotating set of dishes anchored in whatever arrives from growers that week. A wall map shows which farm each dish draws from, and monthly “meet the producer” dinners host farmers and eaters together.

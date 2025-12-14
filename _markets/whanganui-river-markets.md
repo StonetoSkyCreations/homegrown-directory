@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: whanganui-river-markets
 name: Whanganui River Markets
@@ -28,6 +27,16 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Whanganui
-
 lat: -39.926765
+title: Whanganui River Markets
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

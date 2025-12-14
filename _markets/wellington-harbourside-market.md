@@ -41,4 +41,14 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Waterloo Quay
 geo_query: Waterloo Quay, Wellington, Wellington, New Zealand
+title: Wellington Harbourside Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: earth-food-store-waikanae
 name: Earth Food Store
@@ -30,7 +29,17 @@ published: true
 city: Waikanae
 Small Waikanae organic store focused on local goods and wholefoods. Source: user-supplied
   list
-
 lat: -40.8758432
 lon: 175.0643045
+title: Earth Food Store
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -1,5 +1,4 @@
 ---
-
 title: Reikorangi Organic Gardens
 slug: reikorangi-organic-gardens
 country: New Zealand
@@ -23,7 +22,14 @@ Operates organic gardens growing vegetables and herbs for local customers on the
   list
 subtype: mixed
 source_urls: []
-
 lat: -40.8758432
 lon: 175.0643045
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

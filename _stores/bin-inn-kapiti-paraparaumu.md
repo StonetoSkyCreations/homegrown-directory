@@ -34,4 +34,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Spotlight
 geo_query: 3 Ihakara Street, Kapiti Coast, Wellington, New Zealand
+title: Bin Inn Kapiti (Paraparaumu)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

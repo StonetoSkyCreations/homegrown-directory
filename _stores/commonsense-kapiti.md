@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: commonsense-kapiti
 name: Commonsense Kapiti
@@ -31,6 +30,16 @@ notes: Retail
 city: Kapiti Coast
 rating_average: 5
 rating_count: 1
-
 lat: -40.803757
+title: Commonsense Kapiti
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

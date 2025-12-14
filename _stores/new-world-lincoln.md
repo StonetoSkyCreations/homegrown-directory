@@ -26,15 +26,15 @@ services:
 - e-car charging
 - in-store shopping
 website: https://www.newworld.co.nz/south-island/canterbury/lincoln
-email: 
-phone: "(03) 325 2629"
-social: 
+email: null
+phone: (03) 325 2629
+social: null
 hours: 7:30am-9:00pm daily
 market_days: []
 lat: -43.6419953
 lon: 172.4735751
 sourced_from: streamside-organics
-also_referenced_by: 
+also_referenced_by: null
 sources:
 - streamside-organics
 last_checked: '2025-12-12'
@@ -44,5 +44,12 @@ source_urls:
 - https://www.newworld.co.nz/south-island/canterbury/lincoln
 - https://new-world-lincoln.wheree.com
 - https://pg.maptons.com/p/10597585345
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 New World Lincoln is a Kiwi-owned supermarket known for clean premises, helpful staff and a strong focus on customer satisfaction. The store sources certified organic vegetables and fruit from Streamside Organics, where produce is grown without chemical fertilisers or pesticides. It is easy to access with ample parking and offers services such as catering, takeaway coffee, online shopping, Wi-Fi, an ATM and e-car charging. Shoppers highlight the selection of fresh local produce and friendly staff. The store is open daily from 7:30am to 9pm.

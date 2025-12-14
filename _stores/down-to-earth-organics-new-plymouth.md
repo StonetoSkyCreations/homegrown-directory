@@ -33,4 +33,11 @@ sources:
 - coastal-market-garden
 source_urls:
 - https://downtoearthorganics.co.nz
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

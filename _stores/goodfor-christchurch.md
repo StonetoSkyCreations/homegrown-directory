@@ -46,5 +46,12 @@ geo_last_verified: '2025-12-14'
 geo_label: Colombo Street
 geo_query: 135 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Canterbury,
   New Zealand
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 GoodFor's Christchurch refillery stocks bulk pantry staples, grains, nuts, seeds, flours, spices and personal-care goods with a strong focus on sustainability. About 80 percent of the food on its shelves is certified organic, and customers bring their own containers or use home-compostable packaging. The store sells organic produce alongside dry goods and plant-based products and is a mid-week pick-up point for Streamside Organics veg boxes. Located in Beckenham, it operates seven days a week and also offers nationwide online ordering and click-and-collect services. GoodFor is part of a mission to reduce waste while making high-quality organic food accessible.

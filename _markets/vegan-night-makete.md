@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 title: Vegan Night Mākete
 slug: vegan-night-makete
@@ -43,5 +42,11 @@ practices_tags:
 - local
 source_urls:
 - http://www.veganchristchurch.org.nz/
-
+sources: []
+supplies_to: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

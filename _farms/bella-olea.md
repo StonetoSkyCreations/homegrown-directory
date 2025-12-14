@@ -1,5 +1,4 @@
 ---
-
 title: Bella Olea
 slug: bella-olea
 collection: farms
@@ -22,12 +21,12 @@ products:
 services:
 - direct sales via Facebook and local markets
 - supplies Little Farms pantry items
-website: 
+website: null
 email: chris@bellaolea.co.nz
 phone: 021 611 343
 social:
 - https://facebook.com/BellaOleaOlives/
-hours: 
+hours: null
 market_days: []
 lat: -45.8675512
 lon: 170.52043048177836
@@ -37,7 +36,13 @@ last_checked: 2025-12-11
 subtype: mixed
 source_urls:
 - https://www.olivesnz.org.nz/our-growers/wairarapa/
-
+sources: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Bella Olea is a family-owned olive grove on the outskirts of Greytown. With just under 1,000 trees, the grove produces award-winning certified-organic olive oil along with table olives, body lotions, skin balms and olive leaf tincture. The olives are grown without synthetic chemicals, and the family manages the entire process from grove to bottle. Their oils – such as the Koroneiki single-variety and the blended Grove oil – have earned medals in national competitions.
 

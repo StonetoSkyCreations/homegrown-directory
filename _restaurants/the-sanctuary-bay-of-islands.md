@@ -1,5 +1,4 @@
 ---
-
 title: The Sanctuary (Bay of Islands)
 slug: the-sanctuary-bay-of-islands
 published: true
@@ -29,7 +28,14 @@ description: Lodge breakfast built on fresh organic fruit, local cheeses, and fr
 : https://sanctuarybayofislands.co.nz/food-at-the-sanctuary/
 subtype: restaurant
 source_urls: []
-
 lat: -35.282229
 lon: 174.088611
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

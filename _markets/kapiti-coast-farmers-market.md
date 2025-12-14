@@ -41,4 +41,14 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Lindale Farm Park
 geo_query: Lindale, Paraparaumu, Wellington, New Zealand
+title: Kapiti Coast Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

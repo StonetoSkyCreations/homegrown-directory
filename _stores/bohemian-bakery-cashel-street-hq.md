@@ -50,6 +50,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '372'
 geo_query: 372 Cashel Street, Christchurch 8011, Christchurch, Canterbury, New Zealand
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Cashel Street HQ is the beating heart of Bohemian Bakery — the place where the craft is fully visible, where sourdough and pastry are shaped in the open, and where customers can watch the entire process unfold.
 

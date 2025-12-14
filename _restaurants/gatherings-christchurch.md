@@ -1,5 +1,4 @@
 ---
-
 title: Gatherings
 slug: gatherings-christchurch
 type: restaurant
@@ -37,7 +36,13 @@ rating_count: 1
   with seasonal ethical supply. Source
 : user-provided details
 source_urls: []
-
 lat: -43.5179945
 lon: 172.6265076
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

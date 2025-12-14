@@ -10,10 +10,10 @@ country_slug: new-zealand
 region: Northland
 city: Whangarei
 address: 71 Lauries Drive, Kauri, Kamo 0185, New Zealand
-postcode: '0185'
+postcode: 0185
 lat: -35.6833
 lon: 174.3167
-phone: "+64 220 368 762"
+phone: +64 220 368 762
 email: matt@northlandnaturals.co.nz
 website: https://northlandnaturals.nz
 social_links: []
@@ -30,4 +30,12 @@ hours: Tours by arrangement only
 last_checked: '2025-12-09'
 notes: ''
 subtype: eggs
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

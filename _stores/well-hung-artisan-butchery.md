@@ -35,4 +35,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Kitchener Road
 geo_query: 210 Kitchener Road, Milford, Auckland 0620, Milford, Auckland, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

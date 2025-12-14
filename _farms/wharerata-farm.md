@@ -47,6 +47,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Pirinoa Hall
 geo_query: Pirinoa, South Wairarapa, Pirinoa, Wellington, New Zealand
+sources: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Wharerata Farm sits in the heart of South Wairarapa's Pirinoa district, framed by the Haurangi Ranges and near Palliser Bay. The Atkinson family has farmed here for almost a century and achieved certified organic status in 1990. Fourth-generation farmer Sophie Atkinson and her partner Tim manage a diverse enterprise spanning deer, beef cattle, sheep and around 100 organic dairy grazers. The 200-hectare effective area benefits from fertile soils and a temperate microclimate.
 

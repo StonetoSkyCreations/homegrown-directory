@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: nourish-lane-mudgeeraba
 name: Nourish Lane (Mudgeeraba)
@@ -15,7 +14,7 @@ region: Queensland
 suburb: Mudgeeraba
 address: Shop 5, Mudgeeraba Market Shopping Centre, 3 Swan Lane
 postcode: '4213'
-phone: "(07) 5530 7677"
+phone: (07) 5530 7677
 email: info@nourishlane.com.au
 website: https://nourishlane.com.au
 social_links:
@@ -32,8 +31,18 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Gold Coast
-
 lat: -28.07924955
 lon: 153.36589275313048
+title: Nourish Lane (Mudgeeraba)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Organic-focused health food shop with bulk refills, pantry staples, and supplements.

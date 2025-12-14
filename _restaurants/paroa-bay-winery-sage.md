@@ -1,5 +1,4 @@
 ---
-
 title: Paroa Bay Winery & Sage Restaurant
 slug: paroa-bay-winery-sage
 published: true
@@ -27,7 +26,14 @@ description: Estate restaurant in Russell serving locally sourced ingredients fr
 : https://www.brewofislands.co.nz/culture-feast/
 subtype: restaurant
 source_urls: []
-
 lat: -35.2827092
 lon: 174.1842024
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

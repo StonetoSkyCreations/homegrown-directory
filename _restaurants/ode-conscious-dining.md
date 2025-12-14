@@ -1,5 +1,4 @@
 ---
-
 title: Ode Conscious Dining
 slug: ode-conscious-dining
 published: true
@@ -22,7 +21,7 @@ services:
 hours: ''
 website: https://odehospo.com
 email: eat@odewanaka.com
-phone: "+64 3 428 4140"
+phone: +64 3 428 4140
 social_links:
 - https://www.instagram.com/odewanaka
 description: Hyper-local restaurant using organic produce, wild-shot game, and ethically
@@ -32,7 +31,14 @@ description: Hyper-local restaurant using organic produce, wild-shot game, and e
 : user-provided details
 subtype: restaurant
 source_urls: []
-
 lat: -44.6945581
 lon: 169.1390936
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -51,4 +51,11 @@ practices_tags:
 - local
 source_urls:
 - https://www.christchurchfarmersmarket.co.nz
+sources: []
+supplies_to: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -27,4 +27,12 @@ lon: 175.05
 subtype: market-garden
 source_urls:
 - https://bellbirdfarm.co.nz
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

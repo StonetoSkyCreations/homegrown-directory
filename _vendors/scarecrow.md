@@ -41,4 +41,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '33'
 geo_query: 33 Victoria Street East, Auckland, Auckland, Auckland, New Zealand
+title: Scarecrow
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -37,5 +37,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Friends of the Earth
 geo_query: 312 Smith Street, Melbourne, Victoria, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Part of the Friends of the Earth Co-op, the cafe cooks organic vegan lunch bowls, pies, and pizzas and composts its kitchen waste.

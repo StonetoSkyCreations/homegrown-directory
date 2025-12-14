@@ -34,4 +34,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '61'
 geo_query: 61 Peel Street, Gisborne, Gisborne, New Zealand
+title: Bin Inn Gisborne
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

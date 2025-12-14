@@ -41,5 +41,16 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '101'
 geo_query: 101 Proximity Drive, Melbourne, Victoria, AU
+title: Bulk Eats Warehouse
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Bulk supplier serving households and businesses with pantry staples and cleaning products.

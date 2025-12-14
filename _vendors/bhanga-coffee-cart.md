@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Bhanga Coffee Cart
 slug: bhanga-coffee-cart
@@ -22,11 +21,18 @@ services:
 - Coffee cart
 website: ''
 email: ''
-phone: "+64 21 054 4698"
+phone: +64 21 054 4698
 social: ''
 hours: Mon–Fri 6:30am–2pm; Sat 7am–2pm
 lat: -37.73333
 lon: 177.68333
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

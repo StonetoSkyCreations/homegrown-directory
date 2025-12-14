@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: gisborne-farmers-market
 name: Gisborne Farmers Market
@@ -31,6 +30,15 @@ notes: Market
 city: Gisborne
 practices_tags:
 - local
-
 lat: -38.66301550586961
+title: Gisborne Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

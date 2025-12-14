@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: nourish-lane-nerang
 name: Nourish Lane (Nerang)
@@ -14,7 +13,7 @@ region: Queensland
 suburb: Nerang
 address: Shop 16, Nerang Mall, 7-27 Cayuga Street
 postcode: '4211'
-phone: "(07) 5554 8533"
+phone: (07) 5554 8533
 email: nerang@nourishlane.com.au
 website: https://nourishlane.com.au
 social_links:
@@ -31,8 +30,18 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Gold Coast
-
 lat: -28.000106
 lon: 153.338501
+title: Nourish Lane (Nerang)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Health food shop offering organic pantry lines, bulk refills, and wellness products.

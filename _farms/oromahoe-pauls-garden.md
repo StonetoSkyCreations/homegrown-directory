@@ -27,5 +27,12 @@ description: Organic edible garden in Oromahoe selling produce through local Bay
   Islands markets.
 subtype: mixed
 source_urls: []
+sources: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Family garden with organic edible landscapes where children roam free and wildlife is welcome. Shares seasonal produce locally, including through Bay of Islands farmers markets. Source: https://www.northlandediblegardentrail.org.nz/mid-north-gardens-2025

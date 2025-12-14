@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Kaitake Farm
 slug: kaitake-farm
@@ -19,7 +18,7 @@ services:
 - Farm produce
 website: https://kaitakefarm.co.nz
 email: kaitakefarm@gmail.com
-phone: "+64 27 311 6196"
+phone: +64 27 311 6196
 social: ''
 hours: ''
 lat: -39.132679
@@ -32,5 +31,10 @@ products_tags:
 subtype: dairy-farm
 source_urls:
 - https://kaitakefarm.co.nz
-
+sources: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: FRENZ Eggs
 slug: frenz-eggs
@@ -27,7 +26,14 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 subtype: eggs
-
 lat: -37.064265
 lon: 174.9446665
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

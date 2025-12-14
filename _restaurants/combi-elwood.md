@@ -36,5 +36,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Combi
 geo_query: 138-140 Ormond Road, Melbourne, Victoria, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Combi uses organic ingredients for its raw vegan treats, smoothies, and coffee, keeping the menu gluten-free friendly.

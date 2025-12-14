@@ -34,5 +34,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '17'
 geo_query: 17 Royal Parade, Brisbane, Queensland, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Putia Pure Food Kitchen serves breakfast and lunch with free-range, sustainably sourced ingredients and organic where available.

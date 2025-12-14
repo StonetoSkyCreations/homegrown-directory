@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: hawke-s-bay-farmers-market-hastings
 name: Hawke’s Bay Farmers Market (Hastings)
@@ -35,6 +34,14 @@ notes: Market
 city: Hastings
 practices_tags:
 - organic
-
 lat: -39.63037263549256
+title: Hawke’s Bay Farmers Market (Hastings)
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

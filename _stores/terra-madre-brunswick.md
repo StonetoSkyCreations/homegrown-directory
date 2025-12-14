@@ -38,5 +38,16 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Terra Madre
 geo_query: 775–781 Sydney Road, Melbourne, Victoria, AU
+title: Terra Madre (Brunswick)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Second Terra Madre outlet with organic pantry staples and ACO-certified lines.

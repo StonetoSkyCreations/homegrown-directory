@@ -1,5 +1,4 @@
 ---
-
 title: Akito Eatery
 slug: akito-eatery
 published: true
@@ -21,14 +20,21 @@ services:
 - Dine-in
 website: https://akito.co.nz
 email: hello@akito.co.nz
-phone: "+64 9 372 7659"
+phone: +64 9 372 7659
 social_links: []
 hours: Mon–Sat 7:30am–3pm; Sun 7am–3pm
 description: Plant-based eatery embracing slow food and regenerative principles, serving
   seasonal breakfasts, brunches and lunches made from local ingredients.
 subtype: cafe
 source_urls: []
-
 lat: -36.7827036
 lon: 175.0100052
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

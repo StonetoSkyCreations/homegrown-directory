@@ -38,4 +38,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: High Street
 geo_query: 502 High Street, Motueka, Tasman, Motueka, Tasman, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

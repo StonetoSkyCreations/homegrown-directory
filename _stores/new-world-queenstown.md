@@ -25,15 +25,15 @@ services:
 - ATM
 - in-store shopping
 website: https://www.newworld.co.nz/south-island/otago-and-southland/queenstown
-email: 
-phone: "(03) 442 3045"
-social: 
+email: null
+phone: (03) 442 3045
+social: null
 hours: 7:00am-10:00pm daily
 market_days: []
 lat: -45.0257396
 lon: 168.7415575
 sourced_from: streamside-organics
-also_referenced_by: 
+also_referenced_by: null
 sources:
 - streamside-organics
 last_checked: '2025-12-12'
@@ -43,5 +43,12 @@ source_urls:
 - https://www.newworld.co.nz/south-island/otago-and-southland/queenstown
 - https://wanderlog.com/place/details/780643/new-world-queenstown
 - https://pg.maptons.com/p/10593406594
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Nestled in the Remarkables Park shopping area, New World Queenstown provides a convenient shopping experience for locals and travellers. Travel guides describe the store as tucked away near residential areas, smaller than some supermarkets yet clean with friendly staff and a solid selection of quality products including fresh meats and baked goods. Set against lush greenery and mountains, the store offers fresh and artisanal items and provides personalised service from helpful staff. It stocks certified organic vegetables from Streamside Organics, a farm where almost all produce is certified organic. Store services include catering, takeaway coffee, online shopping, Wi-Fi and an ATM. New World Queenstown is open from 7am to 10pm daily.

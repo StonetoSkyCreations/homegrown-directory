@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: otago-farmers-market-dunedin
 name: Otago Farmers Market (Dunedin)
@@ -29,6 +28,16 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Dunedin
-
 lat: -45.87109245016279
+title: Otago Farmers Market (Dunedin)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

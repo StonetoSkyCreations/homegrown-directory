@@ -32,5 +32,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Jonson Street
 geo_query: 7 Jonson St, Byron Bay, New South Wales, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Byron Fresh Cafe keeps its menu simple with organic, free-range eggs and fresh seasonal produce.

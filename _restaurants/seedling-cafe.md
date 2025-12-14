@@ -35,5 +35,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: 267-275
 geo_query: 275 Flinders Lane, Melbourne, Victoria, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Seedling Cafe focuses on whole-food dishes with free-range and grass-fed sourcing and keeps the entire menu gluten-free.

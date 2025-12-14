@@ -54,4 +54,9 @@ geo_last_verified: '2025-12-14'
 geo_label: '35'
 geo_query: 35 Hopper Street, Mount Cook, Wellington 6011, Wellington, Wellington,
   New Zealand
+practices_tags: []
+products_tags: []
+services_tags: []
+specialty_tags: []
+relationships_declared: true
 ---

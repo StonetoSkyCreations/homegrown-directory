@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: grey-lynn-farmers-market
 name: Grey Lynn Farmers Market
@@ -31,6 +30,15 @@ notes: Market
 city: Auckland
 practices_tags:
 - organic
-
 lat: -36.8597672
+title: Grey Lynn Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

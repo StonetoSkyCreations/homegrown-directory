@@ -39,5 +39,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Taste Nature
 geo_query: 131 High Street, Dunedin 9016, Dunedin, Otago, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Organic café and espresso bar within Taste Nature’s Dunedin space, offering seasonal plates, organic baked goods, and coffee aligned with their ethical sourcing ethos.

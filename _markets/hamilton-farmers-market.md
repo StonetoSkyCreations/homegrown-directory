@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: hamilton-farmers-market
 name: Hamilton Farmers Market
@@ -29,6 +28,16 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Hamilton
-
 lat: -37.765518247193285
+title: Hamilton Farmers Market
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

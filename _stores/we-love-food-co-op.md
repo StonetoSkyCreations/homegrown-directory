@@ -39,5 +39,16 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Wells Place
 geo_query: Wells Place, Brisbane, Queensland, AU
+title: We Love Food Co-Op
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Organic produce box co-op connecting local growers to households across Brisbane.

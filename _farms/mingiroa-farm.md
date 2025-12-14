@@ -30,4 +30,11 @@ products_tags:
 subtype: livestock
 source_urls:
 - https://www.mingiroafarm.com
+sources: []
+supplies_to: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

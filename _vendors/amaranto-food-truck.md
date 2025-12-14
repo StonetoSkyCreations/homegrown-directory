@@ -35,4 +35,12 @@ geo_last_verified: '2025-12-14'
 geo_label: '340'
 geo_query: 340 Point Chevalier Road, Point Chevalier, Auckland 1022, Auckland, Auckland,
   New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

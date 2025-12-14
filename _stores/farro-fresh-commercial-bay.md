@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: farro-fresh-commercial-bay
 name: Farro Fresh Commercial Bay
@@ -14,7 +13,7 @@ region: Auckland
 suburb: Auckland Central
 address: 7 Queen Street (Commercial Bay)
 postcode: '1010'
-phone: '09 302 0600'
+phone: 09 302 0600
 email: ''
 website: https://www.farro.co.nz/
 social_links: []
@@ -28,7 +27,17 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Located in Commercial Bay shopping center
 city: Auckland
-
 lat: -36.849193
 lon: 174.764111
+title: Farro Fresh Commercial Bay
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

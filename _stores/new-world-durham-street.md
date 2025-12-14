@@ -44,5 +44,12 @@ geo_last_verified: '2025-12-14'
 geo_label: New World
 geo_query: 175 Durham Street South, Christchurch 8011, Christchurch, Canterbury, New
   Zealand
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Located in central Christchurch, New World Durham Street is a smaller New World supermarket known for its well-presented shopping environment and friendly staff. Shoppers appreciate its dedicated gluten-free area featuring a good selection of organic and gluten-free products, which makes it a convenient stop for those seeking specialty foods. The store also stocks organic fruit and vegetables, organic pantry goods and specialty items from local producers such as Streamside Organics. Despite its size, the supermarket offers the full range of New World services, including online shopping and catering, and is open daily from 7am to 10pm.

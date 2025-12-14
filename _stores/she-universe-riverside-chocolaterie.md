@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: She Universe Riverside Chocolaterie
 slug: she-universe-riverside-chocolaterie
@@ -14,7 +13,7 @@ country_slug: new-zealand
 region: Canterbury
 city: Christchurch
 address: Riverside Market Lane, 84 Cashel Street, Christchurch Central
-phone: "+64 22 590 3350"
+phone: +64 22 590 3350
 email: riverside@sheuniverse.com
 website: https://sheuniverse.com
 products:
@@ -34,7 +33,14 @@ published: true
 rating_average: 5
 rating_count: 1
 source_urls: []
-
 lat: -43.5331095
 lon: 172.6342575
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

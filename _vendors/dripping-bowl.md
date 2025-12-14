@@ -33,4 +33,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '82'
 geo_query: 82 Anderson Road, Wānaka 9305, Wānaka, Otago, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: Anita’s Organic Store
 slug: anitas-organic-store-blenheim
@@ -32,7 +31,7 @@ services:
 - Bag-your-own bulk foods
 website: https://anitasshop.co.nz
 email: ''
-phone: "+64 3 579 5684"
+phone: +64 3 579 5684
 social: ''
 hours: Mon–Sat 9am–7pm; Sun 10am–7pm
 lat: -41.5126399
@@ -40,5 +39,12 @@ lon: 173.9584453
 subtype: organic-store
 source_urls:
 - https://anitasshop.co.nz
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

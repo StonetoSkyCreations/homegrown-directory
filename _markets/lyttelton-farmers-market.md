@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: lyttelton-farmers-market
 name: Lyttelton Farmers Market
@@ -37,8 +36,16 @@ practices_tags:
 - organic
 - regenerative
 - local
-
 lat: -43.6024834
+title: Lyttelton Farmers Market
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 The Lyttelton Farmers’ Market sits in the heart of the port town, surrounded by steep hills, sea air, and the hum of a community that knows its growers by name. Saturday mornings see the main street transformed into a lively, compact marketplace where local producers line the road with seasonal vegetables, fruit, bread, preserves, chutneys, honey, seedlings, and handmade goods.
 

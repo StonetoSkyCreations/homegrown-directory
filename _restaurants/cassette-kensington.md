@@ -35,5 +35,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '399'
 geo_query: 399 Macaulay Road, Melbourne, Victoria, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Cassette centres local, seasonal sourcing and composts kitchen waste on-site as part of its zero-waste approach.

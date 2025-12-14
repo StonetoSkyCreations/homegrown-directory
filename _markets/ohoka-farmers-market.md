@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 title: Ohoka Farmers Market
 slug: ohoka-farmers-market
@@ -47,7 +46,12 @@ practices_tags:
 - local
 source_urls:
 - http://www.ohokafarmersmarket.co.nz
-
+supplies_to: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 The Ohoka Farmers’ Market is one of Canterbury’s most loved weekly food gatherings — a true farmer-led marketplace that comes alive every Friday morning. It celebrates local growers, seasonal abundance, and the simple pleasure of meeting the people who raise, harvest, bake, brew, or forage the food on your table.
 

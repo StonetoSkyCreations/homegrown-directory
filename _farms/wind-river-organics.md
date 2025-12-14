@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Wind River Organics
 slug: wind-river-organics
@@ -28,5 +27,11 @@ products_tags:
 subtype: dairy-farm
 source_urls:
 - Producer submission
-
+sources: []
+supplies_to: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

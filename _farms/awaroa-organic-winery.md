@@ -36,4 +36,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Awaroa Organic Winery
 geo_query: 324 Waiheke Road, Waiheke Island, Waiheke Island, Auckland, New Zealand
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

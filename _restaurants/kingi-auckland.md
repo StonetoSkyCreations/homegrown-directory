@@ -1,5 +1,4 @@
 ---
-
 title: kingi
 slug: kingi-auckland
 published: true
@@ -18,7 +17,7 @@ services:
 hours: ''
 website: https://www.kingibritomart.com
 email: kingi@thehotelbritomart.com
-phone: "+64 9 300 9596"
+phone: +64 9 300 9596
 description: Britomart restaurant championing sustainably caught local seafood with
   an ingredient-led menu.
 ? Celebrates sustainable NZ seafood with dishes connecting ocean and land; strong
@@ -26,7 +25,14 @@ description: Britomart restaurant championing sustainably caught local seafood w
 : user-provided details
 subtype: restaurant
 source_urls: []
-
 lat: -36.852095
 lon: 174.7631803
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

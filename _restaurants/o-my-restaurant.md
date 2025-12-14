@@ -36,5 +36,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '70'
 geo_query: 70 Princes Highway, Melbourne, Victoria, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 O.MY grows most vegetables, fruit, herbs, eggs, and honey on its farm, preserving excess and keeping a low-waste tasting menu.

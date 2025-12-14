@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: Eithne Health & Organics
 slug: eithne-health-organics
@@ -38,5 +37,12 @@ lon: 170.9592109
 subtype: organic-store
 source_urls:
 - https://www.eithne.co.nz
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

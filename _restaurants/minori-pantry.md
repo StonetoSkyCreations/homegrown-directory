@@ -33,5 +33,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Summerland Way
 geo_query: 82 Summerland Way, Kyogle, New South Wales, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Minori Pantry keeps a wholefood menu, brewing organic coffee and using local dairy and produce from around Kyogle.

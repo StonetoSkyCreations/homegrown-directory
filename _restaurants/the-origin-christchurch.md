@@ -1,5 +1,4 @@
 ---
-
 title: The Origin
 slug: the-origin-christchurch
 published: true
@@ -25,7 +24,14 @@ Offers certified organic Zealong tea and vegan dishes with sustainably sourced c
   listing
 subtype: cafe
 source_urls: []
-
 lat: -43.530955
 lon: 172.6364343
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

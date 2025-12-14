@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: northey-street-organic-farmers-market
 name: Northey Street Organic Farmers Market
@@ -35,8 +34,17 @@ city: Brisbane
 practices_tags:
 - organic
 - local
-
 lat: -27.483156
 lon: 153.00594789581197
+title: Northey Street Organic Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Certified organic Sunday market showcasing local growers, orchardists, and artisan food producers.

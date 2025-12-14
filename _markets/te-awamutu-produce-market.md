@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: te-awamutu-produce-market
 name: Te Awamutu Produce Market
@@ -31,6 +30,15 @@ notes: Market
 city: Waipa
 practices_tags:
 - local
-
 lat: -35.932507
+title: Te Awamutu Produce Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

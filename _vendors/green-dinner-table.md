@@ -42,5 +42,15 @@ geo_last_verified: '2025-12-14'
 geo_label: '21'
 geo_query: 21 Coleridge Street, Sydenham, Christchurch 8023, Christchurch, Canterbury,
   New Zealand
+title: Green Dinner Table
+supplies_to: []
+practices: []
+practices_tags: []
+products: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Green Dinner Table is a Christchurch-based meal-kit company that designs weekly vegan recipes and sends all the ingredients straight to customers' doors. Each kit uses fresh seasonal fruit and vegetables, quality sauces and locally sourced produce to create nutritious plant-based meals. The service operates nationwide, with menus changing weekly and packaging that is recyclable or compostable. Subscribers receive pre-measured ingredients, spices and easy instructions, and can add fruit boxes or select gluten-free options. Headquartered in Sydenham, Green Dinner Table champions sustainable eating and supports organic growers like Streamside Organics.

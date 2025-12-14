@@ -43,6 +43,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '59'
 geo_query: 59 Cromarty Drive, Martinborough 5784, Martinborough, Wellington, New Zealand
+sources: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Martinborough Manor is a spray-free boutique farm nestled just minutes from the town square. Visitors can enjoy guided tours of the working farm, where they bottle-feed lambs or goats in spring, wander through stunning gardens and browse the farm store for preserves, fresh fruit, flowers, eggs and vegetables. Tours last about 1.5 hours and are available on Saturdays and Sundays at 10:30 am and 2:30 pm.
 

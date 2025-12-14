@@ -39,5 +39,16 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: The Atrium
 geo_query: 15 High Street, Brisbane, Queensland, AU
+title: The Gap Local Organic Co-Op
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Member-driven organic co-op supplying certified organic produce and pantry goods to the local community.

@@ -13,7 +13,7 @@ address: 495 Gordonton Road, Gordonton, Hamilton 3281, New Zealand
 postcode: '3281'
 lat: -37.651
 lon: 175.206
-phone: "+64 7 854 0988"
+phone: +64 7 854 0988
 email: info@zealong.com
 website: https://zealong.com
 social_links: []
@@ -30,4 +30,12 @@ hours: Tours Fri–Sun (morning & afternoon)
 last_checked: '2025-12-09'
 notes: ''
 subtype: mixed
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

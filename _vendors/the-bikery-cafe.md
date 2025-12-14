@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 slug: the-bikery-cafe
 name: The Bikery Café
@@ -28,7 +27,18 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Cambridge
-
 lat: -37.8917889
 lon: 175.4691069
+title: The Bikery Café
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

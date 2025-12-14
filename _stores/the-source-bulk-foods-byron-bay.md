@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: the-source-bulk-foods-byron-bay
 name: The Source Bulk Foods (Byron Bay)
@@ -14,7 +13,7 @@ region: New South Wales
 suburb: Byron Bay
 address: Shop 1, 107 Jonson St
 postcode: '2481'
-phone: "(02) 6680 8916"
+phone: (02) 6680 8916
 email: ''
 website: https://byron-bay.thesourcebulkfoods.com.au
 social_links:
@@ -32,8 +31,18 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer; zero-waste refillery
 city: Byron Bay
-
 lat: -28.6468088
 lon: 153.6128365
+title: The Source Bulk Foods (Byron Bay)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Zero-waste refillery with organic bulk wholefoods, snacks, and pantry refill options.

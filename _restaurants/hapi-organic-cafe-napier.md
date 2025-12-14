@@ -1,5 +1,4 @@
 ---
-
 title: Hapi Organic Cafe & Maara
 slug: hapi-organic-cafe-napier
 published: true
@@ -23,7 +22,14 @@ description: Napier cafe focused on organic kai and wholefoods.
 Cafe and maara serving organic, wholefood dishes and drinks with a focus on locally sourced ingredients. Source: https://hapi.nz/
 subtype: cafe
 source_urls: []
-
 lat: -39.4902099
 lon: 176.917839
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

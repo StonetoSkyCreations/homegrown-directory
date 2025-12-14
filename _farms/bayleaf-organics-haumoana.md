@@ -1,5 +1,4 @@
 ---
-
 title: Bayleaf Organics
 slug: bayleaf-organics-haumoana
 country: New Zealand
@@ -19,14 +18,20 @@ supplies_to:
 hours: ''
 website: https://www.bayleaforganics.co.nz
 email: info@bayleaforganics.co.nz
-phone: "+64 274 506899 / +64 274 555356"
+phone: +64 274 506899 / +64 274 555356
 description: Organic apple grower selling premium apples at Hawke's Bay Farmers’ Market.
 ? Family orchards producing organic apples without chemical fertilisers or sprays,
   sold at the Hawke's Bay Farmers’ Market. Source
 : https://hawkesbayfarmersmarket.co.nz/bayleaf-organics/
 subtype: orchard
 source_urls: []
-
 lat: -39.6173961
 lon: 176.9433409
+sources: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

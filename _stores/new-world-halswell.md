@@ -28,15 +28,15 @@ services:
 - e-car charging
 - in-store shopping
 website: https://www.newworld.co.nz/south-island/canterbury/halswell
-email: 
-phone: "(03) 322 9991"
-social: 
+email: null
+phone: (03) 322 9991
+social: null
 hours: 7:30am-9:00pm daily
 market_days: []
 lat: -43.5805248496604
 lon: 172.565535211563
 sourced_from: streamside-organics
-also_referenced_by: 
+also_referenced_by: null
 sources:
 - streamside-organics
 last_checked: '2025-12-12'
@@ -46,5 +46,12 @@ source_urls:
 - https://www.newworld.co.nz/south-island/canterbury/halswell
 - https://ie.maptons.com/p/10580097105
 - https://www.rankers.co.nz/experiences/8256-New_World_Halswell_Christchurch
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 New World Halswell is a modern supermarket serving the growing suburb of Halswell. Customer reviews describe it as well-stocked, clean and bright, with plenty of parking and friendly staff. Shoppers praise the fresh vegetables, meat and seafood and note the excellent range of products available. The store sources certified organic vegetables from Streamside Organics, which grows produce organically and labels non-certified items as spray-free. Services include online shopping, a cafe, catering, florist, Wi-Fi, ATM and e-car charging. New World Halswell is open daily from 7:30am to 9pm.

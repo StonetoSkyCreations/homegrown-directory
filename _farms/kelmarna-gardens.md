@@ -15,7 +15,7 @@ address: 12 Hukanui Crescent, Ponsonby, Auckland 1021, New Zealand
 postcode: '1021'
 lat: -36.85236
 lon: 174.73869
-phone: '09 376 0472'
+phone: 09 376 0472
 email: hello@kelmarnagardens.nz
 website: https://kelmarnagardens.nz
 social_links: []
@@ -37,4 +37,11 @@ hours: Wed & Sat (farm shop open)
 last_checked: '2025-12-09'
 notes: Updated with community services.
 subtype: mixed
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

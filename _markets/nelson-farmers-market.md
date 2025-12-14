@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: nelson-farmers-market
 name: Nelson Farmers Market
@@ -31,6 +30,15 @@ notes: Market
 city: Nelson
 practices_tags:
 - local
-
 lat: -41.2738791
+title: Nelson Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

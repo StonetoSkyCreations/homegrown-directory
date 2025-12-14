@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 slug: orepuki-beach-cafe
 name: Orepuki Beach Café
@@ -30,7 +29,18 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Orepuki
-
 lat: -46.2813342
 lon: 167.7384665
+title: Orepuki Beach Café
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

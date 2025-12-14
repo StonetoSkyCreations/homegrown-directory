@@ -1,5 +1,4 @@
 ---
-
 title: Charlotte's Kitchen
 slug: charlottes-kitchen-paihia
 published: true
@@ -28,7 +27,14 @@ description: Waterfront Paihia restaurant serving free-range pork knuckle and se
 : https://www.charlotteskitchen.co.nz/
 subtype: restaurant
 source_urls: []
-
 lat: -35.28079205
 lon: 174.0920925938967
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

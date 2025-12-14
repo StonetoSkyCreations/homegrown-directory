@@ -1,5 +1,4 @@
 ---
-
 title: Cellar Door (Christchurch)
 slug: cellar-door-christchurch
 published: true
@@ -24,7 +23,7 @@ services:
 - Private bookings
 website: https://www.cellardoor.nz
 email: bookings@cellardoor.nz
-phone: "+64 3 925 8497"
+phone: +64 3 925 8497
 social_links:
 - https://facebook.com/CellarDoorNZ
 - https://instagram.com/cellardoor.nz
@@ -36,8 +35,14 @@ description: Award-winning wine bar and restaurant in Christchurch's Arts Centre
 last_checked: '2025-12-12'
 subtype: restaurant
 source_urls: []
-
 lat: -43.5316993
 lon: 172.6279834
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Overlooking the historic South Quad of the Christchurch Arts Centre, Cellar Door is a celebrated venue pairing great wine with food. The bar pours an extensive selection of wines by the taste, glass or bottle and curates tasting flights that explore variety, region and style. An all-day menu of classical wine-friendly snacks, seasonal small plates, desserts and cheeses is designed to complement the wine list, focusing on fresh, seasonal, locally sourced ingredients. Open from noon until late seven days a week, the venue also offers craft beer, gin, whisky and non-alcoholic options, with reservations recommended particularly on weekends.

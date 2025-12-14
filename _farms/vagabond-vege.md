@@ -42,6 +42,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Monty's Lane
 geo_query: Monty's Lane, Te Hupenui/Greytown, Greytown, Wellington, New Zealand
+sources: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Vagabond Vege is a collaborative, human-scale market garden based on the old river terraces of the Waiohine River in Greytown. The farmers use agroecological principles to grow high-quality, nutrient-dense food. They are committed to no-till horticulture, removing chemical inputs and cultivating dense, diverse plantings to enhance soil life, improve carbon sequestration and build resilience. Vagabond Vege is working through the three-year Hua Parakore certification, a kaupapa Maori framework that ensures foods are free from GMOs, pesticides and synthetic fertilisers.
 

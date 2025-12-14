@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: Westland Whole Foods
 slug: westland-whole-foods
@@ -41,5 +40,11 @@ sources:
 subtype: wholefoods-store
 source_urls:
 - https://westlandwholefoods.co.nz
-
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

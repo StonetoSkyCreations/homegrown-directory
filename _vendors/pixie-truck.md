@@ -32,4 +32,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Diva's
 geo_query: 10 Napier Road, Havelock North 4130, Havelock North, Hawke's Bay, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

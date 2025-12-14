@@ -31,4 +31,11 @@ notes: ''
 products_tags:
 - meat
 subtype: livestock
+sources: []
+supplies_to: []
+practices: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

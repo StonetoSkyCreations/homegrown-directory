@@ -1,5 +1,4 @@
 ---
-
 title: Pomeroy's Old Brewery Inn
 slug: pomeroys-old-brewery-inn
 published: true
@@ -27,7 +26,7 @@ sources:
 - streamside-organics
 website: https://pomspub.co.nz
 email: restaurant@pomspub.co.nz
-phone: "+64 3 365 1523"
+phone: +64 3 365 1523
 social_links:
 - https://www.facebook.com/pomeroyspub/
 - https://www.instagram.com/pomeroyspub/
@@ -38,7 +37,13 @@ description: Historic Christchurch brewpub offering a full restaurant menu with 
   organic ingredients, including organic chicken wings and organic broccoli.
 subtype: restaurant
 source_urls: []
-
 lat: -43.52669165
 lon: 172.6497407750175
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

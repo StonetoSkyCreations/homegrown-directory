@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: Golden Bay Organics
 slug: golden-bay-organics
@@ -36,5 +35,12 @@ lat: -40.85874115
 lon: 172.8060379871829
 source_urls:
 - User-supplied list
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -33,4 +33,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '126'
 geo_query: 126 Church Bay Road, Oneroa, Waiheke Island, Oneroa, Auckland, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

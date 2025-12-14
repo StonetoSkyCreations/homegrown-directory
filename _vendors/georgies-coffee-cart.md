@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Georgies Coffee Cart
 slug: georgies-coffee-cart
@@ -22,11 +21,18 @@ services:
 - Event catering
 website: ''
 email: ''
-phone: "+64 20 418 01885"
+phone: +64 20 418 01885
 social: ''
 hours: ''
 lat: -37.6823594
 lon: 175.1698852
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

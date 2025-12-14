@@ -47,6 +47,13 @@ geo_last_verified: '2025-12-14'
 geo_label: Ferrymead Heritage Park
 geo_query: Ferrymead Heritage Park, 50 Ferrymead Park Drive, Heathcote, Christchurch,
   Christchurch, Canterbury, New Zealand
+sources: []
+supplies_to: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 The Ferrymead Night Market is part market, part festival, part living heritage experience. Held on the first Saturday of each month (except mid-winter months), it transforms the Ferrymead Heritage Park into a vibrant evening gathering filled with food stalls, craft vendors, music, and the unique charm of the old village streets lit at dusk.
 

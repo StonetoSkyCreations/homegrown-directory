@@ -1,5 +1,4 @@
 ---
-
 title: Rebel Gardens
 slug: rebel-gardens
 collection: farms
@@ -30,7 +29,7 @@ phone: 027 307 8821
 social:
 - https://facebook.com/rebelgardens
 - https://instagram.com/rebel_gardens
-hours: 
+hours: null
 market_days: []
 lat: -41.2183252
 lon: 175.4594856
@@ -41,7 +40,13 @@ subtype: market-garden
 source_urls:
 - https://www.wairarapalifestyle.com/landing-page/pick-of-the-crop
 - https://rebelgardens.co.nz/contact/
-
+sources: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Rebel Gardens is the passion project of Craig "Griff" Griffiths, who cultivates a "lovely bit of paradise" between Martinborough and Greytown. Griff specialises in small batches of diverse vegetables, focusing on flavour over appearance. His main summer crop is gourmet Jersey Benne potatoes, dug, packed in biodegradable bags and sold within 24 hours. When the potatoes finish, carrots and beetroot take their place, and he grows specialty courgettes such as the nutty Constanta Romanesco variety. He continually experiments with new crops to meet customer requests.
 

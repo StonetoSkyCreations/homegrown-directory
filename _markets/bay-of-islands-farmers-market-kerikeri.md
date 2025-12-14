@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: bay-of-islands-farmers-market-kerikeri
 name: Bay of Islands Farmers Market – Kerikeri
@@ -34,6 +33,14 @@ notes: Market
 city: Kerikeri
 practices_tags:
 - local
-
 lat: -35.212396
+title: Bay of Islands Farmers Market – Kerikeri
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

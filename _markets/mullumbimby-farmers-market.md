@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: mullumbimby-farmers-market
 name: Mullumbimby Farmers Market
@@ -36,8 +35,17 @@ city: Mullumbimby
 practices_tags:
 - organic
 - local
-
 lat: -28.548365
 lon: 153.48734
+title: Mullumbimby Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Weekly Friday market with certified organic growers, seasonal produce, and local food stalls at the showgrounds.

@@ -34,5 +34,11 @@ products_tags:
 - seed
 subtype: seeds
 source_urls: []
+sources: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Moana Organics tends mixed vegetable beds on sandy loam, rotating hens through orchard alleys to keep pest pressure low without sprays. They prioritise seed diversity, living compost, and delivering weekly boxes across Kāpiti and Wellington City.

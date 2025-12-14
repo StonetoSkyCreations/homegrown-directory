@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: The Organic Farm
 slug: the-organic-farm
@@ -12,7 +11,7 @@ region: Hawke's Bay
 city: Hastings
 address: 300 Eastbourne Street West, Hastings 4122, New Zealand
 postcode: '4122'
-phone: "+64 6 870 3598"
+phone: +64 6 870 3598
 email: ''
 website: https://theorganicfarm.co.nz
 social_links: []
@@ -32,7 +31,13 @@ notes: ''
 products_tags:
 - meat
 subtype: livestock
-
 lat: -39.6407747
 lon: 176.8399474
+sources: []
+supplies_to: []
+practices: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

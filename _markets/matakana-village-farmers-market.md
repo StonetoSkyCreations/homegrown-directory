@@ -53,6 +53,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Matakana Bacon Company
 geo_query: 2 Matakana Valley Road, Matakana, Auckland, Matakana, Auckland, New Zealand
+sources: []
+supplies_to: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 The Matakana Village Farmers' Market is the beating heart of this coastal village. Open every Saturday morning from 8 am to 1 pm year-round, the riverside market invites visitors to start their day with award-winning coffee and gourmet brunch dishes. Stalls overflow with seasonal local produce, flowers, artisan breads, deli treats and sweet delights, all grown or made by passionate producers. Live musicians provide a laid-back soundtrack while children play in a rustic treehouse and natural playground.
 

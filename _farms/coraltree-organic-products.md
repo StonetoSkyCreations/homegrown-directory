@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: CoralTree Organic Products
 slug: coraltree-organic-products
@@ -27,7 +26,14 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 subtype: mixed
-
 lat: -39.6417678
 lon: 176.8430781
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

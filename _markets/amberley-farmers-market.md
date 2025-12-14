@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: amberley-farmers-market
 name: Amberley Farmers Market
@@ -34,6 +33,15 @@ rating_count: 1
 practices_tags:
 - organic
 - local
-
 lat: -42.8791219
+title: Amberley Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

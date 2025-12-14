@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Dutchy's
 slug: dutchys
@@ -30,5 +29,12 @@ hours: ''
 lat: -40.6218161
 lon: 175.2865854
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

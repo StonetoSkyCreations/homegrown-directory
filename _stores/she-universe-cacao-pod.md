@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: She Universe Cacao Pod
 slug: she-universe-cacao-pod
@@ -31,7 +30,14 @@ published: true
 rating_average: 5
 rating_count: 1
 source_urls: []
-
 lat: -43.530955
 lon: 172.6364343
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: The Wee Shop Organics
 slug: wee-shop-organics
@@ -34,5 +33,12 @@ lon: 173.0864512
 subtype: organic-store
 source_urls:
 - http://weeshoporganics.co.nz
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

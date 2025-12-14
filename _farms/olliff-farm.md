@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Olliff Farm
 slug: olliff-farm
@@ -22,12 +21,19 @@ services:
 - Click and collect
 website: https://ollifffarm.co.nz
 email: ''
-phone: "+64 21 881 187"
+phone: +64 21 881 187
 social: ''
 hours: 7 days 9am–6pm
 lat: -36.610007
 lon: 174.585731
 subtype: eggs
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

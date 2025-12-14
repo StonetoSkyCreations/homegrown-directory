@@ -33,4 +33,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: North Shore Hospital Road
 geo_query: North Shore, Auckland, North Shore, Auckland, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

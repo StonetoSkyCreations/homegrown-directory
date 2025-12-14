@@ -1,5 +1,4 @@
 ---
-
 title: Hygge at Clifton Bay
 slug: hygge-at-clifton-bay
 published: true
@@ -24,7 +23,14 @@ description: Coastal café sourcing local, ethical, and organic produce with org
 Beachfront café emphasizing local, ethical, and organic ingredients and coffee wherever possible. Source: https://www.hyggeatcliftonbay.nz/
 subtype: cafe
 source_urls: []
-
 lat: -39.6395166
 lon: 176.9993373904905
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

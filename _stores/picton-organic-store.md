@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: picton-organic-store
 name: Picton Organic Store
@@ -31,7 +30,17 @@ published: true
 city: Picton
 Dedicated organic store in Picton carrying organic produce, groceries, and health items. Source: user-supplied
   list
-
 lat: -41.290916
 lon: 174.006908
+title: Picton Organic Store
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

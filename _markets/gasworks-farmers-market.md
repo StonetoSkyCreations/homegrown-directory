@@ -42,5 +42,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '21'
 geo_query: 21 Graham Street, Melbourne, Victoria, AU
+title: Gasworks Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Monthly farmers market in Gasworks Arts Park featuring organic growers and local food makers.

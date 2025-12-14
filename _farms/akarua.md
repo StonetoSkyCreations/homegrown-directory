@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Akarua
 slug: akarua
@@ -29,7 +28,14 @@ hours: ''
 last_checked: user-submitted
 notes: ''
 subtype: vineyard
-
 lat: -45.088368
 lon: 169.1600101
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

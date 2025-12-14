@@ -26,15 +26,15 @@ services:
 - online shopping
 - in-store shopping
 website: https://www.newworld.co.nz/south-island/canterbury/fendalton
-email: 
-phone: "(03) 351 6251"
-social: 
+email: null
+phone: (03) 351 6251
+social: null
 hours: 7:30am-9:00pm daily
 market_days: []
 lat: -43.5179338267592
 lon: 172.588355445862
 sourced_from: streamside-organics
-also_referenced_by: 
+also_referenced_by: null
 sources:
 - streamside-organics
 last_checked: '2025-12-12'
@@ -44,5 +44,12 @@ source_urls:
 - https://www.newworld.co.nz/south-island/canterbury/fendalton
 - https://findchch.com/places/10-new-world-fendalton
 - https://www.rankers.co.nz/experiences/8255-New_World_Fendalton_Christchurch
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Established in 1936, New World Fendalton is a family-owned supermarket that prides itself on friendly service and fresh produce. The store stocks certified organic vegetables from Streamside Organics, a BioGro-certified farm where nearly everything is organically grown. Shoppers note that fruit and vegetables are beautifully displayed and staff are helpful and attentive. Located on Memorial Avenue in the Christchurch suburb of Fendalton, the supermarket offers catering, florist services, online shopping, free Wi-Fi, ATMs and an electric-car charging station. It is open daily from 7:30am to 9pm and provides a convenient stop for quality groceries and locally grown organic produce.

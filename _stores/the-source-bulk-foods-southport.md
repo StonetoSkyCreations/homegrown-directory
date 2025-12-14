@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: the-source-bulk-foods-southport
 name: The Source Bulk Foods (Southport)
@@ -15,7 +14,7 @@ region: Queensland
 suburb: Southport
 address: Shop T7 Ferry Road Market (Brickworks Centre), 107 Ferry Road
 postcode: '4215'
-phone: "(07) 5531 0333"
+phone: (07) 5531 0333
 email: ''
 website: https://southport.thesourcebulkfoods.com.au
 social_links:
@@ -33,8 +32,18 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer; zero-waste refillery
 city: Gold Coast
-
 lat: -27.97995115
 lon: 153.40978546639033
+title: The Source Bulk Foods (Southport)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Bulk foods shop with organic pantry staples and refillable household goods at Brickworks Centre.

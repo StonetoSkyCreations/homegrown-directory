@@ -32,4 +32,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: 4/101
 geo_query: 4 Mana Esplanade, Porirua 5026, Porirua, Wellington, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

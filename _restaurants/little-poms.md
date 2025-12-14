@@ -1,5 +1,4 @@
 ---
-
 title: Little Poms
 slug: little-poms
 published: true
@@ -38,7 +37,14 @@ description: Neighbourhood café serving seasonal, locally sourced and organic i
   brunches and lunches made in-house, including nut butters and almond milk.
 subtype: cafe
 source_urls: []
-
 lat: -43.5267222
 lon: 172.6499996
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Blue Mountain Station
 slug: blue-mountain-station
@@ -33,7 +32,13 @@ notes: ''
 products_tags:
 - meat
 subtype: livestock
-
 lat: -45.9425171
 lon: 169.2619453
+sources: []
+supplies_to: []
+practices: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

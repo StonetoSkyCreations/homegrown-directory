@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: west-coast-farmers-market-greymouth
 name: West Coast Farmers Market
@@ -35,7 +34,16 @@ practices_tags:
 - organic
 - spray-free
 - local
-
 lat: -42.4499469
 lon: 171.2079875
+title: West Coast Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

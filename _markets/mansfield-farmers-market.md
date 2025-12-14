@@ -42,5 +42,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: High Street
 geo_query: High Street, Mansfield, Victoria, AU
+title: Mansfield Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Regional farmers market highlighting organic growers and seasonal foods from Mansfield district.

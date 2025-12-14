@@ -34,4 +34,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '175'
 geo_query: 175 Paraite Road, Paraite 4373, Paraite, Taranaki, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 title: Oamaru Organics
 slug: oamaru-organics
@@ -23,7 +22,7 @@ services:
 - Subscription service
 website: https://oamaruorganics.nz
 email: ''
-phone: "+64 27 303 3669"
+phone: +64 27 303 3669
 social: ''
 hours: ''
 lat: -45.1224552
@@ -33,5 +32,11 @@ practices_tags:
 - local
 source_urls:
 - https://oamaruorganics.nz
-
+sources: []
+supplies_to: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

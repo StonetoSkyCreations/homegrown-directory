@@ -14,7 +14,7 @@ address: 6-8 Hughes Crescent, Cromwell 9310, Central Otago, New Zealand
 postcode: '9310'
 lat: -45.042
 lon: 169.1991
-phone: "+64 3 445 3084"
+phone: +64 3 445 3084
 email: info@quartzreef.co.nz
 website: https://quartzreef.co.nz
 social_links: []
@@ -32,4 +32,12 @@ hours: Mon–Fri 12–4pm (tastings)
 last_checked: '2025-12-09'
 notes: ''
 subtype: vineyard
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

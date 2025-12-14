@@ -39,5 +39,16 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '103'
 geo_query: 103 High Street, Melbourne, Victoria, AU
+title: Terra Madre (Northcote)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Well-known organic supermarket with a broad ACO-certified range of produce and pantry staples.

@@ -33,5 +33,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Como Crescent
 geo_query: 412/1 Como Crescent, Gold Coast, Queensland, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Cheek Cafe plates brunch made with pasture-raised eggs, grass-fed beef, and locally sourced produce.

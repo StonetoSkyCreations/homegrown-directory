@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: Organic Buzz
 slug: organic-buzz
@@ -14,7 +13,7 @@ country_slug: new-zealand
 region: Manawatū-Whanganui
 city: Palmerston North
 address: Shop 1, 337 Broadway Avenue, Palmerston North
-phone: "+64 6 353 0549"
+phone: +64 6 353 0549
 email: info@organicbuzz.co.nz
 website: https://organicbuzz.co.nz
 products:
@@ -47,7 +46,14 @@ rating_average: 5
 rating_count: 1
 published: true
 source_urls: []
-
 lat: -40.347724
 lon: 175.626963
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: mrs-woollys-general-store-glenorchy
 name: Mrs. Woolly's General Store
@@ -33,7 +32,17 @@ city: Glenorchy
 ? Community general store offering local and organic produce alongside ethically sourced
   groceries for Glenorchy residents and visitors. Source
 : https://glenorchycommunitytrust.co.nz/mrs-woollys-general-store/
-
 lat: -44.8534622
 lon: 168.3895865
+title: Mrs. Woolly's General Store
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

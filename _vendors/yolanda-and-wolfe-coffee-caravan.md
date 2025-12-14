@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Yolanda and Wolfe Coffee Caravan
 slug: yolanda-and-wolfe-coffee-caravan
@@ -31,5 +30,12 @@ hours: ''
 lat: -36.8064867
 lon: 174.6342654
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

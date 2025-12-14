@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Sunshine Gelato
 slug: sunshine-gelato
@@ -32,5 +31,11 @@ lon: 174.649544
 supplies_to:
 - catalina-bay-farmers-market
 source_urls: []
-
+sources: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

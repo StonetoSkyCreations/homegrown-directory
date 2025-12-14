@@ -1,5 +1,4 @@
 ---
-
 title: Bohemian Bakery (Merivale)
 slug: bohemian-bakery-merivale
 collection: stores
@@ -12,7 +11,7 @@ description: 'Boutique bakery offering fresh sourdough, pastries, and baked good
   daily. Upholds the same natural ingredient standards, long fermentation, and flour
   sourcing from Milmore Downs and Farmers Mill.
 
-'
+  '
 practices:
 - organic flour (Milmore Downs)
 - spray-free flour (Farmers Mill)
@@ -29,7 +28,7 @@ services:
 - cafe
 website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
-phone: "+64 3-355 0576"
+phone: +64 3-355 0576
 social: https://www.facebook.com/bohemianbakerychristchurch/, https://www.instagram.com/bohemianbakerychristchurch
 hours: Mon–Sun 7:30–16:00
 lat: -43.5155615
@@ -40,7 +39,13 @@ sources:
 subtype: specialty-grocer
 source_urls: []
 brand_slug: bohemian-bakery
-
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Merivale’s Bohemian Bakery is a warm, refined neighbourhood spot — a quieter corner of the city where the bakery’s craft meets a more boutique environment. Surrounded by established homes, tree-lined streets, and steady foot traffic, this location brings the full Bohemian sourdough and pastry ethos into one of Christchurch’s most walkable suburbs.
 

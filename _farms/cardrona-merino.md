@@ -30,4 +30,11 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Cardrona Valley Road
 geo_query: Cardrona Valley, Otago, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

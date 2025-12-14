@@ -50,6 +50,13 @@ geo_last_verified: '2025-12-14'
 geo_label: '6'
 geo_query: 6 Beckford Road, St Martins, Christchurch, Christchurch, Canterbury, New
   Zealand
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 St Martins is Bohemian Bakery’s neighbourhood hub — a friendly corner stop positioned beside New World and moments from Hansen Park, where dog-walkers, families, and commuters drift through from dawn to afternoon.
 

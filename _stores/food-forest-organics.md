@@ -53,4 +53,9 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '101'
 geo_query: 101 Main Street, Greytown 5712, Greytown, Wellington, New Zealand
+practices_tags: []
+products_tags: []
+services_tags: []
+specialty_tags: []
+relationships_declared: true
 ---

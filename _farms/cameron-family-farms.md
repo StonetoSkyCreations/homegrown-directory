@@ -45,6 +45,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '10'
 geo_query: 10 Daniell Street, Featherston 5710, Featherston, Wellington, New Zealand
+sources: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Cameron Family Farms (registered as T Base 2 Limited) is a pioneering organic farm near Featherston. Founded by filmmaker James Cameron and author Suzy Cameron, the operation is guided by values of ethical, organic and plant-based farming. The farm managers produce nutrient-rich compost, use only organic fertilisers and constantly experiment with sustainable practices aimed at improving soil health. They advocate for plant-based diets and share knowledge with local farmers through field days and permaculture courses.
 

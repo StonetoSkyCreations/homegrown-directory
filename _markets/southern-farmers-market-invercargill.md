@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: southern-farmers-market-invercargill
 name: Southern Farmers Market (Invercargill)
@@ -33,6 +32,15 @@ practices_tags:
 - organic
 - spray-free
 - local
-
 lat: -46.4274407
+title: Southern Farmers Market (Invercargill)
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

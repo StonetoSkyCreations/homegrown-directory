@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: ecohive-collective-paihia
 name: The Ecohive Collective (Paihia)
@@ -24,8 +23,16 @@ description: Community-focused organic grocery with fresh produce, pantry staple
   and local honey.
 subtype: specialty-grocer
 source_urls: []
-
 lat: -35.2812407
 lon: 174.0920879
+title: The Ecohive Collective (Paihia)
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Organic grocer and refill hub in Paihia offering a broad range of organic fresh produce, dry goods, and locally sourced honey. Acts as a sustainability-focused community space for Bay of Islands locals. Source: https://evendo.com/locations/new-zealand/paihia/shop/the-ecohive-collective-paihia

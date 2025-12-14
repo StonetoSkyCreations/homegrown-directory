@@ -33,4 +33,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '151'
 geo_query: 151 Grey Street, Gisborne 4010, Gisborne, Gisborne, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

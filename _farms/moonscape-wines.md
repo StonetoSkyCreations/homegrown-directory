@@ -34,4 +34,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Cromwell Starlink Earth Station
 geo_query: Cromwell, Otago, Cromwell, Otago, New Zealand
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

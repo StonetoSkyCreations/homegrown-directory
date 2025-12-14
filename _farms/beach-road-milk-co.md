@@ -22,7 +22,7 @@ services:
 - Farm shop
 website: https://www.beachroadmilk.co.nz
 email: beachroadmilk@gmail.com
-phone: "+64 6 751 0125"
+phone: +64 6 751 0125
 social: ''
 hours: 06:00–20:00 daily
 lat: -39.0868578
@@ -34,4 +34,10 @@ products_tags:
 subtype: dairy-farm
 source_urls:
 - https://www.beachroadmilk.co.nz
+supplies_to: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

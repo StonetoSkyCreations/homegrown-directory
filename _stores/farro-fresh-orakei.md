@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: farro-fresh-orakei
 name: Farro Fresh Orakei
@@ -16,7 +15,7 @@ address: 228 Orakei Road, Orakei Bay Village
 postcode: '1050'
 lon: 174.809186
 phone: '174.8160'
-email: '09 892 6393'
+email: 09 892 6393
 website: ''
 social_links:
 - https://www.farro.co.nz/
@@ -28,6 +27,16 @@ source_urls: []
 last_checked: Farro Fresh Orakei – Brewé
 notes: Retail
 city: Auckland
-
 lat: -36.862888
+title: Farro Fresh Orakei
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

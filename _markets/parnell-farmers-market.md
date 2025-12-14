@@ -36,4 +36,14 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Jubilee Building
 geo_query: Jubilee Building, 545 Parnell Road, Auckland, Auckland, New Zealand
+title: Parnell Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

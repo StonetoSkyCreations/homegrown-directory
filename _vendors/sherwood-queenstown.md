@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 slug: sherwood-queenstown
 name: Sherwood Queenstown
@@ -14,7 +13,7 @@ region: Otago
 suburb: Frankton Rd
 address: 554–558 Frankton Road, Queenstown 9300, New Zealand
 postcode: '9300'
-phone: "+64 3 450 1090"
+phone: +64 3 450 1090
 email: reservations@sherwoodqueenstown.nz
 website: https://www.sherwoodqueenstown.nz
 social_links: []
@@ -31,7 +30,18 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Queenstown
-
 lat: -45.02358165
 lon: 168.69688838489952
+title: Sherwood Queenstown
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

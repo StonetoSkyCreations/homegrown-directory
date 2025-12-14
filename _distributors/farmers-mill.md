@@ -50,4 +50,9 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '25'
 geo_query: 25 Elginshire Street, Washdyke, Timaru 7910, Timaru, Canterbury, New Zealand
+practices_tags: []
+products_tags: []
+services_tags: []
+specialty_tags: []
+relationships_declared: true
 ---

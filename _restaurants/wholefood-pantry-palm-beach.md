@@ -1,5 +1,4 @@
 ---
-
 title: Wholefood Pantry Palm Beach
 slug: wholefood-pantry-palm-beach
 country: Australia
@@ -26,8 +25,15 @@ phone: 07 5576 7111
 description: Organic cafe and grocery using only certified organic ingredients in
   every dish.
 source_urls: []
-
 lat: -28.114503
 lon: 153.455426
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Wholefood Pantry Palm Beach keeps its menu fully certified organic across breakfast, lunch, and coffee.

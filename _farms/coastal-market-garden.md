@@ -20,7 +20,7 @@ services:
 - Farmers market stall
 website: https://coastalmarketgarden.com
 email: melissa@coastalmarketgarden.com
-phone: "+64 21 242 3275"
+phone: +64 21 242 3275
 social: ''
 hours: ''
 lat: -39.1167
@@ -30,4 +30,11 @@ supplies_to:
 subtype: market-garden
 source_urls:
 - https://coastalmarketgarden.com
+sources: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

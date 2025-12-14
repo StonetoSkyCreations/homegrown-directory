@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: Mapari Meats
 slug: mapari-meats
@@ -23,12 +22,19 @@ services:
 - Online orders
 website: https://maparimeats.co.nz
 email: info@maparimeats.co.nz
-phone: "+64 9 215 9420"
+phone: +64 9 215 9420
 social: ''
 hours: Mon–Thu 9am–6pm; Fri 7:30am–6pm; Sat 7:30am–5pm; Sun 9am–4pm
 lat: -36.888334
 lon: 174.832827
 subtype: specialty-grocer
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

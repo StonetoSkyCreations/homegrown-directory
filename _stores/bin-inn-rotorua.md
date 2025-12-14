@@ -34,4 +34,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Old Taupo Road
 geo_query: 21 Old Taupo Road, Rotorua, Bay of Plenty, New Zealand
+title: Bin Inn Rotorua
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

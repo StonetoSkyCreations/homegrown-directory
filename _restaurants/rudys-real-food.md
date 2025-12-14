@@ -33,5 +33,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '2932'
 geo_query: 2932 Gold Coast Hwy, Gold Coast, Queensland, Australia
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Rudy's Real Food cooks organic, chemical-free meals with grass-fed ingredients for a nutrient-dense menu.

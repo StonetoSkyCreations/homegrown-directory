@@ -30,5 +30,11 @@ practices_tags:
 - spray-free
 - local
 source_urls: []
+supplies_to: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Harbour Harvest keeps stall fees low, provides clear signage about growing practices, and encourages vendors to note farm names on every crate. Kids cooking demos and compost drop-offs run alongside the Saturday market to keep the loop local.

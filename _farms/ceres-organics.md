@@ -13,7 +13,7 @@ address: 82 Carbine Road, Mt Wellington, Auckland 1060, New Zealand
 postcode: '1060'
 lat: -36.9208756
 lon: 174.8501957
-phone: "+64 9 574 0373 / 0508 423 737"
+phone: +64 9 574 0373 / 0508 423 737
 email: ''
 website: https://ceres.co.nz
 social_links: []
@@ -29,4 +29,12 @@ hours: Mon–Fri 09:00–17:00; Sat–Sun closed
 last_checked: '2025-12-09'
 notes: ''
 subtype: mixed
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

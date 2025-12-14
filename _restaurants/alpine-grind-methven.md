@@ -47,5 +47,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Nawab Eatery
 geo_query: 121 Main Street, Methven 7730, Methven, Canterbury, New Zealand
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Alpine Grind is a homely cafe in the centre of Methven offering creative breakfast, brunch and lunch dishes that celebrate fresh, seasonal produce. The kitchen produces hearty plates like Avalanche Brekkie and Buckwheat Waffles alongside lighter options, all made with locally sourced ingredients and organic touches where possible. Coffee lovers enjoy Kokako fair-trade coffee and Nitro Cold Brew, and the cafe bakes its own breads and bagels; vegan and gluten-free options are available. Open from early morning, it's a favourite stop for skiers and locals alike, with free Wi-Fi, takeaway and dine-in service.

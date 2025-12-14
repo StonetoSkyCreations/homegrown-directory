@@ -38,4 +38,11 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Alexandra
 geo_query: Alexandra, Otago, Alexandra, Otago, New Zealand
+sources: []
+supplies_to: []
+practices: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: false
 ---

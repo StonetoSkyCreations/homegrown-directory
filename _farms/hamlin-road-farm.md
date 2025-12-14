@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Hamlin Road Farm
 slug: hamlin-road-farm
@@ -20,12 +19,19 @@ services:
 - Contracted lawn mowing
 website: https://hamlinroadfarm.co.nz
 email: ''
-phone: "+64 27 217 9354"
+phone: +64 27 217 9354
 social: ''
 hours: ''
 lat: -37.0418932
 lon: 174.9721553
 subtype: seeds
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: benge-and-co-organics-nelson
 name: Benge & Co Organics
@@ -30,7 +29,17 @@ notes: ''
 published: true
 city: Nelson
 Organic grocery store in Nelson selling certified organic fruit, vegetables, and wholefoods. Source: https://bengeandco.co.nz/
-
 lat: -41.2725833
 lon: 173.2853903
+title: Benge & Co Organics
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

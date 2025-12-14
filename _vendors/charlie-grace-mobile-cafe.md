@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Charlie Grace Mobile Café
 slug: charlie-grace-mobile-cafe
@@ -22,7 +21,7 @@ services:
 - Event catering
 website: https://charliegrace.co.nz
 email: events.charliegrace@gmail.com
-phone: "+64 21 273 3968"
+phone: +64 21 273 3968
 social: ''
 hours: ''
 lat: -36.94780125874932
@@ -30,5 +29,11 @@ lon: 174.9641298954297
 sources:
 - coffee-la-la
 source_urls: []
-
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---

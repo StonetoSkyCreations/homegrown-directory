@@ -1,5 +1,4 @@
 ---
-
 layout: store
 title: InterFood Grocery
 slug: interfood-grocery
@@ -35,5 +34,12 @@ lon: 171.5993248
 subtype: specialty-grocer
 source_urls:
 - https://www.interfood.co.nz
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

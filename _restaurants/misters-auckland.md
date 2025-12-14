@@ -1,5 +1,4 @@
 ---
-
 title: Misters
 slug: misters-auckland
 published: true
@@ -19,14 +18,21 @@ services:
 hours: ''
 website: https://misters.co
 email: ''
-phone: "+64 9 379 9939"
+phone: +64 9 379 9939
 description: CBD cafe with a fully gluten- and dairy-free organic menu using locally
   sourced seasonal ingredients.
 Menu is entirely gluten- and dairy-free with organic, locally sourced seasonal ingredients. Source: user-provided
   listing
 subtype: cafe
 source_urls: []
-
 lat: -36.852095
 lon: 174.7631803
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

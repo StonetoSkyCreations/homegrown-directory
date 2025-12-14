@@ -1,5 +1,4 @@
 ---
-
 title: GreenLand Cafe
 slug: greenland-cafe-wellington
 published: true
@@ -19,14 +18,21 @@ services:
 hours: ''
 website: ''
 email: ''
-phone: "+64 4 499 6368"
+phone: +64 4 499 6368
 description: Pipitea cafe offering organically and locally sourced food and coffee
   where possible.
 Committed to using organic ingredients and locally sourced food and coffee. Source: user-provided
   listing
 subtype: cafe
 source_urls: []
-
 lat: -41.27792445
 lon: 174.7787504623986
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

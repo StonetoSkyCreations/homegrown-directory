@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 slug: grizzly-baked-goods
 name: Grizzly Baked Goods
@@ -27,8 +26,19 @@ source_urls:
 last_checked: ''
 notes: ''
 city: Christchurch
-Artisan bakery making sourdough breads and pastries with organic and locally grown flour, sold via markets and retail. Source: https://www.grizzly.co.nz/
-
+? Artisan bakery making sourdough breads and pastries with organic and locally grown
+  flour, sold via markets and retail. Source
+: https://www.grizzly.co.nz/
 lat: -43.530955
 lon: 172.6364343
+title: Grizzly Baked Goods
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

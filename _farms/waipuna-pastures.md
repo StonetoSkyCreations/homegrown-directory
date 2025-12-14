@@ -27,11 +27,17 @@ supplies_to:
 description: Mixed livestock on diverse pastures with long rest periods and low stocking
   rates.
 website: https://waipunapastures.example.nz
-phone: "+64 27 555 0192"
+phone: +64 27 555 0192
 products_tags:
 - dairy
 - meat
 subtype: dairy-farm
 source_urls: []
+sources: []
+practices_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Waipuna Pastures keeps cattle, sheep, and hens moving across long-rotation pastures, using multi-species swards and no synthetic nitrogen. Offal, bones, and hides are kept in circular use with local butchers, while customers can order bulk packs direct.

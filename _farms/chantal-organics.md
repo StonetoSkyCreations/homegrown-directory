@@ -13,7 +13,7 @@ address: 93 Austin Street, Onekawa, Napier 4110, New Zealand
 postcode: '4110'
 lat: -39.5007
 lon: 176.882
-phone: "+64 6 843 2114 / 0800 254 766"
+phone: +64 6 843 2114 / 0800 254 766
 email: info@chantal.co.nz / orders@chantal.co.nz
 website: https://chantalorganics.co.nz
 social_links: []
@@ -31,4 +31,11 @@ notes: Founded as organic co-op farm
 subtype: mixed
 supplies_to:
 - chantal-shop-napier
+sources: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+specialty_tags: []
+relationships_declared: true
 ---

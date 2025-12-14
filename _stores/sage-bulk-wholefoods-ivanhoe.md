@@ -39,5 +39,16 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '206'
 geo_query: 206 Upper Heidelberg Road, Melbourne, Victoria, AU
+title: Sage Bulk Wholefoods - Ivanhoe
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Local refill store with organic bulk foods and low-waste household items.

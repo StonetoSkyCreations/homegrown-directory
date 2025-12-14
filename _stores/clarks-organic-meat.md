@@ -34,4 +34,12 @@ geo_last_verified: '2025-12-14'
 geo_label: West Coast Road
 geo_query: 356 West Coast Road, Glen Eden, Auckland 0602, Glen Eden, Auckland, New
   Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

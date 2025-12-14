@@ -1,5 +1,4 @@
 ---
-
 layout: store
 slug: the-wholefood-pantry-palm-beach
 name: The Wholefood Pantry (Palm Beach)
@@ -14,7 +13,7 @@ region: Queensland
 suburb: Palm Beach
 address: 19th Ave Shopping Centre, 155 19th Ave
 postcode: '4221'
-phone: "(07) 5576 7111"
+phone: (07) 5576 7111
 email: shop@twppalmbeach.com.au
 website: https://twppalmbeach.com.au
 social_links:
@@ -31,8 +30,18 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer and cafe
 city: Gold Coast
-
 lat: -28.111783
 lon: 153.46097
+title: The Wholefood Pantry (Palm Beach)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Certified organic grocery and cafe with bulk foods, pantry staples, and grab-and-go options.

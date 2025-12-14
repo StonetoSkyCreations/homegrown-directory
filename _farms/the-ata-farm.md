@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: The Āta Farm
 slug: the-ata-farm
@@ -29,7 +28,14 @@ hours: ''
 published: true
 subtype: market-garden
 source_urls: []
-
 lat: -36.79310825
 lon: 175.08838633700125
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

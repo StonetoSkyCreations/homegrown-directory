@@ -1,5 +1,4 @@
 ---
-
 layout: listing
 slug: bay-of-islands-farmers-market-paihia
 name: Bay of Islands Farmers Market – Paihia
@@ -31,6 +30,15 @@ notes: Market
 city: Paihia
 practices_tags:
 - local
-
 lat: -35.2818255
+title: Bay of Islands Farmers Market – Paihia
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

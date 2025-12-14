@@ -50,6 +50,12 @@ geo_last_verified: '2025-12-14'
 geo_label: Colombo Street
 geo_query: 140 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Canterbury,
   New Zealand
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+specialty_tags: []
+relationships_declared: true
 ---
 The Untamed Earth Farm Shop in Beckenham is a neighbourhood hub for fresh, seasonal, organically grown produce -- located right next door to the Organic Beckenham Butchery. Together, the two create a rare pairing in the city: certified organic vegetables and ethically raised organic meat available side by side, making it easy for customers to shop with integrity in one stop.
 

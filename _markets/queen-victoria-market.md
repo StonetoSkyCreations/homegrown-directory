@@ -42,5 +42,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: 3 Brothersss
 geo_query: 513 Elizabeth Street, Melbourne, Victoria, AU
+title: Queen Victoria Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Central city market with a certified organic produce precinct plus specialty food stalls.

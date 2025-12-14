@@ -39,4 +39,14 @@ geo_last_verified: '2025-12-14'
 geo_label: Bay of Islands Farmers Market
 geo_query: Bay of Islands Farmers Market, 10 Hobson Ave, Kerikeri, Northland, New
   Zealand
+title: Organic Corner (Lisa’s Stall)
+sources: []
+supplies_to: []
+practices: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

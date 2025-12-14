@@ -32,4 +32,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Palmerston Street
 geo_query: 154 Palmerston Street, Riverton, Riverton, Southland, New Zealand
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

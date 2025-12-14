@@ -48,6 +48,13 @@ geo_last_verified: '2025-12-14'
 geo_label: '255'
 geo_query: 255 Saint Asaph Street, Christchurch 8011, Christchurch, Canterbury, New
   Zealand
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 In the heart of Christchurch’s SALT District — a pocket of grit, creativity, and post-quake reinvention — sits Bohemian’s City Bakery Cafe. It’s where the craft of slow-fermented sourdough meets the energy of an evolving urban neighbourhood.
 

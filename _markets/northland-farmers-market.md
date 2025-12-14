@@ -34,4 +34,14 @@ practices_tags:
 - organic
 - spray-free
 - local
+title: Northland Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

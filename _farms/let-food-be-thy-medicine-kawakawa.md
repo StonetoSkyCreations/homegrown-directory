@@ -26,5 +26,12 @@ description: Organic regenerative garden on Settlement Rd sharing produce via lo
   markets.
 subtype: mixed
 source_urls: []
+sources: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: true
 ---
 Northland Edible Garden Trail participant using organic regenerative practices over seven years, with transformed soils and diverse crops. Sells or shares produce locally, including through Bay of Islands farmers markets. Source: https://www.northlandediblegardentrail.org.nz/mid-north-gardens-2025

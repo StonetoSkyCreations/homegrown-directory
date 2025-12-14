@@ -1,5 +1,4 @@
 ---
-
 layout: farm
 title: Kennedy Point Vineyard
 slug: kennedy-point-vineyard
@@ -23,13 +22,20 @@ services:
 - Wine tastings
 website: https://kennedypointvineyard.com
 email: info@kennedypointvineyard.com
-phone: "+64 9 372 5600"
+phone: +64 9 372 5600
 social_links: []
 hours: Thu–Sun 11am–4pm
 published: true
 subtype: vineyard
 source_urls: []
-
 lat: -36.807386
 lon: 175.025821
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

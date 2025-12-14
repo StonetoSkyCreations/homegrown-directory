@@ -41,5 +41,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Main Street
 geo_query: Main Street, Melbourne, Victoria, AU
+title: Mornington Peninsula Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
 Monthly market bringing certified organic and seasonal produce from Mornington Peninsula growers.

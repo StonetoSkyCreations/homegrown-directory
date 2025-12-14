@@ -1,5 +1,4 @@
 ---
-
 layout: vendor
 title: Purple Vibes
 slug: purple-vibes
@@ -22,11 +21,18 @@ services:
 - Event catering
 website: https://purplevibes.co.nz
 email: info@purplevibes.co.nz
-phone: "+64 20 4060 8009"
+phone: +64 20 4060 8009
 social: ''
 hours: ''
 lat: -36.882819
 lon: 174.733469
 source_urls: []
-
+sources: []
+supplies_to: []
+practices_tags: []
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---

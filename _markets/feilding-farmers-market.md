@@ -36,4 +36,14 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Manchester Square
 geo_query: Manchester Square, Manawatū, Manawatū-Whanganui, New Zealand
+title: Feilding Farmers Market
+sources: []
+supplies_to: []
+practices: []
+products_tags: []
+services: []
+services_tags: []
+certifications: []
+specialty_tags: []
+relationships_declared: false
 ---
