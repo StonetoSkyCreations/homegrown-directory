@@ -8,6 +8,10 @@ map: false
 {% assign website_url = page.website | default: "" %}
 {% assign short_description = page.description | default: page.excerpt | default: "" %}
 {% assign trimmed_body = content | strip %}
+{% assign empty_array = "" | split: "" %}
+{% assign supplies_list = page.supplies_to | default: empty_array %}
+{% assign all_listings = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors | concat: site.vendors %}
+{% assign outgoing_supplies = all_listings | where_exp: 'item', 'supplies_list contains item.slug' | uniq %}
 {% if website_url != "" and website_url contains "://" %}
 {% elsif website_url != "" %}
   {% assign website_url = "https://" | append: website_url %}
@@ -116,6 +120,17 @@ map: false
         <ul class="tag-list">
           {% for day in page.market_days %}
           <li>{{ day }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if outgoing_supplies and outgoing_supplies.size > 0 %}
+      <div>
+        <h2>Supplies to</h2>
+        <ul class="link-list">
+          {% for item in outgoing_supplies %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
           {% endfor %}
         </ul>
       </div>
