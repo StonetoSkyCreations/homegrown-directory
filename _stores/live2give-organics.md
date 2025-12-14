@@ -7,9 +7,8 @@ country: New Zealand
 region: Manawatū-Whanganui
 city: Palmerston North
 address: 15 Cyprus Place, Fitzherbert, Palmerston North, New Zealand
-description: Regenerative organic farm and online grocer delivering organic fruit,
-  vegetables and dry goods direct to customers and stocking select produce from Streamside
-  Organics.
+description: Online organic grocer delivering its own regenerative farm produce plus
+  partner-grown fruit, vegetables, and pantry goods across the lower North Island.
 practices:
 - regenerative farming with permanent ground cover
 - transparent supply chain
@@ -50,4 +49,6 @@ certifications: []
 specialty_tags: []
 relationships_declared: true
 ---
-Live2Give Organics is a social enterprise and organic farm run by two husband-and-wife teams, Robert and Naomi and Gosia and Tobi. Based in Palmerston North, they push the boundaries of regenerative and organic farming, using permanent ground cover and living roots to build soil organic matter and capture carbon. Customers can order individual organic fruit and vegetables or subscribe to set boxes, with deliveries made in chilled trucks between Palmerston North and Wellington and couriers shipping nationwide. They also operate a swap-a-crate system for local deliveries, reducing packaging waste. The farm emphasises knowing exactly where food is grown and avoids long supply chains. Live2Give sells produce from their own regenerative farm and from friends at Streamside Organics; a product listing notes that Streamside is a certified organic market garden near Leeston founded by Dominique Schacherer and Logan Kerr that uses regenerative techniques. Contact details on their site list the address 15 Cyprus Place, Fitzherbert, Palmerston North and phone number 021 680 894.
+Live2Give Organics operates as an online organic grocer, supplying customers with produce from its own regenerative farm alongside trusted partners like Streamside Organics. Customers can order individual organic fruit and vegetables or subscribe to set boxes, with deliveries made in chilled trucks between Palmerston North and Wellington and courier shipping nationwide. A swap-a-crate system keeps local deliveries low-waste, while the team maintains transparency about where each item is grown. The shop offers seasonal fruit and vegetables, organic eggs, dairy and tofu, and pantry staples including grains, nuts, seeds, pulses, and flour.
+
+Live2Give’s online shop is fed by their own farm operation — see their farm listing at [Live2Give Organics farm](/farms/live2give-organics/).
