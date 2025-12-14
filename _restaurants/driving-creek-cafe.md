@@ -1,36 +1,48 @@
 ---
-title: Driving Creek Café
+title: Driving Creek Cafe
 slug: driving-creek-cafe
-published: true
-country: New Zealand
+collection: restaurants
 country_slug: new-zealand
-region: Waikato
-city: Coromandel
-address: "180 Driving Creek Road, Coromandel 3506"
+country: New Zealand
+region: Coromandel
+city: Coromandel Town
+address: 180 Driving Creek Road, Coromandel Town
+description: Vegetarian café next to the Driving Creek Railway serving plant-based meals, juices and locally roasted coffee in a relaxed garden setting.
+long_description: |
+  Driving Creek Café is a vegetarian eatery tucked beside the historic Driving Creek Railway in Coromandel Town. The café’s compact menu features meat-free breakfasts, fresh salads, hearty vegetarian lunches and homemade sweets, along with smoothies and juices made from seasonal produce. The owners supply the kitchen with vegetables and fruit from their own garden and they source extra produce from nearby growers, so dishes change with the seasons. Coffee LaLa beans are roasted locally and brewed alongside teas, and the café offers gluten-free and vegan options. This focus on plant-based, home-grown ingredients gives the café a simple, sustainable character without formal organic certification.
 practices:
-- Seasonal menu
-- Organic (uncertified)
+- spray-free garden produce
 products:
-- Coffee and tea
-- Bread and bakery
+- vegetarian meals
+- salads
+- smoothies
+- juices
+- coffee
+- baked goods
 services:
-- Restaurant supply
+- café
+- garden eatery
+website: ''
+email: drivingcreekcafe@gmail.com
+phone: 07 866 7066
+social: ''
 hours: ''
-website: http://www.drivingcreekrailway.co.nz/
-email: ''
-phone: ''
-description: Cafe in the bush serving meals with local and organic produce where possible.
-Cafe near Driving Creek Railway using local, seasonal, and organic ingredients whenever possible. Source: http://www.drivingcreekrailway.co.nz/
-subtype: cafe
-source_urls: []
-lat: -36.7386594
-lon: 175.5022712
-sources: []
+market_days: []
+lat: -36.73694160871914
+lon: 175.5040158234401
+sourced_from:
+- coffee-la-la
 supplies_to: []
+also_referenced_by: []
+sources:
+- coffee-la-la
+source_urls:
+- https://nzfoodfinder.wordpress.com/2015/11/30/local-foodie-qa-jessica-dziwulski-driving-creek-coromandel/#:~:text=We%20provide%20fresh%20seasonal%20meals,bar%20with%20over%2020%20choices
+last_checked: 2025-12-12
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-relationships_declared: false
+relationships_declared: true
 ---

@@ -36,7 +36,8 @@ market_days: []
 lat: -36.632833080743026
 lon: 175.47672029782478
 sourced_from: []
-supplies_to: []
+supplies_to:
+- hereford-n-a-pickle-cafe
 also_referenced_by: []
 sources:
 - https://thecoromandel.nz/explore/hereford-n-a-pickle#:~:text=Hereford%20%27n%27%20a%20Pickle%20supplies,farmed%20as%20naturally%20as%20possiblehttps://thecoromandel.nz/explore/hereford-n-a-pickle#:~:text=
@@ -46,5 +47,5 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-relationships_declared: false
+relationships_declared: true
 ---
