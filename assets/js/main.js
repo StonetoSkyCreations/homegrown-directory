@@ -327,6 +327,13 @@
     const nearMeStatus = document.getElementById("nearMeStatus");
     let userLocation = null;
     let nearMeActive = false;
+    let nearMeClickCount = 0;
+    let isLocating = false;
+    let lastLocationAt = 0;
+    const LOCATION_CACHE_MS = 1000 * 60 * 5;
+    const nearMeDebug = (...args) => {
+      if (window.DEBUG_NEAR_ME) console.log("[near-me]", ...args);
+    };
 
     const parseCoord = (value) => {
       const num = parseFloat(value);
@@ -393,33 +400,71 @@
     };
 
     const requestLocation = () => {
+      nearMeClickCount += 1;
       if (!nearMeBtn) return;
       if (!navigator.geolocation) {
         if (nearMeStatus) nearMeStatus.textContent = "Geolocation not supported";
         return;
       }
+
+      const now = Date.now();
+      const cachedIsFresh = userLocation && now - lastLocationAt < LOCATION_CACHE_MS;
+      if (cachedIsFresh) {
+        nearMeDebug("Using cached location", userLocation);
+        nearMeActive = true;
+        if (nearMeStatus) nearMeStatus.textContent = "Sorted by distance";
+        if (typeof runDirectoryFilters === "function") runDirectoryFilters();
+        return;
+      }
+
+      if (isLocating) {
+        nearMeDebug("Already locating; ignoring click", { click: nearMeClickCount });
+        return;
+      }
+
       nearMeActive = false;
+      isLocating = true;
+      if (nearMeBtn) nearMeBtn.disabled = true;
       if (nearMeStatus) nearMeStatus.textContent = "Locating…";
+
+      const geoOptions = {
+        enableHighAccuracy: false,
+        timeout: 15000,
+        maximumAge: LOCATION_CACHE_MS
+      };
+      nearMeDebug("Requesting geolocation", { click: nearMeClickCount, options: geoOptions, isLocating });
+
       navigator.geolocation.getCurrentPosition(
         (position) => {
           userLocation = {
             lat: position.coords.latitude,
             lon: position.coords.longitude
           };
+          lastLocationAt = Date.now();
           nearMeActive = true;
+          isLocating = false;
+          if (nearMeBtn) nearMeBtn.disabled = false;
           if (nearMeStatus) nearMeStatus.textContent = "Sorted by distance";
+          nearMeDebug("Geolocation success", {
+            coords: userLocation,
+            accuracy: position.coords.accuracy,
+            timestamp: position.timestamp,
+            click: nearMeClickCount
+          });
           if (typeof runDirectoryFilters === "function") runDirectoryFilters();
         },
         (error) => {
           nearMeActive = false;
-          console.warn("Near me error", error.code, error.message);
+          isLocating = false;
+          if (nearMeBtn) nearMeBtn.disabled = false;
+          nearMeDebug("Near me error", { code: error.code, message: error.message, click: nearMeClickCount });
           if (!nearMeStatus) return;
           if (error.code === 1) nearMeStatus.textContent = "Location blocked";
           else if (error.code === 2) nearMeStatus.textContent = "Location unavailable";
           else if (error.code === 3) nearMeStatus.textContent = "Location timed out — try again";
           else nearMeStatus.textContent = "Couldn’t get location";
         },
-        { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 }
+        geoOptions
       );
     };
 
@@ -445,7 +490,8 @@
     };
 
     runDirectoryFilters = () => {
-      const active = hasActiveFilters();
+      const nearMeMode = nearMeActive && userLocation;
+      const active = nearMeMode || hasActiveFilters();
       const selectedRegion = normalizeRegion(regionSelect ? regionSelect.value : "all");
       const query = textFilter ? normalizeToken(textFilter.value) : "";
       const selectedTags = normalizeList(tagFilters.filter((c) => c.checked).map((c) => c.value));
@@ -457,7 +503,7 @@
       if (!active) {
         cards.forEach((card) => {
           const isFeatured = card.classList.contains("listing-card--featured") || card.dataset.featured === "true";
-          const hide = !isFeatured;
+          const hide = nearMeMode ? false : !isFeatured;
           card.classList.toggle("hidden", hide);
           card.style.display = hide ? "none" : "";
           if (!hide) visibleCount += 1;
@@ -506,6 +552,13 @@
       }
       if (nearMeActive && userLocation) {
         sortByDistance(cards.filter((card) => card.style.display !== "none"), userLocation);
+        const withCoords = cards.filter((card) => parseCoord(card.dataset.lat) !== null && parseCoord(card.dataset.lon) !== null);
+        nearMeDebug("Near me render", {
+          click: nearMeClickCount,
+          visibleCount,
+          withCoords: withCoords.length,
+          nearMeMode: true
+        });
       } else {
         clearDistances(cards);
       }
