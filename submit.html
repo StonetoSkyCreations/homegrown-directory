@@ -132,8 +132,8 @@ permalink: /submit.html
 
     <div class="form-group split">
       <div>
-        <label for="website">Website</label>
-        <input type="url" id="website" name="website" placeholder="https://">
+      <label for="website">Website</label>
+      <input type="text" id="website" name="website" placeholder="https:// or www.example.com">
       </div>
       <div>
         <label for="social">Social links</label>
@@ -287,6 +287,13 @@ permalink: /submit.html
         .replace(/-+/g, '-');
 
     const normalizeToken = (value) => (value || '').toString().trim().toLowerCase();
+    const normalizeWebsite = (value) => {
+      const raw = (value || '').trim();
+      if (!raw) return '';
+      if (/^https?:\/\//i.test(raw)) return raw;
+      if (raw.startsWith('www.')) return `https://${raw}`;
+      return `https://${raw}`;
+    };
     const parseMaybeNumber = (value) => {
       if (value === null || value === undefined || value === '') return null;
       const num = Number(value);
@@ -443,7 +450,7 @@ permalink: /submit.html
         collection === 'stores' && specialtyTags.length ? formatList('specialty_tags', specialtyTags) : null,
         formatList('products', listFields.products),
         formatList('services', listFields.services),
-        `website: ${data.get('website') || ''}`,
+        `website: ${normalizeWebsite(data.get('website'))}`,
         `email: ${data.get('email') || ''}`,
         `phone: ${data.get('phone') || ''}`,
         formatList('social', listFields.social),
