@@ -20,4 +20,4 @@ Kia ora and welcome! We built Homegrown Directory to make it easier to find food
 - Celebrate community projects that turn surplus into nourishment and keep good food local.
 - Help eaters, chefs, and retailers link back to the producers behind every crate and loaf.
 
-We’ll keep posts practical and uplifting, and we’ll link to the farms, markets, and stores featured so you can connect directly. If you have a story idea, email us at kiaora@homegrowndirectory.com. Mauri ora! 
+We’ll keep posts practical and uplifting, and we’ll link to the farms, markets, and stores featured so you can connect directly. If you have a story, an idea or an article to share, please get in touch! <a class="button" href="https://homegrowndirectory.com/blog/submit/">Submit an article</a>
