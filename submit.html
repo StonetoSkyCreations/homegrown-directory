@@ -221,7 +221,10 @@ permalink: /submit.html
 
     <p id="submitError" role="alert" style="display:none; color:#b43b3b; margin:0.35rem 0 0.5rem;"></p>
     <div id="submitDebug" style="display:none; margin:0.5rem 0;">
-      <p style="margin:0 0 0.4rem; color:#2d2d2d; font-size:0.95rem;">Attempted to open your email client. If nothing happened, your browser/mail app may be blocking mailto links. Copy the content below.</p>
+      <p style="margin:0 0 0.4rem; color:#2d2d2d; font-size:0.95rem;">
+        We tried to open your email app. If nothing happened, your browser/mail app may be blocking ‘mailto’ links.<br>
+        Copy the message below, then email it to <a href="mailto:josh@stonetosky.nz">josh@stonetosky.nz</a>.
+      </p>
       <textarea id="submitDebugBody" readonly rows="6" style="width:100%; font-family:monospace;"></textarea>
     </div>
     <button type="submit" class="button">Send via email</button>
