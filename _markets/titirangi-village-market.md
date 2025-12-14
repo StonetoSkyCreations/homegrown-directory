@@ -35,7 +35,8 @@ services:
   - stallholder opportunities
   - community fundraising
 certifications: []
-sources: []
+sources:
+  - solstice-organics
 supplies_to: []
 source_urls:
   - https://titirangi.steiner.school.nz/community/titirangi-village-market
