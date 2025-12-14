@@ -1,0 +1,16 @@
+{
+  "listing_prefixes": [
+    "/farms/",
+    "/markets/",
+    "/stores/",
+    "/vendors/",
+    "/restaurants/",
+    "/distributors/"
+  ],
+  "ignore_paths": [
+    "/404.html",
+    "/country/australia/",
+    "/country/new-zealand/"
+  ],
+  "allow_duplicate_titles_for_paths": []
+}
