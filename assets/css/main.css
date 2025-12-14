@@ -1321,8 +1321,8 @@ a:focus-visible {
 
 /* Highlighted Featured Card */
 .listing-card--featured {
-  border: 2px solid #c7a869;
-  background: #faf7f1;
+  border: 2px solid var(--accent);
+  background: var(--card);
   padding: 1rem;
   position: relative;
 }
