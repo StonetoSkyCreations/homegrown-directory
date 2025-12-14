@@ -18,8 +18,9 @@ locations:
 - santos-organics-byron-bay-shop
 - santos-organics-byron-arts-industrial
 - santos-organics-mullumbimby
-lat: -24.7761086
-lon: 134.755
+address: ''
+lat: ''
+lon: ''
 sources: []
 supplies_to: []
 practices: []

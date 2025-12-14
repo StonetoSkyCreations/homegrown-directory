@@ -16,8 +16,8 @@ locations:
 - harris-farm-west-end
 - harris-farm-isle-of-capri
 - harris-farm-clayfield
-lat: -24.7761086
-lon: 134.755
+lat: ''
+lon: ''
 sources: []
 supplies_to: []
 practices: []

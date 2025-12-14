@@ -16,8 +16,8 @@ locations:
 - jan-powers-farmers-market-powerhouse
 - jan-powers-farmers-market-mitchelton
 - jan-powers-farmers-market-manly
-lat: -24.7761086
-lon: 134.755
+lat: ''
+lon: ''
 sources: []
 supplies_to: []
 practices: []
