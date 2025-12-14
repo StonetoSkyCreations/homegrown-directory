@@ -1,0 +1,121 @@
+collection,slug,title,country,region,city,listing_url,source_path
+distributors,distributor-slug,Hub or distributor name,Country name,Region or state,City or town,/distributors/distributor-slug/,_distributors/_template.md
+distributors,supply-circle-hub,Supply Circle Hub,New Zealand,Canterbury,Christchurch,/distributors/supply-circle-hub/,_distributors/supply-circle-hub.md
+farms,ahikaaroa-trust,Ahikaaroa Trust,NZ,Northland,Kaitaia,/farms/ahikaaroa-trust/,_farms/ahikaaroa-trust.md
+farms,figs-hawkes-bay,Figs Hawke's Bay,NZ,Hawke's Bay,Havelock North,/farms/figs-hawkes-bay/,_farms/figs-hawkes-bay.md
+farms,revival-market-garden,Revival Market Garden,New Zealand,Auckland,Waiheke Island,/farms/revival-market-garden/,_farms/revival-market-garden.md
+farms,allandale-regenerative-farm,Allandale Regenerative Farm,New Zealand,Canterbury,Amberley,/farms/allandale-regenerative-farm/,_farms/allandale-regenerative-farm.md
+farms,frenz-eggs,FRENZ Eggs,NZ,Auckland,Papakura,/farms/frenz-eggs/,_farms/frenz-eggs.md
+farms,jj-organics-napier,JJ Organics,New Zealand,Hawke's Bay,Napier,/farms/jj-organics-napier/,_farms/jj-organics-napier.md
+farms,farm-slug,Name of farm,Country name,Region or state,City or town,/farms/farm-slug/,_farms/_template.md
+farms,uma-rapiti-farm,Uma Rapiti Farm,New Zealand,Auckland,Waiheke Island,/farms/uma-rapiti-farm/,_farms/uma-rapiti-farm.md
+farms,te-matuku-grove,Te Matuku Grove,New Zealand,Auckland,Waiheke Island,/farms/te-matuku-grove/,_farms/te-matuku-grove.md
+farms,artemis-ltd,Artemis Ltd,NZ,Otago,Dunedin,/farms/artemis-ltd/,_farms/artemis-ltd.md
+farms,moana-organics,Moana Organics,New Zealand,Wellington,Paekakariki,/farms/moana-organics/,_farms/moana-organics.md
+farms,cardrona-merino,Cardrona Merino,New Zealand,Otago,Cardrona Valley,/farms/cardrona-merino/,_farms/cardrona-merino.md
+farms,wilderland-organics-whitianga,Wilderland Organics,New Zealand,Waikato,Whitianga,/farms/wilderland-organics-whitianga/,_farms/wilderland-organics-whitianga.md
+farms,reikorangi-organic-gardens,Reikorangi Organic Gardens,New Zealand,Wellington,Waikanae,/farms/reikorangi-organic-gardens/,_farms/reikorangi-organic-gardens.md
+farms,kaiwhenua-organics,Kaiwhenua Organics,NZ,Waikato,Raglan,/farms/kaiwhenua-organics/,_farms/kaiwhenua-organics.md
+farms,waipuna-pastures,Waipuna Pastures,New Zealand,Canterbury,Geraldine,/farms/waipuna-pastures/,_farms/waipuna-pastures.md
+farms,early-bird-organics,Early Bird Organics,NZ,Hawke's Bay,Wairoa,/farms/early-bird-organics/,_farms/early-bird-organics.md
+farms,durham-farms,Durham Farms,NZ,Northland,Waipu,/farms/durham-farms/,_farms/durham-farms.md
+farms,forest-maker-honey,Forest Maker Honey,NZ,Wellington,Wellington,/farms/forest-maker-honey/,_farms/forest-maker-honey.md
+farms,karaka-farm-kaikoura,Karaka Farm,New Zealand,Canterbury,Kaikōura Flats,/farms/karaka-farm-kaikoura/,_farms/karaka-farm-kaikoura.md
+farms,kapiti-free-range-eggs,Kapiti Free Range Eggs,New Zealand,Wellington,Kapiti Coast,/farms/kapiti-free-range-eggs/,_farms/kapiti-free-range-eggs.md
+farms,awarua-organics,AwaRua Organics,NZ,Southland,Invercargill,/farms/awarua-organics/,_farms/awarua-organics.md
+farms,honeylicious,Honeylicious,NZ,Hawke's Bay,Hastings,/farms/honeylicious/,_farms/honeylicious.md
+farms,coro-fresh-goodness-growers,Coro Fresh (Goodness Growers),New Zealand,Waikato,Coroglen,/farms/coro-fresh-goodness-growers/,_farms/coro-fresh-goodness-growers.md
+farms,earthbound-honey,Earthbound Honey,New Zealand,Northland,Whangārei,/farms/earthbound-honey/,_farms/earthbound-honey.md
+farms,coraltree-organic-products,CoralTree Organic Products,NZ,Hawke's Bay,Hastings,/farms/coraltree-organic-products/,_farms/coraltree-organic-products.md
+farms,the-ata-farm,The Āta Farm,New Zealand,Auckland,Waiheke Island,/farms/the-ata-farm/,_farms/the-ata-farm.md
+markets,market-slug,Market name,Country name,Region or state,City or town,/markets/market-slug/,_markets/_template.md
+markets,old-packhouse-market,The Old Packhouse Market,New Zealand,Northland,Kerikeri,/markets/old-packhouse-market/,_markets/old-packhouse-market.md
+markets,harbour-harvest-market,Harbour Harvest Market,New Zealand,Wellington,Te Aro,/markets/harbour-harvest-market/,_markets/harbour-harvest-market.md
+markets,west-coast-farmers-market-greymouth,West Coast Farmers Market,NZ,West Coast,Greymouth,/markets/west-coast-farmers-market-greymouth/,_markets/west-coast-farmers-market-greymouth.md
+markets,jan-powers-farmers-market,Jan Powers Farmers Market,Australia,,,/markets/jan-powers-farmers-market/,_markets/jan-powers-farmers-market.md
+restaurants,origine-bistro-auckland,Origine Bistro,New Zealand,Auckland,Auckland,/restaurants/origine-bistro-auckland/,_restaurants/origine-bistro-auckland.md
+restaurants,dripping-bowl-wanaka,Dripping Bowl,New Zealand,Otago,Wānaka,/restaurants/dripping-bowl-wanaka/,_restaurants/dripping-bowl-wanaka.md
+restaurants,federal-diner-wanaka,Federal Diner,New Zealand,Otago,Wānaka,/restaurants/federal-diner-wanaka/,_restaurants/federal-diner-wanaka.md
+restaurants,aro-cafe-wellington,Aro Cafe,New Zealand,Wellington,Wellington,/restaurants/aro-cafe-wellington/,_restaurants/aro-cafe-wellington.md
+restaurants,good-earth-cafe-dunedin,The Good Earth Cafe,New Zealand,Otago,Dunedin,/restaurants/good-earth-cafe-dunedin/,_restaurants/good-earth-cafe-dunedin.md
+restaurants,the-origin-christchurch,The Origin,New Zealand,Canterbury,Christchurch,/restaurants/the-origin-christchurch/,_restaurants/the-origin-christchurch.md
+restaurants,restaurant-slug,Restaurant or café name,Country name,Region or state,City or town,/restaurants/restaurant-slug/,_restaurants/_template.md
+restaurants,the-lotus-heart-christchurch,The Lotus-Heart,New Zealand,Canterbury,Christchurch,/restaurants/the-lotus-heart-christchurch/,_restaurants/the-lotus-heart-christchurch.md
+restaurants,matatoki-cheese-barn,Matatoki Cheese Barn,New Zealand,Waikato,Matatoki,/restaurants/matatoki-cheese-barn/,_restaurants/matatoki-cheese-barn.md
+restaurants,misters-auckland,Misters,New Zealand,Auckland,Auckland,/restaurants/misters-auckland/,_restaurants/misters-auckland.md
+restaurants,neo-cafe-wellington,Neo Cafe & Eatery,New Zealand,Wellington,Wellington,/restaurants/neo-cafe-wellington/,_restaurants/neo-cafe-wellington.md
+restaurants,driving-creek-cafe,Driving Creek Café,New Zealand,Waikato,Coromandel,/restaurants/driving-creek-cafe/,_restaurants/driving-creek-cafe.md
+restaurants,barefoot-eatery-christchurch,Barefoot Eatery,New Zealand,Canterbury,Christchurch,/restaurants/barefoot-eatery-christchurch/,_restaurants/barefoot-eatery-christchurch.md
+restaurants,hapi-organic-cafe-napier,Hapi Organic Cafe & Maara,New Zealand,Hawke's Bay,Napier,/restaurants/hapi-organic-cafe-napier/,_restaurants/hapi-organic-cafe-napier.md
+restaurants,kopupako-kitchen,Kopupako Kitchen,New Zealand,Wellington,Newtown,/restaurants/kopupako-kitchen/,_restaurants/kopupako-kitchen.md
+restaurants,pepper-tree-coromandel,The Pepper Tree Restaurant,New Zealand,Waikato,Coromandel,/restaurants/pepper-tree-coromandel/,_restaurants/pepper-tree-coromandel.md
+restaurants,tairua-beach-club,Tairua Beach Club,New Zealand,Waikato,Tairua,/restaurants/tairua-beach-club/,_restaurants/tairua-beach-club.md
+restaurants,eatery-by-franks-queenstown,Eatery by Frank’s,New Zealand,Otago,Queenstown,/restaurants/eatery-by-franks-queenstown/,_restaurants/eatery-by-franks-queenstown.md
+restaurants,east-restaurant-auckland,East Restaurant,New Zealand,Auckland,Auckland,/restaurants/east-restaurant-auckland/,_restaurants/east-restaurant-auckland.md
+restaurants,quad-eatery-christchurch,Quad Eatery,New Zealand,Canterbury,Christchurch,/restaurants/quad-eatery-christchurch/,_restaurants/quad-eatery-christchurch.md
+restaurants,amisfield-bistro-queenstown,Amisfield Bistro,New Zealand,Otago,Queenstown,/restaurants/amisfield-bistro-queenstown/,_restaurants/amisfield-bistro-queenstown.md
+restaurants,solscape-conscious-kitchen,Solscape – The Conscious Kitchen,New Zealand,Waikato,Raglan,/restaurants/solscape-conscious-kitchen/,_restaurants/solscape-conscious-kitchen.md
+restaurants,amore-food-shop-cafe-timaru,Amore Food Shop & Cafe,New Zealand,Canterbury,Timaru,/restaurants/amore-food-shop-cafe-timaru/,_restaurants/amore-food-shop-cafe-timaru.md
+restaurants,greenland-cafe-wellington,GreenLand Cafe,New Zealand,Wellington,Wellington,/restaurants/greenland-cafe-wellington/,_restaurants/greenland-cafe-wellington.md
+restaurants,11th-avenue-by-franks-queenstown,11th Avenue by Frank’s,New Zealand,Otago,Queenstown,/restaurants/11th-avenue-by-franks-queenstown/,_restaurants/11th-avenue-by-franks-queenstown.md
+restaurants,craggy-range-restaurant,Craggy Range Restaurant,New Zealand,Hawke's Bay,Havelock North,/restaurants/craggy-range-restaurant/,_restaurants/craggy-range-restaurant.md
+restaurants,kingi-auckland,kingi,New Zealand,Auckland,Auckland,/restaurants/kingi-auckland/,_restaurants/kingi-auckland.md
+restaurants,odelay-cafe-queenstown,Odelay Cafe,New Zealand,Otago,Queenstown,/restaurants/odelay-cafe-queenstown/,_restaurants/odelay-cafe-queenstown.md
+restaurants,kakariki-kitchen-whanganui,Kakariki Kitchen,New Zealand,Manawatū-Whanganui,Whanganui,/restaurants/kakariki-kitchen-whanganui/,_restaurants/kakariki-kitchen-whanganui.md
+restaurants,govett-brewster-cafe,Govett-Brewster Cafe (Monica's Eatery),New Zealand,Taranaki,New Plymouth,/restaurants/govett-brewster-cafe/,_restaurants/govett-brewster-cafe.md
+restaurants,camina-thames,Camina,New Zealand,Waikato,Thames,/restaurants/camina-thames/,_restaurants/camina-thames.md
+restaurants,wholemeal-cafe-takaka,Wholemeal Cafe,New Zealand,Tasman,Takaka,/restaurants/wholemeal-cafe-takaka/,_restaurants/wholemeal-cafe-takaka.md
+restaurants,old-quarter-wellington,The Old Quarter,New Zealand,Wellington,Wellington,/restaurants/old-quarter-wellington/,_restaurants/old-quarter-wellington.md
+restaurants,sawmill-smoko-room-matakana,Sawmill Brewery & Smoko Room,New Zealand,Auckland,Matakana,/restaurants/sawmill-smoko-room-matakana/,_restaurants/sawmill-smoko-room-matakana.md
+restaurants,river-valley-kitchen-taihape,River Valley Kitchen,New Zealand,Manawatū-Whanganui,Taihape,/restaurants/river-valley-kitchen-taihape/,_restaurants/river-valley-kitchen-taihape.md
+restaurants,the-sanctuary-bay-of-islands,The Sanctuary (Bay of Islands),New Zealand,Northland,Paihia,/restaurants/the-sanctuary-bay-of-islands/,_restaurants/the-sanctuary-bay-of-islands.md
+restaurants,paroa-bay-winery-sage,Paroa Bay Winery & Sage Restaurant,New Zealand,Northland,Russell,/restaurants/paroa-bay-winery-sage/,_restaurants/paroa-bay-winery-sage.md
+restaurants,toad-hall-motueka,Toad Hall Café & Store,New Zealand,Tasman,Motueka,/restaurants/toad-hall-motueka/,_restaurants/toad-hall-motueka.md
+restaurants,harvest-restaurant-blenheim,Harvest Restaurant,New Zealand,Marlborough,Blenheim,/restaurants/harvest-restaurant-blenheim/,_restaurants/harvest-restaurant-blenheim.md
+restaurants,charlottes-kitchen-paihia,Charlotte's Kitchen,New Zealand,Northland,Paihia,/restaurants/charlottes-kitchen-paihia/,_restaurants/charlottes-kitchen-paihia.md
+restaurants,hygge-at-clifton-bay,Hygge at Clifton Bay,New Zealand,Hawke's Bay,Te Awanga,/restaurants/hygge-at-clifton-bay/,_restaurants/hygge-at-clifton-bay.md
+stores,commonsense-organics,Commonsense Organics,New Zealand,,,/stores/commonsense-organics/,_stores/commonsense-organics.md
+stores,riverton-organic-shop,Riverton Organic Shop,NZ,Southland,Riverton,/stores/riverton-organic-shop/,_stores/riverton-organic-shop.md
+stores,homegrown-wholefoods-paraparaumu,Homegrown Wholefoods,NZ,Wellington,Paraparaumu,/stores/homegrown-wholefoods-paraparaumu/,_stores/homegrown-wholefoods-paraparaumu.md
+stores,organic-corner-deli-whangarei,Organic Corner Deli,NZ,Northland,Whangārei,/stores/organic-corner-deli-whangarei/,_stores/organic-corner-deli-whangarei.md
+stores,honest-wholefoods-invercargill,Honest Wholefoods,NZ,Southland,Invercargill,/stores/honest-wholefoods-invercargill/,_stores/honest-wholefoods-invercargill.md
+stores,store-slug,Store or co-op name,Country name,Region or state,City or town,/stores/store-slug/,_stores/_template.md
+stores,earth-food-store-waikanae,Earth Food Store,NZ,Wellington,Waikanae,/stores/earth-food-store-waikanae/,_stores/earth-food-store-waikanae.md
+stores,ecohive-collective-paihia,The Ecohive Collective (Paihia),New Zealand,Northland,Paihia,/stores/ecohive-collective-paihia/,_stores/ecohive-collective-paihia.md
+stores,city-honest-grocer,City Honest Grocer,New Zealand,Auckland,Grey Lynn,/stores/city-honest-grocer/,_stores/city-honest-grocer.md
+stores,santos-organics,Santos Organics,Australia,,,/stores/santos-organics/,_stores/santos-organics.md
+stores,picton-organic-store,Picton Organic Store,NZ,Marlborough,Picton,/stores/picton-organic-store/,_stores/picton-organic-store.md
+stores,she-universe-cacao-pod,She Universe Cacao Pod,New Zealand,Canterbury,Christchurch,/stores/she-universe-cacao-pod/,_stores/she-universe-cacao-pod.md
+stores,earthbound-organics-richmond,Earthbound Organics (Richmond),NZ,Tasman,Richmond,/stores/earthbound-organics-richmond/,_stores/earthbound-organics-richmond.md
+stores,bohemian-bakery,Bohemian Bakery,New Zealand,,,/stores/bohemian-bakery/,_stores/bohemian-bakery.md
+stores,harris-farm-markets,Harris Farm Markets,Australia,,,/stores/harris-farm-markets/,_stores/harris-farm-markets.md
+stores,mapua-organics,Mapua Organics,NZ,Tasman,Mapua,/stores/mapua-organics/,_stores/mapua-organics.md
+stores,wholefood-co-op-hokitika,Wholefood Co-op Hokitika,NZ,West Coast,Hokitika,/stores/wholefood-co-op-hokitika/,_stores/wholefood-co-op-hokitika.md
+stores,ooooby-online-organic-boxes,Ooooby (Online Organic Boxes),NZ,Canterbury,Christchurch,/stores/ooooby-online-organic-boxes/,_stores/ooooby-online-organic-boxes.md
+stores,soulfood-organic-wanaka,Soulfood Organic,NZ,Otago,Wānaka,/stores/soulfood-organic-wanaka/,_stores/soulfood-organic-wanaka.md
+vendors,the-wholemeal-cafe,The Wholemeal Café,NZ,Tasman,Tākaka,/vendors/the-wholemeal-cafe/,_vendors/the-wholemeal-cafe.md
+vendors,origin-northland,Origin Northland,NZ,Northland,Waipu,/vendors/origin-northland/,_vendors/origin-northland.md
+vendors,mapu-test-kitchen,MAPU Test Kitchen,NZ,Canterbury,Lyttelton,/vendors/mapu-test-kitchen/,_vendors/mapu-test-kitchen.md
+vendors,daily-bread-pt-chevalier,Daily Bread,NZ,Auckland,Auckland,/vendors/daily-bread-pt-chevalier/,_vendors/daily-bread-pt-chevalier.md
+vendors,the-falls-retreat,The Falls Retreat,NZ,Waikato,Waihi,/vendors/the-falls-retreat/,_vendors/the-falls-retreat.md
+vendors,hillside-kitchen-cellar,Hillside Kitchen & Cellar,NZ,Wellington,Wellington,/vendors/hillside-kitchen-cellar/,_vendors/hillside-kitchen-cellar.md
+vendors,farm-house-cafe,Farm House Café,NZ,Auckland,Clevedon,/vendors/farm-house-cafe/,_vendors/farm-house-cafe.md
+vendors,st-georges-restaurant,St Georges Restaurant,NZ,Hawke's Bay,Havelock North,/vendors/st-georges-restaurant/,_vendors/st-georges-restaurant.md
+vendors,foraged-in-raglan,Foraged In Raglan,NZ,Waikato,Raglan,/vendors/foraged-in-raglan/,_vendors/foraged-in-raglan.md
+vendors,hill-house-cafe,Hill House Café,NZ,Auckland,Auckland,/vendors/hill-house-cafe/,_vendors/hill-house-cafe.md
+vendors,volcanoview-restaurant-bar,Volcanoview Restaurant & Bar,NZ,Taranaki,New Plymouth,/vendors/volcanoview-restaurant-bar/,_vendors/volcanoview-restaurant-bar.md
+vendors,wildflour-whangarei,Wildflour NZ (Whangārei),NZ,Northland,Whangārei,/vendors/wildflour-whangarei/,_vendors/wildflour-whangarei.md
+vendors,cafe-irresistiblue,Café Irresistiblue,NZ,Waikato,Cambridge,/vendors/cafe-irresistiblue/,_vendors/cafe-irresistiblue.md
+vendors,shepherd,Shepherd,NZ,Wellington,Wellington,/vendors/shepherd/,_vendors/shepherd.md
+vendors,harvest-to-home,Harvest to Home,New Zealand,Auckland,Auckland,/vendors/harvest-to-home/,_vendors/harvest-to-home.md
+vendors,grizzly-baked-goods,Grizzly Baked Goods,NZ,Canterbury,Christchurch,/vendors/grizzly-baked-goods/,_vendors/grizzly-baked-goods.md
+vendors,zephyr-wainui,Zephyr Wainui,NZ,Gisborne,Gisborne,/vendors/zephyr-wainui/,_vendors/zephyr-wainui.md
+vendors,oatery-wellington,The Oatery,NZ,Wellington,Wellington,/vendors/oatery-wellington/,_vendors/oatery-wellington.md
+vendors,honest-wholefood-co-wanaka,Honest Wholefood Co.,NZ,Otago,Wānaka,/vendors/honest-wholefood-co-wanaka/,_vendors/honest-wholefood-co-wanaka.md
+vendors,orepuki-beach-cafe,Orepuki Beach Café,NZ,Southland,Orepuki,/vendors/orepuki-beach-cafe/,_vendors/orepuki-beach-cafe.md
+vendors,flagship-eatery,Flagship Eatery,NZ,Gisborne,Gisborne,/vendors/flagship-eatery/,_vendors/flagship-eatery.md
+vendors,power-plant-wholefood-organic-store,Power Plant Wholefood & Organic Store,NZ,Northland,Whangārei,/vendors/power-plant-wholefood-organic-store/,_vendors/power-plant-wholefood-organic-store.md
+vendors,no7-balmac,No.7 Balmac,NZ,Otago,Dunedin,/vendors/no7-balmac/,_vendors/no7-balmac.md
+vendors,the-bikery-cafe,The Bikery Café,NZ,Waikato,Cambridge,/vendors/the-bikery-cafe/,_vendors/the-bikery-cafe.md
+vendors,ahi-restaurant,Ahi Restaurant,NZ,Auckland,Auckland,/vendors/ahi-restaurant/,_vendors/ahi-restaurant.md
+vendors,tasman-bay-salt-co,Tasman Bay Salt Co.,NZ,Tasman,,/vendors/tasman-bay-salt-co/,_vendors/tasman-bay-salt-co.md
