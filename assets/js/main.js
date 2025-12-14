@@ -108,7 +108,7 @@
     }
     if (themeToggle) {
       themeToggle.setAttribute("aria-pressed", mode === "dark" ? "true" : "false");
-      themeToggle.textContent = mode === "dark" ? "☀" : "☾";
+      themeToggle.classList.toggle("is-dark", mode === "dark");
     }
   };
 

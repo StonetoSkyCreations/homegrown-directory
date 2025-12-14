@@ -187,6 +187,35 @@ a:focus-visible {
   font-weight: 600;
 }
 
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.theme-toggle__icon {
+  display: inline-flex;
+  line-height: 1;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+.theme-toggle.is-dark .theme-toggle__icon--moon,
+.theme-toggle:not(.is-dark) .theme-toggle__icon--sun {
+  display: none;
+}
+.theme-toggle.is-dark .theme-toggle__icon--sun,
+.theme-toggle:not(.is-dark) .theme-toggle__icon--moon {
+  display: inline-flex;
+  opacity: 1;
+}
+
 .pill {
   display: inline-flex;
   align-items: center;
