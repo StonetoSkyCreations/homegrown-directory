@@ -916,6 +916,13 @@ a:focus-visible {
   border-radius: 999px;
   font-size: 0.92rem;
 }
+.list-plain {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: grid;
+  gap: 0.35rem;
+}
 .rating {
   display: flex;
   align-items: center;
