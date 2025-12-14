@@ -4,7 +4,7 @@ slug: camina-thames
 published: true
 country: New Zealand
 country_slug: new-zealand
-region: Waikato
+region: Coromandel
 city: Thames
 practices:
 - Seasonal menu

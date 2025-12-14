@@ -9,7 +9,7 @@ description: Saturday community market in Coromandel Town with local/homegrown p
   including organic and gluten-free options.
 country: NZ
 country_slug: new-zealand
-region: Waikato
+region: Coromandel
 address: Hike 'n' Bike lawn
 phone: ''
 email: ''

@@ -4,7 +4,7 @@ slug: pepper-tree-coromandel
 published: true
 country: New Zealand
 country_slug: new-zealand
-region: Waikato
+region: Coromandel
 city: Coromandel
 address: "31 Kapanga Road, Coromandel 3506"
 practices:

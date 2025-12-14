@@ -3,7 +3,7 @@ title: Wilderland Organics
 slug: wilderland-organics-whitianga
 country: New Zealand
 country_slug: new-zealand
-region: Waikato
+region: Coromandel
 city: Whitianga
 address: "RD1/2486 Tairua–Whitianga Road, Kaimarama 3591"
 lat: -36.8333
