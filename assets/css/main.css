@@ -13,6 +13,19 @@
   --shadow: 0 20px 48px rgba(13, 61, 34, 0.12);
 }
 
+html[data-theme="dark"] {
+  --bg: #0f120f;
+  --bg-2: #1a1f1a;
+  --text: #eef0ec;
+  --muted: #a4a7a0;
+  --accent: #7bd89a;
+  --accent-2: #5ac1b0;
+  --accent-soft: rgba(123, 216, 154, 0.12);
+  --border: #2c332c;
+  --card: #141914;
+  --shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
+}
+
 *,
 *::before,
 *::after {

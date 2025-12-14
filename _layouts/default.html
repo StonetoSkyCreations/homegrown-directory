@@ -12,6 +12,22 @@
   {% comment %}SEO/AEO meta built from page data and practices{% endcomment %}
   {% include seo-meta.html %}
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("hg-theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefersDark ? "dark" : "light");
+        if (theme === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        } else {
+          delete document.documentElement.dataset.theme;
+        }
+      } catch (e) {
+        // fail silently
+      }
+    })();
+  </script>
   {% if page.map %}
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+e2at5O2yRMTDFK3V3pztISZ6WH3btmU8MXy+4wYQ=" crossorigin="">
   {% endif %}

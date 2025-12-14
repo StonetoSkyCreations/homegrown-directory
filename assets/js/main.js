@@ -7,6 +7,7 @@
   const mapPanel = document.querySelector(".map-panel");
   const countryPage = document.querySelector("[data-country-page]");
   const toggleMapBtn = document.querySelector("#toggleMap");
+  const themeToggle = document.querySelector("[data-theme-toggle]");
   const clearFiltersBtn = document.querySelector("#clearFilters");
   const filtersForm = document.querySelector(".filters");
   const heroRegionSelect = document.querySelector("#heroRegion");
@@ -88,6 +89,27 @@
 
   const nearMeDebug = (...args) => {
     if (window.DEBUG_NEAR_ME) console.log("[near-me]", ...args);
+  };
+
+  const setTheme = (mode, persist = true) => {
+    const root = document.documentElement;
+    if (mode === "dark") {
+      root.dataset.theme = "dark";
+    } else {
+      delete root.dataset.theme;
+      mode = "light";
+    }
+    if (persist) {
+      try {
+        localStorage.setItem("hg-theme", mode);
+      } catch (err) {
+        // ignore storage errors
+      }
+    }
+    if (themeToggle) {
+      themeToggle.setAttribute("aria-pressed", mode === "dark" ? "true" : "false");
+      themeToggle.textContent = mode === "dark" ? "☀" : "☾";
+    }
   };
 
   const parseCoord = (value) => {
@@ -437,6 +459,18 @@
         }
       });
     });
+  }
+
+  // Theme toggle
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const current = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+      const next = current === "dark" ? "light" : "dark";
+      setTheme(next);
+    });
+    // Sync initial UI state to current theme
+    const initial = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+    setTheme(initial, false);
   }
 
   // Directory filtering (region + tags + subtype + country) for directory pages
