@@ -113,6 +113,18 @@ permalink: /submit.html
       <input type="text" id="address" name="address" placeholder="123 Example St">
     </div>
 
+    <div class="form-group split">
+      <div>
+        <label for="lat">Latitude</label>
+        <input type="text" id="lat" name="lat" placeholder="-43.530955">
+      </div>
+      <div>
+        <label for="lon">Longitude</label>
+        <input type="text" id="lon" name="lon" placeholder="172.636434">
+      </div>
+    </div>
+    <p class="muted" style="margin-top:-0.4rem; margin-bottom:1rem;">Coordinates help us place you on the map (e.g. copy from Google Maps).</p>
+
     <div class="form-group">
       <label for="postcode">Postcode (optional)</label>
       <input type="text" id="postcode" name="postcode" placeholder="e.g. 6011">
@@ -275,6 +287,11 @@ permalink: /submit.html
         .replace(/-+/g, '-');
 
     const normalizeToken = (value) => (value || '').toString().trim().toLowerCase();
+    const parseMaybeNumber = (value) => {
+      if (value === null || value === undefined || value === '') return null;
+      const num = Number(value);
+      return Number.isFinite(num) ? num : null;
+    };
 
     const splitList = (value) =>
       (value || '')
@@ -387,6 +404,8 @@ permalink: /submit.html
       const collection = data.get('collection') || '';
       const subtypeRaw = normalizeToken(data.get('subtype'));
       const practicesTags = uniqueAllowed(data.getAll('practices_tags'), PRACTICE_TOKENS);
+      const latValue = data.get('lat') || '';
+      const lonValue = data.get('lon') || '';
       const specialtyTags =
         collection === 'stores' && subtypeRaw === 'specialty-grocer'
           ? uniqueAllowed(data.getAll('specialty_tags'), SPECIALTY_TOKENS)
@@ -416,6 +435,8 @@ permalink: /submit.html
         `address: ${data.get('address') || ''}`,
         `suburb: ${data.get('suburb') || ''}`,
         `postcode: ${data.get('postcode') || ''}`,
+        `lat: ${latValue}`,
+        `lon: ${lonValue}`,
         formatMultiline('description', descriptionText),
         formatMultiline('seo_description', data.get('seo_description')),
         formatList('practices_tags', practicesTags),
@@ -514,6 +535,24 @@ permalink: /submit.html
       clearError();
       try {
         const data = new FormData(submitForm);
+        const latRaw = (data.get('lat') || '').trim();
+        const lonRaw = (data.get('lon') || '').trim();
+        const hasLat = latRaw !== '';
+        const hasLon = lonRaw !== '';
+        if (hasLat) {
+          const latVal = parseMaybeNumber(latRaw);
+          if (latVal === null || latVal < -90 || latVal > 90) {
+            showError('Latitude must be a number between -90 and 90.');
+            return;
+          }
+        }
+        if (hasLon) {
+          const lonVal = parseMaybeNumber(lonRaw);
+          if (lonVal === null || lonVal < -180 || lonVal > 180) {
+            showError('Longitude must be a number between -180 and 180.');
+            return;
+          }
+        }
         const action = (data.get('submission_type') || 'new') === 'update' ? 'update' : 'new';
         const name = data.get('name') || '';
         const targetSlug = listingRef || '';
