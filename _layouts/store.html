@@ -13,9 +13,14 @@ map: false
   {% assign website_url = "https://" | append: website_url %}
 {% endif %}
 {% assign phone_href = page.phone | default: "" | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
-{% assign schema_type = 'GroceryStore' %}
-{% if page.category == 'cafe' or page.type contains 'Cafe' or page.type contains 'cafe' %}
+{% assign schema_type = 'LocalBusiness' %}
+{% assign type_token = page.type | default: page.category | default: '' | downcase %}
+{% if type_token contains 'cafe' %}
   {% assign schema_type = 'CafeOrCoffeeShop' %}
+{% elsif type_token contains 'restaurant' %}
+  {% assign schema_type = 'Restaurant' %}
+{% elsif type_token contains 'grocery' or type_token contains 'grocer' or type_token contains 'supermarket' %}
+  {% assign schema_type = 'GroceryStore' %}
 {% endif %}
 <section class="listing">
   <header class="listing__header">

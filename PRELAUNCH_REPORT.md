@@ -8,7 +8,7 @@
 - No missing assets detected; favicons/OG references resolve locally.
 - Robots.txt references sitemap correctly and does not block the site.
 - Near Me/search/filter pages build without errors (smoke-checked via build + sample pages).
-- Recommendation: Go to launch with noted High/Medium items tracked below.
+- Recommendation: Go to launch with noted High/Medium items tracked below (schema defaults now use conservative types for stores/vendors).
 
 ## Launch blockers (Critical)
 - None.
@@ -65,7 +65,7 @@
 - Fixes applied:
   1) Email links: contact blocks now render mailto only when email is non-empty (applies across listing/store/vendor layouts); removes `mailto:` blanks.
   2) Broken cross-links: removed non-existent target (`untamed-earth`) from `sources` on `stores/untamed-earth-farm-shop`; added empty `suppliers` array to `stores/beckenham-butchery` (no link output changes beyond removing missing target).
-  3) JSON-LD parity: added schema blocks to store and vendor layouts (GroceryStore/CafeOrCoffeeShop heuristic; Restaurant for vendors with restaurant/cafe types; LocalBusiness fallback) matching existing pattern used elsewhere; geo only when coords present.
+  3) JSON-LD parity: added schema blocks to store and vendor layouts with conservative defaults (`LocalBusiness` base; GroceryStore/CafeOrCoffeeShop/Restaurant only when subtype/category hints exist); geo only when coords present.
 - Not changed:
   - No new listings created; no body copy edits; no redesigns.
   - Broken cross-link targets were not invented; missing slugs left uncreated.
