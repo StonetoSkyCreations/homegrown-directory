@@ -3,6 +3,8 @@ layout: listing
 title: Jan Powers Farmers Market
 slug: jan-powers-farmers-market
 type: brand
+region: Multiple
+city: Multiple
 country: Australia
 country_slug: australia
 description: Brand umbrella for Jan Powers Farmers Markets in Queensland.
@@ -25,7 +27,9 @@ products_tags: []
 services: []
 services_tags: []
 certifications: []
-specialty_tags: []
+specialty_tags:
+- umbrella
+- multi-location
 source_urls: []
 relationships_declared: false
 ---

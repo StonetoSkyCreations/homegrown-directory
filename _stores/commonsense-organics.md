@@ -3,6 +3,8 @@ layout: store
 title: Commonsense Organics
 slug: commonsense-organics
 type: brand
+region: Multiple
+city: Multiple
 country: New Zealand
 country_slug: new-zealand
 description: Brand umbrella for Commonsense Organics stores offering organic and natural
@@ -29,7 +31,9 @@ products_tags: []
 services: []
 services_tags: []
 certifications: []
-specialty_tags: []
+specialty_tags:
+- umbrella
+- multi-location
 source_urls: []
 relationships_declared: false
 ---

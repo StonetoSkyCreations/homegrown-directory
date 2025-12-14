@@ -3,6 +3,8 @@ layout: store
 title: Harris Farm Markets
 slug: harris-farm-markets
 type: brand
+region: Multiple
+city: Multiple
 country: Australia
 country_slug: australia
 description: Brand umbrella for Harris Farm Markets grocery stores in Queensland.
@@ -25,7 +27,9 @@ products_tags: []
 services: []
 services_tags: []
 certifications: []
-specialty_tags: []
+specialty_tags:
+- umbrella
+- multi-location
 source_urls: []
 relationships_declared: false
 ---
