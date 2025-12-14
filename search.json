@@ -46,6 +46,22 @@ permalink: /search.json
   {% if specialty %}
     {% assign specialty = specialty | join: ',' | downcase | split: ',' | uniq %}
   {% endif %}
+  {% assign supplies_raw = doc.supplies_to %}
+  {% if supplies_raw == nil %}
+    {% assign supplies_list = empty %}
+  {% elsif supplies_raw.first %}
+    {% assign supplies_list = supplies_raw | uniq %}
+  {% else %}
+    {% assign supplies_list = supplies_raw | split: ',' | map: 'strip' | uniq %}
+  {% endif %}
+  {% assign sources_raw = doc.sources %}
+  {% if sources_raw == nil %}
+    {% assign sources_list = empty %}
+  {% elsif sources_raw.first %}
+    {% assign sources_list = sources_raw | uniq %}
+  {% else %}
+    {% assign sources_list = sources_raw | split: ',' | map: 'strip' | uniq %}
+  {% endif %}
   {% assign long_desc = doc.description | default: doc.short_description | default: doc.meta_description | default: doc.excerpt | default: doc.long_description %}
   {% assign geo_precision = doc.geo_precision | default: 'none' %}
   {% assign lat_val = doc.lat %}
@@ -70,8 +86,8 @@ permalink: /search.json
     "products": {{ products | jsonify }},
     "services": {{ services | jsonify }},
     "specialty_tags": {{ specialty | jsonify }},
-    "supplies_to": {{ doc.supplies_to | jsonify }},
-    "sources": {{ doc.sources | jsonify }},
+    "supplies_to": {{ supplies_list | jsonify }},
+    "sources": {{ sources_list | jsonify }},
     "hours": {{ doc.hours | jsonify }},
     "lat": {% if lat_val == nil or lat_val == '' %}null{% else %}{{ lat_val | jsonify }}{% endif %},
     "lon": {% if lon_val == nil or lon_val == '' %}null{% else %}{{ lon_val | jsonify }}{% endif %},
