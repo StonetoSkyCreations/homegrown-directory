@@ -13,6 +13,13 @@ map: false
   {% assign website_url = "https://" | append: website_url %}
 {% endif %}
 {% assign phone_href = page.phone | default: "" | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
+{% assign schema_type = 'LocalBusiness' %}
+{% if page.type %}
+  {% assign type_token = page.type | downcase %}
+  {% if type_token contains 'restaurant' or type_token contains 'cafe' %}
+    {% assign schema_type = 'Restaurant' %}
+  {% endif %}
+{% endif %}
 <section class="listing">
   <header class="listing__header">
     <div class="listing__header-row">
@@ -22,10 +29,11 @@ map: false
         <p class="listing__location">
           {% include address-block.html %}
         </p>
-        {% if website_url != "" or page.email or phone_href != "" %}
+        {% assign has_email = page.email | to_s | strip %}
+        {% if website_url != "" or has_email != "" or phone_href != "" %}
         <div class="listing__contact">
           {% if website_url != "" %}<a href="{{ website_url }}" rel="noopener">Website</a>{% endif %}
-          {% if page.email %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
+          {% if has_email != "" %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
           {% if phone_href != "" %}<a href="tel:{{ phone_href }}">{{ page.phone }}</a>{% endif %}
         </div>
         {% endif %}
@@ -104,3 +112,46 @@ map: false
     {% endif %}
   </div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ schema_type }}",
+  "name": "{{ display_title | escape }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | escape }}",
+  {% if website_url != "" %}
+  "url": "{{ website_url | escape }}",
+  {% else %}
+  "url": "{{ page.url | absolute_url }}",
+  {% endif %}
+  "mainEntityOfPage": "{{ page.url | absolute_url }}",
+  {% if page.address or page.city or page.region or page.country or page.postcode %}
+  "address": {
+    "@type": "PostalAddress",
+    {% if page.address %}"streetAddress": "{{ page.address | strip | escape }}",{% endif %}
+    {% if page.city %}"addressLocality": "{{ page.city | strip | escape }}",{% endif %}
+    {% if page.region %}"addressRegion": "{{ page.region | strip | escape }}",{% endif %}
+    {% if page.postcode %}"postalCode": "{{ page.postcode | strip | escape }}",{% endif %}
+    {% if page.country %}"addressCountry": "{{ page.country | strip | escape }}"{% endif %}
+  },
+  {% endif %}
+  {% if page.phone %}
+  "telephone": "{{ page.phone | strip | escape }}",
+  {% endif %}
+  {% if page.email %}
+  "email": "{{ page.email | strip | escape }}",
+  {% endif %}
+  {% if page.lat and page.lon %}
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": {{ page.lat }},
+    "longitude": {{ page.lon }}
+  },
+  {% endif %}
+  {% if page.website %}
+  "sameAs": [
+    "{{ page.website | escape }}"
+  ]
+  {% endif %}
+}
+</script>

@@ -44,6 +44,7 @@ notes: ''
 sources:
 - bostock-brothers
 - new-zealand-organic-meats
+suppliers: []
 lat: -43.5608289
 lon: 172.6369014
 geo_precision: approx

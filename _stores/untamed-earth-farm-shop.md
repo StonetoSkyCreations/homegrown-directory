@@ -35,8 +35,7 @@ certifications: []
 supply_role: Retailer
 source_urls:
 - untamed-earth
-sources:
-- untamed-earth
+sources: []
 hours: ''
 last_checked: user-submitted
 notes: ''
@@ -48,8 +47,7 @@ geo_precision: approx
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Colombo Street
-geo_query: 140 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Canterbury,
-  New Zealand
+geo_query: 140 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Canterbury, New Zealand
 supplies_to: []
 practices: []
 products_tags: []

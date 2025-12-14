@@ -58,3 +58,16 @@
 
 ## Final recommendation
 - **GO** (no Critical blockers). Track High/Medium items for a follow-up patch: guard empty email links, fix/redirect missing cross-link targets, and add JSON-LD to store/vendor layouts for schema parity.
+
+## PATCH_NOTES
+- Files changed:
+  - `_layouts/listing.html`, `_layouts/store.html`, `_layouts/vendor.html`, `_stores/untamed-earth-farm-shop.md`, `_stores/beckenham-butchery.md`, `PRELAUNCH_REPORT.md`
+- Fixes applied:
+  1) Email links: contact blocks now render mailto only when email is non-empty (applies across listing/store/vendor layouts); removes `mailto:` blanks.
+  2) Broken cross-links: removed non-existent target (`untamed-earth`) from `sources` on `stores/untamed-earth-farm-shop`; added empty `suppliers` array to `stores/beckenham-butchery` (no link output changes beyond removing missing target).
+  3) JSON-LD parity: added schema blocks to store and vendor layouts (GroceryStore/CafeOrCoffeeShop heuristic; Restaurant for vendors with restaurant/cafe types; LocalBusiness fallback) matching existing pattern used elsewhere; geo only when coords present.
+- Not changed:
+  - No new listings created; no body copy edits; no redesigns.
+  - Broken cross-link targets were not invented; missing slugs left uncreated.
+- Remaining gaps:
+  - Two store pages still mention missing counterpart in body text, but bodies were not edited (content-only follow-up if desired).
