@@ -101,6 +101,13 @@ map: false
     </div>
     {% endif %}
 
+    {% if page.featured_article %}
+    <div class="listing__featured-article">
+      <h3>Featured story</h3>
+      <p><a href="{{ page.featured_article }}">Read the full profile →</a></p>
+    </div>
+    {% endif %}
+
     <section class="listing-updates-reviews">
       {% include listing-reviews.html listing=page %}
     </section>
