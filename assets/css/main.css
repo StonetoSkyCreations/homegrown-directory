@@ -11,6 +11,7 @@
   --border: #dcd6c8;
   --card: #ffffff;
   --shadow: 0 20px 48px rgba(13, 61, 34, 0.12);
+  --header-rgb: 255, 255, 255;
 }
 
 html[data-theme="dark"] {
@@ -24,6 +25,7 @@ html[data-theme="dark"] {
   --border: #2a2a2a;
   --card: #1c1c1c;
   --shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
+  --header-rgb: 18, 18, 18;
 }
 
 *,
@@ -63,6 +65,17 @@ a:focus-visible {
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
+}
+.site-header {
+  position: relative;
+  z-index: 2000;
+  background: rgba(var(--header-rgb, 255, 255, 255), 0.92);
+}
+.site-footer {
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+  margin-top: 2rem;
+  background: rgba(var(--header-rgb, 255, 255, 255), 0.92);
 }
 .site-header {
   position: relative;
