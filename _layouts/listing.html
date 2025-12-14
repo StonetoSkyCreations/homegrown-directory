@@ -94,6 +94,10 @@ map: false
     <div class="listing__body">
       {{ content }}
     </div>
+    {% elsif page.long_description %}
+    <div class="listing__body">
+      {{ page.long_description | markdownify }}
+    </div>
     {% endif %}
 
     <section class="listing-updates-reviews">

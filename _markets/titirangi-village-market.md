@@ -1,5 +1,5 @@
 ---
-layout: market
+layout: listing
 title: Titirangi Village Market
 slug: titirangi-village-market
 published: true
