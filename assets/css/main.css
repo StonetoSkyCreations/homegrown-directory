@@ -322,6 +322,7 @@ a:focus-visible {
   border-radius: 10px;
   border: 1px solid var(--border);
   background: var(--card);
+  color: var(--muted);
 }
 .near-me-status {
   min-height: 1rem;
@@ -670,6 +671,9 @@ a:focus-visible {
   border-radius: 12px;
   border: 1px solid var(--border);
   background: var(--card);
+}
+.search-controls input[type="search"]::placeholder {
+  color: var(--muted);
 }
 
 .filters {
@@ -1371,12 +1375,12 @@ a:focus-visible {
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.25rem 1.35rem;
-  background: linear-gradient(135deg, #f9fbf7, #f4f7f2);
+  background: var(--card);
   color: var(--text);
   display: grid;
   gap: 0.5rem;
   max-width: 960px;
-  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadow);
 }
 .empty-panel p {
   margin: 0;
