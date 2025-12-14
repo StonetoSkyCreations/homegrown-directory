@@ -1,5 +1,6 @@
 ---
 layout: listing
+collection: distributors
 title: New Zealand Organic Meats
 slug: new-zealand-organic-meats
 country: New Zealand
@@ -7,32 +8,22 @@ country_slug: new-zealand
 region: Otago
 city: Tapanui
 address: 869 Hukarere Station Road RD2, Tapanui 9587
-description: Collective of organic farmers producing grass-fed beef and lamb while
-  championing sustainable land management, animal welfare and chemical-free meat.
-long_description: New Zealand Organic Meats (NZOM) unites a community of organic farmers
-  who share a commitment to ethical farming and environmental stewardship. Founded
-  by Paul Ruddenklau and Neville Parkinson and now run by directors Quintin and Rebecca
-  Hazlett, the company works with approximately forty farms to supply certified-organic
-  beef and lamb. NZOM farmers manage their land holistically, prioritising animal
-  welfare, soil health and water protection. The cooperative markets its meat domestically
-  and internationally, meeting growing demand for chemical-free red meat and strengthening
-  the organic sector. Headquarters are at Hukarere Station Road near Tapanui, where
-  the team coordinates sales and liaises with producers.
+description: Organic meat aggregator and processor coordinating a network of certified farms to supply grass-fed beef and lamb across New Zealand and overseas.
+long_description: |
+  New Zealand Organic Meats (NZOM) is an organic meat aggregator and processor based near Tapanui. Founded by Paul Ruddenklau and Neville Parkinson and now led by Quintin and Rebecca Hazlett, the company works with around forty certified-organic beef and lamb farmers to bring grass-fed, chemical-free meat to domestic and export customers. NZOM manages procurement, processing and distribution, supporting farm partners with transparent handling and animal-welfare standards while marketing organic protein to retailers, butchers and foodservice.
 website: https://nzorganicmeat.co.nz
 email: nz.organicmeats@gmail.com
 phone: 0274 507 637
 practices:
-- certified-organic
-- grass-fed
-- sustainable
-- animal-welfare
-- soil-health
-- water-protection
+- certified-organic network
+- grass-fed sourcing
+- animal-welfare standards
 products:
 - organic beef
 - organic lamb
 services:
-- meat cooperative
+- meat aggregation
+- processing
 - wholesale distribution
 - export
 certifications: []

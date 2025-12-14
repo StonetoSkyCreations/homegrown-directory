@@ -32,7 +32,8 @@ market_days: []
 lat: -43.056
 lon: 172.7885
 sourced_from: []
-supplies_to: []
+supplies_to:
+- beckenham-butchery
 also_referenced_by: []
 sources:
 - https://washcreek.co.nz

@@ -44,6 +44,8 @@ notes: ''
 sources:
 - bostock-brothers
 - new-zealand-organic-meats
+- wash-creek-farm
+- terrace-edge
 lat: -43.5608289
 lon: 172.6369014
 geo_precision: approx
