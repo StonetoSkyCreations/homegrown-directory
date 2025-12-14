@@ -14,14 +14,27 @@ SEO/AEO meta builder
 {% assign practices_source = page.practices | default: page.practices_tags | default: page.sourcing_tags | default: empty %}
 {% assign primary_practice = practices_source[0] | default: "" %}
 
-{% assign type_label = page.collection | capitalize %}
+{% assign type_label = page.type | default: page.collection | default: 'Page' %}
+{% assign type_token = page.type | default: page.subtype | default: page.category | default: page.collection | default: '' | downcase %}
 {% case page.collection %}
-  {% when 'stores' %}{% assign type_label = 'Grocer' %}
-  {% when 'restaurants' %}{% assign type_label = 'Eatery' %}
-  {% when 'vendors' %}{% assign type_label = 'Eatery' %}
-  {% when 'markets' %}{% assign type_label = 'Market' %}
-  {% when 'farms' %}{% assign type_label = 'Farm' %}
-  {% when 'distributors' %}{% assign type_label = 'Hub' %}
+  {% when 'stores' %}
+    {% assign type_label = 'Store' %}
+    {% if type_token contains 'grocery' or type_token contains 'grocer' or type_token contains 'supermarket' %}
+      {% assign type_label = 'Grocery Store' %}
+    {% endif %}
+  {% when 'restaurants' %}
+    {% assign type_label = 'Restaurant' %}
+  {% when 'vendors' %}
+    {% assign type_label = 'Vendor' %}
+    {% if type_token contains 'restaurant' or type_token contains 'cafe' %}
+      {% assign type_label = 'Restaurant' %}
+    {% endif %}
+  {% when 'markets' %}
+    {% assign type_label = 'Market' %}
+  {% when 'farms' %}
+    {% assign type_label = 'Farm' %}
+  {% when 'distributors' %}
+    {% assign type_label = 'Distributor' %}
   {% else %}
     {% assign type_label = page.type | default: page.collection | default: 'Page' %}
 {% endcase %}
@@ -41,7 +54,30 @@ SEO/AEO meta builder
   | replace: "  ", " "
   | strip
 -%}
-{%- assign base_description = cleaned_desc | truncatewords: 28, "…" -%}
+
+{%- assign max_chars = 158 -%}
+{%- assign truncated_desc = cleaned_desc -%}
+{%- assign truncation_applied = false -%}
+{%- if cleaned_desc and cleaned_desc.size > max_chars -%}
+  {%- assign truncated_desc = cleaned_desc | truncatewords: 32, "" | strip -%}
+  {%- if truncated_desc.size > max_chars -%}
+    {%- assign truncated_desc = cleaned_desc | truncatewords: 28, "" | strip -%}
+  {%- endif -%}
+  {%- assign truncation_applied = true -%}
+{%- endif -%}
+{%- if truncation_applied -%}
+  {%- assign truncated_desc = truncated_desc | append: "…" -%}
+  {%- assign truncated_desc = truncated_desc
+    | replace: " -…", "…"
+    | replace: "-…", "…"
+    | replace: " –…", "…"
+    | replace: " —…", "…"
+    | replace: ",…", "…"
+    | replace: ";…", "…"
+    | replace: ":…", "…"
+    | replace: " …", "…"
+  -%}
+{%- endif -%}
 
 {%- assign loc_parts = "" | split: "" -%}
 {%- if page.city %}{% assign loc_parts = loc_parts | push: page.city %}{% endif -%}
@@ -50,12 +86,12 @@ SEO/AEO meta builder
 
 {% capture desc_with_context %}
   {% if page.collection and page.collection != 'posts' %}
-    {{ page.title | default: type_label }}{% if loc_text != "" %} in {{ loc_text }}{% endif %}. {{ base_description }}
+    {{ page.title | default: type_label }}{% if loc_text != "" %} in {{ loc_text }}{% endif %}. {{ truncated_desc }}
   {% else %}
-    {{ base_description }}
+    {{ truncated_desc }}
   {% endif %}
 {% endcapture %}
-{% assign page_description = desc_with_context | strip | replace: "  ", " " | replace: "  ", " " | truncate: 155, "…" %}
+{% assign page_description = desc_with_context | strip | replace: "  ", " " | replace: "  ", " " %}
 
 {% assign display_name = page.title | default: page.name | default: site_name %}
 {% assign loc_for_title = "" %}
