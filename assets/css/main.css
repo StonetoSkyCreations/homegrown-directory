@@ -93,6 +93,7 @@ a:focus-visible {
   flex-wrap: wrap;
   gap: 0.65rem;
   align-items: center;
+  background: transparent;
 }
 .nav a {
   font-weight: 600;
@@ -1194,6 +1195,10 @@ a:focus-visible {
   }
   .nav.is-open {
     display: flex;
+    background: #fff;
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
   }
   .nav a {
     width: 100%;
