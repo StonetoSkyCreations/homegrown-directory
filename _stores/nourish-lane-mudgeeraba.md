@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: nourish-lane-mudgeeraba
 name: Nourish Lane (Mudgeeraba)
@@ -31,5 +32,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Gold Coast
+
+lat: -28.07924955
+lon: 153.36589275313048
 ---
 Organic-focused health food shop with bulk refills, pantry staples, and supplements.

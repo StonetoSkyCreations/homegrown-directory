@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: pembroke-wines-and-spirits-wanaka
 name: Pembroke Wines & Spirits
@@ -29,4 +30,7 @@ notes: ''
 published: true
 city: Wānaka
 Boutique wine store carrying organic and biodynamic wines, with a focus on Central Otago producers. Source: https://pembrokewines.co.nz/
+
+lat: -44.697191
+lon: 169.1345204
 ---

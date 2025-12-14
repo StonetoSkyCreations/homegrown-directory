@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: old-packhouse-market
 name: The Old Packhouse Market
@@ -31,5 +32,8 @@ practices_tags:
 - spray-free
 - local
 source_urls: []
+
+lat: -35.2272607
+lon: 173.9491061
 ---
 Weekend market and everyday food hall showcasing Far North growers, bakers, and makers. Stallholder rules prioritise locally grown produce and ask vendors to source ingredients locally, spray-free, or organic wherever possible. Source: https://www.visitboi.co.nz/listing/old-packhouse-market and https://www.theoldpackhouse.co.nz/wp-content/uploads/2024/10/packhouse-stallholder-BOOKLET.pdf

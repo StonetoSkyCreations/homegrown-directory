@@ -1,4 +1,5 @@
 ---
+
 title: Federal Diner
 slug: federal-diner-wanaka
 published: true
@@ -23,4 +24,7 @@ Focuses on organic eggs and free-range meats for breakfast and all-day dining. S
   listing
 subtype: cafe
 source_urls: []
+
+lat: -44.6941691
+lon: 169.1364637
 ---

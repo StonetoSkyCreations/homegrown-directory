@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Early Bird Organics
 slug: early-bird-organics
@@ -26,4 +27,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 subtype: market-garden
+
+lat: -39.03939
+lon: 177.4271389
 ---

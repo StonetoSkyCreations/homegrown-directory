@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Te Matuku Grove
 slug: te-matuku-grove
@@ -32,4 +33,7 @@ hours: ''
 published: true
 subtype: orchard
 source_urls: []
+
+lat: -36.79310825
+lon: 175.08838633700125
 ---

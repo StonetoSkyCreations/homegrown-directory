@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 title: Free Farmed New Zealand Pork
 slug: free-farmed-nz
@@ -30,4 +31,7 @@ supplies_to: []
 source_urls:
 - https://www.affco.co.nz/products/free-farm-new-zealand-pork/
 last_checked: 2025-12-13
+
+lat: -37.6960778
+lon: 175.1925814
 ---

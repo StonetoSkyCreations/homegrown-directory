@@ -1,4 +1,5 @@
 ---
+
 title: Kakariki Kitchen
 slug: kakariki-kitchen-whanganui
 published: true
@@ -22,4 +23,7 @@ Café focused on organic coffee and sourcing local, ethical ingredients where po
   list
 subtype: cafe
 source_urls: []
+
+lat: -39.9324904
+lon: 175.0519306
 ---

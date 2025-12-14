@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: farm-house-cafe
 name: Farm House Café
@@ -28,4 +29,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Clevedon
+
+lat: -36.9910022
+lon: 175.0368658
 ---

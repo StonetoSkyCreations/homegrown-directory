@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Kennedy Point Vineyard
 slug: kennedy-point-vineyard
@@ -28,4 +29,7 @@ hours: Thu–Sun 11am–4pm
 published: true
 subtype: vineyard
 source_urls: []
+
+lat: -36.807386
+lon: 175.025821
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Wipeout Kitchen
 slug: wipeout-kitchen
@@ -24,7 +25,8 @@ email: ''
 phone: ''
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.8172189
+lon: 174.7320885
 source_urls: []
+
 ---

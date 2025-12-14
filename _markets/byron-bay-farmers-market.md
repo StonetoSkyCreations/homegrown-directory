@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: byron-bay-farmers-market
 name: Byron Bay Farmers Market
@@ -35,5 +36,8 @@ city: Byron Bay
 practices_tags:
 - organic
 - local
+
+lat: -28.646951
+lon: 153.610627
 ---
 Thursday morning market with a mix of organic and local growers, fresh produce, and seasonal farm goods at Butler St Reserve.

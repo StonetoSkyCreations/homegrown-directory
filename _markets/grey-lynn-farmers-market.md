@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: grey-lynn-farmers-market
 name: Grey Lynn Farmers Market
@@ -12,7 +13,7 @@ region: Auckland
 suburb: Grey Lynn
 address: 510 Richmond Road (Grey Lynn Community Centre)
 postcode: '1021'
-lon: -36.8564
+lon: 174.7330018080917
 phone: 021 276 8818
 email: info@greylynnfarmersmarket.co.nz
 website: http://greylynnfarmersmarket.co.nz/
@@ -30,4 +31,6 @@ notes: Market
 city: Auckland
 practices_tags:
 - organic
+
+lat: -36.8597672
 ---

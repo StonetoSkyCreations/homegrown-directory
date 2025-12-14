@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: coromandel-homegrown-community-market
 name: Coromandel Town Homegrown Community Market
@@ -33,4 +34,7 @@ city: Coromandel
 practices_tags:
 - organic
 - local
+
+lat: -36.7601611
+lon: 175.4972742
 ---

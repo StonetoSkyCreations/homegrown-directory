@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: commonsense-kapiti
 name: Commonsense Kapiti
@@ -14,7 +15,7 @@ suburb: Paraparaumu
 brand_slug: commonsense-organics
 address: Coastlands Mall, State Highway 1
 postcode: '5032'
-lon: -40.9158
+lon: 175.119411
 phone: ''
 email: kapiti@commonsenseorganics.co.nz
 website: https://commonsenseorganics.co.nz/stores/kapiti-paraparaumu/
@@ -30,4 +31,6 @@ notes: Retail
 city: Kapiti Coast
 rating_average: 5
 rating_count: 1
+
+lat: -40.803757
 ---

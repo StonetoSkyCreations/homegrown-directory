@@ -1,4 +1,5 @@
 ---
+
 title: Origine Bistro
 slug: origine-bistro-auckland
 published: true
@@ -25,4 +26,7 @@ Menu built around an organic kitchen garden and locally sourced produce at Comme
   listing
 subtype: restaurant
 source_urls: []
+
+lat: -36.852095
+lon: 174.7631803
 ---

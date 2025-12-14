@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: soulfood-organic-wanaka
 name: Soulfood Organic
@@ -30,4 +31,7 @@ published: true
 city: Wānaka
 Local organic store and cafe in Wānaka serving and selling organic wholefoods. Source: user-supplied
   list
+
+lat: -44.6941691
+lon: 169.1364637
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Harvest to Home
 slug: harvest-to-home
@@ -22,8 +23,9 @@ email: admin@harvest2home.co.nz
 phone: "+64 22 658 0859"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.852095
+lon: 174.7631803
 subtype: cafe
 source_urls: []
+
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 title: Catalina Bay Farmers Market
 slug: catalina-bay-farmers-market
@@ -40,4 +41,7 @@ source_urls:
 - https://www.catalinabay.co.nz/farmers-market
 - https://www.catalinabay.co.nz/contact
 last_checked: 2025-12-13
+
+lat: -36.79102592382764
+lon: 174.67178126043703
 ---

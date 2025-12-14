@@ -1,4 +1,5 @@
 ---
+
 title: Milmore Downs
 slug: milmore-downs
 collection: farms
@@ -42,8 +43,8 @@ email: info@milmoredowns.co.nz
 phone: '0274373539'
 social: https://www.facebook.com/milmoredowns.co.nz/
 hours: Mo-Fr 9am-5pm
-lat: 
-lon: 
+lat: -42.937928
+lon: 172.925751
 supplies_to:
 - bohemian-bakery-sumner
 - bohemian-bakery-merivale
@@ -56,6 +57,7 @@ products_tags:
 - seed
 subtype: livestock
 source_urls: []
+
 ---
 Milmore Downs is a 302-hectare, third-generation biodynamic and certified organic farm in the Scargill Valley, north of Christchurch. Managed by the family team of Matthew, Alice, Ian and Eva, the farm integrates mixed cropping with livestock to build long-term soil fertility. Dinkel/spelt, wheat, rye, and barley are grown in rotation alongside deep-rooted herbal leys grazed by sheep and cattle, creating a resilient, self-renewing system.
 

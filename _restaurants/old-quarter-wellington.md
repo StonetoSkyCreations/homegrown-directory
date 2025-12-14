@@ -1,4 +1,5 @@
 ---
+
 title: The Old Quarter
 slug: old-quarter-wellington
 published: true
@@ -24,4 +25,7 @@ description: Vietnamese-inspired eatery using free-range chicken and pork plus s
 CBD restaurant with menus built on free-range meats and locally sourced seasonal produce. Source: http://www.theoldquarter.co.nz/
 subtype: restaurant
 source_urls: []
+
+lat: -41.2920629
+lon: 174.777204
 ---

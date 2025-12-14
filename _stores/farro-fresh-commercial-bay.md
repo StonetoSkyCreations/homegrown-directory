@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: farro-fresh-commercial-bay
 name: Farro Fresh Commercial Bay
@@ -27,4 +28,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Located in Commercial Bay shopping center
 city: Auckland
+
+lat: -36.849193
+lon: 174.764111
 ---

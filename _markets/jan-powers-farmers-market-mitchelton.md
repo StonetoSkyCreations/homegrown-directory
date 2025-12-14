@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: jan-powers-farmers-market-mitchelton
 name: Jan Powers Farmers Market (Mitchelton)
@@ -33,5 +34,8 @@ city: Brisbane
 brand_slug: jan-powers-farmers-market
 practices_tags:
 - local
+
+lat: -27.404055
+lon: 152.975746
 ---
 Monthly market bringing local growers and artisan makers to Mitchelton’s main street.

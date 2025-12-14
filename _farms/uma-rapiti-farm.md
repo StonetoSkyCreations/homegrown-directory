@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Uma Rapiti Farm
 slug: uma-rapiti-farm
@@ -26,4 +27,7 @@ hours: ''
 published: true
 subtype: mixed
 source_urls: []
+
+lat: -36.79310825
+lon: 175.08838633700125
 ---

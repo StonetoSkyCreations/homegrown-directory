@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Hamlin Road Farm
 slug: hamlin-road-farm
@@ -22,8 +23,9 @@ email: ''
 phone: "+64 27 217 9354"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -37.0418932
+lon: 174.9721553
 subtype: seeds
 source_urls: []
+
 ---

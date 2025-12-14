@@ -1,4 +1,5 @@
 ---
+
 title: Black Estate (Waipara)
 slug: black-estate-waipara
 published: true
@@ -35,5 +36,8 @@ description: Two-hatted winery restaurant in Waipara serving organic wines and s
 last_checked: '2025-12-12'
 subtype: restaurant
 source_urls: []
+
+lat: -43.0387217
+lon: 172.8128876
 ---
 Black Estate is a family-run winery with three hillside vineyards certified both organic and biodynamic. The award-winning lunch restaurant showcases the estate's wines alongside dishes created with local and organic ingredients from North Canterbury farms, reflecting a deep commitment to regenerative farming and seasonal cooking. Guests can book a table Thursday to Monday from 11:30am to 3pm, while the cellar door is open daily 10am-4pm for tastings and light snacks. Private tours and group dining are available, and a studio B&B on the home vineyard invites visitors to stay among the vines.

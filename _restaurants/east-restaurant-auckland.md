@@ -1,4 +1,5 @@
 ---
+
 title: East Restaurant
 slug: east-restaurant-auckland
 published: true
@@ -23,4 +24,7 @@ Wine list is fully organic/biodynamic and vegan; supports artisanal producers. S
   listing
 subtype: restaurant
 source_urls: []
+
+lat: -36.8490839
+lon: 174.7592156
 ---

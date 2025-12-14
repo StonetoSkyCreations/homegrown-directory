@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Kaiwhenua Organics
 slug: kaiwhenua-organics
@@ -26,4 +27,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Māori-owned
 subtype: market-garden
+
+lat: -37.7997729
+lon: 174.8682464
 ---

@@ -1,4 +1,5 @@
 ---
+
 title: Allandale Regenerative Farm
 slug: allandale-regenerative-farm
 country: New Zealand
@@ -23,4 +24,7 @@ products_tags:
 - meat
 subtype: livestock
 source_urls: []
+
+lat: -43.1512956
+lon: 172.7329869
 ---

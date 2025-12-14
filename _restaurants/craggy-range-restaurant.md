@@ -1,4 +1,5 @@
 ---
+
 title: Craggy Range Restaurant
 slug: craggy-range-restaurant
 published: true
@@ -26,4 +27,7 @@ description: Estate restaurant featuring organic/biodynamic culinary gardens and
 : https://craggyrange.com/
 subtype: restaurant
 source_urls: []
+
+lat: -39.6928384
+lon: 176.9230283
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Anita’s Organic Store
 slug: anitas-organic-store-blenheim
@@ -34,9 +35,10 @@ email: ''
 phone: "+64 3 579 5684"
 social: ''
 hours: Mon–Sat 9am–7pm; Sun 10am–7pm
-lat: ''
-lon: ''
+lat: -41.5126399
+lon: 173.9584453
 subtype: organic-store
 source_urls:
 - https://anitasshop.co.nz
+
 ---

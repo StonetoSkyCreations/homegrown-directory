@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Organic Buzz
 slug: organic-buzz
@@ -46,4 +47,7 @@ rating_average: 5
 rating_count: 1
 published: true
 source_urls: []
+
+lat: -40.347724
+lon: 175.626963
 ---

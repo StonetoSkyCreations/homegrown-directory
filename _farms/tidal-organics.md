@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Tidal Organics
 slug: tidal-organics
@@ -31,4 +32,7 @@ hours: ''
 published: true
 subtype: market-garden
 source_urls: []
+
+lat: -36.80713
+lon: 175.050889
 ---

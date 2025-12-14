@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: wholefood-co-op-hokitika
 name: Wholefood Co-op Hokitika
@@ -29,4 +30,7 @@ published: true
 city: Hokitika
 Community co-op providing organic foods and wholefoods at affordable prices in Hokitika. Source: user-supplied
   list
+
+lat: -42.7178871
+lon: 170.9646469
 ---

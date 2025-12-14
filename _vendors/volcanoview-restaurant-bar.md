@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: volcanoview-restaurant-bar
 name: Volcanoview Restaurant & Bar
@@ -27,4 +28,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: New Plymouth
+
+lat: -39.0579941
+lon: 174.0806474
 ---

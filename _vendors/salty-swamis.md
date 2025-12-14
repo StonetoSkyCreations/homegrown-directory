@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Salty Swamis
 slug: salty-swamis
@@ -24,7 +25,8 @@ email: ''
 phone: "+64 21 090 22888"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -40.994974
+lon: 173.0034876
 source_urls: []
+
 ---

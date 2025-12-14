@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Purple Vibes
 slug: purple-vibes
@@ -24,7 +25,8 @@ email: info@purplevibes.co.nz
 phone: "+64 20 4060 8009"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.882819
+lon: 174.733469
 source_urls: []
+
 ---

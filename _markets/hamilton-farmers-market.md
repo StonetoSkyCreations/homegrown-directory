@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: hamilton-farmers-market
 name: Hamilton Farmers Market
@@ -12,7 +13,7 @@ region: Waikato
 suburb: Hamilton
 address: Te Rapa Racecourse, Ken Browne Dr
 postcode: '3200'
-lon: -37.7435
+lon: 175.250164397978
 phone: 027 290 3032
 email: enquiries@waikatofarmersmarkets.co.nz
 website: https://www.waikatofarmersmarkets.co.nz/
@@ -28,4 +29,6 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Hamilton
+
+lat: -37.765518247193285
 ---

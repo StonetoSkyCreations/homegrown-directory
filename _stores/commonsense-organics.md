@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Commonsense Organics
 slug: commonsense-organics
@@ -12,4 +13,7 @@ locations:
 - commonsense-kapiti
 - commonsense-kilbirnie
 - commonsense-lower-hutt
+
+lat: -41.5000831
+lon: 172.8344077
 ---

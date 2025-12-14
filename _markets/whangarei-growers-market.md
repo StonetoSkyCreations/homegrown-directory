@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: whangarei-growers-market
 name: Whangarei Growers Market
@@ -12,7 +13,7 @@ region: Northland
 suburb: Whangārei
 address: Water Street (Sunnyside carpark)
 postcode: '0110'
-lon: -35.7261
+lon: 174.3170328280819
 phone: '09 438 1337'
 email: whangareigrowersmarket@gmail.com
 website: https://www.facebook.com/WhangareiGrowersMarket/
@@ -30,4 +31,6 @@ notes: Market
 city: Whangārei
 practices_tags:
 - spray-free
+
+lat: -35.72695951824098
 ---

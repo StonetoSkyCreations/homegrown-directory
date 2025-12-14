@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: amberley-farmers-market
 name: Amberley Farmers Market
@@ -12,7 +13,7 @@ region: Canterbury
 suburb: Amberley
 address: 122 Carters Road (Amberley Domain)
 postcode: '7410'
-lon: -43.1567
+lon: 172.7570843
 phone: 027 220 3710
 email: admin@amberleyfarmersmarket.org.nz
 website: https://amberleyfarmersmarket.org.nz/
@@ -33,4 +34,6 @@ rating_count: 1
 practices_tags:
 - organic
 - local
+
+lat: -42.8791219
 ---

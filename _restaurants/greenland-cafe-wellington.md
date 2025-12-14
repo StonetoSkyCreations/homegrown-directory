@@ -1,4 +1,5 @@
 ---
+
 title: GreenLand Cafe
 slug: greenland-cafe-wellington
 published: true
@@ -25,4 +26,7 @@ Committed to using organic ingredients and locally sourced food and coffee. Sour
   listing
 subtype: cafe
 source_urls: []
+
+lat: -41.27792445
+lon: 174.7787504623986
 ---

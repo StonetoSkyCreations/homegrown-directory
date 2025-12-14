@@ -1,4 +1,5 @@
 ---
+
 title: Little Bird Kitchen
 slug: little-bird-kitchen-auckland
 published: true
@@ -28,4 +29,7 @@ description: Plant‑based café serving seasonal dishes made with local organic
 notes: Updated with location and hours from latest listing details.
 subtype: cafe
 source_urls: []
+
+lat: -36.8517648
+lon: 174.7443796
 ---

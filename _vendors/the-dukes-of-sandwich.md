@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: The Dukes of Sandwich
 slug: the-dukes-of-sandwich
@@ -28,7 +29,8 @@ email: dukesofsandwich@gmail.com
 phone: "+64 27 588 1508"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -43.529685
+lon: 172.632707
 source_urls: []
+
 ---

@@ -1,4 +1,5 @@
 ---
+
 title: Bayleaf Organics
 slug: bayleaf-organics-haumoana
 country: New Zealand
@@ -25,4 +26,7 @@ description: Organic apple grower selling premium apples at Hawke's Bay Farmersâ
 : https://hawkesbayfarmersmarket.co.nz/bayleaf-organics/
 subtype: orchard
 source_urls: []
+
+lat: -39.6173961
+lon: 176.9433409
 ---

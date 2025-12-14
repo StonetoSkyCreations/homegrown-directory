@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: harris-farm-west-end
 name: Harris Farm Markets (West End)
@@ -32,5 +33,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Brisbane
+
+lat: -27.4775637
+lon: 153.0113518
 ---
 Inner-city market grocer with organic options, local produce, and specialty deli lines.

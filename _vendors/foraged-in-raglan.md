@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: foraged-in-raglan
 name: Foraged In Raglan
@@ -27,4 +28,7 @@ last_checked: ''
 notes: ''
 city: Raglan
 Uses spray-free local produce—often surplus or backyard fruit—to create preserves and reduce food waste. Source: https://www.foragedinraglan.co.nz/my-story
+
+lat: -37.7997729
+lon: 174.8682464
 ---

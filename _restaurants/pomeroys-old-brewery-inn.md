@@ -1,4 +1,5 @@
 ---
+
 title: Pomeroy's Old Brewery Inn
 slug: pomeroys-old-brewery-inn
 published: true
@@ -37,4 +38,7 @@ description: Historic Christchurch brewpub offering a full restaurant menu with 
   organic ingredients, including organic chicken wings and organic broccoli.
 subtype: restaurant
 source_urls: []
+
+lat: -43.52669165
+lon: 172.6497407750175
 ---

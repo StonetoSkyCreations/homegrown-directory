@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: bay-of-islands-farmers-market-paihia
 name: Bay of Islands Farmers Market – Paihia
@@ -12,7 +13,7 @@ region: Northland
 suburb: Paihia
 address: Village Green, 60 Marsden Rd
 postcode: '0200'
-lon: -35.2814
+lon: 174.0923317
 phone: 021 120 3082
 email: info@bayofislandsfarmersmarket.co.nz
 website: https://bayofislandsfarmersmarket.co.nz/
@@ -30,4 +31,6 @@ notes: Market
 city: Paihia
 practices_tags:
 - local
+
+lat: -35.2818255
 ---

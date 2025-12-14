@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: daily-bread-pt-chevalier
 name: Daily Bread
@@ -28,4 +29,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Auckland
+
+lat: -36.852095
+lon: 174.7631803
 ---

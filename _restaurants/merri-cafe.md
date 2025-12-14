@@ -1,4 +1,5 @@
 ---
+
 title: Merri Cafe
 slug: merri-cafe
 country: Australia
@@ -28,5 +29,8 @@ phone: "+61 3 9389 0100"
 description: Organic cafe at CERES serving locally roasted coffee, cakes, sandwiches,
   and salads made with organic seasonal produce from the gardens.
 source_urls: []
+
+lat: -37.825071
+lon: 144.978682
 ---
 Part of CERES Environmental Park, Merri Cafe keeps a seasonal menu built on organic produce from CERES gardens and partner farms.

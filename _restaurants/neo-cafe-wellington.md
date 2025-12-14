@@ -1,4 +1,5 @@
 ---
+
 title: Neo Cafe & Eatery
 slug: neo-cafe-wellington
 published: true
@@ -23,4 +24,7 @@ description: Willis Street cafe using free-range eggs, organic ingredients where
 Modern cafe focusing on local suppliers, free-range eggs, and organic ingredients when available. Source: https://www.neocafe.co.nz/
 subtype: cafe
 source_urls: []
+
+lat: -41.2887953
+lon: 174.7772114
 ---

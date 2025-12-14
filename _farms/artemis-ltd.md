@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Artemis Ltd
 slug: artemis-ltd
@@ -28,4 +29,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 subtype: market-garden
+
+lat: -45.8740984
+lon: 170.5035755
 ---

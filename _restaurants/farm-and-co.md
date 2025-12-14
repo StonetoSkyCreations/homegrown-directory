@@ -1,4 +1,5 @@
 ---
+
 title: Farm & Co
 slug: farm-and-co
 country: Australia
@@ -27,5 +28,8 @@ phone: 02 6608 0010
 description: Seasonal farm-to-table restaurant on-site at Farm & Co, cooking with
   organic produce picked daily.
 source_urls: []
+
+lat: -28.181708
+lon: 153.5469621
 ---
 Farm & Co serves a changing menu built around organic produce grown on the farm, harvested each day for the kitchen.

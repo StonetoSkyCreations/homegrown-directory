@@ -1,4 +1,5 @@
 ---
+
 title: Eatery by Frank’s
 slug: eatery-by-franks-queenstown
 published: true
@@ -25,4 +26,7 @@ Breakfast and lunch spot using free-range local produce and fair trade organic c
   listing
 subtype: cafe
 source_urls: []
+
+lat: -45.0321923
+lon: 168.661
 ---

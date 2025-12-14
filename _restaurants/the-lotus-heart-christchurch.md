@@ -1,4 +1,5 @@
 ---
+
 title: The Lotus-Heart
 slug: the-lotus-heart-christchurch
 published: true
@@ -24,4 +25,7 @@ Uses locally grown and organic ingredients, serving vegan/vegetarian dishes and 
   listing
 subtype: restaurant
 source_urls: []
+
+lat: -43.530955
+lon: 172.6364343
 ---

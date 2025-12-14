@@ -1,4 +1,5 @@
 ---
+
 title: Dripping Bowl
 slug: dripping-bowl-wanaka
 published: true
@@ -24,4 +25,7 @@ Offers nourishing wholefoods with organic coffee and juices; ingredients mostly 
   listing
 subtype: cafe
 source_urls: []
+
+lat: -44.6941691
+lon: 169.1364637
 ---

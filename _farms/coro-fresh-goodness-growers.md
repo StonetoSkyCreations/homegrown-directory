@@ -1,4 +1,5 @@
 ---
+
 title: Coro Fresh (Goodness Growers)
 slug: coro-fresh-goodness-growers
 country: New Zealand
@@ -24,4 +25,7 @@ description: Regenerative Coroglen grower supplying spray-free produce to local 
 : user-supplied list
 subtype: mixed
 source_urls: []
+
+lat: -36.9237668
+lon: 175.6916887
 ---

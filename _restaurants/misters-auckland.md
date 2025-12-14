@@ -1,4 +1,5 @@
 ---
+
 title: Misters
 slug: misters-auckland
 published: true
@@ -25,4 +26,7 @@ Menu is entirely gluten- and dairy-free with organic, locally sourced seasonal i
   listing
 subtype: cafe
 source_urls: []
+
+lat: -36.852095
+lon: 174.7631803
 ---

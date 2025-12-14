@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 title: New Zealand Organic Meats
 slug: new-zealand-organic-meats
@@ -34,4 +35,7 @@ source_urls:
 - https://nzorganicmeat.co.nz/
 - https://nzorganicmeat.co.nz/new-zealand-organic-meats-story
 last_checked: 2025-12-13
+
+lat: -45.7883
+lon: 169.175542
 ---

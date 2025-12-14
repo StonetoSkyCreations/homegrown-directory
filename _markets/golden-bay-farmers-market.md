@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: golden-bay-farmers-market
 name: Golden Bay Farmers Market
@@ -32,4 +33,7 @@ practices_tags:
 - organic
 - spray-free
 - local
+
+lat: -40.8594062
+lon: 172.8062614
 ---

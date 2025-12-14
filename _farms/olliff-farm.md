@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Olliff Farm
 slug: olliff-farm
@@ -24,8 +25,9 @@ email: ''
 phone: "+64 21 881 187"
 social: ''
 hours: 7 days 9am–6pm
-lat: ''
-lon: ''
+lat: -36.610007
+lon: 174.585731
 subtype: eggs
 source_urls: []
+
 ---

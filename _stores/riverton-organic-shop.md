@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: riverton-organic-shop
 name: Riverton Organic Shop
@@ -30,4 +31,7 @@ published: true
 city: Riverton
 Local organic shop in Riverton supporting Southland’s ethical and organic producers. Source: user-supplied
   list
+
+lat: -46.3509977
+lon: 168.0202689
 ---

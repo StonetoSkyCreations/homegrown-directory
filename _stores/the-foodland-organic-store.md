@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: The Foodland Organic Store
 slug: the-foodland-organic-store
@@ -36,4 +37,7 @@ services:
 hours: Mon–Sun 9am–8pm
 published: true
 source_urls: []
+
+lat: -43.539793
+lon: 172.6519236
 ---

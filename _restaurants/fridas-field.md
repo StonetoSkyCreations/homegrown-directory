@@ -1,4 +1,5 @@
 ---
+
 title: Frida's Field
 slug: fridas-field
 country: Australia
@@ -25,5 +26,8 @@ phone: ''
 description: Regenerative farm restaurant serving long lunches with produce from its
   own market garden and nearby farms.
 source_urls: []
+
+lat: -28.673561
+lon: 153.611469
 ---
 On its 120-acre regenerative farm, Frida's Field cooks seasonal menus using what is harvested on site and from local growers.

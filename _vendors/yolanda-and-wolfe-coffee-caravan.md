@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Yolanda and Wolfe Coffee Caravan
 slug: yolanda-and-wolfe-coffee-caravan
@@ -27,7 +28,8 @@ email: ''
 phone: ''
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.8064867
+lon: 174.6342654
 source_urls: []
+
 ---

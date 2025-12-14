@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Golden Bay Organics
 slug: golden-bay-organics
@@ -31,8 +32,9 @@ email: gborganics@xtra.co.nz
 phone: 03 525 8677
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -40.85874115
+lon: 172.8060379871829
 source_urls:
 - User-supplied list
+
 ---

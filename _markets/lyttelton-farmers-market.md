@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: lyttelton-farmers-market
 name: Lyttelton Farmers Market
@@ -12,7 +13,7 @@ region: Canterbury
 suburb: Lyttelton
 address: London Street (near Lyttelton Main School)
 postcode: '8082'
-lon: -43.6025
+lon: 172.7214199778354
 phone: 022 089 6262
 email: lytteltonfarmersmarket@gmail.com
 website: https://www.lyttelton.net.nz/farmers-market
@@ -36,6 +37,8 @@ practices_tags:
 - organic
 - regenerative
 - local
+
+lat: -43.6024834
 ---
 The Lyttelton Farmers’ Market sits in the heart of the port town, surrounded by steep hills, sea air, and the hum of a community that knows its growers by name. Saturday mornings see the main street transformed into a lively, compact marketplace where local producers line the road with seasonal vegetables, fruit, bread, preserves, chutneys, honey, seedlings, and handmade goods.
 

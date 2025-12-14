@@ -1,4 +1,5 @@
 ---
+
 title: Bohemian Bakery (Sumner)
 slug: bohemian-bakery-sumner
 collection: stores
@@ -39,14 +40,15 @@ email: info@bohemianbakery.co.nz
 phone: "+64 3-326 3357"
 social: https://www.facebook.com/bohemianbakerychristchurch/, https://www.instagram.com/bohemianbakerychristchurch
 hours: Mon–Sun 7:30–15:30
-lat: 
-lon: 
+lat: -43.569762100000005
+lon: 172.75984166875986
 sources:
 - farmers-mill
 - milmore-downs
 subtype: specialty-grocer
 source_urls: []
 brand_slug: bohemian-bakery
+
 ---
 Sumner’s Bohemian Bakery is the seaside extension of everything Bohemian stands for: slow-fermented bread, honest pastries, and ingredients grounded in Canterbury’s soils. The shelves are filled daily with sourdoughs made from Milmore Downs organic whole-wheat and rye, spray-free Farmers Mill flour, and honest food crafted the long way — never rushed, never improvised with additives.
 

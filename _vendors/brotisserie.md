@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Brotisserie
 slug: brotisserie
@@ -26,7 +27,8 @@ email: ''
 phone: ''
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.887211
+lon: 174.7997
 source_urls: []
+
 ---

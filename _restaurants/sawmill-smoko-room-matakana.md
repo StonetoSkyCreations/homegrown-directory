@@ -1,4 +1,5 @@
 ---
+
 title: Sawmill Brewery & Smoko Room
 slug: sawmill-smoko-room-matakana
 published: true
@@ -25,4 +26,7 @@ Menu built with ethically sourced seasonal ingredients from local Mahurangi grow
   listing
 subtype: restaurant
 source_urls: []
+
+lat: -36.3287898
+lon: 174.7290529
 ---

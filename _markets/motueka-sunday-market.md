@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: motueka-sunday-market
 name: Motueka Sunday Market
@@ -32,4 +33,7 @@ practices_tags:
 - organic
 - spray-free
 - local
+
+lat: -41.11125315
+lon: 173.0130596577261
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Revival Market Garden
 slug: revival-market-garden
@@ -30,4 +31,7 @@ hours: ''
 published: true
 subtype: market-garden
 source_urls: []
+
+lat: -36.79310825
+lon: 175.08838633700125
 ---

@@ -1,4 +1,5 @@
 ---
+
 title: kingi
 slug: kingi-auckland
 published: true
@@ -25,4 +26,7 @@ description: Britomart restaurant championing sustainably caught local seafood w
 : user-provided details
 subtype: restaurant
 source_urls: []
+
+lat: -36.852095
+lon: 174.7631803
 ---

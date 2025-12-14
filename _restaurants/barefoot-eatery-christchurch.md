@@ -1,4 +1,5 @@
 ---
+
 title: Barefoot Eatery
 slug: barefoot-eatery-christchurch
 published: true
@@ -25,4 +26,7 @@ Serves organic juices, nut milks, and plant-based dishes with locally sourced in
   listing
 subtype: cafe
 source_urls: []
+
+lat: -43.530955
+lon: 172.6364343
 ---

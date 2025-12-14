@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Charlie Grace Mobile Café
 slug: charlie-grace-mobile-cafe
@@ -24,9 +25,10 @@ email: events.charliegrace@gmail.com
 phone: "+64 21 273 3968"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.94780125874932
+lon: 174.9641298954297
 sources:
 - coffee-la-la
 source_urls: []
+
 ---

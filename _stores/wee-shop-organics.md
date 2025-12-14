@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: The Wee Shop Organics
 slug: wee-shop-organics
@@ -28,9 +29,10 @@ email: ''
 phone: 03 540 2657
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -41.2346355
+lon: 173.0864512
 subtype: organic-store
 source_urls:
 - http://weeshoporganics.co.nz
+
 ---

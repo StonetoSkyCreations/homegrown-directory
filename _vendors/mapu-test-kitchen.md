@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: mapu-test-kitchen
 name: MAPU Test Kitchen
@@ -27,4 +28,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Lyttelton
+
+lat: -43.6024739
+lon: 172.7205727
 ---

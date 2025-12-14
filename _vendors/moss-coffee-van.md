@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Moss Coffee Van
 slug: moss-coffee-van
@@ -23,7 +24,8 @@ email: chrisz@mosscoffeevan.nz
 phone: "+64 21 082 76210"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.882819
+lon: 174.733469
 source_urls: []
+
 ---

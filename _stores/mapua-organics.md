@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: mapua-organics
 name: Mapua Organics
@@ -28,4 +29,7 @@ notes: ''
 published: true
 city: Mapua
 Supplies certified organic produce from Mapua, Tasman. Source: user-supplied list
+
+lat: -41.25321
+lon: 173.0962191
 ---

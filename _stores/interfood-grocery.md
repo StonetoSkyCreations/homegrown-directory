@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: InterFood Grocery
 slug: interfood-grocery
@@ -29,9 +30,10 @@ email: interfood278@gmail.com
 phone: 0274 112 447
 social: ''
 hours: Mon–Thu 10am–4pm; Fri 12pm–4pm; Sat–Sun closed
-lat: ''
-lon: ''
+lat: -41.7592877
+lon: 171.5993248
 subtype: specialty-grocer
 source_urls:
 - https://www.interfood.co.nz
+
 ---

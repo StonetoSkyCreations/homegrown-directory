@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Dutchy's
 slug: dutchys
@@ -26,7 +27,8 @@ email: ''
 phone: ''
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -40.6218161
+lon: 175.2865854
 source_urls: []
+
 ---

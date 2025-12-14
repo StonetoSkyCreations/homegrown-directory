@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: She Universe Riverside Chocolaterie
 slug: she-universe-riverside-chocolaterie
@@ -33,4 +34,7 @@ published: true
 rating_average: 5
 rating_count: 1
 source_urls: []
+
+lat: -43.5331095
+lon: 172.6342575
 ---

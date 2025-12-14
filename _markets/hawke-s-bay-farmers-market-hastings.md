@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: hawke-s-bay-farmers-market-hastings
 name: Hawke’s Bay Farmers Market (Hastings)
@@ -12,7 +13,7 @@ region: Hawke's Bay
 suburb: Hastings
 address: Showground Hawke’s Bay, Kenilworth Rd
 postcode: '4122'
-lon: -39.6559
+lon: 176.8631222928221
 phone: 06 878 1368
 email: info@hawkesbayfarmersmarket.co.nz
 website: https://www.hawkesbayfarmersmarket.co.nz/
@@ -34,4 +35,6 @@ notes: Market
 city: Hastings
 practices_tags:
 - organic
+
+lat: -39.63037263549256
 ---

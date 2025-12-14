@@ -1,4 +1,5 @@
 ---
+
 title: Solscape – The Conscious Kitchen
 slug: solscape-conscious-kitchen
 published: true
@@ -27,4 +28,7 @@ rating_count: 1
 : https://solscape.co.nz/eat/
 subtype: restaurant
 source_urls: []
+
+lat: -37.8256107
+lon: 174.8206956
 ---

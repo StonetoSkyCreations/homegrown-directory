@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: the-falls-retreat
 name: The Falls Retreat
@@ -28,4 +29,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Waihi
+
+lat: -37.391462
+lon: 175.8403538
 ---

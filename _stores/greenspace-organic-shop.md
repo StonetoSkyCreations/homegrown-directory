@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Greenspace Organic Shop
 slug: greenspace-organic-shop
@@ -34,4 +35,7 @@ social_links: []
 hours: Tue–Sat 10am–4pm
 published: true
 source_urls: []
+
+lat: -36.7944853
+lon: 175.0549946
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: The Tinman
 slug: the-tinman
@@ -24,9 +25,10 @@ email: john@thetinman.co.nz
 phone: "+64 21 244 4411"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.882819
+lon: 174.733469
 sources:
 - coffee-supreme
 source_urls: []
+
 ---

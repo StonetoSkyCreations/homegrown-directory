@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Kaitake Farm
 slug: kaitake-farm
@@ -21,8 +22,8 @@ email: kaitakefarm@gmail.com
 phone: "+64 27 311 6196"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -39.132679
+lon: 173.976848
 supplies_to:
 - beach-road-milk-co
 - down-to-earth-organics-new-plymouth
@@ -31,4 +32,5 @@ products_tags:
 subtype: dairy-farm
 source_urls:
 - https://kaitakefarm.co.nz
+
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Westmere Butchery
 slug: westmere-butchery
@@ -25,8 +26,9 @@ email: ''
 phone: "+64 9 376 5954"
 social: https://www.facebook.com
 hours: Mon–Fri 6am–6:30pm; Sat–Sun 6am–4:30pm
-lat: ''
-lon: ''
+lat: -39.897408
+lon: 174.972543
 subtype: specialty-grocer
 source_urls: []
+
 ---

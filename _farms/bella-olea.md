@@ -1,4 +1,5 @@
 ---
+
 title: Bella Olea
 slug: bella-olea
 collection: farms
@@ -28,14 +29,15 @@ social:
 - https://facebook.com/BellaOleaOlives/
 hours: 
 market_days: []
-lat: 
-lon: 
+lat: -45.8675512
+lon: 170.52043048177836
 supplies_to:
 - little-farms
 last_checked: 2025-12-11
 subtype: mixed
 source_urls:
 - https://www.olivesnz.org.nz/our-growers/wairarapa/
+
 ---
 Bella Olea is a family-owned olive grove on the outskirts of Greytown. With just under 1,000 trees, the grove produces award-winning certified-organic olive oil along with table olives, body lotions, skin balms and olive leaf tincture. The olives are grown without synthetic chemicals, and the family manages the entire process from grove to bottle. Their oils – such as the Koroneiki single-variety and the blended Grove oil – have earned medals in national competitions.
 

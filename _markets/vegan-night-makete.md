@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 title: Vegan Night Mākete
 slug: vegan-night-makete
@@ -34,12 +35,13 @@ hours: 'Daylight saving: 5pm–8pm (Oct–Mar); Winter: 3:30pm–7pm (Apr–Sep)
   Mākete hours vary'
 market_days:
 - last Saturday of each month
-lat: ''
-lon: ''
+lat: -43.537684350000006
+lon: 172.6562263697137
 rating_average: 5
 rating_count: 1
 practices_tags:
 - local
 source_urls:
 - http://www.veganchristchurch.org.nz/
+
 ---

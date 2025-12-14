@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 title: First Light Farms
 slug: first-light-farms
@@ -33,4 +34,7 @@ source_urls:
 - https://firstlight.farm/our-story/
 - https://firstlight.farm/contact-us/
 last_checked: 2025-12-13
+
+lat: -39.6711358
+lon: 176.8782056
 ---

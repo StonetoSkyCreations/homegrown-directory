@@ -1,4 +1,5 @@
 ---
+
 title: Akito Eatery
 slug: akito-eatery
 published: true
@@ -27,4 +28,7 @@ description: Plant-based eatery embracing slow food and regenerative principles,
   seasonal breakfasts, brunches and lunches made from local ingredients.
 subtype: cafe
 source_urls: []
+
+lat: -36.7827036
+lon: 175.0100052
 ---

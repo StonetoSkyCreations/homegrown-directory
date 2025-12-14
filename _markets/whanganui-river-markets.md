@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: whanganui-river-markets
 name: Whanganui River Markets
@@ -12,7 +13,7 @@ region: Manawatū-Whanganui
 suburb: Whanganui
 address: Whanganui Riverbank, Taupo Quay
 postcode: '4500'
-lon: -39.9464
+lon: 175.023077
 phone: 027 285 8600
 email: whanganuirivermarkets@gmail.com
 website: https://whanganuirivermarkets.nz/
@@ -27,4 +28,6 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Whanganui
+
+lat: -39.926765
 ---

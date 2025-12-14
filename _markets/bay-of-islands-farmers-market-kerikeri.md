@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: bay-of-islands-farmers-market-kerikeri
 name: Bay of Islands Farmers Market – Kerikeri
@@ -12,7 +13,7 @@ region: Northland
 suburb: Kerikeri
 address: Kerikeri Domain, Hobson Ave
 postcode: '0230'
-lon: -35.2268
+lon: 173.96543
 phone: 021 120 3082
 email: info@bayofislandsfarmersmarket.co.nz
 website: https://bayofislandsfarmersmarket.co.nz/
@@ -33,4 +34,6 @@ notes: Market
 city: Kerikeri
 practices_tags:
 - local
+
+lat: -35.212396
 ---

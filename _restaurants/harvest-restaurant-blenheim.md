@@ -1,4 +1,5 @@
 ---
+
 title: Harvest Restaurant
 slug: harvest-restaurant-blenheim
 published: true
@@ -25,4 +26,7 @@ Focuses on seasonal dishes from on-site gardens and high-welfare regional meat, 
   details
 subtype: restaurant
 source_urls: []
+
+lat: -41.4702627
+lon: 173.9087318
 ---

@@ -1,4 +1,5 @@
 ---
+
 title: Wild About Wellbeing Farm
 slug: wild-about-wellbeing-farm
 country: Australia
@@ -28,5 +29,8 @@ phone: "+61 493 664 838"
 description: Organic farm-based restaurant in the Yarra Valley cooking seasonal menus
   from chemical-free produce grown on site.
 source_urls: []
+
+lat: -37.793497
+lon: 145.431248
 ---
 Wild About Wellbeing Farm follows an organic, biodynamic approach, cooking seasonal menus from its own chemical-free gardens.

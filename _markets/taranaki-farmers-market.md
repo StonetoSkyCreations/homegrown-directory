@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: taranaki-farmers-market
 name: Taranaki Farmers Market
@@ -12,7 +13,7 @@ region: Taranaki
 suburb: New Plymouth
 address: Currie Street (Huatoki Plaza)
 postcode: '4310'
-lon: -39.0583
+lon: 174.0806474
 phone: 021 0298 3187
 email: marketmanager@farmersmarkettaranaki.org.nz
 website: https://farmersmarkettaranaki.org.nz/
@@ -30,4 +31,6 @@ notes: Market
 city: New Plymouth
 practices_tags:
 - organic
+
+lat: -39.0579941
 ---

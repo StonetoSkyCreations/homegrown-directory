@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: gisborne-farmers-market
 name: Gisborne Farmers Market
@@ -12,7 +13,7 @@ region: Gisborne
 suburb: Gisborne
 address: Railway Station, Grey Street
 postcode: '4010'
-lon: -38.6639
+lon: 178.02603504005228
 phone: 06 863 0642
 email: info@gisbornefarmersmarket.co.nz
 website: https://gisbornefarmersmarket.co.nz/
@@ -30,4 +31,6 @@ notes: Market
 city: Gisborne
 practices_tags:
 - local
+
+lat: -38.66301550586961
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 title: Ohoka Farmers Market
 slug: ohoka-farmers-market
@@ -33,8 +34,8 @@ social: https://www.facebook.com/ohokafarmersmarket/, https://www.instagram.com/
 hours: Friday 9am–12:30pm (8:30 early bird summer)
 market_days:
 - Friday
-lat: ''
-lon: ''
+lat: -43.36717158708503
+lon: 172.5742729244729
 sources:
 - untamed-earth
 rating_average: 5
@@ -46,6 +47,7 @@ practices_tags:
 - local
 source_urls:
 - http://www.ohokafarmersmarket.co.nz
+
 ---
 The Ohoka Farmers’ Market is one of Canterbury’s most loved weekly food gatherings — a true farmer-led marketplace that comes alive every Friday morning. It celebrates local growers, seasonal abundance, and the simple pleasure of meeting the people who raise, harvest, bake, brew, or forage the food on your table.
 

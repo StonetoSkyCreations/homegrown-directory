@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: shepherd
 name: Shepherd
@@ -27,4 +28,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Wellington
+
+lat: -41.2887953
+lon: 174.7772114
 ---

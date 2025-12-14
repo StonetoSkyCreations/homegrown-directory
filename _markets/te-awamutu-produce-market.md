@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: te-awamutu-produce-market
 name: Te Awamutu Produce Market
@@ -12,7 +13,7 @@ region: Waikato
 suburb: Te Awamutu
 address: Selwyn Park, Gorst Avenue
 postcode: '3800'
-lon: -38.0065
+lon: 173.876458
 phone: '175.3257'
 email: 07 871 7713
 website: ''
@@ -30,4 +31,6 @@ notes: Market
 city: Waipa
 practices_tags:
 - local
+
+lat: -35.932507
 ---

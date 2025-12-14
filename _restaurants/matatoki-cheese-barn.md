@@ -1,4 +1,5 @@
 ---
+
 title: Matatoki Cheese Barn
 slug: matatoki-cheese-barn
 published: true
@@ -22,4 +23,7 @@ description: Cheese barn and café near Thames known for award-winning organic c
 Cheesemaker and café offering organic cheeses, yoghurts, and light meals just outside Thames. Source: http://www.matatoki.co.nz/
 subtype: cafe
 source_urls: []
+
+lat: -37.2066636
+lon: 175.6062003
 ---

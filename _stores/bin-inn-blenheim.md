@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Bin Inn Blenheim
 slug: bin-inn-blenheim
@@ -37,8 +38,9 @@ email: blenheim@bininn.co.nz
 phone: 03 577 2677
 social: ''
 hours: Mon–Fri 8:30–17:30; Sat 8:30–14:30; Sun closed
-lat: ''
-lon: ''
+lat: -41.5149959
+lon: 173.9549782
 source_urls:
 - https://www.bininn.co.nz/marlborough/blenheim
+
 ---

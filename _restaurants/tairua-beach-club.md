@@ -1,4 +1,5 @@
 ---
+
 title: Tairua Beach Club
 slug: tairua-beach-club
 published: true
@@ -23,4 +24,7 @@ description: Beachside restaurant with a homegrown ethos, using organic ingredie
 Chef-led menu built on homegrown, seasonal ingredients, aiming for organic sourcing whenever possible. Source: http://www.tairuabeachclub.co.nz/
 subtype: restaurant
 source_urls: []
+
+lat: -36.9988813
+lon: 175.8618232
 ---

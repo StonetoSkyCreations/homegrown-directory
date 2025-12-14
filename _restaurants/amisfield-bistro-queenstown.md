@@ -1,4 +1,5 @@
 ---
+
 title: Amisfield Bistro
 slug: amisfield-bistro-queenstown
 published: true
@@ -28,4 +29,7 @@ description: Queenstown bistro on an organic/biodynamic vineyard serving seasona
 : user-provided details
 subtype: restaurant
 source_urls: []
+
+lat: -44.986513
+lon: 168.815593
 ---

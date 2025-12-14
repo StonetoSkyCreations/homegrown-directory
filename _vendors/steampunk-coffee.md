@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Steampunk Coffee
 slug: steampunk-coffee
@@ -24,7 +25,8 @@ email: teamgold1977@gmail.com
 phone: "+64 27 384 1069"
 social: ''
 hours: Mon–Fri 8am–2pm
-lat: ''
-lon: ''
+lat: -39.5893462
+lon: 174.2837207
 source_urls: []
+
 ---

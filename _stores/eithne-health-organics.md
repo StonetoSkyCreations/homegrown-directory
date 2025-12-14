@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Eithne Health & Organics
 slug: eithne-health-organics
@@ -32,9 +33,10 @@ email: ''
 phone: 03 755 8246
 social: ''
 hours: Mon–Fri 9:30am–5:30pm; Sat 10am–1pm; Sun closed
-lat: ''
-lon: ''
+lat: -42.7188546
+lon: 170.9592109
 subtype: organic-store
 source_urls:
 - https://www.eithne.co.nz
+
 ---

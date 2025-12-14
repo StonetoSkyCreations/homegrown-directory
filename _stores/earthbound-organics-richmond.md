@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: earthbound-organics-richmond
 name: Earthbound Organics (Richmond)
@@ -29,4 +30,7 @@ notes: ''
 published: true
 city: Richmond
 Organic and biodynamic grocery store in Richmond selling certified organic produce and staples with a local focus. Source: https://www.earthboundorganics.co.nz/
+
+lat: -41.3380953
+lon: 173.1872264
 ---

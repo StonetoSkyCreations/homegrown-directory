@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: remarkables-market-queenstown
 name: Remarkables Market
@@ -35,4 +36,7 @@ practices_tags:
 - organic
 - spray-free
 - local
+
+lat: -45.028677
+lon: 168.738714
 ---

@@ -1,4 +1,5 @@
 ---
+
 title: Wholemeal Cafe
 slug: wholemeal-cafe-takaka
 published: true
@@ -23,4 +24,7 @@ Established Takaka cafe emphasizing organic and locally sourced ingredients in i
   list
 subtype: cafe
 source_urls: []
+
+lat: -40.8585683
+lon: 172.8066263
 ---

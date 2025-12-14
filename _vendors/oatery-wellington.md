@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: oatery-wellington
 name: The Oatery
@@ -26,4 +27,7 @@ last_checked: ''
 notes: ''
 city: Wellington
 Produces oats and oatmeal using spray-free New Zealand-grown oats; sells online and at markets. Source: https://www.theoatery.co.nz/
+
+lat: -41.2887953
+lon: 174.7772114
 ---

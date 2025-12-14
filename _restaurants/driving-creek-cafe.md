@@ -1,4 +1,5 @@
 ---
+
 title: Driving Creek Café
 slug: driving-creek-cafe
 published: true
@@ -22,4 +23,7 @@ description: Cafe in the bush serving meals with local and organic produce where
 Cafe near Driving Creek Railway using local, seasonal, and organic ingredients whenever possible. Source: http://www.drivingcreekrailway.co.nz/
 subtype: cafe
 source_urls: []
+
+lat: -36.7386594
+lon: 175.5022712
 ---

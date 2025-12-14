@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: st-georges-restaurant
 name: St Georges Restaurant
@@ -28,4 +29,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Havelock North
+
+lat: -39.6702108
+lon: 176.8771367
 ---

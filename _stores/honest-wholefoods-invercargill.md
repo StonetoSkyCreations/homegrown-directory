@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: honest-wholefoods-invercargill
 name: Honest Wholefoods
@@ -28,4 +29,7 @@ published: true
 city: Invercargill
 Invercargill specialty store offering bulk organic and wholefood products. Source: user-supplied
   list
+
+lat: -46.4118465
+lon: 168.3470632
 ---

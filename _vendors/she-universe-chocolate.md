@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: she-universe-chocolate
 name: She Universe Chocolate
@@ -34,4 +35,7 @@ notes: Additional locations include The Malthouse Cottage, 69 Colombo Street, Be
   and Cacao Pod concept space (location TBD).
 rating_average: 5
 rating_count: 1
+
+lat: -43.5331095
+lon: 172.6342575
 ---

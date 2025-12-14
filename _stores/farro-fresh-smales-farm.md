@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: farro-fresh-smales-farm
 name: Farro Fresh Smales Farm
@@ -13,7 +14,7 @@ region: Auckland
 suburb: Takapuna (Smales Farm)
 address: Cnr Taharoto & Shakespeare Roads, Smales Farm
 postcode: '0622'
-lon: -36.7879
+lon: 174.7631803
 phone: '174.7521'
 email: '09 950 7686'
 website: ''
@@ -27,4 +28,6 @@ source_urls: []
 last_checked: Farro Fresh Smales Farm – CheeseBarn
 notes: Retail
 city: Auckland
+
+lat: -36.852095
 ---

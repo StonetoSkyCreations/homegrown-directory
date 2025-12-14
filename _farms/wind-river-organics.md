@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Wind River Organics
 slug: wind-river-organics
@@ -20,11 +21,12 @@ email: windriverorganic@gmail.com
 phone: ''
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -40.3259597
+lon: 175.7438613
 products_tags:
 - dairy
 subtype: dairy-farm
 source_urls:
 - Producer submission
+
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Westland Whole Foods
 slug: westland-whole-foods
@@ -33,11 +34,12 @@ email: ''
 phone: 03 768 0330
 social: ''
 hours: Mon–Fri 9am–5:30pm; Sat 10am–2pm; Sun closed
-lat: ''
-lon: ''
+lat: -42.4495917
+lon: 171.2091195
 sources:
 - free-farmed-nz
 subtype: wholefoods-store
 source_urls:
 - https://westlandwholefoods.co.nz
+
 ---

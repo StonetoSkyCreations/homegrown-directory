@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: sherwood-queenstown
 name: Sherwood Queenstown
@@ -30,4 +31,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Queenstown
+
+lat: -45.02358165
+lon: 168.69688838489952
 ---

@@ -1,4 +1,5 @@
 ---
+
 title: Karaka Farm
 slug: karaka-farm-kaikoura
 country: New Zealand
@@ -23,4 +24,7 @@ products_tags:
 - meat
 subtype: livestock
 source_urls: []
+
+lat: -42.401894
+lon: 173.632338
 ---

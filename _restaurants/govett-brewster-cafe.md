@@ -1,4 +1,5 @@
 ---
+
 title: Govett-Brewster Cafe (Monica's Eatery)
 slug: govett-brewster-cafe
 published: true
@@ -23,4 +24,7 @@ description: Cafe inside the Govett-Brewster Art Gallery committed to local, eth
 Gallery cafe serving menus built on local Taranaki suppliers with an emphasis on ethical and organic ingredients. Source: https://monicaseatery.co.nz/
 subtype: cafe
 source_urls: []
+
+lat: -39.0585415
+lon: 174.070097
 ---

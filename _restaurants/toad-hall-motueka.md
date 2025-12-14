@@ -1,4 +1,5 @@
 ---
+
 title: Toad Hall Café & Store
 slug: toad-hall-motueka
 published: true
@@ -24,4 +25,7 @@ Popular Motueka spot serving seasonal dishes and organic coffee, with a store fe
   list
 subtype: cafe
 source_urls: []
+
+lat: -41.1322923
+lon: 173.0096884
 ---

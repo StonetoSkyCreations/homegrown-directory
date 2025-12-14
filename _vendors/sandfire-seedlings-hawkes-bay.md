@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: sandfire-seedlings-hawkes-bay
 name: Sandfire Seedlings
@@ -28,4 +29,7 @@ last_checked: ''
 notes: ''
 Sells organically grown heritage seedlings at the Hawke's Bay Farmers’ Market. Source: Hawke's
   Bay Farmers’ Market vendor listings
+
+lat: -39.629173
+lon: 176.862248
 ---

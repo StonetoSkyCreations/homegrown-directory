@@ -1,4 +1,5 @@
 ---
+
 title: River Valley Kitchen
 slug: river-valley-kitchen-taihape
 published: true
@@ -26,4 +27,7 @@ description: Farm-to-table kitchen using seasonal produce from regenerative, spr
 : user-provided listing
 subtype: restaurant
 source_urls: []
+
+lat: -39.680322
+lon: 175.791782
 ---

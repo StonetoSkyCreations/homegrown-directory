@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: nourish-lane-nerang
 name: Nourish Lane (Nerang)
@@ -30,5 +31,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer
 city: Gold Coast
+
+lat: -28.000106
+lon: 153.338501
 ---
 Health food shop offering organic pantry lines, bulk refills, and wellness products.

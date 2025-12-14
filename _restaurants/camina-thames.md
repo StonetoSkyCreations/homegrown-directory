@@ -1,4 +1,5 @@
 ---
+
 title: Camina
 slug: camina-thames
 published: true
@@ -24,4 +25,7 @@ Menu built around local and sustainable ingredients, including organic produce f
   list
 subtype: restaurant
 source_urls: []
+
+lat: -37.137983
+lon: 175.5418037
 ---

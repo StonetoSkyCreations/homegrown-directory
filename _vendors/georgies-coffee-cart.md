@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Georgies Coffee Cart
 slug: georgies-coffee-cart
@@ -24,7 +25,8 @@ email: ''
 phone: "+64 20 418 01885"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -37.6823594
+lon: 175.1698852
 source_urls: []
+
 ---

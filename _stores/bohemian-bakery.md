@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Bohemian Bakery
 slug: bohemian-bakery
@@ -13,4 +14,7 @@ locations:
 - bohemian-bakery-cashel-street-hq
 - bohemian-bakery-st-martins
 - bohemian-bakery-cbd
+
+lat: -41.5000831
+lon: 172.8344077
 ---

@@ -1,4 +1,5 @@
 ---
+
 title: Ode Conscious Dining
 slug: ode-conscious-dining
 published: true
@@ -31,4 +32,7 @@ description: Hyper-local restaurant using organic produce, wild-shot game, and e
 : user-provided details
 subtype: restaurant
 source_urls: []
+
+lat: -44.6945581
+lon: 169.1390936
 ---

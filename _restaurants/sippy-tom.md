@@ -1,4 +1,5 @@
 ---
+
 title: Sippy Tom
 slug: sippy-tom
 country: Australia
@@ -28,5 +29,8 @@ phone: "(07) 3252 0179"
 description: Teneriffe cafe featuring organic, pasture-raised eggs and line-caught
   tuna across its brunch menu.
 source_urls: []
+
+lat: -27.454029
+lon: 153.048552
 ---
 Sippy Tom cooks brunch with organic pasture-raised eggs, line-caught seafood, and local produce.

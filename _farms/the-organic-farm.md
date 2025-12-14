@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: The Organic Farm
 slug: the-organic-farm
@@ -31,4 +32,7 @@ notes: ''
 products_tags:
 - meat
 subtype: livestock
+
+lat: -39.6407747
+lon: 176.8399474
 ---

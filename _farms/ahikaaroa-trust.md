@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Ahikaaroa Trust
 slug: ahikaaroa-trust
@@ -24,4 +25,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Māori whenua development, organic farming
 subtype: mixed
+
+lat: -35.1140609
+lon: 173.264022
 ---

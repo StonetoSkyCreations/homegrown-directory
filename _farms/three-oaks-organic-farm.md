@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Three Oaks Organic Farm
 slug: three-oaks-organic-farm
@@ -27,11 +28,12 @@ email: orders@threeoaksorganic.co.nz
 phone: 022 391 0544
 social: ''
 hours: 07:30–19:00 daily
-lat: ''
-lon: ''
+lat: -40.316241
+lon: 175.543201
 products_tags:
 - dairy
 subtype: dairy-farm
 source_urls:
 - https://threeoaksorganic.co.nz
+
 ---

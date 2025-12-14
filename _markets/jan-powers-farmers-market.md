@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 title: Jan Powers Farmers Market
 slug: jan-powers-farmers-market
@@ -11,4 +12,7 @@ locations:
 - jan-powers-farmers-market-powerhouse
 - jan-powers-farmers-market-mitchelton
 - jan-powers-farmers-market-manly
+
+lat: -24.7761086
+lon: 134.755
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: homegrown-wholefoods-paraparaumu
 name: Homegrown Wholefoods
@@ -30,4 +31,7 @@ published: true
 city: Paraparaumu
 Local wholefoods retailer selling certified organic food and supporting Kapiti growers. Source: user-supplied
   list
+
+lat: -40.9144636
+lon: 175.0061963
 ---

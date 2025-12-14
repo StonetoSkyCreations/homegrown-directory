@@ -1,4 +1,5 @@
 ---
+
 title: Amore Food Shop & Cafe
 slug: amore-food-shop-cafe-timaru
 published: true
@@ -24,4 +25,7 @@ Supports organic NZ farmers with certified organic and spray-free produce and pa
   listing
 subtype: cafe
 source_urls: []
+
+lat: -44.3930254
+lon: 171.2509786
 ---

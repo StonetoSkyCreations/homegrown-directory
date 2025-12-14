@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Jersey Girl Organics
 slug: jersey-girl-organics
@@ -29,4 +30,7 @@ notes: ''
 products_tags:
 - dairy
 subtype: dairy-farm
+
+lat: -37.8321555
+lon: 175.7664634
 ---

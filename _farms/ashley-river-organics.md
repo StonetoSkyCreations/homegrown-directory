@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Ashley River Organics
 slug: ashley-river-organics
@@ -34,4 +35,7 @@ source_urls:
 - https://oooby.co.nz/ashley-river-organics
 - https://cylex.co.nz/company/ashley-river-organics-17574660.html
 last_checked: 2025-12-13
+
+lat: -43.2780701
+lon: 172.5620808
 ---

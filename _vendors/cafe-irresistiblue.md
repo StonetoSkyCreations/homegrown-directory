@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: cafe-irresistiblue
 name: Café Irresistiblue
@@ -28,4 +29,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Cambridge
+
+lat: -37.8917889
+lon: 175.4691069
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Honeylicious
 slug: honeylicious
@@ -26,4 +27,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 subtype: apiary
+
+lat: -39.6417678
+lon: 176.8430781
 ---

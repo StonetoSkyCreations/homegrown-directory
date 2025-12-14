@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 title: Riccarton Sunday Market
 slug: riccarton-sunday-market
@@ -30,12 +31,13 @@ social: https://www.facebook.com/riccartonsundaymarket
 hours: Sunday 9:00am–2:00pm
 market_days:
 - Sunday
-lat: ''
-lon: ''
+lat: -43.5293956
+lon: 172.5490989
 rating_average: 5
 rating_count: 1
 practices_tags:
 - local
 source_urls:
 - https://www.riccartonmarket.co.nz
+
 ---

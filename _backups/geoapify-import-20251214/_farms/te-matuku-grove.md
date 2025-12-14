@@ -1,0 +1,35 @@
+---
+layout: farm
+title: Te Matuku Grove
+slug: te-matuku-grove
+name: Te Matuku Grove
+type: Farm
+description: Permaculture orchard on Waiheke’s eastern end growing spray-free olives
+  using syntropic permaculture, with free-range chickens and ducks aiding pest control
+  and soil health.
+country: New Zealand
+country_slug: new-zealand
+region: Auckland
+city: Waiheke Island
+address: ''
+practices_tags:
+- spray-free
+- permaculture
+- regenerative
+- free-range
+products:
+- Olives
+- Olive oil
+- Fresh produce
+services:
+- Farm tours
+- Market sales
+website: ''
+email: ''
+phone: ''
+social_links: []
+hours: ''
+published: true
+subtype: orchard
+source_urls: []
+---

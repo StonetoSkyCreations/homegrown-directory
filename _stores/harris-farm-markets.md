@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Harris Farm Markets
 slug: harris-farm-markets
@@ -11,4 +12,7 @@ locations:
 - harris-farm-west-end
 - harris-farm-isle-of-capri
 - harris-farm-clayfield
+
+lat: -24.7761086
+lon: 134.755
 ---

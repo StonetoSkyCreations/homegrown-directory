@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: ooooby-online-organic-boxes
 name: Ooooby (Online Organic Boxes)
@@ -28,4 +29,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Delivers NZ-wide from local hubs
 city: Christchurch
+
+lat: -43.530955
+lon: 172.6364343
 ---

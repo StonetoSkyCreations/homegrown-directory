@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: southern-farmers-market-invercargill
 name: Southern Farmers Market (Invercargill)
@@ -12,7 +13,7 @@ region: Southland
 suburb: Invercargill
 address: South City Mall carpark, 249 Elles Rd
 postcode: '9812'
-lon: -46.4171
+lon: 168.3612527
 phone: '168.3615'
 email: ''
 website: ''
@@ -32,4 +33,6 @@ practices_tags:
 - organic
 - spray-free
 - local
+
+lat: -46.4274407
 ---

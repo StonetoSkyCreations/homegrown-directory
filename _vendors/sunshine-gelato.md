@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Sunshine Gelato
 slug: sunshine-gelato
@@ -26,9 +27,10 @@ email: ''
 phone: ''
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.797542
+lon: 174.649544
 supplies_to:
 - catalina-bay-farmers-market
 source_urls: []
+
 ---

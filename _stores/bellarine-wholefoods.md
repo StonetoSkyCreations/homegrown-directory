@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: bellarine-wholefoods
 name: Bellarine Wholefoods
@@ -36,5 +37,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retail
 city: Bellarine Peninsula
+
+lat: -38.174295
+lon: 144.578516
 ---
 Zero-waste refillery with organic-leaning bulk foods and eco household goods.

@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Oh Açaí
 slug: oh-acai
@@ -24,7 +25,8 @@ email: ''
 phone: ''
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.844968
+lon: 174.770663
 source_urls: []
+
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 slug: wildflour-whangarei
 name: Wildflour NZ (Whangārei)
@@ -28,4 +29,7 @@ notes: ''
 city: Whangārei
 Local bakery using organic flour and sourdough starters, selling at Whangārei markets. Source: user-supplied
   list
+
+lat: -35.7275268
+lon: 174.3194202
 ---

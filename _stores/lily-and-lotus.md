@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Lily and Lotus
 slug: lily-and-lotus
@@ -29,4 +30,7 @@ social_links: []
 hours: ''
 published: true
 source_urls: []
+
+lat: -36.7957418
+lon: 175.0468845
 ---

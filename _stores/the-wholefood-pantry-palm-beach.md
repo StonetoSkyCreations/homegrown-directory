@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: the-wholefood-pantry-palm-beach
 name: The Wholefood Pantry (Palm Beach)
@@ -30,5 +31,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer and cafe
 city: Gold Coast
+
+lat: -28.111783
+lon: 153.46097
 ---
 Certified organic grocery and cafe with bulk foods, pantry staples, and grab-and-go options.

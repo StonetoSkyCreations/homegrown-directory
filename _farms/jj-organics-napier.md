@@ -1,4 +1,5 @@
 ---
+
 title: JJ Organics
 slug: jj-organics-napier
 country: New Zealand
@@ -26,4 +27,7 @@ description: Napier growers selling spray-free/organic fruit and veg via farm sh
 : https://hawkesbayfarmersmarket.co.nz/jj-organics/
 subtype: mixed
 source_urls: []
+
+lat: -39.4902099
+lon: 176.917839
 ---

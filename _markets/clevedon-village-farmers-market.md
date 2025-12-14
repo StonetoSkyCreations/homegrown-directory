@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: clevedon-village-farmers-market
 name: Clevedon Village Farmers Market
@@ -12,7 +13,7 @@ region: Auckland
 suburb: Clevedon
 address: 107 Monument Road (Clevedon Showgrounds)
 postcode: '2582'
-lon: -36.9889
+lon: 174.8814
 phone: 021 255 1166
 email: admin@clevedonfarmersmarket.co.nz
 website: https://clevedonfarmersmarket.co.nz/
@@ -28,4 +29,6 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Manukau
+
+lat: -36.989771
 ---

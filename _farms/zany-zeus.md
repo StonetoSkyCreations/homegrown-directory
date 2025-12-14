@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Zany Zeus
 slug: zany-zeus
@@ -32,4 +33,7 @@ notes: ''
 products_tags:
 - dairy
 subtype: dairy-farm
+
+lat: -41.2264574
+lon: 174.9055108
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: the-source-bulk-foods-southport
 name: The Source Bulk Foods (Southport)
@@ -32,5 +33,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: Retailer; zero-waste refillery
 city: Gold Coast
+
+lat: -27.97995115
+lon: 153.40978546639033
 ---
 Bulk foods shop with organic pantry staples and refillable household goods at Brickworks Centre.

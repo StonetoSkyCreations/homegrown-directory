@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: rotorua-farmers-market
 name: Rotorua Farmers Market
@@ -33,4 +34,7 @@ Weekly Sunday market offering local organic produce, free-range eggs, fresh brea
 practices_tags:
 - organic
 - local
+
+lat: -38.1399312
+lon: 176.2516184
 ---

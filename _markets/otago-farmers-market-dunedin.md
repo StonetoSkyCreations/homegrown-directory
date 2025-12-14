@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: otago-farmers-market-dunedin
 name: Otago Farmers Market (Dunedin)
@@ -12,7 +13,7 @@ region: Otago
 suburb: Dunedin Central
 address: Anzac Avenue (Dunedin Railway Station)
 postcode: '9016'
-lon: -45.8742
+lon: 170.51465858830824
 phone: 021 734 282
 email: manager@otagofarmersmarket.org.nz
 website: https://www.otagofarmersmarket.org.nz/
@@ -28,4 +29,6 @@ source_urls:
 last_checked: FMNZ member list
 notes: Market
 city: Dunedin
+
+lat: -45.87109245016279
 ---

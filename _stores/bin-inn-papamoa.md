@@ -1,4 +1,5 @@
 ---
+
 layout: store
 slug: bin-inn-papamoa
 name: Bin Inn Papamoa
@@ -27,4 +28,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Tauranga
+
+lat: -37.70065925
+lon: 176.27689805
 ---

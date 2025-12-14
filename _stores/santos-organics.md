@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Santos Organics
 slug: santos-organics
@@ -11,4 +12,7 @@ locations:
 - santos-organics-byron-bay-shop
 - santos-organics-byron-arts-industrial
 - santos-organics-mullumbimby
+
+lat: -24.7761086
+lon: 134.755
 ---

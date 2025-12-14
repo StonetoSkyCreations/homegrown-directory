@@ -1,4 +1,5 @@
 ---
+
 title: Earthbound Honey
 slug: earthbound-honey
 country: New Zealand
@@ -20,4 +21,7 @@ description: Certified organic honey and beeswax products from Northland.
 Certified organic apiarists producing honey and beeswax products and supplying across Northland. Source: https://earthboundhoney.co.nz/
 subtype: apiary
 source_urls: []
+
+lat: -35.7275268
+lon: 174.3194202
 ---

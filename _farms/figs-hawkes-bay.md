@@ -1,4 +1,5 @@
 ---
+
 layout: farm
 title: Figs Hawke's Bay
 slug: figs-hawkes-bay
@@ -26,4 +27,7 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 subtype: mixed
+
+lat: -39.6702108
+lon: 176.8771367
 ---

@@ -1,4 +1,5 @@
 ---
+
 layout: listing
 slug: wanaka-farmers-market
 name: Wānaka Farmers Market
@@ -33,4 +34,7 @@ city: Wānaka
 practices_tags:
 - organic
 - spray-free
+
+lat: -44.6941691
+lon: 169.1364637
 ---

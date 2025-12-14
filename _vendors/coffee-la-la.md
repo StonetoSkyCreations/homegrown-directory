@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Coffee La La
 slug: coffee-la-la
@@ -37,4 +38,7 @@ supplies_to:
 source_urls:
 - https://coffeelala.com
 last_checked: 2025-12-13
+
+lat: -36.7453784
+lon: 175.7235101
 ---

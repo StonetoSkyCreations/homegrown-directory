@@ -1,4 +1,5 @@
 ---
+
 title: 11th Avenue by Frank’s
 slug: 11th-avenue-by-franks-queenstown
 published: true
@@ -25,4 +26,7 @@ Sister cafe to Frank’s serving free-range dishes and fair trade organic coffee
   listing
 subtype: cafe
 source_urls: []
+
+lat: -45.0321923
+lon: 168.661
 ---

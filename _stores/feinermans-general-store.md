@@ -1,4 +1,5 @@
 ---
+
 layout: store
 title: Feinerman’s General Store
 slug: feinermans-general-store
@@ -23,9 +24,10 @@ email: sales@feinermans.shop
 phone: "+64 21 900 643"
 social: https://www.facebook.com/Feinermans/, https://www.instagram.com/feinermangeneralstore/
 hours: Mon–Fri 9am–5pm; Sat 10am–4pm; Sun closed
-lat: ''
-lon: ''
+lat: -45.5410276
+lon: 169.3147839
 subtype: specialty-grocer
 source_urls:
 - https://feinermans.shop
+
 ---

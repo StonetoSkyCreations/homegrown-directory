@@ -1,4 +1,5 @@
 ---
+
 layout: vendor
 title: Urban Flair
 slug: urban-flair
@@ -28,7 +29,8 @@ email: urban.flair.nz@gmail.com
 phone: "+64 20 4082 5841"
 social: ''
 hours: ''
-lat: ''
-lon: ''
+lat: -36.8172189
+lon: 174.7320885
 source_urls: []
+
 ---
