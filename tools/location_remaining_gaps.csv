@@ -1,0 +1,124 @@
+collection,slug,title,country,region,city,address,lat,lon,needs_address,needs_coords,listing_url,source_path
+distributors,distributor-slug,Hub or distributor name,Country name,Region or state,City or town,,,,true,true,/distributors/distributor-slug/,_distributors/_template.md
+distributors,supply-circle-hub,Supply Circle Hub,New Zealand,Canterbury,Christchurch,,-43.532,172.636,true,false,/distributors/supply-circle-hub/,_distributors/supply-circle-hub.md
+farms,ahikaaroa-trust,Ahikaaroa Trust,NZ,Northland,Kaitaia,,-35.1140609,173.264022,true,false,/farms/ahikaaroa-trust/,_farms/ahikaaroa-trust.md
+farms,figs-hawkes-bay,Figs Hawke's Bay,NZ,Hawke's Bay,Havelock North,,-39.6702108,176.8771367,true,false,/farms/figs-hawkes-bay/,_farms/figs-hawkes-bay.md
+farms,revival-market-garden,Revival Market Garden,New Zealand,Auckland,Waiheke Island,,-36.79310825,175.08838633700125,true,false,/farms/revival-market-garden/,_farms/revival-market-garden.md
+farms,allandale-regenerative-farm,Allandale Regenerative Farm,New Zealand,Canterbury,Amberley,,-43.1512956,172.7329869,true,false,/farms/allandale-regenerative-farm/,_farms/allandale-regenerative-farm.md
+farms,frenz-eggs,FRENZ Eggs,NZ,Auckland,Papakura,,-37.064265,174.9446665,true,false,/farms/frenz-eggs/,_farms/frenz-eggs.md
+farms,jj-organics-napier,JJ Organics,New Zealand,Hawke's Bay,Napier,,-39.4902099,176.917839,true,false,/farms/jj-organics-napier/,_farms/jj-organics-napier.md
+farms,farm-slug,Name of farm,Country name,Region or state,City or town,,,,true,true,/farms/farm-slug/,_farms/_template.md
+farms,uma-rapiti-farm,Uma Rapiti Farm,New Zealand,Auckland,Waiheke Island,,-36.79310825,175.08838633700125,true,false,/farms/uma-rapiti-farm/,_farms/uma-rapiti-farm.md
+farms,te-matuku-grove,Te Matuku Grove,New Zealand,Auckland,Waiheke Island,,-36.79310825,175.08838633700125,true,false,/farms/te-matuku-grove/,_farms/te-matuku-grove.md
+farms,artemis-ltd,Artemis Ltd,NZ,Otago,Dunedin,,-45.8740984,170.5035755,true,false,/farms/artemis-ltd/,_farms/artemis-ltd.md
+farms,moana-organics,Moana Organics,New Zealand,Wellington,Paekakariki,,-40.991,174.957,true,false,/farms/moana-organics/,_farms/moana-organics.md
+farms,cardrona-merino,Cardrona Merino,New Zealand,Otago,Cardrona Valley,,-44.7495794,169.1197983,true,false,/farms/cardrona-merino/,_farms/cardrona-merino.md
+farms,wilderland-organics-whitianga,Wilderland Organics,New Zealand,Waikato,Whitianga,,-36.8333,175.7,true,false,/farms/wilderland-organics-whitianga/,_farms/wilderland-organics-whitianga.md
+farms,reikorangi-organic-gardens,Reikorangi Organic Gardens,New Zealand,Wellington,Waikanae,,-40.8758432,175.0643045,true,false,/farms/reikorangi-organic-gardens/,_farms/reikorangi-organic-gardens.md
+farms,kaiwhenua-organics,Kaiwhenua Organics,NZ,Waikato,Raglan,,-37.7997729,174.8682464,true,false,/farms/kaiwhenua-organics/,_farms/kaiwhenua-organics.md
+farms,waipuna-pastures,Waipuna Pastures,New Zealand,Canterbury,Geraldine,,-44.094,171.243,true,false,/farms/waipuna-pastures/,_farms/waipuna-pastures.md
+farms,early-bird-organics,Early Bird Organics,NZ,Hawke's Bay,Wairoa,,-39.03939,177.4271389,true,false,/farms/early-bird-organics/,_farms/early-bird-organics.md
+farms,durham-farms,Durham Farms,NZ,Northland,Waipu,,-35.9850068,174.4474971,true,false,/farms/durham-farms/,_farms/durham-farms.md
+farms,forest-maker-honey,Forest Maker Honey,NZ,Wellington,Wellington,,-41.2887953,174.7772114,true,false,/farms/forest-maker-honey/,_farms/forest-maker-honey.md
+farms,karaka-farm-kaikoura,Karaka Farm,New Zealand,Canterbury,Kaikōura Flats,,-42.401894,173.632338,true,false,/farms/karaka-farm-kaikoura/,_farms/karaka-farm-kaikoura.md
+farms,kapiti-free-range-eggs,Kapiti Free Range Eggs,New Zealand,Wellington,Kapiti Coast,,-40.9047357,174.9861365,true,false,/farms/kapiti-free-range-eggs/,_farms/kapiti-free-range-eggs.md
+farms,awarua-organics,AwaRua Organics,NZ,Southland,Invercargill,,-46.4118465,168.3470632,true,false,/farms/awarua-organics/,_farms/awarua-organics.md
+farms,honeylicious,Honeylicious,NZ,Hawke's Bay,Hastings,,-39.6417678,176.8430781,true,false,/farms/honeylicious/,_farms/honeylicious.md
+farms,coro-fresh-goodness-growers,Coro Fresh (Goodness Growers),New Zealand,Waikato,Coroglen,,-36.9237668,175.6916887,true,false,/farms/coro-fresh-goodness-growers/,_farms/coro-fresh-goodness-growers.md
+farms,earthbound-honey,Earthbound Honey,New Zealand,Northland,Whangārei,,-35.7275268,174.3194202,true,false,/farms/earthbound-honey/,_farms/earthbound-honey.md
+farms,coraltree-organic-products,CoralTree Organic Products,NZ,Hawke's Bay,Hastings,,-39.6417678,176.8430781,true,false,/farms/coraltree-organic-products/,_farms/coraltree-organic-products.md
+farms,the-ata-farm,The Āta Farm,New Zealand,Auckland,Waiheke Island,,-36.79310825,175.08838633700125,true,false,/farms/the-ata-farm/,_farms/the-ata-farm.md
+farms,untamed-earth,Untamed Earth,New Zealand,Canterbury,Christchurch,"Christchurch, Canterbury (farm location not publicly listed)",,,false,true,/farms/untamed-earth/,_farms/untamed-earth.md
+markets,market-slug,Market name,Country name,Region or state,City or town,,,,true,true,/markets/market-slug/,_markets/_template.md
+markets,old-packhouse-market,The Old Packhouse Market,New Zealand,Northland,Kerikeri,,-35.2272607,173.9491061,true,false,/markets/old-packhouse-market/,_markets/old-packhouse-market.md
+markets,veg-out-st-kilda-farmers-market,Veg Out St Kilda Farmers' Market,AU,Victoria,Melbourne,Chaucer Street (Peanut Farm Reserve),,,false,true,/markets/veg-out-st-kilda-farmers-market/,_markets/veg-out-st-kilda-farmers-market.md
+markets,northland-farmers-market-whangarei,Northland Farmers Market,NZ,Northland,Whangārei,Rust Ave,,,false,true,/markets/northland-farmers-market-whangarei/,_markets/northland-farmers-market.md
+markets,harbour-harvest-market,Harbour Harvest Market,New Zealand,Wellington,Te Aro,,-41.292,174.778,true,false,/markets/harbour-harvest-market/,_markets/harbour-harvest-market.md
+markets,west-coast-farmers-market-greymouth,West Coast Farmers Market,NZ,West Coast,Greymouth,,-42.4499469,171.2079875,true,false,/markets/west-coast-farmers-market-greymouth/,_markets/west-coast-farmers-market-greymouth.md
+markets,jan-powers-farmers-market,Jan Powers Farmers Market,Australia,,,,-24.7761086,134.755,true,false,/markets/jan-powers-farmers-market/,_markets/jan-powers-farmers-market.md
+restaurants,origine-bistro-auckland,Origine Bistro,New Zealand,Auckland,Auckland,,-36.852095,174.7631803,true,false,/restaurants/origine-bistro-auckland/,_restaurants/origine-bistro-auckland.md
+restaurants,dripping-bowl-wanaka,Dripping Bowl,New Zealand,Otago,Wānaka,,-44.6941691,169.1364637,true,false,/restaurants/dripping-bowl-wanaka/,_restaurants/dripping-bowl-wanaka.md
+restaurants,federal-diner-wanaka,Federal Diner,New Zealand,Otago,Wānaka,,-44.6941691,169.1364637,true,false,/restaurants/federal-diner-wanaka/,_restaurants/federal-diner-wanaka.md
+restaurants,aro-cafe-wellington,Aro Cafe,New Zealand,Wellington,Wellington,,-41.2887953,174.7772114,true,false,/restaurants/aro-cafe-wellington/,_restaurants/aro-cafe-wellington.md
+restaurants,good-earth-cafe-dunedin,The Good Earth Cafe,New Zealand,Otago,Dunedin,,-45.8632318,170.5129146,true,false,/restaurants/good-earth-cafe-dunedin/,_restaurants/good-earth-cafe-dunedin.md
+restaurants,the-origin-christchurch,The Origin,New Zealand,Canterbury,Christchurch,,-43.530955,172.6364343,true,false,/restaurants/the-origin-christchurch/,_restaurants/the-origin-christchurch.md
+restaurants,restaurant-slug,Restaurant or café name,Country name,Region or state,City or town,,,,true,true,/restaurants/restaurant-slug/,_restaurants/_template.md
+restaurants,the-lotus-heart-christchurch,The Lotus-Heart,New Zealand,Canterbury,Christchurch,,-43.530955,172.6364343,true,false,/restaurants/the-lotus-heart-christchurch/,_restaurants/the-lotus-heart-christchurch.md
+restaurants,matatoki-cheese-barn,Matatoki Cheese Barn,New Zealand,Waikato,Matatoki,,-37.2066636,175.6062003,true,false,/restaurants/matatoki-cheese-barn/,_restaurants/matatoki-cheese-barn.md
+restaurants,misters-auckland,Misters,New Zealand,Auckland,Auckland,,-36.852095,174.7631803,true,false,/restaurants/misters-auckland/,_restaurants/misters-auckland.md
+restaurants,neo-cafe-wellington,Neo Cafe & Eatery,New Zealand,Wellington,Wellington,,-41.2887953,174.7772114,true,false,/restaurants/neo-cafe-wellington/,_restaurants/neo-cafe-wellington.md
+restaurants,driving-creek-cafe,Driving Creek Café,New Zealand,Waikato,Coromandel,,-36.7386594,175.5022712,true,false,/restaurants/driving-creek-cafe/,_restaurants/driving-creek-cafe.md
+restaurants,barefoot-eatery-christchurch,Barefoot Eatery,New Zealand,Canterbury,Christchurch,,-43.530955,172.6364343,true,false,/restaurants/barefoot-eatery-christchurch/,_restaurants/barefoot-eatery-christchurch.md
+restaurants,hapi-organic-cafe-napier,Hapi Organic Cafe & Maara,New Zealand,Hawke's Bay,Napier,,-39.4902099,176.917839,true,false,/restaurants/hapi-organic-cafe-napier/,_restaurants/hapi-organic-cafe-napier.md
+restaurants,kopupako-kitchen,Kopupako Kitchen,New Zealand,Wellington,Newtown,,-41.312,174.779,true,false,/restaurants/kopupako-kitchen/,_restaurants/kopupako-kitchen.md
+restaurants,pepper-tree-coromandel,The Pepper Tree Restaurant,New Zealand,Waikato,Coromandel,,-36.759801,175.4973896,true,false,/restaurants/pepper-tree-coromandel/,_restaurants/pepper-tree-coromandel.md
+restaurants,tairua-beach-club,Tairua Beach Club,New Zealand,Waikato,Tairua,,-36.9988813,175.8618232,true,false,/restaurants/tairua-beach-club/,_restaurants/tairua-beach-club.md
+restaurants,eatery-by-franks-queenstown,Eatery by Frank’s,New Zealand,Otago,Queenstown,,-45.0321923,168.661,true,false,/restaurants/eatery-by-franks-queenstown/,_restaurants/eatery-by-franks-queenstown.md
+restaurants,east-restaurant-auckland,East Restaurant,New Zealand,Auckland,Auckland,,-36.8490839,174.7592156,true,false,/restaurants/east-restaurant-auckland/,_restaurants/east-restaurant-auckland.md
+restaurants,quad-eatery-christchurch,Quad Eatery,New Zealand,Canterbury,Christchurch,,-43.5311244,172.6283429,true,false,/restaurants/quad-eatery-christchurch/,_restaurants/quad-eatery-christchurch.md
+restaurants,amisfield-bistro-queenstown,Amisfield Bistro,New Zealand,Otago,Queenstown,,-44.986513,168.815593,true,false,/restaurants/amisfield-bistro-queenstown/,_restaurants/amisfield-bistro-queenstown.md
+restaurants,solscape-conscious-kitchen,Solscape – The Conscious Kitchen,New Zealand,Waikato,Raglan,,-37.8256107,174.8206956,true,false,/restaurants/solscape-conscious-kitchen/,_restaurants/solscape-conscious-kitchen.md
+restaurants,amore-food-shop-cafe-timaru,Amore Food Shop & Cafe,New Zealand,Canterbury,Timaru,,-44.3930254,171.2509786,true,false,/restaurants/amore-food-shop-cafe-timaru/,_restaurants/amore-food-shop-cafe-timaru.md
+restaurants,greenland-cafe-wellington,GreenLand Cafe,New Zealand,Wellington,Wellington,,-41.27792445,174.7787504623986,true,false,/restaurants/greenland-cafe-wellington/,_restaurants/greenland-cafe-wellington.md
+restaurants,11th-avenue-by-franks-queenstown,11th Avenue by Frank’s,New Zealand,Otago,Queenstown,,-45.0321923,168.661,true,false,/restaurants/11th-avenue-by-franks-queenstown/,_restaurants/11th-avenue-by-franks-queenstown.md
+restaurants,craggy-range-restaurant,Craggy Range Restaurant,New Zealand,Hawke's Bay,Havelock North,,-39.6928384,176.9230283,true,false,/restaurants/craggy-range-restaurant/,_restaurants/craggy-range-restaurant.md
+restaurants,kingi-auckland,kingi,New Zealand,Auckland,Auckland,,-36.852095,174.7631803,true,false,/restaurants/kingi-auckland/,_restaurants/kingi-auckland.md
+restaurants,odelay-cafe-queenstown,Odelay Cafe,New Zealand,Otago,Queenstown,,-45.0321923,168.661,true,false,/restaurants/odelay-cafe-queenstown/,_restaurants/odelay-cafe-queenstown.md
+restaurants,kakariki-kitchen-whanganui,Kakariki Kitchen,New Zealand,Manawatū-Whanganui,Whanganui,,-39.9324904,175.0519306,true,false,/restaurants/kakariki-kitchen-whanganui/,_restaurants/kakariki-kitchen-whanganui.md
+restaurants,govett-brewster-cafe,Govett-Brewster Cafe (Monica's Eatery),New Zealand,Taranaki,New Plymouth,,-39.0585415,174.070097,true,false,/restaurants/govett-brewster-cafe/,_restaurants/govett-brewster-cafe.md
+restaurants,camina-thames,Camina,New Zealand,Waikato,Thames,,-37.137983,175.5418037,true,false,/restaurants/camina-thames/,_restaurants/camina-thames.md
+restaurants,wholemeal-cafe-takaka,Wholemeal Cafe,New Zealand,Tasman,Takaka,,-40.8585683,172.8066263,true,false,/restaurants/wholemeal-cafe-takaka/,_restaurants/wholemeal-cafe-takaka.md
+restaurants,old-quarter-wellington,The Old Quarter,New Zealand,Wellington,Wellington,,-41.2920629,174.777204,true,false,/restaurants/old-quarter-wellington/,_restaurants/old-quarter-wellington.md
+restaurants,sawmill-smoko-room-matakana,Sawmill Brewery & Smoko Room,New Zealand,Auckland,Matakana,,-36.3287898,174.7290529,true,false,/restaurants/sawmill-smoko-room-matakana/,_restaurants/sawmill-smoko-room-matakana.md
+restaurants,river-valley-kitchen-taihape,River Valley Kitchen,New Zealand,Manawatū-Whanganui,Taihape,,-39.680322,175.791782,true,false,/restaurants/river-valley-kitchen-taihape/,_restaurants/river-valley-kitchen-taihape.md
+restaurants,the-sanctuary-bay-of-islands,The Sanctuary (Bay of Islands),New Zealand,Northland,Paihia,,-35.282229,174.088611,true,false,/restaurants/the-sanctuary-bay-of-islands/,_restaurants/the-sanctuary-bay-of-islands.md
+restaurants,paroa-bay-winery-sage,Paroa Bay Winery & Sage Restaurant,New Zealand,Northland,Russell,,-35.2827092,174.1842024,true,false,/restaurants/paroa-bay-winery-sage/,_restaurants/paroa-bay-winery-sage.md
+restaurants,toad-hall-motueka,Toad Hall Café & Store,New Zealand,Tasman,Motueka,,-41.1322923,173.0096884,true,false,/restaurants/toad-hall-motueka/,_restaurants/toad-hall-motueka.md
+restaurants,harvest-restaurant-blenheim,Harvest Restaurant,New Zealand,Marlborough,Blenheim,,-41.4702627,173.9087318,true,false,/restaurants/harvest-restaurant-blenheim/,_restaurants/harvest-restaurant-blenheim.md
+restaurants,charlottes-kitchen-paihia,Charlotte's Kitchen,New Zealand,Northland,Paihia,,-35.28079205,174.0920925938967,true,false,/restaurants/charlottes-kitchen-paihia/,_restaurants/charlottes-kitchen-paihia.md
+restaurants,hygge-at-clifton-bay,Hygge at Clifton Bay,New Zealand,Hawke's Bay,Te Awanga,,-39.6395166,176.9993373904905,true,false,/restaurants/hygge-at-clifton-bay/,_restaurants/hygge-at-clifton-bay.md
+stores,commonsense-organics,Commonsense Organics,New Zealand,,,,-41.5000831,172.8344077,true,false,/stores/commonsense-organics/,_stores/commonsense-organics.md
+stores,riverton-organic-shop,Riverton Organic Shop,NZ,Southland,Riverton,,-46.3509977,168.0202689,true,false,/stores/riverton-organic-shop/,_stores/riverton-organic-shop.md
+stores,homegrown-wholefoods-paraparaumu,Homegrown Wholefoods,NZ,Wellington,Paraparaumu,,-40.9144636,175.0061963,true,false,/stores/homegrown-wholefoods-paraparaumu/,_stores/homegrown-wholefoods-paraparaumu.md
+stores,organic-corner-deli-whangarei,Organic Corner Deli,NZ,Northland,Whangārei,,-35.7275268,174.3194202,true,false,/stores/organic-corner-deli-whangarei/,_stores/organic-corner-deli-whangarei.md
+stores,honest-wholefoods-invercargill,Honest Wholefoods,NZ,Southland,Invercargill,,-46.4118465,168.3470632,true,false,/stores/honest-wholefoods-invercargill/,_stores/honest-wholefoods-invercargill.md
+stores,store-slug,Store or co-op name,Country name,Region or state,City or town,,,,true,true,/stores/store-slug/,_stores/_template.md
+stores,earth-food-store-waikanae,Earth Food Store,NZ,Wellington,Waikanae,,-40.8758432,175.0643045,true,false,/stores/earth-food-store-waikanae/,_stores/earth-food-store-waikanae.md
+stores,ecohive-collective-paihia,The Ecohive Collective (Paihia),New Zealand,Northland,Paihia,,-35.2812407,174.0920879,true,false,/stores/ecohive-collective-paihia/,_stores/ecohive-collective-paihia.md
+stores,city-honest-grocer,City Honest Grocer,New Zealand,Auckland,Grey Lynn,,-36.86,174.739,true,false,/stores/city-honest-grocer/,_stores/city-honest-grocer.md
+stores,santos-organics,Santos Organics,Australia,,,,-24.7761086,134.755,true,false,/stores/santos-organics/,_stores/santos-organics.md
+stores,picton-organic-store,Picton Organic Store,NZ,Marlborough,Picton,,-41.290916,174.006908,true,false,/stores/picton-organic-store/,_stores/picton-organic-store.md
+stores,she-universe-cacao-pod,She Universe Cacao Pod,New Zealand,Canterbury,Christchurch,,-43.530955,172.6364343,true,false,/stores/she-universe-cacao-pod/,_stores/she-universe-cacao-pod.md
+stores,earthbound-organics-richmond,Earthbound Organics (Richmond),NZ,Tasman,Richmond,,-41.3380953,173.1872264,true,false,/stores/earthbound-organics-richmond/,_stores/earthbound-organics-richmond.md
+stores,bohemian-bakery,Bohemian Bakery,New Zealand,,,,-41.5000831,172.8344077,true,false,/stores/bohemian-bakery/,_stores/bohemian-bakery.md
+stores,harris-farm-markets,Harris Farm Markets,Australia,,,,-24.7761086,134.755,true,false,/stores/harris-farm-markets/,_stores/harris-farm-markets.md
+stores,mapua-organics,Mapua Organics,NZ,Tasman,Mapua,,-41.25321,173.0962191,true,false,/stores/mapua-organics/,_stores/mapua-organics.md
+stores,wholefood-co-op-hokitika,Wholefood Co-op Hokitika,NZ,West Coast,Hokitika,,-42.7178871,170.9646469,true,false,/stores/wholefood-co-op-hokitika/,_stores/wholefood-co-op-hokitika.md
+stores,ooooby-online-organic-boxes,Ooooby (Online Organic Boxes),NZ,Canterbury,Christchurch,N/A (HQ: 5 Waterman Place),-43.530955,172.6364343,true,false,/stores/ooooby-online-organic-boxes/,_stores/ooooby-online-organic-boxes.md
+stores,soulfood-organic-wanaka,Soulfood Organic,NZ,Otago,Wānaka,,-44.6941691,169.1364637,true,false,/stores/soulfood-organic-wanaka/,_stores/soulfood-organic-wanaka.md
+vendors,the-wholemeal-cafe,The Wholemeal Café,NZ,Tasman,Tākaka,,-40.8574983,172.8062424,true,false,/vendors/the-wholemeal-cafe/,_vendors/the-wholemeal-cafe.md
+vendors,origin-northland,Origin Northland,NZ,Northland,Waipu,,-35.9850068,174.4474971,true,false,/vendors/origin-northland/,_vendors/origin-northland.md
+vendors,mapu-test-kitchen,MAPU Test Kitchen,NZ,Canterbury,Lyttelton,,-43.6024739,172.7205727,true,false,/vendors/mapu-test-kitchen/,_vendors/mapu-test-kitchen.md
+vendors,daily-bread-pt-chevalier,Daily Bread,NZ,Auckland,Auckland,,-36.852095,174.7631803,true,false,/vendors/daily-bread-pt-chevalier/,_vendors/daily-bread-pt-chevalier.md
+vendors,the-falls-retreat,The Falls Retreat,NZ,Waikato,Waihi,,-37.391462,175.8403538,true,false,/vendors/the-falls-retreat/,_vendors/the-falls-retreat.md
+vendors,hillside-kitchen-cellar,Hillside Kitchen & Cellar,NZ,Wellington,Wellington,,-41.2887953,174.7772114,true,false,/vendors/hillside-kitchen-cellar/,_vendors/hillside-kitchen-cellar.md
+vendors,farm-house-cafe,Farm House Café,NZ,Auckland,Clevedon,,-36.9910022,175.0368658,true,false,/vendors/farm-house-cafe/,_vendors/farm-house-cafe.md
+vendors,st-georges-restaurant,St Georges Restaurant,NZ,Hawke's Bay,Havelock North,,-39.6702108,176.8771367,true,false,/vendors/st-georges-restaurant/,_vendors/st-georges-restaurant.md
+vendors,foraged-in-raglan,Foraged In Raglan,NZ,Waikato,Raglan,,-37.7997729,174.8682464,true,false,/vendors/foraged-in-raglan/,_vendors/foraged-in-raglan.md
+vendors,hill-house-cafe,Hill House Café,NZ,Auckland,Auckland,,-36.852095,174.7631803,true,false,/vendors/hill-house-cafe/,_vendors/hill-house-cafe.md
+vendors,volcanoview-restaurant-bar,Volcanoview Restaurant & Bar,NZ,Taranaki,New Plymouth,,-39.0579941,174.0806474,true,false,/vendors/volcanoview-restaurant-bar/,_vendors/volcanoview-restaurant-bar.md
+vendors,wildflour-whangarei,Wildflour NZ (Whangārei),NZ,Northland,Whangārei,,-35.7275268,174.3194202,true,false,/vendors/wildflour-whangarei/,_vendors/wildflour-whangarei.md
+vendors,cafe-irresistiblue,Café Irresistiblue,NZ,Waikato,Cambridge,,-37.8917889,175.4691069,true,false,/vendors/cafe-irresistiblue/,_vendors/cafe-irresistiblue.md
+vendors,shepherd,Shepherd,NZ,Wellington,Wellington,,-41.2887953,174.7772114,true,false,/vendors/shepherd/,_vendors/shepherd.md
+vendors,harvest-to-home,Harvest to Home,New Zealand,Auckland,Auckland,,-36.852095,174.7631803,true,false,/vendors/harvest-to-home/,_vendors/harvest-to-home.md
+vendors,grizzly-baked-goods,Grizzly Baked Goods,NZ,Canterbury,Christchurch,,-43.530955,172.6364343,true,false,/vendors/grizzly-baked-goods/,_vendors/grizzly-baked-goods.md
+vendors,zephyr-wainui,Zephyr Wainui,NZ,Gisborne,Gisborne,,-38.661326,178.0206487,true,false,/vendors/zephyr-wainui/,_vendors/zephyr-wainui.md
+vendors,oatery-wellington,The Oatery,NZ,Wellington,Wellington,,-41.2887953,174.7772114,true,false,/vendors/oatery-wellington/,_vendors/oatery-wellington.md
+vendors,honest-wholefood-co-wanaka,Honest Wholefood Co.,NZ,Otago,Wānaka,,-44.6941691,169.1364637,true,false,/vendors/honest-wholefood-co-wanaka/,_vendors/honest-wholefood-co-wanaka.md
+vendors,orepuki-beach-cafe,Orepuki Beach Café,NZ,Southland,Orepuki,,-46.2813342,167.7384665,true,false,/vendors/orepuki-beach-cafe/,_vendors/orepuki-beach-cafe.md
+vendors,flagship-eatery,Flagship Eatery,NZ,Gisborne,Gisborne,,-38.661326,178.0206487,true,false,/vendors/flagship-eatery/,_vendors/flagship-eatery.md
+vendors,power-plant-wholefood-organic-store,Power Plant Wholefood & Organic Store,NZ,Northland,Whangārei,,-35.7275268,174.3194202,true,false,/vendors/power-plant-wholefood-organic-store/,_vendors/power-plant-wholefood-organic-store.md
+vendors,no7-balmac,No.7 Balmac,NZ,Otago,Dunedin,,-45.8740984,170.5035755,true,false,/vendors/no7-balmac/,_vendors/no7-balmac.md
+vendors,the-bikery-cafe,The Bikery Café,NZ,Waikato,Cambridge,,-37.8917889,175.4691069,true,false,/vendors/the-bikery-cafe/,_vendors/the-bikery-cafe.md
+vendors,ahi-restaurant,Ahi Restaurant,NZ,Auckland,Auckland,,-36.852095,174.7631803,true,false,/vendors/ahi-restaurant/,_vendors/ahi-restaurant.md
+vendors,tasman-bay-salt-co,Tasman Bay Salt Co.,NZ,Tasman,,,,,true,true,/vendors/tasman-bay-salt-co/,_vendors/tasman-bay-salt-co.md
