@@ -104,7 +104,12 @@ map: false
     {% if page.featured_article %}
     <div class="listing__featured-article">
       <h3>Featured story</h3>
-      <p><a href="{{ page.featured_article }}">Read the full profile →</a></p>
+      {% assign featured_post = site.posts | where: "url", page.featured_article | first %}
+      {% if featured_post %}
+        <p><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a></p>
+      {% else %}
+        <p><a href="{{ page.featured_article }}">Read the full profile →</a></p>
+      {% endif %}
     </div>
     {% endif %}
 
