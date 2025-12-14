@@ -11,9 +11,11 @@ city: Whitianga
 address: 462 Kuaotunu Wharekaho Road RD 2, Whitianga 3592
 description: Coffee LaLa is an award-winning Coromandel coffee roastery blending science, craft, and origin knowledge to produce rich, full-bodied coffees roasted on site in Whitianga.
 long_description: |
-  Coffee LaLa has been roasting coffee on the Coromandel since 2002, combining deep technical knowledge with a hands-on, origin-led approach to flavour. Each coffee origin is roasted individually to suit its unique soil, climate, and character, before being carefully blended into complex, balanced, award-winning coffees. Their beans are 100% Arabica, sourced from respected plantations around the world and handled with precision at every stage of roasting.
+  Coffee LaLa is a boutique, award-winning roastery tucked in a bush-clad valley at Kuaotunu on the Coromandel Peninsula. Founded by Mark and Nedilka in 2002, it blends “art and science” in a former pottery shed, roasting 100% Arabica beans from respected plantations around the world. Each origin is roasted on its own to coax out terroir-driven flavour, then carefully blended into balanced, full-bodied coffees that have earned 18 New Zealand Coffee Awards.
 
-  Beyond retail coffee, Coffee LaLa supplies cafés, bakeries, and mobile carts across the Coromandel and beyond, offering not just coffee but full support — from commercial machine sourcing to setup, maintenance, and staff training. Nationwide delivery makes their coffee accessible throughout Aotearoa, with a strong emphasis on reliability, service, and long-term relationships. At its core, Coffee LaLa is about more than great coffee — it’s about consistency, care, and doing the craft properly.
+  The roastery’s signature lineup ranges from La More — an intense, urban-style dark blend led by French-roasted Kenyan beans — to the Green Spot Organic, whose South American and East Timor beans fund Coromandel Watchdog’s anti-mining work. Oooh Lala delivers a Colombian, Ethiopian and nutty trio; Lala ‘30’ is dialled for classic 30 ml short blacks; and Lalabye decaf offers 97% caffeine-free comfort via a chemical-free water process.
+
+  While Coffee LaLa is a roastery rather than a café, you’ll taste it across the Coromandel at spots like Kua Kawhe in Kuaotunu, Mei’s Café and Artisan Bakery in Coromandel Town, and the Waterworks Cafe. Beans are stocked at local grocers and specialty stores, and nationwide delivery gets fresh roasts to customers in one to three days. The team offers full cafe support — from equipment sourcing and setup to maintenance and training — all while staying rooted in the native bush and birdlife that surround their Wharekaho Road base.
 practices:
 - small-batch
 - origin-led roasting
