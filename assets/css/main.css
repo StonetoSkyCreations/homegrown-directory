@@ -129,7 +129,7 @@ a:focus-visible {
   padding: 0.6rem 0.9rem;
   border-radius: 14px;
   border: 1px solid var(--border);
-  background: #fff;
+  background: var(--card);
   cursor: pointer;
 }
 .nav-toggle__icon {
@@ -167,7 +167,7 @@ a:focus-visible {
 .country-option {
   cursor: pointer;
   border-color: var(--border);
-  background: #fff;
+  background: var(--card);
   transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
 }
 .country-option:hover {
@@ -223,7 +223,7 @@ a:focus-visible {
   padding: 0.45rem 0.85rem;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: #fff;
+  background: var(--card);
   color: var(--text);
   font-weight: 700;
   font-size: 0.9rem;
@@ -250,7 +250,7 @@ a:focus-visible {
   padding: 0.42rem 0.78rem;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: #fff;
+  background: var(--card);
 }
 .pill--checkbox input:checked + span {
   background: var(--accent-2);
@@ -259,7 +259,7 @@ a:focus-visible {
 }
 
 .hero {
-  background: linear-gradient(135deg, #ffffff, #eef4ea);
+  background: linear-gradient(135deg, var(--card), var(--bg-2));
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 2rem;
@@ -308,7 +308,7 @@ a:focus-visible {
   padding: 0.7rem 0.85rem;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: #fff;
+  background: var(--card);
 }
 .near-me-status {
   min-height: 1rem;
@@ -342,7 +342,7 @@ a:focus-visible {
 }
 
 .directory-hero {
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.25rem;
@@ -352,7 +352,7 @@ a:focus-visible {
   margin-bottom: 1.25rem;
 }
 .directory-controls {
-  background: #f7f8f4;
+  background: var(--bg-2);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 0.9rem 1rem;
@@ -365,7 +365,7 @@ a:focus-visible {
   padding: 0.7rem 0.8rem;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: #fff;
+  background: var(--card);
 }
 .filter-row {
   display: grid;
@@ -375,7 +375,7 @@ a:focus-visible {
 
 .about-hero {
   margin-top: 1.5rem;
-  background: linear-gradient(135deg, #ffffff 0%, #eef4ea 100%);
+  background: linear-gradient(135deg, var(--card) 0%, var(--bg-2) 100%);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 2rem;
@@ -406,7 +406,7 @@ a:focus-visible {
 
 .about-section {
   margin-top: 1.4rem;
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.4rem;
@@ -434,7 +434,7 @@ a:focus-visible {
   line-height: 1.65;
 }
 .about-highlight {
-  background: #f7fbf6;
+  background: var(--bg-2);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1rem;
@@ -452,7 +452,7 @@ a:focus-visible {
   gap: 0.75rem;
 }
 .about-card {
-  background: linear-gradient(160deg, #ffffff 0%, #f7fbf6 100%);
+  background: linear-gradient(160deg, var(--card) 0%, var(--bg-2) 100%);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1rem;
@@ -471,7 +471,7 @@ a:focus-visible {
   font-weight: 600;
 }
 .about-section--cta {
-  background: linear-gradient(135deg, #eef4ea 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--bg-2) 0%, var(--card) 100%);
   border-style: dashed;
   border-color: var(--border);
 }
@@ -488,7 +488,7 @@ a:focus-visible {
 
 .markets-hero {
   margin-top: 1.4rem;
-  background: linear-gradient(135deg, #ffffff 0%, #eef4ea 100%);
+  background: linear-gradient(135deg, var(--card) 0%, var(--bg-2) 100%);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 1.6rem;
@@ -510,7 +510,7 @@ a:focus-visible {
   gap: 0.65rem;
 }
 .markets-quote {
-  background: #f7fbf6;
+  background: var(--bg-2);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 0.9rem 1rem;
@@ -524,7 +524,7 @@ a:focus-visible {
 
 .community-section {
   margin-top: 1.6rem;
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.25rem;
@@ -551,7 +551,7 @@ a:focus-visible {
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1rem;
-  background: linear-gradient(135deg, #ffffff, #f7fbf6);
+  background: linear-gradient(135deg, var(--card), var(--bg-2));
   display: grid;
   gap: 0.65rem;
 }
@@ -624,7 +624,7 @@ a:focus-visible {
   color: #fff;
 }
 .button.ghost {
-  background: #fff;
+  background: var(--card);
   color: var(--text);
   border-color: var(--border);
 }
@@ -638,7 +638,7 @@ a:focus-visible {
 
 .search-section {
   margin-top: 1.6rem;
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 1.5rem;
@@ -656,7 +656,7 @@ a:focus-visible {
   font-size: 1rem;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: #fdfcf8;
+  background: var(--card);
 }
 
 .filters {
@@ -672,7 +672,7 @@ a:focus-visible {
   padding: 0.65rem 0.75rem;
   border-radius: 10px;
   border: 1px solid var(--border);
-  background: #fff;
+  background: var(--card);
   font-size: 1rem;
 }
 .filter-label {
@@ -711,7 +711,7 @@ a:focus-visible {
 }
 .map-panel {
   display: none;
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
   overflow: hidden;
@@ -744,7 +744,7 @@ a:focus-visible {
 }
 
 .listing-card {
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1.1rem;
@@ -813,7 +813,7 @@ a:focus-visible {
 }
 
 .listing {
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 1.8rem;
@@ -904,7 +904,7 @@ a:focus-visible {
   position: absolute;
   top: calc(100% + 0.25rem);
   left: 0;
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
@@ -930,7 +930,7 @@ a:focus-visible {
 }
 .share-menu__item:hover,
 .share-menu__item:focus-visible {
-  background: #f5f7f2;
+  background: var(--accent-soft);
   outline: none;
 }
 @media (min-width: 768px) {
@@ -959,7 +959,7 @@ a:focus-visible {
 }
 .tag-list li {
   padding: 0.34rem 0.68rem;
-  background: #eef3e7;
+  background: var(--accent-soft);
   border-radius: 999px;
   font-size: 0.92rem;
 }
@@ -1039,7 +1039,7 @@ a:focus-visible {
 }
 
 .collection-index {
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.5rem;
@@ -1058,7 +1058,7 @@ a:focus-visible {
   margin: 1.5rem 0;
 }
 .category-card {
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1.25rem;
@@ -1073,7 +1073,7 @@ a:focus-visible {
 }
 
 .info-block {
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.5rem;
@@ -1126,7 +1126,7 @@ a:focus-visible {
 }
 
 .form-page {
-  background: #fff;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.5rem;
@@ -1153,6 +1153,8 @@ a:focus-visible {
   border-radius: 10px;
   border: 1px solid var(--border);
   font-size: 1rem;
+  background: var(--card);
+  color: var(--text);
 }
 .form-group textarea {
   resize: vertical;
@@ -1233,7 +1235,7 @@ a:focus-visible {
     align-items: flex-start;
     gap: 0.25rem;
     padding: 0.5rem 1rem 0.8rem;
-    background: #fff;
+    background: var(--card);
     border: 1px solid var(--border);
     border-radius: 0 0 14px 14px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
@@ -1242,7 +1244,7 @@ a:focus-visible {
   }
   .nav.is-open {
     display: flex;
-    background: #fff;
+    background: var(--card);
     backdrop-filter: blur(12px);
     border: 1px solid var(--border);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
