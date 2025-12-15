@@ -7,12 +7,12 @@ type: farm
 subtype: organic-dairy-processor
 country: NZ
 country_slug: new-zealand
-region: Southland
-city: Awarua
-address: Awarua Dairy Processing Plant, Southland, New Zealand
-postcode: ""
-lat: -36.90259535149349
-lon: 174.8097390559393
+region: Auckland
+city: Auckland (East Tāmaki)
+address: 8 Business Parade South, East Tāmaki, Auckland 2013, New Zealand
+postcode: "2013"
+lat: -36.9499
+lon: 174.8906
 description: >
   AwaRua Organics is a premium New Zealand organic dairy brand producing certified organic milk powders from grass-fed cows in Southland, operating under rigorous independent organic certification.
 long_description: >
