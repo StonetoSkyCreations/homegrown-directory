@@ -42,8 +42,11 @@ SEO/AEO meta builder
 {%- assign raw_desc = page.seo_description
   | default: page.summary
   | default: page.description
+  | default: page.short_description
+  | default: page.long_description
   | default: page.intro
   | default: page.excerpt
+  | default: content
   | default: site.description
 -%}
 {%- assign cleaned_desc = raw_desc

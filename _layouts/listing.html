@@ -241,12 +241,13 @@ map: false
 </section>
 
 {% comment %}Structured data for LocalBusiness + optional FAQ (driven by front matter).{% endcomment %}
+{% assign ld_description = page.description | default: page.excerpt | default: page.seo_description | default: page.long_description | default: "" | strip_html | strip_newlines %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "{{ schema_type }}",
   "name": "{{ display_title | escape }}",
-  "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | escape }}",
+  "description": "{{ ld_description | escape }}",
   {% if website_url != "" %}
   "url": "{{ website_url | escape }}",
   {% else %}

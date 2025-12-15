@@ -1,5 +1,5 @@
 ---
-layout: producer
+layout: farm
 title: Conscious Valley
 slug: conscious-valley-wellington
 name: Conscious Valley
