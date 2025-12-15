@@ -2,6 +2,8 @@ layout: eatery
 title: Amisfield Restaurant & Cellar Door
 slug: amisfield-bistro-queenstown
 name: Amisfield Restaurant & Cellar Door
+seo_title: "Amisfield Bistro — Foraged Fine Dining & Organic Wines | Central Otago"
+seo_description: "Amisfield Bistro delivers an immersive “Trust the Chef” dining experience inspired by Central Otago’s land, using estate-grown, foraged, and ethically sourced ingredients paired with organic single-vineyard wines."
 type: Eatery
 subtype: winery-restaurant
 country: NZ

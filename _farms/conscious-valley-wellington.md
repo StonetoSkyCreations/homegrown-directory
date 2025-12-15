@@ -3,6 +3,8 @@ layout: farm
 title: Conscious Valley
 slug: conscious-valley-wellington
 name: Conscious Valley
+seo_title: "Conscious Valley Farm — Regenerative Beef & Lamb | Wellington"
+seo_description: "Conscious Valley is a Wellington-based farm producing grass-fed beef and lamb with a focus on regenerative land care, animal welfare, and a direct relationship between land, farmer, and food."
 type: Producer
 subtype: grass-fed-meat
 country: NZ

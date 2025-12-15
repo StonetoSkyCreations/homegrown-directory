@@ -2,6 +2,8 @@
 layout: vendor
 slug: ahi-restaurant
 name: Ahi Restaurant
+seo_title: "AHI Restaurant Wellington — Seasonal New Zealand Cuisine & Local Producers"
+seo_description: "AHI is a Wellington restaurant celebrating seasonal New Zealand cuisine, working closely with local growers, farmers, and fishers to create thoughtful, ingredient-led dishes grounded in place and provenance."
 type: restaurant
 subtype: restaurant
 category: eatery

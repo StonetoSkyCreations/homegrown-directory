@@ -3,6 +3,8 @@ layout: eatery
 title: Sugarloaf at Flockhill
 slug: sugarloaf-at-flockhill-canterbury
 name: Sugarloaf at Flockhill
+seo_title: "Sugarloaf at Flockhill — Wild, Foraged Dining in Canterbury High Country"
+seo_description: "Sugarloaf at Flockhill offers an immersive Canterbury dining experience built around wild, foraged, and locally sourced ingredients from the surrounding high-country landscape."
 type: Eatery
 subtype: destination-fine-dining
 country: NZ
