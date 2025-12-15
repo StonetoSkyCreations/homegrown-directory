@@ -248,17 +248,20 @@ map: false
 
 {% comment %}Structured data for LocalBusiness + optional FAQ (driven by front matter).{% endcomment %}
 {% assign ld_description = page.description | default: page.excerpt | default: page.seo_description | default: page.long_description | default: "" | strip_html | strip_newlines %}
+{% assign ld_website = website_url | to_s | strip %}
+{% assign ld_phone = page.phone | to_s | strip %}
+{% assign ld_email = page.email | to_s | strip %}
+{% assign ld_hours = page.hours | to_s | strip %}
+{% assign social_array = social_array | join: ',' | split: ',' | map: 'strip' | reject: '' | uniq %}
+{% assign social_count = social_array | size %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "{{ schema_type }}",
   "name": "{{ display_title | escape }}",
   "description": "{{ ld_description | escape }}",
-  {% if website_url != "" %}
-  "url": "{{ website_url | escape }}",
-  {% else %}
-  "url": "{{ page.url | absolute_url }}",
-  {% endif %}
+  {% assign ld_url = page.url | absolute_url %}
+  {% if ld_website != "" %}"url": "{{ ld_website | escape }}",{% else %}"url": "{{ ld_url | escape }}",{% endif %}
   "mainEntityOfPage": "{{ page.url | absolute_url }}",
   {% if page.address or page.city or page.region or page.country or page.postcode %}
   {% assign locality = nil %}
@@ -285,23 +288,16 @@ map: false
     "longitude": {{ page.lon | jsonify }}
   },
   {% endif %}
-  {% if page.hours %}"openingHours": "{{ page.hours | escape }}",{% endif %}
-  {% if page.phone %}"telephone": "{{ page.phone | escape }}",{% endif %}
-  {% if page.email %}"email": "{{ page.email | escape }}",{% endif %}
-  {% if social_array and social_array != empty %}
-  "sameAs": [{% for link in social_array %}"{{ link | strip | escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+  {% if ld_hours != "" %}"openingHours": "{{ ld_hours | escape }}",{% endif %}
+  {% if ld_phone != "" %}"telephone": "{{ ld_phone | escape }}",{% endif %}
+  {% if ld_email != "" %}"email": "{{ ld_email | escape }}",{% endif %}
+  {% if social_count > 0 %}
+  "sameAs": [{% for link in social_array %}"{{ link | escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
   {% endif %}
   {% if page.products_or_cuisine and page.products_or_cuisine != empty %}
   "servesCuisine": [{% for item in page.products_or_cuisine %}"{{ item | escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
   {% elsif page.products and page.products != empty %}
   "servesCuisine": [{% for item in page.products limit: 4 %}"{{ item | escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
-  {% endif %}
-  {% if page.rating_average and page.rating_count %}
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "{{ page.rating_average }}",
-    "reviewCount": "{{ page.rating_count }}"
-  },
   {% endif %}
   "areaServed": "{{ page.country | escape }}"
 }

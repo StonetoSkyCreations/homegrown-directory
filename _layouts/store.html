@@ -21,6 +21,10 @@ map: false
   {% assign website_url = "https://" | append: website_url %}
 {% endif %}
 {% assign phone_href = page.phone | default: "" | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
+{% assign ld_website = website_url | to_s | strip %}
+{% assign ld_phone = page.phone | to_s | strip %}
+{% assign ld_email = page.email | to_s | strip %}
+{% assign ld_hours = page.hours | to_s | strip %}
 {% assign schema_type = 'LocalBusiness' %}
 {% assign type_token = page.type | default: page.category | default: '' | downcase %}
 {% if type_token contains 'cafe' %}
@@ -188,12 +192,13 @@ map: false
   "@type": "{{ schema_type }}",
   "name": "{{ display_title | escape }}",
   "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | escape }}",
-  {% if website_url != "" %}
-  "url": "{{ website_url | escape }}",
+  {% assign ld_url = page.url | absolute_url %}
+  {% if ld_website != "" %}
+  "url": "{{ ld_website | escape }}",
   {% else %}
-  "url": "{{ page.url | absolute_url }}",
+  "url": "{{ ld_url | escape }}",
   {% endif %}
-  "mainEntityOfPage": "{{ page.url | absolute_url }}",
+  "mainEntityOfPage": "{{ ld_url | escape }}",
   {% if page.address or page.city or page.region or page.country or page.postcode %}
   "address": {
     "@type": "PostalAddress",
@@ -204,11 +209,14 @@ map: false
     {% if page.country %}"addressCountry": "{{ page.country | strip | escape }}"{% endif %}
   },
   {% endif %}
-  {% if page.phone %}
-  "telephone": "{{ page.phone | strip | escape }}",
+  {% if ld_hours != "" %}
+  "openingHours": "{{ ld_hours | escape }}",
   {% endif %}
-  {% if page.email %}
-  "email": "{{ page.email | strip | escape }}",
+  {% if ld_phone != "" %}
+  "telephone": "{{ ld_phone | escape }}",
+  {% endif %}
+  {% if ld_email != "" %}
+  "email": "{{ ld_email | escape }}",
   {% endif %}
   {% if page.lat and page.lon %}
   "geo": {
@@ -217,9 +225,9 @@ map: false
     "longitude": {{ page.lon }}
   },
   {% endif %}
-  {% if page.website %}
+  {% if ld_website != "" %}
   "sameAs": [
-    "{{ page.website | escape }}"
+    "{{ ld_website | escape }}"
   ]
   {% endif %}
 }
