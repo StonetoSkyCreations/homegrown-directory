@@ -1,5 +1,5 @@
 ---
-layout: producer
+layout: listing
 title: Purebread Organic Bakery
 slug: purebread-organic-bakery
 name: Purebread Organic Bakery

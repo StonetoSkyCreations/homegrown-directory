@@ -1,5 +1,5 @@
 ---
-layout: producer
+layout: listing
 title: Mauriora Kombucha
 slug: mauriora-kombucha-christchurch
 name: Mauriora Kombucha

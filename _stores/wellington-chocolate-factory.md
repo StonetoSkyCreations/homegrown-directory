@@ -1,5 +1,5 @@
 ---
-layout: producer
+layout: listing
 title: Wellington Chocolate Factory
 slug: wellington-chocolate-factory
 name: Wellington Chocolate Factory

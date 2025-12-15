@@ -1,5 +1,5 @@
 ---
-layout: producer
+layout: listing
 title: WabiO Kombucha
 slug: wabio-kombucha-christchurch
 name: WabiO Kombucha

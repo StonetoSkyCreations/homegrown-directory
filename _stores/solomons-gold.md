@@ -1,5 +1,5 @@
 ---
-layout: producer
+layout: listing
 title: Solomon’s Gold
 slug: solomons-gold
 name: Solomon’s Gold

@@ -1,5 +1,5 @@
 ---
-layout: producer
+layout: listing
 title: Revive Water Kefir
 slug: revive-water-kefir
 name: Revive Water Kefir
