@@ -4,7 +4,7 @@ title: "Streamside Organics — Growing for People"
 date: 2025-12-14
 tags: [featured, farm-profile, canterbury]
 summary: "A profile of Streamside Organics founders Logan Kerr and Dominique Schacherer, exploring their journey from backyard growing to a regenerative organic farm serving Canterbury."
-seo_title: "Streamside Organics — Growing for People | Homegrown Directory"
+seo_title: "Streamside Organics | Growing for People | Homegrown Directory"
 seo_description: "A profile of Streamside Organics founders Logan Kerr and Dominique Schacherer, exploring their organic farming journey and people-first approach to growing food in Canterbury."
 ---
 

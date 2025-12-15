@@ -2,7 +2,7 @@
 layout: default
 title: Farms
 permalink: /farms/
-seo_title: "Farms & Producers — Organic, Spray-Free, Regenerative | Homegrown"
+seo_title: "Farms & Producers | Organic, Spray-Free, Regenerative | Homegrown"
 seo_description: >
   Discover growers focused on soil health, ecological stewardship and clean farming practices across Aotearoa.
 ---

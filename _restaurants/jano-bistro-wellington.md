@@ -3,7 +3,7 @@ layout: eatery
 title: Jano Bistro
 slug: jano-bistro-wellington
 name: Jano Bistro
-seo_title: "Jano Bistro Wellington — Hyper-Local, Foraged & Seasonal Dining"
+seo_title: "Jano Bistro Wellington | Hyper-Local, Foraged & Seasonal Dining"
 seo_description: "Jano Bistro is a Wellington restaurant known for hyper-local sourcing, wild and foraged ingredients, and close relationships with small producers, offering refined seasonal dining rooted in place."
 type: Eatery
 subtype: fine-dining-bistro
