@@ -27,6 +27,7 @@ sources:
 - untamed-earth
 - revive-water-kefir
 - wairiri-buffalo-canterbury
+- mikaku-tea
 source_urls:
 - Saturdays 10am–1pm
 last_checked: FMNZ member list

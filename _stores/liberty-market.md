@@ -44,12 +44,15 @@ geo_last_verified: '2025-12-14'
 geo_label: '493'
 geo_query: 493 Moorhouse Avenue, Christchurch Central City, Christchurch 8011, Christchurch,
   Canterbury, New Zealand
-sources: []
 supplies_to: []
 practices: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-relationships_declared: false
+sourced_from:
+  - wairiri-buffalo-canterbury
+sources:
+  - wairiri-buffalo-canterbury
+relationships_declared: true
 ---

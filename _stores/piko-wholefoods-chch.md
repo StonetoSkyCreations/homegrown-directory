@@ -24,6 +24,7 @@ sourcing_tags:
 products: []
 sources:
 - streamside-organics
+- wairiri-buffalo-canterbury
 market_days: []
 source_urls:
 - Established 1979
@@ -39,6 +40,9 @@ geo_last_verified: '2025-12-14'
 geo_label: Piko Education Space
 geo_query: 229 Kilmore Street, Christchurch, Canterbury, New Zealand
 title: Piko Wholefoods (Chch)
+sourced_from:
+  - streamside-organics
+  - wairiri-buffalo-canterbury
 supplies_to: []
 practices: []
 practices_tags: []

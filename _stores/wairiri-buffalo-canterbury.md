@@ -55,6 +55,9 @@ sources: []
 supplies_to:
   - harbour-co-op-lyttelton
   - lyttelton-farmers-market
+  - piko-wholefoods-chch
+  - liberty-market
+  - arbour-woodfired-pizza-lyttelton
 also_referenced_by: []
 last_checked: "2025-12-15"
 practices_tags:

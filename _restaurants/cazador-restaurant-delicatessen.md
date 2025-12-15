@@ -36,7 +36,7 @@ website: https://www.cazador.co.nz
 email: reservations@cazador.co.nz
 phone: "+64 9 620 8730"
 social_links: []
-hours: Delicatessen: Mon–Sun from 8:00am (closing times vary). Restaurant: Wed–Sat from 5:00pm–late.
+hours: "Delicatessen: Mon–Sun from 8:00am (closing times vary). Restaurant: Wed–Sat from 5:00pm–late."
 market_days: []
 certifications: []
 awards: []
