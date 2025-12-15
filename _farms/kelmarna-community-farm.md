@@ -44,6 +44,7 @@ lon: 174.73296020682423
 sourced_from: []
 supplies_to:
 - forest-auckland
+- gusto-italiano-ponsonby
 - kingi-restaurant
 - mr-morris-auckland
 - pici-restaurant
