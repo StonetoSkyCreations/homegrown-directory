@@ -7,10 +7,7 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 43 Nayland Street, Sumner Mall, Christchurch 8081
-description: 'Village-style bakery using natural ingredients, long cold-fermented
-  sourdough, and locally sourced flours including Milmore Downs organic whole-wheat
-  and rye, and spray-free Farmers Mill flour. Fresh pastries, sourdough breads, pies,
-  toasties, sandwiches, Prima coffee, T-leaf teas, and NZ-made cold drinks.
+description: 'Village-style bakery using natural ingredients, long cold-fermented sourdough, and locally sourced flours including Milmore Downs organic whole-wheat and rye, and spray-free Farmers Mill flour. Fresh pastries, sourdough breads, pies, toasties, sandwiches, Prima coffee, T-leaf teas, and NZ-made cold drinks.
 
   '
 practices:
@@ -38,21 +35,21 @@ website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
 phone: +64 3-326 3357
 social: https://www.facebook.com/bohemianbakerychristchurch/, https://www.instagram.com/bohemianbakerychristchurch
-hours: Mon–Sun 7:30–15:30
+hours: "Mon\u2013Sun 7:30\u201315:30"
 lat: -43.569762100000005
 lon: 172.75984166875986
-sources:
-- farmers-mill
-- milmore-downs
 subtype: specialty-grocer
 source_urls: []
 brand_slug: bohemian-bakery
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- farmers-mill
+- milmore-downs
+supplies_to: []
 relationships_declared: true
 ---
 Sumner’s Bohemian Bakery is the seaside extension of everything Bohemian stands for: slow-fermented bread, honest pastries, and ingredients grounded in Canterbury’s soils. The shelves are filled daily with sourdoughs made from Milmore Downs organic whole-wheat and rye, spray-free Farmers Mill flour, and honest food crafted the long way — never rushed, never improvised with additives.

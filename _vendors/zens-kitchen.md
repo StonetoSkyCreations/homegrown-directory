@@ -9,8 +9,7 @@ country: New Zealand
 region: Tasman
 city: Murchison
 address: 38 Waller Street, Murchison 7007
-description: Plant-based food cart providing lunches and snacks made from scratch
-  with organic ingredients whenever possible and supporting local growers.
+description: Plant-based food cart providing lunches and snacks made from scratch with organic ingredients whenever possible and supporting local growers.
 practices:
 - Organic
 - Locally sourced
@@ -30,14 +29,14 @@ source_urls: []
 geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
-geo_label: Zen’s Kitchen
+geo_label: "Zen\u2019s Kitchen"
 geo_query: 38 Waller Street, Murchison 7007, Murchison, Tasman, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

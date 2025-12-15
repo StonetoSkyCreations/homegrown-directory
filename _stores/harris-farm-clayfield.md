@@ -40,8 +40,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '823'
 geo_query: 823 Sandgate Rd, Brisbane, Queensland, AU
 title: Harris Farm Markets (Clayfield)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -49,6 +47,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Family-run market grocer with organic lines and local produce in Brisbane’s north.

@@ -5,7 +5,7 @@ name: Otago Farmers Market (Dunedin)
 brand: Otago Farmers Market (Dunedin)
 type: market
 category: market
-description: Large authentic farmers’ market at Dunedin Railway Station
+description: "Large authentic farmers\u2019 market at Dunedin Railway Station"
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -24,14 +24,12 @@ products: []
 market_days:
 - Market
 source_urls:
-- Saturdays 8am–12:30pm
+- "Saturdays 8am\u201312:30pm"
 last_checked: FMNZ member list
 notes: Market
 city: Dunedin
 lat: -45.87109245016279
 title: Otago Farmers Market (Dunedin)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -39,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -6,7 +6,7 @@ brand: Wholefood Heaven
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Wānaka organic and wholefoods store supporting local suppliers.
+description: "W\u0101naka organic and wholefoods store supporting local suppliers."
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -26,19 +26,16 @@ source_urls:
 last_checked: ''
 notes: ''
 published: true
-city: Wānaka
-Organic and wholefood retailer in Wānaka specialising in organic products and local suppliers. Source: user-supplied
-  list
+city: "W\u0101naka"
+"Organic and wholefood retailer in W\u0101naka specialising in organic products and local suppliers. Source": user-supplied list
 lat: -44.6909568
 lon: 169.1434513
 geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Butcher's Block
-geo_query: 33 Reece Crescent, Wānaka, Otago, New Zealand
+geo_query: "33 Reece Crescent, W\u0101naka, Otago, New Zealand"
 title: Wholefood Heaven
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -46,5 +43,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

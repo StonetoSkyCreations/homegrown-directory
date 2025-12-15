@@ -5,7 +5,7 @@ name: Flagship Eatery
 type: cafe
 subtype: cafe
 category: eatery
-description: Farm-to-fork café using locally sourced seasonal ingredients in Gisborne.
+description: "Farm-to-fork caf\xE9 using locally sourced seasonal ingredients in Gisborne."
 country: NZ
 country_slug: new-zealand
 region: Gisborne
@@ -29,8 +29,6 @@ city: Gisborne
 lat: -38.661326
 lon: 178.0206487
 title: Flagship Eatery
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products: []
@@ -39,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

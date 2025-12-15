@@ -6,7 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Wellington
 city: Wellington
-address: "132 Willis Street, Wellington 6011"
+address: 132 Willis Street, Wellington 6011
 practices:
 - Seasonal menu
 - Free-range
@@ -19,19 +19,18 @@ hours: ''
 website: https://www.neocafe.co.nz/
 email: ''
 phone: ''
-description: Willis Street cafe using free-range eggs, organic ingredients where possible,
-  and local suppliers.
+description: Willis Street cafe using free-range eggs, organic ingredients where possible, and local suppliers.
 Modern cafe focusing on local suppliers, free-range eggs, and organic ingredients when available. Source: https://www.neocafe.co.nz/
 subtype: cafe
 source_urls: []
 lat: -41.2887953
 lon: 174.7772114
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

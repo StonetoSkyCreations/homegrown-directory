@@ -6,8 +6,7 @@ name: She Universe Malthouse Chocolaterie
 type: Cafe & chocolaterie
 subtype: specialty-grocer
 category: cafe
-description: Organic and ethically sourced chocolate crafted by She Universe, offering
-  artisan chocolates, loose chocolate moments, and cacao-based creations in Beckenham.
+description: Organic and ethically sourced chocolate crafted by She Universe, offering artisan chocolates, loose chocolate moments, and cacao-based creations in Beckenham.
 country: New Zealand
 country_slug: new-zealand
 region: Canterbury
@@ -28,19 +27,19 @@ services:
 - Cafe
 - Retail shop
 - Chocolaterie
-hours: Daily 9am–4pm
+hours: "Daily 9am\u20134pm"
 published: true
 rating_average: 5
 rating_count: 1
 source_urls: []
 lat: -43.5611472
 lon: 172.636633
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

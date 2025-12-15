@@ -6,8 +6,7 @@ brand: Taste Nature
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Dunedin’s dedicated organic and wholefood supermarket with deli and bulk
-  refillery.
+description: "Dunedin\u2019s dedicated organic and wholefood supermarket with deli and bulk refillery."
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -56,16 +55,14 @@ services:
 market_days: []
 source_urls:
 - https://www.tastenature.co.nz/
-hours: 'Shop & Deli: Mon–Fri 8am–6pm; Sat 9am–4pm; Sun closed'
+hours: "Shop & Deli: Mon\u2013Fri 8am\u20136pm; Sat 9am\u20134pm; Sun closed"
 last_checked: user-submitted
-notes: Full organic grocer with deli, bulk-bin section, refillery, natural household
-  products, and an integrative health clinic above the store.
+notes: Full organic grocer with deli, bulk-bin section, refillery, natural household products, and an integrative health clinic above the store.
 published: true
 city: Dunedin
 rating_average: 5
 rating_count: 1
-? Long-standing organic grocer and wholefood store in Dunedin with certified organic
-  produce, bulk wholefoods, refillery, deli, and ethically sourced groceries. Source
+? Long-standing organic grocer and wholefood store in Dunedin with certified organic produce, bulk wholefoods, refillery, deli, and ethically sourced groceries. Source
 : https://www.tastenature.co.nz/
 lat: -45.8783023
 lon: 170.5006781
@@ -75,13 +72,13 @@ geo_last_verified: '2025-12-14'
 geo_label: Taste Nature
 geo_query: 131 High Street, Dunedin 9016, Dunedin, Otago, New Zealand
 title: Taste Nature
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Taste Nature is one of Ōtepoti Dunedin’s cornerstone organic hubs — a place where food, wellbeing, and community are held together under one roof. For more than three decades, it has operated as a locally owned, socially conscious business committed to supporting sustainable living and strengthening the relationship between people and the land.

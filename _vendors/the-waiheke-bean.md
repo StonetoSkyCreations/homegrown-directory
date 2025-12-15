@@ -6,8 +6,7 @@ name: The Waiheke Bean
 type: producer
 subtype: cafe
 category: roastery
-description: Coffee roastery offering certified organic, fair-trade coffee beans roasted
-  on Waiheke Island, dedicated to sustainability and ethical sourcing.
+description: Coffee roastery offering certified organic, fair-trade coffee beans roasted on Waiheke Island, dedicated to sustainability and ethical sourcing.
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
@@ -31,12 +30,12 @@ published: true
 source_urls: []
 lat: -36.7944853
 lon: 175.0549946
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -6,7 +6,7 @@ brand: Farro Fresh Epsom
 type: supermarket
 subtype: supermarket
 category: retailer
-description: Farro Fresh – premium grocer with organic produce, meats, etc.
+description: "Farro Fresh \u2013 premium grocer with organic produce, meats, etc."
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -24,7 +24,7 @@ sourcing_tags:
 products: []
 market_days: []
 source_urls: []
-last_checked: Farro Fresh Epsom – Kin & Crop
+last_checked: "Farro Fresh Epsom \u2013 Kin & Crop"
 notes: Retail
 city: Auckland
 lat: -36.8938263
@@ -34,8 +34,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Farro
 geo_query: 446 Manukau Road, Auckland, Auckland, New Zealand
 title: Farro Fresh Epsom
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -43,5 +41,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

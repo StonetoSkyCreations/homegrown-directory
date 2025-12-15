@@ -7,13 +7,8 @@ region: Multiple
 city: Multiple
 country: New Zealand
 country_slug: new-zealand
-description: Brand umbrella for Bohemian Bakery locations focused on sourdough, pastries,
-  and coffee.
-long_description: Bohemian Bakery operates multiple Christchurch locations centered
-  on long-fermented sourdough, pastries, and simple cafe menus. The brand highlights
-  transparent sourcing of flour and ingredients and maintains consistent baking standards
-  across its shops. This umbrella entry links all Bohemian Bakery sites under a single
-  brand reference. Details to be verified.
+description: Brand umbrella for Bohemian Bakery locations focused on sourdough, pastries, and coffee.
+long_description: Bohemian Bakery operates multiple Christchurch locations centered on long-fermented sourdough, pastries, and simple cafe menus. The brand highlights transparent sourcing of flour and ingredients and maintains consistent baking standards across its shops. This umbrella entry links all Bohemian Bakery sites under a single brand reference. Details to be verified.
 locations:
 - bohemian-bakery-sumner
 - bohemian-bakery-merivale
@@ -22,8 +17,6 @@ locations:
 - bohemian-bakery-cbd
 lat: ''
 lon: ''
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products: []
@@ -35,5 +28,7 @@ specialty_tags:
 - umbrella
 - multi-location
 source_urls: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

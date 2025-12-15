@@ -5,8 +5,7 @@ name: Gasworks Farmers Market
 brand: Gasworks Farmers Market
 type: market
 category: market
-description: Monthly VFMA-accredited market in Albert Park with certified organic
-  produce, dairy, and eggs.
+description: Monthly VFMA-accredited market in Albert Park with certified organic produce, dairy, and eggs.
 country: AU
 country_slug: australia
 region: Victoria
@@ -43,14 +42,14 @@ geo_last_verified: '2025-12-14'
 geo_label: '21'
 geo_query: 21 Graham Street, Melbourne, Victoria, AU
 title: Gasworks Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Monthly farmers market in Gasworks Arts Park featuring organic growers and local food makers.

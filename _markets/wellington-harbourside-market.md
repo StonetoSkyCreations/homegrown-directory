@@ -5,8 +5,7 @@ name: Wellington Harbourside Market
 brand: Wellington Harbourside Market
 type: market
 category: market
-description: Sunday waterfront market with local growers, organic produce stalls,
-  and free-range eggs.
+description: Sunday waterfront market with local growers, organic produce stalls, and free-range eggs.
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -28,8 +27,7 @@ last_checked: ''
 notes: ''
 published: true
 city: Wellington
-? Sunday market on Wellington’s waterfront featuring local growers and producers,
-  including organic veg and free-range egg stalls. Source
+? "Sunday market on Wellington\u2019s waterfront featuring local growers and producers, including organic veg and free-range egg stalls. Source"
 : https://www.wellingtonharboursidemarket.co.nz/
 practices_tags:
 - organic
@@ -42,13 +40,13 @@ geo_last_verified: '2025-12-14'
 geo_label: Waterloo Quay
 geo_query: Waterloo Quay, Wellington, Wellington, New Zealand
 title: Wellington Harbourside Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

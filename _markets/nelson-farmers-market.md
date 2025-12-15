@@ -5,7 +5,7 @@ name: Nelson Farmers Market
 brand: Nelson Farmers Market
 type: market
 category: market
-description: Mid-week farmers’ market with local produce in Nelson city
+description: "Mid-week farmers\u2019 market with local produce in Nelson city"
 country: NZ
 country_slug: new-zealand
 region: Nelson
@@ -24,7 +24,7 @@ products: []
 market_days:
 - Market
 source_urls:
-- Wednesdays 8:30am–1:30pm
+- "Wednesdays 8:30am\u20131:30pm"
 last_checked: FMNZ member list
 notes: Market
 city: Nelson
@@ -32,13 +32,13 @@ practices_tags:
 - local
 lat: -41.2738791
 title: Nelson Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -6,10 +6,10 @@ brand: Bin Inn Palmerston North
 type: bulk-refillery
 subtype: bulk-refillery
 category: retailer
-description: Bin Inn – bulk wholefoods & specialty grocery
+description: "Bin Inn \u2013 bulk wholefoods & specialty grocery"
 country: NZ
 country_slug: new-zealand
-region: Manawatū-Whanganui
+region: "Manawat\u016B-Whanganui"
 suburb: Palmerston North
 address: 313 Church Street
 postcode: '4410'
@@ -33,10 +33,8 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '313'
-geo_query: 313 Church Street, Palmerston North, Manawatū-Whanganui, New Zealand
+geo_query: "313 Church Street, Palmerston North, Manawat\u016B-Whanganui, New Zealand"
 title: Bin Inn Palmerston North
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +42,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

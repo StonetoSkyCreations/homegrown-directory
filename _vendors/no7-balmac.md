@@ -5,8 +5,7 @@ name: No.7 Balmac
 type: restaurant
 subtype: restaurant
 category: eatery
-description: Bistro with a large organic kitchen garden and locally sourced free-range
-  meat and eggs.
+description: Bistro with a large organic kitchen garden and locally sourced free-range meat and eggs.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -30,8 +29,6 @@ city: Dunedin
 lat: -45.8740984
 lon: 170.5035755
 title: No.7 Balmac
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products: []
@@ -40,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

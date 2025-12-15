@@ -6,7 +6,7 @@ brand: Bin Inn Glenfield
 type: bulk-refillery
 subtype: bulk-refillery
 category: retailer
-description: Bin Inn – bulk wholefoods & specialty grocery
+description: "Bin Inn \u2013 bulk wholefoods & specialty grocery"
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -30,8 +30,6 @@ city: Auckland
 lat: -36.782902
 lon: 174.725654
 title: Bin Inn Glenfield
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -39,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

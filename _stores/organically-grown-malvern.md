@@ -6,8 +6,7 @@ brand: Organically Grown
 type: organic-grocery
 subtype: organic-store
 category: retail
-description: Family-run store providing 100% certified organic fruit, vegetables,
-  and groceries.
+description: Family-run store providing 100% certified organic fruit, vegetables, and groceries.
 country: AU
 country_slug: australia
 region: Victoria
@@ -44,8 +43,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '196'
 geo_query: 196 Glenferrie Road, Melbourne, Victoria, AU
 title: Organically Grown (Malvern)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -53,6 +50,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Certified organic grocer focused on Australian-sourced produce and pantry goods.

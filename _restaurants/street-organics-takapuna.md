@@ -16,14 +16,13 @@ products:
 - Baked goods
 - Groceries
 services:
-- Café
+- "Caf\xE9"
 - Retail store
 hours: ''
 website: https://streetorganics.co.nz
 email: ''
 phone: (09) 216 5991
-description: Real‑food café and store making meals, cakes and treats from scratch
-  using local organic ingredients whenever possible.
+description: "Real\u2011food caf\xE9 and store making meals, cakes and treats from scratch using local organic ingredients whenever possible."
 notes: Updated with latest address and services.
 subtype: cafe
 source_urls: []
@@ -34,12 +33,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: 1/38
 geo_query: 1 Byron Avenue, Takapuna, Auckland 0622, Takapuna, Auckland, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

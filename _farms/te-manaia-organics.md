@@ -7,8 +7,7 @@ country: New Zealand
 region: Wellington
 city: Masterton
 address: Outskirts of Masterton (alluvial lands)
-description: A family-run organic vegetable farm in Masterton, growing rare and staple
-  crops since 1990 and certified organic since 1995.
+description: A family-run organic vegetable farm in Masterton, growing rare and staple crops since 1990 and certified organic since 1995.
 practices:
 - certified-organic
 - spray-free
@@ -29,18 +28,18 @@ hours: null
 market_days: []
 lat: -40.9495524
 lon: 175.6594413
-supplies_to:
-- little-farms
-last_checked: 2025-12-11
+last_checked: '2025-12-11'
 subtype: market-garden
 source_urls:
 - https://wearelittlefarms.com/blogs/meet-the-growers/te-manaia-organics
-sources: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to:
+- little-farms
 relationships_declared: true
 ---
 Te Manaia Organics was founded in 1990 on the rich alluvial soils near Masterton. Owner Jeremy Howden established the farm with a determination to avoid chemical methods, and the property has been officially certified organic since 1995. Jeremy's early crops included then-rare vegetables such as radicchio, fennel and celeriac alongside staples like sprouting broccoli, spinach and onions. After spending time overseas, Jeremy relaunched the business with his son Alex and fiancee Evie, injecting fresh energy and vision into the farm.

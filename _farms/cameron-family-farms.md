@@ -7,8 +7,7 @@ country: New Zealand
 region: Wellington
 city: Featherston
 address: 10 Daniell Street, Featherston 5710
-description: A large organic, plant-based farm in South Wairarapa founded by filmmaker
-  James Cameron and Suzy Cameron, producing vegetables, nuts, oils and natural cosmetics.
+description: A large organic, plant-based farm in South Wairarapa founded by filmmaker James Cameron and Suzy Cameron, producing vegetables, nuts, oils and natural cosmetics.
 practices:
 - certified-organic
 - plant-based
@@ -31,10 +30,7 @@ hours: 24 hours (depot listing)
 market_days: []
 lat: -41.1172486
 lon: 175.3241354
-supplies_to:
-- little-farms
-- food-forest-organics
-last_checked: 2025-12-11
+last_checked: '2025-12-11'
 subtype: market-garden
 source_urls:
 - https://commonsenseorganics.co.nz/blog/cameron-family-farms
@@ -45,12 +41,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '10'
 geo_query: 10 Daniell Street, Featherston 5710, Featherston, Wellington, New Zealand
-sources: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to:
+- little-farms
+- food-forest-organics
 relationships_declared: true
 ---
 Cameron Family Farms (registered as T Base 2 Limited) is a pioneering organic farm near Featherston. Founded by filmmaker James Cameron and author Suzy Cameron, the operation is guided by values of ethical, organic and plant-based farming. The farm managers produce nutrient-rich compost, use only organic fertilisers and constantly experiment with sustainable practices aimed at improving soil health. They advocate for plant-based diets and share knowledge with local farmers through field days and permaculture courses.

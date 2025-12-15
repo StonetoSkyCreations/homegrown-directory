@@ -32,11 +32,11 @@ notes: ''
 products_tags:
 - seed
 subtype: seeds
-sources: []
-supplies_to: []
 practices: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

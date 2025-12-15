@@ -5,8 +5,7 @@ name: Foraged In Raglan
 type: producer
 subtype: cafe
 category: grocer
-description: Small-batch preserves made from local spray-free produce that would otherwise
-  go to waste.
+description: Small-batch preserves made from local spray-free produce that would otherwise go to waste.
 country: NZ
 country_slug: new-zealand
 region: Waikato
@@ -26,17 +25,17 @@ source_urls:
 last_checked: ''
 notes: ''
 city: Raglan
-Uses spray-free local produce—often surplus or backyard fruit—to create preserves and reduce food waste. Source: https://www.foragedinraglan.co.nz/my-story
+"Uses spray-free local produce\u2014often surplus or backyard fruit\u2014to create preserves and reduce food waste. Source": https://www.foragedinraglan.co.nz/my-story
 lat: -37.7997729
 lon: 174.8682464
 title: Foraged In Raglan
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

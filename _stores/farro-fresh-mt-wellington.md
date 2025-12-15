@@ -6,7 +6,7 @@ brand: Farro Fresh Mt Wellington
 type: supermarket
 subtype: supermarket
 category: retailer
-description: Farro Fresh – premium grocer with organic range
+description: "Farro Fresh \u2013 premium grocer with organic range"
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -24,7 +24,7 @@ sourcing_tags:
 products: []
 market_days: []
 source_urls: []
-last_checked: Farro Fresh Mt Wellington – Eventfinda
+last_checked: "Farro Fresh Mt Wellington \u2013 Eventfinda"
 notes: Retail
 city: Auckland
 lat: -36.8909223
@@ -34,8 +34,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '80'
 geo_query: 80 Lunn Avenue, Auckland, Auckland, New Zealand
 title: Farro Fresh Mt Wellington
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -43,5 +41,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

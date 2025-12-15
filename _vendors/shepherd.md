@@ -5,8 +5,7 @@ name: Shepherd
 type: restaurant
 subtype: restaurant
 category: eatery
-description: Restaurant in Te Aro using ethically and locally sourced ingredients,
-  collaborating with regional farmers and foragers.
+description: Restaurant in Te Aro using ethically and locally sourced ingredients, collaborating with regional farmers and foragers.
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -30,8 +29,6 @@ city: Wellington
 lat: -41.2887953
 lon: 174.7772114
 title: Shepherd
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products: []
@@ -40,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

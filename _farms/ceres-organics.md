@@ -25,16 +25,16 @@ certifications: []
 supply_role: Importer; Distributor
 source_urls:
 - https://maikai.nz/pages/mai-kai-suppliers
-hours: Mon–Fri 09:00–17:00; Sat–Sun closed
+hours: "Mon\u2013Fri 09:00\u201317:00; Sat\u2013Sun closed"
 last_checked: '2025-12-09'
 notes: ''
 subtype: mixed
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

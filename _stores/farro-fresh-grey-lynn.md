@@ -6,8 +6,7 @@ brand: Farro Fresh Grey Lynn
 type: supermarket
 subtype: supermarket
 category: retailer
-description: Farro Fresh – premium grocer focusing on local & artisan foods (significant
-  organic range)
+description: "Farro Fresh \u2013 premium grocer focusing on local & artisan foods (significant organic range)"
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -25,7 +24,7 @@ sourcing_tags:
 products: []
 market_days: []
 source_urls: []
-last_checked: Farro Fresh Grey Lynn – Yelp; Farro Facebook
+last_checked: "Farro Fresh Grey Lynn \u2013 Yelp; Farro Facebook"
 notes: Retail
 city: Auckland
 lat: -36.8556127
@@ -35,8 +34,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Farro Fresh
 geo_query: 34 Westmoreland Street West, Auckland, Auckland, New Zealand
 title: Farro Fresh Grey Lynn
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +41,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

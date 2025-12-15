@@ -1,5 +1,5 @@
 ---
-title: Restaurant or café name
+title: "Restaurant or caf\xE9 name"
 slug: restaurant-slug
 published: false
 country: Country name
@@ -19,13 +19,13 @@ phone: ''
 description: One-sentence description for cards and SEO.
 subtype: restaurant
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Describe the food, sourcing philosophy, and any sourcing notes on the menu. Add farms and hubs in `sources` so they appear as cross-links.

@@ -5,8 +5,7 @@ name: Scarecrow
 type: cafe
 subtype: cafe
 category: mixed
-description: Urban kitchen and grocery offering a seasonal menu with organic coffees
-  and teas alongside fresh, nourishing food.
+description: Urban kitchen and grocery offering a seasonal menu with organic coffees and teas alongside fresh, nourishing food.
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -23,11 +22,11 @@ sourcing_tags:
 - seasonal
 - direct-from-farm
 products_or_cuisine:
-- Café meals
+- "Caf\xE9 meals"
 - Organic coffee
 - Teas
 services:
-- Café
+- "Caf\xE9"
 - Grocery
 - Catering
 source_urls:
@@ -42,8 +41,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '33'
 geo_query: 33 Victoria Street East, Auckland, Auckland, Auckland, New Zealand
 title: Scarecrow
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products: []
@@ -51,5 +48,7 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

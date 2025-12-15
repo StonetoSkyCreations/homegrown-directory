@@ -4,8 +4,7 @@ title: Carrick Wines
 slug: carrick-wines
 name: Carrick Wines
 type: Vineyard
-description: Certified organic vineyard and winery producing estate-grown Central
-  Otago wines through low-input, ecological practices.
+description: Certified organic vineyard and winery producing estate-grown Central Otago wines through low-input, ecological practices.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -34,12 +33,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '247'
 geo_query: 247 Cairnmuir Road, Bannockburn, Bannockburn, Otago, New Zealand
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

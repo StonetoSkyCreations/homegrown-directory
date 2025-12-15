@@ -6,8 +6,7 @@ brand: Zany Zeus
 type: dairy-store
 subtype: specialty-grocer
 category: retailer
-description: Lower Hutt dairy shop and cafe using organic milk for ice cream and dairy
-  products.
+description: Lower Hutt dairy shop and cafe using organic milk for ice cream and dairy products.
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -37,8 +36,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Gracefield Road
 geo_query: 103-109 Gracefield Rd, Lower Hutt, Wellington, New Zealand
 title: Zany Zeus
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -46,5 +43,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

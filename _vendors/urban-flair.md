@@ -9,8 +9,7 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Auckland (mobile food truck)
-description: Food truck and private chef service using free‑range and organic products
-  from local suppliers with biodegradable, eco‑friendly packaging.
+description: "Food truck and private chef service using free\u2011range and organic products from local suppliers with biodegradable, eco\u2011friendly packaging."
 practices:
 - Organic
 - Free-range
@@ -31,12 +30,12 @@ hours: ''
 lat: -36.8172189
 lon: 174.7320885
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

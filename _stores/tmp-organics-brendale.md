@@ -6,8 +6,7 @@ brand: TMP Organics
 type: butcher-supermarket
 subtype: supermarket
 category: retail
-description: Organic butcher and small-format supermarket focusing on certified organic
-  meats and groceries.
+description: Organic butcher and small-format supermarket focusing on certified organic meats and groceries.
 country: AU
 country_slug: australia
 region: Queensland
@@ -39,8 +38,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Bult Drive
 geo_query: 18 Bult Drive, Brendale, Queensland, AU
 title: TMP Organics Butcher & Supermarket
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -48,6 +45,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Certified organic butcher with a small supermarket range of organic groceries and pantry staples.

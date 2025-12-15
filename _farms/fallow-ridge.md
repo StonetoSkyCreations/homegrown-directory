@@ -4,8 +4,7 @@ title: Fallow Ridge
 slug: fallow-ridge
 name: Fallow Ridge
 type: Farm
-description: Regenerative family farm producing wool and pasture-raised livestock
-  through holistic, land-healing grazing systems.
+description: Regenerative family farm producing wool and pasture-raised livestock through holistic, land-healing grazing systems.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -38,11 +37,11 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Alexandra
 geo_query: Alexandra, Otago, Alexandra, Otago, New Zealand
-sources: []
-supplies_to: []
 practices: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

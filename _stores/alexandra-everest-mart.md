@@ -7,8 +7,7 @@ country: New Zealand
 region: Otago
 city: Alexandra
 address: 38 Tarbert Street, Alexandra 9320
-description: Convenience store offering organic fresh vegetables, wholefoods and unique
-  grocery items in central Alexandra.
+description: Convenience store offering organic fresh vegetables, wholefoods and unique grocery items in central Alexandra.
 practices:
 - Organic
 products:
@@ -21,7 +20,7 @@ website: ''
 email: ''
 phone: +64 3 448 8691
 social: ''
-hours: Mon–Fri 9am–5:30pm; Sat 9:30am–4:30pm; Sun closed
+hours: "Mon\u2013Fri 9am\u20135:30pm; Sat 9:30am\u20134:30pm; Sun closed"
 lat: -45.2499614
 lon: 169.3967489
 subtype: specialty-grocer
@@ -32,12 +31,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Tarbert Street
 geo_query: 38 Tarbert Street, Alexandra 9320, Alexandra, Otago, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

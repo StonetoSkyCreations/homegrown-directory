@@ -6,7 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Tasman
 city: Takaka
-address: "60 Commercial Street, Tākaka 7110"
+address: "60 Commercial Street, T\u0101kaka 7110"
 practices:
 - Organic (uncertified)
 - Local sourcing
@@ -20,18 +20,17 @@ website: ''
 email: ''
 phone: ''
 description: Golden Bay cafe with a long history of using organic, local produce.
-Established Takaka cafe emphasizing organic and locally sourced ingredients in its vegetarian-friendly menu. Source: user-supplied
-  list
+Established Takaka cafe emphasizing organic and locally sourced ingredients in its vegetarian-friendly menu. Source: user-supplied list
 subtype: cafe
 source_urls: []
 lat: -40.8585683
 lon: 172.8066263
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

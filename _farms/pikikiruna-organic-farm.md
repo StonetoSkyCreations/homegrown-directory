@@ -23,13 +23,13 @@ address: 496 Owairaka Valley Road, Parawera 3877, New Zealand
 postcode: '3877'
 subtype: market-garden
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Certified organic producer in Parawera supplying vegetables locally. Source: user-supplied list

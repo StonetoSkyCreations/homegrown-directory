@@ -23,17 +23,17 @@ website: https://bininn.co.nz/pages/waitara
 email: waitara@bininn.co.nz
 phone: 06 754 9000
 social: ''
-hours: Mon–Fri 08:30–17:00; Sat 09:00–15:00
+hours: "Mon\u2013Fri 08:30\u201317:00; Sat 09:00\u201315:00"
 lat: -39.0024865
 lon: 174.235171
 source_urls:
 - https://bininn.co.nz/pages/waitara
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

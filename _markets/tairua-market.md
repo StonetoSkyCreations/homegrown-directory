@@ -8,8 +8,7 @@ region: Coromandel
 city: Tairua
 address: Tairua Community Hall, Main Road, Tairua
 description: Monthly market in Tairua where local growers and artisans sell produce, baking, crafts and plants on the first Saturday of each month.
-long_description: |
-  The Tairua Market takes place on the first Saturday of each month at the community hall from 9 am to 1 pm. Stalls offer fresh fruit and vegetables, homemade jams and chutneys, baking, free‑range eggs, seedlings, potted plants and handmade crafts. The market serves as a social gathering for the community and provides an outlet for small producers from Tairua and the wider eastern Coromandel. Visitors can enjoy a relaxed morning shopping and chatting with growers over coffee and snacks from the onsite café stalls.
+long_description: "The Tairua Market takes place on the first Saturday of each month at the community hall from 9 am to 1 pm. Stalls offer fresh fruit and vegetables, homemade jams and chutneys, baking, free\u2011range eggs, seedlings, potted plants and handmade crafts. The market serves as a social gathering for the community and provides an outlet for small producers from Tairua and the wider eastern Coromandel. Visitors can enjoy a relaxed morning shopping and chatting with growers over coffee and snacks from the onsite caf\xE9 stalls.\n"
 practices:
 - local produce
 products:
@@ -26,21 +25,20 @@ website: ''
 email: ''
 phone: ''
 social: ''
-hours: First Saturday monthly 9 am–1 pm
+hours: "First Saturday monthly 9\u202Fam\u20131\u202Fpm"
 market_days:
 - Saturday
 lat: -37.00366923713266
 lon: 175.84830478910155
-sourced_from: []
-supplies_to: []
-also_referenced_by: []
-sources:
-- https://cfm.co.nz/whats-on/coromandel-markets/#:~:text=Tairua%20Market
-last_checked: 2025-12-12
+last_checked: '2025-12-12'
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-relationships_declared: false
+sourced_from: []
+sourced_from_text:
+- https://cfm.co.nz/whats-on/coromandel-markets/#:~:text=Tairua%20Market
+supplies_to: []
+relationships_declared: true
 ---

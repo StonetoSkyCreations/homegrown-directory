@@ -7,8 +7,7 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: ''
-description: Delivery service providing locally grown spray‑free fruit and vegetables
-  harvested and delivered within 24 hours.
+description: "Delivery service providing locally grown spray\u2011free fruit and vegetables harvested and delivered within 24 hours."
 practices:
 - Spray-free
 - Locally grown
@@ -26,12 +25,12 @@ lat: -36.852095
 lon: 174.7631803
 subtype: cafe
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

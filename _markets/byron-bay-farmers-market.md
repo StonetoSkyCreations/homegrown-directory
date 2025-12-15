@@ -5,8 +5,7 @@ name: Byron Bay Farmers Market
 brand: Byron Bay Farmers Market
 type: market
 category: market
-description: Weekly Thursday farmers market with local fresh produce and organic vendors
-  in Byron Bay.
+description: Weekly Thursday farmers market with local fresh produce and organic vendors in Byron Bay.
 country: AU
 country_slug: australia
 region: New South Wales
@@ -26,7 +25,7 @@ products:
 - Vegetables
 - Farm produce
 market_days:
-- Thu 8–11am
+- "Thu 8\u201311am"
 source_urls:
 - https://byronbay.com/farmers-markets-in-byron-bay/
 last_checked: '2025-12-09'
@@ -38,14 +37,14 @@ practices_tags:
 lat: -28.646951
 lon: 153.610627
 title: Byron Bay Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Thursday morning market with a mix of organic and local growers, fresh produce, and seasonal farm goods at Butler St Reserve.

@@ -9,8 +9,7 @@ country: New Zealand
 region: Wellington
 city: Porirua
 address: 1 Okowai Road, Aotea, Porirua 5024
-description: Matcha-focused coffee truck offering organic matcha options alongside
-  coffee and treats.
+description: Matcha-focused coffee truck offering organic matcha options alongside coffee and treats.
 practices:
 - Organic
 products:
@@ -31,12 +30,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Gear Homestead
 geo_query: 1 Okowai Road, Aotea, Porirua 5024, Porirua, Wellington, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

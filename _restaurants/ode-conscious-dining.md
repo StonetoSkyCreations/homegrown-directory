@@ -5,8 +5,8 @@ published: true
 country: New Zealand
 country_slug: new-zealand
 region: Otago
-city: Wānaka
-address: First Floor, 33 Ardmore Street, Wānaka
+city: "W\u0101naka"
+address: "First Floor, 33 Ardmore Street, W\u0101naka"
 practices:
 - Organic
 - Wild-harvested
@@ -24,21 +24,19 @@ email: eat@odewanaka.com
 phone: +64 3 428 4140
 social_links:
 - https://www.instagram.com/odewanaka
-description: Hyper-local restaurant using organic produce, wild-shot game, and ethically
-  caught kai moana with a seasonal, integrity-based menu.
-? Organic, ethical, and seasonal menus reflecting Central Otago’s terroir, featuring
-  wild-shot game and sustainably caught seafood. Source
+description: Hyper-local restaurant using organic produce, wild-shot game, and ethically caught kai moana with a seasonal, integrity-based menu.
+? "Organic, ethical, and seasonal menus reflecting Central Otago\u2019s terroir, featuring wild-shot game and sustainably caught seafood. Source"
 : user-provided details
 subtype: restaurant
 source_urls: []
 lat: -44.6945581
 lon: 169.1390936
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

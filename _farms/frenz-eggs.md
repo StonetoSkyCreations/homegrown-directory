@@ -9,7 +9,7 @@ country: NZ
 country_slug: new-zealand
 region: Auckland
 city: Papakura
-address: "1–3 Crosbie Road, Pukekohe 2120"
+address: "1\u20133 Crosbie Road, Pukekohe 2120"
 phone: ''
 email: ''
 website: https://www.frenz.co.nz
@@ -28,12 +28,12 @@ notes: ''
 subtype: eggs
 lat: -37.064265
 lon: 174.9446665
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

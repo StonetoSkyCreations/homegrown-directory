@@ -9,8 +9,7 @@ country: New Zealand
 region: Wellington
 city: Porirua
 address: 4 Mana Esplanade, Porirua 5026
-description: Coffee truck serving Fairtrade and organic Peoples coffee, hot chocolates
-  and refreshments.
+description: Coffee truck serving Fairtrade and organic Peoples coffee, hot chocolates and refreshments.
 practices:
 - Organic
 - Fair trade
@@ -32,12 +31,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: 4/101
 geo_query: 4 Mana Esplanade, Porirua 5026, Porirua, Wellington, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

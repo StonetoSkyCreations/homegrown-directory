@@ -5,7 +5,7 @@ name: Havana Coffee Works
 type: producer
 subtype: cafe
 category: cafe
-description: Wellington roastery and café serving Fair Trade Organic certified coffee.
+description: "Wellington roastery and caf\xE9 serving Fair Trade Organic certified coffee."
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -34,13 +34,13 @@ geo_last_verified: '2025-12-14'
 geo_label: Havana Coffee
 geo_query: 163 Tory St, Wellington, Wellington, New Zealand
 title: Havana Coffee Works
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

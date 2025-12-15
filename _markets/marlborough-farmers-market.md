@@ -5,7 +5,7 @@ name: Marlborough Farmers Market
 brand: Marlborough Farmers Market
 type: market
 category: market
-description: Community farmers’ market featuring Marlborough growers (seasonal organics)
+description: "Community farmers\u2019 market featuring Marlborough growers (seasonal organics)"
 country: NZ
 country_slug: new-zealand
 region: Marlborough
@@ -24,14 +24,12 @@ products: []
 market_days:
 - Market
 source_urls:
-- Sundays 9am–12pm
+- "Sundays 9am\u201312pm"
 last_checked: FMNZ member list
 notes: Market
 city: Blenheim
 lat: -41.5118691
 title: Marlborough Farmers Market
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -39,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

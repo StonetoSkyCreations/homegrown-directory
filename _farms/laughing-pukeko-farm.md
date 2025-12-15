@@ -28,12 +28,12 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 subtype: market-garden
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

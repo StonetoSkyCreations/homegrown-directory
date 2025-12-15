@@ -24,7 +24,7 @@ sourcing_tags:
 products: []
 market_days: []
 source_urls:
-- NZ’s first certified organic store
+- "NZ\u2019s first certified organic store"
 last_checked: IE Produce contact
 notes: Retail
 city: Auckland
@@ -35,8 +35,6 @@ geo_last_verified: '2025-12-14'
 geo_label: I E Produce
 geo_query: 1 Barrys Point Road, Auckland, Auckland, New Zealand
 title: IE Produce (Takapuna)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +42,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

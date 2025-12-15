@@ -5,8 +5,7 @@ name: Jan Powers Farmers Market (Powerhouse)
 brand: Jan Powers Farmers Markets
 type: market
 category: market
-description: Saturday market at Brisbane Powerhouse with local fresh produce and artisanal
-  products.
+description: Saturday market at Brisbane Powerhouse with local fresh produce and artisanal products.
 country: AU
 country_slug: australia
 region: Queensland
@@ -24,7 +23,7 @@ products:
 - Local produce
 - Artisan foods
 market_days:
-- Sat 6am–12pm
+- "Sat 6am\u201312pm"
 source_urls:
 - https://www.janpowersfarmersmarkets.com.au/
 last_checked: '2025-12-09'
@@ -41,14 +40,14 @@ geo_last_verified: '2025-12-14'
 geo_label: Brisbane Powerhouse
 geo_query: Brisbane Powerhouse, 119 Lamington St, Brisbane, Queensland, AU
 title: Jan Powers Farmers Market (Powerhouse)
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Weekly Saturday market beside the Brisbane Powerhouse featuring local growers and artisan food stalls.

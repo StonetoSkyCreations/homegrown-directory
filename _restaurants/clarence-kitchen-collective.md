@@ -23,8 +23,7 @@ hours: ''
 website: https://clarencecollective.com.au
 email: ''
 phone: 0438 187 168
-description: Community wholefoods cafe offering nourishing meals with seasonal, locally
-  sourced produce.
+description: Community wholefoods cafe offering nourishing meals with seasonal, locally sourced produce.
 source_urls: []
 lat: -29.7060211
 lon: 152.9327921
@@ -33,13 +32,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Skinner Street
 geo_query: 50 Skinner St, Grafton, New South Wales, Australia
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Clarence Kitchen Collective serves wholefood breakfasts and lunches built on seasonal produce from the Clarence Valley.

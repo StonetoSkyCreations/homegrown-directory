@@ -8,7 +8,7 @@ category: market
 description: Large outdoor market by Whanganui River (mix of produce and craft stalls)
 country: NZ
 country_slug: new-zealand
-region: Manawatū-Whanganui
+region: "Manawat\u016B-Whanganui"
 suburb: Whanganui
 address: Whanganui Riverbank, Taupo Quay
 postcode: '4500'
@@ -23,14 +23,12 @@ products: []
 market_days:
 - Market
 source_urls:
-- Saturdays 9am–1pm
+- "Saturdays 9am\u20131pm"
 last_checked: FMNZ member list
 notes: Market
 city: Whanganui
 lat: -39.926765
 title: Whanganui River Markets
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -38,5 +36,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

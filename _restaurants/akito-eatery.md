@@ -16,25 +16,24 @@ products:
 - Brunch dishes
 - Lunch dishes
 services:
-- Café
+- "Caf\xE9"
 - Dine-in
 website: https://akito.co.nz
 email: hello@akito.co.nz
 phone: +64 9 372 7659
 social_links: []
-hours: Mon–Sat 7:30am–3pm; Sun 7am–3pm
-description: Plant-based eatery embracing slow food and regenerative principles, serving
-  seasonal breakfasts, brunches and lunches made from local ingredients.
+hours: "Mon\u2013Sat 7:30am\u20133pm; Sun 7am\u20133pm"
+description: Plant-based eatery embracing slow food and regenerative principles, serving seasonal breakfasts, brunches and lunches made from local ingredients.
 subtype: cafe
 source_urls: []
 lat: -36.7827036
 lon: 175.0100052
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

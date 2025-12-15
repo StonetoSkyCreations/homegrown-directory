@@ -7,10 +7,9 @@ subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
 region: Waikato
-city: Ngāruawāhia
-address: 14 Rangawhenua Street, Ngāruawāhia 3720
-description: Eco-friendly mobile coffee cart in Hopuhopu offering premium blends and
-  meeting the rising demand for organic coffee.
+city: "Ng\u0101ruaw\u0101hia"
+address: "14 Rangawhenua Street, Ng\u0101ruaw\u0101hia 3720"
+description: Eco-friendly mobile coffee cart in Hopuhopu offering premium blends and meeting the rising demand for organic coffee.
 practices:
 - Organic
 - Sustainable
@@ -27,12 +26,12 @@ hours: ''
 lat: -37.6823594
 lon: 175.1698852
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

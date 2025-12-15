@@ -9,8 +9,7 @@ country: New Zealand
 region: Auckland
 city: Hobsonville
 address: Unit 5, 3 Workspace Drive, Hobsonville, Auckland
-description: Environmentally conscious coffee caravan using compostable cups, organic
-  fair-trade Kokako coffee and Fine & Dandy teas with pastries and donuts.
+description: Environmentally conscious coffee caravan using compostable cups, organic fair-trade Kokako coffee and Fine & Dandy teas with pastries and donuts.
 practices:
 - Organic
 - Fair trade
@@ -30,12 +29,12 @@ hours: ''
 lat: -36.8064867
 lon: 174.6342654
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -24,7 +24,7 @@ products: []
 market_days:
 - Market
 source_urls:
-- Sundays 9am–12:30pm
+- "Sundays 9am\u201312:30pm"
 last_checked: FMNZ member list
 notes: Market
 city: New Plymouth
@@ -32,13 +32,13 @@ practices_tags:
 - organic
 lat: -39.0579941
 title: Taranaki Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

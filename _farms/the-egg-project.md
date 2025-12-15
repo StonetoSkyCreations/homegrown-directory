@@ -4,11 +4,10 @@ title: The Egg Project
 slug: the-egg-project
 country_slug: new-zealand
 country: New Zealand
-region: Manawatū-Whanganui
+region: "Manawat\u016B-Whanganui"
 city: Himatangi Beach
-address: Himatangi Beach, Manawatū-Whanganui
-description: Certified organic free-range egg producer with hens roaming on pasture
-  and pine nut plantations, delivering eggs to homes and retailers.
+address: "Himatangi Beach, Manawat\u016B-Whanganui"
+description: Certified organic free-range egg producer with hens roaming on pasture and pine nut plantations, delivering eggs to homes and retailers.
 practices:
 - Certified organic
 - Free-range
@@ -31,14 +30,13 @@ geo_precision: approx
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Himatangi Beach Road
-geo_query: Himatangi Beach, Manawatū-Whanganui, Himatangi Beach, Manawatū-Whanganui,
-  New Zealand
-sources: []
-supplies_to: []
+geo_query: "Himatangi Beach, Manawat\u016B-Whanganui, Himatangi Beach, Manawat\u016B-Whanganui, New Zealand"
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

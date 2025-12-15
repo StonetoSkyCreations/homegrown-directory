@@ -1,11 +1,11 @@
 ---
 layout: vendor
 slug: cafe-irresistiblue
-name: Café Irresistiblue
+name: "Caf\xE9 Irresistiblue"
 type: cafe
 subtype: cafe
 category: eatery
-description: Café set on NZ’s largest BioGro-certified organic blueberry farm in Monavale.
+description: "Caf\xE9 set on NZ\u2019s largest BioGro-certified organic blueberry farm in Monavale."
 country: NZ
 country_slug: new-zealand
 region: Waikato
@@ -30,9 +30,7 @@ notes: ''
 city: Cambridge
 lat: -37.8917889
 lon: 175.4691069
-title: Café Irresistiblue
-sources: []
-supplies_to: []
+title: "Caf\xE9 Irresistiblue"
 practices: []
 practices_tags: []
 products: []
@@ -41,5 +39,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

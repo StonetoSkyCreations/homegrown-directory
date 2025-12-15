@@ -5,7 +5,7 @@ name: Clevedon Village Farmers Market
 brand: Clevedon Village Farmers Market
 type: market
 category: market
-description: Rural Auckland farmers’ market with wide range of fresh produce
+description: "Rural Auckland farmers\u2019 market with wide range of fresh produce"
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -24,14 +24,12 @@ products: []
 market_days:
 - Market
 source_urls:
-- Sundays 8:30am–1pm
+- "Sundays 8:30am\u20131pm"
 last_checked: FMNZ member list
 notes: Market
 city: Manukau
 lat: -36.989771
 title: Clevedon Village Farmers Market
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -39,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

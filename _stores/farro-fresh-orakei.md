@@ -6,7 +6,7 @@ brand: Farro Fresh Orakei
 type: supermarket
 subtype: supermarket
 category: retailer
-description: Farro Fresh – premium grocer with organic & local foods
+description: "Farro Fresh \u2013 premium grocer with organic & local foods"
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -24,13 +24,11 @@ sourcing_tags:
 products: []
 market_days: []
 source_urls: []
-last_checked: Farro Fresh Orakei – Brewé
+last_checked: "Farro Fresh Orakei \u2013 Brew\xE9"
 notes: Retail
 city: Auckland
 lat: -36.862888
 title: Farro Fresh Orakei
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -38,5 +36,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

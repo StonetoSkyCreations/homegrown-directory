@@ -5,8 +5,7 @@ name: Origin Northland
 type: cafe
 subtype: cafe
 category: mixed
-description: Café and deli inside an organic, spray-free grocer stocking organic meats,
-  spray-free veg, and artisan goods.
+description: "Caf\xE9 and deli inside an organic, spray-free grocer stocking organic meats, spray-free veg, and artisan goods."
 country: NZ
 country_slug: new-zealand
 region: Northland
@@ -31,8 +30,6 @@ city: Waipu
 lat: -35.9850068
 lon: 174.4474971
 title: Origin Northland
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products: []
@@ -41,5 +38,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

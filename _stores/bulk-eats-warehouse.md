@@ -6,8 +6,7 @@ brand: Bulk Eats Warehouse
 type: bulk-wholesale
 subtype: bulk-refillery
 category: wholesale
-description: Wholesale bulk-food supplier with click-and-collect and delivery for
-  dry goods, groceries, and cleaning supplies.
+description: Wholesale bulk-food supplier with click-and-collect and delivery for dry goods, groceries, and cleaning supplies.
 country: AU
 country_slug: australia
 region: Victoria
@@ -42,8 +41,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '101'
 geo_query: 101 Proximity Drive, Melbourne, Victoria, AU
 title: Bulk Eats Warehouse
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -51,6 +48,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Bulk supplier serving households and businesses with pantry staples and cleaning products.

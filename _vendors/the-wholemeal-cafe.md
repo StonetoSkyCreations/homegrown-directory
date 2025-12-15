@@ -1,12 +1,11 @@
 ---
 layout: vendor
 slug: the-wholemeal-cafe
-name: The Wholemeal Café
+name: "The Wholemeal Caf\xE9"
 type: cafe
 subtype: cafe
 category: eatery
-description: Vegetarian café in Tākaka using organic produce grown onsite or sourced
-  locally.
+description: "Vegetarian caf\xE9 in T\u0101kaka using organic produce grown onsite or sourced locally."
 country: NZ
 country_slug: new-zealand
 region: Tasman
@@ -27,12 +26,10 @@ source_urls:
 - https://wholemealcafe.co.nz
 last_checked: '2025-12-09'
 notes: ''
-city: Tākaka
+city: "T\u0101kaka"
 lat: -40.8574983
 lon: 172.8062424
-title: The Wholemeal Café
-sources: []
-supplies_to: []
+title: "The Wholemeal Caf\xE9"
 practices: []
 practices_tags: []
 products: []
@@ -41,5 +38,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

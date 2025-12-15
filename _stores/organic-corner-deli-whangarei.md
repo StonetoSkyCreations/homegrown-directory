@@ -6,7 +6,7 @@ brand: Organic Corner Deli
 type: deli
 subtype: specialty-grocer
 category: retailer
-description: Whangārei deli selling certified organic meat, dairy, and deli items.
+description: "Whang\u0101rei deli selling certified organic meat, dairy, and deli items."
 country: NZ
 country_slug: new-zealand
 region: Northland
@@ -27,14 +27,11 @@ source_urls:
 last_checked: ''
 notes: ''
 published: true
-city: Whangārei
-Certified organic deli offering meat, dairy, and specialty items in Whangārei. Source: user-supplied
-  list
+city: "Whang\u0101rei"
+"Certified organic deli offering meat, dairy, and specialty items in Whang\u0101rei. Source": user-supplied list
 lat: -35.7275268
 lon: 174.3194202
 title: Organic Corner Deli
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -42,5 +39,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

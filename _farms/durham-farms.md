@@ -4,13 +4,12 @@ title: Durham Farms
 slug: durham-farms
 name: Durham Farms
 type: Farm
-description: Certified organic dairy and mixed produce farm with farm shop offerings
-  in Waipu.
+description: Certified organic dairy and mixed produce farm with farm shop offerings in Waipu.
 country: NZ
 country_slug: new-zealand
 region: Northland
 city: Waipu
-address: "128 Durham Road, Waipu 0582"
+address: 128 Durham Road, Waipu 0582
 phone: ''
 email: ''
 website: https://www.durhamfarms.co.nz
@@ -35,11 +34,11 @@ products_tags:
 subtype: dairy-farm
 lat: -35.9850068
 lon: 174.4474971
-sources: []
-supplies_to: []
 practices: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

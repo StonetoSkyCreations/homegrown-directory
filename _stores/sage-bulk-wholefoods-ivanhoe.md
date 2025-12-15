@@ -6,8 +6,7 @@ brand: Sage Bulk Wholefoods
 type: bulk-foods
 subtype: bulk-refillery
 category: retail
-description: Zero-plastic grocery offering organic bulk foods, pantry staples, and
-  eco household goods.
+description: Zero-plastic grocery offering organic bulk foods, pantry staples, and eco household goods.
 country: AU
 country_slug: australia
 region: Victoria
@@ -40,8 +39,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '206'
 geo_query: 206 Upper Heidelberg Road, Melbourne, Victoria, AU
 title: Sage Bulk Wholefoods - Ivanhoe
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -49,6 +46,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Local refill store with organic bulk foods and low-waste household items.

@@ -6,8 +6,7 @@ brand: The Source Bulk Foods
 type: bulk-foods
 subtype: bulk-refillery
 category: retail
-description: Bulk wholefoods refillery with organic groceries at Southport’s Brickworks
-  Centre.
+description: "Bulk wholefoods refillery with organic groceries at Southport\u2019s Brickworks Centre."
 country: AU
 country_slug: australia
 region: Queensland
@@ -35,8 +34,6 @@ city: Gold Coast
 lat: -27.97995115
 lon: 153.40978546639033
 title: The Source Bulk Foods (Southport)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,6 +41,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Bulk foods shop with organic pantry staples and refillable household goods at Brickworks Centre.

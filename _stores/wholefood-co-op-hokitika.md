@@ -27,13 +27,10 @@ last_checked: ''
 notes: ''
 published: true
 city: Hokitika
-Community co-op providing organic foods and wholefoods at affordable prices in Hokitika. Source: user-supplied
-  list
+Community co-op providing organic foods and wholefoods at affordable prices in Hokitika. Source: user-supplied list
 lat: -42.7178871
 lon: 170.9646469
 title: Wholefood Co-op Hokitika
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -41,5 +38,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

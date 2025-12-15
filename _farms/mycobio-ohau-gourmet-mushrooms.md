@@ -4,11 +4,10 @@ title: MycoBio (Ohau Gourmet Mushrooms)
 slug: mycobio-ohau-gourmet-mushrooms
 country_slug: new-zealand
 country: New Zealand
-region: Manawatū-Whanganui
-city: Ōhau
-address: Ōhau, Horowhenua
-description: Sustainable permaculture farm cultivating gourmet mushrooms and fermented
-  foods with 100% organic principles and natural pest control.
+region: "Manawat\u016B-Whanganui"
+city: "\u014Chau"
+address: "\u014Chau, Horowhenua"
+description: Sustainable permaculture farm cultivating gourmet mushrooms and fermented foods with 100% organic principles and natural pest control.
 practices:
 - Organic
 - Permaculture
@@ -32,14 +31,14 @@ source_urls:
 geo_precision: approx
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
-geo_label: Ōhau Vineyard
-geo_query: Ōhau, Horowhenua, Ōhau, Manawatū-Whanganui, New Zealand
-sources: []
-supplies_to: []
+geo_label: "\u014Chau Vineyard"
+geo_query: "\u014Chau, Horowhenua, \u014Chau, Manawat\u016B-Whanganui, New Zealand"
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

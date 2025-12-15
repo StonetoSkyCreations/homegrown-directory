@@ -9,8 +9,7 @@ country: New Zealand
 region: Bay of Plenty
 city: Te Kaha
 address: Maraetai Schoolhouse Bay, Te Kaha 3199
-description: Seaside coffee cart along SH35 serving organic fair-trade coffee with
-  sweet and savoury treats.
+description: Seaside coffee cart along SH35 serving organic fair-trade coffee with sweet and savoury treats.
 practices:
 - Organic
 - Fair trade
@@ -23,16 +22,16 @@ website: ''
 email: ''
 phone: +64 21 054 4698
 social: ''
-hours: Mon–Fri 6:30am–2pm; Sat 7am–2pm
+hours: "Mon\u2013Fri 6:30am\u20132pm; Sat 7am\u20132pm"
 lat: -37.73333
 lon: 177.68333
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

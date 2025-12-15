@@ -5,8 +5,7 @@ name: Jan Powers Farmers Market (Mitchelton)
 brand: Jan Powers Farmers Markets
 type: market
 category: market
-description: Monthly Sunday market on Blackwood St with local seasonal produce and
-  artisan foods.
+description: Monthly Sunday market on Blackwood St with local seasonal produce and artisan foods.
 country: AU
 country_slug: australia
 region: Queensland
@@ -24,7 +23,7 @@ products:
 - Local produce
 - Artisan foods
 market_days:
-- Sun 6am–12pm (monthly)
+- "Sun 6am\u201312pm (monthly)"
 source_urls:
 - https://www.janpowersfarmersmarkets.com.au/
 last_checked: '2025-12-09'
@@ -36,14 +35,14 @@ practices_tags:
 lat: -27.404055
 lon: 152.975746
 title: Jan Powers Farmers Market (Mitchelton)
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Monthly market bringing local growers and artisan makers to Mitchelton’s main street.

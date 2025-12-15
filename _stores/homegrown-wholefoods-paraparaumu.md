@@ -6,8 +6,7 @@ brand: Homegrown Wholefoods
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Independent wholefoods store in Paraparaumu with organic certified products
-  and local goods.
+description: Independent wholefoods store in Paraparaumu with organic certified products and local goods.
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -28,13 +27,10 @@ last_checked: ''
 notes: ''
 published: true
 city: Paraparaumu
-Local wholefoods retailer selling certified organic food and supporting Kapiti growers. Source: user-supplied
-  list
+Local wholefoods retailer selling certified organic food and supporting Kapiti growers. Source: user-supplied list
 lat: -40.9144636
 lon: 175.0061963
 title: Homegrown Wholefoods
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -42,5 +38,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

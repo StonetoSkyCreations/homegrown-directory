@@ -5,8 +5,7 @@ name: Northland Farmers Market
 brand: Northland Farmers Market
 type: market
 category: market
-description: Saturday market in Whangārei focused on locally grown and made goods
-  with organic and spray-free vendors.
+description: "Saturday market in Whang\u0101rei focused on locally grown and made goods with organic and spray-free vendors."
 country: NZ
 country_slug: new-zealand
 region: Northland
@@ -26,22 +25,21 @@ source_urls:
 last_checked: ''
 notes: ''
 published: true
-city: Whangārei
-? Locally focused Saturday market on Rust Ave featuring growers and makers from Northland,
-  including organic and spray-free vegetable stalls. Source
+city: "Whang\u0101rei"
+? Locally focused Saturday market on Rust Ave featuring growers and makers from Northland, including organic and spray-free vegetable stalls. Source
 : user-supplied list
 practices_tags:
 - organic
 - spray-free
 - local
 title: Northland Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

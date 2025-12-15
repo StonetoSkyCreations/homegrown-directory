@@ -20,10 +20,8 @@ website: https://bostockorganic.nz/pages/bostock-organic-kitchen
 email: ''
 phone: ''
 social_links: []
-description: Eatery serving exclusively Bostock Certified Organic chicken with a focus
-  on clean, ethical ingredients.
-Eatery featuring Bostock Certified Organic chicken, prepared with minimal additives and an ethical sourcing focus. Source: user-provided
-  details
+description: Eatery serving exclusively Bostock Certified Organic chicken with a focus on clean, ethical ingredients.
+Eatery featuring Bostock Certified Organic chicken, prepared with minimal additives and an ethical sourcing focus. Source: user-provided details
 subtype: restaurant
 source_urls: []
 lat: -45.0329939
@@ -33,12 +31,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Church Lane
 geo_query: 5 Church Lane, Queenstown, Queenstown, Otago, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -22,20 +22,18 @@ website: https://arcadiawaiheke.com
 email: info@arcadiawaiheke.com
 phone: ''
 social_links: []
-hours: Wed–Thu 5pm–Late; Fri 9am–Late; Sat 9am–Late; Sun 9am–2:30pm
-description: Relaxed restaurant supporting local suppliers, featuring organic salad
-  greens and sustainably caught fish on a seasonal menu with a variety of dishes and
-  drinks.
+hours: "Wed\u2013Thu 5pm\u2013Late; Fri 9am\u2013Late; Sat 9am\u2013Late; Sun 9am\u20132:30pm"
+description: Relaxed restaurant supporting local suppliers, featuring organic salad greens and sustainably caught fish on a seasonal menu with a variety of dishes and drinks.
 subtype: restaurant
 source_urls: []
 lat: -36.7809944
 lon: 175.046223
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

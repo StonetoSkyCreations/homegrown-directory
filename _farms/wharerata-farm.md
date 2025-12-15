@@ -7,8 +7,7 @@ country: New Zealand
 region: Wellington
 city: Pirinoa
 address: Pirinoa, South Wairarapa
-description: Fourth-generation certified-organic mixed farm raising deer, sheep, beef
-  and organic dairy grazers while restoring native biodiversity in the Haurangi foothills.
+description: Fourth-generation certified-organic mixed farm raising deer, sheep, beef and organic dairy grazers while restoring native biodiversity in the Haurangi foothills.
 practices:
 - certified-organic
 - regenerative
@@ -31,10 +30,7 @@ hours: null
 market_days: []
 lat: -41.3522552
 lon: 175.2060882
-supplies_to:
-- little-farms
-- first-light-farms
-last_checked: 2025-12-11
+last_checked: '2025-12-11'
 products_tags:
 - dairy
 - meat
@@ -47,11 +43,14 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Pirinoa Hall
 geo_query: Pirinoa, South Wairarapa, Pirinoa, Wellington, New Zealand
-sources: []
 practices_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to:
+- little-farms
+- first-light-farms
 relationships_declared: true
 ---
 Wharerata Farm sits in the heart of South Wairarapa's Pirinoa district, framed by the Haurangi Ranges and near Palliser Bay. The Atkinson family has farmed here for almost a century and achieved certified organic status in 1990. Fourth-generation farmer Sophie Atkinson and her partner Tim manage a diverse enterprise spanning deer, beef cattle, sheep and around 100 organic dairy grazers. The 200-hectare effective area benefits from fertile soils and a temperate microclimate.

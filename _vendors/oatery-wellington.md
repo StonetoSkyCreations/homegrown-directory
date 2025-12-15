@@ -29,13 +29,13 @@ Produces oats and oatmeal using spray-free New Zealand-grown oats; sells online 
 lat: -41.2887953
 lon: 174.7772114
 title: The Oatery
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

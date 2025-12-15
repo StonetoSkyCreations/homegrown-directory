@@ -4,11 +4,10 @@ title: BioFarm
 slug: biofarm
 country_slug: new-zealand
 country: New Zealand
-region: Manawatū-Whanganui
+region: "Manawat\u016B-Whanganui"
 city: Palmerston North
 address: Te Matai Road, Palmerston North
-description: One of New Zealand’s oldest certified organic farms producing yoghurt
-  and milk using biodynamic and regenerative principles with on-site processing.
+description: "One of New Zealand\u2019s oldest certified organic farms producing yoghurt and milk using biodynamic and regenerative principles with on-site processing."
 practices:
 - Certified organic
 - Biodynamic
@@ -34,13 +33,12 @@ geo_precision: approx
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Te Matai Road
-geo_query: Te Matai Road, Palmerston North, Palmerston North, Manawatū-Whanganui,
-  New Zealand
-sources: []
-supplies_to: []
+geo_query: "Te Matai Road, Palmerston North, Palmerston North, Manawat\u016B-Whanganui, New Zealand"
 practices_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

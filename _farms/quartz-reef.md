@@ -4,8 +4,7 @@ title: Quartz Reef
 slug: quartz-reef
 name: Quartz Reef
 type: Vineyard
-description: Biodynamic and organic certified Bendigo vineyard specialising in méthode
-  traditionnelle and Pinot Noir from regenerative soils.
+description: "Biodynamic and organic certified Bendigo vineyard specialising in m\xE9thode traditionnelle and Pinot Noir from regenerative soils."
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -28,16 +27,16 @@ certifications:
 supply_role: Producer; Cellar door (seasonal); Exporter
 source_urls:
 - https://biodynamic.org.nz/demeter/demeter-producers
-hours: Mon–Fri 12–4pm (tastings)
+hours: "Mon\u2013Fri 12\u20134pm (tastings)"
 last_checked: '2025-12-09'
 notes: ''
 subtype: vineyard
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

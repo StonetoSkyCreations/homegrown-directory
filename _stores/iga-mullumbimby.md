@@ -37,8 +37,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Burringbar Street
 geo_query: 62 Burringbar Street, Mullumbimby, New South Wales, AU
 title: IGA Mullumbimby
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -46,6 +44,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 IGA with local produce and everyday essentials for the Mullumbimby community.

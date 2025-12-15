@@ -5,7 +5,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Coromandel
 city: Whitianga
-address: "RD1/2486 Tairua–Whitianga Road, Kaimarama 3591"
+address: "RD1/2486 Tairua\u2013Whitianga Road, Kaimarama 3591"
 lat: -36.8333
 lon: 175.7
 practices:
@@ -18,21 +18,20 @@ products:
 services:
 - Farm stand
 - Wholesale
-hours: Mon–Sun 9:30am–6:30pm
+hours: "Mon\u2013Sun 9:30am\u20136:30pm"
 website: https://wilderland.org.nz
 email: ''
 phone: +64 7 866 3848
-description: Sustainable living community producing organic honey, teas, and seasonal
-  produce on the Whitianga estuary.
+description: Sustainable living community producing organic honey, teas, and seasonal produce on the Whitianga estuary.
 subtype: apiary
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Volunteer-run Wilderland Charitable Trust grows and handcrafts organic produce, teas, and honey, sharing goods from its coastal property south of Whitianga. Source: http://www.wilderland.org.nz/

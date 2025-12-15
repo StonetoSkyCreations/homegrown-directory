@@ -5,7 +5,7 @@ name: Grey Lynn Farmers Market
 brand: Grey Lynn Farmers Market
 type: market
 category: market
-description: Community-run inner Auckland farmers’ market (many organic vendors)
+description: "Community-run inner Auckland farmers\u2019 market (many organic vendors)"
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -24,7 +24,7 @@ products: []
 market_days:
 - Market
 source_urls:
-- Sundays 9am–12:30pm
+- "Sundays 9am\u201312:30pm"
 last_checked: FMNZ member list
 notes: Market
 city: Auckland
@@ -32,13 +32,13 @@ practices_tags:
 - organic
 lat: -36.8597672
 title: Grey Lynn Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

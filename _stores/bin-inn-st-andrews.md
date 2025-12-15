@@ -6,7 +6,7 @@ brand: Bin Inn St Andrews
 type: bulk-refillery
 subtype: bulk-refillery
 category: retailer
-description: Bin Inn – bulk wholefoods & specialty grocery
+description: "Bin Inn \u2013 bulk wholefoods & specialty grocery"
 country: NZ
 country_slug: new-zealand
 region: Waikato
@@ -35,8 +35,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Sandwich Road
 geo_query: 84 Sandwich Road, Hamilton, Waikato, New Zealand
 title: Bin Inn St Andrews
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +42,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

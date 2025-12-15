@@ -26,8 +26,7 @@ last_checked: ''
 notes: ''
 published: true
 city: Takaka
-? Golden Bay market where everything is grown, baked, or made locally, including organic
-  and spray-free produce stalls. Source
+? Golden Bay market where everything is grown, baked, or made locally, including organic and spray-free produce stalls. Source
 : user-supplied list
 practices_tags:
 - organic
@@ -36,13 +35,13 @@ practices_tags:
 lat: -40.8594062
 lon: 172.8062614
 title: Golden Bay Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

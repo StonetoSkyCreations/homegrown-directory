@@ -6,8 +6,7 @@ brand: The Gap LOCO
 type: co-op
 subtype: co-op
 category: retail
-description: Community organic food co-op offering certified organic produce and groceries
-  in Brisbane.
+description: Community organic food co-op offering certified organic produce and groceries in Brisbane.
 country: AU
 country_slug: australia
 region: Queensland
@@ -40,8 +39,6 @@ geo_last_verified: '2025-12-14'
 geo_label: The Atrium
 geo_query: 15 High Street, Brisbane, Queensland, AU
 title: The Gap Local Organic Co-Op
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -49,6 +46,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Member-driven organic co-op supplying certified organic produce and pantry goods to the local community.

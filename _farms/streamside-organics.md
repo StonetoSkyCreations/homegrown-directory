@@ -4,8 +4,7 @@ title: Streamside Organics
 slug: streamside-organics
 name: Streamside Organics
 type: Farm
-description: Certified organic market garden producing a wide range of seasonal vegetables
-  for CSA boxes, markets, and retailers.
+description: Certified organic market garden producing a wide range of seasonal vegetables for CSA boxes, markets, and retailers.
 country: New Zealand
 country_slug: new-zealand
 region: Canterbury
@@ -33,7 +32,7 @@ practices_tags:
 services:
 - CSA boxes
 - Weekly veggie boxes (Christchurch)
-- Wholesale supply to restaurants and cafés
+- "Wholesale supply to restaurants and caf\xE9s"
 - Supply to wholefood and organic stores
 - Supply to supermarkets
 - Farmers market sales (Saturday & Sunday)
@@ -41,6 +40,30 @@ services:
 - GoodFor mid-week pickup (The Welder, Christchurch)
 certifications: []
 supply_role: Producer
+source_urls: []
+hours: "CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch Farmers Market: Saturday 9am\u20131pm; South Christchurch Farmers Market: Sunday 9am\u201312pm; GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon\u2013Fri (varies by venue)"
+hours_list:
+- 'CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb)'
+- "Christchurch Farmers Market: Saturday 9am\u20131pm"
+- "South Christchurch Farmers Market: Sunday 9am\u201312pm"
+- 'GoodFor pickup: mid-week (usually Wednesday)'
+- "Wholesale deliveries: Mon\u2013Fri (varies by venue)"
+market_days:
+- "Christchurch Farmers Market \u2014 Saturday 9am\u20131pm"
+- "South Christchurch Farmers Market \u2014 Sunday 9am\u201312pm"
+last_checked: user-submitted
+notes: ''
+rating_average: 5
+rating_count: 2
+subtype: market-garden
+lat: -43.80251419440102
+lon: 172.2461488888322
+featured_article: /blog/streamside-organics-growing-for-people/
+practices: []
+products_tags: []
+services_tags: []
+specialty_tags: []
+sourced_from: []
 supplies_to:
 - ilex-cafe-botanic-gardens
 - gatherings-christchurch
@@ -65,26 +88,12 @@ supplies_to:
 - freshchoice-nelson-city
 - bliss-box
 - live2give-organics
-source_urls: []
-hours: 'CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb); Christchurch
-  Farmers Market: Saturday 9am–1pm; South Christchurch Farmers Market: Sunday 9am–12pm;
-  GoodFor pickup: mid-week (usually Wednesday); Wholesale deliveries: Mon–Fri (varies
-  by venue)'
-hours_list:
-- 'CSA/veggie boxes: weekly cycle (delivery & pick-up by suburb)'
-- 'Christchurch Farmers Market: Saturday 9am–1pm'
-- 'South Christchurch Farmers Market: Sunday 9am–12pm'
-- 'GoodFor pickup: mid-week (usually Wednesday)'
-- 'Wholesale deliveries: Mon–Fri (varies by venue)'
-market_days:
-- Christchurch Farmers Market — Saturday 9am–1pm
-- South Christchurch Farmers Market — Sunday 9am–12pm
 supplies_to_text:
 - Ilex Cafe Botanic Gardens
 - Gatherings Restaurant
 - Black Estate (Waipara)
 - Greystone Wines (Waipara)
-- Pomeroy’s Pub (Christchurch)
+- "Pomeroy\u2019s Pub (Christchurch)"
 - Cellar Door (Christchurch)
 - Alpine Grind (Methven)
 - Green Dinner Table
@@ -102,19 +111,6 @@ supplies_to_text:
 - FreshChoice Nelson City
 - Bliss Box (formerly Ooooby)
 - Live2Give Organics
-last_checked: user-submitted
-notes: ''
-rating_average: 5
-rating_count: 2
-subtype: market-garden
-lat: -43.80251419440102
-lon: 172.2461488888322
-featured_article: /blog/streamside-organics-growing-for-people/
-sources: []
-practices: []
-products_tags: []
-services_tags: []
-specialty_tags: []
 relationships_declared: true
 ---
 Streamside Organics began in 2014 on a single acre of leased land. What started as a small, hands-on experiment in feeding a local community has grown into one of Canterbury's most respected organic market gardens: a 50-acre certified organic farm supplying thousands of households each week.

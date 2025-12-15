@@ -3,8 +3,8 @@ layout: eatery
 title: Ahi Restaurant
 slug: ahi-restaurant
 name: Ahi Restaurant
-seo_title: "Ahi Auckland Restaurant | Garden-to-Plate NZ Fine Dining at Commercial Bay"
-seo_description: "Ahi in Commercial Bay, Auckland combines seasonal New Zealand fine dining with produce from its own organic kitchen garden, working with growers and fishers across Aotearoa for a true garden-to-plate experience."
+seo_title: Ahi Auckland Restaurant | Garden-to-Plate NZ Fine Dining at Commercial Bay
+seo_description: Ahi in Commercial Bay, Auckland combines seasonal New Zealand fine dining with produce from its own organic kitchen garden, working with growers and fishers across Aotearoa for a true garden-to-plate experience.
 type: Eatery
 subtype: fine-dining
 country: NZ
@@ -12,10 +12,12 @@ country_slug: new-zealand
 region: Auckland
 city: Auckland Central
 address: Commercial Bay, Level 2, 7 Queen Street, Auckland Central, Auckland 1010, New Zealand
-postcode: "1010"
+postcode: '1010'
 description: A refined yet welcoming Auckland restaurant offering a contemporary fine-dining experience grounded in New Zealand ingredients, seasonal storytelling, and deep relationships with growers across Aotearoa.
-long_description: >
-  Ahi is a flagship expression of modern New Zealand dining, co-owned by chef Ben Bayly and hospitality professional Chris Martin. Located in Commercial Bay overlooking the Waitemata Harbour, Ahi is designed as a love letter to Aotearoa - celebrating land, sea, people, and place through food. The menu is shaped by a strong commitment to ethical, sustainable sourcing and proudly names the regions and producers behind each key ingredient. Ahi's own Kitchen Garden in Patumahoe supplies a significant portion of the restaurant's organic vegetables, grown using regenerative practices to prioritise flavour, soil health, and seasonal diversity. In the kitchen, fire plays a central role, with dishes often cooked over open flame and informed by both Maori techniques and contemporary culinary craft. Expect a dining experience that feels immersive yet approachable, where thoughtful service, provenance-led storytelling, and carefully selected New Zealand wines come together to reflect the richness of local food culture.
+long_description: 'Ahi is a flagship expression of modern New Zealand dining, co-owned by chef Ben Bayly and hospitality professional Chris Martin. Located in Commercial Bay overlooking the Waitemata Harbour, Ahi is designed as a love letter to Aotearoa - celebrating land, sea, people, and place through food. The menu is shaped by a strong commitment to ethical, sustainable sourcing and proudly names the regions and producers behind each key ingredient. Ahi''s own Kitchen Garden in Patumahoe supplies a significant portion of the restaurant''s organic vegetables, grown using regenerative practices to prioritise flavour, soil health, and seasonal diversity. In the kitchen, fire plays a central role, with dishes often cooked over open flame and informed by both Maori techniques and contemporary culinary craft. Expect a dining experience that feels immersive yet approachable, where thoughtful service, provenance-led storytelling, and carefully selected New Zealand wines come together to reflect
+  the richness of local food culture.
+
+  '
 practices:
 - seasonal-menu
 - regenerative-growing
@@ -33,7 +35,7 @@ services:
 - wine-pairing
 website: http://ahi.restaurant
 email: kiaora@ahi.restaurant
-phone: "+64 22 524 4255"
+phone: +64 22 524 4255
 social_links: []
 hours: Mon-Sun 12:00pm-10:00pm (lunch & dinner).
 market_days: []
@@ -48,18 +50,12 @@ sourcing_tags:
 - local
 - seasonal
 - direct-from-farm
-sourced_from:
-- ahi-kitchen-garden
-- regional-growers-and-fishers
 products_or_cuisine:
 - Fine dining
 - New Zealand cuisine
 source_urls:
 - http://ahi.restaurant
-sources: []
-supplies_to: []
-also_referenced_by: []
-last_checked: "2025-12-12"
+last_checked: '2025-12-12'
 practices_tags:
 - local
 - seasonal
@@ -73,5 +69,9 @@ services_tags:
 specialty_tags:
 - open-fire-cooking
 - new-zealand-produce
-relationships_declared: false
+sourced_from:
+- ahi-kitchen-garden
+- regional-growers-and-fishers
+supplies_to: []
+relationships_declared: true
 ---

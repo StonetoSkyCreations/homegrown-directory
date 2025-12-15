@@ -4,8 +4,7 @@ title: Uma Rapiti Farm
 slug: uma-rapiti-farm
 name: Uma Rapiti Farm
 type: Farm
-description: Small organic farm on Waiheke Island practising permaculture and supplying
-  organic produce.
+description: Small organic farm on Waiheke Island practising permaculture and supplying organic produce.
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
@@ -28,12 +27,12 @@ subtype: mixed
 source_urls: []
 lat: -36.79310825
 lon: 175.08838633700125
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -35,8 +35,6 @@ city: Brisbane
 lat: -27.4775637
 lon: 153.0113518
 title: Harris Farm Markets (West End)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,6 +42,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Inner-city market grocer with organic options, local produce, and specialty deli lines.

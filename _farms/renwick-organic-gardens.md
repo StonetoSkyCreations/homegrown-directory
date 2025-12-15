@@ -17,20 +17,20 @@ products:
 services:
 - Farm stand
 - Wholesale
-hours: Gate sales Dec–Jun
+hours: "Gate sales Dec\u2013Jun"
 website: ''
 email: windsongorchard@gmail.com
 phone: +64 21 236 7783
 description: Organic gardens supplying fresh produce around Renwick.
 subtype: market-garden
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Local organic grower providing vegetables and herbs from Renwick. Source: user-supplied list

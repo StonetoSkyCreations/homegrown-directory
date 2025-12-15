@@ -5,8 +5,7 @@ name: Ballarat Farmers Market
 brand: Ballarat Farmers Market
 type: market
 category: market
-description: Monthly market at Lake Wendouree featuring certified organic seasonal
-  produce, free-range eggs, honey, and artisan baked goods.
+description: Monthly market at Lake Wendouree featuring certified organic seasonal produce, free-range eggs, honey, and artisan baked goods.
 country: AU
 country_slug: australia
 region: Victoria
@@ -41,14 +40,14 @@ geo_last_verified: '2025-12-14'
 geo_label: Lake Wendouree
 geo_query: Lake Wendouree, Ballarat, Victoria, AU
 title: Ballarat Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Lakefront farmers market showcasing organic produce and artisan foods from the Ballarat region.

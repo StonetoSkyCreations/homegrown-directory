@@ -7,8 +7,7 @@ country: New Zealand
 region: Auckland
 city: Glen Eden
 address: 39 Glenmall Place, Glen Eden, Auckland
-description: Eco‑friendly grocery stocking organic fresh fruit, vegetables, meat and
-  bulk refills, with fair‑trade and spray‑free products.
+description: "Eco\u2011friendly grocery stocking organic fresh fruit, vegetables, meat and bulk refills, with fair\u2011trade and spray\u2011free products."
 practices:
 - Organic
 - Spray-free
@@ -17,7 +16,7 @@ products:
 - Fruit and vegetables
 - Meat
 - Bulk refills
-- Eco‑friendly products
+- "Eco\u2011friendly products"
 services:
 - Retail grocery
 - Refillery
@@ -35,12 +34,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: 37-39
 geo_query: 39 Glenmall Place, Glen Eden, Auckland, Glen Eden, Auckland, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

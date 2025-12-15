@@ -31,8 +31,6 @@ Supplies certified organic produce from Mapua, Tasman. Source: user-supplied lis
 lat: -41.25321
 lon: 173.0962191
 title: Mapua Organics
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -40,5 +38,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -6,8 +6,7 @@ brand: Naturally Organic
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Invercargill organic store with certified organic produce, wholefoods,
-  and supplements.
+description: Invercargill organic store with certified organic produce, wholefoods, and supplements.
 country: NZ
 country_slug: new-zealand
 region: Southland
@@ -29,8 +28,7 @@ last_checked: ''
 notes: ''
 published: true
 city: Invercargill
-Organic grocer in Invercargill stocking certified organic produce, wholefoods, and health products. Source: user-supplied
-  list
+Organic grocer in Invercargill stocking certified organic produce, wholefoods, and health products. Source: user-supplied list
 lat: -46.4119821
 lon: 168.3482851
 geo_precision: exact
@@ -39,8 +37,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '33'
 geo_query: 33 Esk Street, Invercargill, Southland, New Zealand
 title: Naturally Organic
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -48,5 +44,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

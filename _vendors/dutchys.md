@@ -6,11 +6,10 @@ type: food-truck
 subtype: food-truck
 country_slug: new-zealand
 country: New Zealand
-region: Manawatū-Whanganui
+region: "Manawat\u016B-Whanganui"
 city: Levin
-address: Levin and Ōtaki area, Lower North Island
-description: Family‑run food truck using small local suppliers, hand‑cut chips, locally
-  pressed beef and organic salad grown up the road.
+address: "Levin and \u014Ctaki area, Lower North Island"
+description: "Family\u2011run food truck using small local suppliers, hand\u2011cut chips, locally pressed beef and organic salad grown up the road."
 practices:
 - Organic
 - Locally sourced
@@ -29,12 +28,12 @@ hours: ''
 lat: -40.6218161
 lon: 175.2865854
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

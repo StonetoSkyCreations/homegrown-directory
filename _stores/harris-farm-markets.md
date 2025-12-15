@@ -8,18 +8,13 @@ city: Multiple
 country: Australia
 country_slug: australia
 description: Brand umbrella for Harris Farm Markets grocery stores in Queensland.
-long_description: Harris Farm Markets operates several Queensland grocery locations
-  featuring fresh produce, deli items, and specialty foods. The brand highlights local
-  sourcing and a market-style shopping experience across its sites. This umbrella
-  entry links the Queensland stores under one brand reference. Details to be verified.
+long_description: Harris Farm Markets operates several Queensland grocery locations featuring fresh produce, deli items, and specialty foods. The brand highlights local sourcing and a market-style shopping experience across its sites. This umbrella entry links the Queensland stores under one brand reference. Details to be verified.
 locations:
 - harris-farm-west-end
 - harris-farm-isle-of-capri
 - harris-farm-clayfield
 lat: ''
 lon: ''
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products: []
@@ -31,5 +26,7 @@ specialty_tags:
 - umbrella
 - multi-location
 source_urls: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

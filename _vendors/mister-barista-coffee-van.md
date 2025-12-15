@@ -9,8 +9,7 @@ country: New Zealand
 region: Auckland
 city: Greenhithe
 address: 1 Greenhithe Road, Greenhithe, Auckland 0632
-description: Mobile coffee van serving the Auckland region with premium, organically
-  sourced beans; all coffee is organic and fair trade, ethically sourced.
+description: Mobile coffee van serving the Auckland region with premium, organically sourced beans; all coffee is organic and fair trade, ethically sourced.
 practices:
 - Organic
 - Fair trade
@@ -32,14 +31,13 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '1'
-geo_query: 1 Greenhithe Road, Greenhithe, Auckland 0632, Greenhithe, Auckland, New
-  Zealand
-sources: []
-supplies_to: []
+geo_query: 1 Greenhithe Road, Greenhithe, Auckland 0632, Greenhithe, Auckland, New Zealand
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

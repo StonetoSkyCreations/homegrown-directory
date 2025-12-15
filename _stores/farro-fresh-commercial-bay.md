@@ -6,7 +6,7 @@ brand: Farro Fresh Commercial Bay
 type: supermarket
 subtype: supermarket
 category: retailer
-description: Farro Fresh – city-center boutique branch with organic selection
+description: "Farro Fresh \u2013 city-center boutique branch with organic selection"
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -30,8 +30,6 @@ city: Auckland
 lat: -36.849193
 lon: 174.764111
 title: Farro Fresh Commercial Bay
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -39,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

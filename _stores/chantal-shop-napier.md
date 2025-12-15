@@ -28,8 +28,6 @@ source_urls:
 last_checked: Chantal Shop contact
 notes: Retail
 city: Napier
-sources:
-- chantal-organics
 lat: -39.489251
 geo_precision: exact
 geo_source: nominatim
@@ -37,7 +35,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Chantal Shop
 geo_query: 45 Hastings Street, Napier, Hawke's Bay, New Zealand
 title: Chantal Shop (Napier)
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -45,5 +42,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- chantal-organics
+supplies_to: []
 relationships_declared: true
 ---

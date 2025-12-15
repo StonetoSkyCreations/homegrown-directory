@@ -31,8 +31,6 @@ city: Auckland
 lat: -36.852095
 lon: 174.7631803
 title: Daily Bread
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products: []
@@ -41,5 +39,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

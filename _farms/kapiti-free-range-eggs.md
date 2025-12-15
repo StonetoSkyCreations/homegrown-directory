@@ -17,8 +17,7 @@ website: ''
 email: ''
 phone: ''
 description: Free-range egg producer on the Kapiti Coast.
-Produces free-range eggs for local outlets around the Kapiti Coast. Source: user-supplied
-  list
+Produces free-range eggs for local outlets around the Kapiti Coast. Source: user-supplied list
 subtype: eggs
 source_urls: []
 lat: -40.9047357
@@ -28,12 +27,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Kapiti Coast Airport
 geo_query: Kapiti Coast, Wellington, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

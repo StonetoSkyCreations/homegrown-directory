@@ -26,16 +26,16 @@ certifications:
 supply_role: Producer; Exporter
 source_urls:
 - https://www.organictradenz.com/member-page/
-hours: Mon–Fri 09:00–17:00; Sat 10:00–17:00; Sun closed
+hours: "Mon\u2013Fri 09:00\u201317:00; Sat 10:00\u201317:00; Sun closed"
 last_checked: '2025-12-09'
 notes: ''
 subtype: vineyard
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

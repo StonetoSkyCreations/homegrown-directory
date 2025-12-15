@@ -22,8 +22,7 @@ email: info@mudbrick.co.nz
 phone: +64 9 372 9050
 social_links: []
 hours: ''
-description: Vineyard and restaurant practising organic viticulture and transitioning
-  to certified organic winegrowing, with a farm-to-table ethos.
+description: Vineyard and restaurant practising organic viticulture and transitioning to certified organic winegrowing, with a farm-to-table ethos.
 subtype: restaurant
 source_urls: []
 lat: -36.7924994
@@ -33,12 +32,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '126'
 geo_query: 126 Church Bay Road, Oneroa, Waiheke Island, Oneroa, Auckland, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

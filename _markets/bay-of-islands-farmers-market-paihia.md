@@ -1,11 +1,11 @@
 ---
 layout: listing
 slug: bay-of-islands-farmers-market-paihia
-name: Bay of Islands Farmers Market – Paihia
-brand: Bay of Islands Farmers Market – Paihia
+name: "Bay of Islands Farmers Market \u2013 Paihia"
+brand: "Bay of Islands Farmers Market \u2013 Paihia"
 type: market
 category: market
-description: Local farmers’ market featuring Far North growers (Paihia site)
+description: "Local farmers\u2019 market featuring Far North growers (Paihia site)"
 country: NZ
 country_slug: new-zealand
 region: Northland
@@ -24,21 +24,21 @@ products: []
 market_days:
 - Market
 source_urls:
-- Thursdays 2pm–5:30pm (Paihia)
+- "Thursdays 2pm\u20135:30pm (Paihia)"
 last_checked: FMNZ member list
 notes: Market
 city: Paihia
 practices_tags:
 - local
 lat: -35.2818255
-title: Bay of Islands Farmers Market – Paihia
-sources: []
-supplies_to: []
+title: "Bay of Islands Farmers Market \u2013 Paihia"
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

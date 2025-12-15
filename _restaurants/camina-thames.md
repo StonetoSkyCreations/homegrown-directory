@@ -18,20 +18,18 @@ hours: ''
 website: ''
 email: ''
 phone: ''
-description: Thames restaurant celebrating local, sustainable ingredients with produce
-  from Pakaraka Permaculture.
-Menu built around local and sustainable ingredients, including organic produce from Pakaraka Permaculture. Source: user-supplied
-  list
+description: Thames restaurant celebrating local, sustainable ingredients with produce from Pakaraka Permaculture.
+Menu built around local and sustainable ingredients, including organic produce from Pakaraka Permaculture. Source: user-supplied list
 subtype: restaurant
 source_urls: []
 lat: -37.137983
 lon: 175.5418037
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

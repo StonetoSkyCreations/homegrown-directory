@@ -6,7 +6,7 @@ brand: Commonsense Kilbirnie
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Commonsense Organics – organic grocery & health products
+description: "Commonsense Organics \u2013 organic grocery & health products"
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -37,8 +37,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Commonsense Organics
 geo_query: 37 Rongotai Road, Wellington, Wellington, New Zealand
 title: Commonsense Kilbirnie
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -46,5 +44,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

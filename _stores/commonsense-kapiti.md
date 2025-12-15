@@ -6,7 +6,7 @@ brand: Commonsense Kapiti
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Commonsense Organics – organic grocery (Kapiti Coast)
+description: "Commonsense Organics \u2013 organic grocery (Kapiti Coast)"
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -32,8 +32,6 @@ rating_average: 5
 rating_count: 1
 lat: -40.803757
 title: Commonsense Kapiti
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -41,5 +39,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

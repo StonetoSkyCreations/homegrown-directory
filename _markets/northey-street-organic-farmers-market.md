@@ -5,8 +5,7 @@ name: Northey Street Organic Farmers Market
 brand: Northey Street Organic Farmers Market
 type: market
 category: market
-description: Brisbane’s certified organic Sunday market with fresh produce and artisan
-  foods at Northey Street City Farm.
+description: "Brisbane\u2019s certified organic Sunday market with fresh produce and artisan foods at Northey Street City Farm."
 country: AU
 country_slug: australia
 region: Queensland
@@ -25,7 +24,7 @@ products:
 - Organic vegetables
 - Artisan foods
 market_days:
-- Sun 6–11am
+- "Sun 6\u201311am"
 source_urls:
 - https://www.nscf.org.au/organic-farmers-market/
 last_checked: '2025-12-09'
@@ -37,14 +36,14 @@ practices_tags:
 lat: -27.483156
 lon: 153.00594789581197
 title: Northey Street Organic Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Certified organic Sunday market showcasing local growers, orchardists, and artisan food producers.

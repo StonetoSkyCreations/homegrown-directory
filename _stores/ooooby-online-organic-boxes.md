@@ -6,7 +6,7 @@ brand: Ooooby (Online Organic Boxes)
 type: community-hub
 subtype: specialty-grocer
 category: retailer
-description: Ooooby (Out Of Our Own Backyards) – organic produce box delivery service
+description: "Ooooby (Out Of Our Own Backyards) \u2013 organic produce box delivery service"
 country: NZ
 country_slug: new-zealand
 region: Canterbury
@@ -31,8 +31,6 @@ city: Christchurch
 lat: -43.530955
 lon: 172.6364343
 title: Ooooby (Online Organic Boxes)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -40,5 +38,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -23,8 +23,7 @@ hours: ''
 website: https://minoripantry.com.au
 email: orders@minoripantry.com.au
 phone: 0456 359 090
-description: Wholefoods café serving organic coffee and meals with locally sourced
-  dairy and ingredients.
+description: "Wholefoods caf\xE9 serving organic coffee and meals with locally sourced dairy and ingredients."
 source_urls: []
 lat: -28.6362181
 lon: 153.0020878
@@ -33,13 +32,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Summerland Way
 geo_query: 82 Summerland Way, Kyogle, New South Wales, Australia
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Minori Pantry keeps a wholefood menu, brewing organic coffee and using local dairy and produce from around Kyogle.

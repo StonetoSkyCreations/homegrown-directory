@@ -9,8 +9,7 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Auckland (mobile)
-description: Mobile bar and coffee van using Coffee Supreme beans with organic barista
-  milk, serving premium coffee at events across Auckland.
+description: Mobile bar and coffee van using Coffee Supreme beans with organic barista milk, serving premium coffee at events across Auckland.
 practices:
 - Organic
 products:
@@ -26,14 +25,14 @@ social: ''
 hours: ''
 lat: -36.882819
 lon: 174.733469
-sources:
-- coffee-supreme
 source_urls: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- coffee-supreme
+supplies_to: []
 relationships_declared: true
 ---

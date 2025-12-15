@@ -24,14 +24,12 @@ products: []
 market_days:
 - Market
 source_urls:
-- Sundays 8am–12pm
+- "Sundays 8am\u201312pm"
 last_checked: FMNZ member list
 notes: Market
 city: Hamilton
 lat: -37.765518247193285
 title: Hamilton Farmers Market
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -39,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

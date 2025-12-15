@@ -8,8 +8,7 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 165 Racecourse Road, Riccarton Park, Christchurch
-description: New Zealand’s largest outdoor market with 200+ stalls, fresh produce,
-  food, crafts, second-hand goods, entertainment and family activities since 1989.
+description: "New Zealand\u2019s largest outdoor market with 200+ stalls, fresh produce, food, crafts, second-hand goods, entertainment and family activities since 1989."
 practices:
 - Local producers
 products:
@@ -27,7 +26,7 @@ website: https://www.riccartonmarket.co.nz
 email: office@riccartonmarket.co.nz
 phone: ''
 social: https://www.facebook.com/riccartonsundaymarket
-hours: Sunday 9:00am–2:00pm
+hours: "Sunday 9:00am\u20132:00pm"
 market_days:
 - Sunday
 lat: -43.5293956
@@ -38,11 +37,11 @@ practices_tags:
 - local
 source_urls:
 - https://www.riccartonmarket.co.nz
-sources: []
-supplies_to: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

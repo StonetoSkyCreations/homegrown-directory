@@ -25,18 +25,17 @@ hours: ''
 website: https://sippytom.com.au
 email: ''
 phone: (07) 3252 0179
-description: Teneriffe cafe featuring organic, pasture-raised eggs and line-caught
-  tuna across its brunch menu.
+description: Teneriffe cafe featuring organic, pasture-raised eggs and line-caught tuna across its brunch menu.
 source_urls: []
 lat: -27.454029
 lon: 153.048552
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Sippy Tom cooks brunch with organic pasture-raised eggs, line-caught seafood, and local produce.

@@ -7,9 +7,7 @@ country: New Zealand
 region: Tasman
 city: Ruby Bay
 address: 155 Stafford Drive, Ruby Bay, Mapua 7005
-description: Small organic shop delivering fruit and vege boxes, selling coconut oil,
-  freshly milled flour, wholefoods, bulk items, gifts and specialty health foods with
-  free local delivery.
+description: Small organic shop delivering fruit and vege boxes, selling coconut oil, freshly milled flour, wholefoods, bulk items, gifts and specialty health foods with free local delivery.
 practices:
 - Organic
 products:
@@ -33,12 +31,12 @@ lon: 173.0864512
 subtype: organic-store
 source_urls:
 - http://weeshoporganics.co.nz
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

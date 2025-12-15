@@ -7,8 +7,7 @@ country: New Zealand
 region: West Coast
 city: Westport
 address: 278 Palmerston Street, Westport 7825
-description: Family-run wholefoods grocery supplying fresh organic produce, bulk bin
-  seeds, nuts and spices, local coffee, breads, cheeses and offering home delivery.
+description: Family-run wholefoods grocery supplying fresh organic produce, bulk bin seeds, nuts and spices, local coffee, breads, cheeses and offering home delivery.
 practices:
 - Organic
 products:
@@ -28,18 +27,18 @@ website: https://www.interfood.co.nz
 email: interfood278@gmail.com
 phone: 0274 112 447
 social: ''
-hours: Mon–Thu 10am–4pm; Fri 12pm–4pm; Sat–Sun closed
+hours: "Mon\u2013Thu 10am\u20134pm; Fri 12pm\u20134pm; Sat\u2013Sun closed"
 lat: -41.7592877
 lon: 171.5993248
 subtype: specialty-grocer
 source_urls:
 - https://www.interfood.co.nz
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

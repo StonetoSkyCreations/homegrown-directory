@@ -9,8 +9,7 @@ country: New Zealand
 region: Tasman
 city: Takaka
 address: 47 Commercial Street, Takaka, Tasman
-description: Organic one-stop shop offering fresh produce, breads, bulk grains, herbs
-  and spices, snacks, teas, supplements and body-care products.
+description: Organic one-stop shop offering fresh produce, breads, bulk grains, herbs and spices, snacks, teas, supplements and body-care products.
 practices:
 - Organic
 products:
@@ -35,12 +34,12 @@ lat: -40.85874115
 lon: 172.8060379871829
 source_urls:
 - User-supplied list
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

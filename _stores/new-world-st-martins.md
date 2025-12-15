@@ -7,8 +7,7 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 92 Wilsons Road, St Martins, Christchurch 8023
-description: Mainstream supermarket with a large organic produce department and a
-  good selection of organic meat, dairy and grocery items.
+description: Mainstream supermarket with a large organic produce department and a good selection of organic meat, dairy and grocery items.
 practices:
 - organic-produce-department
 products:
@@ -30,9 +29,6 @@ social: null
 hours: 7:30am-10pm daily
 lat: -43.55747
 lon: 172.6547282
-sources:
-- streamside-organics
-sourced_from: streamside-organics
 last_checked: '2025-12-12'
 subtype: supermarket
 source_urls:
@@ -42,14 +38,15 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: New World
-geo_query: 92 Wilsons Road, St Martins, Christchurch 8023, Christchurch, Canterbury,
-  New Zealand
-supplies_to: []
+geo_query: 92 Wilsons Road, St Martins, Christchurch 8023, Christchurch, Canterbury, New Zealand
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- streamside-organics
+supplies_to: []
 relationships_declared: true
 ---
 New World St Martins is a full-service supermarket whose fresh produce department includes a substantial organic section supplied by dozens of local growers. When visited by organic advocates, about one quarter of the produce on display was certified organic, beautifully presented and clearly labelled; organic oranges, lemons, kiwifruit, avocados, berries and artichokes were featured alongside conventional vegetables. Organic meat and dairy are also available, though mixed among conventional products. The store relies on 50-60 organic farmers to keep its shelves stocked. Located on Wilsons Road, it is open seven days a week from 7:30am to 10pm and offers online shopping and catering services. Despite being a mainstream supermarket, its commitment to organic produce makes it a key stockist for Streamside Organics.

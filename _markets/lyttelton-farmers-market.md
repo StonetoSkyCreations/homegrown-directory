@@ -5,7 +5,7 @@ name: Lyttelton Farmers Market
 brand: Lyttelton Farmers Market
 type: market
 category: market
-description: Popular farmers’ market with local organic produce & crafts
+description: "Popular farmers\u2019 market with local organic produce & crafts"
 country: NZ
 country_slug: new-zealand
 region: Canterbury
@@ -23,13 +23,8 @@ sourcing_tags:
 products: []
 market_days:
 - Market
-sources:
-- untamed-earth
-- revive-water-kefir
-- wairiri-buffalo-canterbury
-- mikaku-tea
 source_urls:
-- Saturdays 10am–1pm
+- "Saturdays 10am\u20131pm"
 last_checked: FMNZ member list
 notes: Market
 city: Christchurch
@@ -41,13 +36,18 @@ practices_tags:
 - local
 lat: -43.6024834
 title: Lyttelton Farmers Market
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- untamed-earth
+- revive-water-kefir
+- wairiri-buffalo-canterbury
+- mikaku-tea
+supplies_to: []
 relationships_declared: true
 ---
 The Lyttelton Farmers’ Market sits in the heart of the port town, surrounded by steep hills, sea air, and the hum of a community that knows its growers by name. Saturday mornings see the main street transformed into a lively, compact marketplace where local producers line the road with seasonal vegetables, fruit, bread, preserves, chutneys, honey, seedlings, and handmade goods.

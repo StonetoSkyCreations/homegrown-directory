@@ -7,9 +7,7 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 6 Beckford Road, St Martins, Christchurch
-description: 'Neighbourhood bakery shop near Hansen Park offering pastries, sourdough
-  bread, pies, rolls, toasties, sandwiches, and desserts. Serves C4 Krank blend coffee
-  with fresh bread and pastries delivered daily.
+description: 'Neighbourhood bakery shop near Hansen Park offering pastries, sourdough bread, pies, rolls, toasties, sandwiches, and desserts. Serves C4 Krank blend coffee with fresh bread and pastries delivered daily.
 
   '
 practices:
@@ -35,12 +33,9 @@ website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
 phone: +64 3-331 6109
 social: https://www.facebook.com/bohemianbakerychristchurch/, https://www.instagram.com/bohemianbakerychristchurch
-hours: Mon–Sun 8:00–15:30
+hours: "Mon\u2013Sun 8:00\u201315:30"
 lat: -43.5585222
 lon: 172.6550203
-sources:
-- farmers-mill
-- milmore-downs
 subtype: specialty-grocer
 source_urls: []
 brand_slug: bohemian-bakery
@@ -48,14 +43,16 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '6'
-geo_query: 6 Beckford Road, St Martins, Christchurch, Christchurch, Canterbury, New
-  Zealand
-supplies_to: []
+geo_query: 6 Beckford Road, St Martins, Christchurch, Christchurch, Canterbury, New Zealand
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- farmers-mill
+- milmore-downs
+supplies_to: []
 relationships_declared: true
 ---
 St Martins is Bohemian Bakery’s neighbourhood hub — a friendly corner stop positioned beside New World and moments from Hansen Park, where dog-walkers, families, and commuters drift through from dawn to afternoon.

@@ -28,14 +28,13 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '1261'
-geo_query: 1261 Coatesville-Riverhead Highway, Riverhead, Auckland 0892, Riverhead,
-  Auckland, New Zealand
-sources: []
-supplies_to: []
+geo_query: 1261 Coatesville-Riverhead Highway, Riverhead, Auckland 0892, Riverhead, Auckland, New Zealand
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

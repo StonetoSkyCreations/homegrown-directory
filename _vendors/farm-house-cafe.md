@@ -1,12 +1,11 @@
 ---
 layout: vendor
 slug: farm-house-cafe
-name: Farm House Café
+name: "Farm House Caf\xE9"
 type: cafe
 subtype: cafe
 category: eatery
-description: Paddock-to-plate café on a farm with buffalo dairy, orchard, and honey;
-  serves seasonal local meals.
+description: "Paddock-to-plate caf\xE9 on a farm with buffalo dairy, orchard, and honey; serves seasonal local meals."
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -30,9 +29,7 @@ notes: ''
 city: Clevedon
 lat: -36.9910022
 lon: 175.0368658
-title: Farm House Café
-sources: []
-supplies_to: []
+title: "Farm House Caf\xE9"
 practices: []
 practices_tags: []
 products: []
@@ -41,5 +38,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

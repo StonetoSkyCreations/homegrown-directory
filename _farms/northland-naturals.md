@@ -30,12 +30,12 @@ hours: Tours by arrangement only
 last_checked: '2025-12-09'
 notes: ''
 subtype: eggs
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

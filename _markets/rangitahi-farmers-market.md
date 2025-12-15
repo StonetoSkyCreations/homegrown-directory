@@ -25,8 +25,7 @@ last_checked: ''
 notes: ''
 published: true
 city: Raglan
-? Raglan market with local producers such as Soul Food Farm, Dreamview Creamery, and
-  Hunt & Gather Bee Co; runs plastic-free with a focus on local supply. Source
+? Raglan market with local producers such as Soul Food Farm, Dreamview Creamery, and Hunt & Gather Bee Co; runs plastic-free with a focus on local supply. Source
 : https://www.rangitahi.co.nz/journal/rangitahi-farmers-market
 practices_tags:
 - local
@@ -38,13 +37,13 @@ geo_last_verified: '2025-12-14'
 geo_label: '29'
 geo_query: 29 Rangitahi Road, Raglan, Waikato, New Zealand
 title: Rangitahi Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

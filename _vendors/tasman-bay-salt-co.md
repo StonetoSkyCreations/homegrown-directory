@@ -26,13 +26,13 @@ last_checked: ''
 notes: ''
 Produces wild-harvested sea salt from Tasman Bay, solar evaporated with no additives. Source: https://tasmanbaysalt.co.nz/
 title: Tasman Bay Salt Co.
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

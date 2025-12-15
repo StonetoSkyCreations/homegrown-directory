@@ -5,8 +5,7 @@ name: Mansfield Farmers Market
 brand: Mansfield Farmers Market
 type: market
 category: market
-description: Regional market offering organically and sustainably grown produce, including
-  certified organic fruits, vegetables, meats, and artisanal goods.
+description: Regional market offering organically and sustainably grown produce, including certified organic fruits, vegetables, meats, and artisanal goods.
 country: AU
 country_slug: australia
 region: Victoria
@@ -43,14 +42,14 @@ geo_last_verified: '2025-12-14'
 geo_label: High Street
 geo_query: High Street, Mansfield, Victoria, AU
 title: Mansfield Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Regional farmers market highlighting organic growers and seasonal foods from Mansfield district.

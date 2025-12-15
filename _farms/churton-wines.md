@@ -24,13 +24,13 @@ phone: +64 3 572 4007
 description: Certified organic and biodynamic vineyard in the Waihopai Valley.
 subtype: vineyard
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Produces organic and biodynamic wines from estate vineyards in Marlborough. Source: https://www.churtonwines.co.nz/

@@ -5,8 +5,7 @@ name: St Georges Restaurant
 type: restaurant
 subtype: restaurant
 category: eatery
-description: Farm-to-table dining where around 90% of produce comes from on-site organic
-  gardens.
+description: Farm-to-table dining where around 90% of produce comes from on-site organic gardens.
 country: NZ
 country_slug: new-zealand
 region: Hawke's Bay
@@ -31,8 +30,6 @@ city: Havelock North
 lat: -39.6702108
 lon: 176.8771367
 title: St Georges Restaurant
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products: []
@@ -41,5 +38,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

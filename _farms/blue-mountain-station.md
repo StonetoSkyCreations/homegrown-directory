@@ -4,8 +4,7 @@ title: Blue Mountain Station
 slug: blue-mountain-station
 name: Blue Mountain Station
 type: Farm
-description: Pasture-raised livestock farm focused on free-range, ethically raised
-  animals with low-stress regenerative grazing methods.
+description: Pasture-raised livestock farm focused on free-range, ethically raised animals with low-stress regenerative grazing methods.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -34,11 +33,11 @@ products_tags:
 subtype: livestock
 lat: -45.9425171
 lon: 169.2619453
-sources: []
-supplies_to: []
 practices: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -5,7 +5,7 @@ name: Southern Farmers Market (Invercargill)
 brand: Southern Farmers Market (Invercargill)
 type: market
 category: market
-description: Community farmers’ market with local produce (some spray-free/organic)
+description: "Community farmers\u2019 market with local produce (some spray-free/organic)"
 country: NZ
 country_slug: new-zealand
 region: Southland
@@ -34,13 +34,13 @@ practices_tags:
 - local
 lat: -46.4274407
 title: Southern Farmers Market (Invercargill)
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

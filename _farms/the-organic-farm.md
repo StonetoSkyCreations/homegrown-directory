@@ -33,11 +33,11 @@ products_tags:
 subtype: livestock
 lat: -39.6407747
 lon: 176.8399474
-sources: []
-supplies_to: []
 practices: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

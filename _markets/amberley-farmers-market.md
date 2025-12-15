@@ -5,7 +5,7 @@ name: Amberley Farmers Market
 brand: Amberley Farmers Market
 type: market
 category: market
-description: Local farmers’ market serving North Canterbury (organic produce available)
+description: "Local farmers\u2019 market serving North Canterbury (organic produce available)"
 country: NZ
 country_slug: new-zealand
 region: Canterbury
@@ -24,7 +24,7 @@ products: []
 market_days:
 - Market
 source_urls:
-- Saturdays 9am–12:30pm
+- "Saturdays 9am\u201312:30pm"
 last_checked: FMNZ member list
 notes: Market
 city: Hurunui
@@ -35,13 +35,13 @@ practices_tags:
 - local
 lat: -42.8791219
 title: Amberley Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -15,10 +15,8 @@ hours: ''
 website: ''
 email: ''
 phone: ''
-description: Regenerative merino farm producing pasture-raised meat in the Cardrona
-  Valley.
-Farm using regenerative practices for merino sheep, emphasising pasture-raised, high-welfare meat. Source: user-supplied
-  list
+description: Regenerative merino farm producing pasture-raised meat in the Cardrona Valley.
+Farm using regenerative practices for merino sheep, emphasising pasture-raised, high-welfare meat. Source: user-supplied list
 products_tags:
 - meat
 subtype: livestock
@@ -30,11 +28,11 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Cardrona Valley Road
 geo_query: Cardrona Valley, Otago, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

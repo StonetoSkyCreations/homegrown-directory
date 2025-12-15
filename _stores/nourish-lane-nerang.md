@@ -33,8 +33,6 @@ city: Gold Coast
 lat: -28.000106
 lon: 153.338501
 title: Nourish Lane (Nerang)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -42,6 +40,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Health food shop offering organic pantry lines, bulk refills, and wellness products.

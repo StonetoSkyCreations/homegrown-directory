@@ -4,8 +4,7 @@ title: Artemis Ltd
 slug: artemis-ltd
 name: Artemis Ltd
 type: Business
-description: Producer of herbal teas and remedies using certified organic ingredients
-  from Dunedin.
+description: Producer of herbal teas and remedies using certified organic ingredients from Dunedin.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -30,12 +29,12 @@ notes: ''
 subtype: market-garden
 lat: -45.8740984
 lon: 170.5035755
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

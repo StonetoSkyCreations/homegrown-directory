@@ -26,16 +26,16 @@ certifications:
 supply_role: Producer; Exporter
 source_urls:
 - https://biodynamic.org.nz/demeter/demeter-producers
-hours: Mon–Sat (wine tastings)
+hours: "Mon\u2013Sat (wine tastings)"
 last_checked: '2025-12-09'
 notes: ''
 subtype: vineyard
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

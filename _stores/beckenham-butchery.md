@@ -6,8 +6,7 @@ collection: stores
 name: Beckenham Butchery
 type: Butcher
 subtype: specialty-grocer
-description: Certified organic butcher in Beckenham offering pasture-raised meats
-  with a whole-animal, nose-to-tail approach.
+description: Certified organic butcher in Beckenham offering pasture-raised meats with a whole-animal, nose-to-tail approach.
 country: New Zealand
 country_slug: new-zealand
 region: Canterbury
@@ -41,24 +40,23 @@ source_urls: []
 hours: ''
 last_checked: user-submitted
 notes: ''
-sources:
-- bostock-brothers
-- new-zealand-organic-meats
-- wash-creek-farm
-- terrace-edge
 lat: -43.5608289
 lon: 172.6369014
 geo_precision: approx
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Colombo Street
-geo_query: 140 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Canterbury,
-  New Zealand
-supplies_to: []
+geo_query: 140 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Canterbury, New Zealand
 practices: []
 products_tags: []
 services_tags: []
 specialty_tags: []
+sourced_from:
+- bostock-brothers
+- new-zealand-organic-meats
+- wash-creek-farm
+- terrace-edge
+supplies_to: []
 relationships_declared: true
 ---
 Beckenham Butchery is a cornerstone of organic food culture in Otautahi Christchurch -- a fully certified organic butcher committed to ethical sourcing, whole-animal respect, and transparent origins. Located right next door to Untamed Earth Organic Grocer in Beckenham, it creates a rare pairing: organic meat and organic produce side by side. For customers, it means one simple thing -- you can complete your entire organic shop in one stop, confident that everything you are buying has been raised or grown with integrity.

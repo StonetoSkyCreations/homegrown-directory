@@ -6,10 +6,10 @@ brand: Bin Inn Feilding
 type: bulk-refillery
 subtype: bulk-refillery
 category: retailer
-description: Bin Inn – bulk wholefoods & specialty grocery
+description: "Bin Inn \u2013 bulk wholefoods & specialty grocery"
 country: NZ
 country_slug: new-zealand
-region: Manawatū-Whanganui
+region: "Manawat\u016B-Whanganui"
 suburb: Feilding
 address: 25 Fergusson Street
 postcode: '4702'
@@ -26,17 +26,15 @@ source_urls:
 - Bin Inn Feilding
 last_checked: '2025-12-09'
 notes: ''
-city: Manawatū
+city: "Manawat\u016B"
 lat: -39.9268455
 lon: 175.0311316
 geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '25'
-geo_query: 25 Fergusson Street, Manawatū, Manawatū-Whanganui, New Zealand
+geo_query: "25 Fergusson Street, Manawat\u016B, Manawat\u016B-Whanganui, New Zealand"
 title: Bin Inn Feilding
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +42,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -5,9 +5,7 @@ slug: the-foodland-organic-store
 name: The Foodland Organic Store
 type: organic-store
 subtype: organic-store
-description: Indian-owned organic grocery offering a wide range of certified organic
-  and natural bulk foods, pulses, grains, flours, dried fruit, nuts, seeds, canned
-  goods and pantry staples.
+description: Indian-owned organic grocery offering a wide range of certified organic and natural bulk foods, pulses, grains, flours, dried fruit, nuts, seeds, canned goods and pantry staples.
 country: New Zealand
 country_slug: new-zealand
 region: Canterbury
@@ -33,17 +31,17 @@ services:
 - Retail store
 - Bulk organic foods
 - Online ordering
-hours: Mon–Sun 9am–8pm
+hours: "Mon\u2013Sun 9am\u20138pm"
 published: true
 source_urls: []
 lat: -43.539793
 lon: 172.6519236
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

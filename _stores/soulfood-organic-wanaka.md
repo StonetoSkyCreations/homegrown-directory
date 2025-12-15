@@ -6,11 +6,11 @@ brand: Soulfood Organic
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Wānaka organic store and cafe focused on wholefoods.
+description: "W\u0101naka organic store and cafe focused on wholefoods."
 country: NZ
 country_slug: new-zealand
 region: Otago
-address: "74 Ardmore Street, Wānaka 9305"
+address: "74 Ardmore Street, W\u0101naka 9305"
 phone: ''
 email: ''
 website: ''
@@ -27,14 +27,11 @@ source_urls:
 last_checked: ''
 notes: ''
 published: true
-city: Wānaka
-Local organic store and cafe in Wānaka serving and selling organic wholefoods. Source: user-supplied
-  list
+city: "W\u0101naka"
+"Local organic store and cafe in W\u0101naka serving and selling organic wholefoods. Source": user-supplied list
 lat: -44.6941691
 lon: 169.1364637
 title: Soulfood Organic
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -42,5 +39,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

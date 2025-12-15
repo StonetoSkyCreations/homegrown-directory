@@ -1,6 +1,6 @@
 ---
 layout: vendor
-title: Oh Açaí
+title: "Oh A\xE7a\xED"
 slug: oh-acai
 type: food-truck
 subtype: food-truck
@@ -9,12 +9,11 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Britomart Market, Auckland
-description: Food stall serving organic açaí bowls, smoothies and matcha drinks at
-  the Saturday Britomart Market and the Mokki store in Commercial Bay.
+description: "Food stall serving organic a\xE7a\xED bowls, smoothies and matcha drinks at the Saturday Britomart Market and the Mokki store in Commercial Bay."
 practices:
 - Organic
 products:
-- Açaí bowls
+- "A\xE7a\xED bowls"
 - Smoothies
 - Matcha drinks
 services:
@@ -27,12 +26,12 @@ hours: ''
 lat: -36.844968
 lon: 174.770663
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

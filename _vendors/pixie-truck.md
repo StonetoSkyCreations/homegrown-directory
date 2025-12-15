@@ -9,12 +9,11 @@ country: New Zealand
 region: Hawke's Bay
 city: Havelock North
 address: 10 Napier Road, Havelock North 4130
-description: Restored 1963 Land Rover food truck serving fresh organic açaí bowls
-  and coffee.
+description: "Restored 1963 Land Rover food truck serving fresh organic a\xE7a\xED bowls and coffee."
 practices:
 - Organic
 products:
-- Açaí bowls
+- "A\xE7a\xED bowls"
 - Coffee
 - Smoothies
 services:
@@ -23,7 +22,7 @@ website: https://pixiebowls.co.nz
 email: info@pixiebowls.co.nz
 phone: +64 27 870 9954
 social: ''
-hours: Mon–Fri 7:30am–2pm; Sat–Sun 8am–2pm
+hours: "Mon\u2013Fri 7:30am\u20132pm; Sat\u2013Sun 8am\u20132pm"
 lat: -39.6695469
 lon: 176.8779825
 source_urls: []
@@ -32,12 +31,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Diva's
 geo_query: 10 Napier Road, Havelock North 4130, Havelock North, Hawke's Bay, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

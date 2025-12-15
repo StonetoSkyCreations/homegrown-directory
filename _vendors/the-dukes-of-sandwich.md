@@ -9,8 +9,7 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: The Commons, corner of Kilmore & Durham Streets, Christchurch 8013
-description: Gourmet sandwich food truck serving organic sandwiches and salads with
-  organic beef, free-range pork and locally sourced ingredients.
+description: Gourmet sandwich food truck serving organic sandwiches and salads with organic beef, free-range pork and locally sourced ingredients.
 practices:
 - Organic
 - Free-range
@@ -31,12 +30,12 @@ hours: ''
 lat: -43.529685
 lon: 172.632707
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

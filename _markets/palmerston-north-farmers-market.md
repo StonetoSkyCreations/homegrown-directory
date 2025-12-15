@@ -5,11 +5,10 @@ name: Palmerston North Farmers Market
 brand: Palmerston North Farmers Market
 type: market
 category: market
-description: Sunday market at The Square featuring local growers with organic and
-  free-range options.
+description: Sunday market at The Square featuring local growers with organic and free-range options.
 country: NZ
 country_slug: new-zealand
-region: Manawatū-Whanganui
+region: "Manawat\u016B-Whanganui"
 address: The Square
 phone: ''
 email: ''
@@ -27,8 +26,7 @@ last_checked: ''
 notes: ''
 published: true
 city: Palmerston North
-Weekly market in central Palmerston North showcasing local producers, including organic and free-range vendors. Source: user-supplied
-  list
+Weekly market in central Palmerston North showcasing local producers, including organic and free-range vendors. Source: user-supplied list
 practices_tags:
 - organic
 - local
@@ -38,15 +36,15 @@ geo_precision: approx
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: The Square
-geo_query: The Square, Palmerston North, Manawatū-Whanganui, New Zealand
+geo_query: "The Square, Palmerston North, Manawat\u016B-Whanganui, New Zealand"
 title: Palmerston North Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

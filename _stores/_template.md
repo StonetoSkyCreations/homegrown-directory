@@ -20,13 +20,13 @@ phone: ''
 description: One-sentence description for cards and SEO.
 subtype: co-op
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Explain what the store carries, how it sources, and any refill or provenance notes. Use `sources` to link back to the producers that stock the shelves.

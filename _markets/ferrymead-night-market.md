@@ -8,9 +8,7 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: Ferrymead Heritage Park, 50 Ferrymead Park Drive, Heathcote, Christchurch
-description: Monthly night market at Ferrymead Heritage Park with food stalls, craft
-  vendors, beer and cider, live music, tram and train rides, and access to heritage
-  attractions.
+description: Monthly night market at Ferrymead Heritage Park with food stalls, craft vendors, beer and cider, live music, tram and train rides, and access to heritage attractions.
 practices:
 - Local
 - Artisan
@@ -28,7 +26,7 @@ website: https://www.ferrymead.org.nz
 email: info@ferrymead.org.nz
 phone: 03 384 1970
 social: https://www.facebook.com/ferrymeadheritagepark/
-hours: 'First Saturday monthly (except Jan/Jun/Jul/Aug): 4pm–8pm'
+hours: "First Saturday monthly (except Jan/Jun/Jul/Aug): 4pm\u20138pm"
 market_days:
 - first Saturday of each month
 lat: -43.5676528
@@ -45,14 +43,13 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Ferrymead Heritage Park
-geo_query: Ferrymead Heritage Park, 50 Ferrymead Park Drive, Heathcote, Christchurch,
-  Christchurch, Canterbury, New Zealand
-sources: []
-supplies_to: []
+geo_query: Ferrymead Heritage Park, 50 Ferrymead Park Drive, Heathcote, Christchurch, Christchurch, Canterbury, New Zealand
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 The Ferrymead Night Market is part market, part festival, part living heritage experience. Held on the first Saturday of each month (except mid-winter months), it transforms the Ferrymead Heritage Park into a vibrant evening gathering filled with food stalls, craft vendors, music, and the unique charm of the old village streets lit at dusk.

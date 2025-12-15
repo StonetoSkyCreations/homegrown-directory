@@ -6,7 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Wellington
 city: Wellington
-address: "23 Kate Sheppard Place, Wellington 6011"
+address: 23 Kate Sheppard Place, Wellington 6011
 suburb: Pipitea
 practices:
 - Organic (uncertified)
@@ -20,20 +20,18 @@ hours: ''
 website: ''
 email: ''
 phone: +64 4 499 6368
-description: Pipitea cafe offering organically and locally sourced food and coffee
-  where possible.
-Committed to using organic ingredients and locally sourced food and coffee. Source: user-provided
-  listing
+description: Pipitea cafe offering organically and locally sourced food and coffee where possible.
+Committed to using organic ingredients and locally sourced food and coffee. Source: user-provided listing
 subtype: cafe
 source_urls: []
 lat: -41.27792445
 lon: 174.7787504623986
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

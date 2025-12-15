@@ -16,9 +16,6 @@ locations:
 - bellbird-bakery-merivale
 lat: ''
 lon: ''
-sources:
-- https://www.bellbirdbakery.co.nz
-supplies_to: []
 practices:
 - organic
 - spray-free
@@ -35,5 +32,9 @@ specialty_tags:
 - umbrella
 - multi-location
 source_urls: []
+sourced_from: []
+sourced_from_text:
+- https://www.bellbirdbakery.co.nz
+supplies_to: []
 relationships_declared: true
 ---

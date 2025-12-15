@@ -9,8 +9,7 @@ country: New Zealand
 region: Gisborne
 city: Gisborne
 address: 151 Grey Street, Gisborne 4010
-description: Local food cart and catering service creating grazing platters and boxes
-  from locally sourced ingredients, including freshly picked organic fruit.
+description: Local food cart and catering service creating grazing platters and boxes from locally sourced ingredients, including freshly picked organic fruit.
 practices:
 - Organic
 - Locally sourced
@@ -33,12 +32,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '151'
 geo_query: 151 Grey Street, Gisborne 4010, Gisborne, Gisborne, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

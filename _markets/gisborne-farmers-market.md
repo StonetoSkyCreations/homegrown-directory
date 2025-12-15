@@ -5,7 +5,7 @@ name: Gisborne Farmers Market
 brand: Gisborne Farmers Market
 type: market
 category: market
-description: East Coast farmers’ market showcasing local growers
+description: "East Coast farmers\u2019 market showcasing local growers"
 country: NZ
 country_slug: new-zealand
 region: Gisborne
@@ -24,7 +24,7 @@ products: []
 market_days:
 - Market
 source_urls:
-- Saturdays 9:30am–12:30pm
+- "Saturdays 9:30am\u201312:30pm"
 last_checked: FMNZ member list
 notes: Market
 city: Gisborne
@@ -32,13 +32,13 @@ practices_tags:
 - local
 lat: -38.66301550586961
 title: Gisborne Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

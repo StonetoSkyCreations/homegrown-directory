@@ -9,12 +9,11 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Auckland (mobile)
-description: Food trailer specialising in premium açaí bowls and smoothies made with
-  100% organic açaí and high-quality ingredients.
+description: "Food trailer specialising in premium a\xE7a\xED bowls and smoothies made with 100% organic a\xE7a\xED and high-quality ingredients."
 practices:
 - Organic
 products:
-- Açaí bowls
+- "A\xE7a\xED bowls"
 - Smoothies
 services:
 - Food trailer
@@ -27,12 +26,12 @@ hours: ''
 lat: -36.882819
 lon: 174.733469
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

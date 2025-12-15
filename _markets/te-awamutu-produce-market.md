@@ -24,7 +24,7 @@ products: []
 market_days:
 - Market
 source_urls:
-- Thursdays 2pm–5:30pm
+- "Thursdays 2pm\u20135:30pm"
 last_checked: FMNZ member list
 notes: Market
 city: Waipa
@@ -32,13 +32,13 @@ practices_tags:
 - local
 lat: -35.932507
 title: Te Awamutu Produce Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

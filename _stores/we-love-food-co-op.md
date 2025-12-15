@@ -6,8 +6,7 @@ brand: We Love Food
 type: co-op
 subtype: co-op
 category: retail
-description: Community produce co-op delivering fresh organic produce boxes across
-  Brisbane.
+description: Community produce co-op delivering fresh organic produce boxes across Brisbane.
 country: AU
 country_slug: australia
 region: Queensland
@@ -40,8 +39,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Wells Place
 geo_query: Wells Place, Brisbane, Queensland, AU
 title: We Love Food Co-Op
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -49,6 +46,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Organic produce box co-op connecting local growers to households across Brisbane.

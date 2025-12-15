@@ -1,12 +1,11 @@
 ---
 layout: vendor
 slug: hill-house-cafe
-name: Hill House Café
+name: "Hill House Caf\xE9"
 type: cafe
 subtype: cafe
 category: eatery
-description: City café counterpart to Farm House, using the same seasonal farm-sourced
-  ingredients.
+description: "City caf\xE9 counterpart to Farm House, using the same seasonal farm-sourced ingredients."
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -30,9 +29,7 @@ notes: ''
 city: Auckland
 lat: -36.852095
 lon: 174.7631803
-title: Hill House Café
-sources: []
-supplies_to: []
+title: "Hill House Caf\xE9"
 practices: []
 practices_tags: []
 products: []
@@ -41,5 +38,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

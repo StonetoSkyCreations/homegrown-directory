@@ -20,16 +20,14 @@ services:
 - Dine-in
 - Takeaway
 - Espresso bar
-hours: 'Kitchen: Mon–Fri 8am–2pm; Sat 9am–2pm; Sun closed. Espresso: Mon–Fri 8am–5pm;
-  Sat 9am–3pm; Sun closed.'
+hours: "Kitchen: Mon\u2013Fri 8am\u20132pm; Sat 9am\u20132pm; Sun closed. Espresso: Mon\u2013Fri 8am\u20135pm; Sat 9am\u20133pm; Sun closed."
 website: https://www.tastenature.co.nz/
 email: shop@tastenature.co.nz
 phone: 03 474 0219
 social_links:
 - https://www.facebook.com/tastenaturenz
 - https://www.instagram.com/tastenaturenz
-description: Organic café and espresso bar attached to Taste Nature, serving seasonal,
-  ethical dishes and coffee alongside the grocer.
+description: "Organic caf\xE9 and espresso bar attached to Taste Nature, serving seasonal, ethical dishes and coffee alongside the grocer."
 subtype: cafe
 source_urls: []
 lat: -45.8783023
@@ -39,13 +37,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Taste Nature
 geo_query: 131 High Street, Dunedin 9016, Dunedin, Otago, New Zealand
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Organic café and espresso bar within Taste Nature’s Dunedin space, offering seasonal plates, organic baked goods, and coffee aligned with their ethical sourcing ethos.

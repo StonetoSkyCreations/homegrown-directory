@@ -1,12 +1,11 @@
 ---
 layout: vendor
 slug: the-bikery-cafe
-name: The Bikery Café
+name: "The Bikery Caf\xE9"
 type: cafe
 subtype: cafe
 category: eatery
-description: Local-focused brunch café at the Velodrome using free-range and some
-  organic produce.
+description: "Local-focused brunch caf\xE9 at the Velodrome using free-range and some organic produce."
 country: NZ
 country_slug: new-zealand
 region: Waikato
@@ -29,9 +28,7 @@ notes: ''
 city: Cambridge
 lat: -37.8917889
 lon: 175.4691069
-title: The Bikery Café
-sources: []
-supplies_to: []
+title: "The Bikery Caf\xE9"
 practices: []
 practices_tags: []
 products: []
@@ -40,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

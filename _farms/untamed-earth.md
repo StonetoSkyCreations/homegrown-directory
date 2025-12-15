@@ -4,8 +4,7 @@ title: Untamed Earth
 slug: untamed-earth
 name: Untamed Earth
 type: Farm
-description: Certified organic farm growing spray-free vegetables and organic mushrooms
-  for their community shop and local customers across Christchurch.
+description: Certified organic farm growing spray-free vegetables and organic mushrooms for their community shop and local customers across Christchurch.
 country: New Zealand
 country_slug: new-zealand
 region: Canterbury
@@ -37,17 +36,17 @@ last_checked: user-submitted
 notes: ''
 rating_average: 5
 rating_count: 1
+subtype: market-garden
+practices: []
+products_tags: []
+services_tags: []
+specialty_tags: []
+sourced_from: []
 supplies_to:
 - ohoka-farmers-market
 - lyttelton-farmers-market
 - south-christchurch-farmers-market
 - untamed-earth-farm-shop
-subtype: market-garden
-sources: []
-practices: []
-products_tags: []
-services_tags: []
-specialty_tags: []
 relationships_declared: true
 ---
 Untamed Earth is an Otautahi-based organic farm rooted in a simple principle: when we care for the soil, the soil cares for us. Founded by Penny, Ollie, and Isaac--three growers who spent years working side by side on organic farms across Canterbury--the farm is the result of long conversations in the field about what matters, why it matters, and how food should be grown.

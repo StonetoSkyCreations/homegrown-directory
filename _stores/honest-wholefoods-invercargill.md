@@ -26,13 +26,10 @@ last_checked: ''
 notes: ''
 published: true
 city: Invercargill
-Invercargill specialty store offering bulk organic and wholefood products. Source: user-supplied
-  list
+Invercargill specialty store offering bulk organic and wholefood products. Source: user-supplied list
 lat: -46.4118465
 lon: 168.3470632
 title: Honest Wholefoods
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -40,5 +37,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

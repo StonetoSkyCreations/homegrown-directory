@@ -28,12 +28,12 @@ notes: ''
 subtype: apiary
 lat: -39.6417678
 lon: 176.8430781
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

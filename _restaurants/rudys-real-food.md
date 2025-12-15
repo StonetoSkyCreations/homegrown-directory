@@ -23,8 +23,7 @@ hours: ''
 website: https://www.rudys.space
 email: ''
 phone: 1300 174 832
-description: Organic health cafe using only organic ingredients and nutrient-dense
-  dishes in Surfers Paradise.
+description: Organic health cafe using only organic ingredients and nutrient-dense dishes in Surfers Paradise.
 source_urls: []
 lat: -28.0125923
 lon: 153.4295553
@@ -33,13 +32,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '2932'
 geo_query: 2932 Gold Coast Hwy, Gold Coast, Queensland, Australia
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Rudy's Real Food cooks organic, chemical-free meals with grass-fed ingredients for a nutrient-dense menu.

@@ -4,11 +4,10 @@ title: Wind River Organics
 slug: wind-river-organics
 country_slug: new-zealand
 country: New Zealand
-region: Manawatū-Whanganui
+region: "Manawat\u016B-Whanganui"
 city: Palmerston North
 address: 973 Fitzherbert Road East, RD1, Palmerston North
-description: Organic dairy farm on the Manawatū River certified since 2004 and committed
-  to sustainable practices.
+description: "Organic dairy farm on the Manawat\u016B River certified since 2004 and committed to sustainable practices."
 practices:
 - Certified organic
 products:
@@ -27,11 +26,11 @@ products_tags:
 subtype: dairy-farm
 source_urls:
 - Producer submission
-sources: []
-supplies_to: []
 practices_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -5,8 +5,7 @@ name: Honest Wholefood Co.
 type: producer
 subtype: cafe
 category: grocer
-description: Wānaka producer making plant-based snacks with organic ingredients where
-  possible.
+description: "W\u0101naka producer making plant-based snacks with organic ingredients where possible."
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -25,18 +24,18 @@ source_urls:
 - https://honestwholefood.co.nz/
 last_checked: ''
 notes: ''
-city: Wānaka
+city: "W\u0101naka"
 Creates plant-based snacks using organic ingredients where possible and a strong ethical sourcing focus. Source: https://honestwholefood.co.nz/
 lat: -44.6941691
 lon: 169.1364637
 title: Honest Wholefood Co.
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

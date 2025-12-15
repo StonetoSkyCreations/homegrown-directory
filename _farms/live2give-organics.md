@@ -4,7 +4,7 @@ slug: live2give-organics
 collection: farms
 country_slug: new-zealand
 country: New Zealand
-region: Manawatū-Whanganui
+region: "Manawat\u016B-Whanganui"
 city: Palmerston North
 address: 15 Cyprus Place, Fitzherbert, Palmerston North, New Zealand
 description: Regenerative organic farm using permanent ground cover and living roots to grow organic produce that supplies its own grocer and partner farms.
@@ -34,14 +34,15 @@ lat: -40.3995128
 lon: 175.6582906
 subtype: mixed
 source_urls: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-relationships_declared: true
 last_checked: '2025-12-12'
+sourced_from: []
+supplies_to: []
+relationships_declared: false
 ---
 Live2Give Organics is a social enterprise and organic farm run by two husband-and-wife teams, Robert and Naomi and Gosia and Tobi. Based in Palmerston North, they push the boundaries of regenerative and organic farming, using permanent ground cover and living roots to build soil organic matter and capture carbon. Harvests include seasonal vegetables, fruit, organic eggs, and pantry crops such as grains, nuts, seeds, pulses, and flour-ready grains, all grown with short supply chains in mind.
 

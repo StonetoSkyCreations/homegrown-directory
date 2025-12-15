@@ -5,8 +5,7 @@ slug: the-island-grocer
 name: The Island Grocer
 type: organic-store
 subtype: organic-store
-description: Local grocer offering organic and gluten-free foods, fair-trade goods
-  and spray-free vegetables, with an emphasis on ethical sourcing.
+description: Local grocer offering organic and gluten-free foods, fair-trade goods and spray-free vegetables, with an emphasis on ethical sourcing.
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
@@ -28,7 +27,7 @@ website: https://theislandgrocer.co.nz
 email: ''
 phone: +64 9 372 8866
 social_links: []
-hours: Daily 8am–6pm
+hours: "Daily 8am\u20136pm"
 published: true
 source_urls: []
 lat: -36.7817667
@@ -38,12 +37,12 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Recycle Boutique
 geo_query: 110 Ocean View Road, Oneroa, Waiheke Island, Oneroa, Auckland, New Zealand
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

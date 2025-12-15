@@ -21,12 +21,12 @@ description: One-sentence description for cards and SEO.
 practices_tags:
 - organic
 source_urls: []
-sources: []
-supplies_to: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Short paragraph about the market, its focus, and how to visit. Use `sources` to point to farms and food hubs that vend here.

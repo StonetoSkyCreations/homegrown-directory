@@ -6,7 +6,7 @@ brand: Bin Inn Kamo
 type: bulk-refillery
 subtype: bulk-refillery
 category: retailer
-description: Bin Inn – bulk wholefoods & specialty grocery (franchise)
+description: "Bin Inn \u2013 bulk wholefoods & specialty grocery (franchise)"
 country: NZ
 country_slug: new-zealand
 region: Northland
@@ -26,16 +26,14 @@ source_urls:
 - Long-running bulk foods shop
 last_checked: Bin Inn Kamo page
 notes: Retail
-city: Whangārei
+city: "Whang\u0101rei"
 lat: -35.6838312
 geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '386'
-geo_query: 386 Kamo Road, Whangārei, Northland, New Zealand
+geo_query: "386 Kamo Road, Whang\u0101rei, Northland, New Zealand"
 title: Bin Inn Kamo
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -43,5 +41,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

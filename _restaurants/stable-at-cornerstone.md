@@ -24,8 +24,7 @@ hours: ''
 website: https://stableatcornerstone.com
 email: hello@stableatcornerstone.com
 phone: ''
-description: Cafe at Cornerstone Stores sourcing ethical meats and local produce,
-  including organic beef specials.
+description: Cafe at Cornerstone Stores sourcing ethical meats and local produce, including organic beef specials.
 source_urls: []
 lat: -28.0893963
 lon: 153.4530124
@@ -34,13 +33,13 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Gold Coast Highway
 geo_query: 570 Gold Coast Highway, Gold Coast, Queensland, Australia
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Stable at Cornerstone builds breakfast and lunch plates around ethical meats, organic beef, and local produce.

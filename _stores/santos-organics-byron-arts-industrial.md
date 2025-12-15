@@ -6,7 +6,7 @@ brand: Santos Organics
 type: organic-grocery
 subtype: organic-store
 category: retail
-description: Organic bulk foods warehouse store in Byron’s Arts & Industrial precinct.
+description: "Organic bulk foods warehouse store in Byron\u2019s Arts & Industrial precinct."
 country: AU
 country_slug: australia
 region: New South Wales
@@ -41,8 +41,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Brigantine Street
 geo_query: 3/7 Brigantine St, Byron Bay, New South Wales, AU
 title: Santos Organics (Byron Arts & Industrial)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -50,6 +48,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Bulk-focused organic grocery with refill stations and certified organic lines for the Byron Bay area.

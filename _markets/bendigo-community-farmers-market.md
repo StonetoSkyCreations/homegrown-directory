@@ -5,8 +5,7 @@ name: Bendigo Community Farmers Market
 brand: Bendigo Community Farmers Market
 type: market
 category: market
-description: Regional Bendigo market with biodynamic and organic vendors offering
-  produce, honey, dairy, and meats.
+description: Regional Bendigo market with biodynamic and organic vendors offering produce, honey, dairy, and meats.
 country: AU
 country_slug: australia
 region: Victoria
@@ -46,14 +45,14 @@ geo_last_verified: '2025-12-14'
 geo_label: Sidney Myer Place
 geo_query: Sidney Myer Place, Bendigo, Victoria, AU
 title: Bendigo Community Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Regional farmers market featuring organic and biodynamic growers with seasonal produce and meats.

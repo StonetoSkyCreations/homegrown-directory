@@ -6,8 +6,7 @@ brand: Replenish for Health
 type: organic-grocery
 subtype: organic-store
 category: retail
-description: Organic supermarket in Williamstown with produce, pantry staples, and
-  sustainable household products.
+description: Organic supermarket in Williamstown with produce, pantry staples, and sustainable household products.
 country: AU
 country_slug: australia
 region: Victoria
@@ -38,8 +37,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '34'
 geo_query: 34 Douglas Parade, Melbourne, Victoria, AU
 title: Replenish for Health (Williamstown)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -47,6 +44,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Organic-focused grocer offering produce, staples, and low-tox household goods.

@@ -6,8 +6,7 @@ brand: Bellarine Wholefoods
 type: bulk-foods
 subtype: bulk-refillery
 category: retail
-description: Sustainable grocery with zero-waste refills for bulk foods and eco products
-  on the Bellarine Peninsula.
+description: Sustainable grocery with zero-waste refills for bulk foods and eco products on the Bellarine Peninsula.
 country: AU
 country_slug: australia
 region: Victoria
@@ -39,8 +38,6 @@ city: Bellarine Peninsula
 lat: -38.174295
 lon: 144.578516
 title: Bellarine Wholefoods
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -48,6 +45,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Zero-waste refillery with organic-leaning bulk foods and eco household goods.

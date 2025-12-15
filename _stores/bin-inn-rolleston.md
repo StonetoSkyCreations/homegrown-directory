@@ -6,7 +6,7 @@ brand: Bin Inn Rolleston
 type: bulk-refillery
 subtype: bulk-refillery
 category: retailer
-description: Bin Inn – bulk wholefoods & specialty grocery
+description: "Bin Inn \u2013 bulk wholefoods & specialty grocery"
 country: NZ
 country_slug: new-zealand
 region: Canterbury
@@ -35,8 +35,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Thai Terrace
 geo_query: 92 Rolleston Drive, Selwyn, Canterbury, New Zealand
 title: Bin Inn Rolleston
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +42,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

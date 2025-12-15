@@ -28,12 +28,12 @@ notes: ''
 subtype: market-garden
 lat: -39.03939
 lon: 177.4271389
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -6,7 +6,7 @@ brand: Bin Inn Rotorua
 type: bulk-refillery
 subtype: bulk-refillery
 category: retailer
-description: Bin Inn – bulk wholefoods & specialty grocery
+description: "Bin Inn \u2013 bulk wholefoods & specialty grocery"
 country: NZ
 country_slug: new-zealand
 region: Bay of Plenty
@@ -35,8 +35,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Old Taupo Road
 geo_query: 21 Old Taupo Road, Rotorua, Bay of Plenty, New Zealand
 title: Bin Inn Rotorua
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +42,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

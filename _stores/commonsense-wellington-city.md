@@ -6,7 +6,7 @@ brand: Commonsense Wellington City
 type: organic-store
 subtype: organic-store
 category: retailer
-description: Commonsense Organics – large organic/natural foods supermarket
+description: "Commonsense Organics \u2013 large organic/natural foods supermarket"
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -38,8 +38,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Commonsense Wellington City
 geo_query: 147 Tory Street, Wellington, Wellington, New Zealand
 title: Commonsense Wellington City
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -47,5 +45,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

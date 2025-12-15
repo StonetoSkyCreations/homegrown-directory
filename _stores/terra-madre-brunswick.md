@@ -6,13 +6,12 @@ brand: Terra Madre
 type: organic-supermarket
 subtype: supermarket
 category: retail
-description: Organic supermarket offering a wide range of organic foods and pantry
-  staples in Brunswick.
+description: Organic supermarket offering a wide range of organic foods and pantry staples in Brunswick.
 country: AU
 country_slug: australia
 region: Victoria
 suburb: Brunswick
-address: 775–781 Sydney Road
+address: "775\u2013781 Sydney Road"
 postcode: '3056'
 phone: (03) 9384 0970
 email: enquiries@terramadre.com.au
@@ -37,10 +36,8 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Terra Madre
-geo_query: 775–781 Sydney Road, Melbourne, Victoria, AU
+geo_query: "775\u2013781 Sydney Road, Melbourne, Victoria, AU"
 title: Terra Madre (Brunswick)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -48,6 +45,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Second Terra Madre outlet with organic pantry staples and ACO-certified lines.

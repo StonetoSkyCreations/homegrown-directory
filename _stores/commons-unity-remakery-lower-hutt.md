@@ -6,7 +6,7 @@ brand: Commons Unity / Remakery (Lower Hutt)
 type: community-hub
 subtype: specialty-grocer
 category: retailer
-description: Common Unity’s Urban Kai Network – co-op buying & urban farming collective
+description: "Common Unity\u2019s Urban Kai Network \u2013 co-op buying & urban farming collective"
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -34,8 +34,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '310'
 geo_query: 310 Waiwhetu Road, Lower Hutt, Wellington, New Zealand
 title: Commons Unity / Remakery (Lower Hutt)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -43,5 +41,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

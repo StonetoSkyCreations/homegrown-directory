@@ -7,8 +7,7 @@ country: New Zealand
 region: Tasman
 city: Nelson
 address: 69 Collingwood Street, Nelson City, Tasman 7010, New Zealand
-description: Community-focused supermarket in Nelson known for supporting local growers
-  and stocking organic produce such as vegetables from Streamside Organics.
+description: Community-focused supermarket in Nelson known for supporting local growers and stocking organic produce such as vegetables from Streamside Organics.
 practices:
 - locally sourced produce within 200 km
 - alternatives to single-use plastic
@@ -30,24 +29,21 @@ website: https://freshchoicenelson.co.nz
 email: online@freshchoicenelson.co.nz
 phone: +64 3 548 0191
 social: null
-hours: Monday 07:00-21:00; Tuesday 07:00-21:00; Wednesday 07:00-21:00; Thursday 07:00-21:00;
-  Friday 07:00-21:00; Saturday 07:00-21:00; Sunday 07:00-21:00
+hours: Monday 07:00-21:00; Tuesday 07:00-21:00; Wednesday 07:00-21:00; Thursday 07:00-21:00; Friday 07:00-21:00; Saturday 07:00-21:00; Sunday 07:00-21:00
 market_days: []
 lat: -41.2721499
 lon: 173.2872429
-sourced_from: streamside-organics
-also_referenced_by: null
-sources:
-- streamside-organics
 last_checked: '2025-12-12'
 subtype: specialty-grocer
 source_urls: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- streamside-organics
+supplies_to: []
 relationships_declared: true
 ---
 FreshChoice Nelson City is a locally owned supermarket that has served the Nelson community for more than thirty years. The store runs a "less than 200 km" initiative that sources produce from suppliers within a 200-kilometre radius, reducing carbon footprints and keeping produce fresh. It has been an environmental trailblazer, offering reusable bags, cardboard boxes and biodegradable paper bags instead of single-use plastic, installing energy-saving LED lighting and transitioning to electric warehouse equipment. The community fund donates $500 each month to local organisations and individuals. Open seven days from 7 am to 9 pm, the store stocks a broad range of groceries, fresh fruit and vegetables, bakery goods, meat and dairy products, including certified-organic vegetables from Streamside Organics.

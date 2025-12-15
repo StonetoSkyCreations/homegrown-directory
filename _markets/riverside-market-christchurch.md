@@ -5,7 +5,7 @@ name: Riverside Market (Christchurch)
 brand: Riverside Market (Christchurch)
 type: market
 category: market
-description: Large indoor farmers’ market-style food hall (open 7 days)
+description: "Large indoor farmers\u2019 market-style food hall (open 7 days)"
 country: NZ
 country_slug: new-zealand
 region: Canterbury
@@ -36,8 +36,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Riverside Market
 geo_query: 96 Oxford Terrace, Christchurch, Canterbury, New Zealand
 title: Riverside Market (Christchurch)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -45,5 +43,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

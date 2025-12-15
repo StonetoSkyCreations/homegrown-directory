@@ -7,8 +7,7 @@ country: New Zealand
 region: Otago
 city: Queenstown
 address: The Market, 19 Grant Road, Frankton, Queenstown
-description: Organic grocery store stocking 100% organic goods including fresh produce,
-  pantry staples, meats, eco-cleaning and natural body products.
+description: Organic grocery store stocking 100% organic goods including fresh produce, pantry staples, meats, eco-cleaning and natural body products.
 practices:
 - Organic
 products:
@@ -24,19 +23,19 @@ website: https://soulfoodorganic.co.nz
 email: orders@soulfoodorganic.co.nz
 phone: +64 3 443 7885
 social: https://www.facebook.com/soulfoodorganic.co.nz
-hours: Mon–Sat 9am–5:30pm; Sun 10am–5pm
+hours: "Mon\u2013Sat 9am\u20135:30pm; Sun 10am\u20135pm"
 lat: -37.7909408
 lon: 175.2571104
-sources:
-- streamside-organics
 subtype: organic-store
 source_urls:
 - https://soulfoodorganic.co.nz
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- streamside-organics
+supplies_to: []
 relationships_declared: true
 ---

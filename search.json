@@ -54,13 +54,13 @@ permalink: /search.json
   {% else %}
     {% assign supplies_list = supplies_raw | split: ',' | map: 'strip' | uniq %}
   {% endif %}
-  {% assign sources_raw = doc.sources %}
-  {% if sources_raw == nil %}
-    {% assign sources_list = empty %}
-  {% elsif sources_raw.first %}
-    {% assign sources_list = sources_raw | uniq %}
+  {% assign sourced_from_raw = doc.sourced_from %}
+  {% if sourced_from_raw == nil %}
+    {% assign sourced_from_list = empty %}
+  {% elsif sourced_from_raw.first %}
+    {% assign sourced_from_list = sourced_from_raw | uniq %}
   {% else %}
-    {% assign sources_list = sources_raw | split: ',' | map: 'strip' | uniq %}
+    {% assign sourced_from_list = sourced_from_raw | split: ',' | map: 'strip' | uniq %}
   {% endif %}
   {% assign long_desc = doc.description | default: doc.short_description | default: doc.meta_description | default: doc.excerpt | default: doc.long_description %}
   {% assign geo_precision = doc.geo_precision | default: 'none' %}
@@ -87,7 +87,7 @@ permalink: /search.json
     "services": {{ services | jsonify }},
     "specialty_tags": {{ specialty | jsonify }},
     "supplies_to": {{ supplies_list | jsonify }},
-    "sources": {{ sources_list | jsonify }},
+    "sourced_from": {{ sourced_from_list | jsonify }},
     "hours": {{ doc.hours | jsonify }},
     "lat": {% if lat_val == nil or lat_val == '' %}null{% else %}{{ lat_val | jsonify }}{% endif %},
     "lon": {% if lon_val == nil or lon_val == '' %}null{% else %}{{ lon_val | jsonify }}{% endif %},

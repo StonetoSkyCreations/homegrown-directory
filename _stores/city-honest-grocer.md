@@ -17,21 +17,20 @@ services:
 - Retail shop
 - Online ordering
 - Delivery
-sources:
-- moana-organics
-- waipuna-pastures
-- supply-circle-hub
-description: Neighbourhood grocer with refill options, local veg tables, and shelf
-  labels naming every producer.
+description: Neighbourhood grocer with refill options, local veg tables, and shelf labels naming every producer.
 website: https://cityhonestgrocer.example.nz
 subtype: specialty-grocer
 source_urls: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- moana-organics
+- waipuna-pastures
+- supply-circle-hub
+supplies_to: []
 relationships_declared: true
 ---
 City Honest Grocer blends refillery bins with seasonal produce crates, marking each item with farm, practice tags, and harvest week. A weekly “know your grower” tasting features one producer supplying the store.

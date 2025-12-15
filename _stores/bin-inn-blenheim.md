@@ -9,8 +9,7 @@ country: New Zealand
 region: Marlborough
 city: Blenheim
 address: 32 Maxwell Road, Blenheim Central 7201
-description: Wholefoods and specialty grocery with bulk bins plus organic and gluten-free
-  products.
+description: Wholefoods and specialty grocery with bulk bins plus organic and gluten-free products.
 practices:
 - Organic
 products:
@@ -36,17 +35,17 @@ website: https://www.bininn.co.nz/marlborough/blenheim
 email: blenheim@bininn.co.nz
 phone: 03 577 2677
 social: ''
-hours: Mon–Fri 8:30–17:30; Sat 8:30–14:30; Sun closed
+hours: "Mon\u2013Fri 8:30\u201317:30; Sat 8:30\u201314:30; Sun closed"
 lat: -41.5149959
 lon: 173.9549782
 source_urls:
 - https://www.bininn.co.nz/marlborough/blenheim
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -1,12 +1,11 @@
 ---
 layout: vendor
 slug: orepuki-beach-cafe
-name: Orepuki Beach Café
+name: "Orepuki Beach Caf\xE9"
 type: cafe
 subtype: cafe
 category: eatery
-description: Farm-and-sea-to-table café serving what they grow, hunt, or gather locally
-  in Orepuki.
+description: "Farm-and-sea-to-table caf\xE9 serving what they grow, hunt, or gather locally in Orepuki."
 country: NZ
 country_slug: new-zealand
 region: Southland
@@ -31,9 +30,7 @@ notes: ''
 city: Orepuki
 lat: -46.2813342
 lon: 167.7384665
-title: Orepuki Beach Café
-sources: []
-supplies_to: []
+title: "Orepuki Beach Caf\xE9"
 practices: []
 practices_tags: []
 products: []
@@ -42,5 +39,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

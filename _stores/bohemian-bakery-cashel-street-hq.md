@@ -7,12 +7,7 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 372 Cashel Street, Christchurch 8011
-description: 'Open bakery and café where customers can watch bakers create pastries,
-  cakes, desserts, and sourdough. Serves AllPress Coffee, T-leaf teas, Karma, Almighty,
-  Good Shi*t soda, and specialty hot drinks from Hakanoa and Wildwood. Wholesale production
-  site for pastries and bread across all branches.
-
-  '
+description: "Open bakery and caf\xE9 where customers can watch bakers create pastries, cakes, desserts, and sourdough. Serves AllPress Coffee, T-leaf teas, Karma, Almighty, Good Shi*t soda, and specialty hot drinks from Hakanoa and Wildwood. Wholesale production site for pastries and bread across all branches.\n"
 practices:
 - organic flour (Milmore Downs)
 - spray-free flour (Farmers Mill)
@@ -28,7 +23,7 @@ products:
 - cold drinks
 services:
 - bakery
-- café
+- "caf\xE9"
 - wholesale pastry supply
 - educational viewing mezzanine
 - cafe
@@ -36,12 +31,9 @@ website: https://www.facebook.com/bohemianbakerychristchurch/
 email: info@bohemianbakery.co.nz
 phone: +64 3-365 1335
 social: https://www.facebook.com/bohemianbakerychristchurch/, https://www.instagram.com/bohemianbakerychristchurch
-hours: Mon–Sat 7:00–14:00
+hours: "Mon\u2013Sat 7:00\u201314:00"
 lat: -43.5332206
 lon: 172.6520073
-sources:
-- farmers-mill
-- milmore-downs
 subtype: specialty-grocer
 source_urls: []
 brand_slug: bohemian-bakery
@@ -50,12 +42,15 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '372'
 geo_query: 372 Cashel Street, Christchurch 8011, Christchurch, Canterbury, New Zealand
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- farmers-mill
+- milmore-downs
+supplies_to: []
 relationships_declared: true
 ---
 Cashel Street HQ is the beating heart of Bohemian Bakery — the place where the craft is fully visible, where sourdough and pastry are shaped in the open, and where customers can watch the entire process unfold.

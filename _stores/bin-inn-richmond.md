@@ -9,8 +9,7 @@ country: New Zealand
 region: Tasman
 city: Richmond
 address: 271 Queen Street, Richmond 7020
-description: Wholefoods and specialty grocery with bulk bins, fresh-ground peanut
-  butter, gluten-free and organic products.
+description: Wholefoods and specialty grocery with bulk bins, fresh-ground peanut butter, gluten-free and organic products.
 practices:
 - Organic
 products:
@@ -35,17 +34,17 @@ website: https://www.bininn.co.nz/tasman/richmond
 email: richmond@bininn.co.nz
 phone: 03 543 8045
 social: https://www.facebook.com/BinInnRichmond
-hours: Mon–Fri 9:00–17:30; Sat 9:00–14:00; Sun closed
+hours: "Mon\u2013Fri 9:00\u201317:30; Sat 9:00\u201314:00; Sun closed"
 lat: -41.3382895
 lon: 173.1832793
 source_urls:
 - https://www.bininn.co.nz/tasman/richmond
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

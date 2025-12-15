@@ -9,7 +9,7 @@ country: NZ
 country_slug: new-zealand
 region: Hawke's Bay
 city: Waipukurau
-address: 356 Lindsay Road, RD 3 Waipukurau 4283, Hawke’s Bay, New Zealand
+address: "356 Lindsay Road, RD 3 Waipukurau 4283, Hawke\u2019s Bay, New Zealand"
 postcode: '4283'
 lat: -39.995
 lon: 176.557
@@ -31,11 +31,11 @@ notes: ''
 products_tags:
 - dairy
 subtype: dairy-farm
-sources: []
-supplies_to: []
 practices: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

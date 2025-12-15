@@ -9,7 +9,7 @@ category: retailer
 description: Community co-op supplying certified organic food and wholefoods in Whanganui.
 country: NZ
 country_slug: new-zealand
-region: Manawatū-Whanganui
+region: "Manawat\u016B-Whanganui"
 address: 99 Guyton Street
 phone: ''
 email: ''
@@ -27,18 +27,15 @@ last_checked: ''
 notes: ''
 published: true
 city: Whanganui
-Community-run co-op providing certified organic food, produce, and wholefoods to Whanganui residents. Source: user-supplied
-  list
+Community-run co-op providing certified organic food, produce, and wholefoods to Whanganui residents. Source: user-supplied list
 lat: -39.9322575
 lon: 175.0494037
 geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '99'
-geo_query: 99 Guyton Street, Whanganui, Manawatū-Whanganui, New Zealand
+geo_query: "99 Guyton Street, Whanganui, Manawat\u016B-Whanganui, New Zealand"
 title: Whanganui Organic Food Co-op
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -46,5 +43,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

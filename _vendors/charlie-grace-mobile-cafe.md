@@ -1,6 +1,6 @@
 ---
 layout: vendor
-title: Charlie Grace Mobile Café
+title: "Charlie Grace Mobile Caf\xE9"
 slug: charlie-grace-mobile-cafe
 type: food-truck
 subtype: food-truck
@@ -9,8 +9,7 @@ country: New Zealand
 region: Auckland
 city: Whitford
 address: Whitford, Auckland
-description: Mobile bar caravan serving award-winning organic Coffee La La coffee
-  brewed locally in Coromandel for events and weddings.
+description: Mobile bar caravan serving award-winning organic Coffee La La coffee brewed locally in Coromandel for events and weddings.
 practices:
 - Organic
 - Locally sourced
@@ -26,14 +25,14 @@ social: ''
 hours: ''
 lat: -36.94780125874932
 lon: 174.9641298954297
-sources:
-- coffee-la-la
 source_urls: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- coffee-la-la
+supplies_to: []
 relationships_declared: true
 ---

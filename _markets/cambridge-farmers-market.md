@@ -5,7 +5,7 @@ name: Cambridge Farmers Market
 brand: Cambridge Farmers Market
 type: market
 category: market
-description: Waikato farmers’ market featuring local growers (some organic)
+description: "Waikato farmers\u2019 market featuring local growers (some organic)"
 country: NZ
 country_slug: new-zealand
 region: Waikato
@@ -24,7 +24,7 @@ products: []
 market_days:
 - Market
 source_urls:
-- Saturdays 8am–12pm
+- "Saturdays 8am\u201312pm"
 last_checked: FMNZ member list
 notes: Market
 city: Cambridge
@@ -38,13 +38,13 @@ geo_last_verified: '2025-12-14'
 geo_label: Victoria Square (opp Town Hall)
 geo_query: Victoria Square, Victoria Street, Cambridge, Waikato, New Zealand
 title: Cambridge Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

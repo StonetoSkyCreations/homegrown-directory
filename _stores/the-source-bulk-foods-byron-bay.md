@@ -34,8 +34,6 @@ city: Byron Bay
 lat: -28.6468088
 lon: 153.6128365
 title: The Source Bulk Foods (Byron Bay)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -43,6 +41,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Zero-waste refillery with organic bulk wholefoods, snacks, and pantry refill options.

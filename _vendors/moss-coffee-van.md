@@ -9,8 +9,7 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: Auckland (mobile)
-description: Mobile coffee van offering premium organic coffee drinks for events across
-  Auckland.
+description: Mobile coffee van offering premium organic coffee drinks for events across Auckland.
 practices:
 - Organic
 products:
@@ -26,12 +25,12 @@ hours: ''
 lat: -36.882819
 lon: 174.733469
 source_urls: []
-sources: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

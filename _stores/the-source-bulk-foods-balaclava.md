@@ -6,8 +6,7 @@ brand: The Source Bulk Foods
 type: bulk-foods
 subtype: bulk-refillery
 category: retail
-description: Zero-waste grocery selling 400+ bulk wholefoods and eco products; bring
-  your own containers.
+description: Zero-waste grocery selling 400+ bulk wholefoods and eco products; bring your own containers.
 country: AU
 country_slug: australia
 region: Victoria
@@ -46,8 +45,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '171'
 geo_query: 171 Carlisle Street, Melbourne, Victoria, AU
 title: The Source Bulk Foods (Balaclava)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -55,6 +52,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Zero-waste refillery with organic options across bulk foods and household staples.

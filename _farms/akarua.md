@@ -4,8 +4,7 @@ title: Akarua
 slug: akarua
 name: Akarua
 type: Vineyard
-description: Organic-certified vineyard producing Central Otago wines through regenerative,
-  soil-first farming and low-intervention winemaking.
+description: Organic-certified vineyard producing Central Otago wines through regenerative, soil-first farming and low-intervention winemaking.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -30,12 +29,12 @@ notes: ''
 subtype: vineyard
 lat: -45.088368
 lon: 169.1600101
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

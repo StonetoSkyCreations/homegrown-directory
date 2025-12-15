@@ -6,8 +6,7 @@ brand: Passionfoods Organic
 type: organic-grocery
 subtype: organic-store
 category: retail
-description: Longstanding organic supermarket selling fresh organic produce and wholefood
-  groceries.
+description: Longstanding organic supermarket selling fresh organic produce and wholefood groceries.
 country: AU
 country_slug: australia
 region: Victoria
@@ -39,8 +38,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '219'
 geo_query: 219 Ferrars Street, Melbourne, Victoria, AU
 title: Passionfoods Organic (South Melbourne)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -48,6 +45,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Organic supermarket with fresh produce, pantry staples, and natural personal care lines.

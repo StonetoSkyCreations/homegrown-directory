@@ -6,7 +6,7 @@ brand: Bin Inn Masterton
 type: bulk-refillery
 subtype: bulk-refillery
 category: retailer
-description: Bin Inn – bulk wholefoods & specialty grocery
+description: "Bin Inn \u2013 bulk wholefoods & specialty grocery"
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -27,8 +27,6 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 city: Masterton
-sources:
-- little-farms
 lat: -40.9518215
 lon: 175.6607298
 geo_precision: approx
@@ -37,7 +35,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Dixon Street
 geo_query: 146 Dixon Street, Masterton, Wellington, New Zealand
 title: Bin Inn Masterton
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -45,5 +42,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- little-farms
+supplies_to: []
 relationships_declared: true
 ---

@@ -9,7 +9,7 @@ country: NZ
 country_slug: new-zealand
 region: Hawke's Bay
 city: Tutira
-address: PO Box 60, Tutira 4181, Hawke’s Bay, New Zealand
+address: "PO Box 60, Tutira 4181, Hawke\u2019s Bay, New Zealand"
 postcode: '4181'
 lat: -39.1692
 lon: 176.9289
@@ -30,11 +30,11 @@ notes: ''
 products_tags:
 - seed
 subtype: seeds
-sources: []
-supplies_to: []
 practices: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

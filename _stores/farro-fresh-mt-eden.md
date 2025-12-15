@@ -6,7 +6,7 @@ brand: Farro Fresh Mt Eden
 type: supermarket
 subtype: supermarket
 category: retailer
-description: Farro Fresh – premium grocer focusing on organic & artisan goods
+description: "Farro Fresh \u2013 premium grocer focusing on organic & artisan goods"
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -35,8 +35,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '422'
 geo_query: 422 Dominion Road, Auckland, Auckland, New Zealand
 title: Farro Fresh Mt Eden
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +42,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

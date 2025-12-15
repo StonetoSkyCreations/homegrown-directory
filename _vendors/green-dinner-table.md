@@ -5,8 +5,7 @@ name: Green Dinner Table
 type: meal-kit
 subtype: cafe
 category: delivery
-description: Plant-based meal kit service delivering vegan recipes using seasonal
-  vegetables and locally sourced ingredients across New Zealand.
+description: Plant-based meal kit service delivering vegan recipes using seasonal vegetables and locally sourced ingredients across New Zealand.
 country: NZ
 country_slug: new-zealand
 region: Canterbury
@@ -27,8 +26,6 @@ products_or_cuisine:
 services:
 - Meal kit subscription
 - Nationwide delivery
-sources:
-- streamside-organics
 source_urls:
 - https://www.greendinnertable.co.nz/contact-us/
 - https://www.greendinnertable.co.nz/
@@ -40,10 +37,8 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '21'
-geo_query: 21 Coleridge Street, Sydenham, Christchurch 8023, Christchurch, Canterbury,
-  New Zealand
+geo_query: 21 Coleridge Street, Sydenham, Christchurch 8023, Christchurch, Canterbury, New Zealand
 title: Green Dinner Table
-supplies_to: []
 practices: []
 practices_tags: []
 products: []
@@ -51,6 +46,9 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- streamside-organics
+supplies_to: []
 relationships_declared: true
 ---
 Green Dinner Table is a Christchurch-based meal-kit company that designs weekly vegan recipes and sends all the ingredients straight to customers' doors. Each kit uses fresh seasonal fruit and vegetables, quality sauces and locally sourced produce to create nutritious plant-based meals. The service operates nationwide, with menus changing weekly and packaging that is recyclable or compostable. Subscribers receive pre-measured ingredients, spices and easy instructions, and can add fruit boxes or select gluten-free options. Headquartered in Sydenham, Green Dinner Table champions sustainable eating and supports organic growers like Streamside Organics.

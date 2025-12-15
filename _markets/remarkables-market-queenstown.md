@@ -5,8 +5,7 @@ name: Remarkables Market
 brand: Remarkables Market
 type: market
 category: market
-description: Queenstown seasonal market featuring local producers including organic
-  and spray-free stalls.
+description: Queenstown seasonal market featuring local producers including organic and spray-free stalls.
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -28,8 +27,7 @@ last_checked: ''
 notes: ''
 published: true
 city: Queenstown
-? Seasonal Saturday market at Remarkables Park with vendors from Central Otago and
-  Queenstown, including organic and spray-free produce and free-range eggs. Source
+? Seasonal Saturday market at Remarkables Park with vendors from Central Otago and Queenstown, including organic and spray-free produce and free-range eggs. Source
 : https://www.remarkablesmarket.co.nz/
 practices_tags:
 - organic
@@ -38,13 +36,13 @@ practices_tags:
 lat: -45.028677
 lon: 168.738714
 title: Remarkables Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

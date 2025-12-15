@@ -5,8 +5,7 @@ name: Mullumbimby Farmers Market
 brand: Mullumbimby Farmers Market
 type: market
 category: market
-description: Friday farmers market at Mullumbimby Showgrounds with 50+ stalls and
-  many certified organic vendors.
+description: Friday farmers market at Mullumbimby Showgrounds with 50+ stalls and many certified organic vendors.
 country: AU
 country_slug: australia
 region: New South Wales
@@ -26,7 +25,7 @@ products:
 - Vegetables
 - Local produce
 market_days:
-- Fri 7–11am
+- "Fri 7\u201311am"
 source_urls:
 - https://byronbay.com/farmers-markets-in-byron-bay/
 last_checked: '2025-12-09'
@@ -38,14 +37,14 @@ practices_tags:
 lat: -28.548365
 lon: 153.48734
 title: Mullumbimby Farmers Market
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Weekly Friday market with certified organic growers, seasonal produce, and local food stalls at the showgrounds.

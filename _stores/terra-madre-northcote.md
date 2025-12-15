@@ -6,8 +6,7 @@ brand: Terra Madre
 type: organic-supermarket
 subtype: supermarket
 category: retail
-description: Organic supermarket stocking a wide range of ACO-certified products in
-  Melbourne’s north.
+description: "Organic supermarket stocking a wide range of ACO-certified products in Melbourne\u2019s north."
 country: AU
 country_slug: australia
 region: Victoria
@@ -40,8 +39,6 @@ geo_last_verified: '2025-12-14'
 geo_label: '103'
 geo_query: 103 High Street, Melbourne, Victoria, AU
 title: Terra Madre (Northcote)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -49,6 +46,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---
 Well-known organic supermarket with a broad ACO-certified range of produce and pantry staples.

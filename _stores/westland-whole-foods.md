@@ -7,8 +7,7 @@ country: New Zealand
 region: West Coast
 city: Greymouth
 address: 35 Guinness Street, Greymouth 7805
-description: Wholefoods store with organic, specialty and bulk products plus deli
-  items, free-farmed meat, local milk, sourdough bread and specialty diet foods.
+description: Wholefoods store with organic, specialty and bulk products plus deli items, free-farmed meat, local milk, sourdough bread and specialty diet foods.
 practices:
 - Organic
 products:
@@ -32,19 +31,19 @@ website: https://westlandwholefoods.co.nz
 email: ''
 phone: 03 768 0330
 social: ''
-hours: Mon–Fri 9am–5:30pm; Sat 10am–2pm; Sun closed
+hours: "Mon\u2013Fri 9am\u20135:30pm; Sat 10am\u20132pm; Sun closed"
 lat: -42.4495917
 lon: 171.2091195
-sources:
-- free-farmed-nz
 subtype: wholefoods-store
 source_urls:
 - https://westlandwholefoods.co.nz
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- free-farmed-nz
+supplies_to: []
 relationships_declared: true
 ---

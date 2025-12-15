@@ -6,7 +6,7 @@ brand: Bin Inn Hastings (Taradale)
 type: bulk-refillery
 subtype: bulk-refillery
 category: retailer
-description: Bin Inn – bulk wholefoods & specialty grocery
+description: "Bin Inn \u2013 bulk wholefoods & specialty grocery"
 country: NZ
 country_slug: new-zealand
 region: Hawke's Bay
@@ -35,8 +35,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Gloucester Street
 geo_query: 370 Gloucester Street, Napier, Hawke's Bay, New Zealand
 title: Bin Inn Hastings (Taradale)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +42,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

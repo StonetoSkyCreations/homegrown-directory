@@ -26,16 +26,16 @@ certifications:
 supply_role: Producer; Exporter
 source_urls:
 - https://www.organictradenz.com/member-page/
-hours: Tours Fri–Sun (morning & afternoon)
+hours: "Tours Fri\u2013Sun (morning & afternoon)"
 last_checked: '2025-12-09'
 notes: ''
 subtype: mixed
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

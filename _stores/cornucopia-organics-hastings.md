@@ -24,7 +24,7 @@ sourcing_tags:
 products: []
 market_days: []
 source_urls:
-- Includes Taste Cornucopia organic café next door
+- "Includes Taste Cornucopia organic caf\xE9 next door"
 last_checked: Cornucopia contact; Be Nourished dir.
 notes: Retail
 city: Hastings
@@ -35,8 +35,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Heretaunga Street East
 geo_query: 221E Heretaunga Street East, Hastings, Hawke's Bay, New Zealand
 title: Cornucopia Organics (Hastings)
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +42,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

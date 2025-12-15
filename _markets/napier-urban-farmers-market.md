@@ -5,7 +5,7 @@ name: Napier Urban Farmers Market
 brand: Napier Urban Farmers Market
 type: market
 category: market
-description: Inner-city farmers’ market (satellite of Hawke’s Bay Farmers Market)
+description: "Inner-city farmers\u2019 market (satellite of Hawke\u2019s Bay Farmers Market)"
 country: NZ
 country_slug: new-zealand
 region: Hawke's Bay
@@ -24,7 +24,7 @@ products: []
 market_days:
 - Market
 source_urls:
-- Saturdays 9am–1pm
+- "Saturdays 9am\u20131pm"
 last_checked: FMNZ member list
 notes: Market
 city: Napier
@@ -35,8 +35,6 @@ geo_last_verified: '2025-12-14'
 geo_label: Clive Square
 geo_query: Clive Square, Napier, Hawke's Bay, New Zealand
 title: Napier Urban Farmers Market
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
@@ -44,5 +42,7 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

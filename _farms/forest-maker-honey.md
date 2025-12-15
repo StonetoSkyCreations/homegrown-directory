@@ -4,7 +4,7 @@ title: Forest Maker Honey
 slug: forest-maker-honey
 name: Forest Maker Honey
 type: Farm
-description: Certified organic mānuka honey producer in Wellington.
+description: "Certified organic m\u0101nuka honey producer in Wellington."
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -15,7 +15,7 @@ email: ''
 website: ''
 social_links: []
 products:
-- Mānuka Honey
+- "M\u0101nuka Honey"
 practices_tags:
 - organic
 certifications:
@@ -28,12 +28,12 @@ notes: ''
 subtype: apiary
 lat: -41.2887953
 lon: 174.7772114
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

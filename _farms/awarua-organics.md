@@ -30,11 +30,11 @@ products_tags:
 subtype: dairy-farm
 lat: -46.4118465
 lon: 168.3470632
-sources: []
-supplies_to: []
 practices: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

@@ -7,9 +7,7 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: 13B Ride Way, Rosedale, Auckland 0632, New Zealand
-description: Family-run organic food box and grocery delivery service, formerly known
-  as Ooooby, delivering fresh produce and pantry staples across Auckland and the North
-  Island.
+description: Family-run organic food box and grocery delivery service, formerly known as Ooooby, delivering fresh produce and pantry staples across Auckland and the North Island.
 practices:
 - certified-organic sourcing
 - surplus donations to missions and soup kitchens
@@ -37,19 +35,18 @@ hours: null
 market_days: []
 lat: -36.7526302
 lon: 174.7030011
-sourced_from: streamside-organics
-also_referenced_by: Ooooby
-sources:
-- streamside-organics
 last_checked: '2025-12-12'
 subtype: specialty-grocer
 source_urls: []
-supplies_to: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- streamside-organics
+supplies_to:
+- ooooby
 relationships_declared: true
 ---
 Bliss Box (formerly Ooooby) is a family business created by Fraser and Viktoria Bliss after a health journey that led them to organic wholefoods. They took over the Ooooby organic food box service in 2018 and relaunched it as BLISS in 2025, celebrating real food and real life. The service partners with growers who share its values and delivers nourishing, organic fruit and vegetable boxes, meat, dairy, bakery goods and pantry items to homes in Auckland, Waikato, Tauranga and other North-Island areas. Bliss Box is committed to zero food waste, ordering extra produce so it can donate surplus fruit and vegetables to local missions and soup kitchens each week. It minimises packaging by using reusable delivery boxes, compostable bags for microgreens and paper tape, and offers same-day deliveries in Auckland with support for complex dietary needs. The company lists Streamside Organics among its farmers and artisans, highlighting the farm's regenerative organic practices.

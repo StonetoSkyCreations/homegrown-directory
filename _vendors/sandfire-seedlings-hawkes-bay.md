@@ -26,18 +26,17 @@ source_urls:
 - https://hawkesbayfarmersmarket.co.nz/
 last_checked: ''
 notes: ''
-Sells organically grown heritage seedlings at the Hawke's Bay Farmers’ Market. Source: Hawke's
-  Bay Farmers’ Market vendor listings
+"Sells organically grown heritage seedlings at the Hawke's Bay Farmers\u2019 Market. Source": "Hawke's Bay Farmers\u2019 Market vendor listings"
 lat: -39.629173
 lon: 176.862248
 title: Sandfire Seedlings
-sources: []
-supplies_to: []
 practices: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

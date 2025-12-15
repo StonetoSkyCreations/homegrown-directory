@@ -5,7 +5,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Hawke's Bay
 city: Napier
-address: "232 Riverbend Road, Meeanee, Napier 4110"
+address: 232 Riverbend Road, Meeanee, Napier 4110
 practices:
 - Organic (uncertified)
 products:
@@ -14,26 +14,24 @@ products:
 services:
 - Farmers market stall
 - Farm stand
-supplies_to:
-- hawke-s-bay-farmers-market-hastings
 hours: Shop Tue/Fri
 website: ''
 email: ''
 phone: ''
-description: Napier growers selling spray-free/organic fruit and veg via farm shop
-  and Hawke's Bay Farmers’ Market.
-? Long-running growers who dropped sprays and now sell organic fruit and vegetables
-  at their Riverbend Rd shop (Tue/Fri) and the Hawke's Bay Farmers’ Market. Source
+description: "Napier growers selling spray-free/organic fruit and veg via farm shop and Hawke's Bay Farmers\u2019 Market."
+? "Long-running growers who dropped sprays and now sell organic fruit and vegetables at their Riverbend Rd shop (Tue/Fri) and the Hawke's Bay Farmers\u2019 Market. Source"
 : https://hawkesbayfarmersmarket.co.nz/jj-organics/
 subtype: mixed
 source_urls: []
 lat: -39.4902099
 lon: 176.917839
-sources: []
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to:
+- hawke-s-bay-farmers-market-hastings
 relationships_declared: true
 ---

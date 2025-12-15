@@ -7,7 +7,7 @@ country_slug: new-zealand
 region: Auckland
 city: Takapuna
 suburb: Takapuna
-address: 33–45 Hurstmere Road, Takapuna, Auckland
+address: "33\u201345 Hurstmere Road, Takapuna, Auckland"
 practices:
 - Organic (uncertified)
 - Free-range
@@ -21,8 +21,7 @@ hours: ''
 website: https://jamorganiccafe.co.nz
 email: ''
 phone: +64 9 486 1600
-description: Café serving organic delights and crafted coffees, specialising in wholesome
-  meals and drinks.
+description: "Caf\xE9 serving organic delights and crafted coffees, specialising in wholesome meals and drinks."
 notes: Updated with latest address and website.
 subtype: cafe
 source_urls: []
@@ -32,13 +31,13 @@ geo_precision: approx
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Hurstmere Road
-geo_query: 33–45 Hurstmere Road, Takapuna, Auckland, Takapuna, Auckland, New Zealand
-sources: []
-supplies_to: []
+geo_query: "33\u201345 Hurstmere Road, Takapuna, Auckland, Takapuna, Auckland, New Zealand"
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

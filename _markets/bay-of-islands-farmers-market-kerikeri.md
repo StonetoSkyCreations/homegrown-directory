@@ -1,11 +1,11 @@
 ---
 layout: listing
 slug: bay-of-islands-farmers-market-kerikeri
-name: Bay of Islands Farmers Market – Kerikeri
-brand: Bay of Islands Farmers Market – Kerikeri
+name: "Bay of Islands Farmers Market \u2013 Kerikeri"
+brand: "Bay of Islands Farmers Market \u2013 Kerikeri"
 type: market
 category: market
-description: Local farmers’ market featuring Far North growers (Kerikeri site)
+description: "Local farmers\u2019 market featuring Far North growers (Kerikeri site)"
 country: NZ
 country_slug: new-zealand
 region: Northland
@@ -23,24 +23,24 @@ sourcing_tags:
 products: []
 market_days:
 - Market
-sources:
-- let-food-be-thy-medicine-kawakawa
-- oromahoe-pauls-garden
 source_urls:
-- Sundays 8:30am–12pm (Kerikeri)
+- "Sundays 8:30am\u201312pm (Kerikeri)"
 last_checked: FMNZ member list
 notes: Market
 city: Kerikeri
 practices_tags:
 - local
 lat: -35.212396
-title: Bay of Islands Farmers Market – Kerikeri
-supplies_to: []
+title: "Bay of Islands Farmers Market \u2013 Kerikeri"
 practices: []
 products_tags: []
 services: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from:
+- let-food-be-thy-medicine-kawakawa
+- oromahoe-pauls-garden
+supplies_to: []
 relationships_declared: true
 ---

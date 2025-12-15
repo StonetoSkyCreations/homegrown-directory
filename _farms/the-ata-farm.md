@@ -1,11 +1,10 @@
 ---
 layout: farm
-title: The Āta Farm
+title: "The \u0100ta Farm"
 slug: the-ata-farm
-name: The Āta Farm
+name: "The \u0100ta Farm"
 type: Farm
-description: Farm restoring a 400-tree organic lemon grove and herb gardens, undergoing
-  strict organic certification and producing spray-free Meyer lemons.
+description: Farm restoring a 400-tree organic lemon grove and herb gardens, undergoing strict organic certification and producing spray-free Meyer lemons.
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
@@ -30,12 +29,12 @@ subtype: market-garden
 source_urls: []
 lat: -36.79310825
 lon: 175.08838633700125
-sources: []
-supplies_to: []
 practices: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
+sourced_from: []
+supplies_to: []
 relationships_declared: false
 ---

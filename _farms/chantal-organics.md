@@ -25,17 +25,17 @@ certifications: []
 supply_role: Processor; Distributor
 source_urls:
 - https://maikai.nz/pages/mai-kai-suppliers
-hours: Mon–Fri 08:00–17:00; Sat–Sun closed
+hours: "Mon\u2013Fri 08:00\u201317:00; Sat\u2013Sun closed"
 last_checked: '2025-12-09'
 notes: Founded as organic co-op farm
 subtype: mixed
-supplies_to:
-- chantal-shop-napier
-sources: []
 practices: []
 products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
+sourced_from: []
+supplies_to:
+- chantal-shop-napier
 relationships_declared: true
 ---
