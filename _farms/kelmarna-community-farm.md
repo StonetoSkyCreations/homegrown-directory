@@ -45,7 +45,7 @@ sourced_from: []
 supplies_to:
 - forest-auckland
 - gusto-italiano-ponsonby
-- kingi-restaurant
+- kingi-auckland
 - mr-morris-auckland
 - pici-restaurant
 also_referenced_by: []

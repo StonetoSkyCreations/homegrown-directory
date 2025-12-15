@@ -35,7 +35,8 @@ source_urls: []
 lat: -36.79310825
 lon: 175.08838633700125
 sources: []
-supplies_to: []
+supplies_to:
+- kingi-auckland
 practices: []
 products_tags: []
 services_tags: []

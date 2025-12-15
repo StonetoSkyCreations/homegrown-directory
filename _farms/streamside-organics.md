@@ -49,6 +49,7 @@ supplies_to:
 - pomeroys-old-brewery-inn
 - cellar-door-christchurch
 - alpine-grind-methven
+- kingi-auckland
 - green-dinner-table
 - piko-wholefoods-chch
 - goodfor-christchurch
