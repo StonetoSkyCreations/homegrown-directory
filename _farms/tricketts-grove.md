@@ -50,7 +50,8 @@ supplies_to:
 - chantal-organics
 - ooooby-online-organic-boxes
 - down-to-earth-organics-new-plymouth
-- walnuts-nz-co-operative
 - bellbird-bakery
 relationships_declared: true
+supplies_to_text:
+- walnuts-nz-co-operative
 ---

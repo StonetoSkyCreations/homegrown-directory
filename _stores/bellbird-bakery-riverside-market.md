@@ -44,9 +44,9 @@ sourced_from:
 - milmore-downs
 - farmers-mill
 - tricketts-grove
-- trade-aid
 sourced_from_text:
 - https://www.bellbirdbakery.co.nz
+- trade-aid
 supplies_to:
 - riverside-market-christchurch
 - bellbird-bakery-the-tannery

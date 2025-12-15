@@ -50,11 +50,12 @@ services_tags: []
 specialty_tags:
 - destination-dining
 - alpine
-sourced_from:
+sourced_from: []
+supplies_to: []
+relationships_declared: true
+sourced_from_text:
 - flockhill-garden
 - flockhill-station-lamb
 - neighboring-canterbury-farms
 - ocean-speared
-supplies_to: []
-relationships_declared: true
 ---

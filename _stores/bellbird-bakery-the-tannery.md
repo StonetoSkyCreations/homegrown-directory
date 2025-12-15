@@ -46,15 +46,16 @@ sourced_from:
 - milmore-downs
 - farmers-mill
 - tricketts-grove
-- trade-aid
 sourced_from_text:
 - https://www.bellbirdbakery.co.nz
+- trade-aid
 supplies_to:
-- cafes
-- restaurants
-- retailers
 - christchurch-farmers-market
 - bellbird-bakery-riverside-market
 - bellbird-bakery-merivale
 relationships_declared: true
+supplies_to_text:
+- cafes
+- restaurants
+- retailers
 ---

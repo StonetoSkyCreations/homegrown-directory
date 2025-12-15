@@ -48,11 +48,11 @@ certifications: []
 specialty_tags: []
 subtype: bakery
 sourced_from:
-- local-organic-farmers
 - milmore-downs
-- koanga-institute
 sourced_from_text:
 - https://www.facebook.com/baccabakery
+- local-organic-farmers
+- koanga-institute
 supplies_to: []
 relationships_declared: true
 ---

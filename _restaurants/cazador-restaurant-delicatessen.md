@@ -47,10 +47,11 @@ practices_tags: []
 products_tags: []
 services_tags: []
 specialty_tags: []
-sourced_from:
+sourced_from: []
+supplies_to: []
+relationships_declared: true
+sourced_from_text:
 - nz-hunters-and-game-producers
 - local-artisans-and-farmers
 - in-house-charcuterie
-supplies_to: []
-relationships_declared: true
 ---

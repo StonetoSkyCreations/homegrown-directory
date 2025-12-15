@@ -69,9 +69,10 @@ services_tags:
 specialty_tags:
 - open-fire-cooking
 - new-zealand-produce
-sourced_from:
-- ahi-kitchen-garden
-- regional-growers-and-fishers
+sourced_from: []
 supplies_to: []
 relationships_declared: true
+sourced_from_text:
+- ahi-kitchen-garden
+- regional-growers-and-fishers
 ---

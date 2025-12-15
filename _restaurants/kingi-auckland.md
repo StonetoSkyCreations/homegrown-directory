@@ -51,10 +51,11 @@ sourced_from:
 - kelmarna-community-farm
 - chatham-island-food-co
 - te-matuku-grove
-- leigh-fish
 sourced_from_text:
 - https://www.kingibritomart.com
-supplies_to:
-- the-hotel-britomart
+- leigh-fish
+supplies_to: []
 relationships_declared: true
+supplies_to_text:
+- the-hotel-britomart
 ---

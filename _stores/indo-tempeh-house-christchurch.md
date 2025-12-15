@@ -61,6 +61,7 @@ specialty_tags:
 sourced_from: []
 supplies_to:
 - harbour-co-op-lyttelton
-- christchurch-vegan-society
 relationships_declared: true
+supplies_to_text:
+- christchurch-vegan-society
 ---

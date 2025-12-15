@@ -12,6 +12,8 @@ map: false
 {% assign incoming_from_sources = all_listings | where_exp: 'item', 'item.sourced_from contains page.slug' %}
 {% assign incoming_sources = incoming_from_supplies | concat: incoming_from_sources | uniq | where_exp: 'item', 'item.slug != page.slug' %}
 {% assign source_partners = all_listings | where_exp: 'item', 'sourced_from_list contains item.slug' | uniq %}
+{% assign sourced_from_text_list = page.sourced_from_text | default: empty_array %}
+{% assign supplies_to_text_list = page.supplies_to_text | default: empty_array %}
 {% assign schema_type = 'LocalBusiness' %}
 {% assign display_label = page.collection | capitalize %}
 {% assign review_target = page.slug | default: page.title | slugify %}
@@ -187,21 +189,21 @@ map: false
       </div>
     {% endif %}
 
-    {% assign has_source_links = source_partners and source_partners.size > 0 %}
-    {% assign has_source_text = page.sourced_from_text and page.sourced_from_text != empty %}
-    {% if has_source_links or has_source_text %}
+    {% assign source_link_count = source_partners | size %}
+    {% assign source_text_count = sourced_from_text_list | size %}
+    {% if source_link_count > 0 or source_text_count > 0 %}
       <div>
         <h2>Sourced from</h2>
-        {% if has_source_links %}
+        {% if source_link_count > 0 %}
         <ul class="link-list">
           {% for item in source_partners %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
           {% endfor %}
         </ul>
         {% endif %}
-        {% if has_source_text %}
+        {% if source_text_count > 0 %}
         <ul class="tag-list">
-          {% for line in page.sourced_from_text %}
+          {% for line in sourced_from_text_list %}
           <li>{{ line }}</li>
           {% endfor %}
         </ul>
@@ -209,21 +211,21 @@ map: false
       </div>
     {% endif %}
 
-    {% assign has_supplies_links = outgoing_supplies and outgoing_supplies.size > 0 %}
-    {% assign has_supplies_text = page.supplies_to_text and page.supplies_to_text != empty %}
-    {% if has_supplies_links or has_supplies_text %}
+    {% assign supplies_link_count = outgoing_supplies | size %}
+    {% assign supplies_text_count = supplies_to_text_list | size %}
+    {% if supplies_link_count > 0 or supplies_text_count > 0 %}
       <div>
         <h2>Supplies to</h2>
-        {% if has_supplies_links %}
+        {% if supplies_link_count > 0 %}
         <ul class="link-list">
           {% for item in outgoing_supplies %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
           {% endfor %}
         </ul>
         {% endif %}
-        {% if has_supplies_text %}
+        {% if supplies_text_count > 0 %}
         <ul class="tag-list">
-          {% for line in page.supplies_to_text %}
+          {% for line in supplies_to_text_list %}
           <li>{{ line }}</li>
           {% endfor %}
         </ul>
