@@ -107,16 +107,23 @@ SEO/AEO meta builder
 
 {% capture auto_title %}
   {% if page.collection and page.collection != 'posts' %}
-    {{ display_name }} — {{ type_label }}{% if loc_for_title != "" %} in {{ loc_for_title }}{% endif %} | {{ site_name }}
+    {{ display_name }} | {{ type_label }}{% if loc_for_title != "" %} in {{ loc_for_title }}{% endif %} | {{ site_name }}
   {% elsif page.layout == 'home' or page.url == '/' %}
-    {{ site_name }} — {{ site.tagline | default: "Find food grown with care" }}
+    {{ site_name }} | {{ site.tagline | default: "Find food grown with care" }}
   {% elsif page.collection == 'posts' %}
     {{ page.title }} | Insights on organic and local food | {{ site_name }}
   {% else %}
     {{ display_name }} | {{ site.description | default: "Organic and local food directory" }} | {{ site_name }}
   {% endif %}
 {% endcapture %}
-{% assign page_title = page.seo_title | default: auto_title | strip | replace: "  ", " " %}
+{% assign sanitized_seo_title = page.seo_title
+  | replace: " — ", " | "
+  | replace: " – ", " | "
+  | replace: " - ", " | "
+  | replace: "  ", " "
+  | replace: "  ", " "
+%}
+{% assign page_title = sanitized_seo_title | default: auto_title | strip | replace: "  ", " " %}
 {% assign og_image = page.og_image | default: site.og_image | default: '/og-image.png' %}
 
 <title>{{ page_title | escape }}</title>
