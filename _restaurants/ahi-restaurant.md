@@ -3,29 +3,45 @@ layout: eatery
 title: Ahi Restaurant
 slug: ahi-restaurant
 name: Ahi Restaurant
-seo_title: "AHI Restaurant Wellington — Seasonal New Zealand Cuisine & Local Producers"
-seo_description: "AHI is a Wellington restaurant celebrating seasonal New Zealand cuisine, working closely with local growers, farmers, and fishers to create thoughtful, ingredient-led dishes grounded in place and provenance."
+seo_title: "Ahi Restaurant Auckland - Seasonal NZ Fine Dining at Commercial Bay"
+seo_description: "Ahi is an Auckland restaurant celebrating seasonal New Zealand ingredients, partnering with growers and fishers across Aotearoa for a provenance-driven fine-dining experience."
 type: Eatery
-subtype: restaurant
+subtype: fine-dining
 country: NZ
 country_slug: new-zealand
 region: Auckland
-city: Auckland
-suburb: CBD
-address: ''
-description: Fine dining restaurant using hyper-seasonal NZ ingredients and produce from its own organic/regenerative farm.
-long_description: ''
-practices: []
-products: []
-services: []
-website: https://ahirestaurant.co.nz
-email: ''
-phone: ''
+city: Auckland Central
+address: Commercial Bay, Level 2, 7 Queen Street, Auckland Central, Auckland 1010, New Zealand
+postcode: "1010"
+description: A refined yet welcoming Auckland restaurant offering a contemporary fine-dining experience grounded in New Zealand ingredients, seasonal storytelling, and deep relationships with growers across Aotearoa.
+long_description: >
+  Ahi is a flagship expression of modern New Zealand dining, co-owned by chef Ben Bayly and hospitality professional Chris Martin. Located in Commercial Bay overlooking the Waitemata Harbour, Ahi is designed as a love letter to Aotearoa - celebrating land, sea, people, and place through food. The menu is shaped by a strong commitment to ethical, sustainable sourcing and proudly names the regions and producers behind each key ingredient. Ahi's own Kitchen Garden in Patumahoe supplies a significant portion of the restaurant's organic vegetables, grown using regenerative practices to prioritise flavour, soil health, and seasonal diversity. In the kitchen, fire plays a central role, with dishes often cooked over open flame and informed by both Maori techniques and contemporary culinary craft. Expect a dining experience that feels immersive yet approachable, where thoughtful service, provenance-led storytelling, and carefully selected New Zealand wines come together to reflect the richness of local food culture.
+practices:
+- seasonal-menu
+- regenerative-growing
+- ethical-sourcing
+- producer-led-supply
+products:
+- set-menu-dining
+- a-la-carte-dining
+- tasting-menus
+services:
+- lunch
+- dinner
+- reservations
+- private-dining
+- wine-pairing
+website: http://ahi.restaurant
+email: kiaora@ahi.restaurant
+phone: "+64 22 524 4255"
 social_links: []
-hours: ''
+hours: Mon-Sun 12:00pm-10:00pm (lunch & dinner).
 market_days: []
-lat: -36.852095
-lon: 174.7631803
+certifications: []
+awards: []
+supply_role: Restaurant
+lat: -36.84297467740622
+lon: 174.7664021182735
 sourcing_tags:
 - organic
 - regenerative
@@ -39,15 +55,23 @@ products_or_cuisine:
 - Fine dining
 - New Zealand cuisine
 source_urls:
-- https://ahirestaurant.co.nz
+- http://ahi.restaurant
 sources: []
 supplies_to: []
 also_referenced_by: []
-last_checked: '2025-12-09'
-practices_tags: []
-products_tags: []
-services_tags: []
-certifications: []
-specialty_tags: []
-relationships_declared: true
+last_checked: "2025-12-12"
+practices_tags:
+- local
+- seasonal
+- regenerative
+products_tags:
+- fine-dining
+- tasting-menu
+services_tags:
+- reservations
+- wine-pairing
+specialty_tags:
+- open-fire-cooking
+- new-zealand-produce
+relationships_declared: false
 ---
