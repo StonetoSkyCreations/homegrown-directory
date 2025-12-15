@@ -51,5 +51,9 @@ practices_tags: []
 products_tags: []
 services_tags: []
 specialty_tags: []
-relationships_declared: false
+sourced_from:
+- nz-hunters-and-game-producers
+- local-artisans-and-farmers
+- in-house-charcuterie
+relationships_declared: true
 ---

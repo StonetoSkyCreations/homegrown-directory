@@ -50,5 +50,9 @@ practices_tags: []
 products_tags: []
 services_tags: []
 specialty_tags: []
-relationships_declared: false
+relationships_declared: true
+sourced_from:
+- amisfield-estate-garden-and-vineyard
+- central-otago-hunters-and-fishers
+- local-foragers
 ---

@@ -22,6 +22,9 @@ sourcing_tags:
 - local
 - seasonal
 - direct-from-farm
+sourced_from:
+- ahi-kitchen-garden
+- regional-growers-and-fishers
 products_or_cuisine:
 - Fine dining
 - New Zealand cuisine
@@ -43,5 +46,5 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-relationships_declared: false
+relationships_declared: true
 ---
