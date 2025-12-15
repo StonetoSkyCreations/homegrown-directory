@@ -54,6 +54,7 @@ source_urls:
 sources: []
 supplies_to:
   - harbour-co-op-lyttelton
+  - lyttelton-farmers-market
 also_referenced_by: []
 last_checked: "2025-12-15"
 practices_tags:

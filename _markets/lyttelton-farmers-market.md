@@ -26,6 +26,7 @@ market_days:
 sources:
 - untamed-earth
 - revive-water-kefir
+- wairiri-buffalo-canterbury
 source_urls:
 - Saturdays 10am–1pm
 last_checked: FMNZ member list
