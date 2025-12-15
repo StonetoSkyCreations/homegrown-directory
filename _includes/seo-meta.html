@@ -120,10 +120,17 @@ SEO/AEO meta builder
   | replace: " — ", " | "
   | replace: " – ", " | "
   | replace: " - ", " | "
+  | replace: "| |", "|"
+  | replace: "| |", "|"
   | replace: "  ", " "
   | replace: "  ", " "
 %}
-{% assign page_title = sanitized_seo_title | default: auto_title | strip | replace: "  ", " " %}
+{% assign page_title = sanitized_seo_title | default: auto_title | strip
+  | replace: "| |", "|"
+  | replace: "| |", "|"
+  | replace: "  ", " "
+  | replace: "  ", " "
+%}
 {% assign og_image = page.og_image | default: site.og_image | default: '/og-image.png' %}
 
 <title>{{ page_title | escape }}</title>
