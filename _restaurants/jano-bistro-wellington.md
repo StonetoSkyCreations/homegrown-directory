@@ -48,6 +48,9 @@ last_checked: "2025-12-12"
 practices_tags: []
 products_tags: []
 services_tags: []
+sourced_from:
+- conscious-valley-wellington
+- wellington-harbourside-market
 specialty_tags: []
-relationships_declared: false
+relationships_declared: true
 ---
