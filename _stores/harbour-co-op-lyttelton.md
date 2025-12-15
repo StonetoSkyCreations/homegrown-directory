@@ -1,50 +1,72 @@
 ---
 layout: store
+title: Harbour Co-op
 slug: harbour-co-op-lyttelton
-name: Harbour Co-op (Lyttelton)
-brand: Harbour Co-op (Lyttelton)
-type: organic-store
-subtype: organic-store
-category: retailer
-description: Community-owned co-operative organic grocery store
+name: Harbour Co-op
+type: store
+subtype: specialty-grocer
 country: NZ
 country_slug: new-zealand
 region: Canterbury
-suburb: Lyttelton
-address: 12 London Street
-postcode: '8082'
-lon: 172.6519448
-phone: ''
+city: Lyttelton
+address: 12 London Street, Lyttelton, Christchurch 8082
+postcode: "8082"
+lat: -43.602473979734434
+lon: 172.72209541875245
+description: A community-owned wholefoods co-operative in Ōhinehou/Lyttelton offering organic and fair trade staples, bulk goods, and locally made products with a low-waste ethos.
+long_description: >
+  Harbour Co-op (formerly LyttelPiko) is a low-profit, community-owned wholefoods shop established after the 2010 earthquakes by locals who wanted a dedicated neighbourhood hub for organic, fair trade, and wholefoods. Owned by households, employees, and institutional purchasers, the co-op is committed to keeping mark-ups low on organic food, minimising waste through bulk buying and reusable containers, and actively supporting local makers and suppliers. Anyone can shop here, with the option to become an owner-member by purchasing a share and joining the co-operative community. Volunteering is also welcomed as part of the co-op’s wider kaupapa of connected, healthy communities and a lighter ecological footprint.
+practices:
+- bulk-refill
+- low-waste
+- supports-local-suppliers
+products:
+- organic-wholefoods
+- bulk-dry-goods
+- fresh-produce
+- household-refills
+- bodycare-and-wellness
+- bread-eggs-and-dairy
+- fair-trade-groceries
+services:
+- retail-shop
+- membership
+- volunteering
+website: ""
 email: shop@harbourcoop.co.nz
-website: http://www.harbourcoop.co.nz/
+phone: "03 328 8544"
 social_links:
-- http://www.harbourcoop.co.nz/
-sourcing_tags:
-- organic
-products: []
+- https://facebook.com/harbourcoop
+- https://instagram.com/harbourcoop
+hours: Monday–Friday 10:00am–5:00pm (Mon/Thu/Fri closed 1:30pm–2:00pm). Saturday 9:00am–4:00pm. Sunday 10:00am–4:00pm.
 market_days: []
-source_urls:
-- Community co-op since 2012
-last_checked: Harbour Co-op site
-notes: Retail/Co-op
-city: Christchurch
-rating_average: 5
-rating_count: 1
-lat: -43.5212527
-geo_precision: exact
-geo_source: nominatim
-geo_last_verified: '2025-12-14'
-geo_label: 4/12
-geo_query: 12 London Street, Christchurch, Canterbury, New Zealand
-title: Harbour Co-op (Lyttelton)
+certifications: []
+awards: []
+supply_role: Retailer; Co-operative grocer
+source_urls: []
 sources: []
 supplies_to: []
-practices: []
+sourced_from:
+- ramharter-biodynamic-farm-canterbury
+- ashley-river-organics-loburn
+- south-lea-olive-oil-canterbury
+- real-food-direct-picton
+- wairiri-buffalo-canterbury
+- little-farm-goat-dairy-oxford
+- eco-egg-company-levin
+- awarua-organics
+- retro-organics-southland
+- indo-tempeh-house-christchurch
+- wabio-kombucha-christchurch
+- mauriora-kombucha-christchurch
+- purebread-organic-bakery
+- solomons-gold
+- wellington-chocolate-factory
+also_referenced_by: []
+last_checked: "2025-12-16"
 practices_tags: []
 products_tags: []
-services: []
 services_tags: []
-certifications: []
 specialty_tags: []
-relationships_declared: false
+relationships_declared: true
 ---
