@@ -3,8 +3,8 @@ layout: eatery
 title: Ahi Restaurant
 slug: ahi-restaurant
 name: Ahi Restaurant
-seo_title: "Ahi Restaurant Auckland - Seasonal NZ Fine Dining at Commercial Bay"
-seo_description: "Ahi is an Auckland restaurant celebrating seasonal New Zealand ingredients, partnering with growers and fishers across Aotearoa for a provenance-driven fine-dining experience."
+seo_title: "Ahi Auckland Restaurant | Garden-to-Plate NZ Fine Dining at Commercial Bay"
+seo_description: "Ahi in Commercial Bay, Auckland combines seasonal New Zealand fine dining with produce from its own organic kitchen garden, working with growers and fishers across Aotearoa for a true garden-to-plate experience."
 type: Eatery
 subtype: fine-dining
 country: NZ
