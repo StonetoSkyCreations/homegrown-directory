@@ -56,7 +56,10 @@ awards: []
 supply_role: Restaurant
 source_urls:
   - https://www.arbourpizza.co.nz
-sources: []
+sources:
+  - wairiri-buffalo-canterbury
+  - little-stem-microgreens
+  - mikaku-tea
 supplies_to: []
 also_referenced_by: []
 last_checked: "2025-12-16"
