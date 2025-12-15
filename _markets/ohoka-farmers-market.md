@@ -37,6 +37,7 @@ lat: -43.36717158708503
 lon: 172.5742729244729
 sources:
 - untamed-earth
+- revive-water-kefir
 rating_average: 5
 rating_count: 1
 practices_tags:

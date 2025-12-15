@@ -40,9 +40,9 @@ awards: []
 supply_role: Producer
 source_urls: []
 supplies_to:
-  - Lyttelton Farmers Market
-  - South Christchurch Farmers Market
-  - Ohoka Farmers Market
+  - lyttelton-farmers-market
+  - south-christchurch-farmers-market
+  - ohoka-farmers-market
 also_referenced_by: []
 last_checked: "2025-12-15"
 practices_tags:
@@ -56,5 +56,5 @@ products_tags:
 specialty_tags:
   - gut-health
   - artisan-producer
-relationships_declared: false
+relationships_declared: true
 ---
