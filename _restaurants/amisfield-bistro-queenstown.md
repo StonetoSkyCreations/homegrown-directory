@@ -1,3 +1,4 @@
+---
 layout: eatery
 title: Amisfield Restaurant & Cellar Door
 slug: amisfield-bistro-queenstown
@@ -34,7 +35,7 @@ website: https://www.amisfield.co.nz
 email: cellardoor@amisfield.co.nz
 phone: "+64 3 442 0556"
 social_links: []
-hours: Cellar Door: Mon-Sun 10:00am-6:00pm (last pour 5:30pm). Lunch: Wed-Sun 12:00pm-3:00pm. Dinner: Wed-Sun (bookings typically 7:00-8:00pm).
+hours: "Cellar Door: Mon-Sun 10:00am-6:00pm (last pour 5:30pm). Lunch: Wed-Sun 12:00pm-3:00pm. Dinner: Wed-Sun (bookings typically 7:00-8:00pm)."
 market_days: []
 certifications:
 - organic (vineyard; as stated by Amisfield)
