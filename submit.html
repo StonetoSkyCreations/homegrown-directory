@@ -3,11 +3,117 @@ layout: default
 title: Add or Update a Listing
 permalink: /submit.html
 ---
+<style>
+  .form-page {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .info-callout {
+    background: #f4f7fb;
+    border: 1px solid #d8e2ef;
+    color: #1f2a3d;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+  }
+  .form-section {
+    border: 1px solid #e0e5ec;
+    border-radius: 10px;
+    background: #fbfdff;
+    padding: 0.75rem 0.85rem;
+    margin: 0 0 1rem;
+  }
+  .form-section summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.25rem;
+  }
+  .form-section summary::-webkit-details-marker {
+    display: none;
+  }
+  .form-section summary::after {
+    content: '›';
+    transition: transform 0.15s ease;
+    margin-left: auto;
+    font-size: 1.2rem;
+    color: #5a6473;
+  }
+  .form-section[open] summary::after {
+    transform: rotate(90deg);
+  }
+  .form-section summary:focus {
+    outline: 2px solid #6b8afd;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  .form-section > *:not(summary) {
+    padding: 0 0.25rem 0.5rem;
+  }
+  .form-group {
+    margin-bottom: 0.75rem;
+  }
+  .form-group label {
+    font-weight: 600;
+  }
+  .form-group.split {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.75rem;
+  }
+  .muted {
+    color: #5c6470;
+    font-size: 0.92rem;
+    margin: 0.25rem 0 0;
+  }
+  #submitDebugBody {
+    background: #f8fafc;
+    border: 1px solid #e0e5ec;
+    border-radius: 8px;
+    padding: 0.75rem;
+    min-height: 260px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-size: 0.92rem;
+  }
+  .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.5rem 0 0;
+  }
+  .button--ghost {
+    background: transparent;
+    border: 1px solid #c8d2e0;
+    color: #2d3645;
+  }
+  .button--ghost:hover {
+    border-color: #9aa8bc;
+    color: #1b2433;
+  }
+  textarea {
+    min-height: 44px;
+  }
+  @media (max-width: 640px) {
+    .form-section {
+      padding: 0.5rem 0.65rem;
+    }
+    .form-section summary {
+      font-size: 1rem;
+    }
+  }
+</style>
+
 <section class="form-page">
   <header class="collection-index__header">
     <p class="eyebrow">Contribute</p>
     <h1>Add or Update a Listing</h1>
-    <p class="lead">Use this form to add new farms, stores, cafés, restaurants, markets, or hubs, or to update an existing listing. On submit, your email client will open with the details prefilled.</p>
+    <p class="lead">Add the name, skim the sections, copy the YAML preview, or send via email.</p>
   </header>
 
   <form id="submitForm">
@@ -25,208 +131,282 @@ permalink: /submit.html
       </div>
     </div>
 
-    <div class="form-group">
-      <label for="collection">Listing category</label>
-      <select id="collection" name="collection" required>
-        <option value="">Select a category…</option>
-        <option value="farms">Farms &amp; producers</option>
-        <option value="markets">Markets</option>
-        <option value="stores">Grocers / stores</option>
-        <option value="restaurants">Eateries (restaurants &amp; cafés)</option>
-        <option value="vendors">Food trucks / mobile vendors</option>
-        <option value="distributors">Distributors / hubs</option>
-      </select>
-    </div>
-
-    <div class="form-group" id="subtype-group" style="display:none">
-      <label for="subtype">Subtype</label>
-      <select id="subtype" name="subtype">
-        <option value="">Select a subtype…</option>
-        <option data-collections="restaurants" value="cafe">Cafe</option>
-        <option data-collections="restaurants" value="restaurant">Restaurant</option>
-        <option data-collections="vendors" value="food-truck">Food truck</option>
-        <option data-collections="stores" value="supermarket">Supermarket</option>
-        <option data-collections="stores" value="organic-store">Organic store</option>
-        <option data-collections="stores" value="wholefoods-store">Wholefoods store</option>
-        <option data-collections="stores" value="bulk-refillery">Bulk refillery</option>
-        <option data-collections="stores" value="co-op">Co-op</option>
-        <option data-collections="stores" value="specialty-grocer">Specialty grocer</option>
-        <option data-collections="farms" value="market-garden">Market garden</option>
-        <option data-collections="farms" value="orchard">Orchard</option>
-        <option data-collections="farms" value="vineyard">Vineyard</option>
-        <option data-collections="farms" value="livestock">Livestock</option>
-        <option data-collections="farms" value="dairy-farm">Dairy farm</option>
-        <option data-collections="farms" value="apiary">Apiary / honey</option>
-        <option data-collections="farms" value="eggs">Eggs</option>
-        <option data-collections="farms" value="mushrooms">Mushrooms</option>
-        <option data-collections="farms" value="seeds">Seeds / nursery</option>
-        <option data-collections="farms" value="flowers">Flowers</option>
-        <option data-collections="farms" value="mixed">Mixed</option>
-      </select>
-    </div>
-
-    <div class="form-group" id="specialty-group" style="display:none">
-      <label>Specialty (optional)</label>
-      <div class="pill-group">
-        {% assign specialty_tags = "bakery,butcher,fish-monger,chocolatier,kombucha,kefir,dairy,cheese,coffee-roaster,fermenter" | split: "," %}
-        {% for tag in specialty_tags %}
-        <label class="pill pill--checkbox">
-          <input type="checkbox" name="specialty_tags" value="{{ tag }}">
-          <span>{{ tag | replace: '-', ' ' | capitalize }}</span>
-        </label>
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label for="name">Business name</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-
-    <div class="form-group split">
-      <div>
-        <label for="country_slug">Country</label>
-        <select id="country_slug" name="country_slug">
-          <option value="new-zealand" selected>New Zealand</option>
-          <option value="australia">Australia</option>
+    <details class="form-section" open>
+      <summary>Basics</summary>
+      <div class="form-group">
+        <label for="collection">Listing category</label>
+        <select id="collection" name="collection">
+          <option value="">Select a category…</option>
+          <option value="farms">Farms &amp; producers</option>
+          <option value="markets">Markets</option>
+          <option value="stores">Grocers / stores</option>
+          <option value="restaurants">Eateries (restaurants &amp; cafés)</option>
+          <option value="vendors">Food trucks / mobile vendors</option>
+          <option value="distributors">Distributors / hubs</option>
         </select>
       </div>
-      <div>
-        <label for="region">Region</label>
-        <input type="text" id="region" name="region" placeholder="e.g. Wellington">
+      <div class="form-group" id="subtype-group" style="display:none">
+        <label for="subtype">Subtype</label>
+        <select id="subtype" name="subtype">
+          <option value="">Select a subtype…</option>
+          <option data-collections="restaurants" value="cafe">Cafe</option>
+          <option data-collections="restaurants" value="restaurant">Restaurant</option>
+          <option data-collections="vendors" value="food-truck">Food truck</option>
+          <option data-collections="stores" value="supermarket">Supermarket</option>
+          <option data-collections="stores" value="organic-store">Organic store</option>
+          <option data-collections="stores" value="wholefoods-store">Wholefoods store</option>
+          <option data-collections="stores" value="bulk-refillery">Bulk refillery</option>
+          <option data-collections="stores" value="co-op">Co-op</option>
+          <option data-collections="stores" value="specialty-grocer">Specialty grocer</option>
+          <option data-collections="farms" value="market-garden">Market garden</option>
+          <option data-collections="farms" value="orchard">Orchard</option>
+          <option data-collections="farms" value="vineyard">Vineyard</option>
+          <option data-collections="farms" value="livestock">Livestock</option>
+          <option data-collections="farms" value="dairy-farm">Dairy farm</option>
+          <option data-collections="farms" value="apiary">Apiary / honey</option>
+          <option data-collections="farms" value="eggs">Eggs</option>
+          <option data-collections="farms" value="mushrooms">Mushrooms</option>
+          <option data-collections="farms" value="seeds">Seeds / nursery</option>
+          <option data-collections="farms" value="flowers">Flowers</option>
+          <option data-collections="farms" value="mixed">Mixed</option>
+        </select>
       </div>
-    </div>
-
-    <div class="form-group split">
-      <div>
-        <label for="city">City / town</label>
-        <input type="text" id="city" name="city" placeholder="e.g. Masterton">
+      <div class="form-group" id="specialty-group" style="display:none">
+        <label>Specialty (optional)</label>
+        <div class="pill-group">
+          {% assign specialty_tags = "bakery,butcher,fish-monger,chocolatier,kombucha,kefir,dairy,cheese,coffee-roaster,fermenter" | split: "," %}
+          {% for tag in specialty_tags %}
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="specialty_tags" value="{{ tag }}">
+            <span>{{ tag | replace: '-', ' ' | capitalize }}</span>
+          </label>
+          {% endfor %}
+        </div>
       </div>
-      <div>
-        <label for="suburb">Suburb</label>
-        <input type="text" id="suburb" name="suburb" placeholder="e.g. Brooklyn">
+      <div class="form-group">
+        <label for="name">Business name (required)</label>
+        <input type="text" id="name" name="name" required>
       </div>
-    </div>
-
-    <div class="form-group">
-      <label for="address">Street address</label>
-      <input type="text" id="address" name="address" placeholder="123 Example St">
-    </div>
-
-    <div class="form-group split">
-      <div>
-        <label for="lat">Latitude</label>
-        <input type="text" id="lat" name="lat" placeholder="-43.530955">
+      <div class="form-group">
+        <label for="slug">Slug (auto, editable)</label>
+        <input type="text" id="slug" name="slug">
+        <p class="muted">Lowercase with dashes is best; we’ll auto-suggest it.</p>
       </div>
-      <div>
-        <label for="lon">Longitude</label>
-        <input type="text" id="lon" name="lon" placeholder="172.636434">
+      <div class="form-group">
+        <label for="description">Short description</label>
+        <textarea id="description" name="description" rows="3" placeholder="1–2 sentences shown on cards."></textarea>
       </div>
-    </div>
-    <p class="muted" style="margin:0.25rem 0 1rem;">Coordinates help us place you on the map (e.g. copy from Google Maps).</p>
-
-    <div class="form-group">
-      <label for="postcode">Postcode (optional)</label>
-      <input type="text" id="postcode" name="postcode" placeholder="e.g. 6011">
-    </div>
-
-    <div class="form-group split">
-      <div>
-      <label for="website">Website</label>
-      <input type="text" id="website" name="website" placeholder="https:// or www.example.com">
+      <div class="form-group">
+        <label for="long_description">Long description</label>
+        <textarea id="long_description" name="long_description" rows="6" placeholder="Plain text is fine."></textarea>
       </div>
-      <div>
-        <label for="social">Social links</label>
-        <textarea id="social" name="social" rows="2" placeholder="https:// (one per line or comma separated)"></textarea>
+      <div class="form-group split">
+        <div>
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" placeholder="https:// or www.example.com">
+        </div>
+        <div>
+          <label for="email">Contact email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+        </div>
       </div>
-    </div>
-
-    <div class="form-group split">
-      <div>
-        <label for="email">Contact email</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com">
+      <div class="form-group split">
+        <div>
+          <label for="phone">Contact phone</label>
+          <input type="text" id="phone" name="phone" placeholder="+64...">
+        </div>
+        <div>
+          <label for="seo_title">SEO title</label>
+          <input type="text" id="seo_title" name="seo_title" placeholder="Page title override">
+        </div>
       </div>
-      <div>
-        <label for="phone">Contact phone</label>
-        <input type="text" id="phone" name="phone" placeholder="+64...">
+      <div class="form-group">
+        <label for="seo_description">SEO description</label>
+        <textarea id="seo_description" name="seo_description" rows="3" placeholder="Plain text."></textarea>
       </div>
-    </div>
+    </details>
 
-    <div class="form-group">
-      <label for="short_description">Short description (card preview)</label>
-      <textarea id="short_description" name="short_description" rows="3" placeholder="Shows on the listing card; 1–2 sentences."></textarea>
-    </div>
-
-    <div class="form-group">
-      <label for="full_description">Full description (for the main listing page)</label>
-      <textarea id="full_description" name="full_description" rows="6" placeholder="Markdown accepted."></textarea>
-    </div>
-
-    <div class="form-group">
-      <label>Practices</label>
-      <div class="pill-group">
-        {% assign practice_tokens = "organic,spray-free,regenerative,biodynamic,wild,pasture-raised,local" | split: "," %}
-        {% for tag in practice_tokens %}
-        <label class="pill pill--checkbox">
-          <input type="checkbox" name="practices_tags" value="{{ tag }}">
-          <span>{{ tag | replace: '-', ' ' | capitalize }}</span>
-        </label>
-        {% endfor %}
+    <details class="form-section">
+      <summary>Location</summary>
+      <div class="form-group split">
+        <div>
+          <label for="country_slug">Country</label>
+          <select id="country_slug" name="country_slug">
+            <option value="new-zealand" selected>New Zealand</option>
+            <option value="australia">Australia</option>
+          </select>
+        </div>
+        <div>
+          <label for="region">Region</label>
+          <input type="text" id="region" name="region" placeholder="e.g. Wellington">
+        </div>
       </div>
-    </div>
-
-    <div class="form-group">
-      <label for="products">Products (one per line or comma separated)</label>
-      <textarea id="products" name="products" rows="3"></textarea>
-    </div>
-
-    <div class="form-group">
-      <label for="services">Services / channels (one per line or comma separated)</label>
-      <textarea id="services" name="services" rows="3"></textarea>
-    </div>
-
-    <div class="form-group split">
-      <div>
-        <label for="hours">Hours / schedule</label>
-        <textarea id="hours" name="hours" rows="2" placeholder="e.g. Mon–Fri 9–5"></textarea>
+      <div class="form-group split">
+        <div>
+          <label for="city">City / town</label>
+          <input type="text" id="city" name="city" placeholder="e.g. Masterton">
+        </div>
+        <div>
+          <label for="suburb">Suburb</label>
+          <input type="text" id="suburb" name="suburb" placeholder="e.g. Brooklyn">
+        </div>
       </div>
-      <div>
-        <label for="market_days">Market days (one per line)</label>
-        <textarea id="market_days" name="market_days" rows="2" placeholder="e.g. Sat 8–12pm"></textarea>
+      <div class="form-group">
+        <label for="address">Street address</label>
+        <input type="text" id="address" name="address" placeholder="123 Example St">
       </div>
-    </div>
-
-    <div class="form-group split">
-      <div>
-        <label for="supplies_to">Who do they supply to? (optional)</label>
-        <textarea id="supplies_to" name="supplies_to" rows="2"></textarea>
+      <div class="form-group split">
+        <div>
+          <label for="postcode">Postcode</label>
+          <input type="text" id="postcode" name="postcode" placeholder="e.g. 6011">
+        </div>
+        <div>
+          <label for="market_days">Market days (one per line)</label>
+          <textarea id="market_days" name="market_days" rows="2" placeholder="Use one item per line."></textarea>
+        </div>
       </div>
-      <div>
-        <label for="sources">Who do they source from? (optional)</label>
-        <textarea id="sources" name="sources" rows="2"></textarea>
+      <div class="form-group split">
+        <div>
+          <label for="lat">Latitude</label>
+          <input type="text" id="lat" name="lat" placeholder="-43.530955">
+        </div>
+        <div>
+          <label for="lon">Longitude</label>
+          <input type="text" id="lon" name="lon" placeholder="172.636434">
+        </div>
       </div>
-    </div>
+      <p class="muted">Coordinates help this listing appear in “near me” results. You can copy these from Google Maps.</p>
+    </details>
 
-    <div class="form-group">
-      <label for="updates">What needs to be updated or corrected? (for updates)</label>
-      <textarea id="updates" name="updates" rows="3"></textarea>
-    </div>
+    <details class="form-section">
+      <summary>What they do</summary>
+      <div class="form-group">
+        <label>Practices</label>
+        <div class="pill-group">
+          {% assign practice_tokens = "organic,spray-free,regenerative,biodynamic,wild,pasture-raised,local" | split: "," %}
+          {% for tag in practice_tokens %}
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="practices" value="{{ tag }}">
+            <span>{{ tag | replace: '-', ' ' | capitalize }}</span>
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="form-group" id="specialty-inline" style="display:none">
+        <label>Specialty tags (for specialty grocers)</label>
+        <div class="pill-group">
+          {% assign specialty_tags = "bakery,butcher,fish-monger,chocolatier,kombucha,kefir,dairy,cheese,coffee-roaster,fermenter" | split: "," %}
+          {% for tag in specialty_tags %}
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="specialty_tags" value="{{ tag }}">
+            <span>{{ tag | replace: '-', ' ' | capitalize }}</span>
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="products">Products (one per line or comma separated)</label>
+        <textarea id="products" name="products" rows="3" placeholder="Use one item per line."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="services">Services / channels (one per line or comma separated)</label>
+        <textarea id="services" name="services" rows="3" placeholder="Use one item per line."></textarea>
+      </div>
+      <div class="form-group split">
+        <div>
+          <label for="hours">Hours / schedule</label>
+          <textarea id="hours" name="hours" rows="2" placeholder="e.g. Mon–Fri 9–5"></textarea>
+          <p class="muted">Colons will be quoted to keep YAML valid.</p>
+        </div>
+        <div>
+          <label for="market_days_secondary">Market days (duplicate for clarity)</label>
+          <textarea id="market_days_secondary" name="market_days_secondary" rows="2" placeholder="Use one item per line."></textarea>
+        </div>
+      </div>
+    </details>
 
-    <div class="form-group">
-      <label for="notes">Extra comments (anything else we should know)</label>
-      <textarea id="notes" name="notes" rows="3"></textarea>
-    </div>
+    <details class="form-section">
+      <summary>Relationships + evidence</summary>
+      <p class="muted">If this business is already listed on Homegrown, use its slug. Otherwise, add the name in plain text.</p>
+      <div class="form-group split">
+        <div>
+          <label for="sourced_from_slugs">Sources from — internal slugs (one per line)</label>
+          <textarea id="sourced_from_slugs" name="sourced_from_slugs" rows="3"></textarea>
+        </div>
+        <div>
+          <label for="sourced_from_text">Sources from — plain-text names (one per line)</label>
+          <textarea id="sourced_from_text" name="sourced_from_text" rows="3" placeholder="Plain text is fine."></textarea>
+        </div>
+      </div>
+      <div class="form-group split">
+        <div>
+          <label for="supplies_to_slugs">Supplies to — internal slugs (one per line)</label>
+          <textarea id="supplies_to_slugs" name="supplies_to_slugs" rows="3"></textarea>
+        </div>
+        <div>
+          <label for="supplies_to_text">Supplies to — plain-text names (one per line)</label>
+          <textarea id="supplies_to_text" name="supplies_to_text" rows="3" placeholder="Plain text is fine."></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="source_urls">Source URLs (one per line or comma separated)</label>
+        <textarea id="source_urls" name="source_urls" rows="3" placeholder="Links that back the info."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="last_checked">Last checked date</label>
+        <input type="date" id="last_checked" name="last_checked">
+      </div>
+    </details>
 
-    <input type="hidden" id="slug" name="slug">
+    <details class="form-section">
+      <summary>Optional extras</summary>
+      <div class="form-group">
+        <label for="social_links">Social links (one per line or comma separated)</label>
+        <textarea id="social_links" name="social_links" rows="2" placeholder="https://"></textarea>
+      </div>
+      <div class="form-group split">
+        <div>
+          <label for="awards">Awards (one per line)</label>
+          <textarea id="awards" name="awards" rows="2"></textarea>
+        </div>
+        <div>
+          <label for="certifications">Certifications (one per line)</label>
+          <textarea id="certifications" name="certifications" rows="2"></textarea>
+        </div>
+      </div>
+      <div class="form-group split">
+        <div>
+          <label for="geo_precision">Geo precision</label>
+          <input type="text" id="geo_precision" name="geo_precision" placeholder="exact / approximate">
+        </div>
+        <div>
+          <label for="geo_source">Geo source</label>
+          <input type="text" id="geo_source" name="geo_source" placeholder="nominatim, google, etc.">
+        </div>
+      </div>
+      <div class="form-group split">
+        <div>
+          <label for="geo_label">Geo label</label>
+          <input type="text" id="geo_label" name="geo_label" placeholder="Street number label">
+        </div>
+        <div>
+          <label for="geo_query">Geo query</label>
+          <input type="text" id="geo_query" name="geo_query" placeholder="Original geocode query">
+        </div>
+      </div>
+    </details>
 
     <p id="submitError" role="alert" style="display:none; color:#b43b3b; margin:0.35rem 0 0.5rem;"></p>
-    <div id="submitDebug" style="display:none; margin:0.5rem 0;">
-      <p style="margin:0 0 0.4rem; color:#2d2d2d; font-size:0.95rem;">
-        We tried to open your email app. If nothing happened, your browser/mail app may be blocking ‘mailto’ links.<br>
-        Copy the message below, then email it to <a href="mailto:josh@stonetosky.nz">josh@stonetosky.nz</a>.
-      </p>
-      <textarea id="submitDebugBody" readonly rows="6" style="width:100%; font-family:monospace;"></textarea>
+
+    <div id="submitDebug" class="form-group" style="margin:0.75rem 0;">
+      <label for="submitDebugBody">YAML preview (copy/paste ready)</label>
+      <textarea id="submitDebugBody" readonly></textarea>
+      <div class="button-row">
+        <button type="button" id="copyYaml" class="button button--ghost">Copy</button>
+        <span class="muted" id="copyStatus" aria-live="polite"></span>
+      </div>
     </div>
+
     <button type="submit" class="button">Send via email</button>
   </form>
 </section>
@@ -239,32 +419,50 @@ permalink: /submit.html
     const params = new URLSearchParams(window.location.search);
     const nameInput = document.getElementById('name');
     const slugInput = document.getElementById('slug');
-    const submissionTypeRadios = submitForm.querySelectorAll('input[name="submission_type"]');
     const collectionSelect = document.getElementById('collection');
     const subtypeSelect = document.getElementById('subtype');
     const subtypeGroup = document.getElementById('subtype-group');
     const specialtyGroup = document.getElementById('specialty-group');
+    const specialtyInline = document.getElementById('specialty-inline');
+    const submissionTypeRadios = submitForm.querySelectorAll('input[name="submission_type"]');
+    const lastCheckedInput = document.getElementById('last_checked');
     const errorEl = document.getElementById('submitError');
+    const debugBody = document.getElementById('submitDebugBody');
+    const copyButton = document.getElementById('copyYaml');
+    const copyStatus = document.getElementById('copyStatus');
 
     const MAILTO_TO = 'josh@stonetosky.nz';
     const MAILTO_MAX_LENGTH = 1800;
-    const TRUNCATION_NOTICE = '[truncated — paste the rest manually]';
-    const TRUNCATION_PREAMBLE =
-      'Note: this draft was shortened to fit the email link. The YAML is intact; please paste the remaining description manually if needed.\n\n';
 
-    // Canonical tokens: collection (farms, markets, stores, restaurants, vendors, distributors)
-    // subtype is only emitted for restaurants/vendors/stores; markets have no subtype.
-    // practices_tags always emitted (even empty). specialty_tags only for stores + specialty-grocer.
     const PRACTICE_TOKENS = ['organic', 'spray-free', 'regenerative', 'biodynamic', 'wild', 'pasture-raised', 'local'];
-    const FARM_SUBTYPES = ['market-garden', 'orchard', 'vineyard', 'livestock', 'dairy-farm', 'apiary', 'eggs', 'mushrooms', 'seeds', 'flowers', 'mixed'];
-    const RESTAURANT_SUBTYPES = ['cafe', 'restaurant'];
-    const VENDOR_SUBTYPES = ['food-truck'];
-    const STORE_SUBTYPES = ['supermarket', 'organic-store', 'wholefoods-store', 'bulk-refillery', 'co-op', 'specialty-grocer'];
     const SPECIALTY_TOKENS = ['bakery', 'butcher', 'fish-monger', 'chocolatier', 'kombucha', 'kefir', 'dairy', 'cheese', 'coffee-roaster', 'fermenter'];
+    const SUBTYPES = {
+      restaurants: ['cafe', 'restaurant'],
+      vendors: ['food-truck'],
+      stores: ['supermarket', 'organic-store', 'wholefoods-store', 'bulk-refillery', 'co-op', 'specialty-grocer'],
+      farms: ['market-garden', 'orchard', 'vineyard', 'livestock', 'dairy-farm', 'apiary', 'eggs', 'mushrooms', 'seeds', 'flowers', 'mixed']
+    };
+    const LAYOUT_BY_COLLECTION = {
+      restaurants: 'eatery',
+      stores: 'store',
+      farms: 'farm',
+      vendors: 'vendor',
+      markets: 'listing',
+      distributors: 'listing'
+    };
+    const TYPE_BY_COLLECTION = {
+      restaurants: 'eatery',
+      stores: 'store',
+      farms: 'farm',
+      vendors: 'vendor',
+      markets: 'market',
+      distributors: 'distributor'
+    };
 
-    const listingRef = params.get('listing') || '';
-    const presetName = params.get('name');
-    const presetSubmissionType = params.get('submission_type');
+    const todayISO = new Date().toISOString().slice(0, 10);
+    if (lastCheckedInput && !lastCheckedInput.value) {
+      lastCheckedInput.value = todayISO;
+    }
 
     const showError = (message, err) => {
       if (err) console.error(err);
@@ -297,9 +495,11 @@ permalink: /submit.html
       if (raw.startsWith('www.')) return `https://${raw}`;
       return `https://${raw}`;
     };
+
     const parseMaybeNumber = (value) => {
-      if (value === null || value === undefined || value === '') return null;
-      const num = Number(value);
+      const str = (value || '').toString().trim();
+      if (!str) return null;
+      const num = Number(str);
       return Number.isFinite(num) ? num : null;
     };
 
@@ -308,6 +508,11 @@ permalink: /submit.html
         .split(/[,\n]/)
         .map((v) => v.trim())
         .filter(Boolean);
+
+    const parseSlugList = (value) =>
+      splitList(value)
+        .map(normalizeToken)
+        .filter((v) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(v));
 
     const uniqueAllowed = (values, allowed) => {
       const set = new Set();
@@ -318,16 +523,29 @@ permalink: /submit.html
       return Array.from(set);
     };
 
-    const clearChecked = (name) => {
-      submitForm.querySelectorAll(`input[name="${name}"]`).forEach((el) => {
-        el.checked = false;
-      });
+    const yamlScalar = (value) => {
+      const str = (value || '').toString();
+      if (!str.trim()) return "''";
+      const needsQuotes = /[:#]|^\s|\s$|^[-?] /.test(str) || str.includes('"');
+      const escaped = str.replace(/'/g, "''");
+      return needsQuotes ? `'${escaped}'` : escaped;
+    };
+
+    const formatArray = (label, items) => {
+      if (!items.length) return `${label}: []`;
+      return `${label}:\n${items.map((item) => `- ${yamlScalar(item)}`).join('\n')}`;
+    };
+
+    const formatMultiline = (label, value) => {
+      const text = (value || '').trim();
+      if (!text) return `${label}: ''`;
+      const indented = text.replace(/\r?\n/g, '\n').split('\n').map((line) => `  ${line}`).join('\n');
+      return `${label}: |\n${indented}`;
     };
 
     const updateCategoryFields = () => {
       const collection = collectionSelect ? collectionSelect.value : '';
-      const subtypeAllowedCollections = ['restaurants', 'vendors', 'stores', 'farms'];
-      const showSubtype = subtypeAllowedCollections.includes(collection);
+      const showSubtype = Boolean(SUBTYPES[collection]);
       if (subtypeGroup) subtypeGroup.style.display = showSubtype ? '' : 'none';
       if (subtypeSelect) {
         const current = subtypeSelect.value;
@@ -351,22 +569,29 @@ permalink: /submit.html
           subtypeSelect.value = '';
         }
       }
-
       const showSpecialty = collection === 'stores' && subtypeSelect && subtypeSelect.value === 'specialty-grocer';
       if (specialtyGroup) specialtyGroup.style.display = showSpecialty ? '' : 'none';
-      if (!showSpecialty) clearChecked('specialty_tags');
+      if (specialtyInline) specialtyInline.style.display = showSpecialty ? '' : 'none';
+      if (!showSpecialty) {
+        submitForm.querySelectorAll('input[name="specialty_tags"]').forEach((el) => {
+          el.checked = false;
+        });
+      }
     };
 
     const applyPrefills = () => {
+      const listingRef = params.get('listing') || '';
+      const presetName = params.get('name');
+      const presetSubmissionType = params.get('submission_type');
       if (presetName && nameInput) {
         nameInput.value = presetName;
       } else if (listingRef && nameInput) {
         nameInput.value = listingRef;
       }
-      if (listingRef && slugInput && !slugInput.value) {
-        slugInput.value = listingRef;
+      if (slugInput && !slugInput.value) {
+        const base = listingRef || presetName || '';
+        slugInput.value = slugify(base);
       }
-
       const shouldSetUpdate =
         (presetSubmissionType && presetSubmissionType.toLowerCase().includes('update')) || Boolean(listingRef);
       if (shouldSetUpdate && submissionTypeRadios.length) {
@@ -374,12 +599,9 @@ permalink: /submit.html
           radio.checked = radio.value === 'update';
         });
       }
-
       if (collectionSelect) {
         const presetCollection = params.get('collection');
-        if (presetCollection) {
-          collectionSelect.value = presetCollection;
-        }
+        if (presetCollection) collectionSelect.value = presetCollection;
         collectionSelect.addEventListener('change', updateCategoryFields);
       }
       if (subtypeSelect) {
@@ -388,207 +610,244 @@ permalink: /submit.html
       updateCategoryFields();
     };
 
-    const formatList = (label, items) => {
-      if (!items.length) return `${label}: []`;
-      return `${label}:\n${items.map((item) => `  - ${item}`).join('\n')}`;
-    };
+    const collectValues = () => {
+      const data = new FormData(submitForm);
+      const name = (data.get('name') || '').trim();
+      if (!name) throw new Error('Business name is required.');
 
-    const formatMultiline = (label, value) => {
-      const text = (value || '').trim();
-      return `${label}: >\n  ${text.replace(/\r?\n/g, '\n  ')}`;
-    };
+      let slug = (data.get('slug') || '').trim();
+      if (!slug) slug = slugify(name);
+      else slug = slugify(slug);
 
-    const buildEmailSections = (data, action, targetSlug) => {
-      const listFields = {
-        products: splitList(data.get('products')),
-        services: splitList(data.get('services')),
-        social: splitList(data.get('social')),
-        market_days: splitList(data.get('market_days')),
-        supplies_to: splitList(data.get('supplies_to')),
-        sources: splitList(data.get('sources'))
-      };
-      const name = data.get('name') || '';
-      const countrySlug = data.get('country_slug') || 'new-zealand';
-      const countryLabel = countrySlug === 'australia' ? 'AU' : 'New Zealand';
-      const slug = targetSlug || slugify(name);
       const collection = data.get('collection') || '';
       const subtypeRaw = normalizeToken(data.get('subtype'));
-      const practicesTags = uniqueAllowed(data.getAll('practices_tags'), PRACTICE_TOKENS);
-      const latValue = data.get('lat') || '';
-      const lonValue = data.get('lon') || '';
-      const specialtyTags =
-        collection === 'stores' && subtypeRaw === 'specialty-grocer'
-          ? uniqueAllowed(data.getAll('specialty_tags'), SPECIALTY_TOKENS)
-          : [];
-      const subtypeAllowed =
-        (collection === 'restaurants' && RESTAURANT_SUBTYPES.includes(subtypeRaw)) ||
-        (collection === 'vendors' && VENDOR_SUBTYPES.includes(subtypeRaw)) ||
-        (collection === 'stores' && STORE_SUBTYPES.includes(subtypeRaw)) ||
-        (collection === 'farms' && FARM_SUBTYPES.includes(subtypeRaw));
-      const subtype = subtypeAllowed ? subtypeRaw : '';
-      const shortDescription = data.get('short_description') || '';
-      const fullDescription = (data.get('full_description') || '').trim();
-      const descriptionText = shortDescription || fullDescription;
-      const submitterName = data.get('submitter_name') || '';
-      const ownerName = data.get('owner_name') || '';
+      const allowedSubtypes = SUBTYPES[collection] || [];
+      const subtype = allowedSubtypes.includes(subtypeRaw) ? subtypeRaw : '';
 
-      const yamlLines = [
-        '---',
-        `title: ${name}`,
-        `slug: ${slug}`,
-        `collection: ${collection}`,
-        subtype ? `subtype: ${subtype}` : null,
-        `country_slug: ${countrySlug}`,
-        `country: ${countryLabel}`,
-        `region: ${data.get('region') || ''}`,
-        `city: ${data.get('city') || ''}`,
-        `address: ${data.get('address') || ''}`,
-        `suburb: ${data.get('suburb') || ''}`,
-        `postcode: ${data.get('postcode') || ''}`,
-        `lat: ${latValue}`,
-        `lon: ${lonValue}`,
-        formatMultiline('description', descriptionText),
-        formatMultiline('seo_description', data.get('seo_description')),
-        formatList('practices_tags', practicesTags),
-        collection === 'stores' && specialtyTags.length ? formatList('specialty_tags', specialtyTags) : null,
-        formatList('products', listFields.products),
-        formatList('services', listFields.services),
-        `website: ${normalizeWebsite(data.get('website'))}`,
-        `email: ${data.get('email') || ''}`,
-        `phone: ${data.get('phone') || ''}`,
-        formatList('social', listFields.social),
-        `hours: ${data.get('hours') || ''}`,
-        formatList('market_days', listFields.market_days),
-        formatList('supplies_to', listFields.supplies_to),
-        formatList('sources', listFields.sources),
-        '---'
-      ];
-      const yamlContent = yamlLines.filter(Boolean).join('\n');
+      const description = (data.get('description') || '').trim();
+      const longDescription = (data.get('long_description') || '').trim();
+      const website = normalizeWebsite(data.get('website'));
+      const email = (data.get('email') || '').trim();
+      const phone = (data.get('phone') || '').trim();
+      const seoTitle = (data.get('seo_title') || '').trim();
+      const seoDescription = (data.get('seo_description') || '').trim();
 
-      const ownerIsContact = data.get('owner_checkbox') ? 'yes' : 'no';
-      const submitterNotes = [
-        '# Submitter notes',
-        `owner_is_contact: ${ownerIsContact}`,
-        `owner_name: ${ownerName}`,
-        `submitter_name: ${submitterName}`,
-        `submitter_email: ${data.get('submitter_email') || ''}`
-      ];
-      if (action === 'update') {
-        submitterNotes.push('what_changed: |');
-        submitterNotes.push(`  ${(data.get('updates') || '').replace(/\r?\n/g, '\n  ')}`);
-      } else {
-        submitterNotes.push('extra_comments: |');
-        submitterNotes.push(`  ${(data.get('notes') || '').replace(/\r?\n/g, '\n  ')}`);
-      }
+      const countrySlug = data.get('country_slug') || 'new-zealand';
+      const country = countrySlug === 'australia' ? 'Australia' : 'New Zealand';
+      const region = (data.get('region') || '').trim();
+      const city = (data.get('city') || '').trim();
+      const suburb = (data.get('suburb') || '').trim();
+      const address = (data.get('address') || '').trim();
+      const postcode = (data.get('postcode') || '').trim();
 
-      const headerLines = [
-        `# ACTION: ${action === 'update' ? 'UPDATE_LISTING' : 'NEW_LISTING'}`,
-        action === 'update' ? `# TARGET_SLUG: ${targetSlug || slug}` : null
-      ].filter(Boolean);
+      const latValue = parseMaybeNumber(data.get('lat'));
+      const lonValue = parseMaybeNumber(data.get('lon'));
+      const latLonValid = latValue !== null && lonValue !== null && latValue >= -90 && latValue <= 90 && lonValue >= -180 && lonValue <= 180;
+
+      const practices = uniqueAllowed(data.getAll('practices'), PRACTICE_TOKENS);
+      const specialty = subtype === 'specialty-grocer' ? uniqueAllowed(data.getAll('specialty_tags'), SPECIALTY_TOKENS) : [];
+
+      const products = splitList(data.get('products'));
+      const services = splitList(data.get('services'));
+      const marketDays = splitList(data.get('market_days') || data.get('market_days_secondary'));
+      const hours = (data.get('hours') || '').trim();
+
+      const sourcedFrom = parseSlugList(data.get('sourced_from_slugs'));
+      const sourcedFromText = splitList(data.get('sourced_from_text'));
+      const suppliesTo = parseSlugList(data.get('supplies_to_slugs'));
+      const suppliesToText = splitList(data.get('supplies_to_text'));
+      const relationshipsDeclared =
+        sourcedFrom.length || sourcedFromText.length || suppliesTo.length || suppliesToText.length ? true : false;
+
+      const sourceUrls = splitList(data.get('source_urls'));
+      const lastChecked = (data.get('last_checked') || todayISO).trim() || todayISO;
+
+      const socialLinks = splitList(data.get('social_links'));
+      const awards = splitList(data.get('awards'));
+      const certifications = splitList(data.get('certifications'));
+      const geoPrecision = (data.get('geo_precision') || '').trim();
+      const geoSource = (data.get('geo_source') || '').trim();
+      const geoLabel = (data.get('geo_label') || '').trim();
+      const geoQuery = (data.get('geo_query') || '').trim();
 
       return {
-        header: headerLines.join('\n'),
-        yaml: yamlContent,
-        fullDescription: fullDescription || '[add long-form description here]',
-        notes: submitterNotes.join('\n'),
+        name,
         slug,
-        name
+        collection,
+        layout: LAYOUT_BY_COLLECTION[collection] || 'listing',
+        type: TYPE_BY_COLLECTION[collection] || (collection || 'listing'),
+        subtype,
+        description,
+        longDescription,
+        website,
+        email,
+        phone,
+        seoTitle,
+        seoDescription,
+        countrySlug,
+        country,
+        region,
+        city,
+        suburb,
+        address,
+        postcode,
+        lat: latLonValid ? latValue : null,
+        lon: latLonValid ? lonValue : null,
+        practices,
+        specialty,
+        products,
+        services,
+        marketDays,
+        hours,
+        sourcedFrom,
+        sourcedFromText,
+        suppliesTo,
+        suppliesToText,
+        relationshipsDeclared,
+        sourceUrls,
+        lastChecked,
+        socialLinks,
+        awards,
+        certifications,
+        geoPrecision,
+        geoSource,
+        geoLabel,
+        geoQuery
       };
     };
 
-    const composeBody = (sections, descriptionOverride) =>
-      [sections.header, sections.yaml, '# Full description (markdown)', descriptionOverride || sections.fullDescription, sections.notes].join('\n\n');
+    const renderYaml = (values) => {
+      const lines = [
+        '---',
+        `layout: ${values.layout}`,
+        `title: ${yamlScalar(values.name)}`,
+        `slug: ${values.slug}`,
+        `collection: ${values.collection}`,
+        `type: ${values.type}`,
+        `subtype: ${yamlScalar(values.subtype)}`,
+        `country_slug: ${values.countrySlug}`,
+        `country: ${values.country}`,
+        `region: ${yamlScalar(values.region)}`,
+        `city: ${yamlScalar(values.city)}`,
+        `suburb: ${yamlScalar(values.suburb)}`,
+        `address: ${yamlScalar(values.address)}`,
+        `postcode: ${values.postcode ? `'${values.postcode}'` : "''"}`,
+        `description: ${yamlScalar(values.description)}`,
+        formatMultiline('long_description', values.longDescription),
+        formatArray('practices', values.practices),
+        values.specialty.length ? formatArray('specialty_tags', values.specialty) : null,
+        formatArray('products', values.products),
+        formatArray('services', values.services),
+        `website: ${yamlScalar(values.website)}`,
+        `email: ${yamlScalar(values.email)}`,
+        `phone: ${yamlScalar(values.phone)}`,
+        `hours: ${yamlScalar(values.hours)}`,
+        formatArray('market_days', values.marketDays),
+        formatArray('source_urls', values.sourceUrls),
+        `last_checked: '${values.lastChecked}'`,
+        formatArray('sourced_from', values.sourcedFrom),
+        formatArray('sourced_from_text', values.sourcedFromText),
+        formatArray('supplies_to', values.suppliesTo),
+        formatArray('supplies_to_text', values.suppliesToText),
+        `relationships_declared: ${values.relationshipsDeclared ? 'true' : 'false'}`,
+        formatArray('social_links', values.socialLinks),
+        formatArray('awards', values.awards),
+        formatArray('certifications', values.certifications),
+        values.seoTitle ? `seo_title: ${yamlScalar(values.seoTitle)}` : `seo_title: ''`,
+        values.seoDescription ? formatMultiline('seo_description', values.seoDescription) : `seo_description: ''`,
+        values.lat !== null && values.lon !== null ? `lat: ${values.lat}` : null,
+        values.lat !== null && values.lon !== null ? `lon: ${values.lon}` : null,
+        values.geoPrecision ? `geo_precision: ${yamlScalar(values.geoPrecision)}` : null,
+        values.geoSource ? `geo_source: ${yamlScalar(values.geoSource)}` : null,
+        values.geoLabel ? `geo_label: ${yamlScalar(values.geoLabel)}` : null,
+        values.geoQuery ? `geo_query: ${yamlScalar(values.geoQuery)}` : null,
+        '---'
+      ];
+      return lines.filter(Boolean).join('\n');
+    };
 
     const mailtoLength = (subject, body) =>
       `mailto:${MAILTO_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`.length;
 
-    const buildBodyWithTruncation = (subject, sections) => {
-      const baseBody = composeBody(sections);
-      if (mailtoLength(subject, baseBody) <= MAILTO_MAX_LENGTH) return baseBody;
-
-      const description = sections.fullDescription || '';
-      let snippet = description;
-      let truncatedBody = `${TRUNCATION_PREAMBLE}${composeBody(sections, `${snippet}${snippet ? '\n\n' : ''}${TRUNCATION_NOTICE}`)}`;
-
-      while (mailtoLength(subject, truncatedBody) > MAILTO_MAX_LENGTH && snippet.length > 80) {
-        snippet = snippet.slice(0, Math.max(80, Math.floor(snippet.length * 0.7)));
-        truncatedBody = `${TRUNCATION_PREAMBLE}${composeBody(
-          sections,
-          `${snippet}${snippet ? '\n\n' : ''}${TRUNCATION_NOTICE}`
-        )}`;
-      }
-
-      if (mailtoLength(subject, truncatedBody) > MAILTO_MAX_LENGTH) {
-        truncatedBody = `${TRUNCATION_PREAMBLE}${sections.header}\n\n${sections.yaml}\n\n# Full description (markdown)\n${TRUNCATION_NOTICE}\n\n${sections.notes}`;
-      }
-
-      if (mailtoLength(subject, truncatedBody) > MAILTO_MAX_LENGTH) {
-        truncatedBody = `${TRUNCATION_PREAMBLE}${sections.header}\n\n${sections.yaml}\n\n${TRUNCATION_NOTICE}`;
-      }
-
-      return truncatedBody;
+    const buildMailBody = (values, subject) => {
+      let yaml = renderYaml(values);
+      if (mailtoLength(subject, yaml) <= MAILTO_MAX_LENGTH) return yaml;
+      const trimmed = { ...values, longDescription: '[truncated for email — copy full YAML from the page]' };
+      yaml = renderYaml(trimmed);
+      if (mailtoLength(subject, yaml) <= MAILTO_MAX_LENGTH) return yaml;
+      const shortest = { ...trimmed, longDescription: '' };
+      return renderYaml(shortest);
     };
 
-    const buildMailtoUrl = (subject, sections) => {
-      const body = buildBodyWithTruncation(subject, sections);
-      return `mailto:${MAILTO_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const refreshPreview = () => {
+      if (!debugBody) return;
+      try {
+        const values = collectValues();
+        debugBody.value = renderYaml(values);
+      } catch (err) {
+        debugBody.value = 'Add the business name to see YAML.';
+      }
     };
 
     try {
       applyPrefills();
+      const autoSlug = () => {
+        if (!slugInput || !nameInput) return;
+        if (!slugInput.dataset.manual || slugInput.dataset.manual !== 'true') {
+          slugInput.value = slugify(nameInput.value);
+        }
+      };
+      if (nameInput) {
+        nameInput.addEventListener('input', () => {
+          autoSlug();
+          refreshPreview();
+        });
+      }
+      if (slugInput) {
+        slugInput.addEventListener('input', () => {
+          slugInput.dataset.manual = 'true';
+          refreshPreview();
+        });
+      }
+      submitForm.addEventListener('input', refreshPreview);
+      refreshPreview();
     } catch (err) {
-      showError('We had trouble preparing the form; you can still send via email.', err);
+      showError('We had trouble preparing the form. You can still send via email.', err);
     }
 
     submitForm.addEventListener('submit', (e) => {
       e.preventDefault();
       clearError();
       try {
-        const data = new FormData(submitForm);
-        const latRaw = (data.get('lat') || '').trim();
-        const lonRaw = (data.get('lon') || '').trim();
-        const hasLat = latRaw !== '';
-        const hasLon = lonRaw !== '';
-        if (hasLat) {
-          const latVal = parseMaybeNumber(latRaw);
-          if (latVal === null || latVal < -90 || latVal > 90) {
-            showError('Latitude must be a number between -90 and 90.');
-            return;
-          }
+        const values = collectValues();
+        const subjectToken = values.slug || values.name;
+        const subject = subjectToken ? `Homegrown Directory submission: ${subjectToken}` : 'Homegrown Directory submission';
+        const body = buildMailBody(values, subject);
+        if (debugBody) {
+          debugBody.value = renderYaml(values);
         }
-        if (hasLon) {
-          const lonVal = parseMaybeNumber(lonRaw);
-          if (lonVal === null || lonVal < -180 || lonVal > 180) {
-            showError('Longitude must be a number between -180 and 180.');
-            return;
-          }
-        }
-        const action = (data.get('submission_type') || 'new') === 'update' ? 'update' : 'new';
-        const name = data.get('name') || '';
-        const targetSlug = listingRef || '';
-        const slug = targetSlug || slugify(name);
-        if (slugInput) {
-          slugInput.value = slug;
-        }
-
-        const sections = buildEmailSections(data, action, targetSlug || slug);
-        const subjectToken = sections.slug || sections.name || slug || name;
-        const subject = subjectToken
-          ? `Homegrown Directory submission: ${subjectToken}`
-          : 'Homegrown Directory submission';
-
-        const mailtoUrl = buildMailtoUrl(subject, sections);
-        console.log('[submit] mailto length:', mailtoUrl.length, 'preview:', mailtoUrl.slice(0, 200));
-        const debugEl = document.getElementById('submitDebug');
-        const debugBody = document.getElementById('submitDebugBody');
-        if (debugEl && debugBody) {
-          debugBody.value = buildBodyWithTruncation(subject, sections);
-          debugEl.style.display = 'block';
-        }
+        const mailtoUrl = `mailto:${MAILTO_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoUrl;
       } catch (err) {
-        showError('Sorry, we could not prepare the email draft. Please copy your answers and email josh@stonetosky.nz.', err);
+        showError(err.message || 'Sorry, we could not prepare the email draft. Please copy the YAML preview.', err);
       }
     });
+
+    if (copyButton && debugBody) {
+      copyButton.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(debugBody.value || '');
+          if (copyStatus) {
+            copyStatus.textContent = 'Copied';
+            setTimeout(() => {
+              copyStatus.textContent = '';
+            }, 1600);
+          }
+        } catch (err) {
+          if (copyStatus) copyStatus.textContent = 'Copy not available';
+          console.error(err);
+        }
+      });
+    }
   })();
 </script>
