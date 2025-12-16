@@ -27,6 +27,9 @@ services:
 - smoothie bar
 - "caf\xE9 counter"
 - online ordering
+source_urls:
+- https://thecoromandel.nz/explore/all-things-organic-tairua
+- https://allthingsorganic.co.nz/
 website: ''
 email: orders@allthingsorganic.co.nz
 phone: 021 767 444
@@ -42,8 +45,7 @@ services_tags: []
 certifications: []
 specialty_tags: []
 sourced_from: []
-sourced_from_text:
-- https://thecoromandel.nz/explore/all-things-organic-tairua#:~:text=A%20delightful%20organic%20store%20offering,in%20both%20Tairua%20and%20Whitiangahttps://thecoromandel.nz/explore/all-things-organic-tairua#:~:text=https://allthingsorganic.co.nz/#:~:text=All%20Things%20Organic
+sourced_from_text: []
 supplies_to: []
 relationships_declared: true
 ---

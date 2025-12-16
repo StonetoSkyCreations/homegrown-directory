@@ -32,7 +32,8 @@ market_days: []
 lat: -37.00010736028414
 lon: 175.84879593559526
 source_urls:
-- https://thecoromandel.nz/explore/all-things-organic-tairua#:~:text=A%20delightful%20organic%20store%20offering,in%20both%20Tairua%20and%20Whitiangahttps://thecoromandel.nz/explore/all-things-organic-tairua#:~:text=https://allthingsorganic.co.nz/#:~:text=All%20Things%20Organic
+- https://thecoromandel.nz/explore/all-things-organic-tairua
+- https://allthingsorganic.co.nz/
 last_checked: '2025-12-12'
 practices_tags: []
 products_tags: []
