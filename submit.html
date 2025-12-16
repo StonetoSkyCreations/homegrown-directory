@@ -71,31 +71,6 @@ permalink: /submit.html
     font-size: 0.92rem;
     margin: 0.25rem 0 0;
   }
-  #submitDebugBody {
-    background: #f8fafc;
-    border: 1px solid #e0e5ec;
-    border-radius: 8px;
-    padding: 0.75rem;
-    min-height: 260px;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-    font-size: 0.92rem;
-  }
-  .button-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    align-items: center;
-    margin: 0.5rem 0 0;
-  }
-  .button--ghost {
-    background: transparent;
-    border: 1px solid #c8d2e0;
-    color: #2d3645;
-  }
-  .button--ghost:hover {
-    border-color: #9aa8bc;
-    color: #1b2433;
-  }
   textarea {
     min-height: 44px;
   }
@@ -113,7 +88,7 @@ permalink: /submit.html
   <header class="collection-index__header">
     <p class="eyebrow">Contribute</p>
     <h1>Add or Update a Listing</h1>
-    <p class="lead">Add the name, skim the sections, copy the YAML preview, or send via email.</p>
+    <p class="lead">Add the name, skim the sections, then send via email.</p>
   </header>
 
   <form id="submitForm">
@@ -188,17 +163,12 @@ permalink: /submit.html
         <input type="text" id="name" name="name" required>
       </div>
       <div class="form-group">
-        <label for="slug">Slug (auto, editable)</label>
-        <input type="text" id="slug" name="slug">
-        <p class="muted">Lowercase with dashes is best; we’ll auto-suggest it.</p>
-      </div>
-      <div class="form-group">
         <label for="description">Short description</label>
         <textarea id="description" name="description" rows="3" placeholder="1–2 sentences shown on cards."></textarea>
       </div>
       <div class="form-group">
         <label for="long_description">Long description</label>
-        <textarea id="long_description" name="long_description" rows="6" placeholder="Plain text is fine."></textarea>
+        <textarea id="long_description" name="long_description" rows="6" placeholder="A fuller description for the main listing page. Share the story, sourcing, and what makes this place distinctive."></textarea>
       </div>
       <div class="form-group split">
         <div>
@@ -216,13 +186,13 @@ permalink: /submit.html
           <input type="text" id="phone" name="phone" placeholder="+64...">
         </div>
         <div>
-          <label for="seo_title">SEO title</label>
+          <label for="seo_title">SEO title (optional)</label>
           <input type="text" id="seo_title" name="seo_title" placeholder="Page title override">
         </div>
       </div>
       <div class="form-group">
-        <label for="seo_description">SEO description</label>
-        <textarea id="seo_description" name="seo_description" rows="3" placeholder="Plain text."></textarea>
+        <label for="seo_description">SEO description (optional)</label>
+        <textarea id="seo_description" name="seo_description" rows="3" placeholder="1–2 plain sentences describing what they do and how food is sourced."></textarea>
       </div>
     </details>
 
@@ -279,7 +249,7 @@ permalink: /submit.html
     </details>
 
     <details class="form-section">
-      <summary>What they do</summary>
+      <summary>Offering &amp; Operations</summary>
       <div class="form-group">
         <label>Practices</label>
         <div class="pill-group">
@@ -330,22 +300,12 @@ permalink: /submit.html
       <p class="muted">If this business is already listed on Homegrown, use its slug. Otherwise, add the name in plain text.</p>
       <div class="form-group split">
         <div>
-          <label for="sourced_from_slugs">Sources from — internal slugs (one per line)</label>
-          <textarea id="sourced_from_slugs" name="sourced_from_slugs" rows="3"></textarea>
+          <label for="sourced_from_text">Sources from</label>
+          <textarea id="sourced_from_text" name="sourced_from_text" rows="3" placeholder="Business name of farms, growers, or producers this business sources food or produce from"></textarea>
         </div>
         <div>
-          <label for="sourced_from_text">Sources from — plain-text names (one per line)</label>
-          <textarea id="sourced_from_text" name="sourced_from_text" rows="3" placeholder="Plain text is fine."></textarea>
-        </div>
-      </div>
-      <div class="form-group split">
-        <div>
-          <label for="supplies_to_slugs">Supplies to — internal slugs (one per line)</label>
-          <textarea id="supplies_to_slugs" name="supplies_to_slugs" rows="3"></textarea>
-        </div>
-        <div>
-          <label for="supplies_to_text">Supplies to — plain-text names (one per line)</label>
-          <textarea id="supplies_to_text" name="supplies_to_text" rows="3" placeholder="Plain text is fine."></textarea>
+          <label for="supplies_to_text">Supplies to</label>
+          <textarea id="supplies_to_text" name="supplies_to_text" rows="3" placeholder="Business name of cafés, restaurants, shops, or buyers this business supplies food or produce to"></textarea>
         </div>
       </div>
       <div class="form-group">
@@ -398,15 +358,6 @@ permalink: /submit.html
 
     <p id="submitError" role="alert" style="display:none; color:#b43b3b; margin:0.35rem 0 0.5rem;"></p>
 
-    <div id="submitDebug" class="form-group" style="margin:0.75rem 0;">
-      <label for="submitDebugBody">YAML preview (copy/paste ready)</label>
-      <textarea id="submitDebugBody" readonly></textarea>
-      <div class="button-row">
-        <button type="button" id="copyYaml" class="button button--ghost">Copy</button>
-        <span class="muted" id="copyStatus" aria-live="polite"></span>
-      </div>
-    </div>
-
     <button type="submit" class="button">Send via email</button>
   </form>
 </section>
@@ -418,7 +369,6 @@ permalink: /submit.html
 
     const params = new URLSearchParams(window.location.search);
     const nameInput = document.getElementById('name');
-    const slugInput = document.getElementById('slug');
     const collectionSelect = document.getElementById('collection');
     const subtypeSelect = document.getElementById('subtype');
     const subtypeGroup = document.getElementById('subtype-group');
@@ -427,9 +377,6 @@ permalink: /submit.html
     const submissionTypeRadios = submitForm.querySelectorAll('input[name="submission_type"]');
     const lastCheckedInput = document.getElementById('last_checked');
     const errorEl = document.getElementById('submitError');
-    const debugBody = document.getElementById('submitDebugBody');
-    const copyButton = document.getElementById('copyYaml');
-    const copyStatus = document.getElementById('copyStatus');
 
     const MAILTO_TO = 'josh@stonetosky.nz';
     const MAILTO_MAX_LENGTH = 1800;
@@ -509,11 +456,6 @@ permalink: /submit.html
         .map((v) => v.trim())
         .filter(Boolean);
 
-    const parseSlugList = (value) =>
-      splitList(value)
-        .map(normalizeToken)
-        .filter((v) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(v));
-
     const uniqueAllowed = (values, allowed) => {
       const set = new Set();
       values.forEach((val) => {
@@ -588,10 +530,6 @@ permalink: /submit.html
       } else if (listingRef && nameInput) {
         nameInput.value = listingRef;
       }
-      if (slugInput && !slugInput.value) {
-        const base = listingRef || presetName || '';
-        slugInput.value = slugify(base);
-      }
       const shouldSetUpdate =
         (presetSubmissionType && presetSubmissionType.toLowerCase().includes('update')) || Boolean(listingRef);
       if (shouldSetUpdate && submissionTypeRadios.length) {
@@ -615,9 +553,7 @@ permalink: /submit.html
       const name = (data.get('name') || '').trim();
       if (!name) throw new Error('Business name is required.');
 
-      let slug = (data.get('slug') || '').trim();
-      if (!slug) slug = slugify(name);
-      else slug = slugify(slug);
+      let slug = slugify(name);
 
       const collection = data.get('collection') || '';
       const subtypeRaw = normalizeToken(data.get('subtype'));
@@ -652,9 +588,9 @@ permalink: /submit.html
       const marketDays = splitList(data.get('market_days') || data.get('market_days_secondary'));
       const hours = (data.get('hours') || '').trim();
 
-      const sourcedFrom = parseSlugList(data.get('sourced_from_slugs'));
+      const sourcedFrom = [];
       const sourcedFromText = splitList(data.get('sourced_from_text'));
-      const suppliesTo = parseSlugList(data.get('supplies_to_slugs'));
+      const suppliesTo = [];
       const suppliesToText = splitList(data.get('supplies_to_text'));
       const relationshipsDeclared =
         sourcedFrom.length || sourcedFromText.length || suppliesTo.length || suppliesToText.length ? true : false;
@@ -779,38 +715,8 @@ permalink: /submit.html
       return renderYaml(shortest);
     };
 
-    const refreshPreview = () => {
-      if (!debugBody) return;
-      try {
-        const values = collectValues();
-        debugBody.value = renderYaml(values);
-      } catch (err) {
-        debugBody.value = 'Add the business name to see YAML.';
-      }
-    };
-
     try {
       applyPrefills();
-      const autoSlug = () => {
-        if (!slugInput || !nameInput) return;
-        if (!slugInput.dataset.manual || slugInput.dataset.manual !== 'true') {
-          slugInput.value = slugify(nameInput.value);
-        }
-      };
-      if (nameInput) {
-        nameInput.addEventListener('input', () => {
-          autoSlug();
-          refreshPreview();
-        });
-      }
-      if (slugInput) {
-        slugInput.addEventListener('input', () => {
-          slugInput.dataset.manual = 'true';
-          refreshPreview();
-        });
-      }
-      submitForm.addEventListener('input', refreshPreview);
-      refreshPreview();
     } catch (err) {
       showError('We had trouble preparing the form. You can still send via email.', err);
     }
@@ -823,31 +729,11 @@ permalink: /submit.html
         const subjectToken = values.slug || values.name;
         const subject = subjectToken ? `Homegrown Directory submission: ${subjectToken}` : 'Homegrown Directory submission';
         const body = buildMailBody(values, subject);
-        if (debugBody) {
-          debugBody.value = renderYaml(values);
-        }
         const mailtoUrl = `mailto:${MAILTO_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoUrl;
       } catch (err) {
-        showError(err.message || 'Sorry, we could not prepare the email draft. Please copy the YAML preview.', err);
+        showError(err.message || 'Sorry, we could not prepare the email draft. Please email josh@stonetosky.nz.', err);
       }
     });
-
-    if (copyButton && debugBody) {
-      copyButton.addEventListener('click', async () => {
-        try {
-          await navigator.clipboard.writeText(debugBody.value || '');
-          if (copyStatus) {
-            copyStatus.textContent = 'Copied';
-            setTimeout(() => {
-              copyStatus.textContent = '';
-            }, 1600);
-          }
-        } catch (err) {
-          if (copyStatus) copyStatus.textContent = 'Copy not available';
-          console.error(err);
-        }
-      });
-    }
   })();
 </script>
