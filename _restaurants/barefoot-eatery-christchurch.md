@@ -6,7 +6,7 @@ country: New Zealand
 country_slug: new-zealand
 region: Canterbury
 city: Christchurch
-address: 20 Welles Street, Christchurch Central City 8011
+address: Riverside Market, 96 Oxford Terrace, Christchurch Central City 8011, New Zealand
 suburb: Riverside Market
 practices:
 - Organic (uncertified)
