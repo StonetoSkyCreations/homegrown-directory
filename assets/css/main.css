@@ -671,6 +671,8 @@ a:focus-visible {
   border-radius: 12px;
   border: 1px solid var(--border);
   background: var(--card);
+  color: var(--text);
+  caret-color: var(--accent-2);
 }
 .search-controls input[type="search"]::placeholder {
   color: var(--muted);

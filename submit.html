@@ -9,21 +9,23 @@ permalink: /submit.html
     margin: 0 auto;
   }
   .form-section {
-    border: 1px solid #e0e5ec;
-    border-radius: 10px;
-    background: #fbfdff;
-    padding: 0.75rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--card);
+    padding: 0.85rem 0.95rem;
     margin: 0 0 1rem;
+    transition: background 0.2s ease, border-color 0.2s ease;
   }
   .form-section summary {
     list-style: none;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.05rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.35rem 0.25rem;
+    color: var(--text);
   }
   .form-section summary::-webkit-details-marker {
     display: none;
@@ -33,15 +35,15 @@ permalink: /submit.html
     transition: transform 0.15s ease;
     margin-left: auto;
     font-size: 1.2rem;
-    color: #5a6473;
+    color: var(--muted);
   }
   .form-section[open] summary::after {
     transform: rotate(90deg);
   }
-  .form-section summary:focus {
-    outline: 2px solid #6b8afd;
+  .form-section summary:focus-visible {
+    outline: 2px solid var(--accent-2);
     outline-offset: 2px;
-    border-radius: 6px;
+    border-radius: 8px;
   }
   .form-section > *:not(summary) {
     padding: 0 0.25rem 0.5rem;
@@ -50,7 +52,7 @@ permalink: /submit.html
     margin-bottom: 0.75rem;
   }
   .form-group label {
-    font-weight: 600;
+    font-weight: 700;
   }
   .form-group.split {
     display: grid;
@@ -58,16 +60,20 @@ permalink: /submit.html
     gap: 0.75rem;
   }
   .muted {
-    color: #5c6470;
+    color: var(--muted);
     font-size: 0.92rem;
     margin: 0.25rem 0 0;
+  }
+  .form-error {
+    color: #f28b82;
+    margin: 0.35rem 0 0.5rem;
   }
   textarea {
     min-height: 44px;
   }
   @media (max-width: 640px) {
     .form-section {
-      padding: 0.5rem 0.65rem;
+      padding: 0.65rem 0.75rem;
     }
     .form-section summary {
       font-size: 1rem;
@@ -347,7 +353,7 @@ permalink: /submit.html
       </div>
     </details>
 
-    <p id="submitError" role="alert" style="display:none; color:#b43b3b; margin:0.35rem 0 0.5rem;"></p>
+    <p id="submitError" role="alert" class="form-error" style="display:none;"></p>
 
     <button type="submit" class="button">Send via email</button>
   </form>
