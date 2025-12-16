@@ -2,6 +2,7 @@
 title: "Restaurant or caf\xE9 name"
 slug: restaurant-slug
 published: false
+sitemap: false
 country: Country name
 country_slug: country-slug
 region: Region or state

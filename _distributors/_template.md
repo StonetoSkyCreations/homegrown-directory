@@ -2,6 +2,7 @@
 title: Hub or distributor name
 slug: distributor-slug
 published: false
+sitemap: false
 country: Country name
 country_slug: country-slug
 region: Region or state

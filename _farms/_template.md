@@ -2,6 +2,7 @@
 title: Name of farm
 slug: farm-slug
 published: false
+sitemap: false
 country: Country name
 country_slug: country-slug
 region: Region or state

@@ -2,6 +2,7 @@
 title: Market name
 slug: market-slug
 published: false
+sitemap: false
 country: Country name
 country_slug: country-slug
 region: Region or state
