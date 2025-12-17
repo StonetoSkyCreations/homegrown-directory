@@ -78,17 +78,47 @@
     distributor: "/distributors/"
   };
 
+  const params = new URLSearchParams(window.location.search);
+  const nearMeDebugEnabled = params.get("debug") === "1";
+  if (nearMeDebugEnabled) window.DEBUG_NEAR_ME = true;
+
   const nearMeState = {
     userLocation: null,
     active: false,
     clickCount: 0,
     isLocating: false,
-    lastLocationAt: 0
+    lastLocationAt: 0,
+    lastRequestStartedAt: 0,
+    envLogged: false
   };
   const LOCATION_CACHE_MS = 1000 * 60 * 5;
 
   const nearMeDebug = (...args) => {
     if (window.DEBUG_NEAR_ME) console.log("[near-me]", ...args);
+  };
+
+  const isFacebookInApp = () => /FBAN|FBAV|FB_IAB|FBIOS|FBMD/i.test(navigator.userAgent || "");
+  const isInstagramInApp = () => /Instagram/i.test(navigator.userAgent || "");
+  const isInAppBrowser = () => isFacebookInApp() || isInstagramInApp();
+
+  const logNearMeEnvironment = () => {
+    if (!window.DEBUG_NEAR_ME || nearMeState.envLogged) return;
+    nearMeState.envLogged = true;
+    nearMeDebug("Near me environment", {
+      ua: navigator.userAgent,
+      isSecureContext: Boolean(window.isSecureContext),
+      protocol: window.location.protocol,
+      hasPermissionsApi: Boolean(navigator.permissions),
+      facebookInApp: isFacebookInApp(),
+      instagramInApp: isInstagramInApp(),
+      inAppBrowser: isInAppBrowser()
+    });
+    if (navigator.permissions?.query) {
+      navigator.permissions
+        .query({ name: "geolocation" })
+        .then((status) => nearMeDebug("Geolocation permission state", { state: status.state }))
+        .catch((err) => nearMeDebug("Permissions query failed", err));
+    }
   };
 
   const setTheme = (mode, persist = true) => {
@@ -147,13 +177,26 @@
     });
   };
 
+  const promptManualSearch = () => {
+    try {
+      if (searchInput) searchInput.focus();
+      else if (heroRegionSelect) heroRegionSelect.focus();
+    } catch (err) {
+      // ignore focus errors
+    }
+  };
+
   const refreshNearMeResults = () => {
     if (typeof runDirectoryFilters === "function") runDirectoryFilters();
     applyFilters();
   };
 
   const requestLocation = () => {
+    logNearMeEnvironment();
+    const startedAt = Date.now();
+    nearMeState.lastRequestStartedAt = startedAt;
     nearMeState.clickCount += 1;
+    nearMeDebug("Near me click", { click: nearMeState.clickCount, startedAt });
     if (!navigator.geolocation) {
       setNearMeStatus("Geolocation not supported");
       return;
@@ -179,15 +222,22 @@
     setNearMeButtonsDisabled(true);
     setNearMeStatus("Locating…");
 
+    const inAppBrowser = isInAppBrowser();
     const geoOptions = {
       enableHighAccuracy: false,
-      timeout: 15000,
+      timeout: inAppBrowser ? 10000 : 15000,
       maximumAge: LOCATION_CACHE_MS
     };
-    nearMeDebug("Requesting geolocation", { click: nearMeState.clickCount, options: geoOptions, isLocating: nearMeState.isLocating });
+    nearMeDebug("Requesting geolocation", {
+      click: nearMeState.clickCount,
+      options: geoOptions,
+      isLocating: nearMeState.isLocating,
+      inAppBrowser
+    });
 
     navigator.geolocation.getCurrentPosition(
       (position) => {
+        const completedAt = Date.now();
         nearMeState.userLocation = {
           lat: position.coords.latitude,
           lon: position.coords.longitude
@@ -201,16 +251,32 @@
           coords: nearMeState.userLocation,
           accuracy: position.coords.accuracy,
           timestamp: position.timestamp,
-          click: nearMeState.clickCount
+          click: nearMeState.clickCount,
+          startedAt,
+          completedAt,
+          durationMs: completedAt - startedAt
         });
         refreshNearMeResults();
       },
       (error) => {
+        const completedAt = Date.now();
         nearMeState.active = false;
         nearMeState.isLocating = false;
         setNearMeButtonsDisabled(false);
-        nearMeDebug("Near me error", { code: error.code, message: error.message, click: nearMeState.clickCount });
-        if (error.code === 1) setNearMeStatus("Location blocked");
+        nearMeDebug("Near me error", {
+          code: error.code,
+          message: error.message,
+          click: nearMeState.clickCount,
+          startedAt,
+          completedAt,
+          durationMs: completedAt - startedAt,
+          inAppBrowser
+        });
+        const inAppHelp = "Open in your browser to use Near me. You can search or choose a region instead.";
+        if (inAppBrowser) {
+          setNearMeStatus(inAppHelp);
+          promptManualSearch();
+        } else if (error.code === 1) setNearMeStatus("Location blocked");
         else if (error.code === 2) setNearMeStatus("Location unavailable");
         else if (error.code === 3) setNearMeStatus("Location timed out — try again");
         else setNearMeStatus("Couldn’t get location");
