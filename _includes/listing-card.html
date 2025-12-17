@@ -79,6 +79,7 @@ Filters read:
 - data-products: comma-joined product tokens (products_tags > products)
 {%- endcomment -%}
 <article class="{{ card_classes }}"
+  data-slug="{{ listing.slug | escape }}"
   data-region="{{ listing.region | escape }}"
   data-city="{{ listing.city | default: listing.city_town | escape }}"
   data-name="{{ card_title | escape }}"

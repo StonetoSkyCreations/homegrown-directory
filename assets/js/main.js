@@ -542,14 +542,37 @@
   // Directory filtering (region + tags + subtype + country) for directory pages
   const directoryContainer = document.querySelector(".directory-page");
   if (directoryContainer) {
+    const featuredSection = directoryContainer.querySelector(".featured-section");
+    const featuredHeroSlug =
+      (featuredSection?.dataset?.featuredSlug || "").trim() ||
+      (featuredSection?.querySelector(".listing-card")?.dataset?.slug || "").trim();
     const regionSelect = document.getElementById("regionFilter");
     const textFilter = document.getElementById("dirSearch");
     const tagFilters = Array.from(document.querySelectorAll('input[name="tag"]'));
     const subtypeFilters = Array.from(document.querySelectorAll('input[name="subtype"]'));
     const productFilters = Array.from(document.querySelectorAll('input[name="products"]'));
-    const cards = Array.from(directoryContainer.querySelectorAll(".listing-card"));
+    const cards = Array.from(directoryContainer.querySelectorAll(".listing-grid .listing-card"));
     const dirResultsCount = document.getElementById("dirResultsCount");
     const nearMeStatus = document.querySelector("[data-near-me-status], #nearMeStatus");
+    const featuredResultCard = featuredHeroSlug ? cards.find((card) => (card.dataset.slug || "").trim() === featuredHeroSlug) : null;
+
+    const ensureFeaturedStyling = (card) => {
+      if (!card) return;
+      card.classList.add("listing-card--featured");
+      card.dataset.featured = "true";
+      const metaContainer = card.querySelector(".listing-card__meta > div");
+      if (!metaContainer) return;
+      if (!metaContainer.querySelector(".featured-badge")) {
+        metaContainer.insertAdjacentHTML("beforeend", '<span class="featured-badge">⭐ Featured</span>');
+      }
+    };
+
+    ensureFeaturedStyling(featuredResultCard);
+
+    const setFeaturedSectionVisible = (visible) => {
+      if (!featuredSection) return;
+      featuredSection.style.display = visible ? "" : "none";
+    };
 
     const setDistanceBadge = (card, distance) => {
       const badge = card.querySelector("[data-distance]");
@@ -614,6 +637,7 @@
     runDirectoryFilters = () => {
       const nearMeMode = nearMeState.active && nearMeState.userLocation;
       const active = nearMeMode || hasActiveFilters();
+      setFeaturedSectionVisible(!active);
       const selectedRegion = normalizeRegion(regionSelect ? regionSelect.value : "all");
       const query = textFilter ? normalizeToken(textFilter.value) : "";
       const selectedTags = normalizeList(tagFilters.filter((c) => c.checked).map((c) => c.value));
@@ -624,20 +648,19 @@
 
       if (!active) {
         cards.forEach((card) => {
-          const isFeatured = card.classList.contains("listing-card--featured") || card.dataset.featured === "true";
-          const hide = nearMeMode ? false : !isFeatured;
-          card.classList.toggle("hidden", hide);
-          card.style.display = hide ? "none" : "";
-          if (!hide) visibleCount += 1;
+          card.classList.remove("hidden");
+          card.style.display = "";
+          visibleCount += 1;
         });
+        if (featuredResultCard) {
+          featuredResultCard.classList.add("hidden");
+          featuredResultCard.style.display = "none";
+          visibleCount -= 1;
+        }
         if (dirResultsCount) {
           dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
         }
-        if (nearMeActive && userLocation) {
-          sortByDistance(cards, userLocation);
-        } else {
-          clearDistances(cards);
-        }
+        clearDistances(cards);
         return;
       }
 
@@ -698,6 +721,19 @@
   if (typeof runDirectoryFilters === "function") runDirectoryFilters();
 
   const hasSearchUI = resultsContainer || mapPanel;
+  const featuredHeroSection = document.querySelector(".featured-section");
+  const featuredHeroSlug = (featuredHeroSection?.dataset?.featuredSlug || "").trim();
+
+  const setFeaturedHeroVisible = (visible) => {
+    if (!featuredHeroSection) return;
+    featuredHeroSection.style.display = visible ? "" : "none";
+  };
+
+  const isFeaturedItem = (item) => {
+    if (!item) return false;
+    if (item.featured === true) return true;
+    return Boolean(featuredHeroSlug) && (item.slug || "") === featuredHeroSlug;
+  };
 
     const cardTemplate = (item) => {
       const tags =
@@ -710,11 +746,13 @@
       const city = item.city || "";
       const region = item.region || "";
       const locText = city && region ? `${city}, ${region}` : city || region || "Location not provided";
+      const isFeatured = isFeaturedItem(item);
       return `
-        <article class="listing-card" data-lat="${item.lat ?? ""}" data-lon="${item.lon ?? ""}">
+        <article class="listing-card${isFeatured ? " listing-card--featured" : ""}" data-lat="${item.lat ?? ""}" data-lon="${item.lon ?? ""}">
           <div class="listing-card__meta">
             <div>
               <span class="pill pill--type">${typeLabels[item.collection] || item.type}</span>
+              ${isFeatured ? '<span class="featured-badge">⭐ Featured</span>' : ""}
             </div>
             <span class="listing-card__location">${locText}</span>
             <p class="listing-card__distance" data-distance hidden></p>
@@ -886,7 +924,7 @@
     const heroTypeActive = Array.isArray(heroTypeFilters) && heroTypeFilters.length > 0;
     const hashTypeActive = Array.isArray(hashTypes) && hashTypes.length > 0;
 
-    const nearMeMode = nearMeState.active && nearMeState.userLocation;
+    const nearMeEngaged = nearMeState.active || nearMeState.isLocating;
 
     return !!(
       q ||
@@ -896,7 +934,7 @@
       extraChecked ||
       heroTypeActive ||
       hashTypeActive ||
-      nearMeMode
+      nearMeEngaged
     );
   }
 
@@ -904,6 +942,7 @@
     if (!hasSearchUI) return;
     const nearMeMode = nearMeState.active && nearMeState.userLocation;
     const active = hasActiveFilters() || nearMeMode;
+    setFeaturedHeroVisible(!active);
     const selections = {
       query: searchInput ? searchInput.value : "",
       region: heroRegionSelect ? heroRegionSelect.value : "all",

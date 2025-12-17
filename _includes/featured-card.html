@@ -19,7 +19,11 @@
       {% assign heading = "Featured listing" %}
     {% endif %}
   {% endunless %}
-<section class="featured-section">
+<section
+  class="featured-section"
+  data-featured-slug="{{ item.slug | escape }}"
+  data-featured-url="{{ item.url | relative_url | escape }}"
+  data-featured-collection="{{ item.collection | downcase | escape }}">
   <div class="featured-card-wrapper">
     {% if heading %}<p class="eyebrow">{{ heading }}</p>{% endif %}
     {% include listing-card.html
