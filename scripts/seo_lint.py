@@ -77,6 +77,7 @@ def main():
     config = load_config()
     listing_prefixes = config.get("listing_prefixes", [])
     ignore_paths = set(config.get("ignore_paths", []))
+    ignore_prefixes = set(config.get("ignore_prefixes", []))
     allow_dupe_paths = set(config.get("allow_duplicate_titles_for_paths", []))
 
     html_files = list(SITE_DIR.rglob("*.html"))
@@ -89,6 +90,8 @@ def main():
     for file_path in html_files:
         url_path = url_path_from_file(file_path)
         if url_path in ignore_paths:
+            continue
+        if any(url_path.startswith(prefix) for prefix in ignore_prefixes):
             continue
 
         parser = HeadParser()
