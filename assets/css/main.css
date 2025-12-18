@@ -1018,7 +1018,7 @@ a:focus-visible {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 0.85rem 1rem;
-  background: #f8f7f3;
+  background: var(--card);
 }
 .review__header {
   display: flex;
@@ -1031,9 +1031,9 @@ a:focus-visible {
   padding: 0.12rem 0.55rem;
   font-size: 0.9rem;
   border-radius: 999px;
-  border: 1px solid #c7a869;
-  background: #faf7f1;
-  color: #8c7344;
+  border: 1px solid var(--border);
+  background: var(--accent-soft);
+  color: var(--text);
   font-weight: 600;
 }
 .review__title {
