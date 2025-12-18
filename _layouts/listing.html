@@ -89,6 +89,7 @@ map: false
 {% include contact-hours-normalize.html entity=page %}
 {% assign contact_email_count = contact_emails | size %}
 {% assign contact_phone_count = contact_phones | size %}
+{% assign primary_phone_display = contact_phones | first | to_s | strip %}
 {% case page.collection %}
   {% when 'farms' %}{% assign schema_type = 'Farm' %}{% assign display_label = 'Farm' %}
   {% when 'restaurants' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Eatery' %}
@@ -116,17 +117,8 @@ map: false
 {% if website_url != "" or contact_email_count > 0 or contact_phone_count > 0 %}
   <div class="listing__contact">
     {% if website_url != "" %}<a href="{{ website_url }}" rel="noopener">Website</a>{% endif %}
-    {% for email in contact_emails %}
-      {% assign email_label = contact_email_labels[forloop.index0] | default: 'Email' %}
-      {% capture email_text %}{% if email_label != 'Email' %}{{ email_label }}: {% endif %}{{ email }}{% endcapture %}
-      <a href="mailto:{{ email }}">{{ email_text | strip }}</a>
-    {% endfor %}
-    {% for phone in contact_phones %}
-      {% assign phone_label = contact_phone_labels[forloop.index0] | default: 'Call' %}
-      {% assign phone_href_item = phone | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
-      {% capture phone_text %}{% if phone_label != 'Call' %}{{ phone_label }}: {% endif %}{{ phone }}{% endcapture %}
-      <a href="tel:{{ phone_href_item }}">{{ phone_text | strip }}</a>
-    {% endfor %}
+    {% if primary_email != "" %}<a href="mailto:{{ primary_email }}">Email</a>{% endif %}
+    {% if primary_phone_display != "" %}<a href="tel:{{ ld_phone }}">Phone</a>{% endif %}
   </div>
 {% endif %}
       </div>
