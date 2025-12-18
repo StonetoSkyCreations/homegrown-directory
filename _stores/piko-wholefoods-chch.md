@@ -55,6 +55,7 @@ sourced_from:
   - wabio-kombucha-christchurch
   - wairiri-buffalo-canterbury
   - untamed-earth
+  - shiny-shovel
 
 relationships_declared: true
 
