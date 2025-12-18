@@ -1,0 +1,207 @@
+{% comment %}
+Normalises contact (email/phone) and hours fields so templates can handle strings, arrays, or maps without dumping raw objects.
+Exposes:
+- contact_emails/contact_email_labels/primary_email
+- contact_phones/contact_phone_labels/primary_phone_href
+- hours_lines/hours_ld_string
+{% endcomment %}
+{% assign entity = include.entity %}
+
+{% assign contact_emails = "" | split: "" %}
+{% assign contact_email_labels = "" | split: "" %}
+{% assign primary_email = "" %}
+{% assign email_field = include.email | default: entity.email %}
+{% if email_field %}
+  {% assign email_json = email_field | jsonify %}
+  {% assign email_type = email_json | slice: 0, 1 %}
+  {% if email_type == '{' %}
+    {% for pair in email_field %}
+      {% assign label_raw = pair[0] | to_s %}
+      {% assign value = pair[1] | to_s | strip %}
+      {% assign label_clean = label_raw | replace: '_', ' ' | replace: '-', ' ' | strip %}
+      {% assign label_words = label_clean | split: ' ' %}
+      {% assign label_clean = "" %}
+      {% for word in label_words %}
+        {% assign word_clean = word | strip %}
+        {% if word_clean != "" %}
+          {% assign word_clean = word_clean | capitalize %}
+          {% if label_clean == "" %}
+            {% assign label_clean = word_clean %}
+          {% else %}
+            {% assign label_clean = label_clean | append: ' ' | append: word_clean %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% if label_clean == "" %}
+        {% assign label_clean = 'Email' %}
+      {% endif %}
+      {% if value != "" %}
+        {% assign contact_emails = contact_emails | push: value %}
+        {% assign contact_email_labels = contact_email_labels | push: label_clean %}
+        {% if primary_email == "" %}
+          {% assign primary_email = value %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% elsif email_type == '[' %}
+    {% for value in email_field %}
+      {% assign email_value = value | to_s | strip %}
+      {% if email_value != "" %}
+        {% assign contact_emails = contact_emails | push: email_value %}
+        {% assign contact_email_labels = contact_email_labels | push: 'Email' %}
+        {% if primary_email == "" %}
+          {% assign primary_email = email_value %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {% assign email_value = email_field | to_s | strip %}
+    {% if email_value != "" %}
+      {% assign contact_emails = contact_emails | push: email_value %}
+      {% assign contact_email_labels = contact_email_labels | push: 'Email' %}
+      {% assign primary_email = email_value %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% assign contact_phones = "" | split: "" %}
+{% assign contact_phone_labels = "" | split: "" %}
+{% assign primary_phone_href = "" %}
+{% assign phone_field = include.phone | default: entity.phone %}
+{% if phone_field %}
+  {% assign phone_json = phone_field | jsonify %}
+  {% assign phone_type = phone_json | slice: 0, 1 %}
+  {% if phone_type == '{' %}
+    {% for pair in phone_field %}
+      {% assign phone_label_raw = pair[0] | to_s %}
+      {% assign phone_value = pair[1] | to_s | strip %}
+      {% assign phone_label_clean = phone_label_raw | replace: '_', ' ' | replace: '-', ' ' | strip %}
+      {% assign phone_label_words = phone_label_clean | split: ' ' %}
+      {% assign phone_label_clean = "" %}
+      {% for word in phone_label_words %}
+        {% assign word_clean = word | strip %}
+        {% if word_clean != "" %}
+          {% assign word_clean = word_clean | capitalize %}
+          {% if phone_label_clean == "" %}
+            {% assign phone_label_clean = word_clean %}
+          {% else %}
+            {% assign phone_label_clean = phone_label_clean | append: ' ' | append: word_clean %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% if phone_label_clean == "" %}
+        {% assign phone_label_clean = 'Call' %}
+      {% endif %}
+      {% if phone_value != "" %}
+        {% assign contact_phones = contact_phones | push: phone_value %}
+        {% assign contact_phone_labels = contact_phone_labels | push: phone_label_clean %}
+        {% if primary_phone_href == "" %}
+          {% assign primary_phone_href = phone_value | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% elsif phone_type == '[' %}
+    {% for value in phone_field %}
+      {% assign phone_value = value | to_s | strip %}
+      {% if phone_value != "" %}
+        {% assign contact_phones = contact_phones | push: phone_value %}
+        {% assign contact_phone_labels = contact_phone_labels | push: 'Call' %}
+        {% if primary_phone_href == "" %}
+          {% assign primary_phone_href = phone_value | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {% assign phone_value = phone_field | to_s | strip %}
+    {% if phone_value != "" %}
+      {% assign contact_phones = contact_phones | push: phone_value %}
+      {% assign contact_phone_labels = contact_phone_labels | push: 'Call' %}
+      {% assign primary_phone_href = phone_value | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% assign hours_lines = "" | split: "" %}
+{% assign hours_field = include.hours | default: entity.hours %}
+{% assign hours_list_field = include.hours_list | default: entity.hours_list %}
+{% if hours_list_field %}
+  {% assign hours_lines = hours_list_field %}
+{% elsif hours_field %}
+  {% assign hours_json = hours_field | jsonify %}
+  {% assign hours_type = hours_json | slice: 0, 1 %}
+  {% if hours_type == '{' %}
+    {% for pair in hours_field %}
+      {% assign hours_label_raw = pair[0] | to_s %}
+      {% assign hours_label_clean = hours_label_raw | replace: '_', ' ' | replace: '-', ' ' | strip %}
+      {% assign hours_label_words = hours_label_clean | split: ' ' %}
+      {% assign hours_label_clean = "" %}
+      {% for word in hours_label_words %}
+        {% assign word_clean = word | strip %}
+        {% if word_clean != "" %}
+          {% assign word_clean = word_clean | capitalize %}
+          {% if hours_label_clean == "" %}
+            {% assign hours_label_clean = word_clean %}
+          {% else %}
+            {% assign hours_label_clean = hours_label_clean | append: ' ' | append: word_clean %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% if hours_label_clean == "" %}
+        {% assign hours_label_clean = 'Hours' %}
+      {% endif %}
+      {% assign raw_value = pair[1] %}
+      {% capture hours_value_text %}
+        {% assign value_json = raw_value | jsonify %}
+        {% assign value_type = value_json | slice: 0, 1 %}
+        {% if value_type == '[' %}
+          {{ raw_value | join: ', ' }}
+        {% elsif value_type == '{' %}
+          {% assign nested_lines = "" | split: "" %}
+          {% for nested in raw_value %}
+            {% assign nested_label_raw = nested[0] | to_s %}
+            {% assign nested_label = nested_label_raw | replace: '_', ' ' | replace: '-', ' ' | strip %}
+            {% assign nested_label_words = nested_label | split: ' ' %}
+            {% assign nested_label = "" %}
+            {% for word in nested_label_words %}
+              {% assign nested_word = word | strip %}
+              {% if nested_word != "" %}
+                {% assign nested_word = nested_word | capitalize %}
+                {% if nested_label == "" %}
+                  {% assign nested_label = nested_word %}
+                {% else %}
+                  {% assign nested_label = nested_label | append: ' ' | append: nested_word %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            {% assign nested_value = nested[1] | to_s | strip %}
+            {% if nested_value != "" %}
+              {% assign nested_line = nested_label | append: ': ' | append: nested_value %}
+              {% assign nested_lines = nested_lines | push: nested_line %}
+            {% endif %}
+          {% endfor %}
+          {{ nested_lines | join: '; ' }}
+        {% else %}
+          {{ raw_value }}
+        {% endif %}
+      {% endcapture %}
+      {% assign hours_value_text = hours_value_text | strip %}
+      {% if hours_value_text != "" %}
+        {% assign hours_line = hours_label_clean | append: ': ' | append: hours_value_text %}
+        {% assign hours_lines = hours_lines | push: hours_line %}
+      {% endif %}
+    {% endfor %}
+  {% elsif hours_type == '[' %}
+    {% for value in hours_field %}
+      {% assign hours_value = value | to_s | strip %}
+      {% if hours_value != "" %}
+        {% assign hours_lines = hours_lines | push: hours_value %}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {% assign hours_value = hours_field | to_s | strip %}
+    {% if hours_value != "" %}
+      {% assign hours_lines = hours_lines | push: hours_value %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+{% assign hours_ld_string = hours_lines | join: '; ' | strip %}

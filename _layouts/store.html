@@ -54,11 +54,13 @@ map: false
 {% elsif website_url != "" %}
   {% assign website_url = "https://" | append: website_url %}
 {% endif %}
-{% assign phone_href = page.phone | default: "" | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
+{% include contact-hours-normalize.html entity=page %}
+{% assign contact_email_count = contact_emails | size %}
+{% assign contact_phone_count = contact_phones | size %}
 {% assign ld_website = website_url | to_s | strip %}
-{% assign ld_phone = page.phone | to_s | strip %}
-{% assign ld_email = page.email | to_s | strip %}
-{% assign ld_hours = page.hours | to_s | strip %}
+{% assign ld_phone = contact_phones | first | to_s | replace: ' ', '' | replace: '(', '' | replace: ')', '' | strip %}
+{% assign ld_email = primary_email | to_s | strip %}
+{% assign ld_hours = hours_ld_string | to_s | strip %}
 {% assign schema_type = 'LocalBusiness' %}
 {% assign type_token = page.type | default: page.category | default: '' | downcase %}
 {% if type_token contains 'cafe' %}
@@ -77,12 +79,20 @@ map: false
         <p class="listing__location">
           {% include address-block.html %}
         </p>
-        {% assign has_email = page.email | to_s | strip %}
-        {% if website_url != "" or has_email != "" or phone_href != "" %}
+        {% if website_url != "" or contact_email_count > 0 or contact_phone_count > 0 %}
         <div class="listing__contact">
           {% if website_url != "" %}<a href="{{ website_url }}" rel="noopener">Website</a>{% endif %}
-          {% if has_email != "" %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
-          {% if phone_href != "" %}<a href="tel:{{ phone_href }}">{{ page.phone }}</a>{% endif %}
+          {% for email in contact_emails %}
+            {% assign email_label = contact_email_labels[forloop.index0] | default: 'Email' %}
+            {% capture email_text %}{% if email_label != 'Email' %}{{ email_label }}: {% endif %}{{ email }}{% endcapture %}
+            <a href="mailto:{{ email }}">{{ email_text | strip }}</a>
+          {% endfor %}
+          {% for phone in contact_phones %}
+            {% assign phone_label = contact_phone_labels[forloop.index0] | default: 'Call' %}
+            {% assign phone_href_item = phone | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
+            {% capture phone_text %}{% if phone_label != 'Call' %}{{ phone_label }}: {% endif %}{{ phone }}{% endcapture %}
+            <a href="tel:{{ phone_href_item }}">{{ phone_text | strip }}</a>
+          {% endfor %}
         </div>
         {% endif %}
       </div>
@@ -116,9 +126,18 @@ map: false
       </div>
     {% endif %}
 
-    {% if page.hours %}
+    {% assign hours_count = hours_lines | size %}
+    {% if hours_count > 0 %}
       <h2>Hours</h2>
-      <p class="muted">{{ page.hours | escape }}</p>
+      {% if hours_count == 1 %}
+        <p class="muted">{{ hours_lines[0] }}</p>
+      {% else %}
+        <ul class="list-plain muted">
+          {% for line in hours_lines %}
+          <li>{{ line }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     {% endif %}
 
     <section class="listing-updates-reviews">

@@ -57,14 +57,27 @@ map: false
 {% elsif website_url != "" %}
   {% assign website_url = "https://" | append: website_url %}
 {% endif %}
-{% assign phone_href = page.phone | default: "" | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
 {% assign short_description = page.description | default: page.excerpt | default: "" %}
 {% assign trimmed_body = content | strip %}
 {% assign social_links = page.social_links | default: page.social | default: "" %}
 {% assign social_array = "" | split: "" %}
 {% if social_links %}
-  {% if social_links.first %}
-    {% assign social_array = social_links %}
+  {% assign social_json = social_links | jsonify %}
+  {% assign social_type = social_json | slice: 0, 1 %}
+  {% if social_type == '{' %}
+    {% for pair in social_links %}
+      {% assign link = pair[1] | to_s | strip %}
+      {% if link != "" %}
+        {% assign social_array = social_array | push: link %}
+      {% endif %}
+    {% endfor %}
+  {% elsif social_type == '[' %}
+    {% for link in social_links %}
+      {% assign link_value = link | to_s | strip %}
+      {% if link_value != "" %}
+        {% assign social_array = social_array | push: link_value %}
+      {% endif %}
+    {% endfor %}
   {% else %}
     {% assign social_array = social_links | split: ',' %}
   {% endif %}
@@ -73,6 +86,9 @@ map: false
   {% assign social_array = social_array | push: page.website %}
 {% endif %}
 {% assign social_array = social_array | uniq %}
+{% include contact-hours-normalize.html entity=page %}
+{% assign contact_email_count = contact_emails | size %}
+{% assign contact_phone_count = contact_phones | size %}
 {% case page.collection %}
   {% when 'farms' %}{% assign schema_type = 'Farm' %}{% assign display_label = 'Farm' %}
   {% when 'restaurants' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Eatery' %}
@@ -97,12 +113,20 @@ map: false
         <p class="listing__location">
           {% include address-block.html %}
         </p>
-{% assign has_email = page.email | to_s | strip %}
-{% if website_url != "" or has_email != "" or phone_href != "" %}
+{% if website_url != "" or contact_email_count > 0 or contact_phone_count > 0 %}
   <div class="listing__contact">
     {% if website_url != "" %}<a href="{{ website_url }}" rel="noopener">Website</a>{% endif %}
-    {% if has_email != "" %}<a href="mailto:{{ page.email }}">Email</a>{% endif %}
-    {% if phone_href != "" %}<a href="tel:{{ phone_href }}">{{ page.phone }}</a>{% endif %}
+    {% for email in contact_emails %}
+      {% assign email_label = contact_email_labels[forloop.index0] | default: 'Email' %}
+      {% capture email_text %}{% if email_label != 'Email' %}{{ email_label }}: {% endif %}{{ email }}{% endcapture %}
+      <a href="mailto:{{ email }}">{{ email_text | strip }}</a>
+    {% endfor %}
+    {% for phone in contact_phones %}
+      {% assign phone_label = contact_phone_labels[forloop.index0] | default: 'Call' %}
+      {% assign phone_href_item = phone | replace: ' ', '' | replace: '(', '' | replace: ')', '' %}
+      {% capture phone_text %}{% if phone_label != 'Call' %}{{ phone_label }}: {% endif %}{{ phone }}{% endcapture %}
+      <a href="tel:{{ phone_href_item }}">{{ phone_text | strip }}</a>
+    {% endfor %}
   </div>
 {% endif %}
       </div>
@@ -195,19 +219,19 @@ map: false
       </div>
     {% endif %}
 
-    {% if page.hours_list %}
+    {% assign hours_count = hours_lines | size %}
+    {% if hours_count > 0 %}
       <div>
         <h2>Hours / schedule</h2>
-        <ul class="list-plain">
-          {% for entry in page.hours_list %}
-          <li>{{ entry }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% elsif page.hours %}
-      <div>
-        <h2>Hours / schedule</h2>
-        <p class="muted">{{ page.hours }}</p>
+        {% if hours_count == 1 %}
+          <p class="muted">{{ hours_lines[0] }}</p>
+        {% else %}
+          <ul class="list-plain">
+            {% for entry in hours_lines %}
+            <li>{{ entry }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </div>
     {% endif %}
 
@@ -282,9 +306,9 @@ map: false
 {% comment %}Structured data for LocalBusiness + optional FAQ (driven by front matter).{% endcomment %}
 {% assign ld_description = page.description | default: page.excerpt | default: page.seo_description | default: page.long_description | default: "" | strip_html | strip_newlines %}
 {% assign ld_website = website_url | to_s | strip %}
-{% assign ld_phone = page.phone | to_s | strip %}
-{% assign ld_email = page.email | to_s | strip %}
-{% assign ld_hours = page.hours | to_s | strip %}
+{% assign ld_phone = contact_phones | first | to_s | replace: ' ', '' | replace: '(', '' | replace: ')', '' | strip %}
+{% assign ld_email = primary_email | to_s | strip %}
+{% assign ld_hours = hours_ld_string | to_s | strip %}
 {% assign social_array = social_array | join: ',' | split: ',' | map: 'strip' | reject: '' | uniq %}
 {% assign social_count = social_array | size %}
 <script type="application/ld+json">
