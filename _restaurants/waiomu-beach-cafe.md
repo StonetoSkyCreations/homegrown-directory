@@ -8,13 +8,23 @@ country: New Zealand
 region: Coromandel
 city: Waiomu (Thames Coast)
 address: 622 Thames Coast Road, Waiomu
-description: "Beachside caf\xE9 north of Thames serving homemade breakfasts, lunches and baking using local and organic produce where possible and operating with sustainability in mind."
-long_description: 'Waiomu Beach Cafe sits on the coast road north of Thames and is known for its commitment to sustainability. The cafe makes all of its food in house and sources ingredients from local growers and organic suppliers wherever possible. Customers can enjoy hearty breakfasts, sandwiches, salads, fish and chips and cabinet treats, with gluten-free and vegan options available. Owner Julie McMillan has installed a milk tap supplied by Kaipaki Dairies to cut down on plastic waste and uses compostable cups and packaging that are sent for composting. The seaside location offers indoor and outdoor seating and is popular with travellers and locals passing along the coast road.
+description: "Beachside caf\xE9 north of Thames serving homemade breakfasts, lunches\
+  \ and baking using local and organic produce where possible and operating with sustainability\
+  \ in mind."
+long_description: 'Waiomu Beach Cafe sits on the coast road north of Thames and is
+  known for its commitment to sustainability. The cafe makes all of its food in house
+  and sources ingredients from local growers and organic suppliers wherever possible.
+  Customers can enjoy hearty breakfasts, sandwiches, salads, fish and chips and cabinet
+  treats, with gluten-free and vegan options available. Owner Julie McMillan has installed
+  a milk tap supplied by Kaipaki Dairies to cut down on plastic waste and uses compostable
+  cups and packaging that are sent for composting. The seaside location offers indoor
+  and outdoor seating and is popular with travellers and locals passing along the
+  coast road.
 
   '
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - breakfasts
 - lunches

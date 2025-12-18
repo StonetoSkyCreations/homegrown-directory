@@ -11,7 +11,7 @@ suburb: Lower Shotover
 practices:
 - organic
 - pasture-raised
-- local
+- locally-sourced
 products:
 - Coffee and tea
 - Breakfast
@@ -21,8 +21,10 @@ hours: ''
 website: https://11thavebyfranks.co.nz
 email: hello@11thavebyfranks.co.nz
 phone: 03 222 7030
-description: "Lower Shotover caf\xE9 offering free-range local produce and fair trade organic coffee."
-"Sister cafe to Frank\u2019s serving free-range dishes and fair trade organic coffee. Source": user-provided listing
+description: "Lower Shotover caf\xE9 offering free-range local produce and fair trade\
+  \ organic coffee."
+"Sister cafe to Frank\u2019s serving free-range dishes and fair trade organic coffee. Source": user-provided
+  listing
 subtype: cafe
 source_urls: []
 lat: -45.0321923

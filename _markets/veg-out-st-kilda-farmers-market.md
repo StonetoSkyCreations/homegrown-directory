@@ -5,7 +5,8 @@ name: Veg Out St Kilda Farmers' Market
 brand: Veg Out St Kilda Farmers' Market
 type: market
 category: market
-description: Monthly first-Saturday market at Peanut Farm Reserve with certified organic produce and local goods.
+description: Monthly first-Saturday market at Peanut Farm Reserve with certified organic
+  produce and local goods.
 country: AU
 country_slug: australia
 region: Victoria
@@ -34,7 +35,7 @@ notes: VFMA accredited
 city: Melbourne
 practices_tags:
 - organic
-- local
+- supports-local
 title: Veg Out St Kilda Farmers' Market
 practices: []
 products_tags: []

@@ -8,7 +8,7 @@ city: Newtown
 lat: -41.312
 lon: 174.779
 practices:
-- local
+- locally-sourced
 products:
 - Coffee and tea
 - Bread and bakery
@@ -16,7 +16,8 @@ services:
 - Restaurant supply
 - Education / farm tours
 hours: "Wed\u2013Sun, 8am\u20133pm"
-description: A short chalkboard menu that changes with each delivery and credits farms on every dish.
+description: A short chalkboard menu that changes with each delivery and credits farms
+  on every dish.
 website: https://kopupakokitchen.example.nz
 subtype: cafe
 source_urls: []

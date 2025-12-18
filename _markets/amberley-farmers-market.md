@@ -5,7 +5,8 @@ name: Amberley Farmers Market
 brand: Amberley Farmers Market
 type: market
 category: market
-description: "Local farmers\u2019 market serving North Canterbury (organic produce available)"
+description: "Local farmers\u2019 market serving North Canterbury (organic produce\
+  \ available)"
 country: NZ
 country_slug: new-zealand
 region: Canterbury
@@ -32,7 +33,7 @@ rating_average: 5
 rating_count: 1
 practices_tags:
 - organic
-- local
+- supports-local
 lat: -42.8791219
 title: Amberley Farmers Market
 practices: []

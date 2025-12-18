@@ -6,11 +6,12 @@ country: New Zealand
 country_slug: new-zealand
 region: Canterbury
 city: Christchurch
-address: Riverside Market, 96 Oxford Terrace, Christchurch Central City 8011, New Zealand
+address: Riverside Market, 96 Oxford Terrace, Christchurch Central City 8011, New
+  Zealand
 suburb: Riverside Market
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Coffee and tea
 - Lunch
@@ -20,8 +21,10 @@ hours: ''
 website: ''
 email: ''
 phone: +64 21 199 6738
-description: "Plant-based caf\xE9 at Riverside Market using organic ingredients where possible and supporting local growers."
-Serves organic juices, nut milks, and plant-based dishes with locally sourced ingredients. Source: user-provided listing
+description: "Plant-based caf\xE9 at Riverside Market using organic ingredients where\
+  \ possible and supporting local growers."
+Serves organic juices, nut milks, and plant-based dishes with locally sourced ingredients. Source: user-provided
+  listing
 subtype: cafe
 source_urls: []
 lat: -43.530955

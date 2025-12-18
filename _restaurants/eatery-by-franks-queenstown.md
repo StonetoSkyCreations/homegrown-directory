@@ -11,7 +11,7 @@ suburb: Frankton
 practices:
 - organic
 - pasture-raised
-- local
+- locally-sourced
 products:
 - Coffee and tea
 - Breakfast
@@ -21,8 +21,10 @@ hours: ''
 website: https://eaterybyfranks.co.nz
 email: manager@eaterybyfranks.co.nz
 phone: 03 451 1085
-description: "Family-run Frankton caf\xE9 serving free-range local produce and fair trade organic coffee."
-Breakfast and lunch spot using free-range local produce and fair trade organic coffee. Source: user-provided listing
+description: "Family-run Frankton caf\xE9 serving free-range local produce and fair\
+  \ trade organic coffee."
+Breakfast and lunch spot using free-range local produce and fair trade organic coffee. Source: user-provided
+  listing
 subtype: cafe
 source_urls: []
 lat: -45.0321923

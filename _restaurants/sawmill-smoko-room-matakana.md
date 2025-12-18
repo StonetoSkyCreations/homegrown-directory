@@ -8,7 +8,7 @@ region: Auckland
 city: Matakana
 address: 1004 Leigh Road, Matakana 0985
 practices:
-- local
+- locally-sourced
 products:
 - Meat
 - Vegetables
@@ -19,8 +19,10 @@ hours: ''
 website: https://sawmillbrewery.co.nz
 email: smokoroom@sawmillbrewery.co.nz
 phone: 09 422 6555 (ext. 1)
-description: Matakana brewery restaurant celebrating Mahurangi farmers with ethically sourced seasonal ingredients.
-? Menu built with ethically sourced seasonal ingredients from local Mahurangi growers alongside Sawmill Brewery beers. Source
+description: Matakana brewery restaurant celebrating Mahurangi farmers with ethically
+  sourced seasonal ingredients.
+? Menu built with ethically sourced seasonal ingredients from local Mahurangi growers
+  alongside Sawmill Brewery beers. Source
 : user-provided listing
 subtype: restaurant
 source_urls: []

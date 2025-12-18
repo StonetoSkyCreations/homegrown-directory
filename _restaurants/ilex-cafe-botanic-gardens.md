@@ -8,7 +8,7 @@ region: Canterbury
 city: Christchurch
 address: Christchurch Botanic Gardens, Christchurch 8013
 practices:
-- local
+- locally-sourced
 products:
 - Brunch dishes
 - Lunches
@@ -26,7 +26,8 @@ social_links:
 - https://instagram.com/ilexbotanicgardens
 - https://facebook.com/ilexbotanicgardens
 hours: June-August 9am-4pm; September-May 9am-5pm
-description: Light-filled cafe inside the Christchurch Botanic Gardens offering garden-to-plate meals with locally grown, seasonal ingredients.
+description: Light-filled cafe inside the Christchurch Botanic Gardens offering garden-to-plate
+  meals with locally grown, seasonal ingredients.
 last_checked: '2025-12-12'
 subtype: cafe
 source_urls: []
@@ -36,7 +37,8 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Christchurch Botanic Gardens Visitor Centre
-geo_query: Christchurch Botanic Gardens, Christchurch 8013, Christchurch, Canterbury, New Zealand
+geo_query: Christchurch Botanic Gardens, Christchurch 8013, Christchurch, Canterbury,
+  New Zealand
 practices_tags: []
 products_tags: []
 services_tags: []

@@ -11,7 +11,7 @@ city: Paihia
 address: 2 Selwyn Road, Paihia 0200
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Vegetables
 - Fruit
@@ -21,7 +21,8 @@ services:
 - Retail shop
 - Online ordering
 hours: ''
-description: Community-focused organic grocery with fresh produce, pantry staples, and local honey.
+description: Community-focused organic grocery with fresh produce, pantry staples,
+  and local honey.
 subtype: specialty-grocer
 source_urls: []
 lat: -35.2812407

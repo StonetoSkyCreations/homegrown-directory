@@ -8,10 +8,11 @@ country: New Zealand
 region: Otago
 city: Oamaru
 address: 469 Alma-Maheno Road, Alma, Oamaru 9492
-description: Market stall providing local and fully organic produce, subscription boxes and ready-made vegan meals.
+description: Market stall providing local and fully organic produce, subscription
+  boxes and ready-made vegan meals.
 practices:
 - organic
-- local
+- supports-local
 products:
 - Fresh produce
 - Subscription boxes
@@ -28,7 +29,7 @@ lat: -45.1224552
 lon: 170.8918065
 practices_tags:
 - organic
-- local
+- supports-local
 source_urls:
 - https://oamaruorganics.nz
 products_tags: []

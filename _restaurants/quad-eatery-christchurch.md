@@ -10,7 +10,7 @@ address: 2 Worcester Street, Christchurch 8013
 suburb: Arts Centre
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Coffee and tea
 - Breakfast
@@ -20,8 +20,10 @@ hours: ''
 website: https://quadeatery.co.nz
 email: hello@quadeatery.co.nz
 phone: 03 260 2272
-description: "Cafe at the Arts Centre serving brunch with organic K\u014Dkako coffee and locally sourced ingredients."
-"Serves organic K\u014Dkako coffee and brunch dishes built from locally sourced ingredients. Source": user-provided listing
+description: "Cafe at the Arts Centre serving brunch with organic K\u014Dkako coffee\
+  \ and locally sourced ingredients."
+"Serves organic K\u014Dkako coffee and brunch dishes built from locally sourced ingredients. Source": user-provided
+  listing
 subtype: cafe
 source_urls: []
 lat: -43.5311244

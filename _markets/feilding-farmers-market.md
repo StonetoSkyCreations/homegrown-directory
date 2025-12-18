@@ -29,7 +29,7 @@ last_checked: FMNZ member list
 notes: Market
 city: "Manawat\u016B"
 practices_tags:
-- local
+- supports-local
 lat: -40.2259295
 geo_precision: approx
 geo_source: nominatim

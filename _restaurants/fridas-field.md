@@ -12,7 +12,7 @@ type: restaurant
 subtype: restaurant
 practices:
 - regenerative
-- local
+- locally-sourced
 products:
 - Lunch
 services:
@@ -21,7 +21,8 @@ hours: ''
 website: https://fridasfield.com
 email: ''
 phone: ''
-description: Regenerative farm restaurant serving long lunches with produce from its own market garden and nearby farms.
+description: Regenerative farm restaurant serving long lunches with produce from its
+  own market garden and nearby farms.
 source_urls: []
 lat: -28.673561
 lon: 153.611469

@@ -8,7 +8,7 @@ region: Canterbury
 city: Christchurch
 address: Arts Centre of Christchurch, 1 Hereford Street, Christchurch 8013
 practices:
-- local
+- locally-sourced
 products:
 - Local wines
 - Wine flights
@@ -27,7 +27,8 @@ social_links:
 - https://facebook.com/CellarDoorNZ
 - https://instagram.com/cellardoor.nz
 hours: Daily 12pm-late
-description: Award-winning wine bar and restaurant in Christchurch's Arts Centre offering curated wine flights and seasonal dishes made with fresh, locally sourced ingredients.
+description: Award-winning wine bar and restaurant in Christchurch's Arts Centre offering
+  curated wine flights and seasonal dishes made with fresh, locally sourced ingredients.
 last_checked: '2025-12-12'
 subtype: restaurant
 source_urls: []

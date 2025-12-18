@@ -33,7 +33,7 @@ rating_count: 1
 practices_tags:
 - organic
 - regenerative
-- local
+- supports-local
 lat: -43.6024834
 title: Lyttelton Farmers Market
 practices: []

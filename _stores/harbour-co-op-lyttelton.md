@@ -13,11 +13,22 @@ address: 12 London Street, Lyttelton, Christchurch 8082
 postcode: '8082'
 lat: -43.602473979734434
 lon: 172.72209541875245
-description: "A community-owned wholefoods co-operative in \u014Chinehou/Lyttelton offering organic and fair trade staples, bulk goods, and locally made products with a low-waste ethos."
-long_description: "Harbour Co-op (formerly LyttelPiko) is a low-profit, community-owned wholefoods shop established after the 2010 earthquakes by locals who wanted a dedicated neighbourhood hub for organic, fair trade, and wholefoods. Owned by households, employees, and institutional purchasers, the co-op is committed to keeping mark-ups low on organic food, minimising waste through bulk buying and reusable containers, and actively supporting local makers and suppliers. Anyone can shop here, with the option to become an owner-member by purchasing a share and joining the co-operative community. Volunteering is also welcomed as part of the co-op\u2019s wider kaupapa of connected, healthy communities and a lighter ecological footprint.\n"
+description: "A community-owned wholefoods co-operative in \u014Chinehou/Lyttelton\
+  \ offering organic and fair trade staples, bulk goods, and locally made products\
+  \ with a low-waste ethos."
+long_description: "Harbour Co-op (formerly LyttelPiko) is a low-profit, community-owned\
+  \ wholefoods shop established after the 2010 earthquakes by locals who wanted a\
+  \ dedicated neighbourhood hub for organic, fair trade, and wholefoods. Owned by\
+  \ households, employees, and institutional purchasers, the co-op is committed to\
+  \ keeping mark-ups low on organic food, minimising waste through bulk buying and\
+  \ reusable containers, and actively supporting local makers and suppliers. Anyone\
+  \ can shop here, with the option to become an owner-member by purchasing a share\
+  \ and joining the co-operative community. Volunteering is also welcomed as part\
+  \ of the co-op\u2019s wider kaupapa of connected, healthy communities and a lighter\
+  \ ecological footprint.\n"
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - organic-wholefoods
 - bulk-dry-goods
@@ -36,7 +47,8 @@ phone: 03 328 8544
 social_links:
 - https://facebook.com/harbourcoop
 - https://instagram.com/harbourcoop
-hours: "Monday\u2013Friday 10:00am\u20135:00pm (Mon/Thu/Fri closed 1:30pm\u20132:00pm). Saturday 9:00am\u20134:00pm. Sunday 10:00am\u20134:00pm."
+hours: "Monday\u2013Friday 10:00am\u20135:00pm (Mon/Thu/Fri closed 1:30pm\u20132:00pm).\
+  \ Saturday 9:00am\u20134:00pm. Sunday 10:00am\u20134:00pm."
 market_days: []
 certifications: []
 awards: []

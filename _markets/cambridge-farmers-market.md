@@ -30,7 +30,7 @@ notes: Market
 city: Cambridge
 practices_tags:
 - organic
-- local
+- supports-local
 lat: -37.8921275
 geo_precision: exact
 geo_source: nominatim

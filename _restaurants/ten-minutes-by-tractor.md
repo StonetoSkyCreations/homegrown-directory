@@ -12,7 +12,7 @@ type: restaurant
 subtype: restaurant
 practices:
 - regenerative
-- local
+- locally-sourced
 products:
 - Seasonal tasting menu
 - Wine
@@ -22,7 +22,8 @@ hours: ''
 website: https://tenminutesbytractor.com.au
 email: ''
 phone: +61 3 5989 6455
-description: Mornington Peninsula winery restaurant sourcing key ingredients from its regenerative farm and local producers.
+description: Mornington Peninsula winery restaurant sourcing key ingredients from
+  its regenerative farm and local producers.
 source_urls: []
 lat: -38.3946501
 lon: 144.9941199

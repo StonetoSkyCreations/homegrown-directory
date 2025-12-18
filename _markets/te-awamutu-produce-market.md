@@ -29,7 +29,7 @@ last_checked: FMNZ member list
 notes: Market
 city: Waipa
 practices_tags:
-- local
+- supports-local
 lat: -35.932507
 title: Te Awamutu Produce Market
 practices: []

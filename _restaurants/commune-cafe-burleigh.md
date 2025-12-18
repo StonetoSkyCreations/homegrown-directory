@@ -12,7 +12,7 @@ type: cafe
 subtype: cafe
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Coffee
 - Brunch
@@ -23,7 +23,8 @@ hours: ''
 website: ''
 email: ''
 phone: ''
-description: Organic-focused cafe in Burleigh Heads highlighting organic produce across its menu.
+description: Organic-focused cafe in Burleigh Heads highlighting organic produce across
+  its menu.
 source_urls: []
 lat: -28.0810445
 lon: 153.4468274

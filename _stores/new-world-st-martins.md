@@ -7,10 +7,11 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 92 Wilsons Road, St Martins, Christchurch 8023
-description: Mainstream supermarket with a large organic produce department and a good selection of organic meat, dairy and grocery items.
+description: Mainstream supermarket with a large organic produce department and a
+  good selection of organic meat, dairy and grocery items.
 practices:
 - certified-organic
-- local
+- locally-sourced
 products:
 - organic fruit and vegetables
 - organic meat and dairy
@@ -39,7 +40,8 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: New World
-geo_query: 92 Wilsons Road, St Martins, Christchurch 8023, Christchurch, Canterbury, New Zealand
+geo_query: 92 Wilsons Road, St Martins, Christchurch 8023, Christchurch, Canterbury,
+  New Zealand
 practices_tags: []
 products_tags: []
 services_tags: []

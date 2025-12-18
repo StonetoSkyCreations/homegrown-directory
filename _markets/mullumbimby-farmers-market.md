@@ -5,7 +5,8 @@ name: Mullumbimby Farmers Market
 brand: Mullumbimby Farmers Market
 type: market
 category: market
-description: Friday farmers market at Mullumbimby Showgrounds with 50+ stalls and many certified organic vendors.
+description: Friday farmers market at Mullumbimby Showgrounds with 50+ stalls and
+  many certified organic vendors.
 country: AU
 country_slug: australia
 region: New South Wales
@@ -33,7 +34,7 @@ notes: Market
 city: Mullumbimby
 practices_tags:
 - organic
-- local
+- supports-local
 lat: -28.548365
 lon: 153.48734
 title: Mullumbimby Farmers Market

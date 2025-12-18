@@ -8,14 +8,23 @@ country: New Zealand
 region: Coromandel
 city: Flaxmill Bay (Cooks Beach)
 address: 1049 Purangi Road, Flaxmill Bay, Cooks Beach
-description: "Relaxed coastal caf\xE9 and restaurant at Flaxmill Bay serving brunch, dinners and desserts made with organic milk, free-range eggs, grass-fed meat and local produce."
-long_description: 'Eggsentric Cafe is a long-established eatery nestled across the estuary from Whitianga at Flaxmill Bay. Its menu changes with the seasons and draws on local suppliers, with free-range eggs, organic milk, grass-fed meat and vegetables sourced from nearby growers. The kitchen offers vegetarian and gluten-free choices and makes cakes, breads and desserts in house. The business has introduced waste-reduction measures, including a mug library for takeaway drinks and recycling initiatives. Open for brunch and evening meals, it provides a sociable gathering place for residents and visitors and hosts live music events in its courtyard.
+description: "Relaxed coastal caf\xE9 and restaurant at Flaxmill Bay serving brunch,\
+  \ dinners and desserts made with organic milk, free-range eggs, grass-fed meat and\
+  \ local produce."
+long_description: 'Eggsentric Cafe is a long-established eatery nestled across the
+  estuary from Whitianga at Flaxmill Bay. Its menu changes with the seasons and draws
+  on local suppliers, with free-range eggs, organic milk, grass-fed meat and vegetables
+  sourced from nearby growers. The kitchen offers vegetarian and gluten-free choices
+  and makes cakes, breads and desserts in house. The business has introduced waste-reduction
+  measures, including a mug library for takeaway drinks and recycling initiatives.
+  Open for brunch and evening meals, it provides a sociable gathering place for residents
+  and visitors and hosts live music events in its courtyard.
 
   '
 practices:
 - organic
 - pasture-raised
-- local
+- locally-sourced
 products:
 - brunch dishes
 - dinners

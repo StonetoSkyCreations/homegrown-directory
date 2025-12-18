@@ -11,7 +11,7 @@ postcode: '3000'
 type: restaurant
 subtype: restaurant
 practices:
-- local
+- locally-sourced
 products:
 - Mexican dishes
 - Tacos
@@ -22,7 +22,8 @@ hours: ''
 website: https://mesaverde.net.au
 email: hello@mesaverde.net.au
 phone: +61 3 9654 4417
-description: Mexican restaurant sourcing seasonal local produce and herbs from its rooftop garden in Curtin House.
+description: Mexican restaurant sourcing seasonal local produce and herbs from its
+  rooftop garden in Curtin House.
 source_urls: []
 lat: -37.8119844
 lon: 144.9651427

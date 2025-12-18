@@ -7,10 +7,19 @@ country: New Zealand
 region: Coromandel
 city: Thames
 address: Top end of Pollen Street, Grahamstown, Thames
-description: Historic Saturday market in Thames offering fresh produce, plants, crafts and artisanal foods in the Grahamstown heritage precinct.
-long_description: "The Grahamstown Market, also known as the Thames Saturday Market, takes place every Saturday morning from 8 am in the heritage precinct at the northern end of Pollen Street. Stalls line the street selling locally grown fruit and vegetables, herbs, flowers and seedlings alongside handmade crafts, vintage goods and art. Food vendors offer bread, pastries, preserves, honey, pickles and ready\u2011to\u2011eat treats, and buskers add to the lively atmosphere. The market has operated for decades and draws locals and visitors who enjoy shopping for fresh produce and unique crafts while exploring the historic buildings. It generally runs until midday, though some stalls remain until early afternoon.\n"
+description: Historic Saturday market in Thames offering fresh produce, plants, crafts
+  and artisanal foods in the Grahamstown heritage precinct.
+long_description: "The Grahamstown Market, also known as the Thames Saturday Market,\
+  \ takes place every Saturday morning from 8 am in the heritage precinct at the northern\
+  \ end of Pollen Street. Stalls line the street selling locally grown fruit and vegetables,\
+  \ herbs, flowers and seedlings alongside handmade crafts, vintage goods and art.\
+  \ Food vendors offer bread, pastries, preserves, honey, pickles and ready\u2011\
+  to\u2011eat treats, and buskers add to the lively atmosphere. The market has operated\
+  \ for decades and draws locals and visitors who enjoy shopping for fresh produce\
+  \ and unique crafts while exploring the historic buildings. It generally runs until\
+  \ midday, though some stalls remain until early afternoon.\n"
 practices:
-- local
+- supports-local
 products:
 - fruit
 - vegetables

@@ -9,7 +9,7 @@ city: Methven
 address: 121 Main Street, Methven 7730
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Fair-trade coffee
 - Breakfasts
@@ -31,7 +31,8 @@ social_links:
 - https://facebook.com/thealpinegrind
 - https://instagram.com/thealpinegrind
 hours: Mon-Fri 6am-2pm; Sat-Sun 7am-2pm
-description: Cozy Methven cafe serving fair-trade coffee and wholesome meals made from fresh, seasonal ingredients with organic options.
+description: Cozy Methven cafe serving fair-trade coffee and wholesome meals made
+  from fresh, seasonal ingredients with organic options.
 last_checked: '2025-12-12'
 subtype: cafe
 source_urls: []

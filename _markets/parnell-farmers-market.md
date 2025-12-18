@@ -29,7 +29,7 @@ last_checked: FMNZ member list
 notes: Market
 city: Auckland
 practices_tags:
-- local
+- supports-local
 lat: -36.8633007
 geo_precision: exact
 geo_source: nominatim

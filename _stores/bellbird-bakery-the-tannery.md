@@ -8,12 +8,21 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 3 Garlands Road, Woolston, Christchurch 8023
-description: Artisan sourdough bakery at The Tannery crafting organic and spray-free bread and French pastries using traditional methods.
-long_description: "Bellbird Bakery at The Tannery is the original home of this Christchurch-based artisan bakery, founded on a commitment to slow fermentation, traditional technique, and local sourcing. Breads and pastries are made daily using organic and spray-free flour grown and milled within Canterbury, with long natural fermentations that prioritise flavour, nutrition, and digestibility.\nFrom classic sourdough loaves to French viennoiserie, everything is made from scratch by a small team of dedicated bakers. Bellbird works closely with local growers and ethical suppliers, reducing food miles while supporting a resilient regional grain economy. The Woolston bakery remains a cornerstone of Bellbird\u2019s craft-focused, community-minded approach.\n"
+description: Artisan sourdough bakery at The Tannery crafting organic and spray-free
+  bread and French pastries using traditional methods.
+long_description: "Bellbird Bakery at The Tannery is the original home of this Christchurch-based\
+  \ artisan bakery, founded on a commitment to slow fermentation, traditional technique,\
+  \ and local sourcing. Breads and pastries are made daily using organic and spray-free\
+  \ flour grown and milled within Canterbury, with long natural fermentations that\
+  \ prioritise flavour, nutrition, and digestibility.\nFrom classic sourdough loaves\
+  \ to French viennoiserie, everything is made from scratch by a small team of dedicated\
+  \ bakers. Bellbird works closely with local growers and ethical suppliers, reducing\
+  \ food miles while supporting a resilient regional grain economy. The Woolston bakery\
+  \ remains a cornerstone of Bellbird\u2019s craft-focused, community-minded approach.\n"
 practices:
 - organic
 - spray-free
-- local
+- locally-sourced
 products:
 - sourdough bread
 - baguettes

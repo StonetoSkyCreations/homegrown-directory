@@ -5,7 +5,8 @@ name: Jan Powers Farmers Market (Powerhouse)
 brand: Jan Powers Farmers Markets
 type: market
 category: market
-description: Saturday market at Brisbane Powerhouse with local fresh produce and artisanal products.
+description: Saturday market at Brisbane Powerhouse with local fresh produce and artisanal
+  products.
 country: AU
 country_slug: australia
 region: Queensland
@@ -31,7 +32,7 @@ notes: Market
 city: Brisbane
 brand_slug: jan-powers-farmers-market
 practices_tags:
-- local
+- supports-local
 lat: -27.4690829
 lon: 153.0543895
 geo_precision: exact

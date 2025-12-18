@@ -11,7 +11,7 @@ postcode: '2460'
 type: cafe
 subtype: cafe
 practices:
-- local
+- locally-sourced
 products:
 - Breakfast
 - Lunch
@@ -22,7 +22,8 @@ hours: ''
 website: https://clarencecollective.com.au
 email: ''
 phone: 0438 187 168
-description: Community wholefoods cafe offering nourishing meals with seasonal, locally sourced produce.
+description: Community wholefoods cafe offering nourishing meals with seasonal, locally
+  sourced produce.
 source_urls: []
 lat: -29.7060211
 lon: 152.9327921

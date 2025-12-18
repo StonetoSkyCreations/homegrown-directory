@@ -8,9 +8,11 @@ country: New Zealand
 region: Canterbury
 city: Ohoka
 address: Ohoka Domain, Whites Road, Ohoka
-description: Long-running North Canterbury farmers market every Friday with local growers, food producers, artisan makers, coffee, brunch options and live buskers, running year-round in all weather.
+description: Long-running North Canterbury farmers market every Friday with local
+  growers, food producers, artisan makers, coffee, brunch options and live buskers,
+  running year-round in all weather.
 practices:
-- local
+- supports-local
 - organic
 - spray-free
 - regenerative
@@ -40,7 +42,7 @@ practices_tags:
 - organic
 - spray-free
 - regenerative
-- local
+- supports-local
 source_urls:
 - http://www.ohokafarmersmarket.co.nz
 products_tags: []

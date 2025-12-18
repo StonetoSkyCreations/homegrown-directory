@@ -6,7 +6,8 @@ brand: Taste Nature
 type: organic-store
 subtype: organic-store
 category: retailer
-description: "Dunedin\u2019s dedicated organic and wholefood supermarket with deli and bulk refillery."
+description: "Dunedin\u2019s dedicated organic and wholefood supermarket with deli\
+  \ and bulk refillery."
 country: NZ
 country_slug: new-zealand
 region: Otago
@@ -57,12 +58,14 @@ source_urls:
 - https://www.tastenature.co.nz/
 hours: "Shop & Deli: Mon\u2013Fri 8am\u20136pm; Sat 9am\u20134pm; Sun closed"
 last_checked: user-submitted
-notes: Full organic grocer with deli, bulk-bin section, refillery, natural household products, and an integrative health clinic above the store.
+notes: Full organic grocer with deli, bulk-bin section, refillery, natural household
+  products, and an integrative health clinic above the store.
 published: true
 city: Dunedin
 rating_average: 5
 rating_count: 1
-? Long-standing organic grocer and wholefood store in Dunedin with certified organic produce, bulk wholefoods, refillery, deli, and ethically sourced groceries. Source
+? Long-standing organic grocer and wholefood store in Dunedin with certified organic
+  produce, bulk wholefoods, refillery, deli, and ethically sourced groceries. Source
 : https://www.tastenature.co.nz/
 lat: -45.8783023
 lon: 170.5006781
@@ -74,7 +77,7 @@ geo_query: 131 High Street, Dunedin 9016, Dunedin, Otago, New Zealand
 title: Taste Nature
 practices:
 - organic
-- local
+- locally-sourced
 products_tags: []
 services_tags: []
 certifications: []

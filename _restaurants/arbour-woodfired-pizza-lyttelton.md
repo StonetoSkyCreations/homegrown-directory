@@ -13,9 +13,30 @@ address: 17 Oxford Terrace, Lyttelton, Christchurch 8082, New Zealand
 postcode: '8082'
 lat: -43.603275727382204
 lon: 172.72231685492136
-description: "A deeply local, woodfired pizza restaurant in \u014Chinehou/Lyttelton, Arbour brings together seasonal New Zealand ingredients, thoughtful sourcing, and low-waste systems in a unique glasshouse-style space built for community.\n"
-long_description: "Arbour Woodfired Pizza grew out of Lyttelton\u2019s post-quake community as a much-loved pop-up before returning as one of the first fully commercial rebuilds in the township. Today, it operates as a neighbourhood gathering place rooted in care for people, land, and place.\nSustainability at Arbour is practical and embedded rather than performative. The menu is built around local, seasonal ingredients sourced from producers they know and trust, with organic produce used where it aligns naturally. Plant-forward pizzas sit alongside select animal products chosen for provenance and welfare, including buffalo mozzarella from Wairiri Buffalo and organic soil-grown microgreens from Little Stem.\nThe wood-fired oven is fuelled by reclaimed logs supplied through co-owner Ra Hancox-Hammer\u2019s arborist business, The Tree People, creating a rare closed-loop system that links hospitality and land care. Compostable packaging is supplied by Christchurch-based Frankly Packaging, and\
-  \ waste minimisation is prioritised across kitchen operations.\nInside, Arbour\u2019s identity is inseparable from its space \u2014 a clear-roofed glasshouse filled with living plants, featuring a bar built from a 120-year-old Lyttelton fishing boat. The atmosphere reflects its purpose: food as connection, hospitality as stewardship, and pizza as a shared, joyful ritual.\nInspired by the Food Made Good Standard, Arbour supports fair wages, high-welfare producers, local breweries and wineries, and community fundraisers. It is a restaurant shaped not by trends, but by relationships \u2014 to growers, makers, whenua, and the people who gather there.\n"
+description: "A deeply local, woodfired pizza restaurant in \u014Chinehou/Lyttelton,\
+  \ Arbour brings together seasonal New Zealand ingredients, thoughtful sourcing,\
+  \ and low-waste systems in a unique glasshouse-style space built for community.\n"
+long_description: "Arbour Woodfired Pizza grew out of Lyttelton\u2019s post-quake\
+  \ community as a much-loved pop-up before returning as one of the first fully commercial\
+  \ rebuilds in the township. Today, it operates as a neighbourhood gathering place\
+  \ rooted in care for people, land, and place.\nSustainability at Arbour is practical\
+  \ and embedded rather than performative. The menu is built around local, seasonal\
+  \ ingredients sourced from producers they know and trust, with organic produce used\
+  \ where it aligns naturally. Plant-forward pizzas sit alongside select animal products\
+  \ chosen for provenance and welfare, including buffalo mozzarella from Wairiri Buffalo\
+  \ and organic soil-grown microgreens from Little Stem.\nThe wood-fired oven is fuelled\
+  \ by reclaimed logs supplied through co-owner Ra Hancox-Hammer\u2019s arborist business,\
+  \ The Tree People, creating a rare closed-loop system that links hospitality and\
+  \ land care. Compostable packaging is supplied by Christchurch-based Frankly Packaging,\
+  \ and waste minimisation is prioritised across kitchen operations.\nInside, Arbour\u2019\
+  s identity is inseparable from its space \u2014 a clear-roofed glasshouse filled\
+  \ with living plants, featuring a bar built from a 120-year-old Lyttelton fishing\
+  \ boat. The atmosphere reflects its purpose: food as connection, hospitality as\
+  \ stewardship, and pizza as a shared, joyful ritual.\nInspired by the Food Made\
+  \ Good Standard, Arbour supports fair wages, high-welfare producers, local breweries\
+  \ and wineries, and community fundraisers. It is a restaurant shaped not by trends,\
+  \ but by relationships \u2014 to growers, makers, whenua, and the people who gather\
+  \ there.\n"
 practices:
 - organic
 products:
@@ -34,7 +55,8 @@ phone: 027 388 9048
 social_links:
 - https://www.instagram.com/arbourpizza
 - https://www.facebook.com/arbourpizza
-hours: 'Hours vary seasonally. Check website or social channels for current opening times.
+hours: 'Hours vary seasonally. Check website or social channels for current opening
+  times.
 
   '
 market_days: []
@@ -45,7 +67,7 @@ source_urls:
 - https://www.arbourpizza.co.nz
 last_checked: '2025-12-16'
 practices_tags:
-- local
+- locally-sourced
 - sustainable
 - low-waste
 - ethical

@@ -12,7 +12,7 @@ type: cafe
 subtype: cafe
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Brunch dishes
 - Smoothies
@@ -24,7 +24,8 @@ hours: ''
 website: https://walkdontrun.com.au
 email: ''
 phone: +61 3 9500 0823
-description: Armadale cafe using 100% organic, locally sourced ingredients for its mindful brunch menu.
+description: Armadale cafe using 100% organic, locally sourced ingredients for its
+  mindful brunch menu.
 source_urls: []
 lat: -37.856186
 lon: 145.019862

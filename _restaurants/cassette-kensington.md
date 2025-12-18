@@ -11,7 +11,7 @@ postcode: '3031'
 type: cafe
 subtype: cafe
 practices:
-- local
+- locally-sourced
 products:
 - Coffee
 - Brunch
@@ -23,7 +23,8 @@ hours: ''
 website: https://cassettekensington.com
 email: ''
 phone: +61 3 9070 0999
-description: Sustainability-focused cafe with seasonal local-produce menus and on-site composting.
+description: Sustainability-focused cafe with seasonal local-produce menus and on-site
+  composting.
 source_urls: []
 lat: -37.7951308
 lon: 144.9338119

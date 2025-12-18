@@ -5,7 +5,9 @@ slug: organic-buzz
 name: Organic Buzz
 type: Organic grocer
 subtype: organic-store
-description: Organic food grocer with an emphasis on supporting local growers, offering in-store shopping only with a wide range of organic, spray-free and ethically raised products.
+description: Organic food grocer with an emphasis on supporting local growers, offering
+  in-store shopping only with a wide range of organic, spray-free and ethically raised
+  products.
 country: New Zealand
 country_slug: new-zealand
 region: "Manawat\u016B-Whanganui"
@@ -34,7 +36,7 @@ practices_tags:
 - organic
 - spray-free
 - ethically-raised
-- local
+- locally-sourced
 services:
 - Retail grocery
 - In-store shopping only
@@ -49,7 +51,7 @@ lon: 175.626963
 practices:
 - organic
 - spray-free
-- local
+- locally-sourced
 products_tags: []
 services_tags: []
 certifications: []

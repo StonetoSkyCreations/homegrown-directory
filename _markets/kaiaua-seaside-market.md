@@ -7,10 +7,17 @@ country: New Zealand
 region: Coromandel
 city: Kaiaua
 address: Foreshore picnic area, Kaiaua
-description: Scenic seaside market held on the last Sunday of each month in Kaiaua offering fresh produce, crafts and local delicacies beside the Firth of Thames.
-long_description: "The Kaiaua Seaside Market is set on the foreshore picnic area overlooking the Firth of Thames. Operating from 9 am to 1 pm on the last Sunday of each month, the market features stalls selling seasonal vegetables, seafood, smoked fish, home baking, preserves, arts and crafts, and hot food. Extra markets are held on holiday weekends, drawing day\u2011trippers who enjoy browsing while taking in the sea views. The market promotes local produce and handmade goods and provides a relaxed Sunday outing.\n"
+description: Scenic seaside market held on the last Sunday of each month in Kaiaua
+  offering fresh produce, crafts and local delicacies beside the Firth of Thames.
+long_description: "The Kaiaua Seaside Market is set on the foreshore picnic area overlooking\
+  \ the Firth of Thames. Operating from 9 am to 1 pm on the last Sunday of each month,\
+  \ the market features stalls selling seasonal vegetables, seafood, smoked fish,\
+  \ home baking, preserves, arts and crafts, and hot food. Extra markets are held\
+  \ on holiday weekends, drawing day\u2011trippers who enjoy browsing while taking\
+  \ in the sea views. The market promotes local produce and handmade goods and provides\
+  \ a relaxed Sunday outing.\n"
 practices:
-- local
+- supports-local
 products:
 - vegetables
 - seafood

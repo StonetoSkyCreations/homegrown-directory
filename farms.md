@@ -83,10 +83,10 @@ seo_description: >
   <div class="filter-row">
     <p class="filter-label">Practices</p>
     <div class="pill-group">
-      {% assign tags = "Organic,Spray-free,Regenerative,Biodynamic,Wild,Pasture-raised,Local" | split: "," %}
+      {% assign tags = "Organic,Spray-free,Regenerative,Biodynamic,Wild,Pasture-raised,Locally sourced" | split: "," %}
       {% for tag in tags %}
       <label class="pill pill--checkbox">
-        <input type="checkbox" name="tag" value="{{ tag | downcase }}">
+        <input type="checkbox" name="tag" value="{{ tag | slugify }}">
         <span>{{ tag }}</span>
       </label>
       {% endfor %}

@@ -5,7 +5,8 @@ name: West Coast Farmers Market
 brand: West Coast Farmers Market
 type: market
 category: market
-description: Greymouth farmers market with local producers and spray-free/organic vendors.
+description: Greymouth farmers market with local producers and spray-free/organic
+  vendors.
 country: NZ
 country_slug: new-zealand
 region: West Coast
@@ -26,12 +27,13 @@ last_checked: ''
 notes: ''
 published: true
 city: Greymouth
-? "Weekly Greymouth market for local producers\u2014\u201Cgrow it, bake it, catch it, make it\u201D\u2014including spray-free and organic stalls. Source"
+? "Weekly Greymouth market for local producers\u2014\u201Cgrow it, bake it, catch\
+  \ it, make it\u201D\u2014including spray-free and organic stalls. Source"
 : user-supplied list
 practices_tags:
 - organic
 - spray-free
-- local
+- supports-local
 lat: -42.4499469
 lon: 171.2079875
 title: West Coast Farmers Market

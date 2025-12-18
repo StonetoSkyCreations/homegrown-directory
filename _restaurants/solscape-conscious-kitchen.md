@@ -9,7 +9,7 @@ city: Raglan
 address: 611 Wainui Road, Raglan 3297
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Coffee and tea
 - Bread and bakery
@@ -19,10 +19,12 @@ hours: ''
 website: https://solscape.co.nz/eat/
 email: info@solscape.co.nz
 phone: +64 7 825 8268
-description: "Eco-retreat caf\xE9 serving organic, locally sourced, seasonal dishes in Raglan."
+description: "Eco-retreat caf\xE9 serving organic, locally sourced, seasonal dishes\
+  \ in Raglan."
 rating_average: 5
 rating_count: 1
-? Cafe at Solscape eco-retreat offering organic, locally sourced cuisine with an emphasis on seasonal, sustainable ingredients. Source
+? Cafe at Solscape eco-retreat offering organic, locally sourced cuisine with an emphasis
+  on seasonal, sustainable ingredients. Source
 : https://solscape.co.nz/eat/
 subtype: restaurant
 source_urls: []

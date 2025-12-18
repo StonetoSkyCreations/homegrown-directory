@@ -6,7 +6,8 @@ collection: stores
 name: Untamed Earth Farm Shop
 type: Organic Shop
 subtype: organic-store
-description: Neighbourhood organic grocer stocking Untamed Earth's certified produce plus local bread, fruit, and pantry staples.
+description: Neighbourhood organic grocer stocking Untamed Earth's certified produce
+  plus local bread, fruit, and pantry staples.
 country: New Zealand
 country_slug: new-zealand
 region: Canterbury
@@ -45,11 +46,12 @@ geo_precision: approx
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Colombo Street
-geo_query: 140 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Canterbury, New Zealand
+geo_query: 140 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Canterbury,
+  New Zealand
 practices:
 - certified-organic
 - spray-free
-- local
+- locally-sourced
 products_tags: []
 services_tags: []
 specialty_tags: []

@@ -11,7 +11,7 @@ lon: 174.778
 practices:
 - organic
 - spray-free
-- local
+- supports-local
 products:
 - Vegetables
 - Fruit
@@ -20,12 +20,13 @@ services:
 - Farmers market stall
 - Education / farm tours
 hours: "Saturdays 8am\u20131pm, waterfront plaza"
-description: A weekly inner-city market prioritising small growers and letting producers tell their story stall-side.
+description: A weekly inner-city market prioritising small growers and letting producers
+  tell their story stall-side.
 website: https://harbourharvest.example.nz
 practices_tags:
 - organic
 - spray-free
-- local
+- supports-local
 source_urls: []
 products_tags: []
 services_tags: []

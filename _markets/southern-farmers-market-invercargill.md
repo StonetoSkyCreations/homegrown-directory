@@ -31,7 +31,7 @@ city: Invercargill
 practices_tags:
 - organic
 - spray-free
-- local
+- supports-local
 lat: -46.4274407
 title: Southern Farmers Market (Invercargill)
 practices: []

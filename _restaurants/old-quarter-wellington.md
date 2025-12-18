@@ -9,7 +9,7 @@ city: Wellington
 address: 39B Dixon Street, Te Aro, Wellington 6011
 practices:
 - pasture-raised
-- local
+- locally-sourced
 products:
 - Meat
 - Seafood
@@ -20,7 +20,8 @@ hours: ''
 website: http://www.theoldquarter.co.nz/
 email: ''
 phone: ''
-description: Vietnamese-inspired eatery using free-range chicken and pork plus seasonal local ingredients.
+description: Vietnamese-inspired eatery using free-range chicken and pork plus seasonal
+  local ingredients.
 CBD restaurant with menus built on free-range meats and locally sourced seasonal produce. Source: http://www.theoldquarter.co.nz/
 subtype: restaurant
 source_urls: []

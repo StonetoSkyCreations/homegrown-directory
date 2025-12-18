@@ -315,15 +315,18 @@
         mapped = "wild";
       } else if (token.includes("pasture-raised") || token.includes("pasture raised") || token.includes("100% grass")) {
         mapped = "pasture-raised";
+      } else if (token.includes("supports-local") || token.includes("supports local")) {
+        mapped = "supports-local";
       } else if (
         token.includes("local") ||
         token.includes("locally grown") ||
+        token.includes("locally sourced") ||
         token.includes("local growers") ||
         token.includes("local producers") ||
         token.includes("made locally") ||
         token.includes("nz-made")
       ) {
-        mapped = "local";
+        mapped = "locally-sourced";
       }
       result.push(mapped || token);
     });

@@ -8,9 +8,11 @@ country: New Zealand
 region: Auckland
 city: Matakana
 address: 30 Matakana Valley Road, Matakana 0985
-description: "Historic Old Dairy Factory market where local artisans sell art, crafts, clothing, antiques, collectables, produce and sweet treats every Saturday 9 am\u20132 pm."
+description: "Historic Old Dairy Factory market where local artisans sell art, crafts,\
+  \ clothing, antiques, collectables, produce and sweet treats every Saturday 9 am\u2013\
+  2 pm."
 practices:
-- local
+- supports-local
 products:
 - art and crafts
 - clothing
@@ -34,7 +36,7 @@ lat: -36.3512972
 lon: 174.7171726
 last_checked: '2025-12-11'
 practices_tags:
-- local
+- supports-local
 source_urls:
 - https://www.thematakanamarket.co.nz/about-9
 - https://jsart.co.nz/Matakana Markets/Matakana Markets.htm

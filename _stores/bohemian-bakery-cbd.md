@@ -7,9 +7,11 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 255 Saint Asaph Street, Christchurch 8011
-description: "Central-city bakery caf\xE9 in the SALT District serving slow-fermented sourdough, pastries, brunch, and drinks including Prima Coffee, T-leaf teas, Karma, Chia Sisters, Wildwood, and Hakanoa. Hosts live music on Saturdays.\n"
+description: "Central-city bakery caf\xE9 in the SALT District serving slow-fermented\
+  \ sourdough, pastries, brunch, and drinks including Prima Coffee, T-leaf teas, Karma,\
+  \ Chia Sisters, Wildwood, and Hakanoa. Hosts live music on Saturdays.\n"
 practices:
-- local
+- locally-sourced
 products:
 - sourdough bread
 - pastries
@@ -36,7 +38,8 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '255'
-geo_query: 255 Saint Asaph Street, Christchurch 8011, Christchurch, Canterbury, New Zealand
+geo_query: 255 Saint Asaph Street, Christchurch 8011, Christchurch, Canterbury, New
+  Zealand
 practices_tags: []
 products_tags: []
 services_tags: []

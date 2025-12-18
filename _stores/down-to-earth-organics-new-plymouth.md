@@ -9,10 +9,11 @@ country: New Zealand
 region: Taranaki
 city: New Plymouth
 address: 460 Devon Street East, Strandon, New Plymouth 4312
-description: Certified organic and ethically sourced grocery supporting local producers with a wide range of fresh produce, bulk foods, and pantry goods.
+description: Certified organic and ethically sourced grocery supporting local producers
+  with a wide range of fresh produce, bulk foods, and pantry goods.
 practices:
 - certified-organic
-- local
+- locally-sourced
 products:
 - Organic groceries
 - Fresh produce

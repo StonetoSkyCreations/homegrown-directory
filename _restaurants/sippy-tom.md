@@ -13,7 +13,7 @@ subtype: cafe
 practices:
 - organic
 - pasture-raised
-- local
+- locally-sourced
 products:
 - Brunch
 - Coffee
@@ -24,7 +24,8 @@ hours: ''
 website: https://sippytom.com.au
 email: ''
 phone: (07) 3252 0179
-description: Teneriffe cafe featuring organic, pasture-raised eggs and line-caught tuna across its brunch menu.
+description: Teneriffe cafe featuring organic, pasture-raised eggs and line-caught
+  tuna across its brunch menu.
 source_urls: []
 lat: -27.454029
 lon: 153.048552

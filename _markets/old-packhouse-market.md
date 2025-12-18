@@ -12,7 +12,7 @@ city: Kerikeri
 practices:
 - organic
 - spray-free
-- local
+- supports-local
 products:
 - Vegetables
 - Fruit
@@ -25,11 +25,12 @@ hours: "Sat\u2013Sun, 6am\u20131:30pm; daily store and caf\xE9 on-site"
 website: http://www.theoldpackhousemarket.co.nz
 email: ''
 phone: ''
-description: Kerikeri market and food hall for Northland growers with a spray-free and organic focus.
+description: Kerikeri market and food hall for Northland growers with a spray-free
+  and organic focus.
 practices_tags:
 - organic
 - spray-free
-- local
+- supports-local
 source_urls: []
 lat: -35.2272607
 lon: 173.9491061

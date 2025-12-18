@@ -7,10 +7,16 @@ country: New Zealand
 region: Hauraki Plains
 city: Ngatea
 address: Ngatea Hall, Orchard Road West, Ngatea
-description: "Second\u2011Sunday market in Ngatea featuring arts, crafts, food and entertainment from local vendors across the Hauraki Plains."
-long_description: "The Ngatea Market takes place at the Ngatea Hall on Orchard Road West on the second Sunday of each month. It brings together stalls selling handmade crafts, art, fresh produce, home baking, plants and a variety of food stalls. Live music and entertainment create a festive atmosphere, making the market a family\u2011friendly outing. Visitors can explore the nearby town shops after browsing the market\u2019s offerings.\n"
+description: "Second\u2011Sunday market in Ngatea featuring arts, crafts, food and\
+  \ entertainment from local vendors across the Hauraki Plains."
+long_description: "The Ngatea Market takes place at the Ngatea Hall on Orchard Road\
+  \ West on the second Sunday of each month. It brings together stalls selling handmade\
+  \ crafts, art, fresh produce, home baking, plants and a variety of food stalls.\
+  \ Live music and entertainment create a festive atmosphere, making the market a\
+  \ family\u2011friendly outing. Visitors can explore the nearby town shops after\
+  \ browsing the market\u2019s offerings.\n"
 practices:
-- local
+- supports-local
 products:
 - crafts
 - art

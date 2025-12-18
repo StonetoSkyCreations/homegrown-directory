@@ -8,11 +8,13 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: Riccarton House & Bush, 16 Kahu Road, Riccarton, Christchurch 8041
-description: Weekly open-air Saturday market set among the Riccarton House grounds with 50+ local producers, fresh seasonal produce, organic vegetables, baking, cheese, deli goods, meat, patisserie, olive oil, meals, and organic coffee.
+description: Weekly open-air Saturday market set among the Riccarton House grounds
+  with 50+ local producers, fresh seasonal produce, organic vegetables, baking, cheese,
+  deli goods, meat, patisserie, olive oil, meals, and organic coffee.
 practices:
 - organic
 - spray-free
-- local
+- supports-local
 products:
 - Seasonal vegetables
 - Fruit
@@ -45,7 +47,7 @@ rating_count: 1
 practices_tags:
 - organic
 - spray-free
-- local
+- supports-local
 source_urls:
 - https://www.christchurchfarmersmarket.co.nz
 products_tags: []

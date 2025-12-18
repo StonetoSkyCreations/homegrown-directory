@@ -37,7 +37,7 @@ lon: 153.0113518
 title: Harris Farm Markets (West End)
 practices:
 - organic
-- local
+- locally-sourced
 practices_tags: []
 products_tags: []
 services: []

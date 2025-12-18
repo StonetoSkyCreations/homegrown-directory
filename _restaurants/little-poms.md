@@ -10,7 +10,7 @@ address: 294 Kilmore Street, Christchurch 8011, New Zealand
 practices:
 - organic
 - pasture-raised
-- local
+- locally-sourced
 products:
 - Breakfasts
 - Brunches
@@ -30,7 +30,10 @@ social_links:
 hours: "Open 7 days: 6:30am\u20133:00pm; Kitchen 7:00am\u20132:30pm"
 rating_average: 5
 rating_count: 1
-description: "Neighbourhood caf\xE9 serving seasonal, locally sourced and organic ingredients with free-range produce and an ethical approach to dining. Offers generous breakfasts, brunches and lunches made in-house, including nut butters and almond milk."
+description: "Neighbourhood caf\xE9 serving seasonal, locally sourced and organic\
+  \ ingredients with free-range produce and an ethical approach to dining. Offers\
+  \ generous breakfasts, brunches and lunches made in-house, including nut butters\
+  \ and almond milk."
 subtype: cafe
 source_urls: []
 lat: -43.5267222

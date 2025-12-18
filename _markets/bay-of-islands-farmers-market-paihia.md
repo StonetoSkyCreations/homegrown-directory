@@ -29,7 +29,7 @@ last_checked: FMNZ member list
 notes: Market
 city: Paihia
 practices_tags:
-- local
+- supports-local
 lat: -35.2818255
 title: "Bay of Islands Farmers Market \u2013 Paihia"
 practices: []

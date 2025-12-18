@@ -13,7 +13,7 @@ subtype: cafe
 practices:
 - organic
 - pasture-raised
-- local
+- locally-sourced
 products:
 - Breakfast
 - Brunch
@@ -23,7 +23,8 @@ hours: ''
 website: https://bskt.com.au
 email: hello@bskt.com.au
 phone: 07 5526 6565
-description: "Beachside health cafe using organic a\xE7a\xED and free-range eggs with a focus on nourishing meals."
+description: "Beachside health cafe using organic a\xE7a\xED and free-range eggs with\
+  \ a focus on nourishing meals."
 source_urls: []
 lat: -28.0591605
 lon: 153.4414861

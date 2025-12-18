@@ -8,13 +8,22 @@ country: New Zealand
 region: Coromandel
 city: Whitianga
 address: Shop 1/10 Blacksmith Lane, Whitianga
-description: Asian-fusion restaurant and takeaway in Whitianga specialising in fresh street food inspired by Southeast Asia, using local produce, Coromandel oysters, Coffee LaLa and organic herbal teas.
-long_description: 'Blue Ginger brings a taste of Southeast Asia to Whitianga with a menu of fresh, vibrant dishes such as curries, noodle salads and banh mi. The kitchen supports local producers by sourcing fresh Coromandel oysters from the Coromandel Oyster Company and serving Coffee LaLa and Forage + Bloom herbal teas made with organic, locally sourced herbs. Dishes are prepared with seasonal vegetables and seafood from the region, and the restaurant offers both dine-in and takeaway options. Located off Albert Street, Blue Ginger is a popular spot for flavourful street food and relaxed service.
+description: Asian-fusion restaurant and takeaway in Whitianga specialising in fresh
+  street food inspired by Southeast Asia, using local produce, Coromandel oysters,
+  Coffee LaLa and organic herbal teas.
+long_description: 'Blue Ginger brings a taste of Southeast Asia to Whitianga with
+  a menu of fresh, vibrant dishes such as curries, noodle salads and banh mi. The
+  kitchen supports local producers by sourcing fresh Coromandel oysters from the Coromandel
+  Oyster Company and serving Coffee LaLa and Forage + Bloom herbal teas made with
+  organic, locally sourced herbs. Dishes are prepared with seasonal vegetables and
+  seafood from the region, and the restaurant offers both dine-in and takeaway options.
+  Located off Albert Street, Blue Ginger is a popular spot for flavourful street food
+  and relaxed service.
 
   '
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Asian-fusion dishes
 - oysters

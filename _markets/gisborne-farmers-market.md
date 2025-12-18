@@ -29,7 +29,7 @@ last_checked: FMNZ member list
 notes: Market
 city: Gisborne
 practices_tags:
-- local
+- supports-local
 lat: -38.66301550586961
 title: Gisborne Farmers Market
 practices: []

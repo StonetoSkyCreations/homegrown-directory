@@ -8,7 +8,7 @@ city: Grey Lynn
 lat: -36.86
 lon: 174.739
 practices:
-- local
+- locally-sourced
 products:
 - Pantry goods
 - Vegetables
@@ -17,7 +17,8 @@ services:
 - Retail shop
 - Online ordering
 - Delivery
-description: Neighbourhood grocer with refill options, local veg tables, and shelf labels naming every producer.
+description: Neighbourhood grocer with refill options, local veg tables, and shelf
+  labels naming every producer.
 website: https://cityhonestgrocer.example.nz
 subtype: specialty-grocer
 source_urls: []

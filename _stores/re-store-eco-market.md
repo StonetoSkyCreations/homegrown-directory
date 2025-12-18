@@ -8,11 +8,19 @@ country: New Zealand
 region: Coromandel
 city: Thames
 address: 580 Pollen Street, Thames
-description: "Low\u2011waste bulk food store in Thames providing organic and sustainable pantry staples, cleaning products and refill services."
-long_description: "Re\u2011Store Eco Market is a locally owned bulk wholefoods and household refill store dedicated to reducing plastic waste. Customers can shop for bulk dry goods, nuts, seeds, grains, spices and sustainable household products, bringing their own containers or using returnable jars to minimise packaging. The store also sells organic health and wellness items and locally made favourites, and offers home delivery or click\u2011and\u2011collect ordering via its website. As a community\u2011led business it aims to support local growers and make sustainable shopping easy and affordable for Coromandel residents.\n"
+description: "Low\u2011waste bulk food store in Thames providing organic and sustainable\
+  \ pantry staples, cleaning products and refill services."
+long_description: "Re\u2011Store Eco Market is a locally owned bulk wholefoods and\
+  \ household refill store dedicated to reducing plastic waste. Customers can shop\
+  \ for bulk dry goods, nuts, seeds, grains, spices and sustainable household products,\
+  \ bringing their own containers or using returnable jars to minimise packaging.\
+  \ The store also sells organic health and wellness items and locally made favourites,\
+  \ and offers home delivery or click\u2011and\u2011collect ordering via its website.\
+  \ As a community\u2011led business it aims to support local growers and make sustainable\
+  \ shopping easy and affordable for Coromandel residents.\n"
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - bulk foods
 - pantry staples
@@ -30,7 +38,8 @@ website: https://www.re-store.co.nz
 email: hello@restoreecomarket.co.nz
 phone: ''
 social: ''
-hours: "Mon\u2013Fri 9\u202Fam\u20135\u202F:30\u202Fpm; Sat 9\u202Fam\u20132\u202Fpm; Sun closed"
+hours: "Mon\u2013Fri 9\u202Fam\u20135\u202F:30\u202Fpm; Sat 9\u202Fam\u20132\u202F\
+  pm; Sun closed"
 market_days: []
 lat: -37.133236431883944
 lon: 175.54181879121833

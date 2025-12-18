@@ -7,10 +7,17 @@ country: New Zealand
 region: Hauraki Plains
 city: Puriri
 address: Puriri Community Hall, Puriri
-description: Friendly village market held on the last Saturday of each month at Puriri Community Hall offering plants, crafts, food and entertainment.
-long_description: "Puriri Hall Market Day takes place on the last Saturday of each month from 8:30 am to 1 pm. Local stallholders sell plants, seedlings, home\u2011grown produce, fresh baking, preserves, crafts and second\u2011hand goods, and children enjoy face painting and games. The market serves as a fundraiser for community projects and provides a gathering place for residents of Puriri and surrounding rural areas. Food stalls and coffee carts make it easy to linger and chat with neighbours.\n"
+description: Friendly village market held on the last Saturday of each month at Puriri
+  Community Hall offering plants, crafts, food and entertainment.
+long_description: "Puriri Hall Market Day takes place on the last Saturday of each\
+  \ month from 8:30 am to 1 pm. Local stallholders sell plants, seedlings, home\u2011\
+  grown produce, fresh baking, preserves, crafts and second\u2011hand goods, and children\
+  \ enjoy face painting and games. The market serves as a fundraiser for community\
+  \ projects and provides a gathering place for residents of Puriri and surrounding\
+  \ rural areas. Food stalls and coffee carts make it easy to linger and chat with\
+  \ neighbours.\n"
 practices:
-- local
+- supports-local
 products:
 - plants
 - seedlings

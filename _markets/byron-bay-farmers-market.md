@@ -5,7 +5,8 @@ name: Byron Bay Farmers Market
 brand: Byron Bay Farmers Market
 type: market
 category: market
-description: Weekly Thursday farmers market with local fresh produce and organic vendors in Byron Bay.
+description: Weekly Thursday farmers market with local fresh produce and organic vendors
+  in Byron Bay.
 country: AU
 country_slug: australia
 region: New South Wales
@@ -33,7 +34,7 @@ notes: Market
 city: Byron Bay
 practices_tags:
 - organic
-- local
+- supports-local
 lat: -28.646951
 lon: 153.610627
 title: Byron Bay Farmers Market

@@ -7,13 +7,16 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 43 Nayland Street, Sumner Mall, Christchurch 8081
-description: 'Village-style bakery using natural ingredients, long cold-fermented sourdough, and locally sourced flours including Milmore Downs organic whole-wheat and rye, and spray-free Farmers Mill flour. Fresh pastries, sourdough breads, pies, toasties, sandwiches, Prima coffee, T-leaf teas, and NZ-made cold drinks.
+description: 'Village-style bakery using natural ingredients, long cold-fermented
+  sourdough, and locally sourced flours including Milmore Downs organic whole-wheat
+  and rye, and spray-free Farmers Mill flour. Fresh pastries, sourdough breads, pies,
+  toasties, sandwiches, Prima coffee, T-leaf teas, and NZ-made cold drinks.
 
   '
 practices:
 - organic
 - spray-free
-- local
+- locally-sourced
 products:
 - sourdough bread
 - pastries

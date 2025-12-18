@@ -29,7 +29,7 @@ last_checked: FMNZ member list
 notes: Market
 city: Nelson
 practices_tags:
-- local
+- supports-local
 lat: -41.2738791
 title: Nelson Farmers Market
 practices: []

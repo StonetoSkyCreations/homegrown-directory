@@ -7,10 +7,11 @@ country: New Zealand
 region: Tasman
 city: Nelson
 address: 69 Collingwood Street, Nelson City, Tasman 7010, New Zealand
-description: Community-focused supermarket in Nelson known for supporting local growers and stocking organic produce such as vegetables from Streamside Organics.
+description: Community-focused supermarket in Nelson known for supporting local growers
+  and stocking organic produce such as vegetables from Streamside Organics.
 practices:
 - certified-organic
-- local
+- locally-sourced
 products:
 - fresh produce
 - certified-organic vegetables
@@ -27,7 +28,8 @@ website: https://freshchoicenelson.co.nz
 email: online@freshchoicenelson.co.nz
 phone: +64 3 548 0191
 social: null
-hours: Monday 07:00-21:00; Tuesday 07:00-21:00; Wednesday 07:00-21:00; Thursday 07:00-21:00; Friday 07:00-21:00; Saturday 07:00-21:00; Sunday 07:00-21:00
+hours: Monday 07:00-21:00; Tuesday 07:00-21:00; Wednesday 07:00-21:00; Thursday 07:00-21:00;
+  Friday 07:00-21:00; Saturday 07:00-21:00; Sunday 07:00-21:00
 market_days: []
 lat: -41.2721499
 lon: 173.2872429

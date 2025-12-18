@@ -29,7 +29,7 @@ last_checked: FMNZ member list
 notes: Market
 city: Kerikeri
 practices_tags:
-- local
+- supports-local
 lat: -35.212396
 title: "Bay of Islands Farmers Market \u2013 Kerikeri"
 practices: []

@@ -8,7 +8,7 @@ region: Coromandel
 city: Thames
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Coffee and tea
 - Bread and bakery
@@ -18,8 +18,10 @@ hours: ''
 website: ''
 email: ''
 phone: ''
-description: Thames restaurant celebrating local, sustainable ingredients with produce from Pakaraka Permaculture.
-Menu built around local and sustainable ingredients, including organic produce from Pakaraka Permaculture. Source: user-supplied list
+description: Thames restaurant celebrating local, sustainable ingredients with produce
+  from Pakaraka Permaculture.
+Menu built around local and sustainable ingredients, including organic produce from Pakaraka Permaculture. Source: user-supplied
+  list
 subtype: restaurant
 source_urls: []
 lat: -37.137983

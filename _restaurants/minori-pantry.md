@@ -12,7 +12,7 @@ type: cafe
 subtype: cafe
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Breakfast
 - Lunch
@@ -23,7 +23,8 @@ hours: ''
 website: https://minoripantry.com.au
 email: orders@minoripantry.com.au
 phone: 0456 359 090
-description: "Wholefoods caf\xE9 serving organic coffee and meals with locally sourced dairy and ingredients."
+description: "Wholefoods caf\xE9 serving organic coffee and meals with locally sourced\
+  \ dairy and ingredients."
 source_urls: []
 lat: -28.6362181
 lon: 153.0020878

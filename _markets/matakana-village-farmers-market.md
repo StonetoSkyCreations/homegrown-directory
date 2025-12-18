@@ -8,9 +8,11 @@ country: New Zealand
 region: Auckland
 city: Matakana
 address: 2 Matakana Valley Road, Matakana, Auckland
-description: Vibrant riverside farmers' market with award-winning coffee, gourmet brunch dishes and stalls brimming with fresh local produce; open every Saturday from 8 am to 1 pm.
+description: Vibrant riverside farmers' market with award-winning coffee, gourmet
+  brunch dishes and stalls brimming with fresh local produce; open every Saturday
+  from 8 am to 1 pm.
 practices:
-- local
+- supports-local
 products:
 - fresh produce
 - flowers
@@ -37,7 +39,7 @@ lat: -36.351276
 lon: 174.7178187
 last_checked: '2025-12-11'
 practices_tags:
-- local
+- supports-local
 source_urls:
 - https://www.matakanavillage.co.nz/market
 - https://www.matakanacoast.co.nz/listing/matakana-village-farmers-market

@@ -13,12 +13,18 @@ address: 13 Tahi Road, Ostend, Auckland
 postcode: '1081'
 lat: -36.7924547970452
 lon: 175.05527861911423
-description: A Waiheke oyster farm growing Pacific oysters in Te Matuku Bay, supplying fresh, locally grown shellfish to the Auckland region.
-long_description: 'Te Matuku Oysters grows Pacific oysters in Te Matuku Bay on Waiheke Island - one of those places where the water, tide, and season do most of the work. As a producer, the focus is on freshness and a clean growing environment, supplying oysters into local channels rather than operating as a public-facing restaurant. For Homegrown, this is a simple relationship: place-based aquaculture, a short path from bay to plate, and a product that tastes like the inlet it came from.
+description: A Waiheke oyster farm growing Pacific oysters in Te Matuku Bay, supplying
+  fresh, locally grown shellfish to the Auckland region.
+long_description: 'Te Matuku Oysters grows Pacific oysters in Te Matuku Bay on Waiheke
+  Island - one of those places where the water, tide, and season do most of the work.
+  As a producer, the focus is on freshness and a clean growing environment, supplying
+  oysters into local channels rather than operating as a public-facing restaurant.
+  For Homegrown, this is a simple relationship: place-based aquaculture, a short path
+  from bay to plate, and a product that tastes like the inlet it came from.
 
   '
 practices:
-- local
+- locally-sourced
 products:
 - pacific-oysters
 services:

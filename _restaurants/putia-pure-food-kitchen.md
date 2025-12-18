@@ -13,7 +13,7 @@ subtype: restaurant
 practices:
 - organic
 - pasture-raised
-- local
+- locally-sourced
 products:
 - Breakfast
 - Lunch
@@ -24,7 +24,8 @@ hours: ''
 website: https://putiapurefood.com.au
 email: ''
 phone: 07 3267 6654
-description: Suburban cafe-kitchen sourcing local produce, supporting free-range farms, and using organic where possible.
+description: Suburban cafe-kitchen sourcing local produce, supporting free-range farms,
+  and using organic where possible.
 source_urls: []
 lat: -27.3748011
 lon: 153.0768171

@@ -12,7 +12,7 @@ type: cafe
 subtype: cafe
 practices:
 - pasture-raised
-- local
+- locally-sourced
 products:
 - Breakfast
 - Brunch
@@ -22,7 +22,8 @@ hours: ''
 website: ''
 email: ''
 phone: 07 5535 2959
-description: Bright brunch cafe using pasture-raised eggs and grass-fed beef from local farmers.
+description: Bright brunch cafe using pasture-raised eggs and grass-fed beef from
+  local farmers.
 source_urls: []
 lat: -27.974743
 lon: 153.4186359

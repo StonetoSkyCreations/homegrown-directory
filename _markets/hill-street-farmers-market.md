@@ -5,7 +5,8 @@ name: Hill Street Farmers Market
 brand: Hill Street Farmers Market
 type: market
 category: market
-description: Thorndon Saturday market with fresh, local and organic produce plus free-range eggs.
+description: Thorndon Saturday market with fresh, local and organic produce plus free-range
+  eggs.
 country: NZ
 country_slug: new-zealand
 region: Wellington
@@ -27,10 +28,11 @@ last_checked: ''
 notes: ''
 published: true
 city: Wellington
-Saturday morning market offering fresh local produce, organic options, and free-range eggs in Thorndon. Source: user-supplied list
+Saturday morning market offering fresh local produce, organic options, and free-range eggs in Thorndon. Source: user-supplied
+  list
 practices_tags:
 - organic
-- local
+- supports-local
 lat: -41.2769731
 lon: 174.7738723
 geo_precision: exact

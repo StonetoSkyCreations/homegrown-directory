@@ -11,7 +11,7 @@ postcode: '2478'
 type: cafe
 subtype: cafe
 practices:
-- local
+- locally-sourced
 products:
 - Breakfast
 - Lunch
@@ -22,7 +22,8 @@ hours: ''
 website: https://coffeeandkitchen.com.au
 email: hello@coffeeandkitchen.com.au
 phone: 02 6686 5843
-description: Casual cafe in Ballina focusing on fresh, locally sourced ingredients and seasonal dishes.
+description: Casual cafe in Ballina focusing on fresh, locally sourced ingredients
+  and seasonal dishes.
 source_urls: []
 lat: -28.8710137
 lon: 153.5622524

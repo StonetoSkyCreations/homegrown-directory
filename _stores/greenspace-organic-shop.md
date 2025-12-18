@@ -5,7 +5,9 @@ slug: greenspace-organic-shop
 name: Greenspace Organic Shop
 type: organic-store
 subtype: organic-store
-description: Community-oriented plastic-free shop offering organic and local produce, natural bodycare and zero-waste homeware, supporting organic, biodynamic and regenerative agriculture.
+description: Community-oriented plastic-free shop offering organic and local produce,
+  natural bodycare and zero-waste homeware, supporting organic, biodynamic and regenerative
+  agriculture.
 country: New Zealand
 country_slug: new-zealand
 region: Auckland
@@ -38,7 +40,7 @@ practices:
 - organic
 - regenerative
 - biodynamic
-- local
+- locally-sourced
 products_tags: []
 services_tags: []
 certifications: []

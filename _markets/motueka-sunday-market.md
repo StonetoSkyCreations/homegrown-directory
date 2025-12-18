@@ -26,11 +26,12 @@ last_checked: ''
 notes: ''
 published: true
 city: Motueka
-Weekly market known for local organic and spray-free produce and artisan goods from Motueka growers. Source: user-supplied list
+Weekly market known for local organic and spray-free produce and artisan goods from Motueka growers. Source: user-supplied
+  list
 practices_tags:
 - organic
 - spray-free
-- local
+- supports-local
 lat: -41.11125315
 lon: 173.0130596577261
 title: Motueka Sunday Market

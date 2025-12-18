@@ -7,10 +7,17 @@ country: New Zealand
 region: Hauraki Plains
 city: Waitakaruru
 address: Waitakaruru Community Hall, Waitakaruru
-description: Monthly community market at Waitakaruru Community Hall featuring local produce, crafts and home baking on the fourth Saturday of each month.
-long_description: "The Waitakaruru Market operates on the fourth Saturday of every month at the community hall in Waitakaruru, a small settlement on the Hauraki Plains. Vendors offer fresh vegetables, fruit, plants, eggs, honey, baked goods, crafts and second\u2011hand items. The market encourages locals to buy and sell within their community and provides a social setting with food stalls and coffee. It serves the rural area between Thames and Miranda, drawing visitors from along the state highway.\n"
+description: Monthly community market at Waitakaruru Community Hall featuring local
+  produce, crafts and home baking on the fourth Saturday of each month.
+long_description: "The Waitakaruru Market operates on the fourth Saturday of every\
+  \ month at the community hall in Waitakaruru, a small settlement on the Hauraki\
+  \ Plains. Vendors offer fresh vegetables, fruit, plants, eggs, honey, baked goods,\
+  \ crafts and second\u2011hand items. The market encourages locals to buy and sell\
+  \ within their community and provides a social setting with food stalls and coffee.\
+  \ It serves the rural area between Thames and Miranda, drawing visitors from along\
+  \ the state highway.\n"
 practices:
-- local
+- supports-local
 products:
 - vegetables
 - fruit

@@ -7,10 +7,11 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 175 Durham Street South, Christchurch 8011
-description: Compact city supermarket featuring a dedicated area with gluten-free and organic products alongside general groceries.
+description: Compact city supermarket featuring a dedicated area with gluten-free
+  and organic products alongside general groceries.
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - organic fruit and vegetables
 - organic grocery items
@@ -38,7 +39,8 @@ geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: New World
-geo_query: 175 Durham Street South, Christchurch 8011, Christchurch, Canterbury, New Zealand
+geo_query: 175 Durham Street South, Christchurch 8011, Christchurch, Canterbury, New
+  Zealand
 practices_tags: []
 products_tags: []
 services_tags: []

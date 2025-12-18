@@ -9,7 +9,7 @@ city: Coromandel
 address: 31 Kapanga Road, Coromandel 3506
 practices:
 - organic
-- local
+- locally-sourced
 products:
 - Seafood
 - Meat
@@ -19,7 +19,8 @@ hours: ''
 website: http://www.peppertree.co.nz/
 email: ''
 phone: ''
-description: Coromandel Town restaurant featuring local seafood, mussels, and organic local produce.
+description: Coromandel Town restaurant featuring local seafood, mussels, and organic
+  local produce.
 Dinner menu highlighting local seafood and organic produce from the Coromandel region. Source: http://www.peppertree.co.nz/
 subtype: restaurant
 source_urls: []

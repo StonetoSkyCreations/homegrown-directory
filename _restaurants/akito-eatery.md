@@ -9,7 +9,7 @@ city: Oneroa
 address: 153 Ocean View Road, Oneroa, Waiheke Island 1081
 practices:
 - regenerative
-- local
+- locally-sourced
 products:
 - Breakfast dishes
 - Brunch dishes
@@ -22,7 +22,8 @@ email: hello@akito.co.nz
 phone: +64 9 372 7659
 social_links: []
 hours: "Mon\u2013Sat 7:30am\u20133pm; Sun 7am\u20133pm"
-description: Plant-based eatery embracing slow food and regenerative principles, serving seasonal breakfasts, brunches and lunches made from local ingredients.
+description: Plant-based eatery embracing slow food and regenerative principles, serving
+  seasonal breakfasts, brunches and lunches made from local ingredients.
 subtype: cafe
 source_urls: []
 lat: -36.7827036
