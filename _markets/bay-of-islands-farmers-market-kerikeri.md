@@ -3,6 +3,9 @@ layout: listing
 slug: bay-of-islands-farmers-market-kerikeri
 name: "Bay of Islands Farmers Market \u2013 Kerikeri"
 brand: "Bay of Islands Farmers Market \u2013 Kerikeri"
+redirect_from:
+  - /review-html-listing-bay-of-islands-farmers-market-kerikeri
+  - /review-html-listing-bay-of-islands-farmers-market-kerikeri/
 type: market
 category: market
 description: "Local farmers\u2019 market featuring Far North growers (Kerikeri site)"

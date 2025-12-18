@@ -1,6 +1,9 @@
 ---
 title: Walk Don't Run
 slug: walk-dont-run
+redirect_from:
+  - /review-html-listing-walk-dont-run
+  - /review-html-listing-walk-dont-run/
 country: Australia
 country_slug: australia
 region: Victoria

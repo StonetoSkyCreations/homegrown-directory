@@ -2,6 +2,9 @@
 title: Hapi Organic Cafe & Maara
 slug: hapi-organic-cafe-napier
 published: true
+redirect_from:
+  - /review-html-listing-hapi-organic-cafe-napier
+  - /review-html-listing-hapi-organic-cafe-napier/
 country: New Zealand
 country_slug: new-zealand
 region: Hawke's Bay

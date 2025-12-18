@@ -3,6 +3,8 @@ layout: store
 title: Organic Buzz
 slug: organic-buzz
 name: Organic Buzz
+redirect_from:
+  - /restaurants/organic-buzz-whanganui/
 type: Organic grocer
 subtype: organic-store
 description: Organic food grocer with an emphasis on supporting local growers, offering

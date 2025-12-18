@@ -1,6 +1,9 @@
 ---
 title: Coro Fresh (Goodness Growers)
 slug: coro-fresh-goodness-growers
+redirect_from:
+  - /review-html-listing-coro-fresh-goodness-growers
+  - /review-html-listing-coro-fresh-goodness-growers/
 country: New Zealand
 country_slug: new-zealand
 region: Waikato
