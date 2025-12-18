@@ -53,16 +53,19 @@ map: false
   </header>
 
   <div class="listing__content">
-    {% if short_description != "" %}
-    <div class="listing__intro">
-      <p>{{ short_description }}</p>
-    </div>
-    {% endif %}
-
-    {% if trimmed_body != "" %}
-    <div class="listing__body">
-      {{ content }}
-    </div>
+    {% assign has_long_description = page.long_description | to_s | strip %}
+    {% if has_long_description != "" %}
+      <div class="listing__body">
+        {{ page.long_description | markdownify }}
+      </div>
+    {% elsif trimmed_body != "" %}
+      <div class="listing__body">
+        {{ content }}
+      </div>
+    {% elsif short_description != "" %}
+      <div class="listing__body">
+        <p>{{ short_description }}</p>
+      </div>
     {% endif %}
 
     <section class="listing-updates-reviews">
