@@ -72,6 +72,8 @@ email:
   shop: shop@pikowholefoods.co.nz
   orders: orders@pikowholefoods.co.nz
 
+website: https://www.pikowholefoods.co.nz
+
 lat: -43.52614727086733
 lon: 172.6455204865071
 geo_precision: exact
