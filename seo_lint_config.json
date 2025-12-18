@@ -10,7 +10,12 @@
   "ignore_paths": [
     "/404.html",
     "/country/australia/",
-    "/country/new-zealand/"
+    "/country/new-zealand/",
+    "/review-html-listing-bay-of-islands-farmers-market-kerikeri/",
+    "/review-html-listing-coro-fresh-goodness-growers/",
+    "/review-html-listing-walk-dont-run/",
+    "/review-html-listing-hapi-organic-cafe-napier/",
+    "/restaurants/organic-buzz-whanganui/"
   ],
   "allow_duplicate_titles_for_paths": []
 }
