@@ -62,6 +62,18 @@ def load_config():
         return json.load(f)
 
 
+def is_redirect_stub(html_text: str) -> bool:
+    """Detect redirect stub pages (e.g., jekyll-redirect-from output)."""
+    if not html_text:
+        return False
+    lowered = html_text.lower()
+    if "http-equiv=\"refresh\"" in lowered or "http-equiv='refresh'" in lowered:
+        return True
+    if "you are being" in lowered and "redirected" in lowered and "meta http-equiv" in lowered:
+        return True
+    return False
+
+
 def url_path_from_file(file_path: Path) -> str:
     rel = file_path.relative_to(SITE_DIR).as_posix()
     if rel.endswith("index.html"):
@@ -94,12 +106,17 @@ def main():
         if any(url_path.startswith(prefix) for prefix in ignore_prefixes):
             continue
 
-        parser = HeadParser()
         try:
-            parser.feed(file_path.read_text(encoding="utf-8"))
+            html = file_path.read_text(encoding="utf-8")
         except Exception as exc:
             parse_issues.append((url_path, f"{exc.__class__.__name__}: {exc}"))
             continue
+
+        if is_redirect_stub(html):
+            continue
+
+        parser = HeadParser()
+        parser.feed(html)
 
         if not parser.titles:
             title_issues.append((url_path, "missing_title"))
