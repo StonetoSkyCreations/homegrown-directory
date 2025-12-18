@@ -40,7 +40,14 @@ seo_description: >
 {% if featured_home %}
   {% include featured-card.html
      collection=featured_home.collection
-     slug=featured_home.slug
+     scope="global"
+     key="home"
+  %}
+  {% include featured-card.html
+     collection=featured_home.collection
+     scope="global"
+     key="home"
+     country_slug="australia"
   %}
 {% endif %}
 

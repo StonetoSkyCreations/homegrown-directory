@@ -2,6 +2,7 @@ global:
   home:
     collection: "farms"
     slug: "streamside-organics"
+    slug_australia: "the-farm-byron-bay"
 
 collections:
   eateries:
@@ -19,4 +20,4 @@ collections:
   farms:
     collection: "farms"
     slug: "little-farms-market-garden"
-    slug_australia: "the-farm-byron-bay"
+    slug_australia: "tathra-place-regenerative-farm"
