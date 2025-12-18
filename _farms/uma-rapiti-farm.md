@@ -27,7 +27,8 @@ subtype: mixed
 source_urls: []
 lat: -36.79310825
 lon: 175.08838633700125
-practices: []
+practices:
+- organic
 products_tags: []
 services_tags: []
 certifications: []

@@ -8,10 +8,8 @@ region: Canterbury
 city: Methven
 address: 121 Main Street, Methven 7730
 practices:
-- Fairtrade coffee
-- Organic options
-- Seasonal
-- Local produce
+- organic
+- local
 products:
 - Fair-trade coffee
 - Breakfasts

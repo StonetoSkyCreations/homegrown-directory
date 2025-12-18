@@ -9,8 +9,7 @@ city: Takapuna
 address: 360 Lake Road, Takapuna, Auckland
 description: Wholefoods refillery where 80% of products are certified organic, offering bulk groceries with sustainable packaging.
 practices:
-- Certified organic
-- Sustainable
+- certified-organic
 products:
 - Bulk wholefoods
 - Household goods

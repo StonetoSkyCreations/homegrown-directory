@@ -8,9 +8,7 @@ region: Otago
 city: "W\u0101naka"
 address: "First Floor, 33 Ardmore Street, W\u0101naka"
 practices:
-- Organic
-- Wild-harvested
-- Ethical sourcing
+- organic
 products:
 - Seasonal dishes
 - Wild-shot game

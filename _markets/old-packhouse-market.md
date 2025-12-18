@@ -10,8 +10,9 @@ country_slug: new-zealand
 region: Northland
 city: Kerikeri
 practices:
-- Organic (uncertified)
-- Spray-free
+- organic
+- spray-free
+- local
 products:
 - Vegetables
 - Fruit

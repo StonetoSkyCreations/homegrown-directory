@@ -20,8 +20,7 @@ long_description: "The Eco Egg Company Ltd is a long-established New Zealand pro
   \ and growth promoters, and the feed mill itself is independently accredited.\nWhile the business does not explicitly market itself as regenerative, its pasture-based systems, tree planting for shade and shelter, and emphasis on soil and animal health align with many regenerative and ethical farming principles. The strength of Eco Egg Company lies in its independent third-party verification, providing consumers with confidence that organic and free-range claims are audited, enforced, and traceable.\n"
 practices:
 - certified-organic
-- free-range
-- high-animal-welfare
+- pasture-raised
 products:
 - organic-eggs
 services:

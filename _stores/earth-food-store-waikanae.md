@@ -31,7 +31,8 @@ Small Waikanae organic store focused on local goods and wholefoods. Source: user
 lat: -40.8758432
 lon: 175.0643045
 title: Earth Food Store
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

@@ -38,7 +38,9 @@ geo_last_verified: '2025-12-14'
 geo_label: Byron Bay Pork and Meats
 geo_query: 70 Dalley St, Mullumbimby, New South Wales, AU
 title: Byron Bay Pork & Meats (Mullumbimby)
-practices: []
+practices:
+- organic
+- pasture-raised
 practices_tags: []
 products_tags: []
 services: []

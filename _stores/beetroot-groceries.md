@@ -9,7 +9,7 @@ city: Motueka
 address: 211 High Street, Motueka, Tasman
 description: Refillery and grocery offering organic and gluten-free foods, bulk nuts, herbs, spices, teas, personal and cleaning products, pet food and homebrew supplies.
 practices:
-- Organic
+- organic
 products:
 - Bulk wholefoods
 - Gluten-free foods

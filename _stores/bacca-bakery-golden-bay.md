@@ -17,10 +17,6 @@ long_description: 'Bacca Bakery is a small, organic sourdough bakery tucked behi
   '
 practices:
 - organic
-- sourdough
-- stoneground
-- slow-fermentation
-- local-grain
 products:
 - sourdough bread
 - pastries

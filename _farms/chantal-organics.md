@@ -29,7 +29,8 @@ hours: "Mon\u2013Fri 08:00\u201317:00; Sat\u2013Sun closed"
 last_checked: '2025-12-09'
 notes: Founded as organic co-op farm
 subtype: mixed
-practices: []
+practices:
+- organic
 products_tags: []
 services: []
 services_tags: []

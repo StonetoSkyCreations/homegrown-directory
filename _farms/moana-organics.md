@@ -8,9 +8,9 @@ city: Paekakariki
 lat: -40.991
 lon: 174.957
 practices:
-- Organic (uncertified)
-- Spray-free
-- Regenerative
+- organic
+- spray-free
+- regenerative
 products:
 - Vegetables
 - Herbs

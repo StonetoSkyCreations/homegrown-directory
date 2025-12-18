@@ -19,9 +19,6 @@ long_description: "Solomon\u2019s Gold is a New Zealand-based, award-winning bea
   \ materials as part of an ongoing commitment to reducing environmental impact.\n"
 practices:
 - certified-organic
-- bean-to-bar
-- ethical-sourcing
-- single-origin
 products:
 - dark-chocolate
 - cacao-products

@@ -38,7 +38,8 @@ city: Bellarine Peninsula
 lat: -38.174295
 lon: 144.578516
 title: Bellarine Wholefoods
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

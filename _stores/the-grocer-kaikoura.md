@@ -36,7 +36,9 @@ geo_last_verified: '2025-12-14'
 geo_label: New Zealand Post
 geo_query: "West End, Kaik\u014Dura, Canterbury, New Zealand"
 title: "The Grocer (Kaik\u014Dura)"
-practices: []
+practices:
+- organic
+- local
 practices_tags: []
 products_tags: []
 services: []

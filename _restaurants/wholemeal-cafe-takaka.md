@@ -8,8 +8,8 @@ region: Tasman
 city: Takaka
 address: "60 Commercial Street, T\u0101kaka 7110"
 practices:
-- Organic (uncertified)
-- Local sourcing
+- organic
+- local
 products:
 - Coffee and tea
 - Bread and bakery

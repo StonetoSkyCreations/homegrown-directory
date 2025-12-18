@@ -8,11 +8,9 @@ region: Canterbury
 city: Christchurch
 address: 294 Kilmore Street, Christchurch 8011, New Zealand
 practices:
-- Organic
-- Locally sourced
-- Seasonal
-- Free-range
-- Ethical sourcing
+- organic
+- pasture-raised
+- local
 products:
 - Breakfasts
 - Brunches

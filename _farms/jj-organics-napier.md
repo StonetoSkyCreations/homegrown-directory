@@ -7,7 +7,8 @@ region: Hawke's Bay
 city: Napier
 address: 232 Riverbend Road, Meeanee, Napier 4110
 practices:
-- Organic (uncertified)
+- organic
+- spray-free
 products:
 - Vegetables
 - Fruit

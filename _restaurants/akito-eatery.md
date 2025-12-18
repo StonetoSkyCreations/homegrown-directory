@@ -8,9 +8,8 @@ region: Auckland
 city: Oneroa
 address: 153 Ocean View Road, Oneroa, Waiheke Island 1081
 practices:
-- Regenerative
-- Sustainable
-- Ethical sourcing
+- regenerative
+- local
 products:
 - Breakfast dishes
 - Brunch dishes

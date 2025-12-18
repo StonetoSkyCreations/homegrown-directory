@@ -8,8 +8,7 @@ region: Auckland
 city: Oneroa
 address: 126 Church Bay Road, Oneroa, Waiheke Island
 practices:
-- Organic
-- Sustainable
+- certified-organic
 products:
 - Wine
 - Seasonal dishes

@@ -11,10 +11,7 @@ postcode: '3066'
 type: cafe
 subtype: cafe
 practices:
-- Organic
-- Vegan
-- Gluten-free
-- Composting
+- organic
 products:
 - Lunch bowls
 - Pies

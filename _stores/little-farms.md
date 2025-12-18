@@ -9,10 +9,8 @@ city: Masterton
 address: Pirinoa / Wairarapa delivery network
 description: Organic and regenerative Wairarapa growers delivering seasonal farm boxes across the region, the Hutt Valley, and Wellington.
 practices:
+- certified-organic
 - regenerative
-- organic-principles
-- spray-free
-- no-dig
 products:
 - seasonal vegetable boxes
 - seconds boxes

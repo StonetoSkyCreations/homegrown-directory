@@ -39,7 +39,8 @@ geo_last_verified: '2025-12-14'
 geo_label: 972-974
 geo_query: 972 Main Road, Melbourne, Victoria, AU
 title: Sage Bulk Wholefoods - Eltham
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

@@ -18,8 +18,7 @@ long_description: 'Premium Game supplies wild-harvested New Zealand game meats, 
 
   '
 practices:
-- wild-harvested
-- conservation-aligned-harvest
+- wild
 products:
 - wild-tahr
 - wild-game-meat

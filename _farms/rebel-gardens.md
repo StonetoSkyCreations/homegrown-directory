@@ -10,8 +10,6 @@ address: Between Martinborough and Greytown
 description: Small-scale market garden run by Griff Griffiths, growing microgreens, gourmet potatoes and assorted vegetables for local markets and online delivery.
 practices:
 - spray-free
-- organic-principles
-- compost-rich soil
 products:
 - gourmet Jersey Benne potatoes
 - carrots and beetroot

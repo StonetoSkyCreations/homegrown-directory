@@ -9,8 +9,7 @@ city: Mangamahu
 address: Mangamahu, Whanganui
 description: Permaculture farm delivering organically grown vegetables to the Whanganui area and selling at the Whanganui River Market.
 practices:
-- Organic
-- Permaculture
+- organic
 products:
 - Vegetables
 services:

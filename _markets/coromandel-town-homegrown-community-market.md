@@ -10,8 +10,7 @@ address: Hike 'n' Bike lawn, Kapanga Road (opposite Four Square), Coromandel Tow
 description: "Weekly Saturday market in Coromandel Town featuring seasonal produce, home\u2011baked goods, preserves and handmade crafts with organic and gluten\u2011free options."
 long_description: "The Coromandel Town Homegrown Community Market runs every Saturday morning from 9 am to 1 pm on the grassy lawn opposite the Four Square supermarket. Local growers and artisans sell fresh fruit and vegetables, free\u2011range eggs, bread, cakes, chocolates, preserves, seedlings, herbs and spices, natural remedies and a variety of hand\u2011crafted items. Organic and gluten\u2011free products are plentiful, and food stalls offer curries and other ready\u2011to\u2011eat dishes. The market operates during the summer months and is a lively social hub for residents and visitors. Stall enquiries can be made by contacting market coordinator Susanna.\n"
 practices:
-- local produce
-- organic options
+- local
 products:
 - fruit
 - vegetables

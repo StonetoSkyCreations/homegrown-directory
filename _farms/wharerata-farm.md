@@ -11,8 +11,7 @@ description: Fourth-generation certified-organic mixed farm raising deer, sheep,
 practices:
 - certified-organic
 - regenerative
-- biodiversity conservation
-- multi-species pastures
+- pasture-raised
 products:
 - venison
 - organic lamb and beef

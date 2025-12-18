@@ -8,8 +8,8 @@ region: Otago
 city: "W\u0101naka"
 address: "47 Helwick Street, W\u0101naka 9305"
 practices:
-- Organic (uncertified)
-- Free-range
+- organic
+- pasture-raised
 products:
 - Breakfast
 - Coffee and tea

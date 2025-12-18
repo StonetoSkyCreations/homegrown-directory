@@ -7,8 +7,7 @@ country: Country name
 country_slug: country-slug
 region: Region or state
 city: City or town
-practices:
-- Seasonal menu
+practices: []
 products:
 - Coffee and tea
 services:

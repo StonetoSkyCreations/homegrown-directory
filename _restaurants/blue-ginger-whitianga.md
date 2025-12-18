@@ -13,8 +13,8 @@ long_description: 'Blue Ginger brings a taste of Southeast Asia to Whitianga wit
 
   '
 practices:
-- support for local producers
-- organic teas
+- organic
+- local
 products:
 - Asian-fusion dishes
 - oysters

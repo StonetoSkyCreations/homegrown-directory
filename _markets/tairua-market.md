@@ -10,7 +10,7 @@ address: Tairua Community Hall, Main Road, Tairua
 description: Monthly market in Tairua where local growers and artisans sell produce, baking, crafts and plants on the first Saturday of each month.
 long_description: "The Tairua Market takes place on the first Saturday of each month at the community hall from 9 am to 1 pm. Stalls offer fresh fruit and vegetables, homemade jams and chutneys, baking, free\u2011range eggs, seedlings, potted plants and handmade crafts. The market serves as a social gathering for the community and provides an outlet for small producers from Tairua and the wider eastern Coromandel. Visitors can enjoy a relaxed morning shopping and chatting with growers over coffee and snacks from the onsite caf\xE9 stalls.\n"
 practices:
-- local produce
+- local
 products:
 - fruit
 - vegetables

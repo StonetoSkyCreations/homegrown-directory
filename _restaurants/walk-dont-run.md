@@ -11,8 +11,8 @@ postcode: '3143'
 type: cafe
 subtype: cafe
 practices:
-- Organic
-- Local
+- organic
+- local
 products:
 - Brunch dishes
 - Smoothies

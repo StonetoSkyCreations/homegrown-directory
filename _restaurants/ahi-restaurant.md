@@ -19,10 +19,9 @@ long_description: 'Ahi is a flagship expression of modern New Zealand dining, co
 
   '
 practices:
-- seasonal-menu
-- regenerative-growing
-- ethical-sourcing
-- producer-led-supply
+- organic
+- regenerative
+- local
 products:
 - set-menu-dining
 - a-la-carte-dining

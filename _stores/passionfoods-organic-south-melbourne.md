@@ -38,7 +38,8 @@ geo_last_verified: '2025-12-14'
 geo_label: '219'
 geo_query: 219 Ferrars Street, Melbourne, Victoria, AU
 title: Passionfoods Organic (South Melbourne)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

@@ -10,8 +10,7 @@ address: 59 Cromarty Drive, Martinborough 5784
 description: Spray-free boutique farm offering seasonal fruits, flowers, preserves, eggs and guided farm tours in the heart of Martinborough.
 practices:
 - spray-free
-- organic-principles
-- diversified
+- organic
 products:
 - seasonal fruit (apricots, mandarins, grapefruit)
 - cut flowers and bouquets

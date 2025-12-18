@@ -9,8 +9,8 @@ city: Christchurch
 address: 175 Durham Street South, Christchurch 8011
 description: Compact city supermarket featuring a dedicated area with gluten-free and organic products alongside general groceries.
 practices:
-- organic-products-section
-- gluten-free
+- organic
+- local
 products:
 - organic fruit and vegetables
 - organic grocery items

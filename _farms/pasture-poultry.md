@@ -31,7 +31,8 @@ notes: ''
 products_tags:
 - meat
 subtype: livestock
-practices: []
+practices:
+- certified-organic
 services: []
 services_tags: []
 specialty_tags: []

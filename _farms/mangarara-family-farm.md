@@ -10,7 +10,8 @@ postcode: '4277'
 lat: -39.8833
 lon: 176.6333
 practices:
-- Regenerative
+- regenerative
+- pasture-raised
 products:
 - Meat
 services:

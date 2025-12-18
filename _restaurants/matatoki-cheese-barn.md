@@ -8,7 +8,7 @@ region: Waikato
 city: Matatoki
 address: 4 Wainui Road, Matatoki 3578
 practices:
-- Organic (uncertified)
+- organic
 products:
 - Dairy
 - Coffee and tea

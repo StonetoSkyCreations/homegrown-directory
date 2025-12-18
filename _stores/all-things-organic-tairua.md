@@ -12,7 +12,7 @@ description: Organic wholefood store and smoothie bar in Tairua offering organic
 long_description: "All Things Organic operates a sunny shop in Tairua selling a curated selection of organic and gluten\u2011free foods, natural body care, eco gifts and household products. A small caf\xE9 counter serves organic smoothies, fresh juices, ice creams, baked goods and raw slices, and during winter they offer soups and other hot food. Customers can browse bulk organic dry goods, superfoods and locally sourced produce and order specialty items. The business encourages healthy, sustainable lifestyles and provides advice on plant\u2011based eating. Online ordering and phone consultations are available for those looking to stock up on organic staples. Their website lists the contact phone and email for enquiries.\n"
 practices:
 - organic
-- "gluten\u2011free options"
+- local
 products:
 - organic groceries
 - smoothies

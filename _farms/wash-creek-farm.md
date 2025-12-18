@@ -13,8 +13,8 @@ long_description: 'Wash Creek Farm (WashCreek Organic Meats) is a BioGro Certifi
   '
 practices:
 - certified-organic
-- regenerative-grazing
-- humane-animal-husbandry
+- regenerative
+- pasture-raised
 products:
 - certified organic lamb
 - certified organic beef

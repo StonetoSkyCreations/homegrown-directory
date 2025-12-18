@@ -33,7 +33,8 @@ products_tags:
 subtype: livestock
 lat: -39.6407747
 lon: 176.8399474
-practices: []
+practices:
+- certified-organic
 services: []
 services_tags: []
 specialty_tags: []

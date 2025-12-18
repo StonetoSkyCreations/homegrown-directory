@@ -13,9 +13,7 @@ long_description: "Bellbird Bakery at The Tannery is the original home of this C
 practices:
 - organic
 - spray-free
-- sourdough
-- slow-fermentation
-- local-sourcing
+- local
 products:
 - sourdough bread
 - baguettes

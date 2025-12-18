@@ -10,9 +10,7 @@ address: ''
 description: "Small spray\u2011free microgreens farm based in Waihi Beach growing nutrient\u2011dense shoots to order and delivering to households across the Coromandel and Bay of Plenty."
 long_description: "Better Greens is a locally owned microgreens grower located in Waihi Beach. Every tray of shoots is sown, harvested and packed by hand, ensuring the freshest, most flavourful greens for customers. The farm grows a variety of microgreens such as broccoli, sunflower and pea shoots, all grown without chemicals and certified spray\u2011free. Orders are taken online and harvested to order; nothing sits in storage, so customers receive greens at peak nutritional value. Weekly deliveries are available throughout the Coromandel and Bay of Plenty for orders over $22, and there are subscription options for regular supply. The business also offers wholesale supply to caf\xE9s and restaurants and provides growing advice and recipes on its website. Contact is via phone or email.\n"
 practices:
-- "spray\u2011free"
-- "hand\u2011harvested"
-- sustainable growing
+- spray-free
 products:
 - microgreens (broccoli shoots, sunflower shoots, mixed greens)
 - subscription boxes

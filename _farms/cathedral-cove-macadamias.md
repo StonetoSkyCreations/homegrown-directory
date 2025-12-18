@@ -10,8 +10,7 @@ address: 335 Lees Road, Hahei
 description: "Certified organic macadamia orchard near Cathedral Cove producing nuts and cold\u2011pressed macadamia oil with an onsite caravan shop for tastings and sales."
 long_description: "Jill and Doug Johnston\u2019s macadamia orchard sprawls over 17.5 acres of hills behind Cathedral Cove and is home to around 1,000 forty\u2011year\u2011old macadamia trees. The farm is fully certified organic, far exceeding basic spray\u2011free practices. Most of the nuts are sold by mail order, but there is a caravan shop on site where visitors can purchase macadamia nuts, cold\u2011pressed oil and other macadamia products and sample the sweet, aromatic kernels. The orchard is open to the public from September through March on Fridays to Mondays, with visits by appointment at other times. Friendly goats roam the property and the orchard\u2019s award\u2011winning oil has been recognised as one of the finest locally produced oils.\n"
 practices:
-- certified organic
-- sustainable orchard management
+- certified-organic
 products:
 - macadamia nuts
 - "cold\u2011pressed macadamia oil"

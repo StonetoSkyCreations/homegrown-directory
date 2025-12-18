@@ -28,7 +28,8 @@ notes: ''
 subtype: eggs
 lat: -37.064265
 lon: 174.9446665
-practices: []
+practices:
+- certified-organic
 products_tags: []
 services: []
 services_tags: []

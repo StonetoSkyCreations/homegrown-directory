@@ -32,7 +32,8 @@ city: "W\u0101naka"
 lat: -44.6941691
 lon: 169.1364637
 title: Soulfood Organic
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

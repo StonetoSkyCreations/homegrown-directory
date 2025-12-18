@@ -11,10 +11,8 @@ postcode: '2481'
 type: restaurant
 subtype: restaurant
 practices:
-- Organic
-- Spray-free
-- Local
-- Seasonal
+- organic
+- spray-free
 products:
 - Breakfast
 - Lunch

@@ -9,7 +9,7 @@ city: Westport
 address: 278 Palmerston Street, Westport 7825
 description: Family-run wholefoods grocery supplying fresh organic produce, bulk bin seeds, nuts and spices, local coffee, breads, cheeses and offering home delivery.
 practices:
-- Organic
+- organic
 products:
 - Seasonal fruit and vegetables
 - Seeds, nuts and spices

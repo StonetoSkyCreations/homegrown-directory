@@ -17,9 +17,6 @@ long_description: 'Bellbird Bakery in Merivale is the newest expression of this 
 practices:
 - organic
 - spray-free
-- sourdough
-- slow-fermentation
-- local-sourcing
 products:
 - sourdough bread
 - pastries

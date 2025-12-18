@@ -9,10 +9,9 @@ city: Christchurch
 address: 372 Cashel Street, Christchurch 8011
 description: "Open bakery and caf\xE9 where customers can watch bakers create pastries, cakes, desserts, and sourdough. Serves AllPress Coffee, T-leaf teas, Karma, Almighty, Good Shi*t soda, and specialty hot drinks from Hakanoa and Wildwood. Wholesale production site for pastries and bread across all branches.\n"
 practices:
-- organic flour (Milmore Downs)
-- spray-free flour (Farmers Mill)
-- natural ingredients
-- long cold fermentation
+- organic
+- spray-free
+- pasture-raised
 products:
 - sourdough bread
 - pastries

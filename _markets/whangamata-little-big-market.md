@@ -10,7 +10,7 @@ address: "Island View Reserve, Rangi Avenue, Whangamat\u0101"
 description: "Pop\u2011up Sunday market on select dates in Whangamat\u0101 featuring food trucks, fresh produce, crafts and live music by the beach."
 long_description: "The Little Big Market is a travelling market that visits Whangamat\u0101 a few times each summer. Held at Island View Reserve off Rangi Avenue from 9 am to 2 pm, the event brings together local food trucks, growers and artisans. Shoppers can sample street food, pick up fresh fruit and vegetables, browse handmade crafts and listen to live music with a view of the surf. Dates vary; in 2025 the market is scheduled for late January, early February, late March and April. Check local listings for exact dates and stallholder enquiries.\n"
 practices:
-- local produce
+- local
 products:
 - street food
 - fruit

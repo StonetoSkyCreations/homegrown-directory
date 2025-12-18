@@ -10,7 +10,7 @@ city: Christchurch
 address: 165 Racecourse Road, Riccarton Park, Christchurch
 description: "New Zealand\u2019s largest outdoor market with 200+ stalls, fresh produce, food, crafts, second-hand goods, entertainment and family activities since 1989."
 practices:
-- Local producers
+- local
 products:
 - Fresh fruit and vegetables
 - Food and beverages

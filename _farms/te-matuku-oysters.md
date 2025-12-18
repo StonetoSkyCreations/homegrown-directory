@@ -18,8 +18,7 @@ long_description: 'Te Matuku Oysters grows Pacific oysters in Te Matuku Bay on W
 
   '
 practices:
-- locally-grown
-- low-impact-aquaculture
+- local
 products:
 - pacific-oysters
 services:

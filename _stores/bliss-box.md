@@ -9,10 +9,8 @@ city: Auckland
 address: 13B Ride Way, Rosedale, Auckland 0632, New Zealand
 description: Family-run organic food box and grocery delivery service, formerly known as Ooooby, delivering fresh produce and pantry staples across Auckland and the North Island.
 practices:
-- certified-organic sourcing
-- surplus donations to missions and soup kitchens
-- minimal packaging
-- supports special dietary needs
+- organic
+- regenerative
 products:
 - organic fruit and vegetable boxes
 - individual produce

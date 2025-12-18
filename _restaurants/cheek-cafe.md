@@ -11,9 +11,8 @@ postcode: '4215'
 type: cafe
 subtype: cafe
 practices:
-- Pasture-raised
-- Grass-fed
-- Local
+- pasture-raised
+- local
 products:
 - Breakfast
 - Brunch

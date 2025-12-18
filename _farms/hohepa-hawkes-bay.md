@@ -10,8 +10,9 @@ lon: 176.9451
 address: 363 Main Road, Clive 4102, New Zealand
 postcode: '4102'
 practices:
-- Organic (uncertified)
-- Regenerative
+- organic
+- regenerative
+- pasture-raised
 products:
 - Dairy
 services:

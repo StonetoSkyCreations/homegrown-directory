@@ -37,7 +37,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Commonsense
 geo_query: 37 Waterloo Road, Wellington, Wellington, New Zealand
 title: Commonsense Lower Hutt
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

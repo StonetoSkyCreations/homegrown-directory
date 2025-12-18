@@ -13,10 +13,8 @@ description: 'A 302-hectare third-generation Demeter and BioGro certified biodyn
 practices:
 - certified-organic
 - biodynamic
-- demeter-certified
-- biogro-certified
-- regenerative-grazing
-- spray-free/organic-methods
+- regenerative
+- pasture-raised
 products:
 - wheat flour
 - wheat grain

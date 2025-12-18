@@ -9,8 +9,7 @@ city: Takapuna
 suburb: Takapuna
 address: "33\u201345 Hurstmere Road, Takapuna, Auckland"
 practices:
-- Organic (uncertified)
-- Free-range
+- organic
 products:
 - Coffee
 - Meals

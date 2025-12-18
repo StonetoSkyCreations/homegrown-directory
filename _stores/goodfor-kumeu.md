@@ -9,8 +9,7 @@ city: Kumeu
 address: "49 Main Road, Kume\u016B, Auckland"
 description: Refill store stocking predominantly certified organic foods and sustainable household products.
 practices:
-- Certified organic
-- Sustainable
+- certified-organic
 products:
 - Bulk foods
 - Pantry goods

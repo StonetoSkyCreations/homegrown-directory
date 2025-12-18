@@ -32,7 +32,8 @@ Dedicated organic store in Picton carrying organic produce, groceries, and healt
 lat: -41.290916
 lon: 174.006908
 title: Picton Organic Store
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

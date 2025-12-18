@@ -11,7 +11,7 @@ address: 180 Driving Creek Road, Coromandel Town
 description: "Vegetarian caf\xE9 next to the Driving Creek Railway serving plant-based meals, juices and locally roasted coffee in a relaxed garden setting."
 long_description: "Driving Creek Caf\xE9 is a vegetarian eatery tucked beside the historic Driving Creek Railway in Coromandel Town. The caf\xE9\u2019s compact menu features meat-free breakfasts, fresh salads, hearty vegetarian lunches and homemade sweets, along with smoothies and juices made from seasonal produce. The owners supply the kitchen with vegetables and fruit from their own garden and they source extra produce from nearby growers, so dishes change with the seasons. Coffee LaLa beans are roasted locally and brewed alongside teas, and the caf\xE9 offers gluten-free and vegan options. This focus on plant-based, home-grown ingredients gives the caf\xE9 a simple, sustainable character without formal organic certification.\n"
 practices:
-- spray-free garden produce
+- organic
 products:
 - vegetarian meals
 - salads

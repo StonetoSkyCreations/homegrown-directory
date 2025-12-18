@@ -31,7 +31,8 @@ city: Riverton
 lat: -46.3509977
 lon: 168.0202689
 title: Riverton Organic Shop
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

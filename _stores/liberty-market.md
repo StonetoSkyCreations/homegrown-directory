@@ -41,7 +41,8 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '493'
 geo_query: 493 Moorhouse Avenue, Christchurch Central City, Christchurch 8011, Christchurch, Canterbury, New Zealand
-practices: []
+practices:
+- certified-organic
 products_tags: []
 services_tags: []
 certifications: []

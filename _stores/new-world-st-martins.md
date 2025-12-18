@@ -9,7 +9,8 @@ city: Christchurch
 address: 92 Wilsons Road, St Martins, Christchurch 8023
 description: Mainstream supermarket with a large organic produce department and a good selection of organic meat, dairy and grocery items.
 practices:
-- organic-produce-department
+- certified-organic
+- local
 products:
 - organic fruit and vegetables
 - organic meat and dairy

@@ -37,7 +37,8 @@ geo_last_verified: '2025-12-14'
 geo_label: '34'
 geo_query: 34 Douglas Parade, Melbourne, Victoria, AU
 title: Replenish for Health (Williamstown)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

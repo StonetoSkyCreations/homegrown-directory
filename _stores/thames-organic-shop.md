@@ -12,7 +12,6 @@ description: "Not\u2011for\u2011profit organic co\u2011op shop in Thames offerin
 long_description: "The Thames Organic Shop is a community\u2011run cooperative located on Pollen Street. It provides a range of organic and New Zealand\u2011grown fruit and vegetables along with dried goods, grains, herbs and spices, dairy products and eco\u2011friendly household supplies. Produce boxes are available for order, making it easy for locals to access fresh seasonal goods. The shop operates on a not\u2011for\u2011profit basis, reinvesting earnings to support sustainable living initiatives and educational events within the community. Friendly volunteers offer advice on how to live more sustainably and help customers choose ethically sourced products.\n"
 practices:
 - organic
-- "not\u2011for\u2011profit"
 products:
 - fruit
 - vegetables

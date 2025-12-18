@@ -34,7 +34,8 @@ rating_count: 1
 source_urls: []
 lat: -43.5331095
 lon: 172.6342575
-practices: []
+practices:
+- organic
 products_tags: []
 services_tags: []
 certifications: []

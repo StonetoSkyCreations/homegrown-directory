@@ -6,8 +6,8 @@ country_slug: new-zealand
 region: Northland
 city: Kawakawa
 practices:
-- Organic (uncertified)
-- Regenerative
+- organic
+- regenerative
 products:
 - Vegetables
 - Fruit

@@ -9,10 +9,7 @@ city: Featherston
 address: 10 Daniell Street, Featherston 5710
 description: A large organic, plant-based farm in South Wairarapa founded by filmmaker James Cameron and Suzy Cameron, producing vegetables, nuts, oils and natural cosmetics.
 practices:
-- certified-organic
-- plant-based
-- composting
-- solar-powered
+- organic
 products:
 - fresh organic vegetables
 - walnuts, hemp and flaxseed

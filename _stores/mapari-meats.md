@@ -8,8 +8,7 @@ region: Auckland
 city: Mount Wellington
 address: Shop 13, 101 Lunn Avenue, Mount Wellington, Auckland 1072
 description: "High\u2011end butchery sourcing premium meats personally from local farms, emphasising ethically sourced products."
-practices:
-- Ethical sourcing
+practices: []
 products:
 - Beef
 - Lamb

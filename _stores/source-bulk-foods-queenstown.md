@@ -37,7 +37,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Kiwibank
 geo_query: 19 Grant Road, Queenstown, Otago, New Zealand
 title: The Source Bulk Foods (Queenstown)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

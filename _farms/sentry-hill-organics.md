@@ -10,8 +10,8 @@ postcode: '4286'
 lat: -40.0333
 lon: 176.35
 practices:
-- Organic (certified)
-- Pasture-raised
+- certified-organic
+- pasture-raised
 products:
 - Dairy
 - Eggs

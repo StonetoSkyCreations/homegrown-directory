@@ -13,10 +13,6 @@ long_description: "Bostock New Zealand is one of Aotearoa\u2019s most establishe
   \ embedded in the Hawke\u2019s Bay community, supporting local employment pathways, iwi partnerships, healthy eating initiatives, and community food resilience.\n"
 practices:
 - certified-organic
-- gmo-free
-- sustainable-packaging
-- soil-care
-- long-term-land-stewardship
 products:
 - certified organic apples
 - certified organic onions

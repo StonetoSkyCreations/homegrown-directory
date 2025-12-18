@@ -29,7 +29,8 @@ hours: "Mon\u2013Fri 09:00\u201317:00; Sat\u2013Sun closed"
 last_checked: '2025-12-09'
 notes: ''
 subtype: mixed
-practices: []
+practices:
+- certified-organic
 products_tags: []
 services: []
 services_tags: []

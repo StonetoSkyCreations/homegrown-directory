@@ -9,8 +9,8 @@ city: Christchurch
 address: 346 Halswell Road, Halswell, Christchurch 8025, New Zealand
 description: Spacious New World supermarket in Christchurch's Halswell suburb, offering organic produce from Streamside Organics along with a wide range of groceries, deli and bakery goods.
 practices:
-- stocks certified organic produce from Streamside Organics
-- promotes local and spray-free produce
+- certified-organic
+- spray-free
 products:
 - certified organic vegetables, fruit, salad greens and herbs
 - fresh meat and seafood

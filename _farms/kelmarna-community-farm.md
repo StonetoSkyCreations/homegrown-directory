@@ -17,10 +17,8 @@ long_description: 'Kelmarna Community Farm is a certified organic urban farm loc
   '
 practices:
 - certified-organic
-- regenerative-agriculture
-- permaculture
-- closed-loop-systems
-- community-composting
+- regenerative
+- pasture-raised
 products:
 - seasonal vegetables
 - fruit

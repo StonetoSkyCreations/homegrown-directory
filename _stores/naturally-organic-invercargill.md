@@ -37,7 +37,8 @@ geo_last_verified: '2025-12-14'
 geo_label: '33'
 geo_query: 33 Esk Street, Invercargill, Southland, New Zealand
 title: Naturally Organic
-practices: []
+practices:
+- certified-organic
 practices_tags: []
 products_tags: []
 services: []

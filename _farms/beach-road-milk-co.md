@@ -9,8 +9,8 @@ city: Omata
 address: 20 Beach Road, Omata, New Plymouth 4374
 description: Raw-milk producer following bio-organic principles with pasture-fed herd and self-service farm shop selling raw milk, organic vegetables, free-range eggs and bread.
 practices:
-- Bio-organic
-- Pasture-raised
+- organic
+- pasture-raised
 products:
 - Raw milk
 - Organic vegetables

@@ -9,8 +9,8 @@ city: Lincoln
 address: 77 Gerald Street, Lincoln 7674, New Zealand
 description: Locally owned supermarket in Lincoln supplying organic produce from Streamside Organics and offering a clean, well-stocked shopping experience.
 practices:
-- stocks certified organic produce from Streamside Organics
-- locally owned supermarket
+- certified-organic
+- local
 products:
 - certified organic vegetables, fruit, herbs and salad greens
 - fresh local produce

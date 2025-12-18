@@ -11,7 +11,7 @@ postcode: '4221'
 type: cafe
 subtype: cafe
 practices:
-- Organic
+- certified-organic
 products:
 - Breakfast
 - Lunch

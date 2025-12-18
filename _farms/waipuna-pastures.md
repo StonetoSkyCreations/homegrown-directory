@@ -8,9 +8,8 @@ city: Geraldine
 lat: -44.094
 lon: 171.243
 practices:
-- Pasture-raised
-- Regenerative
-- Humane handling
+- pasture-raised
+- regenerative
 products:
 - Meat
 - Eggs

@@ -38,7 +38,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Terra Madre
 geo_query: "775\u2013781 Sydney Road, Melbourne, Victoria, AU"
 title: Terra Madre (Brunswick)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

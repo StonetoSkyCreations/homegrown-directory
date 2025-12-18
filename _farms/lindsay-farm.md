@@ -31,7 +31,8 @@ notes: ''
 products_tags:
 - dairy
 subtype: dairy-farm
-practices: []
+practices:
+- certified-organic
 services: []
 services_tags: []
 specialty_tags: []

@@ -10,8 +10,7 @@ city: Christchurch
 address: Ferrymead Heritage Park, 50 Ferrymead Park Drive, Heathcote, Christchurch
 description: Monthly night market at Ferrymead Heritage Park with food stalls, craft vendors, beer and cider, live music, tram and train rides, and access to heritage attractions.
 practices:
-- Local
-- Artisan
+- local
 products:
 - Food stalls
 - Craft goods

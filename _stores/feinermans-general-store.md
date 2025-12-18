@@ -9,7 +9,7 @@ city: Roxburgh
 address: 109 Scotland Street, Roxburgh
 description: Store offering organic whole foods, organic beauty products, supplements and hand-picked giftware.
 practices:
-- Organic
+- organic
 products:
 - Wholefoods
 - Beauty products

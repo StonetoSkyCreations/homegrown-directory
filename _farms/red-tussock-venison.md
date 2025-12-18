@@ -18,8 +18,7 @@ long_description: 'Red Tussock Venison (Red Tussock Limited) supplies wild-harve
 
   '
 practices:
-- wild-harvested
-- low-intervention
+- wild
 products:
 - wild-venison
 services:

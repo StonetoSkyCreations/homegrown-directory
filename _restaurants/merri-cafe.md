@@ -11,9 +11,7 @@ postcode: '3057'
 type: cafe
 subtype: cafe
 practices:
-- Organic
-- Local
-- Seasonal
+- organic
 products:
 - Coffee
 - Baked goods

@@ -9,8 +9,8 @@ city: Silverdale
 address: 438 Waitoki Road, RD1 Silverdale, Auckland 0994
 description: "Pasture\u2011based farm producing premium pasture\u2011raised eggs and spray\u2011free produce with moveable solar\u2011powered coops and click\u2011and\u2011collect sales."
 practices:
-- Pasture-raised
-- Spray-free
+- pasture-raised
+- spray-free
 products:
 - Eggs
 - Vegetables

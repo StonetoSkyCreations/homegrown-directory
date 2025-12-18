@@ -31,7 +31,8 @@ products_tags:
 subtype: dairy-farm
 lat: -37.8321555
 lon: 175.7664634
-practices: []
+practices:
+- certified-organic
 services: []
 services_tags: []
 specialty_tags: []

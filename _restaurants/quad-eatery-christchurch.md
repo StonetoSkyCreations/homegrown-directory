@@ -9,8 +9,8 @@ city: Christchurch
 address: 2 Worcester Street, Christchurch 8013
 suburb: Arts Centre
 practices:
-- Organic (uncertified)
-- Local sourcing
+- organic
+- local
 products:
 - Coffee and tea
 - Breakfast

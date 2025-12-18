@@ -11,9 +11,8 @@ postcode: '2479'
 type: restaurant
 subtype: restaurant
 practices:
-- Regenerative
-- Seasonal
-- Local
+- regenerative
+- local
 products:
 - Lunch
 services:

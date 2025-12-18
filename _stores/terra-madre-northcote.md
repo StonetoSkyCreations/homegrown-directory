@@ -39,7 +39,8 @@ geo_last_verified: '2025-12-14'
 geo_label: '103'
 geo_query: 103 High Street, Melbourne, Victoria, AU
 title: Terra Madre (Northcote)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

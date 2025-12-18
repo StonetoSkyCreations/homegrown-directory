@@ -11,8 +11,8 @@ postcode: '2474'
 type: cafe
 subtype: cafe
 practices:
-- Organic
-- Local
+- organic
+- local
 products:
 - Breakfast
 - Lunch

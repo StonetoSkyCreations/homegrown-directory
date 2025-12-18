@@ -34,7 +34,8 @@ geo_last_verified: '2025-12-14'
 geo_label: '80'
 geo_query: 80 Lunn Avenue, Auckland, Auckland, New Zealand
 title: Farro Fresh Mt Wellington
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

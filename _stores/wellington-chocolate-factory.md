@@ -16,9 +16,6 @@ long_description: "Wellington Chocolate Factory (WCF) is a pioneering New Zealan
   \ to create a certified organic chocolate bar, with both its products and factory holding BioGro certification. Organic certification ensures cocoa and ingredients are produced without synthetic pesticides, herbicides, or chemical fertilisers. As sourcing increasingly focuses on Pacific cacao regions still developing formal certification systems, WCF prioritises direct transparency and documented farming practices over reliance on third-party logos alone.\nChocolate is produced entirely in-house at the Wellington factory, where beans are roasted, stone-ground, conched, tempered, and hand-wrapped. Recipes are intentionally minimal, avoiding additives such as vanilla, emulsifiers, or excess cocoa butter, allowing the flavour of single-origin cacao to shine.\nIn addition to production, the factory operates a caf\xE9 and offers immersive chocolatier experiences and factory tours, enabling the public to engage directly with the craft and ethics behind bean-to-bar chocolate making.\n"
 practices:
 - certified-organic
-- bean-to-bar
-- ethical-sourcing
-- direct-trade
 products:
 - dark-chocolate
 - single-origin-chocolate

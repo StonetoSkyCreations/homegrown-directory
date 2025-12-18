@@ -9,7 +9,7 @@ city: Alexandra
 address: 38 Tarbert Street, Alexandra 9320
 description: Convenience store offering organic fresh vegetables, wholefoods and unique grocery items in central Alexandra.
 practices:
-- Organic
+- organic
 products:
 - Fresh vegetables
 - Wholefoods

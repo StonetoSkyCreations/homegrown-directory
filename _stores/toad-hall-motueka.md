@@ -9,7 +9,7 @@ city: Motueka
 address: 502 High Street South, Motueka 7120
 description: Family-run cafe and store with produce from its onsite organic market garden plus artisan foods, breads, cheeses, meats, chocolates, ready-to-go meals and giftware.
 practices:
-- Organic
+- organic
 products:
 - Fresh local produce
 - Artisan foods

@@ -43,7 +43,8 @@ geo_last_verified: '2025-12-14'
 geo_label: '196'
 geo_query: 196 Glenferrie Road, Melbourne, Victoria, AU
 title: Organically Grown (Malvern)
-practices: []
+practices:
+- certified-organic
 practices_tags: []
 products_tags: []
 services: []

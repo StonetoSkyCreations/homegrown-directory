@@ -10,8 +10,7 @@ postcode: '5581'
 lat: -40.7899
 lon: 175.0856
 practices:
-- Spray-free
-- Seasonal
+- spray-free
 products:
 - Vegetables
 - Fruit

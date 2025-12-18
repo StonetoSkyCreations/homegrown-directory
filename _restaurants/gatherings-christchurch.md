@@ -12,9 +12,7 @@ suburb: Merivale
 address: Unit 5 / 2 Papanui Road
 postcode: '8013'
 practices:
-- Organic (certified)
-- Seasonal menu
-- Wild-caught
+- certified-organic
 products:
 - Seafood
 - Meat

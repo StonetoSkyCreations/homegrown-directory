@@ -32,7 +32,8 @@ notes: ''
 products_tags:
 - seed
 subtype: seeds
-practices: []
+practices:
+- certified-organic
 services: []
 services_tags: []
 specialty_tags: []

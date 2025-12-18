@@ -10,7 +10,7 @@ address: Karangahake Hall, Karangahake Gorge
 description: Monthly indoor market in Karangahake Gorge with stalls selling plants, produce, crafts and baked goods from local growers and artisans.
 long_description: "The Karangahake Hall Market is held on the fourth Sunday of each month from 9 am to 1 pm in the historic hall on State Highway 2. Surrounded by the gorge\u2019s bush and heritage trails, the market offers a selection of plants, seedlings, fresh produce, free\u2011range eggs, honey, jams, baking and handcrafted items. It provides a community meeting point for residents of the Karangahake Gorge and nearby towns, and supports small producers in the region.\n"
 practices:
-- local produce
+- local
 products:
 - plants
 - seedlings

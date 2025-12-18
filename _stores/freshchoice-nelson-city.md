@@ -9,10 +9,8 @@ city: Nelson
 address: 69 Collingwood Street, Nelson City, Tasman 7010, New Zealand
 description: Community-focused supermarket in Nelson known for supporting local growers and stocking organic produce such as vegetables from Streamside Organics.
 practices:
-- locally sourced produce within 200 km
-- alternatives to single-use plastic
-- energy-saving operations
-- community fund donations
+- certified-organic
+- local
 products:
 - fresh produce
 - certified-organic vegetables

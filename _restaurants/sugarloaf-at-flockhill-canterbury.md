@@ -18,11 +18,8 @@ lon: 171.76957170674277
 description: A remote alpine restaurant on a 36,000-acre sheep station, offering a deeply seasonal, fire-led dining experience shaped by estate-grown produce and the Southern Alps landscape.
 long_description: "Sugarloaf at Flockhill is a destination dining experience set high in the Southern Alps on a vast working sheep station near Lake Pearson. The restaurant\u2019s philosophy is grounded in an intimate relationship with land, season, and craft. Most produce is grown on-site in the Flockhill Garden or foraged from the surrounding alpine environment, with chefs working directly alongside gardeners to shape menus and minimise waste. Cooking is centred around open flame and wood fire, using local beech, cherry, and apple wood, while proteins are sourced with intention\u2014from Flockhill lamb to neighbouring farm beef, pasture-raised poultry, and spear-caught local fish. Across the seasons, fresh harvests are complemented by an extensive ferment and preserve library, allowing the flavours of Canterbury to carry through the year. The result is a quietly expressive, place-based cuisine that reflects the rhythms, textures, and stories of this dramatic alpine landscape.\n"
 practices:
-- estate-grown
-- foraged
-- seasonal
-- zero-waste
-- fire-cooking
+- wild
+- pasture-raised
 products:
 - tasting-menu
 - seasonal-dining

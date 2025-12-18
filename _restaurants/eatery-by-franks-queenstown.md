@@ -9,8 +9,9 @@ city: Queenstown
 address: 24 Hawthorne Drive, Frankton, Queenstown 9300
 suburb: Frankton
 practices:
-- Free-range
-- Local sourcing
+- organic
+- pasture-raised
+- local
 products:
 - Coffee and tea
 - Breakfast

@@ -8,7 +8,7 @@ city: Oromahoe
 lat: -35.32056
 lon: 173.97722
 practices:
-- Organic (uncertified)
+- organic
 products:
 - Vegetables
 - Fruit

@@ -8,8 +8,7 @@ region: Canterbury
 city: Christchurch
 address: 363 St Asaph Street, Christchurch 8011
 practices:
-- Organic (uncertified)
-- Local sourcing
+- organic
 products:
 - Coffee and tea
 - Vegetarian

@@ -11,8 +11,8 @@ postcode: '2481'
 type: cafe
 subtype: cafe
 practices:
-- Organic
-- Free-range
+- organic
+- pasture-raised
 products:
 - Breakfast
 - Lunch

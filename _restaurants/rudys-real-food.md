@@ -11,9 +11,8 @@ postcode: '4217'
 type: cafe
 subtype: cafe
 practices:
-- Organic
-- Chemical-free
-- Grass-fed
+- organic
+- pasture-raised
 products:
 - Breakfast
 - Lunch

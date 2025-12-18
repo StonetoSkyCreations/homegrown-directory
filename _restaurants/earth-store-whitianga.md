@@ -11,7 +11,7 @@ address: 65 Albert Street, Whitianga
 description: "Whole-food caf\xE9 and organic store in Whitianga offering organic dry goods, fresh produce, smoothies, soups and coffee in a relaxed grocery-caf\xE9 hybrid."
 long_description: "Earth Store is an organic grocery and caf\xE9 in the centre of Whitianga. The shop stocks natural and organic dry goods, fresh fruit and vegetables and health-food products, while the caf\xE9 serves freshly brewed coffee, smoothies, ice cream and soups alongside cabinet treats. The business promotes organic produce and vegetarian-friendly dishes and offers a selection of gluten-free and dairy-free options. Customers can shop for groceries and enjoy a light meal in the same space, making it a hub for locals seeking healthy, natural foods.\n"
 practices:
-- organic produce
+- organic
 products:
 - organic groceries
 - coffee

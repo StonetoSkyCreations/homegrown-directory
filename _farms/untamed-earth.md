@@ -37,7 +37,10 @@ notes: ''
 rating_average: 5
 rating_count: 1
 subtype: market-garden
-practices: []
+practices:
+- certified-organic
+- spray-free
+- regenerative
 products_tags: []
 services_tags: []
 specialty_tags: []

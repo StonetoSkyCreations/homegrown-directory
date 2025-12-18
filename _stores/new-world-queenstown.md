@@ -9,8 +9,7 @@ city: Queenstown
 address: 1/12 Hawthorne Drive, Remarkables Park, Queenstown 9300, New Zealand
 description: Scenic Queenstown supermarket that stocks organic produce from Streamside Organics and offers quality groceries and deli items with friendly service.
 practices:
-- sells certified organic produce from Streamside Organics
-- supports local and sustainable food
+- certified-organic
 products:
 - certified organic vegetables, fruit and salad greens
 - fresh meat and baked goods

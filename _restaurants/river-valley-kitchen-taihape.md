@@ -8,9 +8,10 @@ region: "Manawat\u016B-Whanganui"
 city: Taihape
 address: 266 Mangahoata Road, RD2, Taihape 4562
 practices:
-- Regenerative
-- Spray-free
-- Organic (uncertified)
+- organic
+- spray-free
+- regenerative
+- pasture-raised
 products:
 - Meat
 - Vegetables

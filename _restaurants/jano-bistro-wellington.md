@@ -18,10 +18,7 @@ lon: 174.77115251949147
 description: An intimate Te Aro bistro offering refined, seasonal degustation dining that blends French influence with modern New Zealand produce in a warm, cottage-style setting.
 long_description: "Jano Bistro is a small, chef-led restaurant tucked into a restored heritage cottage in central Wellington, where fine dining is delivered with warmth, intimacy, and a strong sense of place. Led by chef-owner Pierre-Alain Fenoux, the kitchen works closely with local growers and producers to shape frequently changing degustation menus that reflect seasonality, freshness, and thoughtful sourcing. French culinary roots meet contemporary New Zealand ingredients, with herbs and produce often drawn directly from the restaurant\u2019s own kitchen garden. The dining experience is personal and immersive, with chefs presenting dishes and sharing the stories behind each course, creating a relaxed yet deeply considered expression of bistronomy.\n"
 practices:
-- seasonal
-- locally-sourced
-- free-range
-- organic-where-possible
+- local
 products:
 - degustation-menu
 - vegetarian-degustation

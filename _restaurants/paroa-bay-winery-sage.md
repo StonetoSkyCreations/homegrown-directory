@@ -8,8 +8,7 @@ region: Northland
 city: Russell
 address: 31 Otamarua Road, Russell 0204
 practices:
-- Seasonal menu
-- Local sourcing
+- local
 products:
 - Seafood
 - Meat

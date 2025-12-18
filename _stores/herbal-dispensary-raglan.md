@@ -40,7 +40,8 @@ geo_last_verified: '2025-12-14'
 geo_label: '6'
 geo_query: 6 Wallis Street, Raglan, Waikato, New Zealand
 title: The Herbal Dispensary Raglan
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

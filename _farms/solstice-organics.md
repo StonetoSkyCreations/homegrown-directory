@@ -24,9 +24,9 @@ phone: 021 239 2102
 hours: Farm pickup by arrangement; deliveries Fridays; market Sundays
 subtype: market-garden
 practices:
-- regenerative-organic
-- soil-building
-- chemical-free
+- organic
+- regenerative
+- spray-free
 products:
 - seasonal vegetables
 - leafy greens

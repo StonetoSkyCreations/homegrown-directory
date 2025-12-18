@@ -8,7 +8,7 @@ city: Parawera
 lat: -38.06822
 lon: 175.4202
 practices:
-- Organic (certified)
+- certified-organic
 products:
 - Vegetables
 services:

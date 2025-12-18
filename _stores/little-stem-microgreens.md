@@ -19,12 +19,7 @@ description: 'Little Stem Microgreens is a Christchurch-based urban farm produci
 long_description: "Little Stem Microgreens is an urban microgreen farm based in \u014Ctautahi Christchurch, supplying chefs and home consumers with exceptionally fresh, soil-grown microgreens. Their core philosophy centres on sustainability, flavour integrity, and eliminating waste from the supply chain.\nAll microgreens are grown in organic soil under natural light, without the use of artificial lights, growing pads, chemicals, or pesticides. This low-intervention growing method prioritises taste, texture, and nutrient density while reducing energy use and external inputs. Unlike many commercial microgreen operations, Little Stem avoids hydroponic pads and synthetic systems in favour of soil-based growing.\nFor commercial clients, Little Stem operates a closed-loop delivery model. Microgreens are delivered as live, growing trays directly into restaurant kitchens, allowing chefs to harvest moments before service. Trays are collected and reused with each delivery cycle, eliminating single-use\
   \ plastic entirely from the professional supply chain. Additional hydro-trays are provided to keep kitchens organised and efficient.\nSustainability extends to their consumer products as well. Home growing kits are packaged in ECOware bamboo fibre punnets certified for commercial composting, with unlaminated paper labels and biodegradable eco-laminates. Little Stem is proudly a waste- and single-use plastic-free business.\nLittle Stem supplies over 50 venues across Christchurch and is trusted by chefs for consistency, freshness, and flavour. Deliveries run twice weekly within central Christchurch, with wider delivery available by arrangement.\n"
 practices:
-- organic-soil-grown
-- chemical-free
-- pesticide-free
-- natural-light-grown
-- zero-waste
-- plastic-free
+- organic
 products:
 - microgreens
 - live-microgreen-trays

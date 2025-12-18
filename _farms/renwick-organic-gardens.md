@@ -10,7 +10,7 @@ postcode: '7204'
 lat: -41.5056
 lon: 173.8293
 practices:
-- Organic (uncertified)
+- organic
 products:
 - Vegetables
 - Herbs

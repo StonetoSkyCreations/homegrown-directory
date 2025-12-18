@@ -11,9 +11,9 @@ postcode: '4218'
 type: cafe
 subtype: cafe
 practices:
-- Free-range
-- Organic
-- Local
+- organic
+- pasture-raised
+- local
 products:
 - Breakfast
 - Brunch

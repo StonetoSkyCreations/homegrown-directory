@@ -8,8 +8,7 @@ region: Otago
 city: Queenstown
 address: 5 Church Lane, Queenstown
 practices:
-- Certified organic
-- Ethical sourcing
+- certified-organic
 products:
 - Organic chicken dishes
 services:

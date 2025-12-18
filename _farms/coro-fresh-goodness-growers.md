@@ -6,8 +6,8 @@ country_slug: new-zealand
 region: Waikato
 city: Coroglen
 practices:
-- Regenerative
-- Spray-free
+- regenerative
+- spray-free
 products:
 - Vegetables
 - Herbs

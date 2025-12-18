@@ -9,9 +9,9 @@ city: Wellington
 address: 90 Aro Street, Wellington 6021
 suburb: Aro Valley
 practices:
-- Organic (uncertified)
-- Free-range
-- Seasonal menu
+- organic
+- pasture-raised
+- local
 products:
 - Coffee and tea
 - Breakfast

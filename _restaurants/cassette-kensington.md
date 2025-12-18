@@ -11,9 +11,7 @@ postcode: '3031'
 type: cafe
 subtype: cafe
 practices:
-- Local
-- Seasonal
-- Zero-waste
+- local
 products:
 - Coffee
 - Brunch

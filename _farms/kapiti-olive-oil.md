@@ -10,7 +10,7 @@ postcode: '5581'
 lat: -40.7994903
 lon: 175.1234693
 practices:
-- Spray-free
+- spray-free
 products:
 - Pantry goods
 services:

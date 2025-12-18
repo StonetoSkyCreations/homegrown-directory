@@ -11,8 +11,7 @@ address: 20 Black Jack Road, Kuaotunu
 description: "Cosy year-round caf\xE9 and gallery in Kuaotunu serving locally roasted Coffee LaLa, freshly made doughnuts and homestyle baking alongside artworks and local products."
 long_description: "Kua Kawhe (meaning \u201Chave coffee\u201D) is a homely caf\xE9 and gallery space situated next to Luke\u2019s Kitchen in Kuaotunu. The caf\xE9 pours Coffee LaLa beans roasted just a kilometre away and serves simple breakfasts, toasties and treats baked in its on-site kitchen. On Sundays the team makes fresh doughnuts, and the shelves display ceramics, hot sauces and other goods crafted by local artisans. When in season the caf\xE9 also sells locally grown walnuts, salad greens and avocados. Open throughout the year, Kua Kawhe provides a relaxed meeting place for locals with a strong emphasis on supporting neighbouring producers and artists.\n"
 practices:
-- local coffee
-- support for local producers
+- local
 products:
 - coffee
 - doughnuts

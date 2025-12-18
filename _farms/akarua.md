@@ -29,7 +29,9 @@ notes: ''
 subtype: vineyard
 lat: -45.088368
 lon: 169.1600101
-practices: []
+practices:
+- certified-organic
+- regenerative
 products_tags: []
 services: []
 services_tags: []

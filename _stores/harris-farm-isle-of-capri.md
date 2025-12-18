@@ -40,7 +40,9 @@ geo_last_verified: '2025-12-14'
 geo_label: 15-21
 geo_query: 15-21 Via Roma, Gold Coast, Queensland, AU
 title: Harris Farm Markets (Isle of Capri)
-practices: []
+practices:
+- organic
+- local
 practices_tags: []
 products_tags: []
 services: []

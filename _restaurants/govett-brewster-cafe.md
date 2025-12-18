@@ -8,8 +8,7 @@ region: Taranaki
 city: New Plymouth
 address: 42 Queen Street, New Plymouth 4310
 practices:
-- Seasonal menu
-- Local sourcing
+- organic
 products:
 - Coffee and tea
 - Bread and bakery

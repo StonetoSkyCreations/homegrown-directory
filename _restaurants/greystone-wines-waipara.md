@@ -8,10 +8,8 @@ region: Canterbury
 city: Waipara
 address: 376 Omihi Road, Waipara 7483
 practices:
-- Certified organic
-- Regenerative
-- Local produce
-- Seasonal
+- certified-organic
+- wild
 products:
 - Organic wines
 - Seasonal lunch dishes

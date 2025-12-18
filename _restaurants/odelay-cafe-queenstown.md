@@ -9,8 +9,8 @@ city: Queenstown
 address: Unit 10, 5 Hawthorne Drive, Frankton, Queenstown 9300
 suburb: Frankton
 practices:
-- Organic (uncertified)
-- Local sourcing
+- organic
+- pasture-raised
 products:
 - Coffee and tea
 - Breakfast

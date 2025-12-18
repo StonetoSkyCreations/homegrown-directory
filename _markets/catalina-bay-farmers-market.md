@@ -13,10 +13,7 @@ website: https://www.catalinabay.co.nz/farmers-market
 email: farmersmarket@catalinabay.co.nz
 phone: ''
 practices:
-- local-produce
-- artisan
-- organic-goods
-- zero-waste
+- local
 products:
 - fresh produce
 - bread

@@ -9,7 +9,7 @@ address: "RD1/2486 Tairua\u2013Whitianga Road, Kaimarama 3591"
 lat: -36.8333
 lon: 175.7
 practices:
-- Organic (uncertified)
+- organic
 products:
 - Vegetables
 - Fruit

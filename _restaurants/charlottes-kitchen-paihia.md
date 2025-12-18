@@ -8,8 +8,7 @@ region: Northland
 city: Paihia
 address: 69 Marsden Road, Paihia 0200
 practices:
-- Seasonal menu
-- Free-range
+- pasture-raised
 products:
 - Seafood
 - Meat

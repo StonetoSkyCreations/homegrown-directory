@@ -10,9 +10,7 @@ address: 2318 Colville Road, Colville
 description: "Family farm and caf\xE9 on the way to Port Jackson serving pasture\u2011raised Hereford beef burgers, fresh produce, coffee and ice cream from their farm shop."
 long_description: "Hereford 'n' A Pickle is a small farm shop and eatery run by the Donaldson family near Colville at the top of the Coromandel Peninsula. The owners raise Hereford cattle, pigs and hens on pasture and grow vegetables and fruit naturally on their farm. Visitors can stop at the roadside shop for beef and pork cuts, eggs, seasonal produce, house\u2011made burgers using 100% pure Hereford beef, coffee, real fruit ice cream and condiments. The shop also sells pantry staples, preserves and picnic supplies. They operate on sustainable principles, farming as naturally as possible and keeping their animals free\u2011range. Contact is via email and the shop\u2019s location along the Colville Road.\n"
 practices:
-- "pasture\u2011raised"
-- "free\u2011range"
-- natural farming
+- pasture-raised
 products:
 - beef
 - pork

@@ -10,7 +10,7 @@ postcode: '3010'
 lat: -38.0833
 lon: 176.2
 practices:
-- Organic (certified)
+- certified-organic
 products:
 - Vegetables
 - Herbs

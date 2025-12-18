@@ -9,8 +9,9 @@ city: Queenstown
 address: 1/25 Eleventh Avenue, Lower Shotover, Queenstown 9371
 suburb: Lower Shotover
 practices:
-- Free-range
-- Local sourcing
+- organic
+- pasture-raised
+- local
 products:
 - Coffee and tea
 - Breakfast

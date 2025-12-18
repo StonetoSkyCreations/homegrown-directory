@@ -9,10 +9,8 @@ city: Palmerston North
 address: 15 Cyprus Place, Fitzherbert, Palmerston North, New Zealand
 description: Regenerative organic farm using permanent ground cover and living roots to grow organic produce that supplies its own grocer and partner farms.
 practices:
-- regenerative farming with permanent ground cover
-- transparent supply chain
-- swap-a-crate reusable delivery system
-- partnerships with organic farms
+- organic
+- regenerative
 products:
 - organic fruit and vegetable boxes
 - individual organic vegetables and fruits

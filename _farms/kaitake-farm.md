@@ -9,8 +9,8 @@ city: New Plymouth
 address: 22 Kaitake Road, RD4, New Plymouth 4374
 description: "Half-acre market garden near \u014C\u0101kura relying on organic inputs and homemade compost to grow vegetables for local outlets."
 practices:
-- Organic inputs
-- Spray-free
+- organic
+- spray-free
 products:
 - Vegetables
 services:

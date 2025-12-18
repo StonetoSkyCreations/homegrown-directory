@@ -10,9 +10,7 @@ city: Matakana
 address: 30 Matakana Valley Road, Matakana 0985
 description: "Historic Old Dairy Factory market where local artisans sell art, crafts, clothing, antiques, collectables, produce and sweet treats every Saturday 9 am\u20132 pm."
 practices:
-- community-market
-- local-artisans
-- historic-building
+- local
 products:
 - art and crafts
 - clothing

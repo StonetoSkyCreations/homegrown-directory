@@ -31,7 +31,9 @@ Boutique wine store carrying organic and biodynamic wines, with a focus on Centr
 lat: -44.697191
 lon: 169.1345204
 title: Pembroke Wines & Spirits
-practices: []
+practices:
+- organic
+- biodynamic
 practices_tags: []
 products_tags: []
 services: []

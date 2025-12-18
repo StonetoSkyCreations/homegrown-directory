@@ -7,8 +7,7 @@ country: Country name
 country_slug: country-slug
 region: Region or state
 city: City or town
-practices:
-- Organic (uncertified)
+practices: []
 products:
 - Vegetables
 services:
@@ -19,8 +18,7 @@ website: ''
 email: ''
 phone: ''
 description: One-sentence description for cards and SEO.
-practices_tags:
-- organic
+practices_tags: []
 source_urls: []
 products_tags: []
 services_tags: []

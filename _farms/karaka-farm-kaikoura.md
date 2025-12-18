@@ -6,7 +6,8 @@ country_slug: new-zealand
 region: Canterbury
 city: "Kaik\u014Dura Flats"
 practices:
-- Regenerative
+- regenerative
+- pasture-raised
 products:
 - Meat
 services:

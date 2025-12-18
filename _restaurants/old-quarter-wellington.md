@@ -8,8 +8,8 @@ region: Wellington
 city: Wellington
 address: 39B Dixon Street, Te Aro, Wellington 6011
 practices:
-- Free-range
-- Seasonal menu
+- pasture-raised
+- local
 products:
 - Meat
 - Seafood

@@ -41,7 +41,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Brigantine Street
 geo_query: 3/7 Brigantine St, Byron Bay, New South Wales, AU
 title: Santos Organics (Byron Arts & Industrial)
-practices: []
+practices:
+- certified-organic
 practices_tags: []
 products_tags: []
 services: []

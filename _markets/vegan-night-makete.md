@@ -10,9 +10,7 @@ city: Christchurch
 address: Phillipstown Community Hub, 39 Nursery Road, Christchurch
 description: Monthly vegan night market showcasing plant-based food, goods, and community projects with local vendors, artisans, and nonprofits.
 practices:
-- Vegan
-- Plant-based
-- Local
+- local
 products:
 - Vegan food
 - Plant-based meals

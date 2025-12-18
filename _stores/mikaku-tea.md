@@ -19,11 +19,8 @@ description: 'Mikaku Tea is a Christchurch-based artisan tea company creating or
 long_description: "Mikaku Tea is an artisan tea company founded by Leeya in \u014Ctautahi Christchurch, centred on the belief that tea is not just a beverage but a ritual \u2014 a sustained conversation between body, plant, and presence. The business began with Leeya harvesting, drying, and blending fruits, herbs, and blooms from her own garden and orchard, and has since evolved into a thoughtfully curated range of organic, hand-blended teas.\nAll Mikaku Tea blends are created in small batches in Christchurch using 100% organic ingredients. Sourcing is a layered approach: home-grown and locally foraged herbs and botanicals where appropriate, locally grown ingredients from the Canterbury region, and globally sourced organic tea bases and spices purchased through trusted local organic suppliers. Artificial flavours, colourings, and flavour enhancers are never used \u2014 the blends rely solely on the natural character of the plants themselves.\nSustainability underpins the brand\u2019s operations.\
   \ Mikaku Tea uses compostable packaging options and recyclable kraft refill bags, blends locally to minimise food miles, and actively partners with stockists and collaborators who share similar environmental and ethical values. The business also offers workshops, tea ceremonies, and guided tea meditation experiences, reinforcing its commitment to mindful consumption rather than convenience-driven drinking.\nMany blends are designed with seasonal and holistic wellness themes in mind \u2014 such as hormonal balance, grounding, rest, or energy \u2014 combining therapeutic herbal knowledge with sensory pleasure. Mikaku Tea operates primarily online and through select local markets and stockists, including the Lyttelton Farmers Market.\n"
 practices:
-- certified-organic-ingredients
-- small-batch
-- hand-blended
-- locally-made
-- ethical-sourcing
+- organic
+- wild
 products:
 - loose-leaf-tea
 - herbal-tea

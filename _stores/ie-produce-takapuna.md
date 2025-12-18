@@ -35,7 +35,8 @@ geo_last_verified: '2025-12-14'
 geo_label: I E Produce
 geo_query: 1 Barrys Point Road, Auckland, Auckland, New Zealand
 title: IE Produce (Takapuna)
-practices: []
+practices:
+- certified-organic
 practices_tags: []
 products_tags: []
 services: []

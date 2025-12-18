@@ -10,10 +10,10 @@ postcode: '4779'
 lat: -40.1451
 lon: 175.4939
 practices:
-- Certified organic
-- Regenerative
-- Spray-free
-- Pasture-raised
+- certified-organic
+- regenerative
+- spray-free
+- pasture-raised
 products:
 - Grass-fed beef
 - Farm produce

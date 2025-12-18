@@ -32,7 +32,9 @@ notes: ''
 products_tags:
 - meat
 subtype: livestock
-practices: []
+practices:
+- biodynamic
+- certified-organic
 services: []
 services_tags: []
 specialty_tags: []

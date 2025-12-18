@@ -9,10 +9,9 @@ city: Kairanga
 address: 141 Aranui Road, RD5, Kairanga, Palmerston North
 description: Certified organic dairy and farm practising regenerative agriculture for over 16 years, producing raw and pasteurised milk, yogurt and eggs with a farmgate shop.
 practices:
-- Certified organic
-- Regenerative
-- Pasture-raised
-- Free-range
+- certified-organic
+- regenerative
+- pasture-raised
 products:
 - Raw milk
 - Pasteurised milk

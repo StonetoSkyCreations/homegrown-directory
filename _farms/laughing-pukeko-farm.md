@@ -28,7 +28,8 @@ source_urls:
 last_checked: '2025-12-09'
 notes: ''
 subtype: market-garden
-practices: []
+practices:
+- organic
 products_tags: []
 services: []
 services_tags: []

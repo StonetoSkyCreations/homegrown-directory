@@ -9,8 +9,7 @@ city: Takapuna
 suburb: Takapuna
 address: 1 Byron Avenue, Takapuna, Auckland 0622
 practices:
-- Organic (uncertified)
-- Seasonal menu
+- organic
 products:
 - Prepared meals
 - Baked goods

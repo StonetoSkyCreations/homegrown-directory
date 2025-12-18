@@ -11,9 +11,7 @@ postcode: '3000'
 type: restaurant
 subtype: restaurant
 practices:
-- Seasonal
-- Local
-- Rooftop garden
+- local
 products:
 - Mexican dishes
 - Tacos

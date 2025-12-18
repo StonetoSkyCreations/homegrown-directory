@@ -36,7 +36,8 @@ geo_last_verified: '2025-12-14'
 geo_label: '99'
 geo_query: "99 Guyton Street, Whanganui, Manawat\u016B-Whanganui, New Zealand"
 title: Whanganui Organic Food Co-op
-practices: []
+practices:
+- certified-organic
 practices_tags: []
 products_tags: []
 services: []

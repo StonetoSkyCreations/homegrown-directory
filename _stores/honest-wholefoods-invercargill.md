@@ -30,7 +30,8 @@ Invercargill specialty store offering bulk organic and wholefood products. Sourc
 lat: -46.4118465
 lon: 168.3470632
 title: Honest Wholefoods
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

@@ -31,7 +31,8 @@ city: Christchurch
 lat: -43.530955
 lon: 172.6364343
 title: Ooooby (Online Organic Boxes)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

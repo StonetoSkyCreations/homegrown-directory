@@ -28,7 +28,8 @@ notes: ''
 subtype: mixed
 lat: -39.6417678
 lon: 176.8430781
-practices: []
+practices:
+- certified-organic
 products_tags: []
 services: []
 services_tags: []

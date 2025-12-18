@@ -33,7 +33,9 @@ products_tags:
 subtype: livestock
 lat: -45.9425171
 lon: 169.2619453
-practices: []
+practices:
+- pasture-raised
+- regenerative
 services: []
 services_tags: []
 specialty_tags: []

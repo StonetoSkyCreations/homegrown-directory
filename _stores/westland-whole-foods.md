@@ -9,7 +9,7 @@ city: Greymouth
 address: 35 Guinness Street, Greymouth 7805
 description: Wholefoods store with organic, specialty and bulk products plus deli items, free-farmed meat, local milk, sourdough bread and specialty diet foods.
 practices:
-- Organic
+- organic
 products:
 - Bulk flours and grains
 - Peas and beans

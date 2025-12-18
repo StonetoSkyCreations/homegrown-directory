@@ -16,10 +16,7 @@ long_description: 'Forest is an intimate, produce-led restaurant in Mount Eden l
 
   '
 practices:
-- vegetarian
-- plant-forward
-- low-waste
-- seasonal-cooking
+- certified-organic
 products:
 - vegetarian dinner dishes
 - vegan dishes

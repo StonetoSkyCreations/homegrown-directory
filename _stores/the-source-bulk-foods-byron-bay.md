@@ -34,7 +34,8 @@ city: Byron Bay
 lat: -28.6468088
 lon: 153.6128365
 title: The Source Bulk Foods (Byron Bay)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

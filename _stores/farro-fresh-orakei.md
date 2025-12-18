@@ -29,7 +29,9 @@ notes: Retail
 city: Auckland
 lat: -36.862888
 title: Farro Fresh Orakei
-practices: []
+practices:
+- organic
+- local
 practices_tags: []
 products_tags: []
 services: []

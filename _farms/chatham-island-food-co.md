@@ -18,8 +18,7 @@ long_description: 'Chatham Island Food Co sources wild seafood from the waters s
 
   '
 practices:
-- wild-caught
-- selective-fishing-methods
+- wild
 products:
 - wild-seafood
 - blue-cod

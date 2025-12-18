@@ -9,8 +9,8 @@ city: Brixton
 address: 141 Richmond Road, RD3, New Plymouth 4373
 description: BioGro-certified organic market garden specialising in heritage vegetables and citrus grown with traditional organic methods.
 practices:
-- Certified organic
-- Spray-free
+- certified-organic
+- spray-free
 products:
 - Heritage vegetables
 - Citrus

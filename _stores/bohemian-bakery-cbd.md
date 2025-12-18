@@ -9,10 +9,7 @@ city: Christchurch
 address: 255 Saint Asaph Street, Christchurch 8011
 description: "Central-city bakery caf\xE9 in the SALT District serving slow-fermented sourdough, pastries, brunch, and drinks including Prima Coffee, T-leaf teas, Karma, Chia Sisters, Wildwood, and Hakanoa. Hosts live music on Saturdays.\n"
 practices:
-- organic flour (Milmore Downs)
-- spray-free flour (Farmers Mill)
-- natural ingredients
-- long cold fermentation
+- local
 products:
 - sourdough bread
 - pastries

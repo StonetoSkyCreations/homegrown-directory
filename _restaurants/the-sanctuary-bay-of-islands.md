@@ -8,9 +8,8 @@ region: Northland
 city: Paihia
 address: "1106 Paihia Road, \u014Cpua 0241"
 practices:
-- Organic (uncertified)
-- Free-range
-- Seasonal menu
+- organic
+- pasture-raised
 products:
 - Breakfast
 - Dairy

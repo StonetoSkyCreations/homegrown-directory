@@ -19,13 +19,7 @@ description: A sixth-generation Ohariu Valley farm producing free-range, grass-f
 long_description: "Conscious Valley is a family-run sheep and cattle farm based in the hills of Ohariu Valley, just 8km from Wellington\u2019s CBD. Operating under the farm name Huiawa, the family has been farming this land for six generations, raising free-range, grass-fed beef and lamb with animal welfare and environmental care at the centre of every decision. All livestock are hormone- and antibiotic-free, grazed on diverse hill country pastures made up of grasses, legumes, and broadleaf herbs, and rotated to support soil health and biodiversity. Salt-laden winds from the nearby Cook Strait naturally season the landscape, contributing to the distinctive flavour of the meat. Conscious Valley focuses on breeds selected for good marbling and yield, producing tender, flavourful cuts with exceptionally low food miles for Wellingtonians. Alongside direct-to-consumer sales through their online farm store and weekly Harbourside Market stall, they partner with local restaurants seeking ethically\
   \ raised, locally grown red meat. As long-term custodians of the land, the team is actively working toward retiring unproductive areas and moving the farm toward a carbon neutral or carbon positive future.\n"
 practices:
-- free-range
-- grass-fed
-- hormone-free
-- antibiotic-free
-- rotational-grazing
-- ethical-farming
-- biodiversity-focused
+- pasture-raised
 products:
 - beef
 - lamb

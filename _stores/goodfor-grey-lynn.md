@@ -9,8 +9,7 @@ city: Grey Lynn
 address: 274A Richmond Road, Grey Lynn, Auckland
 description: Wholefoods refillery with sustainable packaging and a high proportion of certified organic products.
 practices:
-- Certified organic
-- Sustainable
+- certified-organic
 products:
 - Bulk foods
 - Household goods

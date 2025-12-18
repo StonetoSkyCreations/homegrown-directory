@@ -17,7 +17,8 @@ locations:
 address: ''
 lat: ''
 lon: ''
-practices: []
+practices:
+- organic
 practices_tags: []
 products: []
 products_tags: []

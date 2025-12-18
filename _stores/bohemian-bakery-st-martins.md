@@ -11,10 +11,7 @@ description: 'Neighbourhood bakery shop near Hansen Park offering pastries, sour
 
   '
 practices:
-- organic flour (Milmore Downs)
-- spray-free flour (Farmers Mill)
-- natural ingredients
-- long cold fermentation
+- pasture-raised
 products:
 - sourdough bread
 - pastries

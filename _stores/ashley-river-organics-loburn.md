@@ -20,9 +20,7 @@ long_description: "Ashley River Organics is a certified organic orchard located 
   \ ensuring the harvest is fully utilised. This zero-waste approach supports both environmental responsibility and product integrity.\nProduce and juices are sold directly through local farmers\u2019 markets, including the Christchurch Farmers\u2019 Market and Opawa Farmers\u2019 Market, as well as via selected organic retailers. Customers are able to meet the growers directly, creating transparency and trust within the local food system.\n"
 practices:
 - certified-organic
-- spray-free
-- soil-health-focused
-- low-waste
+- local
 products:
 - organic-apples
 - organic-pears

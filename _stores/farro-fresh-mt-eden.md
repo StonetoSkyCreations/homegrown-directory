@@ -35,7 +35,8 @@ geo_last_verified: '2025-12-14'
 geo_label: '422'
 geo_query: 422 Dominion Road, Auckland, Auckland, New Zealand
 title: Farro Fresh Mt Eden
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

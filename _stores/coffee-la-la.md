@@ -13,10 +13,7 @@ description: Coffee LaLa is an award-winning Coromandel coffee roastery blending
 long_description: "Coffee LaLa is a boutique, award-winning roastery tucked in a bush-clad valley at Kuaotunu on the Coromandel Peninsula. Founded by Mark and Nedilka in 2002, it blends \u201Cart and science\u201D in a former pottery shed, roasting 100% Arabica beans from respected plantations around the world. Each origin is roasted on its own to coax out terroir-driven flavour, then carefully blended into balanced, full-bodied coffees that have earned 18 New Zealand Coffee Awards.\n\nThe roastery\u2019s signature lineup ranges from La More \u2014 an intense, urban-style dark blend led by French-roasted Kenyan beans \u2014 to the Green Spot Organic, whose South American and East Timor beans fund Coromandel Watchdog\u2019s anti-mining work. Oooh Lala delivers a Colombian, Ethiopian and nutty trio; Lala \u201830\u2019 is dialled for classic 30 ml short blacks; and Lalabye decaf offers 97% caffeine-free comfort via a chemical-free water process.\n\nWhile Coffee LaLa is a roastery rather than\
   \ a caf\xE9, you\u2019ll taste it across the Coromandel at spots like Kua Kawhe in Kuaotunu, Mei\u2019s Caf\xE9 and Artisan Bakery in Coromandel Town, and the Waterworks Cafe. Beans are stocked at local grocers and specialty stores, and nationwide delivery gets fresh roasts to customers in one to three days. The team offers full cafe support \u2014 from equipment sourcing and setup to maintenance and training \u2014 all while staying rooted in the native bush and birdlife that surround their Wharekaho Road base.\n"
 practices:
-- small-batch
-- origin-led roasting
-- award-winning
-- eco-conscious
+- organic
 products:
 - coffee beans
 - coffee blends

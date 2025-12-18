@@ -13,9 +13,6 @@ long_description: "Bellbird Bakery at Riverside Market brings its artisan sourdo
 practices:
 - organic
 - spray-free
-- sourdough
-- slow-fermentation
-- local-sourcing
 products:
 - sourdough bread
 - pastries

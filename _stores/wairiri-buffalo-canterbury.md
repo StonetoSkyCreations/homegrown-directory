@@ -19,10 +19,7 @@ description: 'A small, family-owned Canterbury farm producing exceptional buffal
 long_description: "Wairiri Buffalo is a family-owned farm near Glenroy in Canterbury, run by Lucy Appleton and Christo Keijzer. The farm is home to Italian Water Buffalo and operates on a philosophy of living in harmony with the land, prioritising animal welfare, ecological health, and quality over volume.\nThe 100-acre property includes a 40-acre native forest and wetland reserve that has remained largely unchanged for thousands of years. Buffalo graze freely on pasture, with herd size carefully matched to what the land can sustainably support. Their large cloven hooves distribute weight naturally, helping to protect delicate soils, while waterways and wetlands are fenced and planted to filter runoff.\nWairiri Buffalo describes its system as \u201Ctotally organic\u201D. Winter feed is grown and harvested on-site, no synthetic inputs are used, and animals are raised with minimal intervention. Calves remain close to their mothers, animals are known individually, and health issues are rare\u2014\
   attributed to natural breeding, low stress, and attentive care.\nMilk is used every second day to produce fresh cheeses and yoghurt, resulting in exceptional flavour and freshness. Products include authentic Italian-style stretched cheeses such as mozzarella, burrata, stracciatella, halloumi, ricotta, and caciocavallo, as well as thick, naturally cultured buffalo yoghurt. Buffalo milk is naturally A2, high in protein and calcium, and lower in cholesterol than cow\u2019s milk, making it suitable for many people with dairy sensitivities.\nSustainability extends beyond farming practices: Wairiri Buffalo uses biodegradable and reusable packaging wherever possible and is working toward integrating renewable energy on-site. The farm regularly connects directly with customers through farmers markets, including a stall at the Lyttelton Farmers Market on Sundays.\n"
 practices:
-- organic-practices
-- ethical-animal-welfare
-- low-intervention-farming
-- on-farm-processing
+- organic
 products:
 - buffalo-milk
 - buffalo-cheese

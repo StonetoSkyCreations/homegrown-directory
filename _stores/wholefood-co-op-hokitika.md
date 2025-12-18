@@ -31,7 +31,8 @@ Community co-op providing organic foods and wholefoods at affordable prices in H
 lat: -42.7178871
 lon: 170.9646469
 title: Wholefood Co-op Hokitika
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

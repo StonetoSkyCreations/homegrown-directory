@@ -11,8 +11,8 @@ postcode: '4220'
 type: cafe
 subtype: cafe
 practices:
-- Organic
-- Local
+- organic
+- local
 products:
 - Coffee
 - Brunch

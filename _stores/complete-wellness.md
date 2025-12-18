@@ -9,8 +9,7 @@ city: Invercargill
 address: 24 Windsor Street, Invercargill 9810
 description: Organic wholefood grocery store and deli with a wide range of organics, wholefoods and gluten-free products.
 practices:
-- Organic
-- Wholefoods
+- organic
 products:
 - Organic produce
 - Wholefoods

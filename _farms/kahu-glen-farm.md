@@ -9,7 +9,7 @@ city: Paraite
 address: 175 Paraite Road, Paraite 4373
 description: BioGro-certified organic feijoa orchard producing feijoas, apples, juice and surplus vegetables with on-site tours.
 practices:
-- Certified organic
+- certified-organic
 products:
 - Feijoas
 - Apples

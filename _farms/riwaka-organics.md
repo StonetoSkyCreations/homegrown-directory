@@ -10,7 +10,7 @@ postcode: '7198'
 lat: -41.0833
 lon: 173.0
 practices:
-- Organic (certified)
+- certified-organic
 products:
 - Fruit
 - Vegetables

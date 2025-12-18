@@ -9,8 +9,8 @@ city: Auckland
 address: Level 2, 172 Quay Street, Auckland
 suburb: Auckland CBD
 practices:
-- Organic (uncertified)
-- Seasonal menu
+- organic
+- local
 products:
 - Wine
 - Seafood

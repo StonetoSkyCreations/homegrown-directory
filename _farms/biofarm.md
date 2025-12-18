@@ -9,9 +9,9 @@ city: Palmerston North
 address: Te Matai Road, Palmerston North
 description: "One of New Zealand\u2019s oldest certified organic farms producing yoghurt and milk using biodynamic and regenerative principles with on-site processing."
 practices:
-- Certified organic
-- Biodynamic
-- Regenerative
+- certified-organic
+- biodynamic
+- regenerative
 products:
 - Yoghurt
 - Milk

@@ -6,7 +6,7 @@ country_slug: new-zealand
 region: Wellington
 city: Kapiti Coast
 practices:
-- Free-range
+- pasture-raised
 products:
 - Eggs
 services:

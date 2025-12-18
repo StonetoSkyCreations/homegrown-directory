@@ -11,10 +11,8 @@ postcode: '3928'
 type: restaurant
 subtype: restaurant
 practices:
-- Regenerative
-- Seasonal
-- Organic
-- Farm-to-table
+- regenerative
+- local
 products:
 - Seasonal tasting menu
 - Wine

@@ -11,10 +11,7 @@ description: 'Boutique bakery offering fresh sourdough, pastries, and baked good
 
   '
 practices:
-- organic flour (Milmore Downs)
-- spray-free flour (Farmers Mill)
-- natural ingredients
-- long cold fermentation
+- pasture-raised
 products:
 - sourdough bread
 - pastries

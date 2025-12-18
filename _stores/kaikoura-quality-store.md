@@ -37,7 +37,9 @@ geo_last_verified: '2025-12-14'
 geo_label: New Zealand Post
 geo_query: "West End, Kaik\u014Dura, Canterbury, New Zealand"
 title: "Kaik\u014Dura Quality Store"
-practices: []
+practices:
+- organic
+- pasture-raised
 practices_tags: []
 products_tags: []
 services: []

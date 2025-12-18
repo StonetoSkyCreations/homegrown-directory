@@ -6,7 +6,8 @@ country_slug: new-zealand
 region: Canterbury
 city: Amberley
 practices:
-- Regenerative
+- regenerative
+- pasture-raised
 products:
 - Meat
 services:

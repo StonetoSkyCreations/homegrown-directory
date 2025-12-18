@@ -13,9 +13,8 @@ long_description: 'Waiomu Beach Cafe sits on the coast road north of Thames and 
 
   '
 practices:
-- organic produce
-- local sourcing
-- waste reduction
+- organic
+- local
 products:
 - breakfasts
 - lunches

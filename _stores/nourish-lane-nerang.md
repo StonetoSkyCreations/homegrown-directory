@@ -33,7 +33,8 @@ city: Gold Coast
 lat: -28.000106
 lon: 153.338501
 title: Nourish Lane (Nerang)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

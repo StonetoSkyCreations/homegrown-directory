@@ -9,8 +9,7 @@ city: Christchurch
 address: 19-23 Memorial Avenue, Fendalton, Christchurch 8053, New Zealand
 description: Family-owned supermarket in Fendalton offering certified organic produce from Streamside Organics alongside a full range of groceries and services.
 practices:
-- stocks certified organic produce from Streamside Organics
-- locally owned supermarket
+- certified-organic
 products:
 - certified organic vegetables, fruit, herbs and salad greens
 - bakery and deli goods

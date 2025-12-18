@@ -11,9 +11,8 @@ postcode: '4224'
 type: cafe
 subtype: cafe
 practices:
-- Ethical meat
-- Organic
-- Local
+- organic
+- local
 products:
 - Breakfast
 - Lunch

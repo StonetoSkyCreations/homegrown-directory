@@ -36,7 +36,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Gracefield Road
 geo_query: 103-109 Gracefield Rd, Lower Hutt, Wellington, New Zealand
 title: Zany Zeus
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

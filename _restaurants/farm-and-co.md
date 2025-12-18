@@ -11,9 +11,7 @@ postcode: '2487'
 type: restaurant
 subtype: restaurant
 practices:
-- Organic
-- Seasonal
-- Local
+- organic
 products:
 - Breakfast
 - Lunch

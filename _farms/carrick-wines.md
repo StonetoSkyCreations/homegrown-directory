@@ -33,7 +33,8 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: '247'
 geo_query: 247 Cairnmuir Road, Bannockburn, Bannockburn, Otago, New Zealand
-practices: []
+practices:
+- certified-organic
 products_tags: []
 services: []
 services_tags: []

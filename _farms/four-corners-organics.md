@@ -10,8 +10,6 @@ address: Masterton, Wairarapa
 description: Biogrow-certified family farm producing seasonal organic vegetables in eco-friendly greenhouses using rainwater, solar power and natural fertilisers.
 practices:
 - certified-organic
-- rainwater-irrigation
-- solar-powered
 - spray-free
 products:
 - winter celery, broccoli, wombok cabbage

@@ -32,7 +32,8 @@ Organic grocery store in Nelson selling certified organic fruit, vegetables, and
 lat: -41.2725833
 lon: 173.2853903
 title: Benge & Co Organics
-practices: []
+practices:
+- certified-organic
 practices_tags: []
 products_tags: []
 services: []

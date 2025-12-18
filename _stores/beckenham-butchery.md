@@ -47,7 +47,10 @@ geo_source: nominatim
 geo_last_verified: '2025-12-14'
 geo_label: Colombo Street
 geo_query: 140 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Canterbury, New Zealand
-practices: []
+practices:
+- certified-organic
+- regenerative
+- pasture-raised
 products_tags: []
 services_tags: []
 specialty_tags: []

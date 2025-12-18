@@ -10,7 +10,8 @@ region: Northland
 city: Paihia
 address: 2 Selwyn Road, Paihia 0200
 practices:
-- Organic (uncertified)
+- organic
+- local
 products:
 - Vegetables
 - Fruit

@@ -17,9 +17,6 @@ long_description: 'Mahoe Farmhouse Cheese is a family-owned cheesery located nea
   '
 practices:
 - pasture-raised
-- low-input-farming
-- artisan-cheesemaking
-- animal-welfare-focused
 products:
 - gouda cheese
 - cumin gouda

@@ -16,7 +16,9 @@ locations:
 address: ''
 lat: ''
 lon: ''
-practices: []
+practices:
+- certified-organic
+- regenerative
 practices_tags: []
 products: []
 products_tags: []

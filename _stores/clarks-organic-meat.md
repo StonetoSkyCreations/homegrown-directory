@@ -9,8 +9,8 @@ city: Glen Eden
 address: 356 West Coast Road, Glen Eden, Auckland 0602
 description: "Butcher located near the Wait\u0101kere Ranges specialising in certified organic and free\u2011range meat and poultry, including award\u2011winning gluten\u2011free sausages."
 practices:
-- Certified organic
-- Free-range
+- certified-organic
+- pasture-raised
 products:
 - Beef
 - Pork

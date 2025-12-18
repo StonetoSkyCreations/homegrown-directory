@@ -33,7 +33,8 @@ city: Gold Coast
 lat: -28.07924955
 lon: 153.36589275313048
 title: Nourish Lane (Mudgeeraba)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

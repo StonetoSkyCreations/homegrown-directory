@@ -18,10 +18,7 @@ description: 'A small, family-owned artisan goat dairy in North Canterbury produ
   '
 long_description: "Little Farm Goat Dairy is a family-owned artisan cheese producer based at Te Hua Farm near Oxford in North Canterbury, run by cheesemaker Andrea Gauland alongside her husband Mike and their family. Established as a business in 2014, the dairy grew out of Andrea\u2019s long-standing passion for goats and cheesemaking, developed over more than a decade of hands-on practice.\nThe farm milks a small herd of Toggenburg and rare-breed Rawhiti goats, with complete control over the process from pasture to finished cheese. Milk is processed daily in very small batches\u2014typically 30\u201345 litres per day\u2014ensuring exceptional freshness, flavour, and quality. Kids are largely reared with their dams, with gentle separation overnight once they are older, reflecting a strong commitment to ethical animal welfare and low-stress farming.\nCheesemaking at Little Farm Goat Dairy is hands-on and expressive, drawing on traditional French styles while embracing local ingredients and\
   \ creativity. The range includes classic ch\xE8vre, mould-ripened cheeses, surface-blue cheeses, ash-rinded styles, yoghurt, and labneh, with many cheeses incorporating locally sourced or wild-foraged ingredients, such as porcini mushrooms gathered by certified local foragers.\nWhile not publicly stated as certified organic or regenerative, the farm operates on a small-scale, transparent, and ethical model, prioritising animal welfare, freshness, and craftsmanship over volume. Customers can meet the makers directly through farmers markets, farm gate sales, tours, cheesemaking classes, and tasting events, reinforcing a strong connection between producer, product, and community.\n"
-practices:
-- ethical-animal-welfare
-- small-batch-production
-- on-farm-processing
+practices: []
 products:
 - goat-cheese
 - goat-yoghurt

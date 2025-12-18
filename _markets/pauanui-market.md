@@ -10,7 +10,7 @@ address: Recreation Hall, 31 Sheppard Avenue, Pauanui
 description: "Last\u2011Sunday market in Pauanui showcasing fresh produce, crafts and homemade goods from around the eastern Coromandel."
 long_description: "Held on the last Sunday of every month from 9 am to 12:30 pm, the Pauanui Market brings together stalls inside the Recreation Hall next to the Pauanui Sports Club. Vendors offer seasonal fruit and vegetables, eggs, honey, preserves, baking, crafts and second\u2011hand treasures. The market is a popular community event for residents and holidaymakers, providing a chance to stock up on local produce and meet local makers. Additional markets may be added on long weekends; check local notices for updates.\n"
 practices:
-- local produce
+- local
 products:
 - fruit
 - vegetables

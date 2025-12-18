@@ -40,7 +40,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Friends of the Earth
 geo_query: 312 Smith Street, Melbourne, Victoria, AU
 title: Friends of the Earth Food Co-op & Cafe
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

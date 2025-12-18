@@ -8,8 +8,8 @@ region: Wellington
 city: Wellington
 address: 132 Willis Street, Wellington 6011
 practices:
-- Seasonal menu
-- Free-range
+- organic
+- pasture-raised
 products:
 - Coffee and tea
 - Bread and bakery

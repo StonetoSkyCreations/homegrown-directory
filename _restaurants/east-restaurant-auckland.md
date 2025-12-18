@@ -8,7 +8,8 @@ region: Auckland
 city: Auckland
 address: "63\u201367 Nelson Street, Auckland CBD 1010"
 practices:
-- Organic (uncertified)
+- organic
+- biodynamic
 products:
 - Wine
 - Vegetarian

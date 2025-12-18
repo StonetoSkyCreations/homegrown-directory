@@ -41,7 +41,10 @@ geo_last_verified: '2025-12-14'
 geo_label: Burringbar Street
 geo_query: 51-53 Burringbar St, Mullumbimby, New South Wales, AU
 title: Santos Organics (Mullumbimby)
-practices: []
+practices:
+- certified-organic
+- regenerative
+- biodynamic
 practices_tags: []
 products_tags: []
 services: []

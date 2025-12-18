@@ -30,7 +30,8 @@ city: Auckland
 lat: -36.849193
 lon: 174.764111
 title: Farro Fresh Commercial Bay
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

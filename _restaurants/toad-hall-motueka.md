@@ -8,8 +8,7 @@ region: Tasman
 city: Motueka
 address: 502 High Street South, Motueka 7120
 practices:
-- Seasonal menu
-- Organic (uncertified)
+- organic
 products:
 - Coffee and tea
 - Bread and bakery

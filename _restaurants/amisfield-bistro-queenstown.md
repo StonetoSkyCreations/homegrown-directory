@@ -19,8 +19,8 @@ description: A landmark Central Otago cellar door and acclaimed restaurant where
 long_description: >
   Amisfield brings together a certified organic vineyard, a welcoming cellar door, and a world-class dining room led by chef Vaughan Mabee. Tastings are designed to showcase the distinctive character of their organic Mt Pisa site, with options from a classic flight through to older-vintage, library-style experiences. In the restaurant, the menu is highly seasonal and shaped by the wider Central Otago landscape—built around what local growers, fishers, hunters, and gatherers can provide, alongside produce from Amisfield’s own gardens where available. Expect an experience-driven style of dining where wine and food tell the story of land, water, and season.
 practices:
-- certified-organic-vineyard
-- sustainable-viticulture
+- certified-organic
+- local
 products:
 - organic-wine
 - cellar-door-tastings

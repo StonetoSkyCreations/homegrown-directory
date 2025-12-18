@@ -34,7 +34,11 @@ published: true
 source_urls: []
 lat: -36.7944853
 lon: 175.0549946
-practices: []
+practices:
+- organic
+- regenerative
+- biodynamic
+- local
 products_tags: []
 services_tags: []
 certifications: []

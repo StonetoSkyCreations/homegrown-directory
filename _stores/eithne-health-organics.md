@@ -9,8 +9,7 @@ city: Hokitika
 address: 21 Revell Street, Hokitika, West Coast
 description: Health food store offering wholefoods, organic and gluten-free foods, vegetarian products plus supplements, organic skin and body care, hair and beauty products, cosmetics, jewellery and gifts.
 practices:
-- Organic
-- Gluten-free
+- organic
 products:
 - Wholefoods
 - Organic foods

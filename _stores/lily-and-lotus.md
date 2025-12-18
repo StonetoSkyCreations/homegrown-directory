@@ -30,7 +30,8 @@ published: true
 source_urls: []
 lat: -36.7957418
 lon: 175.0468845
-practices: []
+practices:
+- organic
 products_tags: []
 services_tags: []
 certifications: []

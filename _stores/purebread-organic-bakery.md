@@ -17,8 +17,7 @@ long_description: "Purebread Organic Bakery is a pioneering New Zealand bakery a
   \ across Aotearoa.\n"
 practices:
 - certified-organic
-- traditional-baking
-- slow-fermentation
+- pasture-raised
 products:
 - organic-bread
 - sourdough

@@ -8,9 +8,8 @@ region: Hawke's Bay
 city: Havelock North
 address: 253 Waimarama Road, Havelock North, Hastings 4294
 practices:
-- Organic (uncertified)
-- Biodynamic
-- Seasonal menu
+- organic
+- biodynamic
 products:
 - Wine
 - Vegetables

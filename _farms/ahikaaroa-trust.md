@@ -26,7 +26,9 @@ notes: "M\u0101ori whenua development, organic farming"
 subtype: mixed
 lat: -35.1140609
 lon: 173.264022
-practices: []
+practices:
+- organic
+- regenerative
 products_tags: []
 services: []
 services_tags: []

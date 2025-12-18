@@ -32,7 +32,8 @@ city: "Whang\u0101rei"
 lat: -35.7275268
 lon: 174.3194202
 title: Organic Corner Deli
-practices: []
+practices:
+- certified-organic
 practices_tags: []
 products_tags: []
 services: []

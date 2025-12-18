@@ -32,7 +32,9 @@ Organic and biodynamic grocery store in Richmond selling certified organic produ
 lat: -41.3380953
 lon: 173.1872264
 title: Earthbound Organics (Richmond)
-practices: []
+practices:
+- certified-organic
+- biodynamic
 practices_tags: []
 products_tags: []
 services: []

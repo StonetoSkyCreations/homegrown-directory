@@ -7,8 +7,8 @@ country_slug: new-zealand
 region: Coromandel
 city: Thames
 practices:
-- Seasonal menu
-- Local sourcing
+- organic
+- local
 products:
 - Coffee and tea
 - Bread and bakery

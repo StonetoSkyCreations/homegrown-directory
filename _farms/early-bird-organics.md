@@ -28,7 +28,8 @@ notes: ''
 subtype: market-garden
 lat: -39.03939
 lon: 177.4271389
-practices: []
+practices:
+- certified-organic
 products_tags: []
 services: []
 services_tags: []

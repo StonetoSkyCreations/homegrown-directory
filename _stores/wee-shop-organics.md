@@ -9,7 +9,7 @@ city: Ruby Bay
 address: 155 Stafford Drive, Ruby Bay, Mapua 7005
 description: Small organic shop delivering fruit and vege boxes, selling coconut oil, freshly milled flour, wholefoods, bulk items, gifts and specialty health foods with free local delivery.
 practices:
-- Organic
+- organic
 products:
 - Organic coconut oil
 - Fresh organic produce

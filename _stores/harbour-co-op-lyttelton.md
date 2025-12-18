@@ -16,9 +16,8 @@ lon: 172.72209541875245
 description: "A community-owned wholefoods co-operative in \u014Chinehou/Lyttelton offering organic and fair trade staples, bulk goods, and locally made products with a low-waste ethos."
 long_description: "Harbour Co-op (formerly LyttelPiko) is a low-profit, community-owned wholefoods shop established after the 2010 earthquakes by locals who wanted a dedicated neighbourhood hub for organic, fair trade, and wholefoods. Owned by households, employees, and institutional purchasers, the co-op is committed to keeping mark-ups low on organic food, minimising waste through bulk buying and reusable containers, and actively supporting local makers and suppliers. Anyone can shop here, with the option to become an owner-member by purchasing a share and joining the co-operative community. Volunteering is also welcomed as part of the co-op\u2019s wider kaupapa of connected, healthy communities and a lighter ecological footprint.\n"
 practices:
-- bulk-refill
-- low-waste
-- supports-local-suppliers
+- organic
+- local
 products:
 - organic-wholefoods
 - bulk-dry-goods

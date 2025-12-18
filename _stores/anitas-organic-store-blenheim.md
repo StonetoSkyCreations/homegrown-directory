@@ -9,8 +9,8 @@ city: Blenheim
 address: 46B Wynen Street, Blenheim, Marlborough
 description: Asian, organic and specialty food store with wide range of fresh produce, seeds, beans, grains, oils, herbs and spices, body care and household cleaners plus gluten-free and spray-free local products.
 practices:
-- Organic
-- Spray-free
+- organic
+- spray-free
 products:
 - Fresh fruit and vegetables
 - Seeds, beans and pulses

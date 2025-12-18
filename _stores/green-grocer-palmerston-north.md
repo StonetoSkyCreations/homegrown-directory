@@ -37,7 +37,9 @@ geo_last_verified: '2025-12-14'
 geo_label: Broadway Avenue
 geo_query: "239 Broadway Avenue, Palmerston North, Manawat\u016B-Whanganui, New Zealand"
 title: Green Grocer
-practices: []
+practices:
+- organic
+- spray-free
 practices_tags: []
 products_tags: []
 services: []

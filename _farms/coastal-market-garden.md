@@ -9,9 +9,9 @@ city: "\u014Cakura"
 address: PO Box 34, Oakura 4375
 description: Small market garden between the Tasman Sea and Kaitake Ranges using regenerative organic, spray-free practices to supply seasonal veg boxes and market sales.
 practices:
-- Organic
-- Regenerative
-- Spray-free
+- organic
+- regenerative
+- spray-free
 products:
 - Seasonal vegetables
 services:

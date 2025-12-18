@@ -9,10 +9,9 @@ city: "\u014Chau"
 address: "\u014Chau, Horowhenua"
 description: Sustainable permaculture farm cultivating gourmet mushrooms and fermented foods with 100% organic principles and natural pest control.
 practices:
-- Organic
-- Permaculture
-- Spray-free
-- Regenerative
+- organic
+- spray-free
+- regenerative
 products:
 - Gourmet mushrooms
 - Fermented foods

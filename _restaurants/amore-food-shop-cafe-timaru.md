@@ -8,8 +8,8 @@ region: Canterbury
 city: Timaru
 address: 1A Sarah Street, Timaru 7910
 practices:
-- Organic (uncertified)
-- Spray-free
+- certified-organic
+- spray-free
 products:
 - Coffee and tea
 - Pantry goods

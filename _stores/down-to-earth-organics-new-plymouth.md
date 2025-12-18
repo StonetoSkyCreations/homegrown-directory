@@ -11,8 +11,8 @@ city: New Plymouth
 address: 460 Devon Street East, Strandon, New Plymouth 4312
 description: Certified organic and ethically sourced grocery supporting local producers with a wide range of fresh produce, bulk foods, and pantry goods.
 practices:
-- Certified organic
-- Ethical sourcing
+- certified-organic
+- local
 products:
 - Organic groceries
 - Fresh produce

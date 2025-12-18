@@ -11,7 +11,7 @@ city: Waitara
 address: 61 McLean Street, Waitara 4320
 description: Bulk wholefoods and specialty grocery with organic and gluten-free options.
 practices:
-- Organic
+- organic
 products:
 - Bulk foods
 - Gluten-free foods

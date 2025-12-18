@@ -37,7 +37,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Piko Education Space
 geo_query: 229 Kilmore Street, Christchurch, Canterbury, New Zealand
 title: Piko Wholefoods (Chch)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

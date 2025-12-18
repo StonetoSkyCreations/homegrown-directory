@@ -16,8 +16,7 @@ long_description: 'Gusto Italiano is a long-standing Italian restaurant at Three
 
   '
 practices:
-- seasonal-cooking
-- traditional-italian
+- local
 products:
 - wood-fired pizza
 - handmade pasta

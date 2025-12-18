@@ -29,7 +29,9 @@ subtype: vineyard
 source_urls: []
 lat: -36.807386
 lon: 175.025821
-practices: []
+practices:
+- certified-organic
+- biodynamic
 products_tags: []
 services_tags: []
 certifications: []

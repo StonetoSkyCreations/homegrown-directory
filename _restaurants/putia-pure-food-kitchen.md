@@ -11,9 +11,9 @@ postcode: '4014'
 type: restaurant
 subtype: restaurant
 practices:
-- Free-range
-- Sustainable
-- Organic
+- organic
+- pasture-raised
+- local
 products:
 - Breakfast
 - Lunch

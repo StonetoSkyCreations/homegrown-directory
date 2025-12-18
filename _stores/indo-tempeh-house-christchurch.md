@@ -19,8 +19,7 @@ description: 'Christchurch-based family business producing fresh Indonesian-styl
 long_description: "Indo Tempeh House is a family-owned Christchurch business run by Nana and Aji, originally from Indonesia. The business specialises in the in-house production of traditional Indonesian tempeh and operates an eatery showcasing tempeh-based Indonesian dishes.\nAfter selling tempeh and prepared food at local markets for several years, Indo Tempeh House became a permanent fixture at Riverside Market when it opened in 2019. Alongside the market eatery, the business operates a dedicated production kitchen in Waltham, where fresh and frozen tempeh is made using a traditional fermentation process.\nTempeh is produced on-site using soybeans and a natural fermentation culture (Rhizopus), resulting in a minimally processed, protein-rich whole food. This short, transparent production chain allows Indo Tempeh House to maintain freshness and consistency while preserving the nutritional integrity of the final product.\nWhile the business does not publicly claim organic certification for\
   \ its ingredients, its focus is on simple inputs, traditional fermentation, and real food production. Indo Tempeh House is a member of the Christchurch Vegan Society and offers a wide range of vegan and halal options, making it an important supplier for ethical and dietary-conscious communities in \u014Ctautahi.\n"
 practices:
-- in-house-production
-- traditional-fermentation
+- organic
 products:
 - fresh-tempeh
 - frozen-tempeh

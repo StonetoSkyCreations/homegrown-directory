@@ -11,10 +11,7 @@ postcode: '3807'
 type: restaurant
 subtype: restaurant
 practices:
-- Farm-to-table
-- Organic
-- No-waste
-- Local produce
+- organic
 products:
 - Tasting menu
 - Sourdough

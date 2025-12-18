@@ -30,7 +30,9 @@ hours: "Mon\u2013Sat (wine tastings)"
 last_checked: '2025-12-09'
 notes: ''
 subtype: vineyard
-practices: []
+practices:
+- biodynamic
+- organic
 products_tags: []
 services: []
 services_tags: []

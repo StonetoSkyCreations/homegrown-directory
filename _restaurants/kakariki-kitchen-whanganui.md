@@ -7,8 +7,7 @@ country_slug: new-zealand
 region: "Manawat\u016B-Whanganui"
 city: Whanganui
 practices:
-- Organic (uncertified)
-- Local sourcing
+- organic
 products:
 - Coffee and tea
 services:

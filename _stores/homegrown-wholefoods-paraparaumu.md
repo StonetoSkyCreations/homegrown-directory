@@ -31,7 +31,8 @@ Local wholefoods retailer selling certified organic food and supporting Kapiti g
 lat: -40.9144636
 lon: 175.0061963
 title: Homegrown Wholefoods
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

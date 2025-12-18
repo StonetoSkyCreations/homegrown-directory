@@ -28,7 +28,8 @@ notes: "M\u0101ori-owned"
 subtype: market-garden
 lat: -37.7997729
 lon: 174.8682464
-practices: []
+practices:
+- organic
 products_tags: []
 services: []
 services_tags: []

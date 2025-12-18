@@ -8,9 +8,7 @@ region: Auckland
 city: Palm Beach
 address: 39 Palm Road, Palm Beach, Waiheke Island
 practices:
-- Organic
-- Sustainable
-- Ethical sourcing
+- organic
 products:
 - Seasonal dishes
 - Seafood

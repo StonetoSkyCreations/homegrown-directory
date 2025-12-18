@@ -33,7 +33,8 @@ city: Glenorchy
 lat: -44.8534622
 lon: 168.3895865
 title: Mrs. Woolly's General Store
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

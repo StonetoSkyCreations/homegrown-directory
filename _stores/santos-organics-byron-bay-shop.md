@@ -41,7 +41,9 @@ geo_last_verified: '2025-12-14'
 geo_label: Jonson Street
 geo_query: 105 Jonson St, Byron Bay, New South Wales, AU
 title: Santos Organics (Byron Bay Shop)
-practices: []
+practices:
+- certified-organic
+- regenerative
 practices_tags: []
 products_tags: []
 services: []

@@ -9,7 +9,7 @@ city: Palmerston North
 address: 973 Fitzherbert Road East, RD1, Palmerston North
 description: "Organic dairy farm on the Manawat\u016B River certified since 2004 and committed to sustainable practices."
 practices:
-- Certified organic
+- certified-organic
 products:
 - Dairy products
 services:

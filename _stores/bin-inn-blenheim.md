@@ -11,7 +11,7 @@ city: Blenheim
 address: 32 Maxwell Road, Blenheim Central 7201
 description: Wholefoods and specialty grocery with bulk bins plus organic and gluten-free products.
 practices:
-- Organic
+- organic
 products:
 - Fresh-ground peanut butter
 - Gluten-free foods

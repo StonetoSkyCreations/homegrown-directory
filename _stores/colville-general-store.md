@@ -11,8 +11,8 @@ address: Main Street, Colville 3506
 description: Cooperative general store in Colville supplying organic and conventional fresh produce, bulk foods and everyday essentials for the northern Coromandel community.
 long_description: "The Colville General Store has operated as a community\u2011owned cooperative since 1978 and remains the last grocery stop before the remote northern Coromandel. It stocks a wide range of goods including fresh fruit and vegetables, bulk grains, flours, herbs and spices, wholefoods, dried goods and locally made preserves. Customers will also find bread, milk, meat, organic and gluten\u2011free options, fuel and hardware supplies, making it a one\u2011stop shop for locals, campers and travellers. The store prioritises environmentally friendly and organic products where possible and provides friendly advice and account services for regular customers.\n"
 practices:
-- "co\u2011operative"
-- organic produce available
+- organic
+- local
 products:
 - fresh produce
 - bulk grains

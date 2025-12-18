@@ -10,8 +10,8 @@ city: Oamaru
 address: 469 Alma-Maheno Road, Alma, Oamaru 9492
 description: Market stall providing local and fully organic produce, subscription boxes and ready-made vegan meals.
 practices:
-- Organic
-- Local produce
+- organic
+- local
 products:
 - Fresh produce
 - Subscription boxes

@@ -46,7 +46,10 @@ published: true
 source_urls: []
 lat: -40.347724
 lon: 175.626963
-practices: []
+practices:
+- organic
+- spray-free
+- local
 products_tags: []
 services_tags: []
 certifications: []

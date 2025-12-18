@@ -13,10 +13,9 @@ website: http://foodforestorganics.co.nz
 email: info@foodforestorganics.co.nz
 phone: 06 304 9790
 practices:
-- certified-organic
+- organic
 - regenerative
-- plant-based
-- sustainable
+- local
 products:
 - organic vegetables
 - organic fruit

@@ -9,7 +9,7 @@ city: Christchurch
 address: 95 Westminster Street, St Albans, Christchurch 8014
 suburb: St Albans
 practices:
-- Organic (certified)
+- organic
 products:
 - Coffee and tea
 - Vegan

@@ -10,8 +10,7 @@ address: 4 Wainui Road, Matatoki, Thames
 description: "Organic cheese factory, caf\xE9 and animal farm near Thames producing award\u2011winning cheeses and yoghurt from certified organic milk."
 long_description: "The Cheese Barn at Matatoki is a family\u2011run organic dairy and visitor attraction on State Highway 26. On site they craft award\u2011winning organic cheeses, yoghurts and quark using milk from certified organic cows. Visitors can watch the cheese makers at work through a viewing window, feed friendly farm animals and sample the cheeses in the caf\xE9 over organic coffee or a glass of wine. The farm shop sells a wide range of deli foods to accompany cheese \u2014 chutneys, relishes, olives, jams, fudge, salami and honey \u2014 along with their own dairy products. The Cheese Barn is open daily and offers tours for groups and school children to learn about organic dairy farming.\n"
 practices:
-- certified organic dairy
-- animal welfare
+- certified-organic
 products:
 - organic cheeses
 - yoghurt

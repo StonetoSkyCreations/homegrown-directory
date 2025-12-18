@@ -15,10 +15,7 @@ description: 'Revive Water Kefir is a small, family-owned New Zealand producer c
   '
 long_description: "Revive Water Kefir is a small, family-owned fermentation business producing handcrafted, naturally sparkling water kefir. Founded by Terra, originally from Canada, the business emerged from a deeply personal health journey after she experienced significant benefits from fermented foods while navigating an autoimmune condition.\nOriginally based in W\u0101naka, Revive relocated operations to Christchurch in late 2023\u20132024 and now sells primarily through local farmers' markets and online channels. Production remains small-scale and hands-on, with each batch brewed using traditional water kefir grains and a slow fermentation process that produces a probiotic-rich, lightly effervescent drink.\nRevive Water Kefir focuses on simple, natural ingredients and avoids artificial additives. Flavours are created through real fruits, herbs, and roots, with functional blends such as Ginger Spice, Lemon Fizz, Schisandra Berry, and Carrot & Turmeric. The emphasis is on gut health,\
   \ balance, and creating a nourishing alternative to sugary soft drinks and highly processed beverages.\nWhile the business does not publicly claim third-party organic or regenerative certification, it prioritises sourcing ingredients from ethical suppliers and maintains transparency around its fermentation process and values. Production is intentionally small-batch, allowing quality, flavour, and microbial integrity to remain central.\n"
-practices:
-- traditionally-fermented
-- small-batch
-- additive-free
+practices: []
 products:
 - water-kefir
 - fermented-drinks

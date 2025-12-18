@@ -11,8 +11,7 @@ postcode: '2478'
 type: cafe
 subtype: cafe
 practices:
-- Local
-- Seasonal
+- local
 products:
 - Breakfast
 - Lunch

@@ -28,8 +28,7 @@ long_description: 'Real Food Direct is a family-owned online wholesaler and reta
 
   '
 practices:
-- bulk-retailing
-- eco-conscious-packaging
+- organic
 products:
 - organic-pantry-goods
 - conventional-pantry-goods

@@ -41,7 +41,8 @@ geo_last_verified: '2025-12-14'
 geo_label: '284'
 geo_query: 284 Dominion Road, Mt Eden, Auckland, Auckland, Auckland, New Zealand
 title: Commonsense Mt Eden
-practices: []
+practices:
+- certified-organic
 practices_tags: []
 products_tags: []
 services_tags: []

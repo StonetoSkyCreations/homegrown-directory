@@ -10,8 +10,6 @@ address: Pirinoa, South Wairarapa
 description: The regenerative market garden of Little Farms, growing vegetables and herbs on no-till, chemical-free beds in Pirinoa.
 practices:
 - regenerative
-- organic-principles
-- no-dig
 - spray-free
 products:
 - seasonal vegetables

@@ -13,9 +13,7 @@ long_description: 'Falls Retreat sits near the Owharoa Falls on the Coromandel p
 
   '
 practices:
-- organic gardening
-- seasonal cooking
-- paddock-to-plate
+- organic
 products:
 - wood-fired pizzas
 - seasonal dishes

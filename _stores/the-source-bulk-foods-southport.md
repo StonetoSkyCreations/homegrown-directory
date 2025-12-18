@@ -34,7 +34,8 @@ city: Gold Coast
 lat: -27.97995115
 lon: 153.40978546639033
 title: The Source Bulk Foods (Southport)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

@@ -11,10 +11,9 @@ description: 'Village-style bakery using natural ingredients, long cold-fermente
 
   '
 practices:
-- organic flour (Milmore Downs)
-- spray-free flour (Farmers Mill)
-- natural ingredients
-- long cold fermentation
+- organic
+- spray-free
+- local
 products:
 - sourdough bread
 - pastries

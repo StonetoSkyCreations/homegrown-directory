@@ -9,7 +9,7 @@ city: Queenstown
 address: The Market, 19 Grant Road, Frankton, Queenstown
 description: Organic grocery store stocking 100% organic goods including fresh produce, pantry staples, meats, eco-cleaning and natural body products.
 practices:
-- Organic
+- organic
 products:
 - Fresh produce
 - Pantry staples

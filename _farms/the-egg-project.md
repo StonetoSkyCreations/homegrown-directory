@@ -9,9 +9,8 @@ city: Himatangi Beach
 address: "Himatangi Beach, Manawat\u016B-Whanganui"
 description: Certified organic free-range egg producer with hens roaming on pasture and pine nut plantations, delivering eggs to homes and retailers.
 practices:
-- Certified organic
-- Free-range
-- Pasture-raised
+- certified-organic
+- pasture-raised
 products:
 - Eggs
 services:

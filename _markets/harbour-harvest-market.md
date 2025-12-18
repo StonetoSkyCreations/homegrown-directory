@@ -9,8 +9,9 @@ city: Te Aro
 lat: -41.292
 lon: 174.778
 practices:
-- Spray-free
-- Organic (uncertified)
+- organic
+- spray-free
+- local
 products:
 - Vegetables
 - Fruit

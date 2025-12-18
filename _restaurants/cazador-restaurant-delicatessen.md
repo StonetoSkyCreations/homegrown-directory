@@ -16,10 +16,7 @@ lon: 174.74547398697902
 description: Long-running Mount Eden restaurant and delicatessen specialising in wild, free-range, and sustainably sourced New Zealand produce, with a strong focus on game, charcuterie, and seasonal cooking.
 long_description: "Cazador is a family-owned Auckland institution that has been quietly shaping the city\u2019s food culture since 1987. Built around deep relationships with New Zealand hunters, fishers, and small-scale farmers, the kitchen focuses on wild and sustainably raised ingredients that reflect the seasons and the landscape they come from. Much of what is served is made in-house, from their renowned charcuterie and p\xE2t\xE9s to baked goods and deli provisions available to take home. The restaurant menu shifts frequently, drawing on Middle Eastern and European influences while remaining grounded in ethical sourcing, craft, and respect for the whole animal.\n"
 practices:
-- wild-sourced
-- free-range
-- seasonal
-- small-batch
+- pasture-raised
 products:
 - game-meat
 - house-made-charcuterie

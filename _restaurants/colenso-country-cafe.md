@@ -13,9 +13,7 @@ long_description: 'Colenso Cafe sits within a small orchard on the highway betwe
 
   '
 practices:
-- permaculture
-- spray-free orchard
-- free-range hens
+- pasture-raised
 products:
 - seasonal meals
 - cakes

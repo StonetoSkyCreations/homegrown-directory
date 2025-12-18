@@ -11,9 +11,7 @@ postcode: '3184'
 type: cafe
 subtype: cafe
 practices:
-- Organic
-- Raw
-- Vegan
+- organic
 products:
 - Smoothies
 - Raw cakes

@@ -8,7 +8,7 @@ city: Grey Lynn
 lat: -36.86
 lon: 174.739
 practices:
-- Transparent sourcing
+- local
 products:
 - Pantry goods
 - Vegetables

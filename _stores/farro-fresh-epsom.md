@@ -34,7 +34,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Farro
 geo_query: 446 Manukau Road, Auckland, Auckland, New Zealand
 title: Farro Fresh Epsom
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

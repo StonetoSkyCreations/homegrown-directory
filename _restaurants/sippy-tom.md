@@ -11,10 +11,9 @@ postcode: '4005'
 type: cafe
 subtype: cafe
 practices:
-- Organic
-- Pasture-raised
-- Line-caught
-- Local
+- organic
+- pasture-raised
+- local
 products:
 - Brunch
 - Coffee

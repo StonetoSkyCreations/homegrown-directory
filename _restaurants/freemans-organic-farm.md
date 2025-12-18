@@ -11,9 +11,8 @@ postcode: '4223'
 type: farm-cafe
 subtype: cafe
 practices:
-- Organic
-- Biodynamic
-- Pasture-raised
+- certified-organic
+- pasture-raised
 products:
 - Produce
 - Cafe

@@ -34,7 +34,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Farro Fresh
 geo_query: 34 Westmoreland Street West, Auckland, Auckland, New Zealand
 title: Farro Fresh Grey Lynn
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

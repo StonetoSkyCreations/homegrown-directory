@@ -27,8 +27,6 @@ long_description: 'Retro Organics is a pioneering certified organic dairy produc
   '
 practices:
 - certified-organic
-- spray-free
-- single-farm-sourcing
 products:
 - organic-milk
 - organic-cheese

@@ -9,9 +9,7 @@ city: Ponsonby
 suburb: Ponsonby
 address: 1A Summer Street, Rear Tenancy, Ponsonby, Auckland
 practices:
-- Organic
-- Locally sourced
-- Sustainable
+- organic
 products:
 - Plant-based meals
 - Baked goods

@@ -9,8 +9,8 @@ city: Christchurch
 address: Riverside Market, 96 Oxford Terrace, Christchurch Central City 8011, New Zealand
 suburb: Riverside Market
 practices:
-- Organic (uncertified)
-- Local sourcing
+- organic
+- local
 products:
 - Coffee and tea
 - Lunch

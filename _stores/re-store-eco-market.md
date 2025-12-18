@@ -11,8 +11,8 @@ address: 580 Pollen Street, Thames
 description: "Low\u2011waste bulk food store in Thames providing organic and sustainable pantry staples, cleaning products and refill services."
 long_description: "Re\u2011Store Eco Market is a locally owned bulk wholefoods and household refill store dedicated to reducing plastic waste. Customers can shop for bulk dry goods, nuts, seeds, grains, spices and sustainable household products, bringing their own containers or using returnable jars to minimise packaging. The store also sells organic health and wellness items and locally made favourites, and offers home delivery or click\u2011and\u2011collect ordering via its website. As a community\u2011led business it aims to support local growers and make sustainable shopping easy and affordable for Coromandel residents.\n"
 practices:
-- "low\u2011waste"
-- sustainable packaging
+- organic
+- local
 products:
 - bulk foods
 - pantry staples

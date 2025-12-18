@@ -32,7 +32,8 @@ rating_average: 5
 rating_count: 1
 lat: -40.803757
 title: Commonsense Kapiti
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

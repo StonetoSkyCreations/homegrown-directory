@@ -9,8 +9,8 @@ city: Auckland
 address: Ground Floor, 12 Wyndham Street, Auckland 1010
 suburb: CBD
 practices:
-- Organic (uncertified)
-- Seasonal menu
+- organic
+- local
 products:
 - Coffee and tea
 - Lunch

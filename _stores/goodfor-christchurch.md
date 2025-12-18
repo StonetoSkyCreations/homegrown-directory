@@ -9,9 +9,7 @@ city: Christchurch
 address: 135 Colombo Street, Beckenham, Christchurch 8023
 description: Zero-waste wholefoods refillery offering bulk organic groceries, sustainable household products and a large range of certified-organic foods.
 practices:
-- zero-waste
-- organic
-- refill-store
+- certified-organic
 products:
 - bulk organic wholefoods
 - pantry staples

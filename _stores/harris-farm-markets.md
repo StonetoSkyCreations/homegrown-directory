@@ -15,7 +15,8 @@ locations:
 - harris-farm-clayfield
 lat: ''
 lon: ''
-practices: []
+practices:
+- local
 practices_tags: []
 products: []
 products_tags: []

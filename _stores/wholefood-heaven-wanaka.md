@@ -36,7 +36,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Butcher's Block
 geo_query: "33 Reece Crescent, W\u0101naka, Otago, New Zealand"
 title: Wholefood Heaven
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

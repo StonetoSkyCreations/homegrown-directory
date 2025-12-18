@@ -59,7 +59,8 @@ subtype: market-garden
 lat: -43.80251419440102
 lon: 172.2461488888322
 featured_article: /blog/streamside-organics-growing-for-people/
-practices: []
+practices:
+- certified-organic
 products_tags: []
 services_tags: []
 specialty_tags: []

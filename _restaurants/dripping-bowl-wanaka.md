@@ -7,8 +7,8 @@ country_slug: new-zealand
 region: Otago
 city: "W\u0101naka"
 practices:
-- Organic (uncertified)
-- Local sourcing
+- organic
+- local
 products:
 - Coffee and tea
 - Breakfast

@@ -9,9 +9,7 @@ city: Dunedin
 suburb: Central Dunedin
 address: 131 High Street, Dunedin 9016
 practices:
-- Organic
-- Sustainable
-- Ethical sourcing
+- organic
 products:
 - Seasonal plates
 - Organic baked goods

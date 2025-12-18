@@ -19,10 +19,10 @@ description: 'A Canterbury-based biodynamic market garden producing seasonal veg
 long_description: "Ramharter Biodynamic Farm is a small-scale market garden located in Ladbrooks, Canterbury, near Christchurch, and is closely associated with grower Rainer Ramharter. The farm is known locally for producing high-quality seasonal vegetables using biodynamic principles\u2014an approach to agriculture that treats the farm as a self-sustaining living organism.\nFarming practices at Ramharter go beyond standard organic methods. Synthetic fertilisers, herbicides, and pesticides are avoided entirely, with soil fertility instead built through composting, crop rotation, cover cropping, and biodynamic preparations. Planting and harvesting are informed by lunar and seasonal calendars, a core feature of biodynamic agriculture, with the intention of strengthening soil life, plant vitality, and overall ecosystem health.\nProduce from the farm is sold directly into the local food system, including through farmers\u2019 markets such as the Mount Pleasant Farmers\u2019 Market and via community-focused\
   \ retailers like Harbour Co-op in Lyttelton. The emphasis is on freshness, locality, and transparency, with vegetables grown specifically for the Canterbury region rather than long-distance distribution.\nWhile formal biodynamic certification (such as Demeter) is not publicly confirmed, the farm\u2019s practices align closely with biodynamic and regenerative principles. Ramharter Biodynamic Farm is regarded as part of Christchurch\u2019s grassroots organic food network, contributing to resilient local supply chains and healthier soils.\n"
 practices:
+- organic
+- regenerative
 - biodynamic
-- organic-principles
-- spray-free
-- regenerative-soil-building
+- local
 products:
 - seasonal-vegetables
 services:

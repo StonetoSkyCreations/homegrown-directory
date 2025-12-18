@@ -11,8 +11,7 @@ address: 1107 Miranda Road, RD3 Pokeno 2473
 description: "Farm caf\xE9 and shop on the Shorebird Coast offering organic coffee, teas, juice, house-made jams and seasonal produce grown in their own orchard and gardens."
 long_description: "Miranda Farm Shop & Cafe sits on a family orchard overlooking the Firth of Thames. The cafe serves Millers organic coffee with organic Green Valley milk and offers Harney & Sons teas, Phoenix Organics juices and Nice Blocks and Little Island coconut ice cream. Visitors can purchase seasonal fruit, jams and baked goods made with produce from the farm\u2019s organically managed vegetable beds and fruit trees. The property is run using organic practices, and customers can wander through the orchard while enjoying light meals and picnic platters. The farm shop also stocks preserves and other goods produced on site, highlighting a transparent paddock-to-plate ethos.\n"
 practices:
-- organic orchard
-- organic milk
+- organic
 products:
 - coffee
 - teas

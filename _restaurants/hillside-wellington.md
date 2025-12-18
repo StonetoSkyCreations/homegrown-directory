@@ -26,9 +26,7 @@ phone: ''
 hours: Tue-Sun from 5pm
 subtype: restaurant
 practices:
-- Local
-- Seasonal
-- Plant-focused
+- wild
 products:
 - Multi-course dinner menus
 - Wine pairings

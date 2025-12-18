@@ -11,10 +11,8 @@ postcode: '3139'
 type: restaurant
 subtype: restaurant
 practices:
-- Organic
-- Seasonal
-- Farm-to-table
-- Biodynamic
+- organic
+- biodynamic
 products:
 - Woodfired pizza
 - Seasonal dishes

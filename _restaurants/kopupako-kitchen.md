@@ -8,8 +8,7 @@ city: Newtown
 lat: -41.312
 lon: 174.779
 practices:
-- Seasonal menu
-- Whole-animal butchery
+- local
 products:
 - Coffee and tea
 - Bread and bakery

@@ -10,9 +10,10 @@ city: Ohoka
 address: Ohoka Domain, Whites Road, Ohoka
 description: Long-running North Canterbury farmers market every Friday with local growers, food producers, artisan makers, coffee, brunch options and live buskers, running year-round in all weather.
 practices:
-- Local
-- Seasonal
-- Artisan-made
+- local
+- organic
+- spray-free
+- regenerative
 products:
 - Fresh produce
 - Baked goods

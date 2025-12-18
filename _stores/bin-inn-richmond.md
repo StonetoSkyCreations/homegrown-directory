@@ -11,7 +11,7 @@ city: Richmond
 address: 271 Queen Street, Richmond 7020
 description: Wholefoods and specialty grocery with bulk bins, fresh-ground peanut butter, gluten-free and organic products.
 practices:
-- Organic
+- organic
 products:
 - Fresh-ground peanut butter
 - Gluten-free foods

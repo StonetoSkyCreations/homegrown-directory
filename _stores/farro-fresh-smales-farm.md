@@ -29,7 +29,8 @@ notes: Retail
 city: Auckland
 lat: -36.852095
 title: Farro Fresh Smales Farm
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

@@ -14,8 +14,6 @@ email: ''
 phone: 03 312 8557
 practices:
 - certified-organic
-- zero-waste
-- sustainable
 products:
 - heritage apples
 - pears

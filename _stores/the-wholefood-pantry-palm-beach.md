@@ -33,7 +33,8 @@ city: Gold Coast
 lat: -28.111783
 lon: 153.46097
 title: The Wholefood Pantry (Palm Beach)
-practices: []
+practices:
+- certified-organic
 practices_tags: []
 products_tags: []
 services: []

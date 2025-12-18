@@ -11,9 +11,7 @@ postcode: '3000'
 type: cafe
 subtype: cafe
 practices:
-- Free-range
-- Grass-fed
-- Ethical sourcing
+- pasture-raised
 products:
 - Coffee
 - Breakfast

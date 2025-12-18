@@ -30,7 +30,8 @@ hours: "Mon\u2013Fri 09:00\u201317:00; Sat 10:00\u201317:00; Sun closed"
 last_checked: '2025-12-09'
 notes: ''
 subtype: vineyard
-practices: []
+practices:
+- certified-organic
 products_tags: []
 services: []
 services_tags: []

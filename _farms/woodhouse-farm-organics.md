@@ -9,9 +9,8 @@ city: Kairanga
 address: Kairanga, Palmerston North
 description: Five-acre farm working toward Demeter certification, growing berries, orchard fruit, vegetables, poultry and cattle with organic and biodynamic methods; produce sold at Hokowhitu Market.
 practices:
-- Organic
-- Biodynamic
-- Demeter certification
+- organic
+- biodynamic
 products:
 - Berries
 - Orchard fruit

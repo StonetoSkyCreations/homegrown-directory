@@ -10,8 +10,8 @@ lon: 173.6465961
 address: 941 Waihopai Valley Road, Renwick, Marlborough 7276, New Zealand
 postcode: '7276'
 practices:
-- Organic (certified)
-- Biodynamic
+- certified-organic
+- biodynamic
 products:
 - Wine
 services:

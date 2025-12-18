@@ -9,8 +9,8 @@ city: Christchurch
 address: 189 Papanui Road, Merivale, Christchurch 8014, New Zealand
 description: Premium local supermarket in Merivale Mall offering certified organic produce from Streamside Organics alongside gourmet foods, fine wines and everyday groceries.
 practices:
-- stocks certified organic produce from Streamside Organics
-- focuses on fresh, local and gourmet foods
+- certified-organic
+- spray-free
 products:
 - certified organic vegetables, salad greens and herbs
 - fresh produce

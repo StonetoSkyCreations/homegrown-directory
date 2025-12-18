@@ -8,8 +8,7 @@ region: Otago
 city: Dunedin
 address: 765 Cumberland Street, Dunedin 9016
 practices:
-- Organic (uncertified)
-- Seasonal menu
+- organic
 products:
 - Coffee and tea
 - Bread and bakery

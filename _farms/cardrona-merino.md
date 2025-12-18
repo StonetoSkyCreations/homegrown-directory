@@ -6,7 +6,8 @@ country_slug: new-zealand
 region: Otago
 city: Cardrona Valley
 practices:
-- Regenerative
+- regenerative
+- pasture-raised
 products:
 - Meat
 services:

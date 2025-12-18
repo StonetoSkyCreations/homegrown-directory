@@ -8,7 +8,7 @@ region: Canterbury
 city: Christchurch
 address: 292 Kilmore Street, Christchurch 8011, New Zealand
 practices:
-- Organic
+- organic
 products:
 - Organic chicken wings
 - Organic broccoli

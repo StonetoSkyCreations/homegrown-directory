@@ -9,9 +9,7 @@ city: Riverton
 address: 154 Palmerston Street, Riverton
 description: Volunteer-run co-operative enabling people to buy only organic food grown without chemicals or GMOs at cost price.
 practices:
-- Organic
-- Chemical-free
-- GE-free
+- organic
 products:
 - Organic food
 services:

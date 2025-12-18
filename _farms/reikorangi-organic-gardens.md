@@ -6,7 +6,7 @@ country_slug: new-zealand
 region: Wellington
 city: Waikanae
 practices:
-- Organic (uncertified)
+- organic
 products:
 - Vegetables
 - Herbs

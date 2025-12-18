@@ -9,9 +9,8 @@ city: Greytown
 address: Monty's Lane, Te Hupenui/Greytown
 description: A human-scale market garden using agroecological principles and no-till growing to produce nutrient-dense vegetables on the Waiohine River terraces.
 practices:
-- hua-parakore
+- organic
 - regenerative
-- no-till
 - spray-free
 products:
 - seasonal vegetables

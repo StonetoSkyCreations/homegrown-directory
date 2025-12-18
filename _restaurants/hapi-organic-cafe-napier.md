@@ -8,8 +8,7 @@ region: Hawke's Bay
 city: Napier
 address: 45 Hastings Street, Napier South, Napier 4110
 practices:
-- Organic (uncertified)
-- Seasonal menu
+- organic
 products:
 - Coffee and tea
 - Bread and bakery

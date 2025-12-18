@@ -10,7 +10,7 @@ address: Masterton, Wairarapa
 description: Small family-run market garden in Masterton supplying spray-free vegetables to Little Farms' boxes.
 practices:
 - spray-free
-- organic-principles
+- organic
 products:
 - seasonal vegetables
 - fresh herbs

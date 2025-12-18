@@ -38,7 +38,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Commonsense Wellington City
 geo_query: 147 Tory Street, Wellington, Wellington, New Zealand
 title: Commonsense Wellington City
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

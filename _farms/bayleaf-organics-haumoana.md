@@ -8,7 +8,8 @@ city: Haumoana
 address: 20 Palomino Road, RD 10, Haumoana, 4180, New Zealand
 postcode: '4180'
 practices:
-- Organic (uncertified)
+- organic
+- spray-free
 products:
 - Fruit
 services:

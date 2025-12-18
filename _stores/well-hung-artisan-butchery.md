@@ -9,9 +9,8 @@ city: Milford
 address: 210 Kitchener Road, Milford, Auckland 0620
 description: "Artisan butchery providing NZ free\u2011range, organic meats including poultry, lamb and venison, ethically sourced and farmed."
 practices:
-- Organic
-- Free-range
-- Ethical sourcing
+- organic
+- pasture-raised
 products:
 - Beef
 - Lamb

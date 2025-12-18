@@ -16,9 +16,7 @@ long_description: 'Kingi is an all-day restaurant in the heart of Britomart, gro
 
   '
 practices:
-- sustainably-sourced
-- seasonal
-- traceable-supply
+- wild
 products:
 - seafood
 - seasonal vegetables

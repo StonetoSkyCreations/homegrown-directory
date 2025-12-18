@@ -8,9 +8,9 @@ region: Canterbury
 city: Waipara
 address: 614 Omihi Road, SH1, Waipara Valley 7483
 practices:
-- Certified organic
-- Biodynamic
-- Local produce
+- organic
+- regenerative
+- biodynamic
 products:
 - Organic wines
 - Seasonal lunch menu

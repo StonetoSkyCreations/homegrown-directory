@@ -35,7 +35,8 @@ geo_last_verified: '2025-12-14'
 geo_label: Heretaunga Street East
 geo_query: 221E Heretaunga Street East, Hastings, Hawke's Bay, New Zealand
 title: Cornucopia Organics (Hastings)
-practices: []
+practices:
+- organic
 practices_tags: []
 products_tags: []
 services: []

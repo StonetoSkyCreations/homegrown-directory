@@ -19,9 +19,7 @@ lon: ''
 practices:
 - organic
 - spray-free
-- sourdough
-- slow-fermentation
-- local-sourcing
+- local
 practices_tags: []
 products: []
 products_tags: []

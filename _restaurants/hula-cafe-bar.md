@@ -11,9 +11,7 @@ address: 5 Albert Street, Whitianga
 description: "Seasonal caf\xE9 and bar in Whitianga preparing all food from scratch, with homemade chai, sauces and ferments served alongside toasties made on locally baked organic sourdough."
 long_description: "Hula is a chef-owned caf\xE9 and bar known for its ethos of \u201Ceat real food.\u201D Founders Gabe and Rachel cook seasonally, making everything from their own chai and hot chocolate to chutneys, relishes, kimchi and sauerkraut. Breakfasts include hearty toasties and bowls built on Bread Mobile\u2019s handmade organic sourdough, and the menu changes throughout the year to reflect what is fresh. The bar hosts live music and community events, and nearly all dishes, drinks and condiments are prepared in the Hula kitchen rather than bought in. Located near the marina, Hula offers a relaxed spot to enjoy wholesome, fermented foods and good coffee.\n"
 practices:
-- homemade food
-- seasonal menu
-- use of organic sourdough
+- organic
 products:
 - toasties
 - breakfast bowls

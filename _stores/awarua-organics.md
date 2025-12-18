@@ -20,8 +20,7 @@ long_description: "AwaRua Organics is a New Zealand-owned organic dairy brand la
   \ fertilisers, antibiotics, or GMOs. While the brand does not formally market itself as regenerative, its certified organic systems support soil health, water quality, biodiversity, and animal welfare, aligning closely with regenerative principles.\nAwaRua Organics focuses primarily on premium organic milk powders, including specialised nutrition products such as A2 protein powders, Mum2Be, and Toddler Plus formulations. The integrated processing model allows milk to be processed within hours of collection, preserving freshness and quality while maintaining full traceability back to certified organic farms.\n"
 practices:
 - certified-organic
-- grass-fed
-- free-range
+- pasture-raised
 products:
 - organic-milk-powder
 - organic-dairy

@@ -6,7 +6,7 @@ country_slug: new-zealand
 region: Northland
 city: "Whang\u0101rei"
 practices:
-- Organic (certified)
+- certified-organic
 products:
 - Honey
 services:

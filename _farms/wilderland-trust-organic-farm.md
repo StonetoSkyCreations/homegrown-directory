@@ -10,10 +10,8 @@ address: RD1/2486 Tairua Whitianga Road, Kaimarama 3591
 description: "Off\u2011grid organic farm and education centre practising permaculture and land stewardship near Kaimarama."
 long_description: "The Wilderland Trust has been growing organic food in the Coromandel since 1964. Its 64\u2011hectare property is managed using permaculture principles, regenerative agriculture and off\u2011grid living systems. Residents and volunteers cultivate a diverse mix of vegetables, herbs, fruit trees and honey, learning hands\u2011on skills in organic farming, preserving and land stewardship. The farm sells seasonal produce, honey, herbal teas and handmade preserves through its small onsite shop and at local markets, and offers volunteer placements and workshops for those interested in sustainable living. Wilderland\u2019s mission is to inspire people to engage in whole\u2011systems education and cultivate a healthier relationship with the land.\n"
 practices:
-- organic farming
-- permaculture
-- regenerative agriculture
-- "off\u2011grid living"
+- organic
+- regenerative
 products:
 - seasonal vegetables
 - fruit
