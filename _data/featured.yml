@@ -7,12 +7,16 @@ collections:
   eateries:
     collection: "restaurants"
     slug: "hillside-wellington"
+    slug_australia: "three-blue-ducks-the-farm-byron-bay"
   grocers:
     collection: "stores"
     slug: "taste-nature-dunedin"
+    slug_australia: "terra-madre-brunswick"
   markets:
     collection: "markets"
     slug: "matakana-village-farmers-market"
+    slug_australia: "mullumbimby-farmers-market"
   farms:
     collection: "farms"
     slug: "little-farms-market-garden"
+    slug_australia: "the-farm-byron-bay"

@@ -18,6 +18,7 @@
   const initialHash = window.location.hash ? window.location.hash.replace("#", "").toLowerCase() : "";
   const nearMeButtons = Array.from(document.querySelectorAll("[data-near-me], #nearMeBtn"));
   const nearMeStatuses = Array.from(document.querySelectorAll("[data-near-me-status], #nearMeStatus"));
+  const featuredSections = Array.from(document.querySelectorAll(".featured-section"));
 
   const defaultCountry = "new-zealand";
   const COUNTRY_STORAGE_KEY = "hg-country";
@@ -488,6 +489,28 @@
 
   const getActiveCountry = () => selectedCountry || defaultCountry;
 
+  const getActiveFeatured = () => {
+    const activeCountry = normalizeCountry(getActiveCountry());
+    let section =
+      featuredSections.find((sec) => normalizeCountry(sec.dataset.featuredCountry || "") === activeCountry) ||
+      featuredSections[0];
+    const slug =
+      (section?.dataset?.featuredSlug || "").trim() ||
+      (section?.querySelector(".listing-card")?.dataset?.slug || "").trim();
+    const collection =
+      (section?.dataset?.featuredCollection || "").trim() ||
+      (section?.querySelector(".listing-card")?.dataset?.collection || "").trim();
+    return { section, slug, collection };
+  };
+
+  const setFeaturedHeroVisible = (visible) => {
+    const { section: activeSection } = getActiveFeatured();
+    featuredSections.forEach((sec) => {
+      const isActive = activeSection ? sec === activeSection : false;
+      sec.style.display = visible && isActive ? "" : "none";
+    });
+  };
+
   const applyHashPrefill = () => {
     if (!initialHash) return;
     const typeKeys = Object.keys(typeLabels);
@@ -545,10 +568,6 @@
   // Directory filtering (region + tags + subtype + country) for directory pages
   const directoryContainer = document.querySelector(".directory-page");
   if (directoryContainer) {
-    const featuredSection = directoryContainer.querySelector(".featured-section");
-    const featuredHeroSlug =
-      (featuredSection?.dataset?.featuredSlug || "").trim() ||
-      (featuredSection?.querySelector(".listing-card")?.dataset?.slug || "").trim();
     const regionSelect = document.getElementById("regionFilter");
     const textFilter = document.getElementById("dirSearch");
     const tagFilters = Array.from(document.querySelectorAll('input[name="tag"]'));
@@ -557,7 +576,6 @@
     const cards = Array.from(directoryContainer.querySelectorAll(".listing-grid .listing-card"));
     const dirResultsCount = document.getElementById("dirResultsCount");
     const nearMeStatus = document.querySelector("[data-near-me-status], #nearMeStatus");
-    const featuredResultCard = featuredHeroSlug ? cards.find((card) => (card.dataset.slug || "").trim() === featuredHeroSlug) : null;
 
     const ensureFeaturedStyling = (card) => {
       if (!card) return;
@@ -568,13 +586,6 @@
       if (!metaContainer.querySelector(".featured-badge")) {
         metaContainer.insertAdjacentHTML("beforeend", '<span class="featured-badge">⭐ Featured</span>');
       }
-    };
-
-    ensureFeaturedStyling(featuredResultCard);
-
-    const setFeaturedSectionVisible = (visible) => {
-      if (!featuredSection) return;
-      featuredSection.style.display = visible ? "" : "none";
     };
 
     const setDistanceBadge = (card, distance) => {
@@ -639,33 +650,26 @@
 
     runDirectoryFilters = () => {
       const nearMeMode = nearMeState.active && nearMeState.userLocation;
-      const active = nearMeMode || hasActiveFilters();
-      setFeaturedSectionVisible(!active);
+      const activeUI = nearMeMode || hasActiveFilters();
       const selectedRegion = normalizeRegion(regionSelect ? regionSelect.value : "all");
       const query = textFilter ? normalizeToken(textFilter.value) : "";
       const selectedTags = normalizeList(tagFilters.filter((c) => c.checked).map((c) => c.value));
       const selectedSubtypes = normalizeList(subtypeFilters.filter((c) => c.checked).map((c) => c.value));
       const selectedProducts = normalizeList(productFilters.filter((c) => c.checked).map((c) => c.value));
       const activeCountry = normalizeCountry(getActiveCountry());
-      let visibleCount = 0;
-
-      if (!active) {
-        cards.forEach((card) => {
-          card.classList.remove("hidden");
-          card.style.display = "";
-          visibleCount += 1;
+      const { section: activeFeaturedSection, slug: activeFeaturedSlug } = getActiveFeatured();
+      const featuredResultCard = activeFeaturedSlug
+        ? cards.find((card) => (card.dataset.slug || "").trim() === activeFeaturedSlug)
+        : null;
+      ensureFeaturedStyling(featuredResultCard);
+      const setFeaturedSectionVisible = (visible) => {
+        featuredSections.forEach((section) => {
+          const isActive = activeFeaturedSection ? section === activeFeaturedSection : false;
+          section.style.display = visible && isActive ? "" : "none";
         });
-        if (featuredResultCard) {
-          featuredResultCard.classList.add("hidden");
-          featuredResultCard.style.display = "none";
-          visibleCount -= 1;
-        }
-        if (dirResultsCount) {
-          dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
-        }
-        clearDistances(cards);
-        return;
-      }
+      };
+      setFeaturedSectionVisible(!activeUI);
+      let visibleCount = 0;
 
       cards.forEach((card) => {
         const region = normalizeRegion(card.dataset.region);
@@ -694,6 +698,14 @@
         card.style.display = show ? "" : "none";
         if (show) visibleCount += 1;
       });
+
+      if (!activeUI && featuredResultCard) {
+        if (featuredResultCard.style.display !== "none") {
+          visibleCount -= 1;
+        }
+        featuredResultCard.classList.add("hidden");
+        featuredResultCard.style.display = "none";
+      }
 
       if (dirResultsCount) {
         dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
@@ -724,18 +736,12 @@
   if (typeof runDirectoryFilters === "function") runDirectoryFilters();
 
   const hasSearchUI = resultsContainer || mapPanel;
-  const featuredHeroSection = document.querySelector(".featured-section");
-  const featuredHeroSlug = (featuredHeroSection?.dataset?.featuredSlug || "").trim();
-
-  const setFeaturedHeroVisible = (visible) => {
-    if (!featuredHeroSection) return;
-    featuredHeroSection.style.display = visible ? "" : "none";
-  };
 
   const isFeaturedItem = (item) => {
     if (!item) return false;
     if (item.featured === true) return true;
-    return Boolean(featuredHeroSlug) && (item.slug || "") === featuredHeroSlug;
+    const { slug } = getActiveFeatured();
+    return Boolean(slug) && (item.slug || "") === slug;
   };
 
     const cardTemplate = (item) => {

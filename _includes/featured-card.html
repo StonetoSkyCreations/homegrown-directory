@@ -2,8 +2,19 @@
 {% assign key = include.key | default: "home" %}
 
 {% assign config = site.data.featured[scope][key] %}
+{% assign requested_country = include.country_slug | default: include.country %}
+
 {% assign coll_name = include.collection | default: config.collection %}
-{% assign slug = include.slug | default: config.slug %}
+
+{% if config %}
+  {% assign slug_from_config = config.slug %}
+  {% if requested_country %}
+    {% assign country_slug_key = "slug_" | append: requested_country %}
+    {% assign slug_from_config = config[country_slug_key] | default: slug_from_config %}
+  {% endif %}
+{% endif %}
+
+{% assign slug = include.slug | default: slug_from_config %}
 
 {% if coll_name and slug %}
   {% assign coll = site[coll_name] %}
@@ -22,6 +33,7 @@
 <section
   class="featured-section"
   data-featured-slug="{{ item.slug | escape }}"
+  data-featured-country="{{ requested_country | default: item.country_slug | escape }}"
   data-featured-url="{{ item.url | relative_url | escape }}"
   data-featured-collection="{{ item.collection | downcase | escape }}">
   <div class="featured-card-wrapper">

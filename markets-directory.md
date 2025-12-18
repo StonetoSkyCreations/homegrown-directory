@@ -46,6 +46,7 @@ seo_description: >
   </div>
 
   {% include featured-card.html scope="collections" key="markets" %}
+  {% include featured-card.html scope="collections" key="markets" country_slug="australia" %}
 
   <div class="listing-grid listing-grid--tight">
     {% for listing in items %}
