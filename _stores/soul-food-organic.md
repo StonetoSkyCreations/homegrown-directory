@@ -21,12 +21,21 @@ practices:
 products:
 - Fresh produce
 - Pantry staples
-- Meat
+- Pasture-raised meat
+- Venison
+- Cold-smoked salmon
+- Bone broth
+- Heritage seeds
+- Sourdough bread
+- Fresh juices and smoothies
+- Activated nuts and organic treats
 - Eco-cleaning products
 - Bodycare products
 services:
 - Grocery store
 - Online store
+- Local delivery
+- Produce boxes
 website: https://soulfoodorganic.co.nz
 email: orders@soulfoodorganic.co.nz
 phone: +64 3 443 7885
@@ -38,8 +47,26 @@ subtype: organic-store
 source_urls:
 - https://soulfoodorganic.co.nz
 practices_tags: []
-products_tags: []
-services_tags: []
+products_tags:
+- fresh produce
+- pasture-raised meat
+- venison
+- salmon
+- bone broth
+- heritage seeds
+- sourdough
+- juices
+- smoothies
+- nuts
+- snacks
+- pantry goods
+- bodycare
+- eco-cleaning products
+services_tags:
+- grocery store
+- online store
+- delivery
+- produce boxes
 certifications: []
 specialty_tags: []
 sourced_from:
