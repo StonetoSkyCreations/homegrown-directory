@@ -51,7 +51,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j7kGStpGzGg+XA+eihVGpKq1wy1G3aAKl2aqGAo=" crossorigin=""></script>
   {% endif %}
   <script>
-    window.HG_INDEX_URL = '{{ '/search.json' | relative_url }}';
+    window.HG_INDEX_URL = '{{ '/search.json' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}';
     window.HG_BASEURL = '{{ site.baseurl | default: "" }}';
   </script>
   <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>

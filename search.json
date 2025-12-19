@@ -30,37 +30,50 @@ permalink: /search.json
       {% assign type_token = 'market' %}
   {% endcase %}
   {% assign subtype_token = subtype_raw | default: type_token | slugify %}
-  {% assign practices = doc.practices_tags | default: empty %}
-  {% if practices %}
-    {% assign practices = practices | join: ',' | downcase | split: ',' | uniq %}
+  {% if doc.practices_tags and doc.practices_tags != empty %}
+    {% assign practices = doc.practices_tags | uniq | compact %}
+  {% elsif doc.practices %}
+    {% assign practices = doc.practices | uniq | compact %}
+  {% else %}
+    {% assign practices = '' | split: ',' %}
   {% endif %}
-  {% assign products = doc.products_tags | default: doc.products | default: empty %}
-  {% if products %}
-    {% assign products = products | join: ',' | downcase | split: ',' | uniq %}
+
+  {% if doc.products_tags and doc.products_tags != empty %}
+    {% assign products = doc.products_tags | uniq | compact %}
+  {% elsif doc.products %}
+    {% assign products = doc.products | uniq | compact %}
+  {% else %}
+    {% assign products = '' | split: ',' %}
   {% endif %}
-  {% assign services = doc.services_tags | default: doc.services | default: empty %}
-  {% if services %}
-    {% assign services = services | join: ',' | downcase | split: ',' | uniq %}
+
+  {% if doc.services_tags and doc.services_tags != empty %}
+    {% assign services = doc.services_tags | uniq | compact %}
+  {% elsif doc.services %}
+    {% assign services = doc.services | uniq | compact %}
+  {% else %}
+    {% assign services = '' | split: ',' %}
   {% endif %}
-  {% assign specialty = doc.specialty_tags | default: empty %}
-  {% if specialty %}
-    {% assign specialty = specialty | join: ',' | downcase | split: ',' | uniq %}
+
+  {% if doc.specialty_tags %}
+    {% assign specialty = doc.specialty_tags | uniq | compact %}
+  {% else %}
+    {% assign specialty = '' | split: ',' %}
   {% endif %}
   {% assign supplies_raw = doc.supplies_to %}
-  {% if supplies_raw == nil %}
-    {% assign supplies_list = empty %}
+  {% if supplies_raw == nil or supplies_raw == empty %}
+    {% assign supplies_list = '' | split: ',' %}
   {% elsif supplies_raw.first %}
     {% assign supplies_list = supplies_raw | uniq %}
   {% else %}
-    {% assign supplies_list = supplies_raw | split: ',' | map: 'strip' | uniq %}
+    {% assign supplies_list = supplies_raw | split: ',' | map: 'strip' | where_exp: 'item', 'item != ""' | uniq %}
   {% endif %}
   {% assign sourced_from_raw = doc.sourced_from %}
-  {% if sourced_from_raw == nil %}
-    {% assign sourced_from_list = empty %}
+  {% if sourced_from_raw == nil or sourced_from_raw == empty %}
+    {% assign sourced_from_list = '' | split: ',' %}
   {% elsif sourced_from_raw.first %}
     {% assign sourced_from_list = sourced_from_raw | uniq %}
   {% else %}
-    {% assign sourced_from_list = sourced_from_raw | split: ',' | map: 'strip' | uniq %}
+    {% assign sourced_from_list = sourced_from_raw | split: ',' | map: 'strip' | where_exp: 'item', 'item != ""' | uniq %}
   {% endif %}
   {% assign long_desc = doc.description | default: doc.short_description | default: doc.meta_description | default: doc.excerpt | default: doc.long_description %}
   {% assign geo_precision = doc.geo_precision | default: 'none' %}
