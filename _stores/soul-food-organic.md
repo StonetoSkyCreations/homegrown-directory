@@ -18,6 +18,10 @@ long_description: |
   Owned and run by Paul O’Hara, Soul Food Organic operates as both a grocery store and a community space, where relationships with customers and suppliers are treated as central to the business. Regular offerings include curated family fruit and vegetable boxes and local delivery across Queenstown Lakes, Central Otago, and Southland. The store also supports low-waste shopping through bulk options and practical guidance on caring for organic food at home.
 practices:
 - organic
+- spray-free
+- regenerative
+- wild/foraged
+- local
 products:
 - Fresh produce
 - Pantry staples
