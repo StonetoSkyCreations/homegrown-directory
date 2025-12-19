@@ -22,7 +22,7 @@ long_description: |
 
   All products are carefully vetted to exclude artificial preservatives, stabilisers, sulphites, anti-caking agents, and refined sugars, with the guiding principle that food should remain close to its natural form. Unsold organic food and by-products are diverted to a local worm farm and compost system, returning nutrients to the soil through nearby farming operations.
 
-  Freshlink also operates alongside the Dripping Bowl, a neighbouring café that uses ingredients from the store to prepare acai bowls, smoothies, and wholefood meals, allowing customers to experience the quality of the produce in prepared form. Together, the two spaces function as both a grocer and a community meeting point, grounded in traditional food values, transparency, and care for local food systems.
+  Freshlink also operates alongside [Dripping Bowl](/vendors/dripping-bowl/), a neighbouring café that uses ingredients from the store to prepare acai bowls, smoothies, and wholefood meals, allowing customers to experience the quality of the produce in prepared form. Together, the two spaces function as both a grocer and a community meeting point, grounded in traditional food values, transparency, and care for local food systems.
 practices:
 - organic
 - spray-free
@@ -47,7 +47,13 @@ relationships_declared: false
 social_links:
 - https://www.facebook.com/freshlinkwanaka/
 - https://www.instagram.com/freshlinkgrocer/
-practices_tags: []
+practices_tags:
+- organic
+- spray-free
+- regenerative
+- wild
+- pasture-raised
+- local
 products_tags: []
 services_tags: []
 certifications: []

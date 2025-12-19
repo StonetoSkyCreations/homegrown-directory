@@ -9,7 +9,7 @@ country: New Zealand
 region: Otago
 city: "W\u0101naka"
 address: "82 Anderson Road, W\u0101naka 9305"
-description: "Vibrant food cart serving 100% wholefoods and organic ingredients with a\xE7a\xED bowls, Buddha bowls, smoothies and adaptogenic coffee."
+description: "Vibrant food cart at Freshlink Grocer serving 100% wholefoods and organic ingredients with a\xE7a\xED bowls, Buddha bowls, smoothies and adaptogenic coffee."
 practices:
 - Organic
 products:
@@ -38,6 +38,7 @@ services_tags: []
 certifications: []
 specialty_tags: []
 sourced_from: []
-supplies_to: []
-relationships_declared: false
+supplies_to:
+- freshlink-grocer-wholefoods-sustainable-shopping-in-wnaka
+relationships_declared: true
 ---
