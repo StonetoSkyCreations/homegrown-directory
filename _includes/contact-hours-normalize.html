@@ -192,9 +192,61 @@ Exposes:
     {% endfor %}
   {% elsif hours_type == '[' %}
     {% for value in hours_field %}
-      {% assign hours_value = value | to_s | strip %}
-      {% if hours_value != "" %}
-        {% assign hours_lines = hours_lines | push: hours_value %}
+      {% assign value_json = value | jsonify %}
+      {% assign value_type = value_json | slice: 0, 1 %}
+      {% if value_type == '{' %}
+        {% assign day_value = value.day | default: value.label | default: value.name | to_s | strip %}
+        {% assign open_value = value.open | to_s | strip %}
+        {% assign close_value = value.close | to_s | strip %}
+        {% assign hours_value = "" %}
+        {% if open_value != "" and close_value != "" %}
+          {% assign hours_value = open_value | append: " - " | append: close_value %}
+        {% elsif open_value != "" %}
+          {% assign hours_value = open_value %}
+        {% elsif close_value != "" %}
+          {% assign hours_value = close_value %}
+        {% endif %}
+        {% if hours_value != "" %}
+          {% if day_value != "" %}
+            {% assign hours_line = day_value | append: ": " | append: hours_value %}
+          {% else %}
+            {% assign hours_line = hours_value %}
+          {% endif %}
+          {% assign hours_lines = hours_lines | push: hours_line %}
+        {% else %}
+          {% assign nested_lines = "" | split: "" %}
+          {% for pair in value %}
+            {% assign nested_label_raw = pair[0] | to_s %}
+            {% assign nested_label = nested_label_raw | replace: '_', ' ' | replace: '-', ' ' | strip %}
+            {% assign nested_label_words = nested_label | split: ' ' %}
+            {% assign nested_label = "" %}
+            {% for word in nested_label_words %}
+              {% assign nested_word = word | strip %}
+              {% if nested_word != "" %}
+                {% assign nested_word = nested_word | capitalize %}
+                {% if nested_label == "" %}
+                  {% assign nested_label = nested_word %}
+                {% else %}
+                  {% assign nested_label = nested_label | append: ' ' | append: nested_word %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            {% assign nested_value = pair[1] | to_s | strip %}
+            {% if nested_value != "" %}
+              {% assign nested_line = nested_label | append: ': ' | append: nested_value %}
+              {% assign nested_lines = nested_lines | push: nested_line %}
+            {% endif %}
+          {% endfor %}
+          {% assign nested_text = nested_lines | join: '; ' | strip %}
+          {% if nested_text != "" %}
+            {% assign hours_lines = hours_lines | push: nested_text %}
+          {% endif %}
+        {% endif %}
+      {% else %}
+        {% assign hours_value = value | to_s | strip %}
+        {% if hours_value != "" %}
+          {% assign hours_lines = hours_lines | push: hours_value %}
+        {% endif %}
       {% endif %}
     {% endfor %}
   {% else %}
