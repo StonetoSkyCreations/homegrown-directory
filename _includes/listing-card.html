@@ -41,8 +41,14 @@
 {% elsif location_region != '' %}
   {% assign card_location = location_region %}
 {% endif %}
-{% assign has_street = listing.address and listing.address != '' %}
-{% assign has_coords = listing.lat and listing.lon and listing.lat != '' and listing.lon != '' %}
+{% assign has_street = false %}
+{% if listing.address and listing.address != '' %}
+  {% assign has_street = true %}
+{% endif %}
+{% assign has_coords = false %}
+{% if listing.lat and listing.lon and listing.lat != '' and listing.lon != '' %}
+  {% assign has_coords = true %}
+{% endif %}
 {% assign map_query = card_address | uri_escape %}
 {% case collection_key %}
   {% when 'stores' %}
