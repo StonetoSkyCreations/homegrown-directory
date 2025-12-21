@@ -1,44 +1,61 @@
 ---
-layout: listing
-slug: nelson-farmers-market
-name: Nelson Farmers Market
-brand: Nelson Farmers Market
-type: market
-category: market
-description: "Mid-week farmers\u2019 market with local produce in Nelson city"
-country: NZ
-country_slug: new-zealand
-region: Nelson
-suburb: Nelson
-address: Morrison Square (243 Trafalgar St)
-postcode: '7010'
-lon: 173.2842055
-phone: 027 348 2214
-email: manager@nelsonfarmersmarket.org.nz
-website: https://nelsonfarmersmarket.org.nz/
-social_links:
-- https://nelsonfarmersmarket.org.nz/
-sourcing_tags:
-- local
-products: []
-market_days:
-- Market
-source_urls:
-- "Wednesdays 8:30am\u20131:30pm"
-last_checked: FMNZ member list
-notes: Market
-city: Nelson
-practices_tags:
-- supports-local
-lat: -41.2738791
+layout: market
 title: Nelson Farmers Market
-practices: []
-products_tags: []
-services: []
-services_tags: []
-certifications: []
-specialty_tags: []
-sourced_from: []
-supplies_to: []
+slug: nelson-farmers-market
+collection: markets
+country_slug: new-zealand
+country: New Zealand
+region: Nelson
+city: Nelson
+address: Montgomery Square, Nelson City, New Zealand
+description: |
+  Nelson Market is a long-running Saturday market in central Nelson showcasing locally grown produce, prepared food, and handmade goods from across the region.
+long_description: |
+  Nelson Market has operated every Saturday morning since 1981 in Montgomery Square, in the heart of Nelson City. The market is recognised nationally and internationally for its focus on regional produce, artisan food, and handmade goods, and has been stewarded for over four decades by owner Nita Knight.
+
+  The Saturday market operates under a strict local-only policy. All stallholders must produce, grow, or make their goods within the Nelson–Tasman region. Imported or mass-produced items are not permitted at the Saturday market and are instead directed to Monty’s Sunday Market held separately.
+
+  Food plays a central role at Nelson Market, with a wide range of fresh seasonal fruit and vegetables, organic produce, flowers, seedlings, and prepared foods made on site. Visitors can eat breakfast, brunch, or lunch while engaging directly with growers, bakers, cooks, and makers behind the stalls.
+
+  The market regularly hosts over 200 stalls, including certified organic growers, spray-free producers, honey producers, cheesemakers, bakers, and preserve makers. Many growers sell exclusively at Nelson Market, creating a direct relationship between producers and the local community.
+
+  Nelson Market operates year-round, rain or shine, and is governed by clear policies that support health, safety, and a neutral, inclusive public space. Dogs are not permitted, political activity is prohibited, and fundraising is limited to registered charities.
+practices:
+  - local-only
+  - organic
+  - spray-free
+  - seasonal
+  - small-scale
+  - artisan-made
+products:
+  - fresh produce
+  - organic fruit
+  - organic vegetables
+  - flowers
+  - seedlings
+  - prepared food
+  - baked goods
+  - honey
+  - preserves
+  - artisan goods
+hours:
+  - day: Saturday
+    open: '08:00'
+    close: '13:00'
+features:
+  - direct-from-grower
+  - prepared food onsite
+  - vegetarian-friendly
+  - family-friendly
+rules:
+  - no dogs
+  - politics-free
+  - photography by permission
+lat: -41.27335403721934
+lon: 173.28247057787303
+phone: '03 546 6454'
+email: null
+source_urls:
+  - https://thenelsonmarket.co.nz
 relationships_declared: false
 ---
