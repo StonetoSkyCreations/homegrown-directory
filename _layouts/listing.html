@@ -301,18 +301,38 @@ map: false
 {% assign ld_phone = contact_phones | first | to_s | replace: ' ', '' | replace: '(', '' | replace: ')', '' | strip %}
 {% assign ld_email = primary_email | to_s | strip %}
 {% assign ld_hours = hours_ld_string | to_s | strip %}
-{% assign social_array = social_array | join: ',' | split: ',' | map: 'strip' | reject: '' | uniq %}
+{% assign social_array = social_array | join: ',' | split: ',' | uniq %}
+{% assign social_clean = "" | split: "|" %}
+{% for link in social_array %}
+  {% assign link_value = link | to_s | strip %}
+  {% unless link_value == "" %}
+    {% assign social_clean = social_clean | push: link_value %}
+  {% endunless %}
+{% endfor %}
+{% assign social_array = social_clean %}
 {% assign social_count = social_array | size %}
+{% assign country_clean = page.country | to_s | strip %}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "{{ schema_type }}",
-  "name": "{{ display_title | escape }}",
-  "description": "{{ ld_description | escape }}",
-  {% assign ld_url = page.url | absolute_url %}
-  {% if ld_website != "" %}"url": "{{ ld_website | escape }}",{% else %}"url": "{{ ld_url | escape }}",{% endif %}
-  "mainEntityOfPage": "{{ page.url | absolute_url }}",
-  {% if page.address or page.city or page.region or page.country or page.postcode %}
+{% assign ld_properties = "" | split: "|" %}
+{% capture ld_context %}"@context": "https://schema.org"{% endcapture %}
+{% assign ld_properties = ld_properties | push: ld_context %}
+{% capture ld_type %}"@type": "{{ schema_type }}"{% endcapture %}
+{% assign ld_properties = ld_properties | push: ld_type %}
+{% capture ld_name %}"name": "{{ display_title | escape }}"{% endcapture %}
+{% assign ld_properties = ld_properties | push: ld_name %}
+{% capture ld_description_prop %}"description": "{{ ld_description | escape }}"{% endcapture %}
+{% assign ld_properties = ld_properties | push: ld_description_prop %}
+{% assign ld_url = page.url | absolute_url %}
+{% if ld_website != "" %}
+  {% capture ld_url_prop %}"url": "{{ ld_website | escape }}"{% endcapture %}
+{% else %}
+  {% capture ld_url_prop %}"url": "{{ ld_url | escape }}"{% endcapture %}
+{% endif %}
+{% assign ld_properties = ld_properties | push: ld_url_prop %}
+{% capture main_entity_prop %}"mainEntityOfPage": "{{ ld_url | escape }}"{% endcapture %}
+{% assign ld_properties = ld_properties | push: main_entity_prop %}
+
+{% if page.address or page.city or page.region or page.country or page.postcode %}
   {% assign locality = nil %}
   {% if page.suburb and page.city %}
     {% assign locality = page.suburb | append: ", " | append: page.city %}
@@ -321,34 +341,68 @@ map: false
   {% elsif page.suburb %}
     {% assign locality = page.suburb %}
   {% endif %}
-  "address": {
-    "@type": "PostalAddress",
-    {% if page.address %}"streetAddress": "{{ page.address | escape }}",{% endif %}
-    {% if locality %}"addressLocality": "{{ locality | escape }}",{% endif %}
-    {% if page.region %}"addressRegion": "{{ page.region | escape }}",{% endif %}
-    {% if page.postcode %}"postalCode": "{{ page.postcode | escape }}",{% endif %}
-    {% if page.country %}"addressCountry": "{{ page.country | escape }}"{% endif %}
-  },
+  {% assign address_value = page.address | to_s | strip %}
+  {% assign locality_value = locality | to_s | strip %}
+  {% assign region_value = page.region | to_s | strip %}
+  {% assign postcode_value = page.postcode | to_s | strip %}
+  {% assign country_value = page.country | to_s | strip %}
+  {% assign address_parts = "" | split: "|" %}
+  {% if address_value != "" %}{% capture street_prop %}"streetAddress": "{{ address_value | escape }}"{% endcapture %}{% assign address_parts = address_parts | push: street_prop %}{% endif %}
+  {% if locality_value != "" %}{% capture locality_prop %}"addressLocality": "{{ locality_value | escape }}"{% endcapture %}{% assign address_parts = address_parts | push: locality_prop %}{% endif %}
+  {% if region_value != "" %}{% capture region_prop %}"addressRegion": "{{ region_value | escape }}"{% endcapture %}{% assign address_parts = address_parts | push: region_prop %}{% endif %}
+  {% if postcode_value != "" %}{% capture postcode_prop %}"postalCode": "{{ postcode_value | escape }}"{% endcapture %}{% assign address_parts = address_parts | push: postcode_prop %}{% endif %}
+  {% if country_value != "" %}{% capture country_prop %}"addressCountry": "{{ country_value | escape }}"{% endcapture %}{% assign address_parts = address_parts | push: country_prop %}{% endif %}
+  {% if address_parts.size > 0 %}
+    {% capture address_separator %},
+      {% endcapture %}
+    {% capture address_prop %}"address": {
+      {{ address_parts | join: address_separator }}
+    }{% endcapture %}
+    {% assign ld_properties = ld_properties | push: address_prop %}
   {% endif %}
-  {% if page.lat and page.lon %}
-  "geo": {
+{% endif %}
+
+{% if ld_hours != "" %}
+  {% capture opening_prop %}"openingHours": "{{ ld_hours | escape }}"{% endcapture %}
+  {% assign ld_properties = ld_properties | push: opening_prop %}
+{% endif %}
+{% if ld_phone != "" %}
+  {% capture phone_prop %}"telephone": "{{ ld_phone | escape }}"{% endcapture %}
+  {% assign ld_properties = ld_properties | push: phone_prop %}
+{% endif %}
+{% if ld_email != "" %}
+  {% capture email_prop %}"email": "{{ ld_email | escape }}"{% endcapture %}
+  {% assign ld_properties = ld_properties | push: email_prop %}
+{% endif %}
+{% assign lat_value = page.lat | to_s | strip %}
+{% assign lon_value = page.lon | to_s | strip %}
+{% if lat_value != "" and lon_value != "" %}
+  {% capture geo_prop %}"geo": {
     "@type": "GeoCoordinates",
-    "latitude": {{ page.lat | jsonify }},
-    "longitude": {{ page.lon | jsonify }}
-  },
-  {% endif %}
-  {% if ld_hours != "" %}"openingHours": "{{ ld_hours | escape }}",{% endif %}
-  {% if ld_phone != "" %}"telephone": "{{ ld_phone | escape }}",{% endif %}
-  {% if ld_email != "" %}"email": "{{ ld_email | escape }}",{% endif %}
-  {% if social_count > 0 %}
-  "sameAs": [{% for link in social_array %}"{{ link | escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
-  {% endif %}
-  {% if page.products_or_cuisine and page.products_or_cuisine != empty %}
-  "servesCuisine": [{% for item in page.products_or_cuisine %}"{{ item | escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
-  {% elsif page.products and page.products != empty %}
-  "servesCuisine": [{% for item in page.products limit: 4 %}"{{ item | escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
-  {% endif %}
-  "areaServed": "{{ page.country | escape }}"
+    "latitude": {{ lat_value }},
+    "longitude": {{ lon_value }}
+  }{% endcapture %}
+  {% assign ld_properties = ld_properties | push: geo_prop %}
+{% endif %}
+{% if social_count > 0 %}
+  {% capture same_as_prop %}"sameAs": [{% for link in social_array %}"{{ link | escape }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endcapture %}
+  {% assign ld_properties = ld_properties | push: same_as_prop %}
+{% endif %}
+{% if page.products_or_cuisine and page.products_or_cuisine != empty %}
+  {% capture cuisine_prop %}"servesCuisine": [{% for item in page.products_or_cuisine %}"{{ item | escape }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endcapture %}
+  {% assign ld_properties = ld_properties | push: cuisine_prop %}
+{% elsif page.products and page.products != empty %}
+  {% capture cuisine_prop %}"servesCuisine": [{% for item in page.products limit: 4 %}"{{ item | escape }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endcapture %}
+  {% assign ld_properties = ld_properties | push: cuisine_prop %}
+{% endif %}
+{% if country_clean != "" %}
+  {% capture area_served_prop %}"areaServed": "{{ country_clean | escape }}"{% endcapture %}
+  {% assign ld_properties = ld_properties | push: area_served_prop %}
+{% endif %}
+{
+  {% capture ld_separator %},
+  {% endcapture %}
+  {{ ld_properties | join: ld_separator }}
 }
 </script>
 

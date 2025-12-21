@@ -257,48 +257,76 @@ map: false
 </section>
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "{{ schema_type }}",
-  "name": "{{ display_title | escape }}",
-  "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | escape }}",
-  {% assign ld_url = page.url | absolute_url %}
-  {% if ld_website != "" %}
-  "url": "{{ ld_website | escape }}",
-  {% else %}
-  "url": "{{ ld_url | escape }}",
-  {% endif %}
-  "mainEntityOfPage": "{{ ld_url | escape }}",
-  {% if page.address or page.city or page.region or page.country or page.postcode %}
-  "address": {
-    "@type": "PostalAddress",
-    {% if page.address %}"streetAddress": "{{ page.address | strip | escape }}",{% endif %}
-    {% if page.city %}"addressLocality": "{{ page.city | strip | escape }}",{% endif %}
-    {% if page.region %}"addressRegion": "{{ page.region | strip | escape }}",{% endif %}
-    {% if page.postcode %}"postalCode": "{{ page.postcode | strip | escape }}",{% endif %}
-    {% if page.country %}"addressCountry": "{{ page.country | strip | escape }}"{% endif %}
-  },
-  {% endif %}
-  {% if ld_hours != "" %}
-  "openingHours": "{{ ld_hours | escape }}",
-  {% endif %}
-  {% if ld_phone != "" %}
-  "telephone": "{{ ld_phone | escape }}",
-  {% endif %}
-  {% if ld_email != "" %}
-  "email": "{{ ld_email | escape }}",
-  {% endif %}
-  {% if page.lat and page.lon %}
-  "geo": {
+{% assign ld_properties = "" | split: "|" %}
+{% capture ld_context %}"@context": "https://schema.org"{% endcapture %}
+{% assign ld_properties = ld_properties | push: ld_context %}
+{% capture ld_type %}"@type": "{{ schema_type }}"{% endcapture %}
+{% assign ld_properties = ld_properties | push: ld_type %}
+{% capture ld_name %}"name": "{{ display_title | escape }}"{% endcapture %}
+{% assign ld_properties = ld_properties | push: ld_name %}
+{% capture ld_description_prop %}"description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | escape }}"{% endcapture %}
+{% assign ld_properties = ld_properties | push: ld_description_prop %}
+{% assign ld_url = page.url | absolute_url %}
+{% if ld_website != "" %}
+  {% capture ld_url_prop %}"url": "{{ ld_website | escape }}"{% endcapture %}
+{% else %}
+  {% capture ld_url_prop %}"url": "{{ ld_url | escape }}"{% endcapture %}
+{% endif %}
+{% assign ld_properties = ld_properties | push: ld_url_prop %}
+{% capture main_entity_prop %}"mainEntityOfPage": "{{ ld_url | escape }}"{% endcapture %}
+{% assign ld_properties = ld_properties | push: main_entity_prop %}
+
+{% assign address_value = page.address | to_s | strip %}
+{% assign city_value = page.city | to_s | strip %}
+{% assign region_value = page.region | to_s | strip %}
+{% assign postcode_value = page.postcode | to_s | strip %}
+{% assign country_value = page.country | to_s | strip %}
+{% assign address_parts = "" | split: "|" %}
+{% if address_value != "" %}{% capture street_prop %}"streetAddress": "{{ address_value | escape }}"{% endcapture %}{% assign address_parts = address_parts | push: street_prop %}{% endif %}
+{% if city_value != "" %}{% capture city_prop %}"addressLocality": "{{ city_value | escape }}"{% endcapture %}{% assign address_parts = address_parts | push: city_prop %}{% endif %}
+{% if region_value != "" %}{% capture region_prop %}"addressRegion": "{{ region_value | escape }}"{% endcapture %}{% assign address_parts = address_parts | push: region_prop %}{% endif %}
+{% if postcode_value != "" %}{% capture postcode_prop %}"postalCode": "{{ postcode_value | escape }}"{% endcapture %}{% assign address_parts = address_parts | push: postcode_prop %}{% endif %}
+{% if country_value != "" %}{% capture country_prop %}"addressCountry": "{{ country_value | escape }}"{% endcapture %}{% assign address_parts = address_parts | push: country_prop %}{% endif %}
+{% if address_parts.size > 0 %}
+  {% capture address_separator %},
+    {% endcapture %}
+  {% capture address_prop %}"address": {
+    {{ address_parts | join: address_separator }}
+  }{% endcapture %}
+  {% assign ld_properties = ld_properties | push: address_prop %}
+{% endif %}
+
+{% if ld_hours != "" %}
+  {% capture opening_prop %}"openingHours": "{{ ld_hours | escape }}"{% endcapture %}
+  {% assign ld_properties = ld_properties | push: opening_prop %}
+{% endif %}
+{% if ld_phone != "" %}
+  {% capture phone_prop %}"telephone": "{{ ld_phone | escape }}"{% endcapture %}
+  {% assign ld_properties = ld_properties | push: phone_prop %}
+{% endif %}
+{% if ld_email != "" %}
+  {% capture email_prop %}"email": "{{ ld_email | escape }}"{% endcapture %}
+  {% assign ld_properties = ld_properties | push: email_prop %}
+{% endif %}
+{% assign lat_value = page.lat | to_s | strip %}
+{% assign lon_value = page.lon | to_s | strip %}
+{% if lat_value != "" and lon_value != "" %}
+  {% capture geo_prop %}"geo": {
     "@type": "GeoCoordinates",
-    "latitude": {{ page.lat }},
-    "longitude": {{ page.lon }}
-  },
-  {% endif %}
-  {% if ld_website != "" %}
-  "sameAs": [
+    "latitude": {{ lat_value }},
+    "longitude": {{ lon_value }}
+  }{% endcapture %}
+  {% assign ld_properties = ld_properties | push: geo_prop %}
+{% endif %}
+{% if ld_website != "" %}
+  {% capture same_as_prop %}"sameAs": [
     "{{ ld_website | escape }}"
-  ]
-  {% endif %}
+  ]{% endcapture %}
+  {% assign ld_properties = ld_properties | push: same_as_prop %}
+{% endif %}
+{
+  {% capture ld_separator %},
+  {% endcapture %}
+  {{ ld_properties | join: ld_separator }}
 }
 </script>
