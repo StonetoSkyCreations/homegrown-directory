@@ -19,7 +19,10 @@ map: false
 {% assign sourced_from_text_clean = "" %}
 {% for entry in sourced_from_text_list %}
   {% assign value = entry | to_s | strip %}
-  {% assign looks_like_url = value contains '://' or value contains 'www.' %}
+  {% assign looks_like_url = false %}
+  {% if value contains '://' or value contains 'www.' %}
+    {% assign looks_like_url = true %}
+  {% endif %}
   {% unless looks_like_url or value == "" %}
     {% if sourced_from_text_clean == "" %}
       {% assign sourced_from_text_clean = value %}
@@ -36,7 +39,10 @@ map: false
 {% assign supplies_to_text_clean = "" %}
 {% for entry in supplies_to_text_list %}
   {% assign value = entry | to_s | strip %}
-  {% assign looks_like_url = value contains '://' or value contains 'www.' %}
+  {% assign looks_like_url = false %}
+  {% if value contains '://' or value contains 'www.' %}
+    {% assign looks_like_url = true %}
+  {% endif %}
   {% unless looks_like_url or value == "" %}
     {% if supplies_to_text_clean == "" %}
       {% assign supplies_to_text_clean = value %}
