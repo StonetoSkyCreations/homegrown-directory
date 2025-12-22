@@ -1,48 +1,73 @@
 ---
-title: Bella Olea
+layout: farm
+title: Bella Olea Organic Olive Grove
 slug: bella-olea
 collection: farms
 country_slug: new-zealand
 country: New Zealand
-region: Wellington
+region: Wairarapa
 city: Greytown
-address: Tauherenikau / outskirts of Greytown
-description: Family-owned BioGro-certified olive grove producing award-winning organic extra virgin olive oil, table olives and natural skincare.
+address: 1746 State Highway 2, Greytown (Tauwharenikau), Wairarapa 5794, New Zealand
+description: Family-run organic olive grove near Greytown producing award-winning extra virgin olive oil, table olives, and olive-based products.
+long_description: |
+  Bella Olea is a small, family-owned organic olive farm located on the outskirts
+  of Greytown in the Wairarapa. Run by Chris and Hilary Penman, the grove is
+  managed at a deliberately human scale, with a strong focus on soil health,
+  biodiversity, and long-term care for the land.
+
+  Across two grove sites, more than 2,000 olive trees are grown using certified
+  organic, spray-free, and regenerative practices. Rather than relying on
+  synthetic inputs, Bella Olea focuses on nourishing the soil through compost,
+  mulch, and diverse ground cover, allowing healthy trees and high-quality fruit
+  to emerge naturally from the system.
+
+  All olives are hand-harvested and carefully crafted into premium extra virgin
+  olive oils, including award-winning single-varietal and grove blends. In
+  addition to olive oil, Bella Olea produces table olives, olive leaf tinctures,
+  and a range of olive-based body care products, ensuring the harvest is used
+  thoughtfully and with minimal waste.
+
+  Bella Olea is deeply aligned with local food systems, selling directly through
+  farmers' markets and encouraging circular practices such as jar returns to
+  reduce waste. Their approach reflects a broader philosophy of stewardship:
+  growing food slowly, respectfully, and in relationship with place.
 practices:
-- certified-organic
-- spray-free
-- regenerative
+- Organic (certified)
+- Spray-free
+- Regenerative
 products:
-- extra virgin olive oil (Koroneiki, Grove Blend, lemon-infused)
-- table olives
-- olive leaf tincture
-- body lotions and skin balms
+- Extra virgin olive oil
+- Olive oil blends
+- Table olives
+- Olive leaf tincture
+- Skincare
 services:
-- direct sales via Facebook and local markets
-- supplies Little Farms pantry items
-website: null
+- Farmers market stall
+- Direct sales
+website: https://bellaolea.co.nz
 email: chris@bellaolea.co.nz
-phone: 021 611 343
+phone: +64 21 611 343
 social:
 - https://facebook.com/BellaOleaOlives/
 hours: null
 market_days: []
-lat: -45.8675512
-lon: 170.52043048177836
+lat: -41.10987249949066
+lon: 175.40238945861478
 last_checked: '2025-12-11'
-subtype: mixed
+subtype: orchard
 source_urls:
+- https://bellaolea.co.nz
 - https://www.olivesnz.org.nz/our-growers/wairarapa/
-practices_tags: []
+practices_tags:
+- Organic (certified)
+- Spray-free
+- Regenerative
 products_tags: []
 services_tags: []
-certifications: []
+certifications:
+- Organic Farm NZ
 specialty_tags: []
 sourced_from: []
-supplies_to:
-- little-farms
-relationships_declared: true
+supplies_to: []
+relationships_declared: false
 ---
-Bella Olea is a family-owned olive grove on the outskirts of Greytown. With just under 1,000 trees, the grove produces award-winning certified-organic olive oil along with table olives, body lotions, skin balms and olive leaf tincture. The olives are grown without synthetic chemicals, and the family manages the entire process from grove to bottle. Their oils – such as the Koroneiki single-variety and the blended Grove oil – have earned medals in national competitions.
-
-Bella Olea also handcrafts skincare products using olive oil as a base, creating moisturising balms and lotions free from artificial additives. Customers can purchase their products through the grove's Facebook page or in Little Farms' pantry section. In addition to supplying Little Farms, the Penman family regularly participates in local olive festivals and welcomes enquiries via email or phone.
