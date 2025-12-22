@@ -25,13 +25,19 @@ seo_description: >
       <label for="searchInput" class="muted">Search by city, region, product, or business name…</label>
       <input id="searchInput" type="search" placeholder="Try “Wellington organic”" autocomplete="off">
     </div>
+    <div class="hero__cta">
+      <a class="button" href="#directory">Browse the directory</a>
+    </div>
   </div>
   <div class="hero__actions">
-    <button class="button" type="button" data-type-filter="grocer">Find Groceries</button>
-    <button class="button" type="button" data-type-filter="restaurant">Find Eateries</button>
-    <button class="button" type="button" data-type-filter="market">Find Markets</button>
-    <button class="button" type="button" data-type-filter="distributor">Find Hubs &amp; Distributors</button>
-    <button class="button" type="button" data-type-filter="farm">Find Farms &amp; Producers</button>
+    <p class="eyebrow">Browse categories</p>
+    <div class="hero__category-grid">
+      <button class="button ghost" type="button" data-type-filter="grocer">Find Groceries</button>
+      <button class="button ghost" type="button" data-type-filter="restaurant">Find Eateries</button>
+      <button class="button ghost" type="button" data-type-filter="market">Find Markets</button>
+      <button class="button ghost" type="button" data-type-filter="distributor">Find Hubs &amp; Distributors</button>
+      <button class="button ghost" type="button" data-type-filter="farm">Find Farms &amp; Producers</button>
+    </div>
   </div>
 </section>
 
@@ -51,9 +57,9 @@ seo_description: >
   %}
 {% endif %}
 
-<section class="search-section search-section--home">
+<section class="search-section search-section--home" id="directory">
   <div class="results-toolbar">
-    <div id="resultsCount" class="muted">Loading listings…</div>
+    <div id="resultsCount" class="muted results-count is-loading">Loading listings…</div>
   </div>
   <div class="results-layout">
     <div id="listingResults" class="listing-grid listing-grid--tight" aria-live="polite"></div>

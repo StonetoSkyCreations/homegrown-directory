@@ -102,7 +102,7 @@ Filters read:
     <div>
       <span class="pill pill--type">{{ card_label }}</span>
       {% if include.featured %}
-        <span class="featured-badge">⭐ Featured</span>
+        <span class="featured-badge">Featured</span>
       {% endif %}
     </div>
     {% if has_street or has_coords %}
@@ -131,7 +131,7 @@ Filters read:
     {% endif %}
     {% include rating.html listing=listing %}
     <div class="listing-card__actions">
-      <a class="button ghost" href="{{ listing.url | relative_url }}">Learn more</a>
+      <a class="button ghost button--sm" href="{{ listing.url | relative_url }}">Learn more</a>
     </div>
   </div>
 </article>

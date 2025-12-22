@@ -48,12 +48,12 @@
   };
 
   const typeColors = {
-    farms: "#2b7a0b",
-    markets: "#ff8a3d",
-    stores: "#2d6cdf",
-    restaurants: "#a05c1f",
-    vendors: "#a05c1f",
-    distributors: "#725ac1"
+    farms: "#2f5b3f",
+    markets: "#c27d38",
+    stores: "#3c6b73",
+    restaurants: "#8b4f2a",
+    vendors: "#8b4f2a",
+    distributors: "#6d7a3c"
   };
 
   // Canonical type tokens used across filters and audits
@@ -584,7 +584,7 @@
       const metaContainer = card.querySelector(".listing-card__meta > div");
       if (!metaContainer) return;
       if (!metaContainer.querySelector(".featured-badge")) {
-        metaContainer.insertAdjacentHTML("beforeend", '<span class="featured-badge">⭐ Featured</span>');
+        metaContainer.insertAdjacentHTML("beforeend", '<span class="featured-badge">Featured</span>');
       }
     };
 
@@ -761,7 +761,7 @@
           <div class="listing-card__meta">
             <div>
               <span class="pill pill--type">${typeLabels[item.collection] || item.type}</span>
-              ${isFeatured ? '<span class="featured-badge">⭐ Featured</span>' : ""}
+              ${isFeatured ? '<span class="featured-badge">Featured</span>' : ""}
             </div>
             <span class="listing-card__location">${locText}</span>
             <p class="listing-card__distance" data-distance hidden></p>
@@ -774,6 +774,9 @@
               ? `<ul class="tag-list">${tagsMarkup}</ul>`
               : `<p class="muted">Details coming soon.</p>`
           }
+        </div>
+        <div class="listing-card__actions">
+          <a class="button ghost button--sm" href="${item.url}">Learn more</a>
         </div>
       </article>
     `;
@@ -794,6 +797,7 @@
       resultsContainer.innerHTML = items.map(cardTemplate).join("");
     }
     if (resultsCount) {
+      resultsCount.classList.remove("is-loading");
       if (!hasActive && items.length === 0) {
         resultsCount.textContent = "";
       } else {
@@ -1109,6 +1113,9 @@
     if (mapShouldStartOpen && !map) {
       openMap();
     }
+    if (resultsCount) {
+      resultsCount.classList.add("is-loading");
+    }
     try {
       const url = window.HG_INDEX_URL || "/search.json";
       const response = await fetch(url);
@@ -1124,6 +1131,7 @@
     } catch (err) {
       console.error("Failed to load search index", err);
       if (resultsCount) resultsCount.textContent = "Could not load listings right now.";
+      if (resultsCount) resultsCount.classList.remove("is-loading");
       if (mapShouldStartOpen && map) {
         refreshMap([]);
       }
