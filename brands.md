@@ -28,11 +28,12 @@ seo_description: "Browse multi-location brand umbrellas and jump to their indivi
       {% endfor %}
       <article class="listing-card">
         <div class="listing-card__meta">
-          <span class="pill pill--type">Brand</span>
-          <span class="listing-card__location">{{ brand.country | default: "Multi-region" }}</span>
+          <span class="badge badge--meta badge--type">Brand</span>
         </div>
         <h3 class="listing-card__title">{{ brand.title }}</h3>
-        {% if brand.description %}<p class="listing-card__summary">{{ brand.description }}</p>{% endif %}
+        <div class="listing-card__location-block">
+          <span class="listing-card__location">{{ brand.country | default: "Multi-region" }}</span>
+        </div>
         <div class="listing-card__tags">
           {% if location_docs and location_docs != empty %}
             <p class="muted">{{ location_docs.size }} location{% if location_docs.size != 1 %}s{% endif %}</p>
@@ -45,6 +46,7 @@ seo_description: "Browse multi-location brand umbrellas and jump to their indivi
             <p class="muted">No locations linked yet.</p>
           {% endif %}
         </div>
+        {% if brand.description %}<p class="listing-card__summary">{{ brand.description }}</p>{% endif %}
       </article>
     {% endfor %}
   </div>

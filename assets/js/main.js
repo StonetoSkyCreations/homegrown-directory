@@ -39,12 +39,12 @@
   let auditHasRun = false;
 
   const typeLabels = {
-    farms: "Farms",
-    markets: "Markets",
-    stores: "Grocers",
-    restaurants: "Eateries",
-    vendors: "Eateries",
-    distributors: "Hubs"
+    farms: "Farm",
+    markets: "Market",
+    stores: "Grocer",
+    restaurants: "Eatery",
+    vendors: "Eatery",
+    distributors: "Hub"
   };
 
   const typeColors = {
@@ -69,6 +69,19 @@
     vendors: "restaurant",
     distributors: "distributor",
     distributor: "distributor"
+  };
+
+  const TYPE_ICONS = {
+    grocer:
+      '<svg class="icon icon--grocer" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16l-1.8 9H5.8L4 10Z"></path><path d="M9 10l3-4 3 4"></path></svg>',
+    restaurant:
+      '<svg class="icon icon--restaurant" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v7"></path><path d="M5 3v4"></path><path d="M9 3v4"></path><path d="M7 10v11"></path><path d="M14 3v18"></path><path d="M14 3c3 0 3 5 0 5"></path></svg>',
+    market:
+      '<svg class="icon icon--market" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16"></path><path d="M5 10l1-4h12l1 4"></path><path d="M6 10v8h12v-8"></path><path d="M9 18v-5h6v5"></path></svg>',
+    distributor:
+      '<svg class="icon icon--distributor" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2"></circle><circle cx="18" cy="6" r="2"></circle><circle cx="18" cy="18" r="2"></circle><path d="M8 12h6"></path><path d="M16 8l-2 2"></path><path d="M16 16l-2-2"></path></svg>',
+    farm:
+      '<svg class="icon icon--farm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c7-1 12-6 14-14-8 2-13 7-14 14Z"></path><path d="M5 19c3-3 6-5 10-7"></path></svg>'
   };
 
   const DIRECTORY_PATHS = {
@@ -581,10 +594,13 @@
       if (!card) return;
       card.classList.add("listing-card--featured");
       card.dataset.featured = "true";
-      const metaContainer = card.querySelector(".listing-card__meta > div");
+      const metaContainer = card.querySelector(".listing-card__meta");
       if (!metaContainer) return;
-      if (!metaContainer.querySelector(".featured-badge")) {
-        metaContainer.insertAdjacentHTML("beforeend", '<span class="featured-badge">Featured</span>');
+      if (!metaContainer.querySelector(".badge--featured")) {
+        metaContainer.insertAdjacentHTML(
+          "beforeend",
+          '<span class="badge badge--verified badge--featured">Featured</span>'
+        );
       }
     };
 
@@ -756,18 +772,21 @@
       const region = item.region || "";
       const locText = city && region ? `${city}, ${region}` : city || region || "Location not provided";
       const isFeatured = isFeaturedItem(item);
+      const typeToken = TYPE_TOKENS[item.collection] || item.type;
+      const iconMarkup = TYPE_ICONS[typeToken] || "";
+      const summary = (item.description || "").trim();
+      const summaryMarkup = summary ? `<p class="listing-card__summary">${summary}</p>` : "";
       return `
         <article class="listing-card${isFeatured ? " listing-card--featured" : ""}" data-lat="${item.lat ?? ""}" data-lon="${item.lon ?? ""}">
           <div class="listing-card__meta">
-            <div>
-              <span class="pill pill--type">${typeLabels[item.collection] || item.type}</span>
-              ${isFeatured ? '<span class="featured-badge">Featured</span>' : ""}
-            </div>
-            <span class="listing-card__location">${locText}</span>
-            <p class="listing-card__distance" data-distance hidden></p>
+            <span class="badge badge--meta badge--type">${iconMarkup}${typeLabels[item.collection] || item.type}</span>
+            ${isFeatured ? '<span class="badge badge--verified badge--featured">Featured</span>' : ""}
           </div>
         <h3 class="listing-card__title"><a href="${item.url}">${item.title}</a></h3>
-        <p class="listing-card__summary">${item.description || ""}</p>
+        <div class="listing-card__location-block">
+          <span class="listing-card__location">${locText}</span>
+          <p class="listing-card__distance" data-distance hidden></p>
+        </div>
         <div class="listing-card__tags">
           ${
             tagsMarkup
@@ -775,8 +794,9 @@
               : `<p class="muted">Details coming soon.</p>`
           }
         </div>
+        ${summaryMarkup}
         <div class="listing-card__actions">
-          <a class="button ghost button--sm" href="${item.url}">Learn more</a>
+          <a class="text-link" href="${item.url}">Learn more</a>
         </div>
       </article>
     `;

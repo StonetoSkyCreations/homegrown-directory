@@ -20,7 +20,7 @@ layout: default
     <p class="muted">Insights, research, and stories shaping transparent, organic, and regenerative food systems.</p>
     <div class="blog__actions">
       {% if page.cta_button %}
-      <a class="button ghost" href="{{ '/blog/submit/' | relative_url }}">Submit an article</a>
+      <a class="button" href="{{ '/blog/submit/' | relative_url }}">Submit an article</a>
       {% endif %}
     </div>
   </header>
@@ -29,7 +29,10 @@ layout: default
     {% if paginated_posts and paginated_posts.size > 0 %}
       {% for post in paginated_posts %}
         <article class="blog-card">
-          <p class="pill pill--type">Article</p>
+          <span class="badge badge--meta badge--type">
+            {% include icon.html name="article" %}
+            Article
+          </span>
           <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
           <p class="muted blog-card__meta">{{ post.date | date: "%-d %B %Y" }}{% if post.author %} · {{ post.author }}{% endif %}{% if post.tags %} · {{ post.tags | join: ", " }}{% endif %}</p>
           {% if post.summary %}
@@ -38,7 +41,7 @@ layout: default
           {% if post.tags %}
             <p class="blog-card__tags">
               {% for tag in post.tags %}
-                <span class="pill pill--tag">{{ tag }}</span>
+                <span class="badge badge--meta">{{ tag }}</span>
               {% endfor %}
             </p>
           {% endif %}

@@ -50,6 +50,7 @@
   {% assign has_coords = true %}
 {% endif %}
 {% assign map_query = card_address | uri_escape %}
+{% assign summary_text = listing.description | default: listing.excerpt | strip_html | strip %}
 {% case collection_key %}
   {% when 'stores' %}
     {% assign type_token = 'grocer' %}
@@ -99,12 +100,16 @@ Filters read:
   data-practices="{{ practices_joined | downcase | escape }}"
   data-products="{% if products_array and products_array != empty %}{{ products_array | join: ',' | downcase }}{% endif %}">
   <div class="listing-card__meta">
-    <div>
-      <span class="pill pill--type">{{ card_label }}</span>
-      {% if include.featured %}
-        <span class="featured-badge">Featured</span>
-      {% endif %}
-    </div>
+    <span class="badge badge--meta badge--type">
+      {% include icon.html name=type_token %}
+      {{ card_label }}
+    </span>
+    {% if include.featured %}
+      <span class="badge badge--verified badge--featured">Featured</span>
+    {% endif %}
+  </div>
+  <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ card_title }}</a></h3>
+  <div class="listing-card__location-block">
     {% if has_street or has_coords %}
       <a class="listing-card__location-link"
         href="https://www.google.com/maps/search/?api=1&query={{ card_address | uri_escape }}"
@@ -117,8 +122,6 @@ Filters read:
     {% endif %}
     <p class="listing-card__distance" data-distance hidden></p>
   </div>
-  <h3 class="listing-card__title"><a href="{{ listing.url | relative_url }}">{{ card_title }}</a></h3>
-  <p class="listing-card__summary">{{ listing.description | default: listing.excerpt | strip_html | truncate: 130 }}</p>
   <div class="listing-card__tags">
     {% if practices_tags and practices_tags.size > 0 %}
     <ul class="tag-list">
@@ -129,9 +132,12 @@ Filters read:
     {% else %}
     <p class="muted">Learn more.</p>
     {% endif %}
-    {% include rating.html listing=listing %}
-    <div class="listing-card__actions">
-      <a class="button ghost button--sm" href="{{ listing.url | relative_url }}">Learn more</a>
-    </div>
+  </div>
+  {% if summary_text != "" %}
+    <p class="listing-card__summary">{{ summary_text | truncate: 130 }}</p>
+  {% endif %}
+  {% include rating.html listing=listing %}
+  <div class="listing-card__actions">
+    <a class="text-link" href="{{ listing.url | relative_url }}">Learn more</a>
   </div>
 </article>
