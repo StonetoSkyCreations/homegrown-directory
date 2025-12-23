@@ -17,9 +17,7 @@ seo_description: >
         <select id="heroRegion">
           <option value="all">All regions</option>
         </select>
-        <button type="button" class="button ghost" data-near-me>Near me</button>
       </div>
-      <span class="muted near-me-status" data-near-me-status></span>
     </div>
     <div class="search-controls">
       <label for="searchInput" class="muted">Search by city, region, product, or business name…</label>
@@ -75,6 +73,10 @@ seo_description: >
 <section class="search-section search-section--home" id="directory">
   <div class="results-toolbar">
     <div id="resultsCount" class="muted results-count is-loading">Loading listings…</div>
+    <div class="results-actions">
+      <button type="button" class="button ghost button--sm" data-near-me>Near me</button>
+      <span class="muted near-me-status" data-near-me-status></span>
+    </div>
   </div>
   <div class="results-layout">
     <div id="listingResults" class="listing-grid listing-grid--tight" aria-live="polite"></div>

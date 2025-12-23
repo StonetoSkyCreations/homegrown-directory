@@ -1362,6 +1362,17 @@ html[data-theme="dark"] .about-close::before {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.results-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+.results-actions .near-me-status {
+  margin-left: 0;
 }
 .results-count {
   font-weight: 600;

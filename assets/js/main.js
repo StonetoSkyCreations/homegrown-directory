@@ -1184,7 +1184,11 @@
     searchInput.addEventListener("input", applyFilters);
   }
   if (heroRegionSelect) {
-    heroRegionSelect.addEventListener("change", applyFilters);
+    heroRegionSelect.addEventListener("change", () => {
+      applyFilters();
+      const target = document.getElementById("directory") || document.getElementById("listingResults");
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }
   if (filtersForm) {
     filtersForm.addEventListener("change", applyFilters);
