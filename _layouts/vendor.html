@@ -81,7 +81,7 @@ map: false
       <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}">Update listing</a>
       <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}">Review this place</a>
     </div>
-    {% assign sourcing_list = page.sourcing_tags | default: empty_array | where_exp: "item", "item != nil and item != ''" %}
+    {% assign sourcing_list = page.sourcing_tags | default: empty_array | where_exp: "item", "item != blank" %}
     {% if sourcing_list and sourcing_list.size > 0 %}
       <div>
         <h2>Sourcing</h2>
@@ -93,7 +93,7 @@ map: false
       </div>
     {% endif %}
 
-    {% assign products_list = page.products_or_cuisine | default: empty_array | where_exp: "item", "item != nil and item != ''" %}
+    {% assign products_list = page.products_or_cuisine | default: empty_array | where_exp: "item", "item != blank" %}
     {% if products_list and products_list.size > 0 %}
       <div>
         <h2>Products or cuisine</h2>
@@ -105,7 +105,7 @@ map: false
       </div>
     {% endif %}
 
-    {% assign suppliers_list = page.suppliers | default: empty_array | where_exp: "item", "item != nil and item != ''" %}
+    {% assign suppliers_list = page.suppliers | default: empty_array | where_exp: "item", "item != blank" %}
     {% if suppliers_list and suppliers_list.size > 0 %}
       <div>
         <h2>Suppliers</h2>
