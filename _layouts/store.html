@@ -201,13 +201,13 @@ map: false
       </div>
     {% endif %}
 
-    {% assign supplies_link_count = outgoing_supplies | size %}
-    {% if supplies_link_count > 0 %}
+    {% assign source_link_count = source_partners | size %}
+    {% if source_link_count > 0 %}
       <div class="listing__section">
-        <h2>Supplies to</h2>
-        {% if supplies_link_count > 0 %}
-        <ul class="link-list">
-          {% for item in outgoing_supplies %}
+        <h2>Sourced from</h2>
+        {% if source_link_count > 0 %}
+        <ul class="link-list relationship-list">
+          {% for item in source_partners %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
           {% endfor %}
         </ul>
@@ -215,13 +215,13 @@ map: false
       </div>
     {% endif %}
 
-    {% assign source_link_count = source_partners | size %}
-    {% if source_link_count > 0 %}
+    {% assign supplies_link_count = outgoing_supplies | size %}
+    {% if supplies_link_count > 0 %}
       <div class="listing__section">
-        <h2>Sourced from</h2>
-        {% if source_link_count > 0 %}
-        <ul class="link-list">
-          {% for item in source_partners %}
+        <h2>Supplies to</h2>
+        {% if supplies_link_count > 0 %}
+        <ul class="link-list relationship-list">
+          {% for item in outgoing_supplies %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
           {% endfor %}
         </ul>

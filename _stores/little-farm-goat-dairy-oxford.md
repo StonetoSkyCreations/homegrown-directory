@@ -62,10 +62,10 @@ sourced_from: []
 supplies_to:
 - piko-wholefoods-chch
 - harbour-co-op-lyttelton
+- black-estate-waipara
+- greystone-wines-waipara
 relationships_declared: true
 supplies_to_text:
 - arbour-bar-lyttelton
-- black-estate-winery-waipara
-- greystone-winery-waipara
 - georges-road-wines-waipara
 ---

@@ -89,29 +89,7 @@ supplies_to:
 - freshchoice-nelson-city
 - bliss-box
 - live2give-organics
-supplies_to_text:
-- Ilex Cafe Botanic Gardens
-- Gatherings Restaurant
-- Black Estate (Waipara)
-- Greystone Wines (Waipara)
-- "Pomeroy\u2019s Pub (Christchurch)"
-- Cellar Door (Christchurch)
-- Alpine Grind (Methven)
-- Green Dinner Table
-- Piko Wholefoods
-- GoodFor (The Welder, Welles St)
-- Selwyn Co-op
-- Soul Food Organics (Queenstown)
-- New World St Martins
-- New World Durham St
-- New World Fendalton
-- New World Lincoln
-- New World Halswell
-- New World Queenstown
-- FreshChoice Merivale
-- FreshChoice Nelson City
-- Bliss Box (formerly Ooooby)
-- Live2Give Organics
+supplies_to_text: []
 relationships_declared: true
 ---
 Streamside Organics began in 2014 on a single acre of leased land. What started as a small, hands-on experiment in feeding a local community has grown into one of Canterbury's most respected organic market gardens: a 50-acre certified organic farm supplying thousands of households each week.

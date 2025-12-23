@@ -234,7 +234,7 @@ map: false
       <div class="listing__section">
         <h2>Sourced from</h2>
         {% if source_link_count > 0 %}
-        <ul class="link-list">
+        <ul class="link-list relationship-list">
           {% for item in source_partners %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
           {% endfor %}
@@ -248,7 +248,7 @@ map: false
       <div class="listing__section">
         <h2>Supplies to</h2>
         {% if supplies_link_count > 0 %}
-        <ul class="link-list">
+        <ul class="link-list relationship-list">
           {% for item in outgoing_supplies %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
           {% endfor %}
@@ -260,7 +260,7 @@ map: false
     {% if incoming_sources and incoming_sources.size > 0 %}
       <div class="listing__section">
         <h2>Also referenced by</h2>
-        <ul class="link-list">
+        <ul class="link-list relationship-list">
           {% for item in incoming_sources %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
           {% endfor %}

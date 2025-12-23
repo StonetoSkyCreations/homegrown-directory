@@ -2075,6 +2075,29 @@ html[data-theme="dark"] .article {
   display: grid;
   gap: var(--space-2);
 }
+.relationship-list li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-2);
+}
+.relationship-list a {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+.relationship-list a:hover,
+.relationship-list a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.relationship-list .muted {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
 
 .collection-index {
   background: var(--card);

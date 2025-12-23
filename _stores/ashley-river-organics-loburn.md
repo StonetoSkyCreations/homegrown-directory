@@ -80,8 +80,8 @@ specialty_tags:
 sourced_from: []
 supplies_to:
 - harbour-co-op-lyttelton
-supplies_to_text:
-- Streamside Organics
-- Bliss Box NZ
+- streamside-organics
+- bliss-box
+supplies_to_text: []
 relationships_declared: true
 ---
