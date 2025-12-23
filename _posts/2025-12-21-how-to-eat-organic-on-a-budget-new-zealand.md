@@ -18,7 +18,7 @@ seo_description: "A practical, science-based guide for Kiwis on eating organic o
 
 A calm, science-based guide for everyday Kiwis (no guilt, no panic).
 
-Looking for organic, spray-free, or regenerative growers near you? [Explore the Homegrown Directory](/markets-directory/) to find local producers, farmers’ markets, and veg boxes across New Zealand.
+Looking for organic, spray-free, or regenerative growers near you? [Explore the Homegrown Directory](/) to find local producers, farmers’ markets, and veg boxes across New Zealand.
 
 ## Quick take (if you’re busy)
 - Eat plenty of fruit and veg first. Organic helps, but “more plants” matters most.
