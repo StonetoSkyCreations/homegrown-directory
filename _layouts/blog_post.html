@@ -74,10 +74,14 @@
         <div class="article__meta">
           <span>{{ page.date | date: "%-d %B %Y" }}</span>
           {% if page.author %}<span>· {{ page.author }}</span>{% endif %}
-          {% if page.tags %}
-            <span>· {{ page.tags | join: ", " }}</span>
-          {% endif %}
         </div>
+        {% if page.tags %}
+          <div class="article__tags">
+            {% for tag in page.tags %}
+              <span class="badge badge--meta">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
         {% if page.summary %}
           <p class="lead">{{ page.summary }}</p>
         {% endif %}

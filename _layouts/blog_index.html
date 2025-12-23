@@ -13,11 +13,11 @@ layout: default
   {% assign total_pages = total_pages | plus: 1 %}
 {% endif %}
 
-<section class="blog">
+<section class="blog page--blog">
   <header class="blog__header">
     <p class="eyebrow">Insights & Stories</p>
     <h1>Blog</h1>
-    <p class="muted">Insights, research, and stories shaping transparent, organic, and regenerative food systems.</p>
+    <p class="lead blog__intro">Insights, research, and stories shaping transparent, organic, and regenerative food systems.</p>
     <div class="blog__actions">
       {% if page.cta_button %}
       <a class="button" href="{{ '/blog/submit/' | relative_url }}">Submit an article</a>
@@ -25,56 +25,63 @@ layout: default
     </div>
   </header>
 
-  <div class="blog-list">
-    {% if paginated_posts and paginated_posts.size > 0 %}
-      {% for post in paginated_posts %}
-        <article class="blog-card">
-          <span class="badge badge--meta badge--type">
-            {% include icon.html name="article" %}
-            Article
-          </span>
-          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-          <p class="muted blog-card__meta">{{ post.date | date: "%-d %B %Y" }}{% if post.author %} · {{ post.author }}{% endif %}{% if post.tags %} · {{ post.tags | join: ", " }}{% endif %}</p>
-          {% if post.summary %}
-            <p class="blog-card__summary">{{ post.summary }}</p>
+  <div class="blog__feed">
+    <div class="blog-list">
+      {% if paginated_posts and paginated_posts.size > 0 %}
+        {% for post in paginated_posts %}
+          <article class="blog-card">
+            <div class="blog-card__header">
+              <span class="badge badge--meta badge--type">
+                {% include icon.html name="article" %}
+                Article
+              </span>
+              <p class="blog-card__meta">{{ post.date | date: "%-d %B %Y" }}{% if post.author %} · {{ post.author }}{% endif %}</p>
+            </div>
+            <h2 class="blog-card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+            {% if post.summary %}
+              <p class="blog-card__summary">{{ post.summary }}</p>
+            {% endif %}
+            <div class="blog-card__footer">
+              {% if post.tags %}
+                <div class="blog-card__tags">
+                  {% for tag in post.tags %}
+                    <span class="badge badge--meta">{{ tag }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+              <a class="text-link" href="{{ post.url | relative_url }}">Read article</a>
+            </div>
+          </article>
+        {% endfor %}
+      {% else %}
+        <p class="muted">No articles yet. Check back soon.</p>
+      {% endif %}
+    </div>
+
+    {% if total_pages > 1 %}
+      {% assign prev_page = page_num | minus: 1 %}
+      {% assign next_page = page_num | plus: 1 %}
+      <nav class="pagination" aria-label="Blog pagination">
+        {% if prev_page >= 1 %}
+          {% if prev_page == 1 %}
+            {% assign prev_href = '/blog/' %}
+          {% else %}
+            {% assign prev_href = '/blog/page' | append: prev_page | append: '/' %}
           {% endif %}
-          {% if post.tags %}
-            <p class="blog-card__tags">
-              {% for tag in post.tags %}
-                <span class="badge badge--meta">{{ tag }}</span>
-              {% endfor %}
-            </p>
-          {% endif %}
-        </article>
-      {% endfor %}
-    {% else %}
-      <p class="muted">No articles yet. Check back soon.</p>
+          <a class="button ghost" href="{{ prev_href | relative_url }}">&larr; Newer posts</a>
+        {% else %}
+          <span class="button ghost disabled">Newer posts</span>
+        {% endif %}
+
+        <span class="muted">Page {{ page_num }} of {{ total_pages }}</span>
+
+        {% if next_page <= total_pages %}
+          {% assign next_href = '/blog/page' | append: next_page | append: '/' %}
+          <a class="button ghost" href="{{ next_href | relative_url }}">Older posts &rarr;</a>
+        {% else %}
+          <span class="button ghost disabled">Older posts</span>
+        {% endif %}
+      </nav>
     {% endif %}
   </div>
-
-  {% if total_pages > 1 %}
-    {% assign prev_page = page_num | minus: 1 %}
-    {% assign next_page = page_num | plus: 1 %}
-    <nav class="pagination" aria-label="Blog pagination">
-      {% if prev_page >= 1 %}
-        {% if prev_page == 1 %}
-          {% assign prev_href = '/blog/' %}
-        {% else %}
-          {% assign prev_href = '/blog/page' | append: prev_page | append: '/' %}
-        {% endif %}
-        <a class="button ghost" href="{{ prev_href | relative_url }}">&larr; Newer posts</a>
-      {% else %}
-        <span class="button ghost disabled">Newer posts</span>
-      {% endif %}
-
-      <span class="muted">Page {{ page_num }} of {{ total_pages }}</span>
-
-      {% if next_page <= total_pages %}
-        {% assign next_href = '/blog/page' | append: next_page | append: '/' %}
-        <a class="button ghost" href="{{ next_href | relative_url }}">Older posts &rarr;</a>
-      {% else %}
-        <span class="button ghost disabled">Older posts</span>
-      {% endif %}
-    </nav>
-  {% endif %}
 </section>
