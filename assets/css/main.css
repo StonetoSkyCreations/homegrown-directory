@@ -96,9 +96,12 @@ body::after {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(47, 91, 63, 0.16) 0%,
-    rgba(47, 91, 63, 0.08) 28%,
-    rgba(47, 91, 63, 0) 60%
+    rgba(47, 91, 63, 0.2) 0%,
+    rgba(47, 91, 63, 0.14) 22%,
+    rgba(47, 91, 63, 0.09) 45%,
+    rgba(47, 91, 63, 0.05) 68%,
+    rgba(47, 91, 63, 0.02) 86%,
+    rgba(47, 91, 63, 0) 115%
   );
   pointer-events: none;
   z-index: -1;
@@ -114,9 +117,12 @@ html[data-theme="dark"] body::before {
 html[data-theme="dark"] body::after {
   background: linear-gradient(
     180deg,
-    rgba(127, 201, 160, 0.18) 0%,
-    rgba(127, 201, 160, 0.1) 28%,
-    rgba(127, 201, 160, 0) 60%
+    rgba(127, 201, 160, 0.22) 0%,
+    rgba(127, 201, 160, 0.16) 22%,
+    rgba(127, 201, 160, 0.1) 45%,
+    rgba(127, 201, 160, 0.06) 68%,
+    rgba(127, 201, 160, 0.03) 86%,
+    rgba(127, 201, 160, 0) 115%
   );
 }
 
