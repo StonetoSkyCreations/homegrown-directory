@@ -159,7 +159,7 @@ map: false
       {% endif %}
     {% endfor %}
     {% if practice_clean and practice_clean.size > 0 %}
-      <div>
+      <div class="listing__section">
         <h2>Practices</h2>
         <ul class="tag-list">
           {% for item in practice_clean %}
@@ -176,7 +176,7 @@ map: false
       {% endif %}
     {% endfor %}
     {% if products_list and products_list.size > 0 %}
-      <div>
+      <div class="listing__section">
         <h2>Products</h2>
         <ul class="tag-list">
           {% for item in products_list %}
@@ -197,7 +197,7 @@ map: false
       {% endif %}
     {% endfor %}
     {% if services_clean and services_clean.size > 0 %}
-      <div>
+      <div class="listing__section">
         <h2>Services & sales channels</h2>
         <ul class="tag-list">
           {% for service in services_clean %}
@@ -215,7 +215,7 @@ map: false
       {% endif %}
     {% endfor %}
     {% if sourcing_list and sourcing_list.size > 0 %}
-      <div>
+      <div class="listing__section">
         <h2>Sourcing</h2>
         <ul class="tag-list">
           {% for tag in sourcing_list %}
@@ -233,7 +233,7 @@ map: false
       {% endif %}
     {% endfor %}
     {% if market_days_list and market_days_list.size > 0 %}
-      <div>
+      <div class="listing__section">
         <h2>Market days</h2>
         <ul class="tag-list">
           {% for day in market_days_list %}
@@ -246,7 +246,7 @@ map: false
     {% assign supplies_link_count = outgoing_supplies | size %}
     {% assign supplies_text_count = supplies_to_text_clean | size %}
     {% if supplies_link_count > 0 or supplies_text_count > 0 %}
-      <div>
+      <div class="listing__section">
         <h2>Supplies to</h2>
         {% if supplies_link_count > 0 %}
         <ul class="link-list">
@@ -268,7 +268,7 @@ map: false
     {% assign source_link_count = source_partners | size %}
     {% assign source_text_count = sourced_from_text_clean | size %}
     {% if source_link_count > 0 or source_text_count > 0 %}
-      <div>
+      <div class="listing__section">
         <h2>Sourced from</h2>
         {% if source_link_count > 0 %}
         <ul class="link-list">
@@ -288,7 +288,7 @@ map: false
     {% endif %}
 
 {% if page.notes %}
-      <div>
+      <div class="listing__section">
         <h2>Notes</h2>
         <p class="muted">{{ page.notes }}</p>
       </div>
