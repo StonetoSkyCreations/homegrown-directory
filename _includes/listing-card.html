@@ -82,6 +82,7 @@ Filters read:
 - data-collection: canonical type token per collection (farm, market, grocer, restaurant, distributor)
 - data-type/data-subtype: subtype tokens used on directory pages (cafe, restaurant, vineyard, etc.)
 - data-region/data-country: geographic filters use these values
+- data-address: free-text location match in directory search
 - data-practices: comma-joined practices/products/services for tag filters
 - data-products: comma-joined product tokens (products_tags > products)
 {%- endcomment -%}
@@ -89,6 +90,7 @@ Filters read:
   data-slug="{{ listing.slug | escape }}"
   data-region="{{ listing.region | escape }}"
   data-city="{{ listing.city | default: listing.city_town | escape }}"
+  data-address="{{ card_address | escape }}"
   data-name="{{ card_title | escape }}"
   data-type="{{ subtype_token | escape }}"
   data-subtype="{{ subtype_token | escape }}"

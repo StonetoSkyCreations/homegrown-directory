@@ -695,6 +695,7 @@
         const country = normalizeCountry(card.dataset.country);
         const name = normalizeToken(card.dataset.name);
         const city = normalizeToken(card.dataset.city);
+        const address = normalizeToken(card.dataset.address);
 
         const regionOk = selectedRegion === "all" || region === selectedRegion;
         const tagsOk = selectedTags.every((t) => practices.includes(t));
@@ -706,6 +707,7 @@
           name.includes(query) ||
           region.includes(query) ||
           city.includes(query) ||
+          address.includes(query) ||
           practices.some((p) => p.includes(query)) ||
           products.some((p) => p.includes(query));
 
@@ -844,6 +846,9 @@
     if (item.region) haystackParts.push(item.region);
     if (item.city) haystackParts.push(item.city);
     if (item.country) haystackParts.push(item.country);
+    if (item.address) haystackParts.push(item.address);
+    if (item.geo_label) haystackParts.push(item.geo_label);
+    if (item.geo_query) haystackParts.push(item.geo_query);
     if (item.type_token) haystackParts.push(item.type_token);
     if (item.subtype_token) haystackParts.push(item.subtype_token);
 
