@@ -90,11 +90,34 @@ body::before {
   z-index: -1;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(47, 91, 63, 0.16) 0%,
+    rgba(47, 91, 63, 0.08) 28%,
+    rgba(47, 91, 63, 0) 60%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
 html[data-theme="dark"] body::before {
   background:
     radial-gradient(circle at 12% 18%, rgba(127, 201, 160, 0.14), transparent 42%),
     radial-gradient(circle at 85% -10%, rgba(214, 177, 122, 0.16), transparent 46%),
     radial-gradient(circle at 90% 78%, rgba(127, 201, 160, 0.08), transparent 48%);
+}
+
+html[data-theme="dark"] body::after {
+  background: linear-gradient(
+    180deg,
+    rgba(127, 201, 160, 0.18) 0%,
+    rgba(127, 201, 160, 0.1) 28%,
+    rgba(127, 201, 160, 0) 60%
+  );
 }
 
 h1,
