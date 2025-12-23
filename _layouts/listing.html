@@ -12,48 +12,6 @@ map: false
 {% assign incoming_from_sources = all_listings | where_exp: 'item', 'item.sourced_from contains page.slug' %}
 {% assign incoming_sources = incoming_from_supplies | concat: incoming_from_sources | uniq | where_exp: 'item', 'item.slug != page.slug' %}
 {% assign source_partners = all_listings | where_exp: 'item', 'sourced_from_list contains item.slug' | uniq %}
-{% assign sourced_from_text_list = page.sourced_from_text | default: empty_array %}
-{% assign supplies_to_text_list = page.supplies_to_text | default: empty_array %}
-{% assign sourced_from_text_clean = "" %}
-{% for entry in sourced_from_text_list %}
-  {% assign value = entry | to_s | strip %}
-  {% assign looks_like_url = false %}
-  {% if value contains '://' or value contains 'www.' %}
-    {% assign looks_like_url = true %}
-  {% endif %}
-  {% unless looks_like_url or value == "" %}
-    {% if sourced_from_text_clean == "" %}
-      {% assign sourced_from_text_clean = value %}
-    {% else %}
-      {% assign sourced_from_text_clean = sourced_from_text_clean | append: "||" | append: value %}
-    {% endif %}
-  {% endunless %}
-{% endfor %}
-{% if sourced_from_text_clean == "" %}
-  {% assign sourced_from_text_clean = empty_array %}
-{% else %}
-  {% assign sourced_from_text_clean = sourced_from_text_clean | split: "||" %}
-{% endif %}
-{% assign supplies_to_text_clean = "" %}
-{% for entry in supplies_to_text_list %}
-  {% assign value = entry | to_s | strip %}
-  {% assign looks_like_url = false %}
-  {% if value contains '://' or value contains 'www.' %}
-    {% assign looks_like_url = true %}
-  {% endif %}
-  {% unless looks_like_url or value == "" %}
-    {% if supplies_to_text_clean == "" %}
-      {% assign supplies_to_text_clean = value %}
-    {% else %}
-      {% assign supplies_to_text_clean = supplies_to_text_clean | append: "||" | append: value %}
-    {% endif %}
-  {% endunless %}
-{% endfor %}
-{% if supplies_to_text_clean == "" %}
-  {% assign supplies_to_text_clean = empty_array %}
-{% else %}
-  {% assign supplies_to_text_clean = supplies_to_text_clean | split: "||" %}
-{% endif %}
 {% assign schema_type = 'LocalBusiness' %}
 {% assign display_label = page.collection | capitalize %}
 {% assign review_target = page.slug | default: page.title | slugify %}
@@ -272,8 +230,7 @@ map: false
     {% endif %}
 
     {% assign source_link_count = source_partners | size %}
-    {% assign source_text_count = sourced_from_text_clean | size %}
-    {% if source_link_count > 0 or source_text_count > 0 %}
+    {% if source_link_count > 0 %}
       <div class="listing__section">
         <h2>Sourced from</h2>
         {% if source_link_count > 0 %}
@@ -283,32 +240,17 @@ map: false
           {% endfor %}
         </ul>
         {% endif %}
-        {% if source_text_count > 0 %}
-        <ul class="tag-list">
-          {% for line in sourced_from_text_clean %}
-          <li>{{ line }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
       </div>
     {% endif %}
 
     {% assign supplies_link_count = outgoing_supplies | size %}
-    {% assign supplies_text_count = supplies_to_text_clean | size %}
-    {% if supplies_link_count > 0 or supplies_text_count > 0 %}
+    {% if supplies_link_count > 0 %}
       <div class="listing__section">
         <h2>Supplies to</h2>
         {% if supplies_link_count > 0 %}
         <ul class="link-list">
           {% for item in outgoing_supplies %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        {% if supplies_text_count > 0 %}
-        <ul class="tag-list">
-          {% for line in supplies_to_text_clean %}
-          <li>{{ line }}</li>
           {% endfor %}
         </ul>
         {% endif %}
