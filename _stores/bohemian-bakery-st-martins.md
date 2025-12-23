@@ -15,7 +15,6 @@ practices:
 - spray-free
 - locally-sourced
 - regenerative
-- pasture-raised
 products:
 - sourdough bread
 - pastries
