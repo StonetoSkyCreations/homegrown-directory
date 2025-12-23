@@ -589,6 +589,12 @@
     const cards = Array.from(directoryContainer.querySelectorAll(".listing-grid .listing-card"));
     const dirResultsCount = document.getElementById("dirResultsCount");
     const nearMeStatus = document.querySelector("[data-near-me-status], #nearMeStatus");
+    const directoryResults = directoryContainer.querySelector(".listing-grid");
+
+    const scrollDirectoryResults = () => {
+      if (!directoryResults) return;
+      directoryResults.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
 
     const ensureFeaturedStyling = (card) => {
       if (!card) return;
@@ -744,7 +750,12 @@
 
     populateDirectoryRegions(selectedCountry);
 
-    if (regionSelect) regionSelect.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters());
+    if (regionSelect) {
+      regionSelect.addEventListener("change", () => {
+        if (runDirectoryFilters) runDirectoryFilters();
+        scrollDirectoryResults();
+      });
+    }
     if (textFilter) textFilter.addEventListener("input", () => runDirectoryFilters && runDirectoryFilters());
     tagFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
     subtypeFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
