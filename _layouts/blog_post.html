@@ -20,6 +20,22 @@
   <meta name="twitter:card" content="summary_large_image">
   {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("hg-theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = stored || (prefersDark ? "dark" : "light");
+        if (theme === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        } else {
+          delete document.documentElement.dataset.theme;
+        }
+      } catch (e) {
+        // fail silently
+      }
+    })();
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -74,5 +90,10 @@
     </article>
   </main>
   {% include footer.html %}
+  <script>
+    window.HG_INDEX_URL = '{{ '/search.json' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}';
+    window.HG_BASEURL = '{{ site.baseurl | default: "" }}';
+  </script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
 </body>
 </html>
