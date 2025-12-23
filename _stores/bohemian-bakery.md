@@ -17,7 +17,11 @@ locations:
 - bohemian-bakery-cbd
 lat: ''
 lon: ''
-practices: []
+practices:
+- organic
+- spray-free
+- locally-sourced
+- regenerative
 practices_tags: []
 products: []
 products_tags: []

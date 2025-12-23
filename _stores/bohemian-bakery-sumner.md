@@ -17,6 +17,7 @@ practices:
 - organic
 - spray-free
 - locally-sourced
+- regenerative
 products:
 - sourdough bread
 - pastries

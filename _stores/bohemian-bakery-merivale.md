@@ -11,7 +11,10 @@ description: 'Boutique bakery offering fresh sourdough, pastries, and baked good
 
   '
 practices:
-- pasture-raised
+- organic
+- spray-free
+- locally-sourced
+- regenerative
 products:
 - sourdough bread
 - pastries

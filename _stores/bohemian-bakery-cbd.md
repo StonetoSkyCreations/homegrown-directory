@@ -11,7 +11,10 @@ description: "Central-city bakery caf\xE9 in the SALT District serving slow-ferm
   \ sourdough, pastries, brunch, and drinks including Prima Coffee, T-leaf teas, Karma,\
   \ Chia Sisters, Wildwood, and Hakanoa. Hosts live music on Saturdays.\n"
 practices:
+- organic
+- spray-free
 - locally-sourced
+- regenerative
 products:
 - sourdough bread
 - pastries

@@ -11,6 +11,10 @@ description: 'Neighbourhood bakery shop near Hansen Park offering pastries, sour
 
   '
 practices:
+- organic
+- spray-free
+- locally-sourced
+- regenerative
 - pasture-raised
 products:
 - sourdough bread
