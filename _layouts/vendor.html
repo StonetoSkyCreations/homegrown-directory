@@ -81,7 +81,13 @@ map: false
       <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}">Update listing</a>
       <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}">Review this place</a>
     </div>
-    {% assign sourcing_list = page.sourcing_tags | default: empty_array | where_exp: "item", "item != blank" %}
+    {% assign sourcing_list = "" | split: "" %}
+    {% for item in page.sourcing_tags %}
+      {% assign item_clean = item | to_s | strip %}
+      {% if item_clean != "" %}
+        {% assign sourcing_list = sourcing_list | push: item_clean %}
+      {% endif %}
+    {% endfor %}
     {% if sourcing_list and sourcing_list.size > 0 %}
       <div>
         <h2>Sourcing</h2>
@@ -93,7 +99,13 @@ map: false
       </div>
     {% endif %}
 
-    {% assign products_list = page.products_or_cuisine | default: empty_array | where_exp: "item", "item != blank" %}
+    {% assign products_list = "" | split: "" %}
+    {% for item in page.products_or_cuisine %}
+      {% assign item_clean = item | to_s | strip %}
+      {% if item_clean != "" %}
+        {% assign products_list = products_list | push: item_clean %}
+      {% endif %}
+    {% endfor %}
     {% if products_list and products_list.size > 0 %}
       <div>
         <h2>Products or cuisine</h2>
@@ -105,7 +117,13 @@ map: false
       </div>
     {% endif %}
 
-    {% assign suppliers_list = page.suppliers | default: empty_array | where_exp: "item", "item != blank" %}
+    {% assign suppliers_list = "" | split: "" %}
+    {% for item in page.suppliers %}
+      {% assign item_clean = item | to_s | strip %}
+      {% if item_clean != "" %}
+        {% assign suppliers_list = suppliers_list | push: item_clean %}
+      {% endif %}
+    {% endfor %}
     {% if suppliers_list and suppliers_list.size > 0 %}
       <div>
         <h2>Suppliers</h2>

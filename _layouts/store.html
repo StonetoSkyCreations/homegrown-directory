@@ -150,18 +150,31 @@ map: false
     {% include rating.html listing=page %}
     {% assign practice_list = page.practices | default: empty_array %}
     {% if page.practices_tags %}{% assign practice_list = practice_list | concat: page.practices_tags %}{% endif %}
-    {% assign practice_list = practice_list | uniq | where_exp: "item", "item != blank" %}
-    {% if practice_list and practice_list != empty_array %}
+    {% assign practice_list = practice_list | uniq %}
+    {% assign practice_clean = "" | split: "" %}
+    {% for item in practice_list %}
+      {% assign item_clean = item | to_s | strip %}
+      {% if item_clean != "" %}
+        {% assign practice_clean = practice_clean | push: item_clean %}
+      {% endif %}
+    {% endfor %}
+    {% if practice_clean and practice_clean.size > 0 %}
       <div>
         <h2>Practices</h2>
         <ul class="tag-list">
-          {% for item in practice_list %}
+          {% for item in practice_clean %}
           <li>{{ item }}</li>
           {% endfor %}
         </ul>
       </div>
     {% endif %}
-    {% assign products_list = page.products | default: empty_array | where_exp: "item", "item != blank" %}
+    {% assign products_list = "" | split: "" %}
+    {% for item in page.products %}
+      {% assign item_clean = item | to_s | strip %}
+      {% if item_clean != "" %}
+        {% assign products_list = products_list | push: item_clean %}
+      {% endif %}
+    {% endfor %}
     {% if products_list and products_list.size > 0 %}
       <div>
         <h2>Products</h2>
@@ -175,19 +188,32 @@ map: false
 
     {% assign services_list = page.services | default: empty_array %}
     {% if page.services_tags %}{% assign services_list = services_list | concat: page.services_tags %}{% endif %}
-    {% assign services_list = services_list | uniq | where_exp: "item", "item != blank" %}
-    {% if services_list and services_list != empty_array %}
+    {% assign services_list = services_list | uniq %}
+    {% assign services_clean = "" | split: "" %}
+    {% for item in services_list %}
+      {% assign item_clean = item | to_s | strip %}
+      {% if item_clean != "" %}
+        {% assign services_clean = services_clean | push: item_clean %}
+      {% endif %}
+    {% endfor %}
+    {% if services_clean and services_clean.size > 0 %}
       <div>
         <h2>Services & sales channels</h2>
         <ul class="tag-list">
-          {% for service in services_list %}
+          {% for service in services_clean %}
           <li>{{ service }}</li>
           {% endfor %}
         </ul>
       </div>
     {% endif %}
 
-    {% assign sourcing_list = page.sourcing_tags | default: empty_array | where_exp: "item", "item != blank" %}
+    {% assign sourcing_list = "" | split: "" %}
+    {% for item in page.sourcing_tags %}
+      {% assign item_clean = item | to_s | strip %}
+      {% if item_clean != "" %}
+        {% assign sourcing_list = sourcing_list | push: item_clean %}
+      {% endif %}
+    {% endfor %}
     {% if sourcing_list and sourcing_list.size > 0 %}
       <div>
         <h2>Sourcing</h2>
@@ -199,7 +225,13 @@ map: false
       </div>
     {% endif %}
 
-    {% assign market_days_list = page.market_days | default: empty_array | where_exp: "item", "item != blank" %}
+    {% assign market_days_list = "" | split: "" %}
+    {% for item in page.market_days %}
+      {% assign item_clean = item | to_s | strip %}
+      {% if item_clean != "" %}
+        {% assign market_days_list = market_days_list | push: item_clean %}
+      {% endif %}
+    {% endfor %}
     {% if market_days_list and market_days_list.size > 0 %}
       <div>
         <h2>Market days</h2>
