@@ -43,7 +43,7 @@ services_tags: []
 certifications: []
 specialty_tags: []
 sourced_from:
-- kaitake-farm
+- kaitake-farm-oakura-taranaki
 supplies_to: []
 relationships_declared: false
 ---
