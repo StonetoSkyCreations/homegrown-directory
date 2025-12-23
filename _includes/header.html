@@ -1,40 +1,55 @@
 <header class="site-header">
   <div class="site-header__inner">
-    <a href="{{ '/' | relative_url }}" class="brand logo-title">
-      <img src="{{ '/logo.png' | relative_url }}" alt="Homegrown Directory logo" class="site-logo">
-      <span>{{ site.title }}</span>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" data-nav-toggle>
-      <span class="nav-toggle__icon">
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-      </span>
-      <span class="nav-toggle__label">Menu</span>
-    </button>
-    <nav id="primaryNav" class="nav" data-primary-nav>
-      <a href="{{ '/farms/' | relative_url }}">Farms</a>
-      <a href="{{ '/markets/' | relative_url }}">Markets</a>
-      <a href="{{ '/groceries/' | relative_url }}">Grocers</a>
-      <a href="{{ '/eateries/' | relative_url }}">Eateries</a>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a class="nav__cta button button--sm" href="{{ '/submit.html' | relative_url }}">Add / Update a Listing</a>
-    </nav>
-    <div class="country-switcher" data-country-switcher>
-      <span class="country-switcher__label">Country</span>
-      <div class="country-switcher__options">
-        <button type="button" class="pill country-option" data-country-option="new-zealand">
-          <span class="country-option__code">NZ</span>
-        </button>
-        <button type="button" class="pill country-option" data-country-option="australia">
-          <span class="country-option__code">AU</span>
-        </button>
-      </div>
+    <div class="site-header__row">
+      <a href="{{ '/' | relative_url }}" class="brand logo-title">
+        <img src="{{ '/logo.png' | relative_url }}" alt="Homegrown Directory logo" class="site-logo">
+        <span>{{ site.title }}</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" data-nav-toggle>
+        <span class="nav-toggle__icon">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
     </div>
-    <button class="pill theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
-      <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
-      <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
-    </button>
+    <nav id="primaryNav" class="nav" data-primary-nav>
+      <div class="nav__section nav__section--settings">
+        <p class="nav__label">Settings</p>
+        <div class="nav__settings">
+          <div class="nav__control">
+            <span class="nav__control-label">Country</span>
+            <div class="country-switcher__options" data-country-switcher>
+              <button type="button" class="country-option" data-country-option="new-zealand">
+                <span class="country-option__code">NZ</span>
+              </button>
+              <button type="button" class="country-option" data-country-option="australia">
+                <span class="country-option__code">AU</span>
+              </button>
+            </div>
+          </div>
+          <div class="nav__control">
+            <span class="nav__control-label">Theme</span>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+              <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
+              <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="nav__section nav__section--links">
+        <p class="nav__label">Explore</p>
+        <div class="nav__links">
+          <a href="{{ '/farms/' | relative_url }}">Farms</a>
+          <a href="{{ '/markets/' | relative_url }}">Markets</a>
+          <a href="{{ '/groceries/' | relative_url }}">Grocers</a>
+          <a href="{{ '/eateries/' | relative_url }}">Eateries</a>
+          <a href="{{ '/blog/' | relative_url }}">Blog</a>
+          <a href="{{ '/about/' | relative_url }}">About</a>
+        </div>
+        <a class="nav__cta button button--sm" href="{{ '/submit.html' | relative_url }}">Add / Update a Listing</a>
+      </div>
+    </nav>
   </div>
 </header>
