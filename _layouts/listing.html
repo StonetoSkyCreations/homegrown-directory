@@ -183,33 +183,36 @@ map: false
       <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}">Review this place</a>
     </div>
 
-    {% if page.practices %}
+    {% assign practices_list = page.practices | default: empty_array | where_exp: "item", "item != nil and item != ''" %}
+    {% if practices_list and practices_list.size > 0 %}
       <div>
         <h2>Practices</h2>
         <ul class="tag-list">
-          {% for practice in page.practices %}
+          {% for practice in practices_list %}
           <li>{{ practice }}</li>
           {% endfor %}
         </ul>
       </div>
     {% endif %}
 
-    {% if page.products %}
+    {% assign products_list = page.products | default: empty_array | where_exp: "item", "item != nil and item != ''" %}
+    {% if products_list and products_list.size > 0 %}
       <div>
         <h2>Products</h2>
         <ul class="tag-list">
-          {% for product in page.products %}
+          {% for product in products_list %}
           <li>{{ product }}</li>
           {% endfor %}
         </ul>
       </div>
     {% endif %}
 
-    {% if page.services %}
+    {% assign services_list = page.services | default: empty_array | where_exp: "item", "item != nil and item != ''" %}
+    {% if services_list and services_list.size > 0 %}
       <div>
         <h2>Services & sales channels</h2>
         <ul class="tag-list">
-          {% for service in page.services %}
+          {% for service in services_list %}
           <li>{{ service }}</li>
           {% endfor %}
         </ul>
@@ -232,11 +235,12 @@ map: false
       </div>
     {% endif %}
 
-    {% if page.market_days %}
+    {% assign market_days_list = page.market_days | default: empty_array | where_exp: "item", "item != nil and item != ''" %}
+    {% if market_days_list and market_days_list.size > 0 %}
       <div>
         <h2>Market days</h2>
         <ul class="list-plain">
-          {% for day in page.market_days %}
+          {% for day in market_days_list %}
           <li>{{ day }}</li>
           {% endfor %}
         </ul>

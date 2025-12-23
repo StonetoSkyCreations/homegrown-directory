@@ -1260,11 +1260,14 @@ html[data-theme="dark"] .hero::after {
   text-transform: uppercase;
   color: var(--muted);
 }
+.listing__meta {
+  display: grid;
+  gap: var(--space-4);
+}
 .listing__meta-top {
   display: flex;
   align-items: center;
   gap: var(--space-2);
-  margin-bottom: var(--space-3);
 }
 .listing__meta-top:empty {
   display: none;
@@ -1273,7 +1276,6 @@ html[data-theme="dark"] .hero::after {
   display: flex;
   gap: var(--space-2);
   flex-wrap: wrap;
-  margin-bottom: var(--space-4);
 }
 .share-control {
   position: relative;
