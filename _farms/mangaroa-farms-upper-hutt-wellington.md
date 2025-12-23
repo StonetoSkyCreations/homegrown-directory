@@ -90,6 +90,7 @@ services_tags: []
 certifications: []
 specialty_tags: []
 sourced_from: []
-supplies_to: []
-relationships_declared: false
+supplies_to:
+- brewtown-farmers-market
+relationships_declared: true
 ---
