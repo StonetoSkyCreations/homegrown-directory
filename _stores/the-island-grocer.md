@@ -13,25 +13,20 @@ country_slug: new-zealand
 region: Auckland
 city: Oneroa
 address: 110 Ocean View Road, Oneroa, Waiheke Island
-practices_tags:
-- organic-options
-- spray-free-options
-- local-sourcing
-- fair-trade-options
+practices_tags: []
 products:
-- organic-produce
-- spray-free-produce
-- pantry-goods
-- ready-to-eat-meals
-- daily-bread
-- local-artisan-products
-- wine
-- craft-beer
+- Organic produce
+- Spray-free produce
+- Pantry goods
+- Local artisan products
+- Daily bread
+- Ready-to-go meals
+- Wine
+- Craft beer
 services:
-- deli
-- grocery
-- takeaway-meals
-- local-provisions
+- Deli
+- Grocery store
+- Takeaway meals
 website: https://theislandgrocer.co.nz
 email: nicky@theislandgrocer.co.nz
 phone: "09 372 8866"
@@ -47,10 +42,9 @@ geo_last_verified: '2025-12-14'
 geo_label: Recycle Boutique
 geo_query: 110 Ocean View Road, Oneroa, Waiheke Island, Oneroa, Auckland, New Zealand
 practices:
-- organic-options
-- spray-free-options
-- local-sourcing
-- fair-trade-options
+- locally-sourced
+- organic
+- spray-free
 products_tags: []
 services_tags: []
 certifications: []
