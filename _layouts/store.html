@@ -102,8 +102,8 @@ map: false
 
   <div class="listing__meta">
     <div class="listing__actions">
-      <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}">Update listing</a>
-      <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}">Review this place</a>
+      <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}" rel="nofollow">Update listing</a>
+      <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}" rel="nofollow">Review this place</a>
     </div>
     {% include rating.html listing=page %}
     {% assign practice_list = page.practices | default: empty_array %}
