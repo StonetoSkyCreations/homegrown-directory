@@ -3,6 +3,9 @@ layout: farm
 title: Pasture Poultry
 slug: pasture-poultry
 name: Pasture Poultry
+redirect_from:
+  - /review-html-listing-pasture-poultry
+  - /review-html-listing-pasture-poultry/
 type: Farm
 description: Certified organic chicken producer in Hawke's Bay.
 country: NZ

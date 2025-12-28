@@ -1,6 +1,9 @@
 ---
 title: Hygge at Clifton Bay
 slug: hygge-at-clifton-bay
+redirect_from:
+  - /review-html-listing-hygge-at-clifton-bay
+  - /review-html-listing-hygge-at-clifton-bay/
 published: true
 country: New Zealand
 country_slug: new-zealand

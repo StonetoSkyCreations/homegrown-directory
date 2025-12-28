@@ -3,6 +3,9 @@ layout: store
 title: Liberty Market
 slug: liberty-market
 name: Liberty Market
+redirect_from:
+  - /stores/liberty-market-chch
+  - /stores/liberty-market-chch/
 type: organic-store
 subtype: organic-store
 description: Large certified organic retailer offering over 8,000 organic, natural, and special-diet products, including fresh produce, meat, eggs, bulk foods, bakery goods, personal care items, and eco-friendly household products.

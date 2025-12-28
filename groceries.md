@@ -2,6 +2,9 @@
 layout: default
 title: Groceries
 permalink: /groceries/
+redirect_from:
+  - /stores/huckleberry-new-lynn
+  - /stores/huckleberry-new-lynn/
 seo_title: "Organic & Wholefood Grocers | Homegrown Directory"
 seo_description: >
   Locate wholefood stores, organic grocers and refilleries across Aotearoa stocking responsibly sourced, nutrient-dense food.

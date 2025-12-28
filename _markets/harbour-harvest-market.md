@@ -1,6 +1,9 @@
 ---
 title: Harbour Harvest Market
 slug: harbour-harvest-market
+redirect_from:
+  - /review-html-listing-harbour-harvest-market
+  - /review-html-listing-harbour-harvest-market/
 type: market
 country: New Zealand
 country_slug: new-zealand
