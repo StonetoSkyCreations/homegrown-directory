@@ -183,10 +183,6 @@ _stores/harbour-co-op-lyttelton.md: lat, phone, hours
 _stores/herbal-dispensary-raglan.md: postcode, lat, lon, phone, email, hours
 _stores/homegrown-wholefoods-paraparaumu.md: address, postcode, lat, lon, phone, email, website, hours
 _stores/honest-wholefoods-invercargill.md: address, postcode, lat, lon, phone, email, website, hours
-_stores/huckleberry-glen-innes-closed.md: lat, lon, email, website, hours
-_stores/huckleberry-grey-lynn-harvest.md: lat, lon, email, website, hours
-_stores/huckleberry-new-lynn.md: lat, lon, email, website, hours
-_stores/huckleberry-whangarei.md: postcode, lat, lon, phone, email, hours
 _stores/ie-produce-takapuna.md: lat, phone, hours
 _stores/kaikoura-quality-store.md: postcode, lat, lon, phone, email, website, hours
 _stores/liberty-market-chch.md: lat, phone, hours

@@ -76,8 +76,6 @@ where_to_buy:
 - name: Kōanga Online Shop
   address: Online
   url: https://www.koanga.org.nz
-- name: Harvest by Huckleberry (Stockist)
-  address: Auckland, New Zealand
 - name: Simply Organic (Stockist)
   address: Tauranga, New Zealand
 - name: Taste Nature (Stockist)
