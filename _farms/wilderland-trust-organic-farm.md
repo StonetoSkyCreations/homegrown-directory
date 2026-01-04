@@ -8,7 +8,12 @@ region: Coromandel
 city: Kaimarama
 address: RD1/2486 Tairua Whitianga Road, Kaimarama 3591
 description: "Off\u2011grid organic farm and education centre practising permaculture and land stewardship near Kaimarama."
-long_description: "The Wilderland Trust has been growing organic food in the Coromandel since 1964. Its 64\u2011hectare property is managed using permaculture principles, regenerative agriculture and off\u2011grid living systems. Residents and volunteers cultivate a diverse mix of vegetables, herbs, fruit trees and honey, learning hands\u2011on skills in organic farming, preserving and land stewardship. The farm sells seasonal produce, honey, herbal teas and handmade preserves through its small onsite shop and at local markets, and offers volunteer placements and workshops for those interested in sustainable living. Wilderland\u2019s mission is to inspire people to engage in whole\u2011systems education and cultivate a healthier relationship with the land.\n"
+long_description: |
+  Founded in 1964 on the Coromandel Peninsula, Wilderland Trust is an organic farm and sustainable living center rooted in self-reliance and whole education. Established by Dan and Edith Hansen as an anarchist, vegetarian community, it operates as a living classroom where everyone is both student and teacher, learning by doing through gardening, building, beekeeping, preserving, and "nimble living" - creating abundance with minimal expenditure. The community is drug- and alcohol-free to keep the space grounded and supportive for learning and living well together.
+
+  The trust stewards 64 hectares, with around 80% set aside for regenerating native bush. Kaitiakitanga guides their approach: minimize ecological footprint, keep biological systems diverse and productive, and build closed-loop relationships with the land, from using black wattle for building to harvesting estuary reeds for garden mulch.
+
+  Wilderland blends organic and regenerative methods, including syntropic agroforestry, hugelkultur beds, no-till soil care, and cover crops to rebuild soil life. The gardens produce a diverse spread of fruit, vegetables, herbs, and honey without synthetic inputs, and the property models off-grid permaculture systems such as solar power, greywater bio-filtration, and rainwater storage. Land-grown abundance is crafted into teas, herbs, honey, and skincare available through their roadside shop and local markets.
 practices:
 - organic
 - regenerative
