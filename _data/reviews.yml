@@ -9,6 +9,18 @@
   reviewer_email: ""
   relationship_to_business: customer
   ok_to_publish: yes
+- business_slug: broomhill-sanctuary
+  business_name: broomhill-sanctuary
+  rating: 5
+  last_visit_date: 2025-12-15
+  review_title: Connection and Growth
+  review_text: |
+    Broomhill is a beautiful place of connection, learning and growth. It's guided from the heart by its founders Caro and Trevor and a growing network of Stewards, volunteers and friends. I have had the pleasure to watch people and land be in a conversation of co-creation for the last few years and every year when I return, it welcomes me back with more beauty, evolution and an invitation to step into deep time, to listen, to contribute in whichever way feels right at the time, and be nourished by all the amazing food and inspired connection. If it calls you, spend some time there and experience for yourself!
+  corrections_or_updates: ""
+  reviewer_name: Sarah
+  reviewer_email: ""
+  relationship_to_business: ""
+  ok_to_publish: yes
 ## Reviews captured from email intake. Keys mirror review.html payload:
 ## business_name, business_slug, rating, last_visit_date, review_title,
 ## review_text, corrections_or_updates, reviewer_name, reviewer_email,
