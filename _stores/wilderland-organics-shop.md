@@ -51,7 +51,8 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- wilderland-trust-organic-farm
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---

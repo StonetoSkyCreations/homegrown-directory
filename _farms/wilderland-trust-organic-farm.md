@@ -50,6 +50,7 @@ specialty_tags: []
 sourced_from: []
 sourced_from_text:
 - https://www.wilderland.org.nz/#:~:text=Organic%2C%20Experiential%20Learning%20since%201964https://www.wilderland.org.nz/#:~:text=Find%20ushttps://www.wilderland.org.nz/#:~:text=Our%20products%20are%20all%20hand,made%20by%20students%20and%20residents
-supplies_to: []
+supplies_to:
+- wilderland-organics-shop
 relationships_declared: true
 ---
