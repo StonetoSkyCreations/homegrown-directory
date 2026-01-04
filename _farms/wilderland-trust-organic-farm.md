@@ -14,6 +14,8 @@ long_description: |
   The trust stewards 64 hectares, with around 80% set aside for regenerating native bush. Kaitiakitanga guides their approach: minimize ecological footprint, keep biological systems diverse and productive, and build closed-loop relationships with the land, from using black wattle for building to harvesting estuary reeds for garden mulch.
 
   Wilderland blends organic and regenerative methods, including syntropic agroforestry, hugelkultur beds, no-till soil care, and cover crops to rebuild soil life. The gardens produce a diverse spread of fruit, vegetables, herbs, and honey without synthetic inputs, and the property models off-grid permaculture systems such as solar power, greywater bio-filtration, and rainwater storage. Land-grown abundance is crafted into teas, herbs, honey, and skincare available through their roadside shop and local markets.
+
+  For the roadside retail space and handcrafted goods, visit the [Wilderland Organics Shop](/stores/wilderland-organics-shop/).
 practices:
 - organic
 - regenerative
