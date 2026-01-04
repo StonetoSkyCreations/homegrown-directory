@@ -1,6 +1,9 @@
 ---
 title: Wilderland Trust Organic Farm
 slug: wilderland-trust-organic-farm
+redirect_from:
+  - /farms/wilderland-organics-whitianga
+  - /farms/wilderland-organics-whitianga/
 collection: farms
 country_slug: new-zealand
 country: New Zealand
