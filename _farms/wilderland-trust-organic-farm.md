@@ -29,8 +29,8 @@ services:
 - education centre
 - volunteer programme
 website: https://www.wilderland.org.nz
-email: ''
-phone: ''
+email: community@wilderland.org.nz
+phone: '027 317 2237'
 social: ''
 hours: ''
 market_days: []
