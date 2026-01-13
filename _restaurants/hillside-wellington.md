@@ -20,7 +20,6 @@ long_description: 'Hillside is a small, intimate restaurant in Thorndon, Welling
   The drinks list features exclusively New Zealand producers, with all wines being vegan-friendly and all non-alcoholic beverages made in-house. Wine and non-alcoholic matching options are available with dinner. With only 22 seats, Hillside operates by online booking and offers early and extended dining sittings from Tuesday to Sunday evenings.
 
   '
-featured_article: /blog/hillside-kitchen-cellar-good-food-that-makes-sense/
 website: https://www.hillsidekitchen.co.nz/
 email: info@hillsidekitchen.co.nz
 phone: ''
