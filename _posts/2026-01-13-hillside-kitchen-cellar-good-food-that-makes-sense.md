@@ -46,7 +46,6 @@ Buying for convenience instead of values. There are cheaper, easier options avai
 
 <figure class="article__image">
   <img src="/assets/images/blog/hillside-kitchen-cellar/hillside-logo-counter.jpg" alt="Hillside logo on the counter at Hillside Kitchen & Cellar">
-  <figcaption class="muted">The Hillside logo on the counter.</figcaption>
 </figure>
 
 **How do seasonality and local supply genuinely shape your menu or offerings week to week?**
@@ -75,4 +74,4 @@ Ask questions. Where things come from, how it's grown, why it's grown that way. 
 
 If you're curious to experience this approach firsthand, you can explore Hillside's full listing on Homegrown and book a table directly.
 
-https://homegrowndirectory.com/restaurants/hillside-wellington/
+[Explore Hillside on Homegrown →](/restaurants/hillside-wellington/)

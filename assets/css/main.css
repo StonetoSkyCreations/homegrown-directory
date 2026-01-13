@@ -1868,6 +1868,8 @@ html[data-theme="dark"] .blog-card::before {
   box-shadow: var(--shadow);
   display: grid;
   gap: var(--space-4);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 html[data-theme="dark"] .article {
   background: var(--card);
