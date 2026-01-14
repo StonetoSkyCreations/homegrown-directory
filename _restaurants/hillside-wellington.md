@@ -12,6 +12,7 @@ city: Wellington
 address: 241 Tinakori Road, Thorndon, Wellington 6011
 lat: -41.2768551887212
 lon: 174.77160516789922
+featured_article: /blog/hillside-kitchen-cellar-good-food-that-makes-sense/
 location_precision: exact
 description: Small Wellington restaurant offering seasonal, plant-focused tasting menus inspired by what is grown, foraged, and available locally.
 long_description: 'Hillside is a small, intimate restaurant in Thorndon, Wellington, serving set multi-course menus shaped by the seasons, their own garden produce, and foraged ingredients. The food is entirely meatless and plant-focused, with a full vegan menu always available when requested at the time of booking. Menus are not published in advance, allowing the kitchen to respond directly to what is fresh and available.

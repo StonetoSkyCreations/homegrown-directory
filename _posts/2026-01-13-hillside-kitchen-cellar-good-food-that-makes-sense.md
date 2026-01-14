@@ -1,8 +1,8 @@
 ---
 layout: blog_post
 title: "Hillside Kitchen & Cellar - Good Food That Makes Sense"
-date: 2026-01-13
-published: false
+date: 2026-01-15
+published: true
 author: "Homegrown Directory"
 tags:
   - featured
