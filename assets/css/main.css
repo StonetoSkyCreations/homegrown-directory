@@ -1901,7 +1901,7 @@ html[data-theme="dark"] .article {
   gap: var(--space-2);
 }
 .article__image {
-  margin: var(--space-3) 0 0;
+  margin: var(--space-3) 0 var(--space-4);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
