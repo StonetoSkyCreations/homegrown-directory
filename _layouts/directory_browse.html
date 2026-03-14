@@ -62,17 +62,19 @@ layout: default
       <p class="eyebrow">{{ page_eyebrow }}</p>
       <h1>{{ page_title }}</h1>
       {% if page_intro %}<p class="lead">{{ page_intro }}</p>{% endif %}
-      <div class="directory-meta">
-        <span class="country-chip">
-          {{ total_count }} listing{% if total_count != 1 %}s{% endif %}
-          {% if page.region %} in {{ page.region }}{% elsif country_data %} in {{ country_data.label }}{% endif %}
-        </span>
-        {% if country_data and page.region %}
-          <a class="text-link" href="{{ country_data.path | relative_url }}">Back to {{ country_data.label }}</a>
-        {% elsif country_data %}
-          <a class="text-link" href="{{ country_data.path | relative_url }}">Browse all {{ country_data.label }} directories</a>
-        {% endif %}
-      </div>
+      {% if country_data %}
+        <div class="directory-meta">
+          <span class="country-chip">
+            {{ total_count }} listing{% if total_count != 1 %}s{% endif %}
+            {% if page.region %} in {{ page.region }}{% else %} in {{ country_data.label }}{% endif %}
+          </span>
+          {% if page.region %}
+            <a class="text-link" href="{{ country_data.path | relative_url }}">Back to {{ country_data.label }}</a>
+          {% else %}
+            <a class="text-link" href="{{ country_data.path | relative_url }}">Browse all {{ country_data.label }} directories</a>
+          {% endif %}
+        </div>
+      {% endif %}
       {% if body_copy != '' %}
         <p class="muted directory-note">{{ body_copy }}</p>
       {% endif %}
