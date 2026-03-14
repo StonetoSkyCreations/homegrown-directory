@@ -245,8 +245,8 @@ textarea::placeholder {
 }
 
 .skip-link {
-  position: absolute;
-  top: -40px;
+  position: fixed;
+  top: var(--space-3);
   left: var(--space-4);
   z-index: 5000;
   padding: 0.7rem 1rem;
@@ -255,9 +255,15 @@ textarea::placeholder {
   color: #fff;
   font-weight: 700;
   box-shadow: var(--shadow-soft);
+  transform: translateY(calc(-100% - var(--space-5)));
+  opacity: 0;
+  pointer-events: none;
+  transition: transform var(--duration-fast) var(--ease-standard), opacity var(--duration-fast) var(--ease-standard);
 }
 .skip-link:focus {
-  top: var(--space-3);
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .site-header,

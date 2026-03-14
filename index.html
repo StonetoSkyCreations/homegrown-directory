@@ -54,12 +54,6 @@ seo_description: >
   </div>
 </section>
 
-<section class="trust-strip" aria-label="Trust commitments">
-  <p><strong>Not a ranking.</strong> Listings are curated for transparency, not scored for status.</p>
-  <p><strong>Not an endorsement.</strong> Featured and reviews are contextual notes, not guarantees.</p>
-  <p><strong>Governed openly.</strong> Read the <a href="{{ '/listing-criteria/' | relative_url }}">listing criteria</a>, <a href="{{ '/featured-policy/' | relative_url }}">featured policy</a>, and <a href="{{ '/review-policy/' | relative_url }}">review policy</a>.</p>
-</section>
-
 {% assign featured_home = site.data.featured.global.home %}
 
 {% if featured_home %}
@@ -67,12 +61,14 @@ seo_description: >
      collection=featured_home.collection
      scope="global"
      key="home"
+     show_note=false
   %}
   {% include featured-card.html
      collection=featured_home.collection
      scope="global"
      key="home"
      country_slug="australia"
+     show_note=false
   %}
 {% endif %}
 

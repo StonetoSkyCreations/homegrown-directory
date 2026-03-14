@@ -23,6 +23,10 @@
 
 {% if item %}
   {% assign heading = include.heading | default: config.heading %}
+  {% assign show_note = include.show_note %}
+  {% if show_note == nil %}
+    {% assign show_note = true %}
+  {% endif %}
   {% unless heading %}
     {% if key == "eateries" %}
       {% assign heading = "Featured eatery" %}
@@ -42,7 +46,9 @@
       item=item
       featured=true
     %}
-    <p class="featured-card__note">Featured highlights editorial relevance, not rank or paid placement. <a href="{{ '/featured-policy/' | relative_url }}">How featured works</a></p>
+    {% if show_note != false %}
+      <p class="featured-card__note">Featured highlights editorial relevance, not rank or paid placement. <a href="{{ '/featured-policy/' | relative_url }}">How featured works</a></p>
+    {% endif %}
   </div>
 </section>
 {% endif %}
