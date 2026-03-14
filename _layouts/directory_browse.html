@@ -253,10 +253,10 @@ layout: default
 
   {% if section and section.featured_key and page.region == nil %}
     {% if page.country_slug %}
-      {% include featured-card.html scope="collections" key=section.featured_key country_slug=page.country_slug %}
+      {% include featured-card.html scope="collections" key=section.featured_key country_slug=page.country_slug show_note=false %}
     {% else %}
-      {% include featured-card.html scope="collections" key=section.featured_key %}
-      {% include featured-card.html scope="collections" key=section.featured_key country_slug="australia" %}
+      {% include featured-card.html scope="collections" key=section.featured_key show_note=false %}
+      {% include featured-card.html scope="collections" key=section.featured_key country_slug="australia" show_note=false %}
     {% endif %}
   {% endif %}
 
