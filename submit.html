@@ -88,6 +88,7 @@ noindex: true
     <p class="eyebrow">Contribute</p>
     <h1>Add or Update a Listing</h1>
     <p class="lead">Add the name, skim the sections, then send via email.</p>
+    <p class="muted">Submissions are reviewed before publication. The directory prioritises clear facts, locality, and plain-language practice notes over promotional copy. <a href="{{ '/listing-criteria/' | relative_url }}">Listing criteria</a></p>
   </header>
 
   <form id="submitForm">
@@ -729,6 +730,12 @@ noindex: true
         const subject = subjectToken ? `Homegrown Directory submission: ${subjectToken}` : 'Homegrown Directory submission';
         const body = buildMailBody(values, subject);
         const mailtoUrl = `mailto:${MAILTO_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'listing_submission_started', {
+            submission_type: values.submission_type || 'unknown',
+            collection: values.collection || 'unknown'
+          });
+        }
         window.location.href = mailtoUrl;
       } catch (err) {
         showError(err.message || 'Sorry, we could not prepare the email draft. Please email josh@stonetosky.nz.', err);

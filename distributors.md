@@ -1,8 +1,8 @@
 ---
 layout: collection
-title: Hubs & Distributors
+title: Distributors
 collection_key: distributors
-collection_label: Hubs
+collection_label: Distributors
 intro: Food hubs, CSAs, and distributors moving transparent, regenerative goods.
 permalink: /distributors/
 seo_title: "Distributors Supporting Sustainable Producers | Homegrown"

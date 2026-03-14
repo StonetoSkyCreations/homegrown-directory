@@ -1,4 +1,5 @@
 (() => {
+  const ENTITY_TYPES = window.HG_ENTITY_TYPES || {};
   const searchInput = document.querySelector("#searchInput");
   const resultsContainer = document.querySelector("#listingResults");
   const resultsCount = document.querySelector("#resultsCount");
@@ -6,6 +7,7 @@
   const countryLabelEls = Array.from(document.querySelectorAll("[data-country-label]"));
   const mapPanel = document.querySelector(".map-panel");
   const countryPage = document.querySelector("[data-country-page]");
+  const directoryPage = document.querySelector(".directory-page");
   const toggleMapBtn = document.querySelector("#toggleMap");
   const themeToggle = document.querySelector("[data-theme-toggle]");
   const clearFiltersBtn = document.querySelector("#clearFilters");
@@ -38,14 +40,13 @@
   let populateDirectoryRegions;
   let auditHasRun = false;
 
-  const typeLabels = {
-    farms: "Farm",
-    markets: "Market",
-    stores: "Grocer",
-    restaurants: "Eatery",
-    vendors: "Eatery",
-    distributors: "Hub"
-  };
+  const getEntityLabel = (key) => ENTITY_TYPES[key]?.label || key;
+  const getEntityToken = (key) => ENTITY_TYPES[key]?.token || key;
+  const getEntityBrowsePath = (key) => ENTITY_TYPES[key]?.browse_path || "/";
+  const typeLabels = Object.keys(ENTITY_TYPES).reduce((acc, key) => {
+    acc[key] = ENTITY_TYPES[key].label;
+    return acc;
+  }, {});
 
   const typeColors = {
     farms: "#2f5b3f",
@@ -62,19 +63,25 @@
     farm: "farm",
     markets: "market",
     market: "market",
-    stores: "grocer",
-    grocer: "grocer",
+    stores: "store",
+    store: "store",
+    grocer: "store",
+    grocery: "store",
+    groceries: "store",
     restaurants: "restaurant",
     restaurant: "restaurant",
-    vendors: "restaurant",
+    vendors: "vendor",
+    vendor: "vendor",
     distributors: "distributor",
     distributor: "distributor"
   };
 
   const TYPE_ICONS = {
-    grocer:
+    store:
       '<svg class="icon icon--grocer" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16l-1.8 9H5.8L4 10Z"></path><path d="M9 10l3-4 3 4"></path></svg>',
     restaurant:
+      '<svg class="icon icon--restaurant" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v7"></path><path d="M5 3v4"></path><path d="M9 3v4"></path><path d="M7 10v11"></path><path d="M14 3v18"></path><path d="M14 3c3 0 3 5 0 5"></path></svg>',
+    vendor:
       '<svg class="icon icon--restaurant" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v7"></path><path d="M5 3v4"></path><path d="M9 3v4"></path><path d="M7 10v11"></path><path d="M14 3v18"></path><path d="M14 3c3 0 3 5 0 5"></path></svg>',
     market:
       '<svg class="icon icon--market" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16"></path><path d="M5 10l1-4h12l1 4"></path><path d="M6 10v8h12v-8"></path><path d="M9 18v-5h6v5"></path></svg>',
@@ -87,8 +94,9 @@
   const DIRECTORY_PATHS = {
     farm: "/farms/",
     market: "/markets/",
-    grocer: "/groceries/",
+    store: "/groceries/",
     restaurant: "/eateries/",
+    vendor: "/eateries/",
     distributor: "/distributors/"
   };
 
@@ -109,6 +117,23 @@
 
   const nearMeDebug = (...args) => {
     if (window.DEBUG_NEAR_ME) console.log("[near-me]", ...args);
+  };
+  const trackEvent = (eventName, params = {}) => {
+    if (typeof window.gtag !== "function") return;
+    window.gtag("event", eventName, params);
+  };
+  let searchTrackTimer = null;
+  const scheduleSearchTrack = (surface, value) => {
+    const query = (value || "").trim();
+    if (searchTrackTimer) window.clearTimeout(searchTrackTimer);
+    if (query.length < 2) return;
+    searchTrackTimer = window.setTimeout(() => {
+      trackEvent("directory_search", {
+        surface,
+        query_length: query.length,
+        country: getActiveCountry()
+      });
+    }, 500);
   };
 
   const isFacebookInApp = () => /FBAN|FBAV|FB_IAB|FBIOS|FBMD/i.test(navigator.userAgent || "");
@@ -210,6 +235,10 @@
     const startedAt = Date.now();
     nearMeState.lastRequestStartedAt = startedAt;
     nearMeState.clickCount += 1;
+    trackEvent("near_me_requested", {
+      surface: directoryPage ? "directory" : "home",
+      country: getActiveCountry()
+    });
     nearMeDebug("Near me click", { click: nearMeState.clickCount, startedAt });
     if (!navigator.geolocation) {
       setNearMeStatus("Geolocation not supported");
@@ -412,6 +441,7 @@
         if (navigator.share) {
           try {
             await navigator.share({ title, url });
+            trackEvent("share_action", { method: "native" });
             return;
           } catch (err) {
             if (err && err.name === "AbortError") return;
@@ -438,6 +468,7 @@
               textarea.remove();
             }
             copyBtn.textContent = "Copied";
+            trackEvent("share_action", { method: "copy_link" });
             setTimeout(() => {
               copyBtn.textContent = "Copy link";
               toggleMenu(false);
@@ -446,6 +477,12 @@
             console.error("Copy failed", err);
           }
         });
+      }
+      if (emailLink) {
+        emailLink.addEventListener("click", () => trackEvent("share_action", { method: "email" }));
+      }
+      if (facebookLink) {
+        facebookLink.addEventListener("click", () => trackEvent("share_action", { method: "facebook" }));
       }
     });
   };
@@ -572,6 +609,7 @@
       const current = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
       const next = current === "dark" ? "light" : "dark";
       setTheme(next);
+      trackEvent("theme_toggled", { theme: next });
     });
     // Sync initial UI state to current theme
     const initial = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
@@ -579,7 +617,7 @@
   }
 
   // Directory filtering (region + tags + subtype + country) for directory pages
-  const directoryContainer = document.querySelector(".directory-page");
+  const directoryContainer = directoryPage;
   if (directoryContainer) {
     const regionSelect = document.getElementById("regionFilter");
     const textFilter = document.getElementById("dirSearch");
@@ -752,14 +790,55 @@
 
     if (regionSelect) {
       regionSelect.addEventListener("change", () => {
+        trackEvent("directory_filter_change", {
+          surface: "directory",
+          filter_type: "region",
+          value: regionSelect.value || "all",
+          country: getActiveCountry()
+        });
         if (runDirectoryFilters) runDirectoryFilters();
         scrollDirectoryResults();
       });
     }
-    if (textFilter) textFilter.addEventListener("input", () => runDirectoryFilters && runDirectoryFilters());
-    tagFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
-    subtypeFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
-    productFilters.forEach((c) => c.addEventListener("change", () => runDirectoryFilters && runDirectoryFilters()));
+    if (textFilter) {
+      textFilter.addEventListener("input", () => {
+        scheduleSearchTrack("directory", textFilter.value);
+        runDirectoryFilters && runDirectoryFilters();
+      });
+    }
+    tagFilters.forEach((c) =>
+      c.addEventListener("change", () => {
+        trackEvent("directory_filter_change", {
+          surface: "directory",
+          filter_type: "practice",
+          value: c.value,
+          country: getActiveCountry()
+        });
+        runDirectoryFilters && runDirectoryFilters();
+      })
+    );
+    subtypeFilters.forEach((c) =>
+      c.addEventListener("change", () => {
+        trackEvent("directory_filter_change", {
+          surface: "directory",
+          filter_type: "subtype",
+          value: c.value,
+          country: getActiveCountry()
+        });
+        runDirectoryFilters && runDirectoryFilters();
+      })
+    );
+    productFilters.forEach((c) =>
+      c.addEventListener("change", () => {
+        trackEvent("directory_filter_change", {
+          surface: "directory",
+          filter_type: "product",
+          value: c.value,
+          country: getActiveCountry()
+        });
+        runDirectoryFilters && runDirectoryFilters();
+      })
+    );
   }
 
   if (typeof runDirectoryFilters === "function") runDirectoryFilters();
@@ -785,14 +864,14 @@
       const region = item.region || "";
       const locText = city && region ? `${city}, ${region}` : city || region || "Location not provided";
       const isFeatured = isFeaturedItem(item);
-      const typeToken = TYPE_TOKENS[item.collection] || item.type;
+      const typeToken = normalizeToken(item.type_token || getCanonicalType(item.collection || item.type));
       const iconMarkup = TYPE_ICONS[typeToken] || "";
       const summary = (item.description || "").trim();
       const summaryMarkup = summary ? `<p class="listing-card__summary">${summary}</p>` : "";
       return `
         <article class="listing-card${isFeatured ? " listing-card--featured" : ""}" data-lat="${item.lat ?? ""}" data-lon="${item.lon ?? ""}">
           <div class="listing-card__meta">
-            <span class="badge badge--meta badge--type">${iconMarkup}${typeLabels[item.collection] || item.type}</span>
+            <span class="badge badge--meta badge--type">${iconMarkup}${item.type || getEntityLabel(item.collection) || item.collection}</span>
             ${isFeatured ? '<span class="badge badge--verified badge--featured">Featured</span>' : ""}
           </div>
         <h3 class="listing-card__title"><a href="${item.url}">${item.title}</a></h3>
@@ -946,7 +1025,7 @@
           title: item.title,
           slug: item.slug,
           collection: item.collection,
-          expectedDirectory: DIRECTORY_PATHS[typeToken] || "",
+          expectedDirectory: getEntityBrowsePath(item.collection) || DIRECTORY_PATHS[typeToken] || "",
           country_slug: item.country_slug,
           region: item.region,
           typeToken
@@ -1124,6 +1203,7 @@
       // ignore storage errors
     }
     setDocumentCountry(selectedCountry);
+    trackEvent("country_switched", { country: selectedCountry });
     syncCountryButtons(selectedCountry);
     updateCountryLabels(selectedCountry);
     populateHeroRegions(selectedCountry);
@@ -1184,6 +1264,12 @@
       const isActive = btn.classList.contains("is-active");
       heroTypeFilters = isActive ? [] : filters;
       heroTypeButtons.forEach((b) => b.classList.toggle("is-active", b === btn && !isActive));
+      trackEvent("directory_filter_change", {
+        surface: "home",
+        filter_type: "type",
+        value: isActive ? "all" : filters.join(","),
+        country: getActiveCountry()
+      });
       applyFilters();
       document.getElementById("listingResults")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
@@ -1192,10 +1278,19 @@
     btn.addEventListener("click", () => setCountry(btn.dataset.countryOption, { updateHash: true }));
   });
   if (searchInput) {
-    searchInput.addEventListener("input", applyFilters);
+    searchInput.addEventListener("input", () => {
+      scheduleSearchTrack("home", searchInput.value);
+      applyFilters();
+    });
   }
   if (heroRegionSelect) {
     heroRegionSelect.addEventListener("change", () => {
+      trackEvent("directory_filter_change", {
+        surface: "home",
+        filter_type: "region",
+        value: heroRegionSelect.value || "all",
+        country: getActiveCountry()
+      });
       applyFilters();
       const target = document.getElementById("directory") || document.getElementById("listingResults");
       if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1205,7 +1300,10 @@
     filtersForm.addEventListener("change", applyFilters);
   }
   if (clearFiltersBtn) {
-    clearFiltersBtn.addEventListener("click", clearFilters);
+    clearFiltersBtn.addEventListener("click", () => {
+      trackEvent("directory_filters_cleared", { country: getActiveCountry() });
+      clearFilters();
+    });
   }
   if (toggleMapBtn) {
     toggleMapBtn.addEventListener("click", () => {
@@ -1218,5 +1316,28 @@
   }
 
   initShareControls();
+  document.addEventListener("click", (event) => {
+    const listingLink = event.target.closest(".listing-card a");
+    if (listingLink) {
+      trackEvent("listing_opened", {
+        surface: directoryPage ? "directory" : "home",
+        href: listingLink.getAttribute("href") || ""
+      });
+      return;
+    }
+
+    const contactLink = event.target.closest(".listing__contact a");
+    if (contactLink) {
+      trackEvent("listing_contact_click", {
+        channel: (contactLink.textContent || "").trim().toLowerCase()
+      });
+      return;
+    }
+
+    const navCta = event.target.closest(".nav__cta");
+    if (navCta) {
+      trackEvent("submission_cta_clicked", { surface: "nav" });
+    }
+  });
   fetchListings();
 })();

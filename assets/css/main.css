@@ -244,6 +244,22 @@ textarea::placeholder {
   padding: var(--space-6) var(--space-4) var(--space-7);
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: var(--space-4);
+  z-index: 5000;
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius-md);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: var(--shadow-soft);
+}
+.skip-link:focus {
+  top: var(--space-3);
+}
+
 .site-header,
 .site-footer {
   background: rgba(var(--header-rgb, 255, 255, 255), 0.94);
@@ -776,6 +792,23 @@ html[data-theme="dark"] .hero {
 .hero__cta .button {
   min-width: 220px;
 }
+.trust-strip {
+  margin: var(--space-5) 0 0;
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(140deg, rgba(var(--header-rgb), 0.95), var(--bg-2));
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: var(--space-2);
+}
+.trust-strip p {
+  margin: 0;
+  color: var(--muted);
+}
+.trust-strip strong {
+  color: var(--text);
+}
 @media (max-width: 640px) {
   .hero__filters-row {
     flex-direction: column;
@@ -1106,6 +1139,35 @@ html[data-theme="dark"] .about-close::before {
 .about-close__note {
   margin: 0;
   color: var(--muted);
+}
+
+.policy-page {
+  display: grid;
+  gap: var(--space-5);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.policy-page__header,
+.policy-page__section {
+  display: grid;
+  gap: var(--space-3);
+}
+.policy-page__section {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}
+.policy-page__header h1,
+.policy-page__section h2 {
+  margin: 0;
+}
+.policy-page__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: var(--space-2);
+}
+.policy-page__list li {
+  color: var(--text);
 }
 
 .markets-hero {
@@ -1602,6 +1664,53 @@ html[data-theme="dark"] .about-close::before {
 .listing__content {
   margin: var(--space-3) 0 0;
 }
+.listing-glance {
+  margin: var(--space-4) 0;
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(145deg, rgba(var(--header-rgb), 0.96), var(--bg-2));
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: var(--space-4);
+}
+.listing-glance__intro {
+  display: grid;
+  gap: var(--space-2);
+}
+.listing-glance__intro h2 {
+  margin: 0;
+}
+.listing-glance__summary {
+  margin: 0;
+  max-width: 60ch;
+}
+.listing-glance__facts {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-3);
+}
+.listing-glance__facts div {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: rgba(var(--header-rgb), 0.82);
+}
+.listing-glance__facts dt {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+}
+.listing-glance__facts dd {
+  margin: 0;
+  color: var(--text);
+}
 .listing__body p {
   margin-bottom: var(--space-3);
 }
@@ -1659,6 +1768,11 @@ html[data-theme="dark"] .about-close::before {
   gap: var(--space-2);
   flex-wrap: wrap;
   align-items: center;
+}
+.listing__policy-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 .share-control {
   position: relative;
@@ -2039,6 +2153,19 @@ html[data-theme="dark"] .article {
 .listing-reviews {
   margin-top: var(--space-5);
 }
+.listing-reviews__header {
+  display: grid;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+.listing-reviews__header h2 {
+  margin: 0;
+}
+.listing-reviews__note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
 .review-list {
   list-style: none;
   padding: 0;
@@ -2372,6 +2499,11 @@ html[data-theme="dark"] .article {
   box-shadow: var(--shadow);
   display: grid;
   gap: var(--space-3);
+}
+.featured-card__note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .listing-card.hidden {

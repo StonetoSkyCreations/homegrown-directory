@@ -30,11 +30,11 @@ seo_description: >
   <div class="hero__actions">
     <p class="eyebrow">Browse categories</p>
     <div class="hero__category-grid">
-      <button class="button ghost" type="button" data-type-filter="grocer">
-        {% include icon.html name="grocer" %}
-        Find Groceries
+      <button class="button ghost" type="button" data-type-filter="store">
+        {% include icon.html name="store" %}
+        Find Stores
       </button>
-      <button class="button ghost" type="button" data-type-filter="restaurant">
+      <button class="button ghost" type="button" data-type-filter="restaurant,vendor">
         {% include icon.html name="restaurant" %}
         Find Eateries
       </button>
@@ -44,7 +44,7 @@ seo_description: >
       </button>
       <button class="button ghost" type="button" data-type-filter="distributor">
         {% include icon.html name="distributor" %}
-        Find Hubs &amp; Distributors
+        Find Distributors
       </button>
       <button class="button ghost" type="button" data-type-filter="farm">
         {% include icon.html name="farm" %}
@@ -52,6 +52,12 @@ seo_description: >
       </button>
     </div>
   </div>
+</section>
+
+<section class="trust-strip" aria-label="Trust commitments">
+  <p><strong>Not a ranking.</strong> Listings are curated for transparency, not scored for status.</p>
+  <p><strong>Not an endorsement.</strong> Featured and reviews are contextual notes, not guarantees.</p>
+  <p><strong>Governed openly.</strong> Read the <a href="{{ '/listing-criteria/' | relative_url }}">listing criteria</a>, <a href="{{ '/featured-policy/' | relative_url }}">featured policy</a>, and <a href="{{ '/review-policy/' | relative_url }}">review policy</a>.</p>
 </section>
 
 {% assign featured_home = site.data.featured.global.home %}
@@ -83,12 +89,12 @@ seo_description: >
   </div>
   <template id="emptyStateTemplate">
     <div class="empty-panel">
-      <p class="eyebrow">A map for finding food grown with care</p>
+      <p class="eyebrow">A directory for finding food grown with care</p>
       <p>A quiet culture exists: people growing, sourcing, and serving food with care. Businesses with an emphasis on regenerative, organic, spray-free, wild, foraged and local food are all around us but often hard to find. Homegrown fixes this.</p>
-      <p>Here is a map of relationships: growers, farmers, markets, grocers, cafés, and restaurants - all part of this growing community.</p>
+      <p>Relationship links on listings help show how growers, markets, stores, eateries, and distributors connect across local food systems.</p>
       <p>Use the search bar to look up a place, business, product, or practice, or browse by region and category.</p>
       <div class="empty-panel__actions">
-        <p>We are in our beta phase. Finding all the people. Playing with funtion and form. If something’s missing, or a listing needs correcting, please send us an email:</p>
+        <p>We are still building carefully. If something’s missing, or a listing needs correcting, use the update flow so it can be reviewed:</p>
         <a class="button" href="{{ '/submit.html' | relative_url }}">Add / Update a Listing</a>
       </div>
     </div>

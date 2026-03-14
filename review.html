@@ -10,6 +10,7 @@ noindex: true
     <p class="eyebrow">Reviews</p>
     <h1>Review this Place</h1>
     <p class="lead">Share your experience and help keep the directory accurate. On submit, your email client will open with the review details.</p>
+    <p class="muted">Reviews are checked before publication and are used as context, not as a ranking system. <a href="{{ '/review-policy/' | relative_url }}">Review policy</a></p>
   </header>
 
   <form id="reviewForm">
@@ -187,6 +188,12 @@ noindex: true
         if (debugEl && debugBody) {
           debugBody.value = body;
           debugEl.style.display = 'block';
+        }
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'listing_review_started', {
+            business_slug: slug || '',
+            has_visit_date: Boolean(data.get('visit'))
+          });
         }
         window.location.href = mailto;
       } catch (err) {

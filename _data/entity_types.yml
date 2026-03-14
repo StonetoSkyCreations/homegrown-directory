@@ -1,0 +1,30 @@
+farms:
+  label: Farm
+  token: farm
+  browse_path: /farms/
+  icon: farm
+markets:
+  label: Market
+  token: market
+  browse_path: /markets/
+  icon: market
+stores:
+  label: Store
+  token: store
+  browse_path: /groceries/
+  icon: store
+restaurants:
+  label: Restaurant
+  token: restaurant
+  browse_path: /eateries/
+  icon: restaurant
+vendors:
+  label: Vendor
+  token: vendor
+  browse_path: /eateries/
+  icon: vendor
+distributors:
+  label: Distributor
+  token: distributor
+  browse_path: /distributors/
+  icon: distributor

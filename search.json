@@ -8,27 +8,10 @@ permalink: /search.json
   {% if doc.type == "brand" or doc.subtype == "brand" or doc.listing_type == "brand" %}
     {% continue %}
   {% endif %}
-  {% assign display_type = doc.collection | capitalize %}
-  {% assign type_token = doc.collection %}
+  {% assign entity_config = site.data.entity_types[doc.collection] %}
+  {% assign display_type = entity_config.label | default: doc.collection | capitalize %}
+  {% assign type_token = entity_config.token | default: doc.collection %}
   {% assign subtype_raw = doc.subtype | default: doc.type | default: doc.listing_type | default: doc.category %}
-  {% case doc.collection %}
-    {% when 'stores' %}
-      {% assign display_type = 'Grocer' %}
-      {% assign type_token = 'grocer' %}
-    {% when 'restaurants' %}
-      {% assign display_type = 'Eatery' %}
-      {% assign type_token = 'restaurant' %}
-    {% when 'vendors' %}
-      {% assign display_type = 'Eatery' %}
-      {% assign type_token = 'restaurant' %}
-    {% when 'distributors' %}
-      {% assign display_type = 'Hub' %}
-      {% assign type_token = 'distributor' %}
-    {% when 'farms' %}
-      {% assign type_token = 'farm' %}
-    {% when 'markets' %}
-      {% assign type_token = 'market' %}
-  {% endcase %}
   {% assign subtype_token = subtype_raw | default: type_token | slugify %}
   {% if doc.practices_tags and doc.practices_tags != empty %}
     {% assign practices = doc.practices_tags | uniq | compact %}

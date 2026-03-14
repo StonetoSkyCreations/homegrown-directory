@@ -16,7 +16,10 @@
 {%- endif -%}
 {% if collected_reviews and collected_reviews.size > 0 %}
 <section class="listing-reviews">
-  <h2>Reviews</h2>
+  <div class="listing-reviews__header">
+    <h2>Reviews</h2>
+    <p class="listing-reviews__note">Reviews are reader-submitted and moderated for relevance, civility, and factual usefulness. <a href="{{ '/review-policy/' | relative_url }}">Review policy</a></p>
+  </div>
   <ul class="review-list">
     {% for review in collected_reviews %}
       <li class="review">

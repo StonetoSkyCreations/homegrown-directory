@@ -1,0 +1,95 @@
+{% assign entity = include.entity | default: page %}
+{% assign type_label = include.type_label | default: site.data.entity_types[entity.collection].label | default: entity.collection | capitalize %}
+{% assign summary_text = entity.description | default: entity.short_description | default: entity.excerpt | strip_html | strip %}
+
+{% assign location_parts = "" | split: "" %}
+{% if entity.city %}{% assign location_parts = location_parts | push: entity.city %}{% endif %}
+{% if entity.region %}{% assign location_parts = location_parts | push: entity.region %}{% endif %}
+{% if entity.country %}{% assign location_parts = location_parts | push: entity.country %}{% endif %}
+{% assign location_text = location_parts | uniq | join: ", " %}
+
+{% assign offer_values = "" | split: "" %}
+{% if entity.products %}{% assign offer_values = offer_values | concat: entity.products %}{% endif %}
+{% if entity.products_or_cuisine %}{% assign offer_values = offer_values | concat: entity.products_or_cuisine %}{% endif %}
+{% if entity.specialty_tags %}{% assign offer_values = offer_values | concat: entity.specialty_tags %}{% endif %}
+{% assign offers = "" | split: "" %}
+{% for item in offer_values %}
+  {% assign item_clean = item | to_s | strip %}
+  {% if item_clean != "" %}
+    {% assign offers = offers | push: item_clean %}
+  {% endif %}
+{% endfor %}
+{% assign offers = offers | uniq %}
+
+{% assign practice_values = "" | split: "" %}
+{% if entity.practices %}{% assign practice_values = practice_values | concat: entity.practices %}{% endif %}
+{% if entity.practices_tags %}{% assign practice_values = practice_values | concat: entity.practices_tags %}{% endif %}
+{% if entity.sourcing_tags %}{% assign practice_values = practice_values | concat: entity.sourcing_tags %}{% endif %}
+{% assign practices = "" | split: "" %}
+{% for item in practice_values %}
+  {% assign item_clean = item | to_s | strip %}
+  {% if item_clean != "" %}
+    {% assign practices = practices | push: item_clean %}
+  {% endif %}
+{% endfor %}
+{% assign practices = practices | uniq %}
+
+{% assign access_values = "" | split: "" %}
+{% if entity.services %}{% assign access_values = access_values | concat: entity.services %}{% endif %}
+{% if entity.market_days %}{% assign access_values = access_values | concat: entity.market_days %}{% endif %}
+{% assign access_points = "" | split: "" %}
+{% for item in access_values %}
+  {% assign item_clean = item | to_s | strip %}
+  {% if item_clean != "" %}
+    {% assign access_points = access_points | push: item_clean %}
+  {% endif %}
+{% endfor %}
+{% assign access_points = access_points | uniq %}
+
+{% assign freshness = entity.geo_last_verified | default: entity.last_reviewed | default: entity.updated_at | default: entity.date %}
+
+<section class="listing-glance" aria-labelledby="listing-glance-title">
+  <div class="listing-glance__intro">
+    <p class="eyebrow">At a glance</p>
+    <h2 id="listing-glance-title">Quick facts</h2>
+    {% if summary_text != "" %}
+      <p class="listing-glance__summary">{{ summary_text }}</p>
+    {% endif %}
+  </div>
+  <dl class="listing-glance__facts">
+    <div>
+      <dt>Type</dt>
+      <dd>{{ type_label }}</dd>
+    </div>
+    {% if location_text != "" %}
+      <div>
+        <dt>Where</dt>
+        <dd>{{ location_text }}</dd>
+      </div>
+    {% endif %}
+    {% if offers.size > 0 %}
+      <div>
+        <dt>What you can find</dt>
+        <dd>{{ offers | slice: 0, 4 | join: ", " }}</dd>
+      </div>
+    {% endif %}
+    {% if practices.size > 0 %}
+      <div>
+        <dt>Practices</dt>
+        <dd>{{ practices | slice: 0, 4 | join: ", " }}</dd>
+      </div>
+    {% endif %}
+    {% if access_points.size > 0 %}
+      <div>
+        <dt>How to buy</dt>
+        <dd>{{ access_points | slice: 0, 3 | join: ", " }}</dd>
+      </div>
+    {% endif %}
+    {% if freshness %}
+      <div>
+        <dt>Data note</dt>
+        <dd>Location or listing details were last checked {{ freshness | date: "%-d %b %Y" }}.</dd>
+      </div>
+    {% endif %}
+  </dl>
+</section>

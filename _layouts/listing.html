@@ -13,7 +13,8 @@ map: false
 {% assign incoming_sources = incoming_from_supplies | concat: incoming_from_sources | uniq | where_exp: 'item', 'item.slug != page.slug' %}
 {% assign source_partners = all_listings | where_exp: 'item', 'sourced_from_list contains item.slug' | uniq %}
 {% assign schema_type = 'LocalBusiness' %}
-{% assign display_label = page.collection | capitalize %}
+{% assign entity_config = site.data.entity_types[page.collection] %}
+{% assign display_label = entity_config.label | default: page.collection | capitalize %}
 {% assign review_target = page.slug | default: page.title | slugify %}
 {% assign encoded_title = page.title | default: page.name | uri_escape %}
 {% assign website_url = page.website | default: "" %}
@@ -56,17 +57,17 @@ map: false
 {% assign primary_phone_display = contact_phones | first | to_s | strip %}
 {% case page.collection %}
   {% when 'farms' %}{% assign schema_type = 'Farm' %}{% assign display_label = 'Farm' %}
-  {% when 'restaurants' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Eatery' %}
-  {% when 'vendors' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Eatery' %}
+  {% when 'restaurants' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Restaurant' %}
+  {% when 'vendors' %}{% assign schema_type = 'Restaurant' %}{% assign display_label = 'Vendor' %}
   {% when 'stores' %}
     {% if page.category == 'cafe' or page.type contains 'Cafe' or page.type contains 'cafe' %}
       {% assign schema_type = 'CafeOrCoffeeShop' %}
     {% else %}
       {% assign schema_type = 'GroceryStore' %}
     {% endif %}
-    {% assign display_label = 'Grocer' %}
+    {% assign display_label = 'Store' %}
   {% when 'markets' %}{% assign schema_type = 'FarmersMarket' %}{% assign display_label = 'Market' %}
-  {% when 'distributors' %}{% assign schema_type = 'WholesaleStore' %}{% assign display_label = 'Hub' %}
+  {% when 'distributors' %}{% assign schema_type = 'WholesaleStore' %}{% assign display_label = 'Distributor' %}
 {% endcase %}
 
 <section class="listing">
@@ -82,7 +83,7 @@ map: false
   <div class="listing__contact">
     {% if website_url != "" %}<a href="{{ website_url }}" rel="noopener">Website</a>{% endif %}
     {% if primary_email != "" %}<a href="mailto:{{ primary_email }}">Email</a>{% endif %}
-    {% if primary_phone_display != "" %}<a href="tel:{{ ld_phone }}">Phone</a>{% endif %}
+    {% if primary_phone_display != "" %}<a href="tel:{{ primary_phone_href }}">Phone</a>{% endif %}
   </div>
 {% endif %}
       </div>
@@ -98,6 +99,8 @@ map: false
       </div>
     </div>
   </header>
+
+  {% include listing-glance.html entity=page type_label=display_label %}
 
   <div class="listing__content">
     {% assign has_long_description = page.long_description | to_s | strip %}
@@ -140,6 +143,7 @@ map: false
       <a class="text-link" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}" rel="nofollow">Update listing</a>
       <a class="button button--sm" href="{{ '/review.html?listing=' | append: review_target | relative_url }}" rel="nofollow">Review this place</a>
     </div>
+    <p class="listing__policy-note">Homegrown is a directory, not a ranking. <a href="{{ '/listing-criteria/' | relative_url }}">Listing criteria</a>, <a href="{{ '/featured-policy/' | relative_url }}">featured policy</a>, and <a href="{{ '/review-policy/' | relative_url }}">review policy</a> explain how this page is maintained.</p>
 
     {% assign practices_list = "" | split: "" %}
     {% for item in page.practices %}

@@ -8,6 +8,7 @@ map: false
 {% assign website_url = page.website | default: "" %}
 {% assign short_description = page.description | default: page.excerpt | default: "" %}
 {% assign trimmed_body = content | strip %}
+{% assign entity_config = site.data.entity_types.stores %}
 {% assign empty_array = "" | split: "" %}
 {% assign supplies_list = page.supplies_to | default: empty_array %}
 {% assign sourced_from_list = page.sourced_from | default: empty_array %}
@@ -39,7 +40,7 @@ map: false
   <header class="listing__header">
     <div class="listing__header-row">
       <div>
-        <p class="listing__type">{{ page.type | capitalize }}</p>
+        <p class="listing__type">{{ entity_config.label }}</p>
         <h1>{{ display_title }}</h1>
         <p class="listing__location">
           {% include address-block.html %}
@@ -64,6 +65,8 @@ map: false
       </div>
     </div>
   </header>
+
+  {% include listing-glance.html entity=page type_label=entity_config.label %}
 
   <div class="listing__content">
     {% assign has_long_description = page.long_description | to_s | strip %}
@@ -105,6 +108,7 @@ map: false
       <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}" rel="nofollow">Update listing</a>
       <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}" rel="nofollow">Review this place</a>
     </div>
+    <p class="listing__policy-note">Homegrown is a directory, not a ranking. <a href="{{ '/listing-criteria/' | relative_url }}">Listing criteria</a>, <a href="{{ '/featured-policy/' | relative_url }}">featured policy</a>, and <a href="{{ '/review-policy/' | relative_url }}">review policy</a> explain how this page is maintained.</p>
     {% include rating.html listing=page %}
     {% assign practice_list = page.practices | default: empty_array %}
     {% if page.practices_tags %}{% assign practice_list = practice_list | concat: page.practices_tags %}{% endif %}
