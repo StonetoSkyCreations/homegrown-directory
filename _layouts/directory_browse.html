@@ -247,35 +247,6 @@ layout: default
         </div>
       </section>
     {% endif %}
-  {% else %}
-    <section class="directory-context">
-      <div class="directory-context__header">
-        <h2>Choose a country route</h2>
-        <p class="muted">These pages now have dedicated country-specific browse paths.</p>
-      </div>
-      <div class="category-grid">
-        {% for country_entry in site.data.geography.countries %}
-          {% assign country_slug = country_entry[0] %}
-          {% assign country = country_entry[1] %}
-          {% assign country_items = '' | split: ',' %}
-          {% for collection_key in browse_collections %}
-            {% assign matches = site[collection_key] | where_exp: 'item', 'item.type != "brand"' | where: 'country_slug', country_slug %}
-            {% assign country_items = country_items | concat: matches %}
-          {% endfor %}
-          {% assign country_items = country_items | uniq %}
-          {% if section and section.country_segment %}
-            {% capture country_href %}{{ country.path }}{{ section.country_segment }}/{% endcapture %}
-          {% else %}
-            {% assign country_href = country.path %}
-          {% endif %}
-          <a class="category-card" href="{{ country_href | relative_url }}">
-            <h3>{{ country.label }}</h3>
-            <p class="muted">{{ country_items.size }} listing{% if country_items.size != 1 %}s{% endif %}</p>
-            <span class="text-link">Browse {{ country.label }}</span>
-          </a>
-        {% endfor %}
-      </div>
-    </section>
   {% endif %}
 
   {% if section and section.featured_key and page.region == nil %}
