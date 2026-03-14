@@ -93,6 +93,8 @@ permalink: /search.json
     "geo_label": {{ doc.geo_label | jsonify }},
     "geo_last_verified": {{ doc.geo_last_verified | jsonify }},
     "featured": {{ doc.featured | default: false | jsonify }},
+    "rating_average": {{ doc.rating_average | default: 0 | jsonify }},
+    "rating_count": {{ doc.rating_count | default: 0 | jsonify }},
     "description": {{ long_desc | strip_html | strip_newlines | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}

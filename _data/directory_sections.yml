@@ -1,0 +1,164 @@
+farms:
+  title: Farms
+  eyebrow: Farms & producers
+  hero_title: Find farms and producers
+  intro: Organic, regenerative, spray-free, biodynamic, and pasture-raised farms for people and businesses.
+  path: /farms/
+  country_segment: farms
+  collections:
+    - farms
+  featured_key: farms
+  search_placeholder: Search farms by name, product, or city
+  page_size: 24
+  subtype_filters:
+    - value: market-garden
+      label: Market garden
+    - value: orchard
+      label: Orchard
+    - value: vineyard
+      label: Vineyard
+    - value: livestock
+      label: Livestock
+    - value: dairy-farm
+      label: Dairy farm
+    - value: apiary
+      label: Apiary / honey
+    - value: eggs
+      label: Eggs
+    - value: mushrooms
+      label: Mushrooms
+    - value: seeds
+      label: Seeds / nursery
+    - value: flowers
+      label: Flowers
+    - value: mixed
+      label: Mixed
+  practice_filters:
+    - value: organic
+      label: Organic
+    - value: spray-free
+      label: Spray-free
+    - value: regenerative
+      label: Regenerative
+    - value: biodynamic
+      label: Biodynamic
+    - value: wild
+      label: Wild
+    - value: pasture-raised
+      label: Pasture-raised
+    - value: locally-sourced
+      label: Locally sourced
+markets:
+  title: Markets
+  eyebrow: Markets
+  hero_title: Markets close to home
+  intro: Community marketplaces woven from local food, craft, and connection.
+  path: /markets/
+  country_segment: markets
+  collections:
+    - markets
+  featured_key: markets
+  search_placeholder: Search markets by name or city
+  page_size: 24
+  practice_filters:
+    - value: organic
+      label: Organic
+    - value: spray-free
+      label: Spray-free
+    - value: regenerative
+      label: Regenerative
+    - value: biodynamic
+      label: Biodynamic
+    - value: wild
+      label: Wild
+    - value: pasture-raised
+      label: Pasture-raised
+    - value: supports-local
+      label: Supports local
+groceries:
+  title: Groceries
+  eyebrow: Grocers & retail
+  hero_title: Find honest groceries
+  intro: Supermarkets, co-ops, wholefood stores, and refilleries that foreground organic, spray-free, or local sourcing.
+  path: /groceries/
+  country_segment: groceries
+  collections:
+    - stores
+  featured_key: grocers
+  search_placeholder: Search grocers by name, product, or city
+  page_size: 24
+  subtype_filters:
+    - value: supermarket
+      label: Supermarket
+    - value: organic-store
+      label: Organic store
+    - value: wholefoods-store
+      label: Wholefoods store
+    - value: bulk-refillery
+      label: Bulk refillery
+    - value: co-op
+      label: Co-op
+    - value: specialty-grocer
+      label: Specialty grocer
+  practice_filters:
+    - value: organic
+      label: Organic
+    - value: spray-free
+      label: Spray-free
+    - value: regenerative
+      label: Regenerative
+    - value: biodynamic
+      label: Biodynamic
+    - value: wild
+      label: Wild
+    - value: pasture-raised
+      label: Pasture-raised
+    - value: locally-sourced
+      label: Locally sourced
+eateries:
+  title: Eateries
+  eyebrow: Eateries
+  hero_title: Find places that name their farmers
+  intro: Cafes, restaurants, bars, bakeries, and food trucks using organic, seasonal, and local ingredients.
+  path: /eateries/
+  country_segment: eateries
+  collections:
+    - restaurants
+    - vendors
+  featured_key: eateries
+  search_placeholder: Search eateries by name, cuisine, or city
+  page_size: 24
+  subtype_filters:
+    - value: cafe
+      label: Cafe
+    - value: restaurant
+      label: Restaurant
+    - value: food-truck
+      label: Food truck
+  practice_filters:
+    - value: organic
+      label: Organic
+    - value: spray-free
+      label: Spray-free
+    - value: regenerative
+      label: Regenerative
+    - value: biodynamic
+      label: Biodynamic
+    - value: wild
+      label: Wild
+    - value: pasture-raised
+      label: Pasture-raised
+    - value: locally-sourced
+      label: Locally sourced
+distributors:
+  title: Distributors
+  eyebrow: Distributors & hubs
+  hero_title: Find the connective tissue
+  intro: Food hubs, CSAs, and distributors moving transparent, regenerative goods.
+  path: /distributors/
+  country_segment: distributors
+  collections:
+    - distributors
+  featured_key: distributors
+  search_placeholder: Search distributors by name, service, or city
+  page_size: 24

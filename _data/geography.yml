@@ -1,0 +1,65 @@
+countries:
+  new-zealand:
+    label: New Zealand
+    path: /country/new-zealand/
+    regions:
+      - slug: auckland
+        name: Auckland
+      - slug: bay-of-plenty
+        name: Bay of Plenty
+      - slug: canterbury
+        name: Canterbury
+      - slug: central-otago
+        name: Central Otago
+      - slug: chatham-islands
+        name: Chatham Islands
+      - slug: coromandel
+        name: Coromandel
+      - slug: gisborne
+        name: Gisborne
+      - slug: hauraki-plains
+        name: Hauraki Plains
+      - slug: hawkes-bay
+        name: "Hawke's Bay"
+      - slug: manawatu-whanganui
+        name: Manawatū-Whanganui
+      - slug: marlborough
+        name: Marlborough
+      - slug: mid-canterbury
+        name: Mid Canterbury
+      - slug: multiple
+        name: Multiple
+      - slug: nelson
+        name: Nelson
+      - slug: northland
+        name: Northland
+      - slug: otago
+        name: Otago
+      - slug: southland
+        name: Southland
+      - slug: taranaki
+        name: Taranaki
+      - slug: tasman
+        name: Tasman
+      - slug: waihi-beach
+        name: Waihi Beach
+      - slug: waikato
+        name: Waikato
+      - slug: wairarapa
+        name: Wairarapa
+      - slug: wellington
+        name: Wellington
+      - slug: west-coast
+        name: West Coast
+  australia:
+    label: Australia
+    path: /country/australia/
+    regions:
+      - slug: multiple
+        name: Multiple
+      - slug: new-south-wales
+        name: New South Wales
+      - slug: queensland
+        name: Queensland
+      - slug: victoria
+        name: Victoria

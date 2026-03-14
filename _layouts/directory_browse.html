@@ -1,0 +1,318 @@
+---
+layout: default
+---
+{% assign section = site.data.directory_sections[page.directory_key] %}
+{% if page.browse_collections %}
+  {% assign browse_collections = page.browse_collections %}
+{% elsif section and section.collections %}
+  {% assign browse_collections = section.collections %}
+{% else %}
+  {% assign browse_collections = '' | split: ',' %}
+{% endif %}
+{% assign country_data = nil %}
+{% if page.country_slug %}
+  {% assign country_data = site.data.geography.countries[page.country_slug] %}
+{% endif %}
+{% assign page_eyebrow = page.eyebrow | default: section.eyebrow | default: 'Directory' %}
+{% assign page_title = page.hero_title | default: section.hero_title | default: page.title %}
+{% assign page_intro = page.lead | default: section.intro | default: page.description %}
+{% assign search_placeholder = page.search_placeholder | default: section.search_placeholder | default: 'Search listings by name or location' %}
+{% assign page_size = page.page_size | default: section.page_size | default: 24 %}
+{% assign subtype_filters = page.subtype_filters | default: section.subtype_filters %}
+{% assign practice_filters = page.practice_filters | default: section.practice_filters %}
+{% assign product_filters = page.product_filters | default: section.product_filters %}
+{% assign section_key = page.directory_key | default: 'region-hub' %}
+{% capture generated_switch_template %}{% if page.country_switch_path_template %}{{ page.country_switch_path_template }}{% elsif section and section.country_segment %}/country/__COUNTRY__/{{ section.country_segment }}/{% endif %}{% endcapture %}
+{% assign body_copy = content | strip_html | strip %}
+{% assign scoped_items = '' | split: ',' %}
+{% for collection_key in browse_collections %}
+  {% assign collection_items = site[collection_key] | where_exp: 'item', 'item.type != "brand"' %}
+  {% if page.country_slug %}
+    {% assign collection_items = collection_items | where: 'country_slug', page.country_slug %}
+  {% endif %}
+  {% if page.region %}
+    {% assign collection_items = collection_items | where: 'region', page.region %}
+  {% endif %}
+  {% assign scoped_items = scoped_items | concat: collection_items %}
+{% endfor %}
+{% assign scoped_items = scoped_items | uniq %}
+{% assign total_count = scoped_items.size %}
+{% assign available_regions = scoped_items | map: 'region' | compact | uniq | sort %}
+
+<section class="directory-page"
+  data-directory-key="{{ section_key }}"
+  data-directory-collections="{{ browse_collections | join: ',' }}"
+  data-directory-country="{{ page.country_slug | default: '' }}"
+  data-directory-region="{{ page.region | default: '' }}"
+  data-directory-region-slug="{{ page.region_slug | default: page.region | slugify }}"
+  data-directory-page-size="{{ page_size }}"
+  data-country-switch-path-template="{{ generated_switch_template | strip }}">
+  <header class="directory-hero">
+    <div class="directory-hero__copy">
+      {% if country_data or page.region and section %}
+        <div class="directory-breadcrumbs">
+          {% if country_data %}
+            <a href="{{ country_data.path | relative_url }}">{{ country_data.label }}</a>
+          {% endif %}
+          {% if page.region and section %}
+            <a href="{{ '/country/' | append: page.country_slug | append: '/' | append: section.country_segment | append: '/' | relative_url }}">{{ section.title }}</a>
+          {% endif %}
+        </div>
+      {% endif %}
+      <p class="eyebrow">{{ page_eyebrow }}</p>
+      <h1>{{ page_title }}</h1>
+      {% if page_intro %}<p class="lead">{{ page_intro }}</p>{% endif %}
+      <div class="directory-meta">
+        <span class="country-chip">
+          {{ total_count }} listing{% if total_count != 1 %}s{% endif %}
+          {% if page.region %} in {{ page.region }}{% elsif country_data %} in {{ country_data.label }}{% endif %}
+        </span>
+        {% if country_data and page.region %}
+          <a class="text-link" href="{{ country_data.path | relative_url }}">Back to {{ country_data.label }}</a>
+        {% elsif country_data %}
+          <a class="text-link" href="{{ country_data.path | relative_url }}">Browse all {{ country_data.label }} directories</a>
+        {% endif %}
+      </div>
+      {% if body_copy != '' %}
+        <p class="muted directory-note">{{ body_copy }}</p>
+      {% endif %}
+    </div>
+
+    <form class="directory-controls directory-filters" data-directory-filters>
+      <div class="directory-controls__grid">
+        <fieldset class="filter-fieldset">
+          <legend>Search</legend>
+          <label class="sr-only" for="dirSearch">Search listings</label>
+          <input id="dirSearch" type="search" placeholder="{{ search_placeholder }}">
+        </fieldset>
+
+        {% unless page.region %}
+          <fieldset class="filter-fieldset">
+            <legend>Region</legend>
+            <label class="sr-only" for="regionFilter">Region</label>
+            <select id="regionFilter">
+              <option value="all">All regions</option>
+              {% for region in available_regions %}
+                <option value="{{ region | slugify }}">{{ region }}</option>
+              {% endfor %}
+            </select>
+          </fieldset>
+        {% endunless %}
+
+        <fieldset class="filter-fieldset filter-fieldset--actions">
+          <legend>Actions</legend>
+          <div class="directory-action-row">
+            <button type="button" class="button ghost button--sm" id="nearMeBtn">Near me</button>
+            <button type="button" class="button ghost button--sm" data-directory-clear>Clear filters</button>
+          </div>
+          <span class="muted near-me-status" id="nearMeStatus" data-near-me-status></span>
+        </fieldset>
+      </div>
+
+      {% if subtype_filters and subtype_filters != empty %}
+        <fieldset class="filter-fieldset filter-fieldset--pills">
+          <legend>Looking for</legend>
+          <div class="pill-group">
+            {% for subtype in subtype_filters %}
+              <label class="pill pill--checkbox">
+                <input type="checkbox" name="subtype" value="{{ subtype.value }}">
+                <span>{{ subtype.label }}</span>
+              </label>
+            {% endfor %}
+          </div>
+        </fieldset>
+      {% endif %}
+
+      {% if practice_filters and practice_filters != empty %}
+        <fieldset class="filter-fieldset filter-fieldset--pills">
+          <legend>Practices</legend>
+          <div class="pill-group">
+            {% for tag in practice_filters %}
+              <label class="pill pill--checkbox">
+                <input type="checkbox" name="tag" value="{{ tag.value }}">
+                <span>{{ tag.label }}</span>
+              </label>
+            {% endfor %}
+          </div>
+        </fieldset>
+      {% endif %}
+
+      {% if product_filters and product_filters != empty %}
+        <fieldset class="filter-fieldset filter-fieldset--pills">
+          <legend>Products</legend>
+          <div class="pill-group">
+            {% for product in product_filters %}
+              <label class="pill pill--checkbox">
+                <input type="checkbox" name="products" value="{{ product.value }}">
+                <span>{{ product.label }}</span>
+              </label>
+            {% endfor %}
+          </div>
+        </fieldset>
+      {% endif %}
+    </form>
+  </header>
+
+  {% if page.region %}
+    <section class="directory-context">
+      <div class="directory-context__header">
+        <h2>Browse {{ page.region }} by directory</h2>
+        <p class="muted">Jump into a specific part of the food system.</p>
+      </div>
+      <div class="category-grid">
+        {% for sibling_key in site.data.directory_sections %}
+          {% assign sibling_name = sibling_key[0] %}
+          {% assign sibling_section = sibling_key[1] %}
+          {% assign sibling_items = '' | split: ',' %}
+          {% for collection_key in sibling_section.collections %}
+            {% assign matches = site[collection_key] | where_exp: 'item', 'item.type != "brand"' | where: 'country_slug', page.country_slug | where: 'region', page.region %}
+            {% assign sibling_items = sibling_items | concat: matches %}
+          {% endfor %}
+          {% assign sibling_items = sibling_items | uniq %}
+          {% capture sibling_href %}/country/{{ page.country_slug }}/{{ sibling_section.country_segment }}/?region={{ page.region_slug | default: page.region | slugify }}{% endcapture %}
+          <a class="category-card{% if page.directory_key == sibling_name %} category-card--active{% endif %}" href="{{ sibling_href | relative_url }}">
+            <h3>{{ sibling_section.title }}</h3>
+            <p class="muted">{{ sibling_items.size }} listing{% if sibling_items.size != 1 %}s{% endif %}</p>
+            <span class="text-link">Browse {{ sibling_section.title | downcase }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    {% if country_data and country_data.regions and country_data.regions.size > 1 %}
+      <section class="directory-context">
+        <div class="directory-context__header">
+          <h2>More regions in {{ country_data.label }}</h2>
+          <p class="muted">Move laterally without going back to the homepage.</p>
+        </div>
+        <div class="region-link-list">
+          {% for region in country_data.regions %}
+            {% assign region_items = '' | split: ',' %}
+            {% for collection_key in browse_collections %}
+              {% assign region_matches = site[collection_key] | where_exp: 'item', 'item.type != "brand"' | where: 'country_slug', page.country_slug | where: 'region', region.name %}
+              {% assign region_items = region_items | concat: region_matches %}
+            {% endfor %}
+            {% assign region_items = region_items | uniq %}
+            {% if region_items.size > 0 %}
+              <a class="region-link{% if region.name == page.region %} region-link--active{% endif %}" href="{{ country_data.path | append: region.slug | append: '/' | relative_url }}">
+                <span>{{ region.name }}</span>
+                <span class="muted">{{ region_items.size }}</span>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  {% elsif country_data %}
+    <section class="directory-context">
+      <div class="directory-context__header">
+        <h2>Other directories in {{ country_data.label }}</h2>
+        <p class="muted">Every collection now has a country-specific route.</p>
+      </div>
+      <div class="category-grid">
+        {% for sibling_key in site.data.directory_sections %}
+          {% assign sibling_name = sibling_key[0] %}
+          {% assign sibling_section = sibling_key[1] %}
+          {% assign sibling_items = '' | split: ',' %}
+          {% for collection_key in sibling_section.collections %}
+            {% assign matches = site[collection_key] | where_exp: 'item', 'item.type != "brand"' | where: 'country_slug', page.country_slug %}
+            {% assign sibling_items = sibling_items | concat: matches %}
+          {% endfor %}
+          {% assign sibling_items = sibling_items | uniq %}
+          <a class="category-card{% if page.directory_key == sibling_name %} category-card--active{% endif %}" href="{{ country_data.path | append: sibling_section.country_segment | append: '/' | relative_url }}">
+            <h3>{{ sibling_section.title }}</h3>
+            <p class="muted">{{ sibling_items.size }} listing{% if sibling_items.size != 1 %}s{% endif %}</p>
+            <span class="text-link">View {{ sibling_section.title | downcase }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    {% if available_regions and available_regions != empty %}
+      <section class="directory-context">
+        <div class="directory-context__header">
+          <h2>Browse {{ section.title | default: 'listings' }} by region</h2>
+          <p class="muted">Jump straight to a regional landing page instead of filtering a global grid.</p>
+        </div>
+        <div class="region-link-list">
+          {% for region in country_data.regions %}
+            {% assign region_items = scoped_items | where: 'region', region.name %}
+            {% if region_items.size > 0 %}
+              <a class="region-link" href="{{ country_data.path | append: region.slug | append: '/' | relative_url }}">
+                <span>{{ region.name }}</span>
+                <span class="muted">{{ region_items.size }}</span>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  {% else %}
+    <section class="directory-context">
+      <div class="directory-context__header">
+        <h2>Choose a country route</h2>
+        <p class="muted">These pages now have dedicated country-specific browse paths.</p>
+      </div>
+      <div class="category-grid">
+        {% for country_entry in site.data.geography.countries %}
+          {% assign country_slug = country_entry[0] %}
+          {% assign country = country_entry[1] %}
+          {% assign country_items = '' | split: ',' %}
+          {% for collection_key in browse_collections %}
+            {% assign matches = site[collection_key] | where_exp: 'item', 'item.type != "brand"' | where: 'country_slug', country_slug %}
+            {% assign country_items = country_items | concat: matches %}
+          {% endfor %}
+          {% assign country_items = country_items | uniq %}
+          {% if section and section.country_segment %}
+            {% capture country_href %}{{ country.path }}{{ section.country_segment }}/{% endcapture %}
+          {% else %}
+            {% assign country_href = country.path %}
+          {% endif %}
+          <a class="category-card" href="{{ country_href | relative_url }}">
+            <h3>{{ country.label }}</h3>
+            <p class="muted">{{ country_items.size }} listing{% if country_items.size != 1 %}s{% endif %}</p>
+            <span class="text-link">Browse {{ country.label }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if section and section.featured_key and page.region == nil %}
+    {% if page.country_slug %}
+      {% include featured-card.html scope="collections" key=section.featured_key country_slug=page.country_slug %}
+    {% else %}
+      {% include featured-card.html scope="collections" key=section.featured_key %}
+      {% include featured-card.html scope="collections" key=section.featured_key country_slug="australia" %}
+    {% endif %}
+  {% endif %}
+
+  <section class="directory-results-panel">
+    <div class="results-toolbar">
+      <div id="dirResultsCount" class="results-count" data-directory-results-count aria-live="polite">Loading listings…</div>
+      <p class="muted directory-results-note">Results render from the live search index and load incrementally.</p>
+    </div>
+    <div class="listing-grid listing-grid--tight" data-directory-results aria-live="polite" aria-busy="true"></div>
+    <div class="directory-results__footer">
+      <button type="button" class="button ghost" data-directory-load-more hidden>Show more</button>
+    </div>
+  </section>
+
+  <template id="directoryEmptyStateTemplate">
+    <div class="empty-state">
+      <h3>No listings match these filters yet.</h3>
+      <p class="muted">Try another region, broaden the search, or clear the filters.</p>
+    </div>
+  </template>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page_intro | default: site.description | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "about": {{ page_eyebrow | jsonify }}
+}
+</script>

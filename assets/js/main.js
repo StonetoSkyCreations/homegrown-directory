@@ -7,7 +7,11 @@
   const countryLabelEls = Array.from(document.querySelectorAll("[data-country-label]"));
   const mapPanel = document.querySelector(".map-panel");
   const countryPage = document.querySelector("[data-country-page]");
-  const directoryPage = document.querySelector(".directory-page");
+  const directoryPage = document.querySelector(".directory-page[data-directory-collections]");
+  const directoryResultsContainer = document.querySelector("[data-directory-results]");
+  const directoryLoadMoreBtn = document.querySelector("[data-directory-load-more]");
+  const directoryFiltersForm = document.querySelector("[data-directory-filters]");
+  const directoryClearBtn = document.querySelector("[data-directory-clear]");
   const toggleMapBtn = document.querySelector("#toggleMap");
   const themeToggle = document.querySelector("[data-theme-toggle]");
   const clearFiltersBtn = document.querySelector("#clearFilters");
@@ -38,6 +42,7 @@
   let runDirectoryFilters;
   let heroTypeFilters = [];
   let populateDirectoryRegions;
+  let directoryState = null;
   let auditHasRun = false;
 
   const getEntityLabel = (key) => ENTITY_TYPES[key]?.label || key;
@@ -334,7 +339,12 @@
 
   const normalizeToken = (value) => (value || "").toString().trim().toLowerCase();
   const normalizeList = (arr) => (arr || []).map(normalizeToken).filter(Boolean);
-  const normalizeRegion = (value) => normalizeToken(value);
+  const normalizeRegion = (value) =>
+    normalizeToken(value)
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
   const normalizeCountry = (value) => normalizeToken(value);
   const getCanonicalType = (value) => {
     const token = normalizeToken(value);
@@ -499,7 +509,7 @@
       )
     ).sort((a, b) => a.localeCompare(b));
     heroRegionSelect.innerHTML = `<option value="all">All regions</option>${regions
-      .map((region) => `<option value="${region.toLowerCase()}">${region}</option>`)
+      .map((region) => `<option value="${normalizeRegion(region)}">${region}</option>`)
       .join("")}`;
   };
 
@@ -575,6 +585,9 @@
   };
 
   applyHashPrefill();
+  if (!selectedCountry && directoryPage?.dataset?.directoryCountry) {
+    selectedCountry = directoryPage.dataset.directoryCountry;
+  }
   if (!selectedCountry && countryPage) {
     selectedCountry = countryPage.dataset.countryPage;
   }
@@ -586,6 +599,16 @@
   syncCountryButtons(selectedCountry);
   updateCountryLabels(selectedCountry);
   populateHeroRegions(selectedCountry);
+  if (directoryPage && directoryResultsContainer) {
+    const pageSize = parseInt(directoryPage.dataset.directoryPageSize || "24", 10);
+    directoryState = {
+      pageSize: Number.isFinite(pageSize) && pageSize > 0 ? pageSize : 24,
+      visibleCount: 0,
+      filtered: [],
+      active: false,
+      nearMeMode: false
+    };
+  }
 
   // Mobile navigation toggle
   if (navToggle && primaryNav) {
@@ -616,234 +639,8 @@
     setTheme(initial, false);
   }
 
-  // Directory filtering (region + tags + subtype + country) for directory pages
-  const directoryContainer = directoryPage;
-  if (directoryContainer) {
-    const regionSelect = document.getElementById("regionFilter");
-    const textFilter = document.getElementById("dirSearch");
-    const tagFilters = Array.from(document.querySelectorAll('input[name="tag"]'));
-    const subtypeFilters = Array.from(document.querySelectorAll('input[name="subtype"]'));
-    const productFilters = Array.from(document.querySelectorAll('input[name="products"]'));
-    const cards = Array.from(directoryContainer.querySelectorAll(".listing-grid .listing-card"));
-    const dirResultsCount = document.getElementById("dirResultsCount");
-    const nearMeStatus = document.querySelector("[data-near-me-status], #nearMeStatus");
-    const directoryResults = directoryContainer.querySelector(".listing-grid");
-
-    const scrollDirectoryResults = () => {
-      if (!directoryResults) return;
-      directoryResults.scrollIntoView({ behavior: "smooth", block: "start" });
-    };
-
-    const ensureFeaturedStyling = (card) => {
-      if (!card) return;
-      card.classList.add("listing-card--featured");
-      card.dataset.featured = "true";
-      const metaContainer = card.querySelector(".listing-card__meta");
-      if (!metaContainer) return;
-      if (!metaContainer.querySelector(".badge--featured")) {
-        metaContainer.insertAdjacentHTML(
-          "beforeend",
-          '<span class="badge badge--verified badge--featured">Featured</span>'
-        );
-      }
-    };
-
-    const setDistanceBadge = (card, distance) => {
-      const badge = card.querySelector("[data-distance]");
-      if (!badge) return distance;
-      if (!Number.isFinite(distance)) {
-        badge.hidden = true;
-        badge.textContent = "";
-      } else {
-        badge.hidden = false;
-        badge.textContent = formatDistance(distance);
-      }
-      return distance;
-    };
-
-    const clearDistances = (cardList) => {
-      cardList.forEach((card) => setDistanceBadge(card, Infinity));
-    };
-
-    const sortByDistance = (cardList, location) => {
-      let anyDistance = false;
-      const sorted = cardList.slice().sort((a, b) => {
-        const latA = parseCoord(a.dataset.lat);
-        const lonA = parseCoord(a.dataset.lon);
-        const latB = parseCoord(b.dataset.lat);
-        const lonB = parseCoord(b.dataset.lon);
-        const distA =
-          latA !== null && lonA !== null ? haversineKm(location.lat, location.lon, latA, lonA) : Infinity;
-        const distB =
-          latB !== null && lonB !== null ? haversineKm(location.lat, location.lon, latB, lonB) : Infinity;
-        if (Number.isFinite(distA) || Number.isFinite(distB)) anyDistance = true;
-        setDistanceBadge(a, distA);
-        setDistanceBadge(b, distB);
-        return distA - distB;
-      });
-      sorted.forEach((card) => card.parentNode.appendChild(card));
-      if (!anyDistance && nearMeStatus) {
-        nearMeStatus.textContent = "No listings with coordinates";
-      } else if (nearMeStatus && nearMeState.active) {
-        nearMeStatus.textContent = "Sorted by distance";
-      }
-    };
-
-    populateDirectoryRegions = (countrySlug) => {
-      if (!regionSelect) return;
-      const activeCountry = countrySlug || getActiveCountry();
-      const regions = Array.from(
-        new Set(
-          cards
-            .filter((card) => !activeCountry || normalizeCountry(card.dataset.country) === normalizeCountry(activeCountry))
-            .map((card) => (card.dataset.region || "").trim())
-            .filter(Boolean)
-        )
-      ).sort((a, b) => a.localeCompare(b));
-      const current = regionSelect.value;
-      regionSelect.innerHTML = `<option value=\"all\">All regions</option>${regions
-        .map((region) => `<option value=\"${normalizeRegion(region)}\">${region}</option>`)
-        .join("")}`;
-      const restore = Array.from(regionSelect.options).some((opt) => opt.value === current);
-      regionSelect.value = restore ? current : "all";
-    };
-
-    runDirectoryFilters = () => {
-      const nearMeMode = nearMeState.active && nearMeState.userLocation;
-      const activeUI = nearMeMode || hasActiveFilters();
-      const selectedRegion = normalizeRegion(regionSelect ? regionSelect.value : "all");
-      const query = textFilter ? normalizeToken(textFilter.value) : "";
-      const selectedTags = normalizeList(tagFilters.filter((c) => c.checked).map((c) => c.value));
-      const selectedSubtypes = normalizeList(subtypeFilters.filter((c) => c.checked).map((c) => c.value));
-      const selectedProducts = normalizeList(productFilters.filter((c) => c.checked).map((c) => c.value));
-      const activeCountry = normalizeCountry(getActiveCountry());
-      const { section: activeFeaturedSection, slug: activeFeaturedSlug } = getActiveFeatured();
-      const featuredResultCard = activeFeaturedSlug
-        ? cards.find((card) => (card.dataset.slug || "").trim() === activeFeaturedSlug)
-        : null;
-      ensureFeaturedStyling(featuredResultCard);
-      const setFeaturedSectionVisible = (visible) => {
-        featuredSections.forEach((section) => {
-          const isActive = activeFeaturedSection ? section === activeFeaturedSection : false;
-          section.style.display = visible && isActive ? "" : "none";
-        });
-      };
-      setFeaturedSectionVisible(!activeUI);
-      let visibleCount = 0;
-
-      cards.forEach((card) => {
-        const region = normalizeRegion(card.dataset.region);
-        const practices = canonicalizePractices(normalizeList((card.dataset.practices || "").split(",")));
-        const products = normalizeList((card.dataset.products || "").split(","));
-        const subtype = normalizeToken(card.dataset.subtype || card.dataset.type);
-        const country = normalizeCountry(card.dataset.country);
-        const name = normalizeToken(card.dataset.name);
-        const city = normalizeToken(card.dataset.city);
-        const address = normalizeToken(card.dataset.address);
-
-        const regionOk = selectedRegion === "all" || region === selectedRegion;
-        const tagsOk = selectedTags.every((t) => practices.includes(t));
-        const productsOk = selectedProducts.length === 0 || selectedProducts.every((p) => products.includes(p));
-        const subtypeOk = selectedSubtypes.length === 0 || selectedSubtypes.includes(subtype);
-        const countryOk = !activeCountry || country === activeCountry;
-        const textOk =
-          !query ||
-          name.includes(query) ||
-          region.includes(query) ||
-          city.includes(query) ||
-          address.includes(query) ||
-          practices.some((p) => p.includes(query)) ||
-          products.some((p) => p.includes(query));
-
-        const show = regionOk && tagsOk && subtypeOk && productsOk && countryOk && textOk;
-        card.classList.remove("hidden");
-        card.style.display = show ? "" : "none";
-        if (show) visibleCount += 1;
-      });
-
-      if (!activeUI && featuredResultCard) {
-        if (featuredResultCard.style.display !== "none") {
-          visibleCount -= 1;
-        }
-        featuredResultCard.classList.add("hidden");
-        featuredResultCard.style.display = "none";
-      }
-
-      if (dirResultsCount) {
-        dirResultsCount.textContent = `${visibleCount} result${visibleCount === 1 ? "" : "s"}`;
-      }
-      if (nearMeMode) {
-        sortByDistance(cards.filter((card) => card.style.display !== "none"), nearMeState.userLocation);
-        const withCoords = cards.filter((card) => parseCoord(card.dataset.lat) !== null && parseCoord(card.dataset.lon) !== null);
-        nearMeDebug("Near me render", {
-          click: nearMeState.clickCount,
-          visibleCount,
-          withCoords: withCoords.length,
-          nearMeMode: true
-        });
-      } else {
-        clearDistances(cards);
-      }
-    };
-
-    populateDirectoryRegions(selectedCountry);
-
-    if (regionSelect) {
-      regionSelect.addEventListener("change", () => {
-        trackEvent("directory_filter_change", {
-          surface: "directory",
-          filter_type: "region",
-          value: regionSelect.value || "all",
-          country: getActiveCountry()
-        });
-        if (runDirectoryFilters) runDirectoryFilters();
-        scrollDirectoryResults();
-      });
-    }
-    if (textFilter) {
-      textFilter.addEventListener("input", () => {
-        scheduleSearchTrack("directory", textFilter.value);
-        runDirectoryFilters && runDirectoryFilters();
-      });
-    }
-    tagFilters.forEach((c) =>
-      c.addEventListener("change", () => {
-        trackEvent("directory_filter_change", {
-          surface: "directory",
-          filter_type: "practice",
-          value: c.value,
-          country: getActiveCountry()
-        });
-        runDirectoryFilters && runDirectoryFilters();
-      })
-    );
-    subtypeFilters.forEach((c) =>
-      c.addEventListener("change", () => {
-        trackEvent("directory_filter_change", {
-          surface: "directory",
-          filter_type: "subtype",
-          value: c.value,
-          country: getActiveCountry()
-        });
-        runDirectoryFilters && runDirectoryFilters();
-      })
-    );
-    productFilters.forEach((c) =>
-      c.addEventListener("change", () => {
-        trackEvent("directory_filter_change", {
-          surface: "directory",
-          filter_type: "product",
-          value: c.value,
-          country: getActiveCountry()
-        });
-        runDirectoryFilters && runDirectoryFilters();
-      })
-    );
-  }
-
-  if (typeof runDirectoryFilters === "function") runDirectoryFilters();
-
-  const hasSearchUI = resultsContainer || mapPanel;
+  const hasSearchUI = Boolean(resultsContainer || mapPanel);
+  const hasDirectoryUI = Boolean(directoryPage && directoryResultsContainer);
 
   const isFeaturedItem = (item) => {
     if (!item) return false;
@@ -852,43 +649,137 @@
     return Boolean(slug) && (item.slug || "") === slug;
   };
 
-    const cardTemplate = (item) => {
-      const tags =
-        item.practices && item.practices.length
-          ? item.practices
-          : item.products && item.products.length
-          ? item.products
-          : item.services || [];
-      const tagsMarkup = (tags || []).slice(0, 4).map((tag) => `<li>${tag}</li>`).join("");
-      const city = item.city || "";
-      const region = item.region || "";
-      const locText = city && region ? `${city}, ${region}` : city || region || "Location not provided";
-      const isFeatured = isFeaturedItem(item);
-      const typeToken = normalizeToken(item.type_token || getCanonicalType(item.collection || item.type));
-      const iconMarkup = TYPE_ICONS[typeToken] || "";
-      const summary = (item.description || "").trim();
-      const summaryMarkup = summary ? `<p class="listing-card__summary">${summary}</p>` : "";
-      return `
-        <article class="listing-card${isFeatured ? " listing-card--featured" : ""}" data-lat="${item.lat ?? ""}" data-lon="${item.lon ?? ""}">
-          <div class="listing-card__meta">
-            <span class="badge badge--meta badge--type">${iconMarkup}${item.type || getEntityLabel(item.collection) || item.collection}</span>
-            ${isFeatured ? '<span class="badge badge--verified badge--featured">Featured</span>' : ""}
-          </div>
-        <h3 class="listing-card__title"><a href="${item.url}">${item.title}</a></h3>
+  const escapeHtml = (value) =>
+    String(value ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+
+  const truncateText = (value, limit = 130) => {
+    const text = String(value || "").trim();
+    if (!text || text.length <= limit) return text;
+    return `${text.slice(0, limit).trimEnd()}...`;
+  };
+
+  const getItemTags = (item) => {
+    if (Array.isArray(item.practices) && item.practices.length) return item.practices;
+    if (Array.isArray(item.products) && item.products.length) return item.products;
+    if (Array.isArray(item.services) && item.services.length) return item.services;
+    return [];
+  };
+
+  const getItemLocationText = (item) => {
+    const city = item.city || "";
+    const region = item.region || "";
+    return city && region ? `${city}, ${region}` : city || region || "Location not provided";
+  };
+
+  const buildMapsHref = (item) => {
+    const parts = [item.address, item.city, item.region, item.country].filter(Boolean);
+    if (!parts.length && (!item.lat || !item.lon)) return "";
+    const query = parts.length ? parts.join(", ") : `${item.lat},${item.lon}`;
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+  };
+
+  const renderRatingMarkup = (item) => {
+    const avg = Number(item.rating_average || 0);
+    const count = Number(item.rating_count || 0);
+    if (!count || !Number.isFinite(avg)) return "";
+    const fullStars = Math.max(0, Math.floor(avg));
+    const halfStar = avg > fullStars && avg < fullStars + 1 ? 1 : 0;
+    const emptyStars = Math.max(0, 5 - fullStars - halfStar);
+    return `
+      <div class="rating" aria-label="Rating ${escapeHtml(avg.toFixed(1))} out of 5">
+        <div class="rating__stars">
+          ${"★".repeat(fullStars)
+            .split("")
+            .map((star) => `<span aria-hidden="true">${star}</span>`)
+            .join("")}
+          ${halfStar ? '<span aria-hidden="true">☆</span>' : ""}
+          ${"☆".repeat(emptyStars)
+            .split("")
+            .map((star) => `<span aria-hidden="true">${star}</span>`)
+            .join("")}
+        </div>
+        <div class="rating__text">${escapeHtml(avg.toFixed(1))} · ${escapeHtml(count)} review${count === 1 ? "" : "s"}</div>
+      </div>
+    `;
+  };
+
+  const setDistanceBadges = (container, items = []) => {
+    if (!container) return;
+    const cards = Array.from(container.querySelectorAll(".listing-card"));
+    cards.forEach((card, index) => {
+      const badge = card.querySelector("[data-distance]");
+      if (!badge) return;
+      const distance = items[index]?._distance;
+      if (!Number.isFinite(distance)) {
+        badge.hidden = true;
+        badge.textContent = "";
+      } else {
+        badge.hidden = false;
+        badge.textContent = formatDistance(distance);
+      }
+    });
+  };
+
+  const setResultsCountText = (element, visible, total) => {
+    if (!element) return;
+    element.classList.remove("is-loading");
+    if (!total) {
+      element.textContent = "0 listings";
+      return;
+    }
+    if (visible < total) {
+      element.textContent = `Showing ${visible} of ${total} listings`;
+      return;
+    }
+    element.textContent = `${total} listing${total === 1 ? "" : "s"}`;
+  };
+
+  const cardTemplate = (item) => {
+    const tagsMarkup = getItemTags(item)
+      .slice(0, 4)
+      .map((tag) => `<li>${escapeHtml(tag)}</li>`)
+      .join("");
+    const locationText = getItemLocationText(item);
+    const mapsHref = buildMapsHref(item);
+    const isFeatured = isFeaturedItem(item);
+    const typeToken = normalizeToken(item.type_token || getCanonicalType(item.collection || item.type));
+    const iconMarkup = TYPE_ICONS[typeToken] || "";
+    const summary = truncateText(item.description || "", 130);
+    const summaryMarkup = summary ? `<p class="listing-card__summary">${escapeHtml(summary)}</p>` : "";
+    const title = escapeHtml(item.title || item.name || "Untitled");
+    const url = escapeHtml(item.url || "#");
+    const locationMarkup = mapsHref
+      ? `<a class="listing-card__location-link" href="${escapeHtml(mapsHref)}" target="_blank" rel="noopener"><span class="listing-card__location">${escapeHtml(
+          locationText
+        )}</span></a>`
+      : `<span class="listing-card__location muted">${escapeHtml(locationText)}</span>`;
+    const typeLabel = escapeHtml(item.type || getEntityLabel(item.collection) || item.collection || "Listing");
+
+    return `
+      <article class="listing-card${isFeatured ? " listing-card--featured" : ""}" data-lat="${escapeHtml(item.lat ?? "")}" data-lon="${escapeHtml(
+        item.lon ?? ""
+      )}">
+        <div class="listing-card__meta">
+          <span class="badge badge--meta badge--type">${iconMarkup}${typeLabel}</span>
+          ${isFeatured ? '<span class="badge badge--verified badge--featured">Featured</span>' : ""}
+        </div>
+        <h3 class="listing-card__title"><a href="${url}">${title}</a></h3>
         <div class="listing-card__location-block">
-          <span class="listing-card__location">${locText}</span>
+          ${locationMarkup}
           <p class="listing-card__distance" data-distance hidden></p>
         </div>
         <div class="listing-card__tags">
-          ${
-            tagsMarkup
-              ? `<ul class="tag-list">${tagsMarkup}</ul>`
-              : `<p class="muted">Details coming soon.</p>`
-          }
+          ${tagsMarkup ? `<ul class="tag-list">${tagsMarkup}</ul>` : '<p class="muted">Details coming soon.</p>'}
         </div>
         ${summaryMarkup}
+        ${renderRatingMarkup(item)}
         <div class="listing-card__actions">
-          <a class="text-link" href="${item.url}">Learn more</a>
+          <a class="text-link" href="${url}">Learn more</a>
         </div>
       </article>
     `;
@@ -909,12 +800,11 @@
       resultsContainer.innerHTML = items.map(cardTemplate).join("");
     }
     if (resultsCount) {
-      resultsCount.classList.remove("is-loading");
       if (!hasActive && items.length === 0) {
+        resultsCount.classList.remove("is-loading");
         resultsCount.textContent = "";
       } else {
-        const noun = items.length === 1 ? "listing" : "listings";
-        resultsCount.textContent = `${items.length} ${noun}`;
+        setResultsCountText(resultsCount, items.length, items.length);
       }
     }
   }
@@ -978,6 +868,9 @@
     typeFilters = typeFilters.map(getCanonicalType).filter(Boolean);
     const itemTypeToken = normalizeToken(item.type_token || getCanonicalType(item.collection || item.type));
     const typeMatches = !typeFilters.length || typeFilters.includes(itemTypeToken);
+    const selectedSubtypes = Array.isArray(selections.subtypes) ? normalizeList(selections.subtypes) : [];
+    const itemSubtype = normalizeToken(item.subtype_token || item.subtype || item.type || item.listing_type);
+    const subtypeMatches = !selectedSubtypes.length || selectedSubtypes.includes(itemSubtype);
 
     const selectedPractices = normalizeList(selections.practices);
     const selectedProducts = Array.isArray(selections.products) ? normalizeList(selections.products) : [];
@@ -997,6 +890,7 @@
       textMatches &&
       regionMatches &&
       typeMatches &&
+      subtypeMatches &&
       practicesMatch &&
       productsMatch &&
       servicesMatch &&
@@ -1037,6 +931,175 @@
       }
     });
   }
+
+  const getCountrySwitchTarget = (slug) => {
+    const template = document.querySelector("[data-country-switch-path-template]")?.dataset?.countrySwitchPathTemplate || "";
+    if (!template) return "";
+    const target = template.replace("__COUNTRY__", slug || defaultCountry);
+    if (/^https?:\/\//i.test(target)) return target;
+    const base = window.HG_BASEURL || "";
+    return `${base}${target}`;
+  };
+
+  const getDirectorySelections = () => {
+    const fixedCountry = normalizeCountry(directoryPage?.dataset?.directoryCountry || "");
+    const regionSelect = document.getElementById("regionFilter");
+    const textFilter = document.getElementById("dirSearch");
+    const tagFilters = Array.from(document.querySelectorAll('.directory-filters input[name="tag"]:checked'));
+    const subtypeFilters = Array.from(document.querySelectorAll('.directory-filters input[name="subtype"]:checked'));
+    const productFilters = Array.from(document.querySelectorAll('.directory-filters input[name="products"]:checked'));
+    return {
+      query: textFilter ? textFilter.value : "",
+      region: regionSelect ? regionSelect.value : "all",
+      country: fixedCountry || getActiveCountry(),
+      types: [],
+      subtypes: subtypeFilters.map((input) => input.value),
+      practices: tagFilters.map((input) => input.value),
+      products: productFilters.map((input) => input.value),
+      services: []
+    };
+  };
+
+  const directoryHasInteractiveFilters = (selections) =>
+    Boolean(
+      (selections.query || "").trim() ||
+        (selections.region && normalizeRegion(selections.region) !== "all") ||
+        (Array.isArray(selections.subtypes) && selections.subtypes.length) ||
+        (Array.isArray(selections.practices) && selections.practices.length) ||
+        (Array.isArray(selections.products) && selections.products.length) ||
+        (Array.isArray(selections.services) && selections.services.length)
+    );
+
+  const getDirectorySource = (items = []) => {
+    if (!hasDirectoryUI || !directoryPage) return [];
+    const fixedCountry = normalizeCountry(directoryPage.dataset.directoryCountry || "");
+    const activeCountry = fixedCountry || normalizeCountry(getActiveCountry());
+    const fixedRegion = normalizeRegion(directoryPage.dataset.directoryRegion || "");
+    const collections = (directoryPage.dataset.directoryCollections || "")
+      .split(",")
+      .map(normalizeToken)
+      .filter(Boolean);
+
+    return (items || [])
+      .filter((item) => {
+        const itemCollection = normalizeToken(item.collection);
+        const itemCountry = normalizeCountry(item.country_slug || item.country);
+        const itemRegion = normalizeRegion(item.region);
+        const collectionMatches = !collections.length || collections.includes(itemCollection);
+        const countryMatches = !activeCountry || itemCountry === activeCountry;
+        const regionMatches = !fixedRegion || itemRegion === fixedRegion;
+        return collectionMatches && countryMatches && regionMatches;
+      })
+      .sort((a, b) => (a.title || "").localeCompare(b.title || "", undefined, { sensitivity: "base" }));
+  };
+
+  populateDirectoryRegions = (countrySlug) => {
+    if (!hasDirectoryUI) return;
+    const regionSelect = document.getElementById("regionFilter");
+    if (!regionSelect) return;
+
+    const requestedRegion = normalizeRegion(params.get("region"));
+    const fixedCountry = normalizeCountry(directoryPage?.dataset?.directoryCountry || "");
+    const activeCountry = fixedCountry || normalizeCountry(countrySlug || getActiveCountry());
+    const source = getDirectorySource(window.HG_INDEX || listings || []).filter((item) => {
+      const itemCountry = normalizeCountry(item.country_slug || item.country);
+      return !activeCountry || itemCountry === activeCountry;
+    });
+    const regions = Array.from(new Set(source.map((item) => (item.region || "").trim()).filter(Boolean))).sort((a, b) =>
+      a.localeCompare(b)
+    );
+    const current = normalizeRegion(regionSelect.value || "");
+    regionSelect.innerHTML = `<option value="all">All regions</option>${regions
+      .map((region) => `<option value="${normalizeRegion(region)}">${region}</option>`)
+      .join("")}`;
+    const preferred = requestedRegion || current;
+    const hasPreferred = Array.from(regionSelect.options).some((option) => option.value === preferred);
+    regionSelect.value = hasPreferred ? preferred : "all";
+  };
+
+  const renderDirectoryResults = (items) => {
+    if (!hasDirectoryUI || !directoryState || !directoryResultsContainer) return;
+    const emptyTemplate = document.querySelector("#directoryEmptyStateTemplate");
+    directoryResultsContainer.setAttribute("aria-busy", "false");
+
+    if (!items.length) {
+      directoryResultsContainer.innerHTML = emptyTemplate ? emptyTemplate.innerHTML : '<p class="muted">No listings found.</p>';
+    } else {
+      directoryResultsContainer.innerHTML = items.map(cardTemplate).join("");
+    }
+
+    setResultsCountText(
+      document.querySelector("[data-directory-results-count], #dirResultsCount"),
+      Math.min(directoryState.visibleCount, directoryState.filtered.length),
+      directoryState.filtered.length
+    );
+    if (directoryLoadMoreBtn) {
+      directoryLoadMoreBtn.hidden = directoryState.visibleCount >= directoryState.filtered.length;
+    }
+    setDistanceBadges(directoryResultsContainer, items);
+  };
+
+  const scrollDirectoryResults = () => {
+    if (!directoryResultsContainer) return;
+    directoryResultsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const clearDirectoryFilters = () => {
+    if (!directoryFiltersForm) return;
+    directoryFiltersForm.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+      input.checked = false;
+    });
+    const regionSelect = document.getElementById("regionFilter");
+    const textFilter = document.getElementById("dirSearch");
+    if (regionSelect) regionSelect.value = "all";
+    if (textFilter) textFilter.value = "";
+    nearMeState.active = false;
+    setNearMeStatus("");
+    if (typeof runDirectoryFilters === "function") runDirectoryFilters();
+  };
+
+  runDirectoryFilters = ({ resetVisible = true } = {}) => {
+    if (!hasDirectoryUI || !directoryState) return;
+
+    const source = getDirectorySource(window.HG_INDEX || listings || []);
+    const selections = getDirectorySelections();
+    const nearMeMode = nearMeState.active && nearMeState.userLocation;
+    const activeFilters = directoryHasInteractiveFilters(selections);
+    let items = source.filter((item) => matchesFilters(item, selections, { includePageFilters: false }));
+
+    if (!activeFilters && !nearMeMode) {
+      const { slug: activeFeaturedSlug } = getActiveFeatured();
+      if (activeFeaturedSlug) {
+        items = items.filter((item) => (item.slug || "") !== activeFeaturedSlug);
+      }
+      setFeaturedHeroVisible(true);
+    } else {
+      setFeaturedHeroVisible(false);
+    }
+
+    if (nearMeMode) {
+      items = items
+        .map((item) => {
+          const lat = parseCoord(item.lat);
+          const lon = parseCoord(item.lon);
+          const distance =
+            lat !== null && lon !== null ? haversineKm(nearMeState.userLocation.lat, nearMeState.userLocation.lon, lat, lon) : Infinity;
+          return { ...item, _distance: distance };
+        })
+        .sort((a, b) => (a._distance || Infinity) - (b._distance || Infinity));
+      setNearMeStatus(items.some((item) => Number.isFinite(item._distance)) ? "Sorted by distance" : "No listings with coordinates");
+    } else {
+      setNearMeStatus("");
+    }
+
+    directoryState.filtered = items;
+    directoryState.active = activeFilters;
+    directoryState.nearMeMode = Boolean(nearMeMode);
+    if (resetVisible || !directoryState.visibleCount) {
+      directoryState.visibleCount = directoryState.pageSize;
+    }
+    renderDirectoryResults(items.slice(0, directoryState.visibleCount));
+  };
 
   function hasActiveFilters() {
     const q = (document.querySelector("#searchInput, #dirSearch")?.value || "").trim();
@@ -1208,6 +1271,11 @@
     updateCountryLabels(selectedCountry);
     populateHeroRegions(selectedCountry);
     if (typeof populateDirectoryRegions === "function") populateDirectoryRegions(selectedCountry);
+    const switchTarget = getCountrySwitchTarget(selectedCountry);
+    if (switchTarget && switchTarget !== window.location.pathname && switchTarget !== window.location.href) {
+      window.location.href = switchTarget;
+      return;
+    }
     if (countryPage && countryPage.dataset.countryPage !== selectedCountry) {
       const base = window.HG_BASEURL || "";
       window.location.href = `${base}/country/${selectedCountry}/`;
@@ -1225,12 +1293,20 @@
   }
 
   const fetchListings = async () => {
-    if (!hasSearchUI) return;
+    if (!hasSearchUI && !hasDirectoryUI) return;
     if (mapShouldStartOpen && !map) {
       openMap();
     }
     if (resultsCount) {
       resultsCount.classList.add("is-loading");
+    }
+    const directoryResultsCount = document.querySelector("[data-directory-results-count], #dirResultsCount");
+    if (directoryResultsCount) {
+      directoryResultsCount.classList.add("is-loading");
+      directoryResultsCount.textContent = "Loading listings...";
+    }
+    if (directoryResultsContainer) {
+      directoryResultsContainer.setAttribute("aria-busy", "true");
     }
     try {
       const url = window.HG_INDEX_URL || "/search.json";
@@ -1240,7 +1316,13 @@
       listings = data;
       filtered = data;
       populateHeroRegions(getActiveCountry());
-      applyFilters();
+      if (hasSearchUI) {
+        applyFilters();
+      }
+      if (hasDirectoryUI) {
+        populateDirectoryRegions(getActiveCountry());
+        runDirectoryFilters();
+      }
       runListingSelfFilterAudit(listings);
       if (mapShouldStartOpen) openMap();
       refreshMap(filtered);
@@ -1248,6 +1330,14 @@
       console.error("Failed to load search index", err);
       if (resultsCount) resultsCount.textContent = "Could not load listings right now.";
       if (resultsCount) resultsCount.classList.remove("is-loading");
+      if (directoryResultsCount) {
+        directoryResultsCount.textContent = "Could not load listings right now.";
+        directoryResultsCount.classList.remove("is-loading");
+      }
+      if (directoryResultsContainer) {
+        directoryResultsContainer.setAttribute("aria-busy", "false");
+        directoryResultsContainer.innerHTML = '<p class="muted">Could not load listings right now.</p>';
+      }
       if (mapShouldStartOpen && map) {
         refreshMap([]);
       }
@@ -1303,6 +1393,83 @@
     clearFiltersBtn.addEventListener("click", () => {
       trackEvent("directory_filters_cleared", { country: getActiveCountry() });
       clearFilters();
+    });
+  }
+  if (hasDirectoryUI && directoryFiltersForm) {
+    const regionSelect = document.getElementById("regionFilter");
+    const textFilter = document.getElementById("dirSearch");
+
+    if (regionSelect) {
+      regionSelect.addEventListener("change", () => {
+        trackEvent("directory_filter_change", {
+          surface: "directory",
+          filter_type: "region",
+          value: regionSelect.value || "all",
+          country: getActiveCountry()
+        });
+        runDirectoryFilters && runDirectoryFilters();
+        scrollDirectoryResults();
+      });
+    }
+
+    if (textFilter) {
+      textFilter.addEventListener("input", () => {
+        scheduleSearchTrack("directory", textFilter.value);
+        runDirectoryFilters && runDirectoryFilters();
+      });
+    }
+
+    directoryFiltersForm.querySelectorAll('input[name="tag"]').forEach((input) => {
+      input.addEventListener("change", () => {
+        trackEvent("directory_filter_change", {
+          surface: "directory",
+          filter_type: "practice",
+          value: input.value,
+          country: getActiveCountry()
+        });
+        runDirectoryFilters && runDirectoryFilters();
+      });
+    });
+
+    directoryFiltersForm.querySelectorAll('input[name="subtype"]').forEach((input) => {
+      input.addEventListener("change", () => {
+        trackEvent("directory_filter_change", {
+          surface: "directory",
+          filter_type: "subtype",
+          value: input.value,
+          country: getActiveCountry()
+        });
+        runDirectoryFilters && runDirectoryFilters();
+      });
+    });
+
+    directoryFiltersForm.querySelectorAll('input[name="products"]').forEach((input) => {
+      input.addEventListener("change", () => {
+        trackEvent("directory_filter_change", {
+          surface: "directory",
+          filter_type: "product",
+          value: input.value,
+          country: getActiveCountry()
+        });
+        runDirectoryFilters && runDirectoryFilters();
+      });
+    });
+  }
+  if (directoryClearBtn) {
+    directoryClearBtn.addEventListener("click", () => {
+      trackEvent("directory_filters_cleared", { country: getActiveCountry() });
+      clearDirectoryFilters();
+    });
+  }
+  if (directoryLoadMoreBtn) {
+    directoryLoadMoreBtn.addEventListener("click", () => {
+      if (!directoryState) return;
+      directoryState.visibleCount += directoryState.pageSize;
+      renderDirectoryResults(directoryState.filtered.slice(0, directoryState.visibleCount));
+      trackEvent("directory_results_expanded", {
+        country: getActiveCountry(),
+        total: directoryState.filtered.length
+      });
     });
   }
   if (toggleMapBtn) {

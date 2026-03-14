@@ -27,6 +27,9 @@ jobs:
           bundler: "2.4.22"
           bundler-cache: true
 
+      - name: Validate content
+        run: ruby scripts/validate_content.rb
+
       - name: Build site
         run: bundle exec jekyll build
 
