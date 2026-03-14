@@ -84,7 +84,6 @@ map: false
       <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}" rel="nofollow">Update listing</a>
       <a class="button ghost" href="{{ '/review.html?listing=' | append: review_target | relative_url }}" rel="nofollow">Review this place</a>
     </div>
-    <p class="listing__policy-note">Homegrown is a directory, not a ranking. <a href="{{ '/listing-criteria/' | relative_url }}">Listing criteria</a>, <a href="{{ '/featured-policy/' | relative_url }}">featured policy</a>, and <a href="{{ '/review-policy/' | relative_url }}">review policy</a> explain how this page is maintained.</p>
     {% assign sourcing_list = "" | split: "" %}
     {% for item in page.sourcing_tags %}
       {% assign item_clean = item | to_s | strip %}
