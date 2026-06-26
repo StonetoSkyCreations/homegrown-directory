@@ -31,7 +31,8 @@ description: Award-winning wine bar and restaurant in Christchurch's Arts Centre
   curated wine flights and seasonal dishes made with fresh, locally sourced ingredients.
 last_checked: '2025-12-12'
 subtype: restaurant
-source_urls: []
+source_urls:
+- https://wairiribuffalo.nz/restaurants-cafes/
 lat: -43.5316993
 lon: 172.6279834
 practices_tags: []
@@ -41,6 +42,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - streamside-organics
+- wairiri-buffalo-canterbury
 supplies_to: []
 relationships_declared: true
 ---

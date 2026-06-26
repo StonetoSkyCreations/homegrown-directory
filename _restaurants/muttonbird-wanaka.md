@@ -1,0 +1,35 @@
+---
+layout: listing
+title: Muttonbird Wanaka
+slug: muttonbird-wanaka
+country_slug: new-zealand
+country: New Zealand
+region: Otago
+city: Wanaka
+address: 71 Ardmore Street, Wanaka
+website: https://www.muttonbird.co.nz/
+description: Wanaka eatery listed by Wairiri Buffalo as showcasing its buffalo dairy products.
+long_description: Muttonbird Wanaka is an eatery and drinkery in Wanaka. Wairiri Buffalo lists Mutton Bird Restaurant among venues showcasing its buffalo dairy products and gives the Ardmore Street address.
+practices: []
+products:
+- Restaurant meals
+- Buffalo cheese
+services:
+- Restaurant dining
+practices_tags:
+- local
+products_tags: []
+services_tags: []
+certifications: []
+specialty_tags: []
+source_urls:
+- https://wairiribuffalo.nz/restaurants-cafes/
+- https://www.muttonbird.co.nz/
+sourced_from:
+- wairiri-buffalo-canterbury
+supplies_to: []
+relationships_declared: true
+lat: -44.69411
+lon: 169.137551
+last_checked: '2026-06-27'
+---

@@ -1,6 +1,6 @@
 ---
 layout: store
-title: Freshlink Grocer — Wholefoods & Sustainable Shopping in Wānaka
+title: Freshlink Grocer, Wholefoods & Sustainable Shopping in Wānaka
 slug: freshlink-grocer-wholefoods-sustainable-shopping-in-wnaka
 collection: stores
 type: store
@@ -16,7 +16,7 @@ description: Freshlink Grocer is a Wānaka-based wholefoods store offering fresh
 long_description: |
   Freshlink Grocer is an independent wholefoods grocer based in Wānaka, founded by Jesse and shaped by a background in rural self-sufficiency and market gardening. The store was born from a school economics project in 2017 and has since evolved into a community-focused food hub centred on access to real kai with minimal processing.
 
-  The core aim of Freshlink is to reduce the distance between producer and consumer. The store prioritises sourcing from local and New Zealand–based growers and makers wherever possible, stocking seasonal produce, free-range eggs, locally produced meats, and pantry staples selected for ingredient integrity. Organic options are offered when available, alongside wholefoods chosen for their simplicity rather than dietary labels.
+  The core aim of Freshlink is to reduce the distance between producer and consumer. The store prioritises sourcing from local and New Zealand-based growers and makers wherever possible, stocking seasonal produce, free-range eggs, locally produced meats, and pantry staples selected for ingredient integrity. Organic options are offered when available, alongside wholefoods chosen for their simplicity rather than dietary labels.
 
   Freshlink places strong emphasis on waste reduction and low-impact shopping. Much of the fresh produce is sold without packaging, milk is available in returnable glass bottles, and customers are encouraged to bring their own containers. The store includes extensive refill sections for grains, flours, herbs, spices, oils, vinegars, and household cleaning products, with meat wrapped in paper rather than plastic.
 
@@ -37,13 +37,15 @@ email: procurement@freshlink.co.nz
 phone: +64 3 443 5510
 hours: 7 days a week, 8am to 8pm
 market_days: []
-source_urls: []
+source_urls:
+- https://wairiribuffalo.nz/stockists-farmers-markets/
 last_checked: '2025-12-19'
-sourced_from: []
+sourced_from:
+- wairiri-buffalo-canterbury
 sourced_from_text: []
 supplies_to: []
 supplies_to_text: []
-relationships_declared: false
+relationships_declared: true
 social_links:
 - https://www.facebook.com/freshlinkwanaka/
 - https://www.instagram.com/freshlinkgrocer/

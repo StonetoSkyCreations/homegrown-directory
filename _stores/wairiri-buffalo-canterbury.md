@@ -61,5 +61,18 @@ supplies_to:
 - piko-wholefoods-chch
 - liberty-market
 - arbour-woodfired-pizza-lyttelton
+- cellar-door-christchurch
+- freshlink-grocer-wholefoods-sustainable-shopping-in-wnaka
+- raeward-fresh-tower-junction
+- charing-cross-cheesery
+- mediterranean-market-wanaka
+- mckibbins-of-royalburn
+- cafe-valentino
+- fire-and-slice
+- earl-bistro
+- strawberry-fare-merivale
+- 5th-street-restaurant
+- the-fine-lion
+- muttonbird-wanaka
 relationships_declared: true
 ---
