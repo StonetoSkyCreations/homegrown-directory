@@ -26,6 +26,7 @@ market_days: []
 source_urls:
 - "NZ\u2019s first certified organic store"
 - https://english.awaruaorganics.co.nz/stockists/
+- https://www.mahoecheese.co.nz/selected-retailers/
 last_checked: IE Produce contact
 notes: Retail
 city: Auckland
@@ -46,6 +47,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - awarua-organics-southland
+- mahoe-farmhouse-cheese
 supplies_to: []
 relationships_declared: true
 ---

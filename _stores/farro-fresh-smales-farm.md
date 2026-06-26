@@ -6,7 +6,7 @@ brand: Farro Fresh Smales Farm
 type: supermarket
 subtype: supermarket
 category: retailer
-description: "Farro Fresh \u2013 newest North Shore store (premium grocer with organic range)"
+description: Farro Fresh North Shore store, a premium grocer with an organic range.
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -23,8 +23,9 @@ sourcing_tags:
 - organic
 products: []
 market_days: []
-source_urls: []
-last_checked: "Farro Fresh Smales Farm \u2013 CheeseBarn"
+source_urls:
+- https://www.mahoecheese.co.nz/selected-retailers/
+last_checked: Farro Fresh Smales Farm, CheeseBarn
 notes: Retail
 city: Auckland
 lat: -36.852095
@@ -37,7 +38,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- mahoe-farmhouse-cheese
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---

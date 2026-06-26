@@ -27,7 +27,8 @@ hours: ''
 lat: -36.9110397
 lon: 174.651726
 subtype: organic-store
-source_urls: []
+source_urls:
+- https://www.mahoecheese.co.nz/selected-retailers/
 geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
@@ -38,7 +39,8 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- mahoe-farmhouse-cheese
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---

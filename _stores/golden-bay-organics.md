@@ -34,12 +34,14 @@ lat: -40.85874115
 lon: 172.8060379871829
 source_urls:
 - User-supplied list
+- https://www.mahoecheese.co.nz/selected-retailers/
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- mahoe-farmhouse-cheese
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---

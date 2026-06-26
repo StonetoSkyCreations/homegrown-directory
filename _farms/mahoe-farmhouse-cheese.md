@@ -53,8 +53,28 @@ subtype: creamery
 sourced_from: []
 sourced_from_text:
 - https://mahoecheese.co.nz
+source_urls:
+- https://www.mahoecheese.co.nz/selected-retailers/
 supplies_to:
 - forest-auckland
 - ahi-restaurant
+- cest-cheese-featherston
+- cooks-corner-nelson
+- farro-fresh-epsom
+- farro-fresh-grey-lynn
+- farro-fresh-mairangi-bay
+- farro-fresh-mt-wellington
+- farro-fresh-smales-farm
+- golden-bay-organics
+- gouda-cheese-shop-hamilton
+- ie-produce-takapuna
+- naturally-organic-albany
+- naturally-organic-glen-innes
+- new-world-hastings-city
+- new-world-kerikeri
+- organics-out-west
+- sabato-mt-eden
+- the-island-grocer
+- the-junction-nelson
 relationships_declared: true
 ---

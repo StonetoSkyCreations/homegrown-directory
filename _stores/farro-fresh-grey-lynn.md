@@ -6,7 +6,7 @@ brand: Farro Fresh Grey Lynn
 type: supermarket
 subtype: supermarket
 category: retailer
-description: "Farro Fresh \u2013 premium grocer focusing on local & artisan foods (significant organic range)"
+description: Farro Fresh premium grocer focusing on local and artisan foods, with a significant organic range.
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -23,8 +23,9 @@ sourcing_tags:
 - organic
 products: []
 market_days: []
-source_urls: []
-last_checked: "Farro Fresh Grey Lynn \u2013 Yelp; Farro Facebook"
+source_urls:
+- https://www.mahoecheese.co.nz/selected-retailers/
+last_checked: Farro Fresh Grey Lynn, Yelp; Farro Facebook
 notes: Retail
 city: Auckland
 lat: -36.8556127
@@ -42,7 +43,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- mahoe-farmhouse-cheese
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---

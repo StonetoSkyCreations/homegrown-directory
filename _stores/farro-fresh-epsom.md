@@ -6,7 +6,7 @@ brand: Farro Fresh Epsom
 type: supermarket
 subtype: supermarket
 category: retailer
-description: "Farro Fresh \u2013 premium grocer with organic produce, meats, etc."
+description: Farro Fresh premium grocer with organic produce, meats, and pantry goods.
 country: NZ
 country_slug: new-zealand
 region: Auckland
@@ -23,8 +23,9 @@ sourcing_tags:
 - organic
 products: []
 market_days: []
-source_urls: []
-last_checked: "Farro Fresh Epsom \u2013 Kin & Crop"
+source_urls:
+- https://www.mahoecheese.co.nz/selected-retailers/
+last_checked: Farro Fresh Epsom, Kin & Crop
 notes: Retail
 city: Auckland
 lat: -36.8938263
@@ -42,7 +43,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- mahoe-farmhouse-cheese
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---
