@@ -17,7 +17,7 @@ lines. Renders nothing when the listing has no connections. Pass entity= (defaul
 {%- assign cm_sup_b = cm_all | where_exp: 'i', 'i.supplies_to contains cm_entity.slug' -%}
 {%- assign cm_suppliers = cm_sup_a | concat: cm_sup_b | uniq | where_exp: 'i', 'i.slug != cm_entity.slug' -%}
 {%- assign cm_total = cm_suppliers.size | plus: cm_outlets.size -%}
-{%- assign cm_cap = 6 -%}
+{%- assign cm_cap = 16 -%}
 {%- if cm_total > 0 -%}
 <section class="connection-map" data-connection-map aria-label="Web of connection for {{ cm_entity.title | default: cm_entity.name | escape }}">
   <div class="connection-map__col connection-map__col--suppliers">
