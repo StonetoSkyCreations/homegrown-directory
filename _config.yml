@@ -87,3 +87,18 @@ exclude:
   - reports
   - vendor/**
   - .bundle
+  # Build/working artefacts and internal docs - keep them in the repo but out of the published site
+  - scripts
+  - tools
+  - data
+  - geo-audit
+  - _backups
+  - README.md
+  - AUDIT_REPORT.md
+  - DATA_HYGIENE_REPORT.md
+  - PRELAUNCH_REPORT.md
+  - SEO_DOCTRINE.md
+  - SEO_LINT.md
+  - SEO_META_AUDIT.md
+  - SEO_STAGE_1_3_IMPLEMENTATION_REPORT.md
+  - SEO_TIGHTENING_PATCH_REPORT.md

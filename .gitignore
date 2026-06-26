@@ -1,6 +1,12 @@
 
 /_site
 
+# Bundler-installed gems (project-local path)
+/vendor/bundle
+
+# macOS
+.DS_Store
+
 # Geocoding artefacts
 tools/geocode_results.csv
 tools/apply_geocode_log.txt

@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 LAYOUTS_DIR = ROOT / "_layouts"
-IGNORE_DIRS = {".git", "_site", "node_modules", ".bundle"}
+IGNORE_DIRS = {".git", "_site", "node_modules", ".bundle", "vendor"}
 TEXT_EXTENSIONS = {".md", ".markdown", ".html", ".txt"}
 
 
