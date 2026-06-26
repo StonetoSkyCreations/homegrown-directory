@@ -36,6 +36,7 @@ services:
 hours: "Mon\u2013Sat 9am\u20136pm; Sun 10am\u20133pm"
 source_urls:
 - https://libertymarket.co.nz
+- https://untamedearth.nz/pages/about
 published: true
 lat: -43.5398022
 lon: 172.651221
@@ -52,6 +53,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - wairiri-buffalo-canterbury
+- untamed-earth
 supplies_to: []
 relationships_declared: true
 ---

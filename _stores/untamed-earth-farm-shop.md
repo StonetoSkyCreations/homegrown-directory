@@ -34,8 +34,8 @@ services:
 certifications: []
 supply_role: Retailer
 source_urls:
-- untamed-earth
-hours: ''
+- https://untamedearth.nz/pages/our-farm-shop
+hours: Mon-Fri 8:30am-5:30pm; Sat and Sun 8:30am-2:30pm
 last_checked: user-submitted
 notes: ''
 rating_average: 5
@@ -55,9 +55,10 @@ practices:
 products_tags: []
 services_tags: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- untamed-earth
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---
 The Untamed Earth Farm Shop in Beckenham is a neighbourhood hub for fresh, seasonal, organically grown produce -- located right next door to the Organic Beckenham Butchery. Together, the two create a rare pairing in the city: certified organic vegetables and ethically raised organic meat available side by side, making it easy for customers to shop with integrity in one stop.
 
