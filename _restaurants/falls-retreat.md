@@ -33,14 +33,16 @@ market_days: []
 lat: -37.418324926585434
 lon: 175.76485839100883
 source_urls:
-- https://www.fallsretreat.co.nz/eat-1#:~:text=Focusing%20on%20using%20local%20and,scratch%20using%20homegrown%20organic%20producehttps://www.fallsretreat.co.nz/about#:~:text=The%20Falls%20Retreat%2C%2025%20Waitawheta,nz
-last_checked: '2025-12-12'
+- https://www.fallsretreat.co.nz/eat-1
+- https://www.fallsretreat.co.nz/about
+last_checked: '2026-06-27'
 practices_tags: []
 products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- falls-retreat-organic-garden
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---

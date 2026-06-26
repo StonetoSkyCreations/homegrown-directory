@@ -23,7 +23,9 @@ description: Estate restaurant featuring organic/biodynamic culinary gardens and
 ? Restaurant at Giants Estate serving seasonal menus built around on-site organic and biodynamic gardens and local producers. Source
 : https://craggyrange.com/
 subtype: restaurant
-source_urls: []
+source_urls:
+- https://craggyrange.com/pages/restaurant
+- https://craggyrange.com/
 lat: -39.6928384
 lon: 176.9230283
 practices_tags: []
@@ -31,7 +33,9 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- craggy-range-culinary-garden
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
+last_checked: '2026-06-27'
 ---

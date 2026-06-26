@@ -71,7 +71,9 @@ products_or_cuisine:
 - New Zealand cuisine
 source_urls:
 - http://ahi.restaurant
-last_checked: '2025-12-12'
+- https://ahirestaurant.co.nz/garden/
+- https://www.mahoecheese.co.nz/selected-retailers/
+last_checked: '2026-06-27'
 practices_tags:
 - locally-sourced
 - seasonal
@@ -85,10 +87,11 @@ services_tags:
 specialty_tags:
 - open-fire-cooking
 - new-zealand-produce
-sourced_from: []
+sourced_from:
+- ahi-kitchen-garden
+- mahoe-farmhouse-cheese
 supplies_to: []
 relationships_declared: true
 sourced_from_text:
-- ahi-kitchen-garden
 - regional-growers-and-fishers
 ---

@@ -25,7 +25,10 @@ description: French-inspired bistro in Commercial Bay driven by an organic kitch
 Menu built around an organic kitchen garden and locally sourced produce at Commercial Bay. Source: user-provided
   listing
 subtype: restaurant
-source_urls: []
+source_urls:
+- https://origine.nz/
+- https://origine.nz/menu/
+- https://origine.nz/our-story/
 lat: -36.852095
 lon: 174.7631803
 practices_tags: []
@@ -33,7 +36,9 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- ahi-kitchen-garden
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
+last_checked: '2026-06-27'
 ---
