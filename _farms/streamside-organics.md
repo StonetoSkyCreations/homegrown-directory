@@ -77,6 +77,7 @@ supplies_to:
 - green-dinner-table
 - piko-wholefoods-chch
 - goodfor-christchurch
+- welder-fresh-vegetable-market
 - selwyn-co-op
 - soul-food-organic
 - new-world-st-martins
