@@ -56,6 +56,7 @@ sourced_from:
   - wairiri-buffalo-canterbury
   - untamed-earth
   - shiny-shovel
+  - milmore-downs
 
 relationships_declared: true
 
@@ -82,4 +83,5 @@ geo_last_verified: '2025-12-31'
 
 source_urls:
   - https://www.pikowholefoods.co.nz
+  - https://www.milmoredowns.co.nz/shop/other_shops
 ---

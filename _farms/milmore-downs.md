@@ -44,7 +44,8 @@ products_tags:
 - meat
 - seed
 subtype: livestock
-source_urls: []
+source_urls:
+- https://www.milmoredowns.co.nz/shop/other_shops
 practices_tags: []
 services_tags: []
 certifications: []
@@ -57,6 +58,24 @@ supplies_to:
 - bohemian-bakery-st-martins
 - bohemian-bakery-cbd
 - farmers-mill
+- bellbird-bakery-the-tannery
+- bellbird-bakery-riverside-market
+- bellbird-bakery-merivale
+- grizzly-baked-goods
+- breadhead
+- sourbros-bakery
+- florets
+- daily-bread-pt-chevalier
+- stony-creek-bakehouse
+- cornucopia-organics-hastings
+- family-pantry
+- wholefoods-market
+- nelson-organic-co-op
+- organic-foods-nelson
+- liberty-market
+- happy-healthy
+- piko-wholefoods-chch
+- frances-grocer
 relationships_declared: true
 ---
 Milmore Downs is a 302-hectare, third-generation biodynamic and certified organic farm in the Scargill Valley, north of Christchurch. Managed by the family team of Matthew, Alice, Ian and Eva, the farm integrates mixed cropping with livestock to build long-term soil fertility. Dinkel/spelt, wheat, rye, and barley are grown in rotation alongside deep-rooted herbal leys grazed by sheep and cattle, creating a resilient, self-renewing system.

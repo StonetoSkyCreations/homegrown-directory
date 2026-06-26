@@ -33,10 +33,11 @@ practices_tags:
 services:
 - Retail store
 - Organic bakery
-hours: "Mon\u2013Sat 9am\u20136pm; Sun 10am\u20133pm"
+hours: Mon-Sat 9am-6pm; Sun 10am-3pm
 source_urls:
 - https://libertymarket.co.nz
 - https://untamedearth.nz/pages/about
+- https://www.milmoredowns.co.nz/shop/other_shops
 published: true
 lat: -43.5398022
 lon: 172.651221
@@ -54,6 +55,7 @@ specialty_tags: []
 sourced_from:
 - wairiri-buffalo-canterbury
 - untamed-earth
+- milmore-downs
 supplies_to: []
 relationships_declared: true
 ---

@@ -25,6 +25,7 @@ products_or_cuisine:
 - Organic grains
 source_urls:
 - https://dailybread.co.nz
+- https://www.milmoredowns.co.nz/shop/other_shops
 last_checked: '2025-12-09'
 notes: ''
 city: Auckland
@@ -39,7 +40,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- milmore-downs
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---

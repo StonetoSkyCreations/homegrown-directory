@@ -22,6 +22,7 @@ services: []
 market_days: []
 source_urls:
 - https://www.grizzly.co.nz/
+- https://www.milmoredowns.co.nz/shop/other_shops
 last_checked: ''
 notes: ''
 city: Christchurch
@@ -36,7 +37,8 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- milmore-downs
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---

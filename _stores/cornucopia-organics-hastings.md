@@ -25,6 +25,7 @@ products: []
 market_days: []
 source_urls:
 - "Includes Taste Cornucopia organic caf\xE9 next door"
+- https://www.milmoredowns.co.nz/shop/other_shops
 last_checked: Cornucopia contact; Be Nourished dir.
 notes: Retail
 city: Hastings
@@ -43,7 +44,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- milmore-downs
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---
