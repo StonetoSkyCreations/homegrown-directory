@@ -1,0 +1,30 @@
+{%- comment -%}
+Interconnectedness trust badge. Renders "Verified by N partners" where a partner
+is a listing this entity references (sourced_from / supplies_to) that also
+references this entity back. Self-contained so it works from any listing layout
+(listing.html, store.html, vendor.html). Pass entity= to override the default page.
+{%- endcomment -%}
+{%- assign vb_entity = include.entity | default: page -%}
+{%- assign vb_empty = "" | split: "" -%}
+{%- assign vb_supplies = vb_entity.supplies_to | default: vb_empty -%}
+{%- assign vb_sourced = vb_entity.sourced_from | default: vb_empty -%}
+{%- assign vb_all = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors | concat: site.vendors -%}
+{%- assign vb_outgoing = vb_all | where_exp: 'item', 'vb_supplies contains item.slug' -%}
+{%- assign vb_sources = vb_all | where_exp: 'item', 'vb_sourced contains item.slug' -%}
+{%- assign vb_incoming_supplies = vb_all | where_exp: 'item', 'item.supplies_to contains vb_entity.slug' -%}
+{%- assign vb_incoming_sources = vb_all | where_exp: 'item', 'item.sourced_from contains vb_entity.slug' -%}
+{%- assign vb_incoming = vb_incoming_supplies | concat: vb_incoming_sources -%}
+{%- assign vb_declared = vb_sources | concat: vb_outgoing -%}
+{%- assign vb_verified = "" | split: "" -%}
+{%- for partner in vb_declared -%}
+  {%- if partner.slug != vb_entity.slug -%}
+    {%- assign vb_back = vb_incoming | where: "slug", partner.slug | first -%}
+    {%- if vb_back -%}
+      {%- unless vb_verified contains partner.slug -%}
+        {%- assign vb_verified = vb_verified | push: partner.slug -%}
+      {%- endunless -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign vb_count = vb_verified | size -%}
+{%- if vb_count > 0 -%}<span class="badge badge--verified" title="Partners that reciprocally list this place">Verified by {{ vb_count }} partner{% unless vb_count == 1 %}s{% endunless %}</span>{%- endif -%}

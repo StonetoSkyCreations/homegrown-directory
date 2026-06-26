@@ -1,0 +1,62 @@
+---
+layout: default
+title: The connection network
+permalink: /network/
+description: Explore the web of connection between organic producers, stockists and eateries across Aotearoa.
+map: false
+---
+
+<section class="network-page">
+  <header class="network-page__header">
+    <h1>The connection network</h1>
+    <p class="muted">
+      Every line is a declared supply relationship between a producer, a stockist and an eatery.
+      Solid lines are confirmed from both sides; faint lines are declared by one side so far.
+      Use the filters to see the supply web for a single region or practice.
+    </p>
+  </header>
+
+  <div class="network-controls">
+    <label>Region
+      <select id="filter-region"><option value="">All regions</option></select>
+    </label>
+    <label>Practice
+      <select id="filter-practice"><option value="">All practices</option></select>
+    </label>
+    <label class="network-controls__check">
+      <input type="checkbox" id="filter-connected" checked> Connected listings only
+    </label>
+    <span id="network-stats" class="muted"></span>
+  </div>
+
+  <div id="network-graph" role="application" aria-label="Supply network graph"></div>
+
+  <ul class="network-legend">
+    <li><span class="dot dot--farm"></span> Farm / producer</li>
+    <li><span class="dot dot--store"></span> Store / grocer</li>
+    <li><span class="dot dot--restaurant"></span> Restaurant / cafe</li>
+    <li><span class="dot dot--market"></span> Market</li>
+    <li><span class="dot dot--distributor"></span> Distributor / vendor</li>
+    <li><span class="edge edge--recip"></span> Confirmed both ways</li>
+    <li><span class="edge edge--oneway"></span> Declared one way</li>
+  </ul>
+  <p class="muted network-page__note" id="network-empty" hidden>No connections match this filter yet.</p>
+</section>
+
+<style>
+  #network-graph { width: 100%; height: 70vh; min-height: 420px; border: 1px solid var(--border, #e5e5e5); border-radius: 8px; background: var(--surface, #fff); }
+  .network-controls { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin: 1rem 0; }
+  .network-controls label { display: flex; flex-direction: column; font-size: 0.85rem; gap: 0.25rem; }
+  .network-controls__check { flex-direction: row !important; align-items: center; gap: 0.4rem; }
+  .network-controls select { padding: 0.35rem 0.5rem; }
+  .network-legend { display: flex; flex-wrap: wrap; gap: 1rem; list-style: none; padding: 0; margin: 1rem 0; font-size: 0.85rem; }
+  .network-legend li { display: flex; align-items: center; gap: 0.4rem; }
+  .network-legend .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+  .dot--farm { background: #4caf50; } .dot--store { background: #2196f3; } .dot--restaurant { background: #ff7043; }
+  .dot--market { background: #ab47bc; } .dot--distributor { background: #8d6e63; }
+  .network-legend .edge { width: 22px; height: 0; display: inline-block; }
+  .edge--recip { border-top: 3px solid #4caf50; } .edge--oneway { border-top: 2px dashed #bbb; }
+</style>
+
+<script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js" defer></script>
+<script src="{{ '/assets/js/network.js' | relative_url }}" defer></script>

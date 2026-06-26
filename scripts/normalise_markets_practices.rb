@@ -12,7 +12,9 @@ require "pathname"
 
 ROOT = Pathname.new(__dir__).parent
 MARKETS_DIR = ROOT.join("_markets")
-CANONICAL = %w[organic spray-free regenerative biodynamic wild pasture-raised local].freeze
+# Canonical practice vocabulary lives in _data/taxonomies.yml (shared with add_listing.rb).
+TAXONOMIES = YAML.safe_load(File.read(ROOT.join("_data", "taxonomies.yml")), aliases: true) || {}
+CANONICAL = TAXONOMIES.fetch("practice_tokens").map(&:to_s).freeze
 
 PATTERNS = {
   "organic" => [

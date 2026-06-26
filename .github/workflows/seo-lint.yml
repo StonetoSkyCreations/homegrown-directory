@@ -30,6 +30,9 @@ jobs:
       - name: Validate content
         run: ruby scripts/validate_content.rb
 
+      - name: Relationship audit (report only)
+        run: ruby scripts/relationship_audit.rb
+
       - name: Build site
         run: bundle exec jekyll build
 

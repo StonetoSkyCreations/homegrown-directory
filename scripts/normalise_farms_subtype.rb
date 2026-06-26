@@ -10,7 +10,9 @@ require "set"
 
 ROOT = File.expand_path("..", __dir__)
 FARMS_DIR = File.join(ROOT, "_farms")
-CANONICAL = %w[market-garden orchard vineyard livestock dairy-farm apiary eggs mushrooms seeds flowers mixed].freeze
+# Canonical subtype vocabulary lives in _data/taxonomies.yml (shared with add_listing.rb).
+TAXONOMIES = YAML.safe_load(File.read(File.join(ROOT, "_data", "taxonomies.yml")), aliases: true) || {}
+CANONICAL = TAXONOMIES.fetch("subtype_tokens").map(&:to_s).freeze
 
 TYPE_MATCHERS = {
   /vineyard/i => "vineyard",

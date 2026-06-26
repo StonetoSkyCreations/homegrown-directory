@@ -42,3 +42,30 @@ types:
   - Stores
   - Restaurants
   - Distributors
+
+# Machine tokens (slug-style) used in subtype / *_tags front matter. These are
+# the canonical vocabularies enforced by scripts/normalise_*.rb and consumed by
+# scripts/add_listing.rb. Distinct from the human display labels above
+# (e.g. the display label "Organic (certified)" maps to the token "organic").
+# Order is significant: the normalise scripts report and emit tokens in this order.
+subtype_tokens:
+  - market-garden
+  - orchard
+  - vineyard
+  - livestock
+  - dairy-farm
+  - apiary
+  - eggs
+  - mushrooms
+  - seeds
+  - flowers
+  - mixed
+
+practice_tokens:
+  - organic
+  - spray-free
+  - regenerative
+  - biodynamic
+  - wild
+  - pasture-raised
+  - local
