@@ -31,9 +31,12 @@ email: info@awaruaorganics.co.nz
 phone: '+64 3 211 1340'
 source_urls:
   - https://english.awaruaorganics.co.nz
+  - https://english.awaruaorganics.co.nz/stockists/
 supplies_to:
+  - chantal-shop-napier
   - harbour-co-op-lyttelton
   - commonsense-organics
+  - ie-produce-takapuna
   - liberty-market
   - naturally-organic-invercargill
   - piko-wholefoods-chch

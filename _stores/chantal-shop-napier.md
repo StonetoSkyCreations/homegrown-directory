@@ -25,6 +25,7 @@ products: []
 market_days: []
 source_urls:
 - Retail arm of Chantal Organics (wholesaler)
+- https://english.awaruaorganics.co.nz/stockists/
 last_checked: Chantal Shop contact
 notes: Retail
 city: Napier
@@ -45,6 +46,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - chantal-organics
+- awarua-organics-southland
 supplies_to: []
 relationships_declared: true
 ---

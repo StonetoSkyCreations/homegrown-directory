@@ -38,6 +38,7 @@ source_urls:
 - https://libertymarket.co.nz
 - https://untamedearth.nz/pages/about
 - https://www.milmoredowns.co.nz/shop/other_shops
+- https://english.awaruaorganics.co.nz/stockists/
 published: true
 lat: -43.5398022
 lon: 172.651221
@@ -53,6 +54,7 @@ services_tags: []
 certifications: []
 specialty_tags: []
 sourced_from:
+- awarua-organics-southland
 - wairiri-buffalo-canterbury
 - untamed-earth
 - milmore-downs

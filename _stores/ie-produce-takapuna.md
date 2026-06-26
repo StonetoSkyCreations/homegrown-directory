@@ -25,6 +25,7 @@ products: []
 market_days: []
 source_urls:
 - "NZ\u2019s first certified organic store"
+- https://english.awaruaorganics.co.nz/stockists/
 last_checked: IE Produce contact
 notes: Retail
 city: Auckland
@@ -43,7 +44,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- awarua-organics-southland
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---
