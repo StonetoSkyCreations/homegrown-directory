@@ -94,6 +94,7 @@ exclude:
   - geo-audit
   - _backups
   - README.md
+  - ROADMAP.md
   - AUDIT_REPORT.md
   - DATA_HYGIENE_REPORT.md
   - PRELAUNCH_REPORT.md
