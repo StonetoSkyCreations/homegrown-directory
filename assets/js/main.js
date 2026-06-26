@@ -44,6 +44,11 @@
   let populateDirectoryRegions;
   let directoryState = null;
   let auditHasRun = false;
+  let markersById = {};
+  let leafletLoading = null;
+  let hoveredId = null;
+  const mapExplorer = document.querySelector(".map-explorer");
+  const isMapPage = Boolean(mapExplorer);
 
   const getEntityLabel = (key) => ENTITY_TYPES[key]?.label || key;
   const getEntityToken = (key) => ENTITY_TYPES[key]?.token || key;
@@ -761,7 +766,7 @@
     const typeLabel = escapeHtml(item.type || getEntityLabel(item.collection) || item.collection || "Listing");
 
     return `
-      <article class="listing-card${isFeatured ? " listing-card--featured" : ""}" data-lat="${escapeHtml(item.lat ?? "")}" data-lon="${escapeHtml(
+      <article class="listing-card${isFeatured ? " listing-card--featured" : ""}" data-id="${escapeHtml(item.id ?? "")}" data-lat="${escapeHtml(item.lat ?? "")}" data-lon="${escapeHtml(
         item.lon ?? ""
       )}">
         <div class="listing-card__meta">
@@ -1156,7 +1161,9 @@
     document.querySelectorAll('input[name="services"]:checked').forEach((el) => selections.services.push(el.value));
 
     const source = window.HG_INDEX || listings || [];
-    filtered = active ? source.filter((item) => matchesFilters(item, selections)) : [];
+    // On the dedicated map page, an empty filter set means "show everything"
+    // (both the list and the map). Elsewhere it stays empty until the user searches.
+    filtered = active ? source.filter((item) => matchesFilters(item, selections)) : isMapPage ? source.slice() : [];
     if (nearMeMode) {
       filtered = (filtered.length ? filtered : source.slice()).map((item) => {
         const lat = parseCoord(item.lat);
@@ -1195,6 +1202,7 @@
         badge.textContent = "";
       });
     }
+    if (map) refreshMap(currentMapItems());
   }
 
   function clearFilters() {
@@ -1210,18 +1218,103 @@
     applyFilters();
   }
 
+  // The map mirrors the active filters; with no filters it shows every listing.
+  function currentMapItems() {
+    const active = hasActiveFilters() || (nearMeState && nearMeState.active && nearMeState.userLocation);
+    return active ? filtered : listings;
+  }
+
+  // Lazy-load Leaflet + markercluster on demand (used by the homepage map toggle
+  // so visitors who never open the map don't pay the download cost).
+  function ensureLeaflet() {
+    if (window.L && typeof window.L.markerClusterGroup === "function") return Promise.resolve();
+    if (leafletLoading) return leafletLoading;
+    const addCss = (href) => {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = href;
+      link.crossOrigin = "";
+      document.head.appendChild(link);
+    };
+    const addScript = (src) =>
+      new Promise((resolve, reject) => {
+        const s = document.createElement("script");
+        s.src = src;
+        s.crossOrigin = "";
+        s.onload = resolve;
+        s.onerror = () => reject(new Error("Failed to load " + src));
+        document.body.appendChild(s);
+      });
+    addCss("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+    addCss("https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css");
+    addCss("https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css");
+    leafletLoading = addScript("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js")
+      .then(() => addScript("https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"))
+      .catch((err) => {
+        leafletLoading = null;
+        throw err;
+      });
+    return leafletLoading;
+  }
+
+  function makeMarkerIcon(color) {
+    return L.divIcon({
+      className: "marker-pin",
+      html: `<span class="marker-pin__dot" style="background:${color}"></span>`,
+      iconSize: [20, 20],
+      iconAnchor: [10, 10],
+      popupAnchor: [0, -10]
+    });
+  }
+
+  // Highlight a pin when its list card is hovered (no-ops if the pin is clustered).
+  function highlightMarker(id, on) {
+    const marker = id && markersById[id];
+    if (!marker || typeof marker.getElement !== "function") return;
+    const el = marker.getElement();
+    if (el) el.classList.toggle("marker-pin--active", !!on);
+  }
+
+  // Select the list card matching a clicked pin and optionally scroll it into view.
+  function selectCardById(id, options = {}) {
+    if (!resultsContainer || !id) return;
+    let target = null;
+    resultsContainer.querySelectorAll(".listing-card").forEach((card) => {
+      const match = card.dataset.id === String(id);
+      card.classList.toggle("is-active", match);
+      if (match) target = card;
+    });
+    if (target && options.scroll) {
+      target.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }
+
   function openMap() {
     if (!mapPanel) return;
+    // If the map library failed to load, don't block the rest of the page.
+    if (typeof window.L === "undefined" || typeof window.L.map !== "function") return;
     mapPanel.classList.add("is-open");
     if (toggleMapBtn) toggleMapBtn.textContent = "Hide map";
     if (!map) {
       map = L.map("map", { scrollWheelZoom: false });
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "&copy; OpenStreetMap contributors"
+      // Clean, label-light basemap so the coloured markers stand out.
+      // OSM fallback: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        maxZoom: 19
       }).addTo(map);
-      markerLayer = L.layerGroup().addTo(map);
+      markerLayer = (typeof L.markerClusterGroup === "function"
+        ? L.markerClusterGroup({
+            showCoverageOnHover: false,
+            maxClusterRadius: 50,
+            spiderfyOnMaxZoom: true,
+            chunkedLoading: true
+          })
+        : L.layerGroup()
+      ).addTo(map);
     }
-    refreshMap(filtered);
+    refreshMap(currentMapItems());
   }
 
   function closeMap() {
@@ -1233,19 +1326,19 @@
   function refreshMap(items) {
     if (!map || !markerLayer) return;
     markerLayer.clearLayers();
-    const withCoords = items.filter((item) => typeof item.lat === "number" && typeof item.lon === "number");
+    markersById = {};
+    const withCoords = (items || []).filter((item) => typeof item.lat === "number" && typeof item.lon === "number");
     withCoords.forEach((item) => {
       const color = typeColors[item.collection] || "#305c24";
-      const marker = L.circleMarker([item.lat, item.lon], {
-        radius: 8,
-        color,
-        fillColor: color,
-        fillOpacity: 0.9
-      }).bindPopup(
+      const marker = L.marker([item.lat, item.lon], { icon: makeMarkerIcon(color) }).bindPopup(
         `<div><strong>${item.title}</strong><br><small>${typeLabels[item.collection] || item.type}</small><br><small>${item.city || ""}${
           item.city && item.region ? ", " : ""
         }${item.region || ""}</small><br><a href="${item.url}">View listing</a></div>`
       );
+      if (item.id) {
+        markersById[item.id] = marker;
+        marker.on("click", () => selectCardById(item.id, { scroll: true }));
+      }
       markerLayer.addLayer(marker);
     });
     if (withCoords.length) {
@@ -1473,11 +1566,52 @@
     });
   }
   if (toggleMapBtn) {
-    toggleMapBtn.addEventListener("click", () => {
+    toggleMapBtn.addEventListener("click", async () => {
       if (mapPanel && mapPanel.classList.contains("is-open")) {
         closeMap();
-      } else {
+        return;
+      }
+      const original = toggleMapBtn.textContent;
+      toggleMapBtn.disabled = true;
+      toggleMapBtn.textContent = "Loading map…";
+      try {
+        await ensureLeaflet();
         openMap();
+      } catch (err) {
+        console.error("Failed to load map library", err);
+        toggleMapBtn.textContent = original;
+      } finally {
+        toggleMapBtn.disabled = false;
+      }
+    });
+  }
+
+  // List <-> map sync: hovering a card highlights its pin (map page only).
+  if (resultsContainer && isMapPage) {
+    resultsContainer.addEventListener("mouseover", (event) => {
+      const card = event.target.closest(".listing-card");
+      if (!card || !resultsContainer.contains(card)) return;
+      const id = card.dataset.id;
+      if (id === hoveredId) return;
+      if (hoveredId) highlightMarker(hoveredId, false);
+      hoveredId = id;
+      highlightMarker(id, true);
+    });
+    resultsContainer.addEventListener("mouseleave", () => {
+      if (hoveredId) highlightMarker(hoveredId, false);
+      hoveredId = null;
+    });
+  }
+
+  // Mobile: switch between the list and the map.
+  const mapViewToggle = document.querySelector("[data-map-view-toggle]");
+  if (mapViewToggle && mapExplorer) {
+    mapViewToggle.addEventListener("click", () => {
+      const showingMap = mapExplorer.classList.toggle("map-explorer--show-map");
+      mapViewToggle.textContent = showingMap ? "Show list" : "Show map";
+      mapViewToggle.setAttribute("aria-pressed", showingMap ? "true" : "false");
+      if (showingMap && map) {
+        setTimeout(() => map.invalidateSize(), 60);
       }
     });
   }
