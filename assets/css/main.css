@@ -3015,3 +3015,80 @@ html[data-theme="dark"] .listing-card--featured::before {
   margin: 0;
   color: var(--muted);
 }
+
+/* ---- Connection map (web of connection hero) ---- */
+.connection-map {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--space-4);
+  align-items: center;
+  margin: var(--space-4) 0;
+  padding: var(--space-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(145deg, rgba(var(--header-rgb), 0.96), var(--bg-2));
+  box-shadow: var(--shadow-soft);
+}
+.connection-map__col { display: grid; gap: var(--space-2); align-content: start; min-width: 0; }
+.connection-map__col--outlets { justify-items: end; }
+.connection-map__heading {
+  margin: 0; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted);
+}
+.connection-map__nodes { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+.connection-map__col--outlets .connection-map__nodes { justify-items: end; }
+.cnode {
+  display: inline-flex; flex-direction: column; gap: 0.05rem;
+  padding: 0.4rem 0.6rem; border: 1px solid var(--border);
+  border-left: 3px solid var(--node, var(--accent));
+  border-radius: var(--radius-md); background: var(--card);
+  text-decoration: none; color: var(--text); line-height: 1.25;
+  position: relative; z-index: 1; max-width: 100%;
+}
+.connection-map__col--outlets .cnode { border-left: 1px solid var(--border); border-right: 3px solid var(--node, var(--accent)); align-items: flex-end; text-align: right; }
+.cnode:hover, .cnode:focus-visible { border-color: var(--accent); box-shadow: var(--shadow-soft); }
+.cnode__name { font-weight: 600; font-size: 0.9rem; }
+.cnode--verified .cnode__name::after { content: " \2713"; color: #2e7d32; }
+.cnode__type { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.cnode[data-type="farms"] { --node: #4caf50; }
+.cnode[data-type="stores"] { --node: #2196f3; }
+.cnode[data-type="restaurants"] { --node: #ff7043; }
+.cnode[data-type="markets"] { --node: #ab47bc; }
+.cnode[data-type="distributors"], .cnode[data-type="vendors"] { --node: #8d6e63; }
+.connection-map__center { display: grid; gap: var(--space-2); justify-items: center; text-align: center; }
+.cnode--self {
+  display: grid; gap: 0.3rem; justify-items: center;
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--accent); border-radius: var(--radius-lg);
+  background: var(--card); box-shadow: var(--shadow); z-index: 2;
+}
+.cnode--self .cnode__name { font-size: 1.05rem; font-weight: 700; }
+.connection-map__arrow { color: var(--muted); font-size: 1.2rem; line-height: 1; }
+.connection-map__lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: visible; }
+.connection-map__overflow { margin-top: 0.15rem; }
+.connection-map__overflow > summary { cursor: pointer; color: var(--accent); font-size: 0.8rem; }
+.connection-map__footnote { grid-column: 1 / -1; margin: var(--space-2) 0 0; font-size: 0.78rem; text-align: center; }
+.connection-map__none { font-size: 0.85rem; margin: 0; }
+@media (max-width: 720px) {
+  .connection-map { grid-template-columns: 1fr; }
+  .connection-map__col--outlets,
+  .connection-map__col--outlets .connection-map__nodes { justify-items: start; }
+  .connection-map__col--outlets .cnode { border-right: 1px solid var(--border); border-left: 3px solid var(--node, var(--accent)); align-items: flex-start; text-align: left; }
+  .connection-map__lines, .connection-map__arrow { display: none; }
+  .connection-map__center { justify-items: start; text-align: left; }
+}
+
+/* ---- Listing collapsible blocks ---- */
+.listing__header-meta:empty { display: none; }
+.listing__header-meta { margin-top: var(--space-2); }
+.listing__details { display: grid; gap: var(--space-3); }
+.listing-block { border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--card); }
+.listing-block__summary {
+  cursor: pointer; padding: var(--space-3) var(--space-4); font-weight: 600;
+  list-style: none; display: flex; align-items: center; justify-content: space-between; gap: var(--space-3);
+}
+.listing-block__summary::-webkit-details-marker { display: none; }
+.listing-block__summary::after { content: "\25be"; color: var(--muted); transition: transform 0.2s ease; }
+.listing-block[open] > .listing-block__summary::after { transform: rotate(180deg); }
+.listing-block__body { padding: 0 var(--space-4) var(--space-4); display: grid; gap: var(--space-4); }
+.listing-block__body .listing__section { margin: 0; }

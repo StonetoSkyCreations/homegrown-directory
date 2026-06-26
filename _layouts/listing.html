@@ -98,7 +98,10 @@ map: false
         </div>
       </div>
     </div>
+    <div class="listing__header-meta">{% include rating.html listing=page %}</div>
   </header>
+
+  {% include connection-map.html entity=page %}
 
   {% include listing-glance.html entity=page type_label=display_label %}
 
@@ -130,147 +133,50 @@ map: false
     </div>
     {% endif %}
 
-    <section class="listing-updates-reviews">
-      {% include listing-reviews.html listing=page %}
-    </section>
   </div>
 
-  <div class="listing__meta">
-    <div class="listing__meta-top">
-      {% include rating.html listing=page %}
-      {% include verified-badge.html entity=page %}
-    </div>
-    <div class="listing__actions">
-      <a class="text-link" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}" rel="nofollow">Update listing</a>
-      <a class="button button--sm" href="{{ '/review.html?listing=' | append: review_target | relative_url }}" rel="nofollow">Review this place</a>
-    </div>
-
+  <div class="listing__details">
     {% assign practices_list = "" | split: "" %}
-    {% for item in page.practices %}
-      {% assign item_clean = item | to_s | strip %}
-      {% if item_clean != "" %}
-        {% assign practices_list = practices_list | push: item_clean %}
-      {% endif %}
-    {% endfor %}
-    {% if practices_list and practices_list.size > 0 %}
-      <div class="listing__section">
-        <h2>Practices</h2>
-        <ul class="tag-list">
-          {% for practice in practices_list %}
-          <li>{{ practice }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-
+    {% for item in page.practices %}{% assign item_clean = item | to_s | strip %}{% if item_clean != "" %}{% assign practices_list = practices_list | push: item_clean %}{% endif %}{% endfor %}
     {% assign products_list = "" | split: "" %}
-    {% for item in page.products %}
-      {% assign item_clean = item | to_s | strip %}
-      {% if item_clean != "" %}
-        {% assign products_list = products_list | push: item_clean %}
-      {% endif %}
-    {% endfor %}
-    {% if products_list and products_list.size > 0 %}
-      <div class="listing__section">
-        <h2>Products</h2>
-        <ul class="tag-list">
-          {% for product in products_list %}
-          <li>{{ product }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-
+    {% for item in page.products %}{% assign item_clean = item | to_s | strip %}{% if item_clean != "" %}{% assign products_list = products_list | push: item_clean %}{% endif %}{% endfor %}
     {% assign services_list = "" | split: "" %}
-    {% for item in page.services %}
-      {% assign item_clean = item | to_s | strip %}
-      {% if item_clean != "" %}
-        {% assign services_list = services_list | push: item_clean %}
-      {% endif %}
-    {% endfor %}
-    {% if services_list and services_list.size > 0 %}
-      <div class="listing__section">
-        <h2>Services & sales channels</h2>
-        <ul class="tag-list">
-          {% for service in services_list %}
-          <li>{{ service }}</li>
-          {% endfor %}
-        </ul>
+    {% for item in page.services %}{% assign item_clean = item | to_s | strip %}{% if item_clean != "" %}{% assign services_list = services_list | push: item_clean %}{% endif %}{% endfor %}
+    {% if practices_list.size > 0 or products_list.size > 0 or services_list.size > 0 %}
+    <details class="listing-block" open>
+      <summary class="listing-block__summary">Products &amp; practices</summary>
+      <div class="listing-block__body">
+        {% if practices_list.size > 0 %}<div class="listing__section"><h3>Practices</h3><ul class="tag-list">{% for practice in practices_list %}<li>{{ practice }}</li>{% endfor %}</ul></div>{% endif %}
+        {% if products_list.size > 0 %}<div class="listing__section"><h3>Products</h3><ul class="tag-list">{% for product in products_list %}<li>{{ product }}</li>{% endfor %}</ul></div>{% endif %}
+        {% if services_list.size > 0 %}<div class="listing__section"><h3>Services &amp; sales channels</h3><ul class="tag-list">{% for service in services_list %}<li>{{ service }}</li>{% endfor %}</ul></div>{% endif %}
       </div>
+    </details>
     {% endif %}
 
     {% assign hours_count = hours_lines | size %}
-    {% if hours_count > 0 %}
-      <div class="listing__section">
-        <h2>Hours / schedule</h2>
-        {% if hours_count == 1 %}
-          <p class="muted">{{ hours_lines[0] }}</p>
-        {% else %}
-          <ul class="list-plain">
-            {% for entry in hours_lines %}
-            <li>{{ entry }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </div>
-    {% endif %}
-
     {% assign market_days_list = "" | split: "" %}
-    {% for item in page.market_days %}
-      {% assign item_clean = item | to_s | strip %}
-      {% if item_clean != "" %}
-        {% assign market_days_list = market_days_list | push: item_clean %}
-      {% endif %}
-    {% endfor %}
-    {% if market_days_list and market_days_list.size > 0 %}
-      <div class="listing__section">
-        <h2>Market days</h2>
-        <ul class="list-plain">
-          {% for day in market_days_list %}
-          <li>{{ day }}</li>
-          {% endfor %}
-        </ul>
+    {% for item in page.market_days %}{% assign item_clean = item | to_s | strip %}{% if item_clean != "" %}{% assign market_days_list = market_days_list | push: item_clean %}{% endif %}{% endfor %}
+    {% if hours_count > 0 or market_days_list.size > 0 %}
+    <details class="listing-block">
+      <summary class="listing-block__summary">Hours &amp; market days</summary>
+      <div class="listing-block__body">
+        {% if hours_count > 0 %}<div class="listing__section"><h3>Hours / schedule</h3>{% if hours_count == 1 %}<p class="muted">{{ hours_lines[0] }}</p>{% else %}<ul class="list-plain">{% for entry in hours_lines %}<li>{{ entry }}</li>{% endfor %}</ul>{% endif %}</div>{% endif %}
+        {% if market_days_list.size > 0 %}<div class="listing__section"><h3>Market days</h3><ul class="list-plain">{% for day in market_days_list %}<li>{{ day }}</li>{% endfor %}</ul></div>{% endif %}
       </div>
+    </details>
     {% endif %}
 
-    {% assign source_link_count = source_partners | size %}
-    {% if source_link_count > 0 %}
-      <div class="listing__section">
-        <h2>Sourced from</h2>
-        {% if source_link_count > 0 %}
-        <ul class="link-list relationship-list">
-          {% for item in source_partners %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
+    <details class="listing-block">
+      <summary class="listing-block__summary">Reviews &amp; updates</summary>
+      <div class="listing-block__body">
+        {% include listing-reviews.html listing=page %}
       </div>
-    {% endif %}
+    </details>
+  </div>
 
-    {% assign supplies_link_count = outgoing_supplies | size %}
-    {% if supplies_link_count > 0 %}
-      <div class="listing__section">
-        <h2>Supplies to</h2>
-        {% if supplies_link_count > 0 %}
-        <ul class="link-list relationship-list">
-          {% for item in outgoing_supplies %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </div>
-    {% endif %}
-
-    {% if incoming_sources and incoming_sources.size > 0 %}
-      <div class="listing__section">
-        <h2>Also referenced by</h2>
-        <ul class="link-list relationship-list">
-          {% for item in incoming_sources %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> <span class="muted">({{ item.collection | capitalize }})</span></li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
+  <div class="listing__actions">
+    <a class="text-link" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}" rel="nofollow">Update listing</a>
+    <a class="button button--sm" href="{{ '/review.html?listing=' | append: review_target | relative_url }}" rel="nofollow">Review this place</a>
   </div>
 </section>
 

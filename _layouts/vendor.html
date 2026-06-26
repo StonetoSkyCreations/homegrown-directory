@@ -53,6 +53,8 @@ map: false
     </div>
   </header>
 
+  {% include connection-map.html entity=page %}
+
   {% include listing-glance.html entity=page type_label=entity_config.label %}
 
   <div class="listing__content">
@@ -79,7 +81,6 @@ map: false
   <div class="listing__meta">
     <div class="listing__meta-top">
       {% include rating.html listing=page %}
-      {% include verified-badge.html entity=page %}
     </div>
     <div class="listing__actions">
       <a class="button ghost" href="{{ '/submit.html?submission_type=update&listing=' | append: review_target | append: '&name=' | append: encoded_title | relative_url }}" rel="nofollow">Update listing</a>

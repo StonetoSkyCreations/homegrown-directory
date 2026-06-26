@@ -1,0 +1,76 @@
+{%- comment -%}
+Web-of-connection hero. Renders a 3-column map: suppliers (upstream) -> this listing
+-> outlets (downstream), drawn from sourced_from / supplies_to in both directions.
+Reciprocated links (declared from both ends) are marked verified. Accessible,
+server-rendered HTML; assets/js/connection-map.js enhances it with SVG connector
+lines. Renders nothing when the listing has no connections. Pass entity= (default page).
+{%- endcomment -%}
+{%- assign cm_entity = include.entity | default: page -%}
+{%- assign cm_empty = "" | split: "" -%}
+{%- assign cm_supplies = cm_entity.supplies_to | default: cm_empty -%}
+{%- assign cm_sourced = cm_entity.sourced_from | default: cm_empty -%}
+{%- assign cm_all = site.farms | concat: site.markets | concat: site.stores | concat: site.restaurants | concat: site.distributors | concat: site.vendors -%}
+{%- assign cm_out_a = cm_all | where_exp: 'i', 'cm_supplies contains i.slug' -%}
+{%- assign cm_out_b = cm_all | where_exp: 'i', 'i.sourced_from contains cm_entity.slug' -%}
+{%- assign cm_outlets = cm_out_a | concat: cm_out_b | uniq | where_exp: 'i', 'i.slug != cm_entity.slug' -%}
+{%- assign cm_sup_a = cm_all | where_exp: 'i', 'cm_sourced contains i.slug' -%}
+{%- assign cm_sup_b = cm_all | where_exp: 'i', 'i.supplies_to contains cm_entity.slug' -%}
+{%- assign cm_suppliers = cm_sup_a | concat: cm_sup_b | uniq | where_exp: 'i', 'i.slug != cm_entity.slug' -%}
+{%- assign cm_total = cm_suppliers.size | plus: cm_outlets.size -%}
+{%- assign cm_cap = 6 -%}
+{%- if cm_total > 0 -%}
+<section class="connection-map" data-connection-map aria-label="Web of connection for {{ cm_entity.title | default: cm_entity.name | escape }}">
+  <div class="connection-map__col connection-map__col--suppliers">
+    <p class="connection-map__heading">Sourced from</p>
+    {%- if cm_suppliers.size > 0 -%}
+    <ul class="connection-map__nodes">
+      {%- for i in cm_suppliers -%}
+        {%- assign cm_v = false -%}
+        {%- if i.supplies_to contains cm_entity.slug and cm_sourced contains i.slug -%}{%- assign cm_v = true -%}{%- endif -%}
+        {%- if forloop.index == cm_cap and cm_suppliers.size > cm_cap -%}
+        </ul>
+        <details class="connection-map__overflow"><summary>+{{ cm_suppliers.size | minus: cm_cap | plus: 1 }} more</summary><ul class="connection-map__nodes">
+        {%- endif -%}
+        <li><a class="cnode{% if cm_v %} cnode--verified{% endif %}" data-slug="{{ i.slug }}" data-type="{{ i.collection }}" href="{{ i.url | relative_url }}"><span class="cnode__name">{{ i.title | default: i.name | escape }}</span><span class="cnode__type">{{ site.data.entity_types[i.collection].label | default: i.collection }}</span></a></li>
+      {%- endfor -%}
+    </ul>
+    {%- if cm_suppliers.size > cm_cap -%}</details>{%- endif -%}
+    {%- else -%}
+    <p class="connection-map__none muted">Not yet mapped</p>
+    {%- endif -%}
+  </div>
+
+  <div class="connection-map__center">
+    <span class="connection-map__arrow connection-map__arrow--in" aria-hidden="true">&rarr;</span>
+    <div class="cnode cnode--self" data-self>
+      <span class="cnode__name">{{ cm_entity.title | default: cm_entity.name | escape }}</span>
+      {% include verified-badge.html entity=cm_entity %}
+    </div>
+    <span class="connection-map__arrow connection-map__arrow--out" aria-hidden="true">&rarr;</span>
+  </div>
+
+  <div class="connection-map__col connection-map__col--outlets">
+    <p class="connection-map__heading">Supplies to</p>
+    {%- if cm_outlets.size > 0 -%}
+    <ul class="connection-map__nodes">
+      {%- for i in cm_outlets -%}
+        {%- assign cm_v = false -%}
+        {%- if cm_supplies contains i.slug and i.sourced_from contains cm_entity.slug -%}{%- assign cm_v = true -%}{%- endif -%}
+        {%- if forloop.index == cm_cap and cm_outlets.size > cm_cap -%}
+        </ul>
+        <details class="connection-map__overflow"><summary>+{{ cm_outlets.size | minus: cm_cap | plus: 1 }} more</summary><ul class="connection-map__nodes">
+        {%- endif -%}
+        <li><a class="cnode{% if cm_v %} cnode--verified{% endif %}" data-slug="{{ i.slug }}" data-type="{{ i.collection }}" href="{{ i.url | relative_url }}"><span class="cnode__name">{{ i.title | default: i.name | escape }}</span><span class="cnode__type">{{ site.data.entity_types[i.collection].label | default: i.collection }}</span></a></li>
+      {%- endfor -%}
+    </ul>
+    {%- if cm_outlets.size > cm_cap -%}</details>{%- endif -%}
+    {%- else -%}
+    <p class="connection-map__none muted">Not yet mapped</p>
+    {%- endif -%}
+  </div>
+
+  <svg class="connection-map__lines" aria-hidden="true" focusable="false"></svg>
+  <p class="connection-map__footnote muted">A check marks a connection confirmed from both sides. <a href="{{ '/network/' | relative_url }}">See the full network &rarr;</a></p>
+</section>
+<script src="{{ '/assets/js/connection-map.js' | relative_url }}" defer></script>
+{%- endif -%}
