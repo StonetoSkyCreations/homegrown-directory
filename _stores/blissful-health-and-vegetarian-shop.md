@@ -1,17 +1,19 @@
 ---
 layout: store
-title: Naturally Organic Glen Innes
-slug: naturally-organic-glen-innes
+title: Blissful Health and Vegetarian Shop
+slug: blissful-health-and-vegetarian-shop
 country_slug: new-zealand
 country: New Zealand
 region: Auckland
-city: Glen Innes
-description: Stockist for Mahoe Farmhouse Cheese in Glen Innes, listed by Mahoe Cheese.
-long_description: Naturally Organic Glen Innes is listed by Mahoe Cheese as a Glen Innes stockist for Mahoe Farmhouse Cheese.
+city: Auckland
+address: 947 New North Road
+phone: '09 845 1688'
+description: Auckland health food shop listed by Chantal Organics as a stockist.
+long_description: Blissful Health and Vegetarian Shop is listed by Chantal Organics as an Auckland stockist for Chantal Organics pantry goods.
 practices: []
 products:
-- Dairy
 - Pantry goods
+- Wholefoods
 services:
 - Retail shop
 practices_tags: []
@@ -20,10 +22,8 @@ services_tags: []
 certifications: []
 specialty_tags: []
 source_urls:
-- https://www.mahoecheese.co.nz/selected-retailers/
 - https://chantalorganics.co.nz/find-a-store/
 sourced_from:
-- mahoe-farmhouse-cheese
 - chantal-organics
 supplies_to: []
 relationships_declared: true

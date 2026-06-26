@@ -1,17 +1,18 @@
 ---
 layout: store
-title: New World Kerikeri
-slug: new-world-kerikeri
+title: Plum Organics
+slug: plum-organics
 country_slug: new-zealand
 country: New Zealand
-region: Northland
-city: Kerikeri
-description: Stockist for Mahoe Farmhouse Cheese in Kerikeri, listed by Mahoe Cheese.
-long_description: New World Kerikeri is listed by Mahoe Cheese as a Kerikeri stockist for Mahoe Farmhouse Cheese.
+region: Bay of Plenty
+address: 33 Gravatt Rd
+phone: 07 574 2160
+description: Bay of Plenty organic store listed by Chantal Organics as a stockist.
+long_description: Plum Organics is listed by Chantal Organics as a Bay of Plenty stockist for Chantal Organics pantry goods.
 practices: []
 products:
-- Dairy
 - Pantry goods
+- Wholefoods
 services:
 - Retail shop
 practices_tags: []
@@ -20,10 +21,8 @@ services_tags: []
 certifications: []
 specialty_tags: []
 source_urls:
-- https://www.mahoecheese.co.nz/selected-retailers/
 - https://chantalorganics.co.nz/find-a-store/
 sourced_from:
-- mahoe-farmhouse-cheese
 - chantal-organics
 supplies_to: []
 relationships_declared: true

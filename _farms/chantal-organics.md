@@ -25,8 +25,9 @@ certifications: []
 supply_role: Processor; Distributor
 source_urls:
 - https://maikai.nz/pages/mai-kai-suppliers
-hours: "Mon\u2013Fri 08:00\u201317:00; Sat\u2013Sun closed"
-last_checked: '2025-12-09'
+- https://chantalorganics.co.nz/find-a-store/
+hours: Mon-Fri 08:00-17:00; Sat-Sun closed
+last_checked: '2026-06-27'
 notes: Founded as organic co-op farm
 subtype: mixed
 practices:
@@ -37,6 +38,27 @@ services_tags: []
 specialty_tags: []
 sourced_from: []
 supplies_to:
+- alma-wholefoods
+- blissful-health-and-vegetarian-shop
+- brown-owl-organics-rotorua
 - chantal-shop-napier
+- drury-church-organic-shop
+- eden-foods-mt-eden
+- harvest-wholefoods
+- ie-produce-takapuna
+- kerikeri-organic
+- mahurangi-organic-co-op
+- mount-wholefoods
+- naturally-organic-albany
+- naturally-organic-glen-innes
+- new-world-kerikeri
+- organic-store
+- organics-out-west
+- plum-organics
+- putiputi-ra-organics
+- simply-organic
+- the-fresh-market
+- the-natural-health-co
+- whakatane-organics
 relationships_declared: true
 ---

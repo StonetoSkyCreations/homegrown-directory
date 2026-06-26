@@ -7,7 +7,7 @@ country: New Zealand
 region: Auckland
 city: Glen Eden
 address: 39 Glenmall Place, Glen Eden, Auckland
-description: "Eco\u2011friendly grocery stocking organic fresh fruit, vegetables, meat and bulk refills, with fair\u2011trade and spray\u2011free products."
+description: Eco-friendly grocery stocking organic fresh fruit, vegetables, meat and bulk refills, with fair-trade and spray-free products.
 practices:
 - organic
 - spray-free
@@ -15,7 +15,7 @@ products:
 - Fruit and vegetables
 - Meat
 - Bulk refills
-- "Eco\u2011friendly products"
+- Eco-friendly products
 services:
 - Retail grocery
 - Refillery
@@ -29,6 +29,7 @@ lon: 174.651726
 subtype: organic-store
 source_urls:
 - https://www.mahoecheese.co.nz/selected-retailers/
+- https://chantalorganics.co.nz/find-a-store/
 geo_precision: exact
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
@@ -41,6 +42,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - mahoe-farmhouse-cheese
+- chantal-organics
 supplies_to: []
 relationships_declared: true
 ---

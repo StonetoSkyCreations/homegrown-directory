@@ -24,6 +24,7 @@ products:
 market_days: []
 source_urls:
 - https://brownowlorganics.nz/
+- https://chantalorganics.co.nz/find-a-store/
 last_checked: ''
 notes: ''
 published: true
@@ -46,7 +47,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- chantal-organics
 supplies_to: []
-relationships_declared: false
+relationships_declared: true
 ---

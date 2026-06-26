@@ -1,17 +1,18 @@
 ---
 layout: store
-title: New World Kerikeri
-slug: new-world-kerikeri
+title: Mahurangi Organic Co-op
+slug: mahurangi-organic-co-op
 country_slug: new-zealand
 country: New Zealand
-region: Northland
-city: Kerikeri
-description: Stockist for Mahoe Farmhouse Cheese in Kerikeri, listed by Mahoe Cheese.
-long_description: New World Kerikeri is listed by Mahoe Cheese as a Kerikeri stockist for Mahoe Farmhouse Cheese.
+region: Auckland
+address: 6 Coquette Street
+phone: 021 170 1771
+description: Auckland organic co-op listed by Chantal Organics as a stockist.
+long_description: Mahurangi Organic Co-op is listed by Chantal Organics as an Auckland stockist for Chantal Organics pantry goods.
 practices: []
 products:
-- Dairy
 - Pantry goods
+- Wholefoods
 services:
 - Retail shop
 practices_tags: []
@@ -20,10 +21,8 @@ services_tags: []
 certifications: []
 specialty_tags: []
 source_urls:
-- https://www.mahoecheese.co.nz/selected-retailers/
 - https://chantalorganics.co.nz/find-a-store/
 sourced_from:
-- mahoe-farmhouse-cheese
 - chantal-organics
 supplies_to: []
 relationships_declared: true

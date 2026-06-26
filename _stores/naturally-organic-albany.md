@@ -21,8 +21,10 @@ certifications: []
 specialty_tags: []
 source_urls:
 - https://www.mahoecheese.co.nz/selected-retailers/
+- https://chantalorganics.co.nz/find-a-store/
 sourced_from:
 - mahoe-farmhouse-cheese
+- chantal-organics
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'

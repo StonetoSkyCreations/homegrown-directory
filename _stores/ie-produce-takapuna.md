@@ -27,6 +27,7 @@ source_urls:
 - "NZ\u2019s first certified organic store"
 - https://english.awaruaorganics.co.nz/stockists/
 - https://www.mahoecheese.co.nz/selected-retailers/
+- https://chantalorganics.co.nz/find-a-store/
 last_checked: IE Produce contact
 notes: Retail
 city: Auckland
@@ -48,6 +49,7 @@ specialty_tags: []
 sourced_from:
 - awarua-organics-southland
 - mahoe-farmhouse-cheese
+- chantal-organics
 supplies_to: []
 relationships_declared: true
 ---
