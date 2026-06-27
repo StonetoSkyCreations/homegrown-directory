@@ -13,16 +13,17 @@
     antPath: ["https://unpkg.com/leaflet-ant-path@1.3.0/dist/leaflet-ant-path.js", "sha256-tAYlAN1qth0gHGwN3e85JLm82kzjYc4ozrVjBfO+7nM="]
   };
 
-  // Small dots, colour-coded by type (no icons). Colour matches the chip borders.
+  // The focus listing shows its type emoji so "this is the farm" reads instantly;
+  // every connection is a small colour dot so nearby points stop stacking.
   var TYPES = {
-    farms: { color: "#4caf50" },
-    markets: { color: "#ab47bc" },
-    stores: { color: "#2196f3" },
-    restaurants: { color: "#ff7043" },
-    vendors: { color: "#8d6e63" },
-    distributors: { color: "#607d8b" }
+    farms: { color: "#4caf50", emoji: "🌱" },
+    markets: { color: "#ab47bc", emoji: "🧺" },
+    stores: { color: "#2196f3", emoji: "🛒" },
+    restaurants: { color: "#ff7043", emoji: "🍽️" },
+    vendors: { color: "#8d6e63", emoji: "🍞" },
+    distributors: { color: "#607d8b", emoji: "📦" }
   };
-  function typeMeta(collection) { return TYPES[collection] || { color: "#777" }; }
+  function typeMeta(collection) { return TYPES[collection] || { color: "#777", emoji: "" }; }
 
   var baseEl = document.querySelector("base");
   var BASE = baseEl ? baseEl.getAttribute("href").replace(/\/$/, "") : "";
@@ -67,11 +68,19 @@
 
   function pinIcon(collection, isFocus) {
     var meta = typeMeta(collection);
-    var size = isFocus ? 20 : 13;
+    if (isFocus) {
+      var fs = 36;
+      return window.L.divIcon({
+        className: "conn-pin conn-pin--focus",
+        html: '<span class="conn-pin__badge" style="background:' + meta.color + '">' + (meta.emoji || "") + "</span>",
+        iconSize: [fs, fs], iconAnchor: [fs / 2, fs / 2], popupAnchor: [0, -fs / 2]
+      });
+    }
+    var s = 13;
     return window.L.divIcon({
-      className: "conn-pin" + (isFocus ? " conn-pin--focus" : ""),
+      className: "conn-pin",
       html: '<span class="conn-pin__dot" style="background:' + meta.color + '"></span>',
-      iconSize: [size, size], iconAnchor: [size / 2, size / 2], popupAnchor: [0, -size / 2]
+      iconSize: [s, s], iconAnchor: [s / 2, s / 2], popupAnchor: [0, -s / 2]
     });
   }
 

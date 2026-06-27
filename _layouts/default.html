@@ -20,7 +20,7 @@
   <link rel="icon" href="{{ '/Favicon-32.png' | relative_url }}" sizes="32x32">
   {% comment %}SEO/AEO meta built from page data and practices{% endcomment %}
   {% include seo-meta.html %}
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}">
   <script>
     (function () {
       try {
@@ -59,6 +59,6 @@
     window.HG_BASEURL = '{{ site.baseurl | default: "" }}';
     window.HG_ENTITY_TYPES = {{ site.data.entity_types | jsonify }};
   </script>
-  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}" defer></script>
 </body>
 </html>
