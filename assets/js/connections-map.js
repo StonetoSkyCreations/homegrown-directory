@@ -155,14 +155,118 @@
     setTimeout(function () { map.invalidateSize(); }, 80);
   }
 
+  function fillSelect(sel, values) {
+    if (!sel) { return; }
+    values.forEach(function (v) { var o = document.createElement("option"); o.value = v; o.textContent = v; sel.appendChild(o); });
+  }
+
+  // Full network map for /network/: every listing + every supply edge, filterable,
+  // click a marker to trace its connections.
+  function renderFull(container, records) {
+    var bySlug = {};
+    records.forEach(function (r) { if (r.slug && !bySlug[r.slug]) { bySlug[r.slug] = r; } });
+
+    var edgeMap = {};
+    function addRef(from, to) {
+      if (!from || !to || from === to) { return; }
+      if (!bySlug[from] || !bySlug[to] || !hasCoords(bySlug[from]) || !hasCoords(bySlug[to])) { return; }
+      var a = from < to ? from : to, b = from < to ? to : from;
+      var e = edgeMap[a + "|" + b] || (edgeMap[a + "|" + b] = { a: a, b: b, refs: {} });
+      e.refs[from] = true;
+    }
+    records.forEach(function (r) {
+      (r.supplies_to || []).forEach(function (t) { addRef(r.slug, t); });
+      (r.sourced_from || []).forEach(function (t) { addRef(r.slug, t); });
+    });
+    var edges = Object.keys(edgeMap).map(function (k) {
+      var e = edgeMap[k];
+      return { a: e.a, b: e.b, reciprocated: !!(e.refs[e.a] && e.refs[e.b]) };
+    });
+    var coordRecords = records.filter(hasCoords);
+
+    var map = window.L.map(container, { scrollWheelZoom: true, zoomControl: true });
+    window.L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+      maxZoom: 19, subdomains: "abcd",
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>'
+    }).addTo(map);
+
+    var linesLayer = window.L.layerGroup().addTo(map);
+    var emphasisLayer = window.L.layerGroup().addTo(map);
+    var markersLayer = window.L.markerClusterGroup
+      ? window.L.markerClusterGroup({ maxClusterRadius: 45, showCoverageOnHover: false, spiderfyOnMaxZoom: true })
+      : window.L.layerGroup();
+    map.addLayer(markersLayer);
+
+    var regionSel = document.getElementById("net-region");
+    var practiceSel = document.getElementById("net-practice");
+    var collSel = document.getElementById("net-collection");
+    var statsEl = document.getElementById("net-stats");
+
+    var regions = {}, practices = {};
+    records.forEach(function (r) {
+      if (r.region) { regions[r.region] = true; }
+      (r.practices || []).forEach(function (p) { if (p) { practices[p] = true; } });
+    });
+    fillSelect(regionSel, Object.keys(regions).sort());
+    fillSelect(practiceSel, Object.keys(practices).sort());
+
+    function passes(r) {
+      if (regionSel && regionSel.value && r.region !== regionSel.value) { return false; }
+      if (collSel && collSel.value && r.collection !== collSel.value) { return false; }
+      if (practiceSel && practiceSel.value && (r.practices || []).indexOf(practiceSel.value) === -1) { return false; }
+      return true;
+    }
+
+    function emphasize(focus) {
+      emphasisLayer.clearLayers();
+      var fll = [num(focus.lat), num(focus.lon)];
+      connectionsOf(focus, records).forEach(function (c) {
+        if (hasCoords(c.node)) { edge(emphasisLayer, fll, [num(c.node.lat), num(c.node.lon)], c.reciprocated); }
+      });
+    }
+
+    function render(fit) {
+      linesLayer.clearLayers(); emphasisLayer.clearLayers(); markersLayer.clearLayers();
+      var visible = {};
+      coordRecords.forEach(function (r) { if (passes(r)) { visible[r.slug] = r; } });
+
+      edges.forEach(function (e) {
+        if (!visible[e.a] || !visible[e.b]) { return; }
+        var a = [num(bySlug[e.a].lat), num(bySlug[e.a].lon)];
+        var b = [num(bySlug[e.b].lat), num(bySlug[e.b].lon)];
+        window.L.polyline(curve(a, b), e.reciprocated
+          ? { color: "#4caf50", weight: 1.5, opacity: 0.4 }
+          : { color: "#9e9e9e", weight: 1, opacity: 0.25, dashArray: "4 6" }).addTo(linesLayer);
+      });
+
+      var pts = [], count = 0;
+      Object.keys(visible).forEach(function (slug) {
+        var r = visible[slug], ll = [num(r.lat), num(r.lon)];
+        var m = window.L.marker(ll, { icon: pinIcon(r.collection, false) }).bindPopup(popupHtml(r));
+        m.on("click", function () { emphasize(r); });
+        markersLayer.addLayer(m); pts.push(ll); count++;
+      });
+
+      var lineCount = edges.filter(function (e) { return visible[e.a] && visible[e.b]; }).length;
+      if (statsEl) { statsEl.textContent = count + " listings, " + lineCount + " connections"; }
+      if (fit && pts.length) { try { map.fitBounds(window.L.latLngBounds(pts).pad(0.1)); } catch (err) { /* noop */ } }
+    }
+
+    [regionSel, practiceSel, collSel].forEach(function (el) { if (el) { el.addEventListener("change", function () { render(true); }); } });
+    render(true);
+    setTimeout(function () { map.invalidateSize(); }, 80);
+  }
+
   function initContainer(container) {
     if (container.dataset.cmInit) { return; }
     container.dataset.cmInit = "1";
     var focusSlug = container.getAttribute("data-focus");
+    var mode = container.getAttribute("data-mode");
     loadLeaflet()
       .then(getData)
       .then(function (records) {
-        if (focusSlug) { renderFocused(container, focusSlug, records); }
+        if (mode === "full") { renderFull(container, records); }
+        else if (focusSlug) { renderFocused(container, focusSlug, records); }
       })
       .catch(function (e) { container.classList.add("connections__map--empty"); console.error("connections-map:", e); });
   }

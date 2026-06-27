@@ -3273,3 +3273,24 @@ html[data-theme="dark"] .listing-card--featured::before {
 @media (min-width: 760px) {
   .connections__lists { grid-template-columns: 1fr 1fr; gap: var(--space-4); }
 }
+
+/* ---- /network/ full map page ---- */
+.network { display: grid; gap: var(--space-4); }
+.network__intro { max-width: 70ch; }
+.network__controls { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: end; }
+.network__controls label { display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.85rem; color: var(--muted); }
+.network__controls select { padding: 0.4rem 0.6rem; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--card); color: var(--text); }
+.network__stats { margin-left: auto; align-self: center; font-size: 0.85rem; }
+.network__map { width: 100%; height: 72vh; min-height: 420px; border: 1px solid var(--border); border-radius: var(--radius-xl); overflow: hidden; background: var(--bg-2); }
+.network__legend { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-4); list-style: none; padding: 0; margin: 0; font-size: 0.82rem; color: var(--muted); }
+.network__legend li { display: flex; align-items: center; gap: 0.45rem; }
+.net-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--border); }
+.net-dot--farms { background: #4caf50; } .net-dot--markets { background: #ab47bc; } .net-dot--stores { background: #2196f3; }
+.net-dot--restaurants { background: #ff7043; } .net-dot--distributors { background: #607d8b; }
+.net-line { width: 26px; height: 0; display: inline-block; }
+.net-line--recip { border-top: 3px solid #4caf50; }
+.net-line--oneway { border-top: 2px dashed #9e9e9e; }
+@media (max-width: 640px) {
+  .network__map { height: 60vh; }
+  .network__stats { margin-left: 0; }
+}
