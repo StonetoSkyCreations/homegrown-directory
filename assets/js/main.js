@@ -1334,6 +1334,40 @@
     if (toggleMapBtn) toggleMapBtn.textContent = "Show map";
   }
 
+  // A brief overview card shown inside the map popup, so clicking a pin gives a
+  // quick read without jumping the visitor away from the map to the list below.
+  function mapPopupHtml(item) {
+    const color = typeColors[item.collection] || "#305c24";
+    const typeLabel = typeLabels[item.collection] || item.type || "";
+    const place = [item.city, item.region].filter(Boolean).join(", ");
+    const snippet = truncateText(item.description, 130);
+    const tags = getItemTags(item).slice(0, 3);
+    const tagHtml = tags.length
+      ? `<ul class="map-pop__tags">${tags.map((t) => `<li>${escapeHtml(String(t).replace(/-/g, " "))}</li>`).join("")}</ul>`
+      : "";
+    return (
+      `<div class="map-pop">` +
+      `<span class="map-pop__type" style="color:${color}">${escapeHtml(typeLabel)}</span>` +
+      `<strong class="map-pop__title">${escapeHtml(item.title || item.name || "")}</strong>` +
+      (place ? `<span class="map-pop__place">${escapeHtml(place)}</span>` : "") +
+      (snippet ? `<p class="map-pop__desc">${escapeHtml(snippet)}</p>` : "") +
+      tagHtml +
+      `<a class="map-pop__link" href="${escapeHtml(item.url)}">View full listing</a>` +
+      `</div>`
+    );
+  }
+
+  // Bounds that stay tight when points straddle the 180th meridian, e.g. mainland
+  // NZ near 174E plus the Chatham Islands near 177W. Without this, fitBounds spans
+  // the globe the long way and zooms out to a whole-world view.
+  function antimeridianBounds(items) {
+    const pts = items.map((item) => [item.lat, item.lon]);
+    const lons = pts.map((p) => p[1]);
+    const span = Math.max(...lons) - Math.min(...lons);
+    const norm = span > 180 ? pts.map(([lat, lon]) => [lat, lon < 0 ? lon + 360 : lon]) : pts;
+    return L.latLngBounds(norm);
+  }
+
   function refreshMap(items) {
     if (!map || !markerLayer) return;
     markerLayer.clearLayers();
@@ -1342,23 +1376,29 @@
     withCoords.forEach((item) => {
       const color = typeColors[item.collection] || "#305c24";
       const marker = L.marker([item.lat, item.lon], { icon: makeMarkerIcon(color) }).bindPopup(
-        `<div><strong>${item.title}</strong><br><small>${typeLabels[item.collection] || item.type}</small><br><small>${item.city || ""}${
-          item.city && item.region ? ", " : ""
-        }${item.region || ""}</small><br><a href="${item.url}">View listing</a></div>`
+        mapPopupHtml(item),
+        { className: "map-pop-popup", maxWidth: 260, minWidth: 190 }
       );
       if (item.id) {
         markersById[item.id] = marker;
-        marker.on("click", () => selectCardById(item.id, { scroll: true }));
+        // Highlight the matching list card for cross-reference, but stay on the
+        // map. The popup is the overview, so we no longer scroll down to the card.
+        marker.on("click", () => selectCardById(item.id));
       }
       markerLayer.addLayer(marker);
     });
-    if (withCoords.length) {
-      const bounds = L.latLngBounds(withCoords.map((item) => [item.lat, item.lon]));
-      map.fitBounds(bounds, { padding: [30, 30] });
+
+    const filtersActive = hasActiveFilters() || (nearMeState && nearMeState.active && nearMeState.userLocation);
+    const activeCountry = getActiveCountry();
+    const view = countryDefaults[activeCountry] || countryDefaults[defaultCountry];
+    if (withCoords.length && filtersActive) {
+      // A narrowed result set: frame the actual results (antimeridian-safe), but
+      // never zoom past street level on a single match.
+      map.fitBounds(antimeridianBounds(withCoords), { padding: [30, 30], maxZoom: 13 });
     } else {
-      const activeCountry = getActiveCountry();
-      const fallback = countryDefaults[activeCountry] || countryDefaults[defaultCountry];
-      map.setView(fallback.center, fallback.zoom);
+      // No active filters (or no plotted points): frame the active country
+      // cleanly instead of fitting to outliers like the Chatham Islands listing.
+      map.setView(view.center, view.zoom);
     }
   }
 

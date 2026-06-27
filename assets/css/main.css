@@ -2772,6 +2772,62 @@ html[data-theme="dark"] .article {
   margin: 0.35rem 0;
 }
 
+/* Brief overview card inside a map pin popup. Leaflet popups render on a white
+   wrapper regardless of page theme, so these use fixed dark-on-light colours. */
+.leaflet-popup-content .map-pop {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 180px;
+}
+.map-pop__type {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.map-pop__title {
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #1d1d18;
+}
+.map-pop__place {
+  font-size: 0.8rem;
+  color: #6c665b;
+}
+.map-pop__desc {
+  margin: 0.15rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #3a3a33;
+}
+.map-pop__tags {
+  list-style: none;
+  margin: 0.25rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.map-pop__tags li {
+  font-size: 0.66rem;
+  text-transform: capitalize;
+  background: rgba(47, 91, 63, 0.1);
+  color: #2f5b3f;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+}
+.map-pop__link {
+  margin-top: 0.4rem;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #2f5b3f;
+  text-decoration: none;
+}
+.map-pop__link:hover {
+  text-decoration: underline;
+}
+
 .form-page {
   background: var(--card);
   border: 1px solid var(--border);
