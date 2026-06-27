@@ -29,4 +29,4 @@ sourced_from: []
 supplies_to: []
 relationships_declared: false
 ---
-Explain what the store carries, how it sources, and any refill or provenance notes. Use `sources` to link back to the producers that stock the shelves.
+Explain what the store carries, how it sources, and any refill or provenance notes. Use `sourced_from` to link back to the producers that stock the shelves.

@@ -4,20 +4,20 @@ title: Map
 permalink: /map/
 map: true
 seo_title: "Map | Homegrown Directory"
-seo_description: "Explore New Zealand's organic and spray-free farms, markets, grocers, and eateries on an interactive map. Filter by region, type, and practice."
+seo_description: "Explore organic, spray-free, regenerative, biodynamic, pasture-raised, wild, and locally sourced food listings on the Homegrown map."
 ---
 
 <section class="hero">
   <p class="eyebrow">Explore the map</p>
-  <h1>Find food grown with care, near you.</h1>
-  <p class="lead">Browse farms, markets, grocers, eateries, and distributors across Aotearoa. Filter the list and the map updates with you. Tap a pin to jump to its listing.</p>
+  <h1>Find real food grown with integrity.</h1>
+  <p class="lead">Browse farms, markets, grocers, eateries, and distributors across Aotearoa. Filter the list and the map updates with you. Tap a pin to open the listing.</p>
 </section>
 
 <section class="map-explorer" aria-label="Interactive directory map">
   <div class="map-explorer__filters">
     <div class="map-explorer__field">
       <label for="searchInput" class="muted">Search</label>
-      <input id="searchInput" type="search" placeholder="Try &ldquo;Wellington organic&rdquo;" autocomplete="off">
+      <input id="searchInput" type="search" placeholder="Region, food, practice, or listing name" autocomplete="off">
     </div>
     <div class="map-explorer__field">
       <label for="heroRegion" class="muted">Region</label>
@@ -32,6 +32,9 @@ seo_description: "Explore New Zealand's organic and spray-free farms, markets, g
         <label><input type="checkbox" name="practice" value="regenerative"> Regenerative</label>
         <label><input type="checkbox" name="practice" value="spray-free"> Spray-free</label>
         <label><input type="checkbox" name="practice" value="biodynamic"> Biodynamic</label>
+        <label><input type="checkbox" name="practice" value="pasture-raised"> Pasture-raised</label>
+        <label><input type="checkbox" name="practice" value="wild"> Wild</label>
+        <label><input type="checkbox" name="practice" value="locally-sourced"> Locally sourced</label>
       </div>
     </div>
   </div>
@@ -67,7 +70,8 @@ seo_description: "Explore New Zealand's organic and spray-free farms, markets, g
       <div id="listingResults" class="listing-grid" aria-live="polite"></div>
       <template id="emptyStateTemplate">
         <div class="empty-panel">
-          <p>No listings match your filters yet. Try clearing a filter or zooming the map out.</p>
+          <p class="eyebrow">No matching listings</p>
+          <p>No listings match those filters yet. Try clearing a filter, choosing a broader region, or searching by food type, practice, or business name.</p>
         </div>
       </template>
     </div>

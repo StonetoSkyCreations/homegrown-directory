@@ -1,56 +1,117 @@
 ---
 layout: default
 title: Home
-seo_title: "Homegrown Directory | Find Food Grown With Care"
+seo_title: "Homegrown Directory | Find Real Food Grown With Integrity"
 seo_description: >
-  Explore Aotearoa’s directory for transparent, ethically grown food — organic, spray-free and regenerative producers, markets and eateries.
+  Homegrown maps organic, spray-free, regenerative, biodynamic, pasture-raised, wild, and locally sourced food across Aotearoa.
 ---
 
-<section class="hero hero--home">
+<section class="hero hero--home hero--map-led">
   <div class="hero__text">
-    <h1>Good food starts close to home.</h1>
-    <p class="lead">A directory for finding food grown with care.</p>
-    <p class="lead">Explore farms, markets, grocers, and eateries near you.</p>
-    <div class="hero__filters">
-      <label for="heroRegion" class="muted">Browse by region</label>
-      <div class="hero__filters-row">
-        <select id="heroRegion">
-          <option value="all">All regions</option>
-        </select>
+    <p class="eyebrow">Homegrown Directory</p>
+    <h1>Find real food grown with integrity.</h1>
+    <p class="lead">Homegrown maps organic, spray-free, regenerative, biodynamic, pasture-raised, wild, and locally sourced food across Aotearoa.</p>
+    <div class="hero__cta">
+      <a class="button" href="#directory-map">Explore the map</a>
+      <a class="button ghost" href="#home-discovery">Browse by region</a>
+    </div>
+    <ul class="home-trust-list" aria-label="Directory trust cues">
+      <li>Every pin opens a real directory listing.</li>
+      <li>Relationship links show known sourcing connections when declared.</li>
+      <li>Corrections and new listings go through the update flow.</li>
+    </ul>
+  </div>
+
+  <div class="home-map-tool" id="home-discovery" aria-label="Explore Homegrown listings">
+    <div class="home-map-tool__controls">
+      <div class="home-map-tool__row">
+        <div class="search-controls">
+          <label for="searchInput" class="muted">Search</label>
+          <input id="searchInput" type="search" placeholder="Region, food, practice, or listing name" autocomplete="off">
+        </div>
+        <div class="hero__filters">
+          <label for="heroRegion" class="muted">Region</label>
+          <select id="heroRegion">
+            <option value="all">All regions</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="home-map-tool__filter-group">
+        <span class="filter-label">Category</span>
+        <div class="home-filter-chips">
+          <button class="button ghost button--sm" type="button" data-type-filter="farm">
+            {% include icon.html name="farm" %}
+            Farms
+          </button>
+          <button class="button ghost button--sm" type="button" data-type-filter="market">
+            {% include icon.html name="market" %}
+            Markets
+          </button>
+          <button class="button ghost button--sm" type="button" data-type-filter="store">
+            {% include icon.html name="store" %}
+            Grocers
+          </button>
+          <button class="button ghost button--sm" type="button" data-type-filter="restaurant,vendor">
+            {% include icon.html name="restaurant" %}
+            Eateries
+          </button>
+          <button class="button ghost button--sm" type="button" data-type-filter="distributor">
+            {% include icon.html name="distributor" %}
+            Distributors
+          </button>
+        </div>
+      </div>
+
+      <div class="home-map-tool__filter-group filters" aria-label="Practice filters">
+        <span class="filter-label">Practice</span>
+        <div class="pill-group">
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="practice" value="organic">
+            <span>Organic</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="practice" value="spray-free">
+            <span>Spray-free</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="practice" value="regenerative">
+            <span>Regenerative</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="practice" value="biodynamic">
+            <span>Biodynamic</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="practice" value="pasture-raised">
+            <span>Pasture-raised</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="practice" value="wild">
+            <span>Wild</span>
+          </label>
+          <label class="pill pill--checkbox">
+            <input type="checkbox" name="practice" value="locally-sourced">
+            <span>Locally sourced</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="home-map-tool__meta">
+        <div id="resultsCount" class="muted results-count is-loading" aria-live="polite">Loading listings...</div>
+        <div class="results-actions">
+          <button type="button" class="button ghost button--sm" data-near-me>Near me</button>
+          <span class="muted near-me-status" data-near-me-status></span>
+          <button type="button" class="button ghost button--sm" id="toggleMap">Hide map</button>
+          <button type="button" class="button ghost button--sm" id="clearFilters">Clear</button>
+        </div>
       </div>
     </div>
-    <div class="search-controls">
-      <label for="searchInput" class="muted">Search by city, region, product, or business name…</label>
-      <input id="searchInput" type="search" placeholder="Try “Wellington organic”" autocomplete="off">
+
+    <div class="map-panel map-panel--open" id="directory-map" aria-label="Interactive map of Homegrown directory listings">
+      <div id="map"></div>
     </div>
-    <div class="hero__cta">
-      <a class="button" href="#directory">Browse the directory</a>
-    </div>
-  </div>
-  <div class="hero__actions">
-    <p class="eyebrow">Browse categories</p>
-    <div class="hero__category-grid">
-      <button class="button ghost" type="button" data-type-filter="store">
-        {% include icon.html name="store" %}
-        Find Stores
-      </button>
-      <button class="button ghost" type="button" data-type-filter="restaurant,vendor">
-        {% include icon.html name="restaurant" %}
-        Find Eateries
-      </button>
-      <button class="button ghost" type="button" data-type-filter="market">
-        {% include icon.html name="market" %}
-        Find Markets
-      </button>
-      <button class="button ghost" type="button" data-type-filter="distributor">
-        {% include icon.html name="distributor" %}
-        Find Distributors
-      </button>
-      <button class="button ghost" type="button" data-type-filter="farm">
-        {% include icon.html name="farm" %}
-        Find Farms &amp; Producers
-      </button>
-    </div>
+    <p class="home-map-note muted">Pins are real directory listings. Filter the map, then open a card below or tap a pin to view the listing.</p>
   </div>
 </section>
 
@@ -74,26 +135,24 @@ seo_description: >
 
 <section class="search-section search-section--home" id="directory">
   <div class="results-toolbar">
-    <div id="resultsCount" class="muted results-count is-loading">Loading listings…</div>
-    <div class="results-actions">
-      <button type="button" class="button ghost button--sm" data-near-me>Near me</button>
-      <span class="muted near-me-status" data-near-me-status></span>
-      <button type="button" class="button ghost button--sm" id="toggleMap">Show map</button>
+    <div>
+      <p class="eyebrow">Browse listings</p>
+      <h2>Listings matching your map filters</h2>
     </div>
   </div>
-  <div class="results-layout">
-    <div class="map-panel"><div id="map"></div></div>
-    <div id="listingResults" class="listing-grid listing-grid--tight" aria-live="polite"></div>
-  </div>
+  <div id="listingResults" class="listing-grid listing-grid--tight" aria-live="polite"></div>
+  <template id="initialStateTemplate">
+    <div class="empty-panel">
+      <p class="eyebrow">Start exploring</p>
+      <p>Choose a region, category, practice, or search term to show matching listing cards here. The map above shows directory pins first so you can browse visually.</p>
+    </div>
+  </template>
   <template id="emptyStateTemplate">
     <div class="empty-panel">
-      <p class="eyebrow">A directory for finding food grown with care</p>
-      <p>A quiet culture exists: people growing, sourcing, and serving food with care. Businesses with an emphasis on regenerative, organic, spray-free, wild, foraged and local food are all around us but often hard to find. Homegrown fixes this.</p>
-      <p>Relationship links on listings help show how growers, markets, stores, eateries, and distributors connect across local food systems.</p>
-      <p>Use the search bar to look up a place, business, product, or practice, or browse by region and category.</p>
+      <p class="eyebrow">No matching listings</p>
+      <p>No listings match those filters yet. Try clearing a filter, choosing a broader region, or searching by food type, practice, or business name.</p>
       <div class="empty-panel__actions">
-        <p>We are still building carefully. If something’s missing, or a listing needs correcting, use the update flow so it can be reviewed:</p>
-        <a class="button" href="{{ '/submit.html' | relative_url }}">Add / Update a Listing</a>
+        <a class="button" href="{{ '/submit.html' | relative_url }}">Add or update a listing</a>
       </div>
     </div>
   </template>

@@ -793,9 +793,12 @@
   function renderList(items, active) {
     if (!resultsContainer) return;
     const hasActive = Boolean(active);
+    const initialTemplate = document.querySelector("#initialStateTemplate");
     const emptyTemplate = document.querySelector("#emptyStateTemplate");
     if (!items.length) {
-      if (emptyTemplate) {
+      if (!hasActive && initialTemplate) {
+        resultsContainer.innerHTML = initialTemplate.innerHTML;
+      } else if (emptyTemplate) {
         resultsContainer.innerHTML = emptyTemplate.innerHTML;
       } else {
         const message = hasActive ? "No listings match your filters yet." : "No featured listings are available yet.";
@@ -807,7 +810,8 @@
     if (resultsCount) {
       if (!hasActive && items.length === 0) {
         resultsCount.classList.remove("is-loading");
-        resultsCount.textContent = "";
+        const mapTotal = typeof currentMapItems === "function" ? currentMapItems().length : listings.length;
+        resultsCount.textContent = mapShouldStartOpen && mapTotal ? `${mapTotal} listings on the map` : "";
       } else {
         setResultsCountText(resultsCount, items.length, items.length);
       }
@@ -1161,9 +1165,13 @@
     document.querySelectorAll('input[name="services"]:checked').forEach((el) => selections.services.push(el.value));
 
     const source = window.HG_INDEX || listings || [];
-    // On the dedicated map page, an empty filter set means "show everything"
+    // On the dedicated map page, an empty filter set means "show the active country"
     // (both the list and the map). Elsewhere it stays empty until the user searches.
-    filtered = active ? source.filter((item) => matchesFilters(item, selections)) : isMapPage ? source.slice() : [];
+    filtered = active
+      ? source.filter((item) => matchesFilters(item, selections))
+      : isMapPage
+        ? source.filter((item) => matchesFilters(item, selections, { includePageFilters: false }))
+        : [];
     if (nearMeMode) {
       filtered = (filtered.length ? filtered : source.slice()).map((item) => {
         const lat = parseCoord(item.lat);
@@ -1218,10 +1226,12 @@
     applyFilters();
   }
 
-  // The map mirrors the active filters; with no filters it shows every listing.
+  // The map mirrors the active filters; with no filters it shows the active country.
   function currentMapItems() {
     const active = hasActiveFilters() || (nearMeState && nearMeState.active && nearMeState.userLocation);
-    return active ? filtered : listings;
+    if (active) return filtered;
+    const activeCountry = normalizeCountry(getActiveCountry());
+    return (listings || []).filter((item) => !activeCountry || normalizeCountry(item.country_slug || item.country) === activeCountry);
   }
 
   // Lazy-load Leaflet + markercluster on demand (used by the homepage map toggle
@@ -1320,6 +1330,7 @@
   function closeMap() {
     if (!mapPanel) return;
     mapPanel.classList.remove("is-open");
+    mapPanel.classList.remove("map-panel--open");
     if (toggleMapBtn) toggleMapBtn.textContent = "Show map";
   }
 
@@ -1377,7 +1388,7 @@
     if (typeof runDirectoryFilters === "function") runDirectoryFilters();
     if (hasSearchUI) {
       applyFilters();
-      if (mapShouldStartOpen && map) refreshMap(filtered);
+      if (mapShouldStartOpen && map) refreshMap(currentMapItems());
     }
     if (options.updateHash) {
       const base = window.location.href.split("#")[0];
@@ -1387,7 +1398,7 @@
 
   const fetchListings = async () => {
     if (!hasSearchUI && !hasDirectoryUI) return;
-    if (mapShouldStartOpen && !map) {
+    if (mapShouldStartOpen && !map && window.L && typeof window.L.map === "function") {
       openMap();
     }
     if (resultsCount) {
@@ -1417,8 +1428,16 @@
         runDirectoryFilters();
       }
       runListingSelfFilterAudit(listings);
-      if (mapShouldStartOpen) openMap();
-      refreshMap(filtered);
+      if (mapShouldStartOpen) {
+        try {
+          await ensureLeaflet();
+          openMap();
+        } catch (err) {
+          console.error("Failed to load map library", err);
+          if (toggleMapBtn) toggleMapBtn.textContent = "Map unavailable";
+        }
+      }
+      refreshMap(currentMapItems());
     } catch (err) {
       console.error("Failed to load search index", err);
       if (resultsCount) resultsCount.textContent = "Could not load listings right now.";
