@@ -96,4 +96,5 @@ exclude:
   - archive
   - README.md
   - ROADMAP.md
+  - SOURCING_PLAN.md
   - SEO_DOCTRINE.md

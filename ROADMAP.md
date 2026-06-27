@@ -18,21 +18,20 @@ relationships = verified).
 - **Interactive map:** `/map/` split-view list+map (Leaflet, CARTO Voyager, markercluster). Homepage is map-led (`map: true`, lazy "Show map" toggle).
 - **Relationship-first sourcing (Codex pass):** ~50 new listings (mostly `_stores`, nationwide) following well-connected producers, with reciprocal `sourced_from` / `supplies_to` and real `source_urls`.
 - **Practice token standardised:** `local` / `locally-sourced` split resolved to canonical `local`; homepage and `/map/` filters fixed to match.
+- **Honest-listing cleanup (workstream B):** rewrote the 46 provenance-note listings ("listed by X as a stockist") to plain visitor copy per the listing-quality standard; added `organic` practice tags to self-identified organic stores. Relationships and source URLs untouched.
+- **Map framing + popup fixes:** homepage / `/map/` now frame the active country (NZ here) instead of zooming to the whole planet on the Chatham Islands antimeridian outlier; clicking a pin shows a brief overview popup in place rather than scrolling to the list card.
 
 ## Known issues (fix later)
-- **47 provenance-note listings (workstream B, next):** the Codex sourcing pass left 47 listings whose copy reads as sourcing metadata ("listed by X as a stockist"), 39 with empty `practices: []`. Rewrite to the listing-quality standard in `README.md` (plain description of what the business is, drop provenance phrasing, add practice tags only where genuinely known, keep `source_urls` / relationships / coords). Find via `grep -rlE "listed by|as a stockist" _stores _farms _restaurants _markets _vendors _distributors`.
 - **Store/vendor polish:** `store.html` / `vendor.html` use the connection block but not the full collapsible `<details>` treatment `listing.html` has. Bring to parity.
 - **Duplicate-slug nodes:** a few cross-collection duplicate slugs (e.g. `live2give-organics` is a farm and a store) can show twice. Dedupe by slug if it bothers.
 - **Coverage:** only a minority of listings declare any relationship; the rest are orphans. Reciprocity coverage is the main growth metric (`relationship_audit.rb`).
 - **`normalise_*.rb` non-idempotent:** a plain re-run rewrites ~90 listing files by re-inferring tags. Run only deliberately.
 
 ## Next
-1. **Workstream B (honest-listing cleanup)** — rewrite the 47 provenance-note listings to the listing-quality standard. Raises perceived quality without changing relationships.
+1. **NZ sourcing: the connection harvest** — the main growth workstream. Mine "hubs" (a producer's stockist page, or a stockist/distributor's supplier page) to add many listings + reciprocal relationships per pass, NZ only for now. Full staged method, concrete top hubs, and a per-session checklist live in **`SOURCING_PLAN.md`**. Start with Stage 0 (build `hub_report.rb` + a harvest helper), then Stage 1 (top producer hubs: Streamside, Untamed Earth, Farmers Mill, ...). One hub ≈ one session ≈ one commit, so credits stay bounded.
 2. **Visual review of the new maps** — `/network/` flow map (dense web + clustering on mobile) and the mini-map small-dots refinement; iterate on UX.
 3. **Bring store/vendor layouts to full parity** with the listing redesign.
-4. **Canterbury batch** — staged candidates + relationship enrichment in `~/.claude/plans/eager-plotting-wadler.md`.
-5. **Wider coverage** by region (North Canterbury meat, Banks Peninsula, Mid/South Canterbury, then other provinces) once the relationship-first method is proven.
-6. **Map phase 2:** draw `supplies_to` / `sourced_from` connection lines on `/map/` too (the network map already does).
+4. **Map phase 2:** draw `supplies_to` / `sourced_from` connection lines on `/map/` too (the network map already does).
 
 ## Workflow
 - **Josh is the primary-agent (owner)**; Claude is the primary build agent; Codex / Gemini are occasional helpers.
