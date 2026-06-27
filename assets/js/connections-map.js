@@ -13,15 +13,16 @@
     antPath: ["https://unpkg.com/leaflet-ant-path@1.3.0/dist/leaflet-ant-path.js", "sha256-tAYlAN1qth0gHGwN3e85JLm82kzjYc4ozrVjBfO+7nM="]
   };
 
+  // Small dots, colour-coded by type (no icons). Colour matches the chip borders.
   var TYPES = {
-    farms: { color: "#4caf50", emoji: "🌱" },        // seedling
-    markets: { color: "#ab47bc", emoji: "🧺" },      // basket
-    stores: { color: "#2196f3", emoji: "🛒" },       // trolley
-    restaurants: { color: "#ff7043", emoji: "🍽️" }, // plate
-    vendors: { color: "#8d6e63", emoji: "🍞" },      // bread
-    distributors: { color: "#607d8b", emoji: "📦" }  // package
+    farms: { color: "#4caf50" },
+    markets: { color: "#ab47bc" },
+    stores: { color: "#2196f3" },
+    restaurants: { color: "#ff7043" },
+    vendors: { color: "#8d6e63" },
+    distributors: { color: "#607d8b" }
   };
-  function typeMeta(collection) { return TYPES[collection] || { color: "#777", emoji: "●" }; }
+  function typeMeta(collection) { return TYPES[collection] || { color: "#777" }; }
 
   var baseEl = document.querySelector("base");
   var BASE = baseEl ? baseEl.getAttribute("href").replace(/\/$/, "") : "";
@@ -66,10 +67,10 @@
 
   function pinIcon(collection, isFocus) {
     var meta = typeMeta(collection);
-    var size = isFocus ? 38 : 28;
+    var size = isFocus ? 20 : 13;
     return window.L.divIcon({
       className: "conn-pin" + (isFocus ? " conn-pin--focus" : ""),
-      html: '<span class="conn-pin__dot" style="background:' + meta.color + '">' + meta.emoji + "</span>",
+      html: '<span class="conn-pin__dot" style="background:' + meta.color + '"></span>',
       iconSize: [size, size], iconAnchor: [size / 2, size / 2], popupAnchor: [0, -size / 2]
     });
   }
