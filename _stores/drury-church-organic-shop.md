@@ -7,15 +7,17 @@ country: New Zealand
 region: Auckland
 city: Drury
 address: 13 Sutton Road
-description: Drury organic shop listed by Chantal Organics as a stockist.
-long_description: Drury Church Organic Shop is listed by Chantal Organics as a Drury stockist for Chantal Organics pantry goods.
-practices: []
+description: "Drury organic shop."
+long_description: "Drury Church Organic Shop is a Drury organic shop. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
+practices:
+- Organic
 products:
 - Pantry goods
 - Wholefoods
 services:
 - Retail shop
-practices_tags: []
+practices_tags:
+- organic
 products_tags: []
 services_tags: []
 certifications: []

@@ -7,9 +7,10 @@ country: New Zealand
 region: Nelson
 city: Nelson
 website: https://www.nelsonorganiccoop.nz
-description: Nelson organic co-op listed by Milmore Downs as a shop and co-op carrying its produce.
-long_description: Nelson Organic Co-op is listed by Milmore Downs among shops and co-ops where its produce can be found. The co-op's public site confirms the business name, while Milmore's map places the outlet in Nelson.
-practices: []
+description: "Nelson organic co-op carrying Milmore Downs grains and flour."
+long_description: "Nelson Organic Co-op is a Nelson organic co-op. It carries grains and flour from Milmore Downs."
+practices:
+- Organic
 products:
 - Pantry goods
 - Grains and pulses

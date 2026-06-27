@@ -8,8 +8,8 @@ region: Auckland
 city: Auckland
 address: 10 Wellington St
 phone: '09 534 0445'
-description: Auckland natural health store listed by Chantal Organics as a stockist.
-long_description: The Natural Health Co is listed by Chantal Organics as an Auckland stockist for Chantal Organics pantry goods.
+description: "Auckland natural health store."
+long_description: "The Natural Health Co is an Auckland natural health store. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
 practices: []
 products:
 - Pantry goods

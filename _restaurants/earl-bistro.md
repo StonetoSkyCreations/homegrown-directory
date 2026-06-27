@@ -10,8 +10,8 @@ address: 128 Lichfield Street, Christchurch Central
 website: https://www.earl.co.nz/
 email: DINE@EARL.CO.NZ
 phone: 03 365 1147
-description: Christchurch city bistro listed by Wairiri Buffalo as showcasing its buffalo dairy products.
-long_description: Earl Bistro is a Christchurch city restaurant on Lichfield Street. Wairiri Buffalo lists the restaurant among venues showcasing its buffalo dairy products, and Earl's own site confirms the central Christchurch address.
+description: "Christchurch city bistro serving local buffalo dairy."
+long_description: "Earl Bistro is a Christchurch city bistro. Its menu features buffalo dairy from Wairiri Buffalo."
 practices: []
 products:
 - Bistro food

@@ -7,8 +7,8 @@ country: New Zealand
 region: Auckland
 city: Matakana
 address: 19 Matakana Valley Rd
-description: Auckland wholefoods shop listed by Chantal Organics as a stockist.
-long_description: Alma Wholefoods is listed by Chantal Organics as an Auckland stockist for Chantal Organics pantry goods.
+description: "Auckland wholefoods shop."
+long_description: "Alma Wholefoods is an Auckland wholefoods shop. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
 practices: []
 products:
 - Pantry goods

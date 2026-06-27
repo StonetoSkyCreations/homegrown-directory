@@ -9,8 +9,8 @@ city: Christchurch
 address: 7 Wakefield Avenue, Sumner, Christchurch
 website: https://fireandslice.co.nz/
 phone: 03 260 0176
-description: Sumner wood-fired pizza restaurant listed by Wairiri Buffalo as showcasing its buffalo dairy products.
-long_description: Fire and Slice is a wood-fired pizza restaurant in Sumner, Christchurch. Wairiri Buffalo lists the restaurant among venues showcasing its buffalo dairy products, and Fire and Slice's own site confirms the Wakefield Avenue address.
+description: "Sumner wood-fired pizza restaurant serving local buffalo dairy."
+long_description: "Fire and Slice is a Sumner wood-fired pizza restaurant. Its menu features buffalo dairy from Wairiri Buffalo."
 practices: []
 products:
 - Wood-fired pizza

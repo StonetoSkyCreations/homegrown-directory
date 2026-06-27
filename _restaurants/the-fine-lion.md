@@ -9,8 +9,8 @@ city: Ashburton
 address: 152 Burnett Street, Ashburton
 website: https://www.thefinelion.co.nz/
 phone: 03 307 0629
-description: Ashburton restaurant listed by Wairiri Buffalo as showcasing its buffalo dairy products.
-long_description: The Fine Lion is an Ashburton restaurant on Burnett Street. Wairiri Buffalo lists the restaurant among venues showcasing its buffalo dairy products, and The Fine Lion's own site confirms the address.
+description: "Ashburton restaurant serving local buffalo dairy."
+long_description: "The Fine Lion is an Ashburton restaurant. Its menu features buffalo dairy from Wairiri Buffalo."
 practices: []
 products:
 - Restaurant meals

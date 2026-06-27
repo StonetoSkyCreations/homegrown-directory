@@ -8,8 +8,8 @@ region: Auckland
 city: Auckland
 address: 947 New North Road
 phone: '09 845 1688'
-description: Auckland health food shop listed by Chantal Organics as a stockist.
-long_description: Blissful Health and Vegetarian Shop is listed by Chantal Organics as an Auckland stockist for Chantal Organics pantry goods.
+description: "Auckland health food shop."
+long_description: "Blissful Health and Vegetarian Shop is an Auckland health food shop. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
 practices: []
 products:
 - Pantry goods

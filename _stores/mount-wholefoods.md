@@ -8,8 +8,8 @@ region: Bay of Plenty
 city: Mount Maunganui
 address: 6 Tawa Street
 phone: 07 572 3927
-description: Mount Maunganui wholefoods store listed by Chantal Organics as a stockist.
-long_description: Mount Wholefoods is listed by Chantal Organics as a Bay of Plenty stockist for Chantal Organics pantry goods.
+description: "Mount Maunganui wholefoods store."
+long_description: "Mount Wholefoods is a Mount Maunganui wholefoods store. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
 practices: []
 products:
 - Pantry goods

@@ -6,8 +6,8 @@ country_slug: new-zealand
 country: New Zealand
 region: Nelson
 city: Nelson
-description: Stockist for Mahoe Farmhouse Cheese in Nelson, listed by Mahoe Cheese.
-long_description: The Junction is listed by Mahoe Cheese as a Nelson stockist for Mahoe Farmhouse Cheese.
+description: "Stockist of Mahoe Farmhouse cheese in Nelson."
+long_description: "The Junction stocks Mahoe Farmhouse cheese at its Nelson store."
 practices: []
 products:
 - Dairy

@@ -8,8 +8,8 @@ region: Wellington
 city: Waikanae
 website: https://www.happyandhealthy.co.nz
 phone: 027 515 0132
-description: Waikanae wholefoods retailer listed by Milmore Downs as a shop and co-op carrying its produce.
-long_description: Happy & Healthy is a Waikanae wholefoods retailer. Milmore Downs lists Happy & Healthy among shops and co-ops where its produce can be found, and the retailer's own site confirms Waikanae as its location.
+description: "Waikanae wholefoods retailer carrying Milmore Downs grains and flour."
+long_description: "Happy & Healthy is a Waikanae wholefoods retailer. It carries grains and flour from Milmore Downs."
 practices: []
 products:
 - Pantry goods

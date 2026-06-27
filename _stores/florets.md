@@ -9,8 +9,8 @@ city: Auckland
 address: 596 Great North Road, Grey Lynn, Auckland
 website: https://florets.nz
 email: maya@florets.nz
-description: Grey Lynn whole-grain sourdough bakery listed by Milmore Downs as a bakery and cafe using its flour.
-long_description: Florets is a Grey Lynn bakery focused on whole-grain sourdough bread, coffee, cookies, sweet loaves and seasonal sandwiches. Milmore Downs lists Florets among bakeries and cafes using its flour, and Florets describes its flour as organic and spray-free flour grown in Canterbury.
+description: "Grey Lynn whole-grain sourdough bakery baking with Milmore Downs flour."
+long_description: "Florets is a Grey Lynn whole-grain sourdough bakery. It bakes with stoneground flour from Milmore Downs."
 practices: []
 products:
 - Bread and bakery

@@ -8,8 +8,8 @@ region: Otago
 city: Queenstown
 address: 53 Robins Road, Queenstown
 website: https://royalburn.co.nz/
-description: Queenstown retail outlet listed by Wairiri Buffalo as a stockist for its buffalo dairy products.
-long_description: McKibbin's of Royalburn is listed by Wairiri Buffalo as a Queenstown retail outlet for its buffalo dairy products. Wairiri's stockists page gives the outlet's Robins Road address.
+description: "Queenstown retail outlet stocking local buffalo dairy."
+long_description: "McKibbin's of Royalburn is a Queenstown retail outlet. It stocks buffalo dairy from Wairiri Buffalo."
 practices: []
 products:
 - Buffalo dairy

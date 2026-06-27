@@ -8,8 +8,8 @@ region: Auckland
 city: Auckland
 address: 405 Richmond Road
 phone: '09 376 3107'
-description: Auckland wholefoods store listed by Chantal Organics as a stockist.
-long_description: Harvest Wholefoods is listed by Chantal Organics as an Auckland stockist for Chantal Organics pantry goods.
+description: "Auckland wholefoods store."
+long_description: "Harvest Wholefoods is an Auckland wholefoods store. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
 practices: []
 products:
 - Pantry goods

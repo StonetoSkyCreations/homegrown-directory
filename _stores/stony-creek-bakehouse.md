@@ -6,8 +6,8 @@ country_slug: new-zealand
 country: New Zealand
 region: Canterbury
 city: Rangiora
-description: North Canterbury bakery listed by Milmore Downs as a bakery and cafe using its flour.
-long_description: Stony Creek Bakehouse is a North Canterbury bakery listed by Milmore Downs among bakeries and cafes using its flour. Milmore's map places the business in the Rangiora area.
+description: "North Canterbury bakery baking with Milmore Downs flour."
+long_description: "Stony Creek Bakehouse is a North Canterbury bakery. It bakes with stoneground flour from Milmore Downs."
 practices: []
 products:
 - Bread and bakery

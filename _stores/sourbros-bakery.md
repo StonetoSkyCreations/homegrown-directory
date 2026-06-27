@@ -7,8 +7,8 @@ country: New Zealand
 region: Manawatū-Whanganui
 city: Whanganui
 website: https://www.facebook.com/sourbrosbakery
-description: Whanganui sourdough bakery and pizzeria listed by Milmore Downs as a bakery and cafe using its flour.
-long_description: SourBros Bakery is a Whanganui sourdough bakery and pizzeria. Its public Facebook metadata describes it as an artisan sourdough bread and pizzeria business in Whanganui, and Milmore Downs lists it among bakeries and cafes using its flour.
+description: "Whanganui sourdough bakery and pizzeria baking with Milmore Downs flour."
+long_description: "SourBros Bakery is a Whanganui sourdough bakery and pizzeria. It bakes with stoneground flour from Milmore Downs."
 practices: []
 products:
 - Bread and bakery

@@ -6,8 +6,8 @@ country_slug: new-zealand
 country: New Zealand
 region: Auckland
 city: Mairangi Bay
-description: Stockist for Mahoe Farmhouse Cheese in Mairangi Bay, listed by Mahoe Cheese.
-long_description: Farro Fresh Mairangi Bay is listed by Mahoe Cheese as a Mairangi Bay stockist for Mahoe Farmhouse Cheese.
+description: "Stockist of Mahoe Farmhouse cheese in Mairangi Bay."
+long_description: "Farro Fresh Mairangi Bay stocks Mahoe Farmhouse cheese at its Mairangi Bay store."
 practices: []
 products:
 - Dairy

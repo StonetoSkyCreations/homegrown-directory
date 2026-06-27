@@ -6,8 +6,8 @@ country_slug: new-zealand
 country: New Zealand
 region: Northland
 city: Kerikeri
-description: Stockist for Mahoe Farmhouse Cheese in Kerikeri, listed by Mahoe Cheese.
-long_description: New World Kerikeri is listed by Mahoe Cheese as a Kerikeri stockist for Mahoe Farmhouse Cheese.
+description: "Stockist of Mahoe Farmhouse cheese and Chantal Organics pantry goods in Kerikeri."
+long_description: "New World Kerikeri stocks Mahoe Farmhouse cheese and Chantal Organics pantry goods at its Kerikeri store."
 practices: []
 products:
 - Dairy

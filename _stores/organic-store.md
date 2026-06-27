@@ -8,15 +8,17 @@ region: Auckland
 city: Auckland
 address: 6/63 Picton St
 phone: '09 535 7287'
-description: Auckland organic store listed by Chantal Organics as a stockist.
-long_description: Organic Store is listed by Chantal Organics as an Auckland stockist for Chantal Organics pantry goods.
-practices: []
+description: "Auckland organic store."
+long_description: "Organic Store is an Auckland organic store. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
+practices:
+- Organic
 products:
 - Pantry goods
 - Wholefoods
 services:
 - Retail shop
-practices_tags: []
+practices_tags:
+- organic
 products_tags: []
 services_tags: []
 certifications: []

@@ -8,15 +8,17 @@ region: Northland
 city: Kerikeri
 address: 4a Wendywood Lane
 phone: '09 407 8650'
-description: Kerikeri organic grocer listed by Chantal Organics as a stockist.
-long_description: Kerikeri Organic is listed by Chantal Organics as a Kerikeri stockist for Chantal Organics pantry goods.
-practices: []
+description: "Kerikeri organic grocer."
+long_description: "Kerikeri Organic is a Kerikeri organic grocer. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
+practices:
+- Organic
 products:
 - Pantry goods
 - Wholefoods
 services:
 - Retail shop
-practices_tags: []
+practices_tags:
+- organic
 products_tags: []
 services_tags: []
 certifications: []

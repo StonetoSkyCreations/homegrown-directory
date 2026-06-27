@@ -6,8 +6,8 @@ country_slug: new-zealand
 country: New Zealand
 region: Bay of Plenty
 city: Tauranga
-description: Tauranga pantry shop listed by Milmore Downs as a shop and co-op carrying its produce.
-long_description: Family Pantry is a Tauranga pantry shop listed by Milmore Downs among shops and co-ops where its produce can be found.
+description: "Tauranga pantry shop carrying Milmore Downs grains and flour."
+long_description: "Family Pantry is a Tauranga pantry shop. It carries grains and flour from Milmore Downs."
 practices: []
 products:
 - Pantry goods

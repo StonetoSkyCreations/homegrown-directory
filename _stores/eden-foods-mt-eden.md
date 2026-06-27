@@ -8,8 +8,8 @@ region: Auckland
 city: Auckland
 address: 444 Mt Eden Road
 phone: '09 630 5140'
-description: Auckland wholefoods shop listed by Chantal Organics as a stockist.
-long_description: Eden Foods Mt Eden is listed by Chantal Organics as an Auckland stockist for Chantal Organics pantry goods.
+description: "Auckland wholefoods shop."
+long_description: "Eden Foods Mt Eden is an Auckland wholefoods shop. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
 practices: []
 products:
 - Pantry goods

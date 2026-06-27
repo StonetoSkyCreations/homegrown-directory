@@ -10,8 +10,8 @@ address: 5 Elgin Street, Sydenham, Christchurch
 website: https://www.5thstreet.co.nz/
 email: hello@5thstreet.co.nz
 phone: 03 365 9667
-description: Sydenham restaurant listed by Wairiri Buffalo as showcasing its buffalo dairy products.
-long_description: 5th Street Restaurant is a Sydenham restaurant on Elgin Street in Christchurch. Wairiri Buffalo lists the restaurant among venues showcasing its buffalo dairy products, and 5th Street's own site confirms the address.
+description: "Sydenham restaurant serving local buffalo dairy."
+long_description: "5th Street Restaurant is a Sydenham restaurant. Its menu features buffalo dairy from Wairiri Buffalo."
 practices: []
 products:
 - Restaurant meals

@@ -7,8 +7,8 @@ country: New Zealand
 region: Otago
 city: Wanaka
 address: 20 Ardmore Street, Wanaka
-description: Wanaka food retailer listed by Wairiri Buffalo as a Queenstown Lakes stockist for its buffalo dairy products.
-long_description: Mediterranean Market Wanaka is listed by Wairiri Buffalo as a Queenstown Lakes retail outlet for its buffalo dairy products. Wairiri's stockists page gives the store's address on Ardmore Street in Wanaka.
+description: "Wanaka food retailer stocking local buffalo dairy."
+long_description: "Mediterranean Market Wanaka is a Wanaka food retailer. It stocks buffalo dairy from Wairiri Buffalo."
 practices: []
 products:
 - Buffalo dairy

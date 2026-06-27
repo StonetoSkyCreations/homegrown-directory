@@ -8,15 +8,17 @@ region: Bay of Plenty
 city: Whakatane
 address: 28 Boon St
 phone: 07 3070 696
-description: Whakatane organic store listed by Chantal Organics as a stockist.
-long_description: Whakatane Organics is listed by Chantal Organics as a Whakatane stockist for Chantal Organics pantry goods.
-practices: []
+description: "Whakatane organic store."
+long_description: "Whakatane Organics is a Whakatane organic store. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
+practices:
+- Organic
 products:
 - Pantry goods
 - Wholefoods
 services:
 - Retail shop
-practices_tags: []
+practices_tags:
+- organic
 products_tags: []
 services_tags: []
 certifications: []

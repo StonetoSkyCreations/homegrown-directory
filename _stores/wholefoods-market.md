@@ -6,8 +6,8 @@ country_slug: new-zealand
 country: New Zealand
 region: Canterbury
 city: Christchurch
-description: Christchurch wholefoods shop listed by Milmore Downs as a shop and co-op carrying its produce.
-long_description: Wholefoods Market is listed by Milmore Downs among shops and co-ops where its produce can be found. Milmore's map places the outlet in Christchurch.
+description: "Christchurch wholefoods shop carrying Milmore Downs grains and flour."
+long_description: "Wholefoods Market is a Christchurch wholefoods shop. It carries grains and flour from Milmore Downs."
 practices: []
 products:
 - Pantry goods

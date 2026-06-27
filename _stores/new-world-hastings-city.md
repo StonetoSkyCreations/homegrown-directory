@@ -6,8 +6,8 @@ country_slug: new-zealand
 country: New Zealand
 region: Hawke's Bay
 city: Hastings
-description: Stockist for Mahoe Farmhouse Cheese in Hastings, listed by Mahoe Cheese.
-long_description: New World Hastings City is listed by Mahoe Cheese as a Hastings stockist for Mahoe Farmhouse Cheese.
+description: "Stockist of Mahoe Farmhouse cheese in Hastings."
+long_description: "New World Hastings City stocks Mahoe Farmhouse cheese at its Hastings store."
 practices: []
 products:
 - Dairy

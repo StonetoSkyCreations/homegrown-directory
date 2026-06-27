@@ -6,15 +6,17 @@ country_slug: new-zealand
 country: New Zealand
 region: Auckland
 city: Glen Innes
-description: Stockist for Mahoe Farmhouse Cheese in Glen Innes, listed by Mahoe Cheese.
-long_description: Naturally Organic Glen Innes is listed by Mahoe Cheese as a Glen Innes stockist for Mahoe Farmhouse Cheese.
-practices: []
+description: "Stockist of Mahoe Farmhouse cheese and Chantal Organics pantry goods in Glen Innes."
+long_description: "Naturally Organic Glen Innes stocks Mahoe Farmhouse cheese and Chantal Organics pantry goods at its Glen Innes store."
+practices:
+- Organic
 products:
 - Dairy
 - Pantry goods
 services:
 - Retail shop
-practices_tags: []
+practices_tags:
+- organic
 products_tags: []
 services_tags: []
 certifications: []

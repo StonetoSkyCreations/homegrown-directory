@@ -6,8 +6,8 @@ country_slug: new-zealand
 country: New Zealand
 region: Auckland
 city: Auckland
-description: Stockist for Mahoe Farmhouse Cheese in Mt Eden, listed by Mahoe Cheese.
-long_description: Sabato is listed by Mahoe Cheese as a Mt Eden stockist for Mahoe Farmhouse Cheese.
+description: "Stockist of Mahoe Farmhouse cheese in Auckland."
+long_description: "Sabato stocks Mahoe Farmhouse cheese at its Auckland store."
 practices: []
 products:
 - Dairy

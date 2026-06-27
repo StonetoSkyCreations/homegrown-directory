@@ -10,8 +10,8 @@ address: 168 St Asaph Street, Christchurch
 website: https://www.cafevalentino.co.nz/
 email: mail@cafevalentino.co.nz
 phone: 03 377 1886
-description: Christchurch Italian restaurant listed by Wairiri Buffalo as showcasing its buffalo dairy products.
-long_description: Cafe Valentino is an Italian restaurant and bar on St Asaph Street in Christchurch. Wairiri Buffalo lists the restaurant among venues showcasing its buffalo dairy products, and Cafe Valentino's own site confirms the address.
+description: "Christchurch Italian restaurant serving local buffalo dairy."
+long_description: "Cafe Valentino is a Christchurch Italian restaurant. Its menu features buffalo dairy from Wairiri Buffalo."
 practices: []
 products:
 - Italian food

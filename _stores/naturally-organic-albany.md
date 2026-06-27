@@ -6,15 +6,17 @@ country_slug: new-zealand
 country: New Zealand
 region: Auckland
 city: Albany
-description: Stockist for Mahoe Farmhouse Cheese in Albany, listed by Mahoe Cheese.
-long_description: Naturally Organic Albany is listed by Mahoe Cheese as an Albany stockist for Mahoe Farmhouse Cheese.
-practices: []
+description: "Stockist of Mahoe Farmhouse cheese and Chantal Organics pantry goods in Albany."
+long_description: "Naturally Organic Albany stocks Mahoe Farmhouse cheese and Chantal Organics pantry goods at its Albany store."
+practices:
+- Organic
 products:
 - Dairy
 - Pantry goods
 services:
 - Retail shop
-practices_tags: []
+practices_tags:
+- organic
 products_tags: []
 services_tags: []
 certifications: []

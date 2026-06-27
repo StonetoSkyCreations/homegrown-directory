@@ -10,9 +10,10 @@ address: 93 Collingwood Street, Nelson
 website: http://organicfoods.nz
 email: shop@organicfoods.nz
 phone: 03 553 0528
-description: Nelson organic food store listed by Milmore Downs as a shop and co-op carrying its produce.
-long_description: Organic Foods Nelson is an organic food store on Collingwood Street in Nelson. Milmore Downs lists Organic Foods Nelson among shops and co-ops where its produce can be found, and the store's own site confirms its Nelson address and contact details.
-practices: []
+description: "Nelson organic food store carrying Milmore Downs grains and flour."
+long_description: "Organic Foods Nelson is a Nelson organic food store. It carries grains and flour from Milmore Downs."
+practices:
+- Organic
 products:
 - Pantry goods
 - Grains and pulses

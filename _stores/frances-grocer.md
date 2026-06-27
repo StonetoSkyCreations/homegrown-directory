@@ -8,8 +8,8 @@ region: Canterbury
 city: Christchurch
 address: 28 Worcester Boulevard, The Arts Centre, Christchurch
 website: https://francesnation.co.nz/collections/grocer
-description: Christchurch Arts Centre grocer listed by Milmore Downs as a shop carrying its produce.
-long_description: Frances Grocer is part of Frances Nation at The Arts Centre in Christchurch. Milmore Downs lists Frances Grocer among shops and co-ops where its produce can be found, and Frances Nation's own site confirms the Worcester Boulevard address.
+description: "Christchurch Arts Centre grocer carrying Milmore Downs grains and flour."
+long_description: "Frances Grocer is a Christchurch Arts Centre grocer. It carries grains and flour from Milmore Downs."
 practices: []
 products:
 - Pantry goods

@@ -7,15 +7,17 @@ country: New Zealand
 region: Bay of Plenty
 address: 33 Gravatt Rd
 phone: 07 574 2160
-description: Bay of Plenty organic store listed by Chantal Organics as a stockist.
-long_description: Plum Organics is listed by Chantal Organics as a Bay of Plenty stockist for Chantal Organics pantry goods.
-practices: []
+description: "Bay of Plenty organic store."
+long_description: "Plum Organics is a Bay of Plenty organic store. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
+practices:
+- Organic
 products:
 - Pantry goods
 - Wholefoods
 services:
 - Retail shop
-practices_tags: []
+practices_tags:
+- organic
 products_tags: []
 services_tags: []
 certifications: []

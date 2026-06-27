@@ -9,8 +9,8 @@ city: Christchurch
 address: 19 Bealey Avenue, Merivale, Christchurch
 website: https://www.strawberryfare.com/
 phone: 03 365 4897
-description: Merivale restaurant and dessert venue listed by Wairiri Buffalo as showcasing its buffalo dairy products.
-long_description: Strawberry Fare Merivale is a Christchurch restaurant known for all-day dining and desserts. Wairiri Buffalo lists Strawberry Fare among venues showcasing its buffalo dairy products, and Strawberry Fare's own site confirms the current Bealey Avenue location.
+description: "Merivale restaurant and dessert venue serving local buffalo dairy."
+long_description: "Strawberry Fare Merivale is a Merivale restaurant and dessert venue. Its menu features buffalo dairy from Wairiri Buffalo."
 practices: []
 products:
 - Restaurant meals

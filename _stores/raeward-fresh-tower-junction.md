@@ -7,8 +7,8 @@ country: New Zealand
 region: Canterbury
 city: Christchurch
 address: 4/04 Troup Drive, Addington, Christchurch
-description: Fresh food retailer at Tower Junction listed by Wairiri Buffalo as a retail stockist for its buffalo dairy products.
-long_description: Raeward Fresh Tower Junction is listed by Wairiri Buffalo as a Christchurch retail outlet for its buffalo dairy products. The Wairiri stockists page places the store at Tower Junction in Addington.
+description: "Fresh food retailer at Tower Junction stocking local buffalo dairy."
+long_description: "Raeward Fresh Tower Junction is a fresh food retailer at Tower Junction in Addington, Christchurch. It stocks buffalo dairy from Wairiri Buffalo."
 practices: []
 products:
 - Buffalo dairy

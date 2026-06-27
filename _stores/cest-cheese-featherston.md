@@ -6,8 +6,8 @@ country_slug: new-zealand
 country: New Zealand
 region: Wairarapa
 city: Featherston
-description: Stockist for Mahoe Farmhouse Cheese in Featherston, listed by Mahoe Cheese.
-long_description: C'est Cheese is listed by Mahoe Cheese as a Featherston stockist for Mahoe Farmhouse Cheese.
+description: "Stockist of Mahoe Farmhouse cheese in Featherston."
+long_description: "C'est Cheese stocks Mahoe Farmhouse cheese at its Featherston store."
 practices: []
 products:
 - Dairy

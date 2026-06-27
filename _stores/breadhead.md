@@ -10,8 +10,8 @@ address: 2A St John Street, Tauranga
 website: https://www.breadhead.co.nz
 email: eat@breadhead.co.nz
 phone: 07 281 1061
-description: Tauranga bakery and cafe listed by Milmore Downs as a bakery and cafe using its flour.
-long_description: Breadhead is a Tauranga bakery with a bakery site on St John Street and a gallery site at Toi Tauranga Art Gallery. Milmore Downs lists Breadhead among bakeries and cafes using its flour.
+description: "Tauranga bakery and cafe baking with Milmore Downs flour."
+long_description: "Breadhead is a Tauranga bakery and cafe. It bakes with stoneground flour from Milmore Downs."
 practices: []
 products:
 - Bread and bakery

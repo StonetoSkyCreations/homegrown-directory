@@ -10,8 +10,8 @@ address: Riverside Market, 96 Oxford Terrace, Christchurch
 website: https://www.charingcrosscheesery.co.nz/
 email: Enquiries@Charingcrosscheesery.co.nz
 phone: 022 097 1766
-description: Riverside Market cheesery listed by Wairiri Buffalo as a Christchurch retail outlet for its buffalo dairy products.
-long_description: Charing Cross Cheesery is a Riverside Market cheesery in central Christchurch. Wairiri Buffalo lists the cheesery as a retail outlet for its buffalo dairy products, and the cheesery's own site confirms its Riverside Market address.
+description: "Riverside Market cheesery stocking local buffalo dairy."
+long_description: "Charing Cross Cheesery is a Riverside Market cheesery. It stocks buffalo dairy from Wairiri Buffalo."
 practices: []
 products:
 - Cheese
