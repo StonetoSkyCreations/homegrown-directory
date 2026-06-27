@@ -20,7 +20,7 @@ lon: ''
 practices:
 - organic
 - spray-free
-- locally-sourced
+- local
 - regenerative
 practices_tags: []
 products: []

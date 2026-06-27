@@ -59,7 +59,7 @@ practices:
 - wild-foraged-products
 - low-waste
 - refill-and-reuse
-- locally-sourced
+- local
 products:
 - Organic produce
 - Organic meat

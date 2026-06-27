@@ -20,7 +20,7 @@ long_description: "Re\u2011Store Eco Market is a locally owned bulk wholefoods a
   \ shopping easy and affordable for Coromandel residents.\n"
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - bulk foods
 - pantry staples

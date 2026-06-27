@@ -8,7 +8,7 @@ region: Otago
 city: "W\u0101naka"
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - Coffee and tea
 - Breakfast

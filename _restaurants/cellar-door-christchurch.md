@@ -8,7 +8,7 @@ region: Canterbury
 city: Christchurch
 address: Arts Centre of Christchurch, 1 Hereford Street, Christchurch 8013
 practices:
-- locally-sourced
+- local
 products:
 - Local wines
 - Wine flights

@@ -31,7 +31,7 @@ long_description: "Jano Bistro is a small, chef-led restaurant tucked into a res
   \ dishes and sharing the stories behind each course, creating a relaxed yet deeply\
   \ considered expression of bistronomy.\n"
 practices:
-- locally-sourced
+- local
 products:
 - degustation-menu
 - vegetarian-degustation

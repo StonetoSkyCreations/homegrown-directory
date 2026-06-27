@@ -12,7 +12,7 @@ type: cafe
 subtype: cafe
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - Breakfast
 - Lunch

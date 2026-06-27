@@ -12,7 +12,7 @@ type: restaurant
 subtype: restaurant
 practices:
 - regenerative
-- locally-sourced
+- local
 products:
 - Seasonal tasting menu
 - Wine

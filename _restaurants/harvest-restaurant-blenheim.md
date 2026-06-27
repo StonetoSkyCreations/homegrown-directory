@@ -8,7 +8,7 @@ region: Marlborough
 city: Blenheim
 address: 776 Rapaura Road, Rapaura, Blenheim 7273
 practices:
-- locally-sourced
+- local
 products:
 - Vegetables
 - Meat

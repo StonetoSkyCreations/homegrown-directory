@@ -8,7 +8,7 @@ region: Coromandel
 city: Thames
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - Coffee and tea
 - Bread and bakery

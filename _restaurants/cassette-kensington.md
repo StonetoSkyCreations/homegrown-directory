@@ -11,7 +11,7 @@ postcode: '3031'
 type: cafe
 subtype: cafe
 practices:
-- locally-sourced
+- local
 products:
 - Coffee
 - Brunch

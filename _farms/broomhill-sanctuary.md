@@ -63,7 +63,7 @@ practices_tags:
 - regenerative
 - biodynamic
 - wild
-- locally-sourced
+- local
 products_tags: []
 services_tags: []
 certifications: []

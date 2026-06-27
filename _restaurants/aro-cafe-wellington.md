@@ -11,7 +11,7 @@ suburb: Aro Valley
 practices:
 - organic
 - pasture-raised
-- locally-sourced
+- local
 products:
 - Coffee and tea
 - Breakfast

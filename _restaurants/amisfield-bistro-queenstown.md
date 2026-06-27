@@ -31,7 +31,7 @@ long_description: "Amisfield brings together a certified organic vineyard, a wel
   \ of land, water, and season.\n"
 practices:
 - certified-organic
-- locally-sourced
+- local
 products:
 - organic-wine
 - cellar-door-tastings

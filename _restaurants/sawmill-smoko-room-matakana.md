@@ -8,7 +8,7 @@ region: Auckland
 city: Matakana
 address: 1004 Leigh Road, Matakana 0985
 practices:
-- locally-sourced
+- local
 products:
 - Meat
 - Vegetables

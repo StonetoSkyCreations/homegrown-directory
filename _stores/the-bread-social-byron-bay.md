@@ -23,7 +23,7 @@ long_description: |
 practices:
 - long-fermentation
 - traditional-baking
-- locally-sourced
+- local
 - organic-ingredients
 - waste-minimisation
 products:

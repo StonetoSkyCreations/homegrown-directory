@@ -9,7 +9,7 @@ city: Raglan
 address: 611 Wainui Road, Raglan 3297
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - Coffee and tea
 - Bread and bakery

@@ -63,7 +63,7 @@ supply_role: Producer
 source_urls: []
 last_checked: '2025-12-15'
 practices_tags:
-- locally-sourced
+- local
 - low-intervention
 products_tags:
 - olive-oil

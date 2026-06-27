@@ -9,7 +9,7 @@ city: Coromandel
 address: 31 Kapanga Road, Coromandel 3506
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - Seafood
 - Meat

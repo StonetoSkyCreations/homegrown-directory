@@ -11,7 +11,7 @@ city: Paihia
 address: 2 Selwyn Road, Paihia 0200
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - Vegetables
 - Fruit

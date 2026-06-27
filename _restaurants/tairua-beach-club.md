@@ -24,7 +24,7 @@ long_description: 'Tairua Beach Club is a contemporary eatery overlooking the ha
 practices:
 - organic
 - pasture-raised
-- locally-sourced
+- local
 products:
 - seasonal dishes
 - seafood

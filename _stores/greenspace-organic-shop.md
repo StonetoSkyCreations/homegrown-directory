@@ -40,7 +40,7 @@ practices:
 - organic
 - regenerative
 - biodynamic
-- locally-sourced
+- local
 products_tags: []
 services_tags: []
 certifications: []

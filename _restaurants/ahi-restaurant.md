@@ -38,7 +38,7 @@ long_description: 'Ahi is a flagship expression of modern New Zealand dining, co
 practices:
 - organic
 - regenerative
-- locally-sourced
+- local
 products:
 - set-menu-dining
 - a-la-carte-dining
@@ -75,7 +75,7 @@ source_urls:
 - https://www.mahoecheese.co.nz/selected-retailers/
 last_checked: '2026-06-27'
 practices_tags:
-- locally-sourced
+- local
 - seasonal
 - regenerative
 products_tags:

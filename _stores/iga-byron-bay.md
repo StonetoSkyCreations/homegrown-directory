@@ -38,7 +38,7 @@ geo_label: Bayshore Drive
 geo_query: Bayshore Drive, Byron Bay, New South Wales, AU
 title: IGA Byron Bay
 practices:
-- locally-sourced
+- local
 practices_tags: []
 products_tags: []
 services: []

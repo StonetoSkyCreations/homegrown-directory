@@ -21,7 +21,7 @@ long_description: "The Colville General Store has operated as a community\u2011o
   \ regular customers.\n"
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - fresh produce
 - bulk grains

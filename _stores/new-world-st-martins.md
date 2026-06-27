@@ -11,7 +11,7 @@ description: Mainstream supermarket with a large organic produce department and 
   good selection of organic meat, dairy and grocery items.
 practices:
 - certified-organic
-- locally-sourced
+- local
 products:
 - organic fruit and vegetables
 - organic meat and dairy

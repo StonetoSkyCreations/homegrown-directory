@@ -38,7 +38,7 @@ practices_tags:
 - organic
 - spray-free
 - ethically-raised
-- locally-sourced
+- local
 services:
 - Retail grocery
 - In-store shopping only
@@ -53,7 +53,7 @@ lon: 175.626963
 practices:
 - organic
 - spray-free
-- locally-sourced
+- local
 products_tags: []
 services_tags: []
 certifications: []

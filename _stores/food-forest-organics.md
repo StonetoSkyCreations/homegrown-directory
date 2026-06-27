@@ -24,7 +24,7 @@ phone: 06 304 9790
 practices:
 - organic
 - regenerative
-- locally-sourced
+- local
 products:
 - organic vegetables
 - organic fruit

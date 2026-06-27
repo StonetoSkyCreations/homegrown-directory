@@ -12,7 +12,7 @@ type: cafe
 subtype: cafe
 practices:
 - pasture-raised
-- locally-sourced
+- local
 products:
 - Breakfast
 - Brunch

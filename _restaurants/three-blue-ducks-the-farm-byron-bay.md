@@ -27,7 +27,7 @@ practices:
 - regenerative
 - ethically-sourced
 - waste-minimisation
-- locally-sourced
+- local
 products:
 - restaurant meals
 - produce

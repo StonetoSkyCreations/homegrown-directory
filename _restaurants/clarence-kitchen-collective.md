@@ -11,7 +11,7 @@ postcode: '2460'
 type: cafe
 subtype: cafe
 practices:
-- locally-sourced
+- local
 products:
 - Breakfast
 - Lunch

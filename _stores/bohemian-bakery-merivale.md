@@ -13,7 +13,7 @@ description: 'Boutique bakery offering fresh sourdough, pastries, and baked good
 practices:
 - organic
 - spray-free
-- locally-sourced
+- local
 - regenerative
 products:
 - sourdough bread

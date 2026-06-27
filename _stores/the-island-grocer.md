@@ -43,7 +43,7 @@ geo_last_verified: '2025-12-14'
 geo_label: Recycle Boutique
 geo_query: 110 Ocean View Road, Oneroa, Waiheke Island, Oneroa, Auckland, New Zealand
 practices:
-- locally-sourced
+- local
 - organic
 - spray-free
 products_tags: []

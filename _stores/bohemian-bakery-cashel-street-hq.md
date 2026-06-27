@@ -11,7 +11,7 @@ description: "Open bakery and caf\xE9 where customers can watch bakers create pa
 practices:
 - organic
 - spray-free
-- locally-sourced
+- local
 - regenerative
 products:
 - sourdough bread

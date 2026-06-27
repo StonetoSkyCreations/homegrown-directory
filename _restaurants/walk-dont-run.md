@@ -15,7 +15,7 @@ type: cafe
 subtype: cafe
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - Brunch dishes
 - Smoothies

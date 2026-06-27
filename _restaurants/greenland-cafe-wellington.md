@@ -10,7 +10,7 @@ address: 23 Kate Sheppard Place, Wellington 6011
 suburb: Pipitea
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - Coffee and tea
 - Lunch

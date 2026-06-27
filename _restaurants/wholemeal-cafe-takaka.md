@@ -9,7 +9,7 @@ city: Takaka
 address: "60 Commercial Street, T\u0101kaka 7110"
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - Coffee and tea
 - Bread and bakery

@@ -13,7 +13,7 @@ subtype: restaurant
 practices:
 - organic
 - pasture-raised
-- locally-sourced
+- local
 products:
 - Breakfast
 - Lunch

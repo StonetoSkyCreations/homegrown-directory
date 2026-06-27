@@ -11,7 +11,7 @@ description: Compact city supermarket featuring a dedicated area with gluten-fre
   and organic products alongside general groceries.
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - organic fruit and vegetables
 - organic grocery items

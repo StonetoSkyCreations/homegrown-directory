@@ -51,7 +51,7 @@ geo_query: 140 Colombo Street, Beckenham, Christchurch 8023, Christchurch, Cante
 practices:
 - certified-organic
 - spray-free
-- locally-sourced
+- local
 products_tags: []
 services_tags: []
 specialty_tags: []

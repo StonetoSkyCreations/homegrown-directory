@@ -19,7 +19,7 @@ locations:
 lat: ''
 lon: ''
 practices:
-- locally-sourced
+- local
 practices_tags: []
 products: []
 products_tags: []

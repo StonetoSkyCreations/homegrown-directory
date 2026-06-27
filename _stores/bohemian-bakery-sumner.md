@@ -16,7 +16,7 @@ description: 'Village-style bakery using natural ingredients, long cold-fermente
 practices:
 - organic
 - spray-free
-- locally-sourced
+- local
 - regenerative
 products:
 - sourdough bread

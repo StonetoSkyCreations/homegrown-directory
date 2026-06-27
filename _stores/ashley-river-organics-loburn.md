@@ -38,7 +38,7 @@ long_description: "Ashley River Organics is a certified organic orchard located 
   \ transparency and trust within the local food system.\n"
 practices:
 - certified-organic
-- locally-sourced
+- local
 products:
 - organic-apples
 - organic-pears

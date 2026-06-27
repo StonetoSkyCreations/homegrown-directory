@@ -28,7 +28,7 @@ long_description: "Harbour Co-op (formerly LyttelPiko) is a low-profit, communit
   \ ecological footprint.\n"
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - organic-wholefoods
 - bulk-dry-goods

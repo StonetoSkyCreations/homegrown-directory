@@ -42,7 +42,7 @@ geo_query: Wells Place, Brisbane, Queensland, AU
 title: We Love Food Co-Op
 practices:
 - organic
-- locally-sourced
+- local
 practices_tags: []
 products_tags: []
 services: []

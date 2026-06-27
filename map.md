@@ -34,7 +34,7 @@ seo_description: "Explore organic, spray-free, regenerative, biodynamic, pasture
         <label><input type="checkbox" name="practice" value="biodynamic"> Biodynamic</label>
         <label><input type="checkbox" name="practice" value="pasture-raised"> Pasture-raised</label>
         <label><input type="checkbox" name="practice" value="wild"> Wild</label>
-        <label><input type="checkbox" name="practice" value="locally-sourced"> Locally sourced</label>
+        <label><input type="checkbox" name="practice" value="local"> Locally sourced</label>
       </div>
     </div>
   </div>

@@ -8,7 +8,7 @@ city: Newtown
 lat: -41.312
 lon: 174.779
 practices:
-- locally-sourced
+- local
 products:
 - Coffee and tea
 - Bread and bakery

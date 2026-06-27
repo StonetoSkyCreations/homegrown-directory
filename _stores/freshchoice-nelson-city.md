@@ -11,7 +11,7 @@ description: Community-focused supermarket in Nelson known for supporting local 
   and stocking organic produce such as vegetables from Streamside Organics.
 practices:
 - certified-organic
-- locally-sourced
+- local
 products:
 - fresh produce
 - certified-organic vegetables

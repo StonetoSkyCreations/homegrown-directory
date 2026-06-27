@@ -11,7 +11,7 @@ description: Locally owned supermarket in Lincoln supplying organic produce from
   Organics and offering a clean, well-stocked shopping experience.
 practices:
 - certified-organic
-- locally-sourced
+- local
 products:
 - certified organic vegetables, fruit, herbs and salad greens
 - fresh local produce

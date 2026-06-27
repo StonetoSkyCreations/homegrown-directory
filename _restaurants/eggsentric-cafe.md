@@ -24,7 +24,7 @@ long_description: 'Eggsentric Cafe is a long-established eatery nestled across t
 practices:
 - organic
 - pasture-raised
-- locally-sourced
+- local
 products:
 - brunch dishes
 - dinners

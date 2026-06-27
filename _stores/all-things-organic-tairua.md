@@ -21,7 +21,7 @@ long_description: "All Things Organic operates a sunny shop in Tairua selling a 
   \ organic staples. Their website lists the contact phone and email for enquiries.\n"
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - organic groceries
 - smoothies

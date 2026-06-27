@@ -67,7 +67,7 @@ source_urls:
 - https://www.arbourpizza.co.nz
 last_checked: '2025-12-16'
 practices_tags:
-- locally-sourced
+- local
 - sustainable
 - low-waste
 - ethical

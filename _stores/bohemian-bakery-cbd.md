@@ -13,7 +13,7 @@ description: "Central-city bakery caf\xE9 in the SALT District serving slow-ferm
 practices:
 - organic
 - spray-free
-- locally-sourced
+- local
 - regenerative
 products:
 - sourdough bread

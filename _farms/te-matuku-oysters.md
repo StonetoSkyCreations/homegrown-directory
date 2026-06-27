@@ -24,7 +24,7 @@ long_description: 'Te Matuku Oysters grows Pacific oysters in Te Matuku Bay on W
 
   '
 practices:
-- locally-sourced
+- local
 products:
 - pacific-oysters
 services:

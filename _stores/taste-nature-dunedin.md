@@ -77,7 +77,7 @@ geo_query: 131 High Street, Dunedin 9016, Dunedin, Otago, New Zealand
 title: Taste Nature
 practices:
 - organic
-- locally-sourced
+- local
 products_tags: []
 services_tags: []
 certifications: []

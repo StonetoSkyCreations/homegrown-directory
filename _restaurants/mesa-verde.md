@@ -11,7 +11,7 @@ postcode: '3000'
 type: restaurant
 subtype: restaurant
 practices:
-- locally-sourced
+- local
 products:
 - Mexican dishes
 - Tacos

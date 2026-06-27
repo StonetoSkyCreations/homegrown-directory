@@ -22,7 +22,7 @@ long_description: "Earth Store is a combined deli, caf\xE9 and wholefood shop on
 practices:
 - organic
 - spray-free
-- locally-sourced
+- local
 products:
 - organic produce
 - dry goods

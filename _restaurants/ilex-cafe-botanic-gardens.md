@@ -8,7 +8,7 @@ region: Canterbury
 city: Christchurch
 address: Christchurch Botanic Gardens, Christchurch 8013
 practices:
-- locally-sourced
+- local
 products:
 - Brunch dishes
 - Lunches

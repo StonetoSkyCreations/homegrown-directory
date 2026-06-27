@@ -13,7 +13,7 @@ subtype: cafe
 practices:
 - organic
 - pasture-raised
-- locally-sourced
+- local
 products:
 - Brunch
 - Coffee

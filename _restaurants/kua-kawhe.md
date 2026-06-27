@@ -21,7 +21,7 @@ long_description: "Kua Kawhe (meaning \u201Chave coffee\u201D) is a homely caf\x
   \ meeting place for locals with a strong emphasis on supporting neighbouring producers\
   \ and artists.\n"
 practices:
-- locally-sourced
+- local
 products:
 - coffee
 - doughnuts

@@ -10,7 +10,7 @@ address: 294 Kilmore Street, Christchurch 8011, New Zealand
 practices:
 - organic
 - pasture-raised
-- locally-sourced
+- local
 products:
 - Breakfasts
 - Brunches

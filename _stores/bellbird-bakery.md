@@ -24,7 +24,7 @@ lon: ''
 practices:
 - organic
 - spray-free
-- locally-sourced
+- local
 practices_tags: []
 products: []
 products_tags: []

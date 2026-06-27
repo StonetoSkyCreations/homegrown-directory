@@ -40,7 +40,7 @@ geo_query: "West End, Kaik\u014Dura, Canterbury, New Zealand"
 title: "The Grocer (Kaik\u014Dura)"
 practices:
 - organic
-- locally-sourced
+- local
 practices_tags: []
 products_tags: []
 services: []

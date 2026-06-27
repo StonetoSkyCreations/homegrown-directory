@@ -9,7 +9,7 @@ city: Methven
 address: 121 Main Street, Methven 7730
 practices:
 - organic
-- locally-sourced
+- local
 products:
 - Fair-trade coffee
 - Breakfasts

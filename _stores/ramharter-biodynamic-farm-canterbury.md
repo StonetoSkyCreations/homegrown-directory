@@ -41,7 +41,7 @@ practices:
 - organic
 - regenerative
 - biodynamic
-- locally-sourced
+- local
 products:
 - seasonal-vegetables
 services:

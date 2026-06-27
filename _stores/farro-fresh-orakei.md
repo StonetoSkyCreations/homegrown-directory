@@ -31,7 +31,7 @@ lat: -36.862888
 title: Farro Fresh Orakei
 practices:
 - organic
-- locally-sourced
+- local
 practices_tags: []
 products_tags: []
 services: []
