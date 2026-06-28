@@ -21,12 +21,14 @@ products:
 - Ice Cream
 practices_tags:
 - organic
-certifications: []
+certifications:
+- AsureQuality Organic
 supply_role: Processor
 source_urls:
 - https://maikai.nz/pages/mai-kai-suppliers
+- https://www.asurequality.com
 hours: "Mon\u2013Sat 10:00\u201320:00; Sun closed"
-last_checked: '2025-12-09'
+last_checked: '2026-06-28'
 notes: ''
 products_tags:
 - dairy

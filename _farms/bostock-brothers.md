@@ -36,12 +36,15 @@ lat: -39.60691345771185
 lon: 176.7755675396835
 source_urls:
 - https://www.bostockbrothers.co.nz
-last_checked: '2025-12-12'
-practices_tags: []
+- https://www.asurequality.com
+last_checked: '2026-06-28'
+practices_tags:
+- organic
 products_tags: []
 services_tags: []
 certifications:
 - AsureQuality
+- AsureQuality Organic
 specialty_tags: []
 subtype: livestock
 sourced_from: []

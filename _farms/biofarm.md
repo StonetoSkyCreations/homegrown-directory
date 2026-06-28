@@ -66,6 +66,7 @@ products_tags:
 subtype: dairy-farm
 source_urls:
 - https://www.biofarm.co.nz
+- https://www.asurequality.com
 geo_precision: approx
 geo_source: nominatim
 geo_last_verified: '2025-12-14'
@@ -77,8 +78,10 @@ practices_tags:
 - Regenerative
 - Spray-free
 - Humane handling
+- organic
 services_tags: []
-certifications: []
+certifications:
+- AsureQuality Organic
 specialty_tags: []
 sourced_from: []
 supplies_to: []

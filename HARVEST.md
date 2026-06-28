@@ -42,15 +42,22 @@ source triage live in `SOURCING_PLAN.md`; this doc is the operating loop + tooli
 7. Commit one source/hub per commit (`git pull --rebase`; never force-push).
 
 ## Tooling
-Built: `scripts/harvest_lib.rb` (listing index + matcher), `scripts/match_report.rb`
-(dupe detector), `scripts/harvest_import.rb` (bulk importer + evidence ledger),
-`scripts/evidence_audit.rb` (edges vs ledger).
-Reused: `scripts/add_listing.rb`, `scripts/reciprocate.rb`, `scripts/hub_report.rb`,
-`scripts/relationship_audit.rb`, `scripts/validate_content.rb`.
-To build per pilot: `scripts/harvesters/<source>.rb`. Later: `scripts/source_triage.rb`
-+ `data/sources.yml` (source registry).
+Built: `scripts/hub_report.rb` (ranks NZ hubs), `scripts/harvest_lib.rb` (listing
+index + matcher + YAML field helpers), `scripts/match_report.rb` (dupe detector),
+`scripts/harvest_import.rb` (bulk importer + evidence ledger), `scripts/evidence_audit.rb`
+(edges vs ledger), `scripts/enrich_certifications.rb` (adds a certification + source +
+organic tag to a reviewed list of existing listings).
+Harvesters: `scripts/harvesters/asurequality.py` (register XLSX -> staging CSV).
+Reused: `scripts/add_listing.rb`, `scripts/reciprocate.rb`, `scripts/relationship_audit.rb`,
+`scripts/validate_content.rb`.
+Later: `scripts/source_triage.rb` + `data/sources.yml` (source registry); a
+geocode-with-region step so register rows missing a region can be imported.
 
-## Pilots (see SOURCING_PLAN.md)
-1. AsureQuality register (nodes + certification) — structured file -> staging CSV.
-2. Otago Farmers Market (market -> vendor edges) — static pages already fetched.
+## Pilots (status; see SOURCING_PLAN.md for detail)
+1. **AsureQuality register — enrichment slice DONE (2026-06-28).** Parsed to
+   `data/imports/asurequality.csv` (206 deduped operators). It is a curation source
+   (no websites, legal names, region often absent), so we enriched 7 confirmed
+   existing listings with certification rather than bulk-importing. Next: review the
+   ambiguous matches and curate consumer-facing new producers (resolve region first).
+2. Otago Farmers Market (market -> vendor edges) — static vendor pages already fetched.
 3. One eatery "our suppliers" page (producer -> eatery edges) — the on-goal relationship.

@@ -95,4 +95,58 @@ module Harvest
 
     [:new, nil, ""]
   end
+
+  # Insert a value into a YAML block-list front-matter field, preserving the
+  # surrounding formatting. Returns true if the file changed. Mirrors the proven
+  # logic in scripts/reciprocate.rb.
+  def add_to_list_field(path, field, value)
+    value = value.to_s.strip
+    return false if value.empty?
+
+    lines = File.readlines(path)
+    idx = lines.index { |l| l =~ /\A(\s*)#{Regexp.escape(field)}:\s*(.*)\Z/ }
+    return false unless idx
+
+    m = lines[idx].match(/\A(\s*)#{Regexp.escape(field)}:\s*(.*)\Z/)
+    indent = m[1]
+    rest = m[2].rstrip
+
+    item_indent = nil
+    items = []
+    j = idx + 1
+    while j < lines.length && lines[j] =~ /\A(\s*)-\s+(.*)\Z/
+      item_indent ||= Regexp.last_match(1)
+      items << Regexp.last_match(2).strip
+      j += 1
+    end
+
+    if !items.empty?
+      return false if items.include?(value)
+
+      lines.insert(j, "#{item_indent}- #{value}\n")
+    elsif rest == "[]" || rest.empty?
+      lines[idx] = "#{indent}#{field}:\n"
+      lines.insert(idx + 1, "#{indent}- #{value}\n")
+    else
+      return false
+    end
+
+    File.write(path, lines.join)
+    true
+  end
+
+  # Replace a scalar front-matter field's value (first occurrence). Returns true if changed.
+  def set_scalar_field(path, field, value)
+    lines = File.readlines(path)
+    idx = lines.index { |l| l =~ /\A\s*#{Regexp.escape(field)}:(?:\s.*)?\Z/ }
+    return false unless idx
+
+    indent = lines[idx][/\A(\s*)/, 1]
+    newline = "#{indent}#{field}: '#{value}'\n"
+    return false if lines[idx] == newline
+
+    lines[idx] = newline
+    File.write(path, lines.join)
+    true
+  end
 end

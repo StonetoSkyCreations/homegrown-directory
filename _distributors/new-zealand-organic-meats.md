@@ -27,14 +27,17 @@ services:
 - processing
 - wholesale distribution
 - export
-certifications: []
+certifications:
+- AsureQuality Organic
 source_urls:
 - https://nzorganicmeat.co.nz/
 - https://nzorganicmeat.co.nz/new-zealand-organic-meats-story
-last_checked: '2025-12-13'
+- https://www.asurequality.com
+last_checked: '2026-06-28'
 lat: -45.7883
 lon: 169.175542
-practices_tags: []
+practices_tags:
+- organic
 products_tags: []
 services_tags: []
 specialty_tags: []

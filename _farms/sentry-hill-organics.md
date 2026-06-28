@@ -26,10 +26,13 @@ description: Organic sheep milk yoghurt and pasture-raised organic eggs from Haw
 products_tags:
 - dairy
 subtype: dairy-farm
-source_urls: []
-practices_tags: []
+source_urls:
+- https://www.asurequality.com
+practices_tags:
+- organic
 services_tags: []
-certifications: []
+certifications:
+- AsureQuality Organic
 specialty_tags: []
 sourced_from: []
 supplies_to: []

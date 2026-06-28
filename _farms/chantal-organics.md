@@ -21,13 +21,15 @@ products:
 - Pantry goods
 practices_tags:
 - organic
-certifications: []
+certifications:
+- AsureQuality Organic
 supply_role: Processor; Distributor
 source_urls:
 - https://maikai.nz/pages/mai-kai-suppliers
 - https://chantalorganics.co.nz/find-a-store/
+- https://www.asurequality.com
 hours: Mon-Fri 08:00-17:00; Sat-Sun closed
-last_checked: '2026-06-27'
+last_checked: '2026-06-28'
 notes: Founded as organic co-op farm
 subtype: mixed
 practices:

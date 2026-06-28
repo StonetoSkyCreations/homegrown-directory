@@ -11,3 +11,6 @@
 tools/geocode_results.csv
 tools/apply_geocode_log.txt
 tools/backup/
+
+# Harvest raw source cache (large/binary; keep parsed CSVs in data/imports/ only)
+data/harvest/

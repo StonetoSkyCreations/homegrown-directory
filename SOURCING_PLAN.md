@@ -80,10 +80,11 @@ is left half-done. Tackle stages in order, but each sub-batch is independent.
   This is now the source of truth for the "concrete top hubs" below (which are
   stale; run the report). One-way reciprocation is handled by `reciprocate.rb`
   (currently 0 one-way).
-- TODO: a thin harvest helper to turn a reviewed CSV (the shared `data/imports`
-  header) into matched relationships plus scaffolded listings. May fold into the
-  existing `add_listing.rb` + `reciprocate.rb` once the first hub shows what is
-  actually tedious.
+- **DONE 2026-06-28: harvest backbone** (see `HARVEST.md`): `harvest_lib.rb`
+  (listing index + matcher), `match_report.rb` (dupe detector), `harvest_import.rb`
+  (bulk wrapper over `add_listing.rb` + evidence ledger + reciprocate),
+  `evidence_audit.rb`, and the `_data/relationship_evidence.yml` ledger. Per-source
+  parsers live in `scripts/harvesters/`.
 
 ### Stage 1, mine the top producer hubs (forward) — biggest leverage
 One per sub-batch: Streamside Organics, then Untamed Earth, Farmers Mill, Trickett's
@@ -148,3 +149,23 @@ Done this pass:
 |-------|-----|------|----------------|---------------------|--------|
 | 0 | hub_report.rb (forward/reverse/unmined/orphan ranking, NZ) | 2026-06-28 | 0 | 0 | hub_report.rb |
 | 4 | reciprocity + hygiene (pulled forward) | 2026-06-28 | 0 new (merged 5 dup slugs, stripped 9 dangling) | +44 reciprocated pairs (196 to 240); 47 one-way reciprocated | reciprocate.rb |
+| 1 | AsureQuality register (Pilot 1, enrichment slice) | 2026-06-28 | 0 new (206 parsed, shortlist staged) | 7 listings certified AsureQuality Organic | asurequality.py + enrich_certifications.rb |
+
+## Pilots (full pipeline doc in `HARVEST.md`)
+- **Pilot 1, AsureQuality register: enrichment slice DONE 2026-06-28.**
+  `scripts/harvesters/asurequality.py` parses the register (raw cached + gitignored
+  under `data/harvest/`) to `data/imports/asurequality.csv` (206 deduped NZ Active
+  operators). The register has **no websites and uses legal names**, so it is a
+  curation source, not a bulk import: `match_report` found 4 existing + 11 ambiguous
+  + 191 new, and region is missing from ~80% of addresses. Enriched 7 confirmed
+  existing listings with `AsureQuality Organic` + source + organic tag via
+  `enrich_certifications.rb` (curated list in `data/imports/asurequality-confirmed.csv`).
+  **Next:** (a) review the remaining ambiguous matches (`ruby scripts/match_report.rb
+  data/imports/asurequality.csv`) and enrich the real ones; (b) curate consumer-facing
+  new producers from the 191 (skip anonymous trusts/wholesale entities; resolve region
+  via a geocode-with-region step before import).
+- **Pilot 2, Otago Farmers Market** (market -> vendor edges): vendor pages already
+  fetched this session; pagination `?start=N`, detail `/vendors/<slug>`. Filter to
+  organic stallholders, scaffold, wire `supplies_to: otago-farmers-market-dunedin`.
+- **Pilot 3, an eatery "our suppliers" page** (producer -> eatery edges): the on-goal
+  relationship type.

@@ -31,9 +31,12 @@ products_tags:
 subtype: dairy-farm
 source_urls:
 - https://threeoaksorganic.co.nz
-practices_tags: []
+- https://www.asurequality.com
+practices_tags:
+- organic
 services_tags: []
-certifications: []
+certifications:
+- AsureQuality Organic
 specialty_tags: []
 sourced_from: []
 supplies_to: []
