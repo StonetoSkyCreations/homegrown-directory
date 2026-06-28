@@ -1,0 +1,6 @@
+# Relationship evidence ledger for the harvest pipeline. See HARVEST.md.
+# Key: "<from-slug>|<field>|<to-slug>"  (field = supplies_to | sourced_from, as declared)
+# Value: list of { source_url, snippet, date, confidence: high|medium|low }
+# A relationship is evidenced if the ledger has an entry for the pair in either
+# direction. Managed by scripts/harvest_import.rb; audited by scripts/evidence_audit.rb.
+{}
