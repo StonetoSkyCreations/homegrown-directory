@@ -152,6 +152,7 @@ Done this pass:
 | 1 | AsureQuality register (Pilot 1, enrichment slice) | 2026-06-28 | 0 new (206 parsed, shortlist staged) | 7 listings certified AsureQuality Organic | asurequality.py + enrich_certifications.rb |
 | 1 | Producer-forward web scan (detect-only, Pilot 4 step 1) | 2026-06-28 | 0 new (detect-only) | 0 (candidate hub pages only) | stockist_scan.py |
 | 1 | Producer-forward extract + classify (Pilot 4 step 2) | 2026-06-28 | 0 new (review queue staged) | 0 (CoralTree: 10 auto edges + 19 NZ new staged for review) | stockist_extract.py + candidate_edges.rb |
+| 1 | Producer-forward full scan (Pilot 4, all 52 sized) | 2026-06-28 | 0 new (opportunity sized, nothing applied) | 0 (26 trustworthy AUTO edges + ~22 KML-new identified; widget adapters = next leverage) | full-scan analysis |
 
 ## Pilots (full pipeline doc in `HARVEST.md`)
 - **Pilot 1, AsureQuality register: enrichment slice DONE 2026-06-28.**
@@ -180,9 +181,26 @@ Done this pass:
   blog, Wix), so the data is not in static HTML, the highest-yield exception is a Google
   My Maps embed whose KML export lists every pin with coordinates; (c) Python's
   `robotparser` false-blocks Allow-overrides (e.g. Google's `Allow: /maps/d/`), fixed
-  with a correct longest-match evaluator in `stockist_scan.py`. First real hub staged:
-  CoralTree -> 29 NZ stockists (73 AU pins dropped by longitude) = 10 auto edges to
-  existing listings + 19 new NZ outlets for review (some are health clinics/pharmacies
-  stocking the vinegar, a curation call). Next: review the 19, then apply via
-  `harvest_import.rb` (wire the 10 auto edges, scaffold the curated new outlets), and
-  add per-widget adapters (WPSL/Stockist.co JSON) to unlock the widget producers.
+  with a correct longest-match evaluator in `stockist_scan.py`.
+  - **Full produce-first scan (all 52 producers, 2026-06-28).** Funnel: 8 unreachable
+    (stale website fields, DNS/SSL); 30 reachable with no stockist page (many are
+    legitimately direct-to-consumer: CSA boxes, eggs, meat); 14 with a candidate page.
+    By extraction method (AUTO = edge to an existing listing, ready to wire; new =
+    candidate outlet to review):
+    - KML (clean): coraltree 10 auto / 19 new; three-oaks 8 / 3.
+    - static (noisy): pasture-poultry 4 / 18; first-light 2 / 96; mycobio 2 / 99;
+      premium-game 0 / 15; zealong 0 / 62.
+    - widget (locked, 0 extracted): biofarm + olliff (WP Store Locator); durham +
+      jersey-girl + te-horo + te-matuku (Wix); ceres (Shopify blog).
+    - **Totals: 26 trustworthy AUTO edges** (18 from KML, 8 from static) **+ ~22
+      trustworthy new outlets** (KML only). The 290 static "new" rows are ~95%
+      boilerplate noise (nav, product names, recipe words) and must NOT be bulk
+      imported; only the static AUTO matches are usable, with a glance.
+  - **Strategic read:** most modern NZ producers expose stockists via JS widgets, so the
+    highest-leverage next investment is per-widget adapters (WP Store Locator AJAX for 2;
+    Stockist.co JSON / Wix for 4+), not more static scraping. Also queued: tighten the
+    static adapter to a detected list region; fix the 8 stale producer website fields;
+    curate clinics/pharmacies out of the CoralTree new set before any apply.
+  - **Apply pending (nothing written to the site).** When ready: review the clean KML
+    new outlets, then `harvest_import.rb` to wire the 26 auto edges and scaffold the
+    curated new outlets (start with the 2 clean hubs, coraltree + three-oaks).
