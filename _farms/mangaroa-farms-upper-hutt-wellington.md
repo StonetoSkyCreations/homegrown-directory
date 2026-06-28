@@ -89,7 +89,8 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- three-oaks-organic-farm
 supplies_to:
 - brewtown-farmers-market
 relationships_declared: true

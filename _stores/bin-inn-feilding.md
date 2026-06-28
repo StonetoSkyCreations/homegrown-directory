@@ -42,7 +42,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- three-oaks-organic-farm
 supplies_to: []
 relationships_declared: false
 ---

@@ -35,6 +35,16 @@ services: []
 services_tags: []
 specialty_tags: []
 sourced_from: []
-supplies_to: []
-relationships_declared: false
+supplies_to:
+- bin-inn-waitara
+- commonsense-kapiti
+- commonsense-kilbirnie
+- commonsense-lower-hutt
+- commonsense-mt-eden
+- commonsense-wellington-city
+- family-pantry
+- organic-buzz
+- taste-nature-dunedin
+- the-island-grocer
+relationships_declared: true
 ---

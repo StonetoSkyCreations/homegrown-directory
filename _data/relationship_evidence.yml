@@ -3,4 +3,89 @@
 # Value: list of { source_url, snippet, date, confidence: high|medium|low }
 # A relationship is evidenced if the ledger has an entry for the pair in either
 # direction. Managed by scripts/harvest_import.rb; audited by scripts/evidence_audit.rb.
-{}
+---
+coraltree-organic-products|supplies_to|bin-inn-waitara:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: map pin -39.0025,174.2352
+  date: '2026-06-29'
+  confidence: high
+coraltree-organic-products|supplies_to|commonsense-kapiti:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: map pin -40.9183,175.0030
+  date: '2026-06-29'
+  confidence: high
+coraltree-organic-products|supplies_to|commonsense-kilbirnie:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: map pin -41.3178,174.7953
+  date: '2026-06-29'
+  confidence: high
+coraltree-organic-products|supplies_to|commonsense-lower-hutt:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: map pin -41.2089,174.9071
+  date: '2026-06-29'
+  confidence: high
+coraltree-organic-products|supplies_to|commonsense-mt-eden:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: map pin -36.8774,174.7508
+  date: '2026-06-29'
+  confidence: high
+coraltree-organic-products|supplies_to|commonsense-wellington-city:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: map pin -41.2972,174.7794
+  date: '2026-06-29'
+  confidence: high
+coraltree-organic-products|supplies_to|family-pantry:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: map pin -37.7852,176.3136
+  date: '2026-06-29'
+  confidence: high
+coraltree-organic-products|supplies_to|organic-buzz:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: map pin -40.3476,175.6267
+  date: '2026-06-29'
+  confidence: high
+coraltree-organic-products|supplies_to|taste-nature-dunedin:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: map pin -45.8783,170.5007
+  date: '2026-06-29'
+  confidence: high
+coraltree-organic-products|supplies_to|the-island-grocer:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: map pin -36.7818,175.0083
+  date: '2026-06-29'
+  confidence: high
+three-oaks-organic-farm|supplies_to|bin-inn-feilding:
+- source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
+  snippet: RAW MILK DEPOT - DELIVERIES THURSDAY 11am. COLLECT BY FRIDAY 1pm
+  date: '2026-06-29'
+  confidence: high
+three-oaks-organic-farm|supplies_to|bin-inn-palmerston-north:
+- source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
+  snippet: map pin -40.3503,175.6248
+  date: '2026-06-29'
+  confidence: high
+three-oaks-organic-farm|supplies_to|commonsense-kapiti:
+- source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
+  snippet: Raw milk collection depot and retail partner for our other dairy products.
+  date: '2026-06-29'
+  confidence: high
+three-oaks-organic-farm|supplies_to|commonsense-kilbirnie:
+- source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
+  snippet: Raw milk collection depot and retail partner for our other dairy products.
+  date: '2026-06-29'
+  confidence: high
+three-oaks-organic-farm|supplies_to|commonsense-lower-hutt:
+- source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
+  snippet: map pin -41.2089,174.9071
+  date: '2026-06-29'
+  confidence: high
+three-oaks-organic-farm|supplies_to|mangaroa-farms-upper-hutt-wellington:
+- source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
+  snippet: Raw milk collection depot and retail partner for our other dairy products.
+  date: '2026-06-29'
+  confidence: high
+three-oaks-organic-farm|supplies_to|organic-buzz:
+- source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
+  snippet: map pin -40.3476,175.6267
+  date: '2026-06-29'
+  confidence: high

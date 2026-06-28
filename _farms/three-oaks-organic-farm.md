@@ -39,6 +39,13 @@ certifications:
 - AsureQuality Organic
 specialty_tags: []
 sourced_from: []
-supplies_to: []
-relationships_declared: false
+supplies_to:
+- bin-inn-feilding
+- bin-inn-palmerston-north
+- commonsense-kapiti
+- commonsense-kilbirnie
+- commonsense-lower-hutt
+- mangaroa-farms-upper-hutt-wellington
+- organic-buzz
+relationships_declared: true
 ---
