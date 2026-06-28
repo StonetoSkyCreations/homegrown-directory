@@ -151,6 +151,7 @@ Done this pass:
 | 4 | reciprocity + hygiene (pulled forward) | 2026-06-28 | 0 new (merged 5 dup slugs, stripped 9 dangling) | +44 reciprocated pairs (196 to 240); 47 one-way reciprocated | reciprocate.rb |
 | 1 | AsureQuality register (Pilot 1, enrichment slice) | 2026-06-28 | 0 new (206 parsed, shortlist staged) | 7 listings certified AsureQuality Organic | asurequality.py + enrich_certifications.rb |
 | 1 | Producer-forward web scan (detect-only, Pilot 4 step 1) | 2026-06-28 | 0 new (detect-only) | 0 (candidate hub pages only) | stockist_scan.py |
+| 1 | Producer-forward extract + classify (Pilot 4 step 2) | 2026-06-28 | 0 new (review queue staged) | 0 (CoralTree: 10 auto edges + 19 NZ new staged for review) | stockist_extract.py + candidate_edges.rb |
 
 ## Pilots (full pipeline doc in `HARVEST.md`)
 - **Pilot 1, AsureQuality register: enrichment slice DONE 2026-06-28.**
@@ -170,3 +171,18 @@ Done this pass:
   organic stallholders, scaffold, wire `supplies_to: otago-farmers-market-dunedin`.
 - **Pilot 3, an eatery "our suppliers" page** (producer -> eatery edges): the on-goal
   relationship type.
+- **Pilot 4, producer-forward web scan (steps 1-2 DONE 2026-06-28; apply pending).**
+  `stockist_scan.py` (detect) + `stockist_extract.py` (extract) + `candidate_edges.rb`
+  (classify) discover producer -> stockist edges from producers' own "where to buy"
+  pages. Key findings this build: (a) of 106 unmined producers, 54 are drinks/eateries
+  out of scope, leaving ~52 produce producers to scan; (b) modern producer where-to-buy
+  pages are mostly JS store-locator widgets (WP Store Locator, Stockist.co, Shopify
+  blog, Wix), so the data is not in static HTML, the highest-yield exception is a Google
+  My Maps embed whose KML export lists every pin with coordinates; (c) Python's
+  `robotparser` false-blocks Allow-overrides (e.g. Google's `Allow: /maps/d/`), fixed
+  with a correct longest-match evaluator in `stockist_scan.py`. First real hub staged:
+  CoralTree -> 29 NZ stockists (73 AU pins dropped by longitude) = 10 auto edges to
+  existing listings + 19 new NZ outlets for review (some are health clinics/pharmacies
+  stocking the vinegar, a curation call). Next: review the 19, then apply via
+  `harvest_import.rb` (wire the 10 auto edges, scaffold the curated new outlets), and
+  add per-widget adapters (WPSL/Stockist.co JSON) to unlock the widget producers.

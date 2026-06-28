@@ -46,14 +46,25 @@ Built: `scripts/hub_report.rb` (ranks NZ hubs), `scripts/harvest_lib.rb` (listin
 index + matcher + YAML field helpers), `scripts/match_report.rb` (dupe detector),
 `scripts/harvest_import.rb` (bulk importer + evidence ledger), `scripts/evidence_audit.rb`
 (edges vs ledger), `scripts/enrich_certifications.rb` (adds a certification + source +
-organic tag to a reviewed list of existing listings).
+organic tag to a reviewed list of existing listings), `scripts/candidate_edges.rb`
+(step 2 classifier: runs extracted candidate names through `Harvest.match` and writes
+`data/harvest/stockist-review.csv` split into `auto` = existing-listing edge ready to
+wire vs `review` = new-listing or fuzzy-name decision).
 Harvesters: `scripts/harvesters/asurequality.py` (register XLSX -> staging CSV);
-`scripts/harvesters/stockist_scan.py` (detect-only web scan: for the unmined NZ
-produce producers with a website, politely fetches each homepage and reports likely
+`scripts/harvesters/stockist_scan.py` (step 1, detect-only web scan: for the unmined
+NZ produce producers with a website, politely fetches each homepage and reports likely
 "where to buy / stockists / suppliers" page URLs to `data/harvest/stockist-candidates.csv`;
-honours robots.txt, ~1 req/s, caches raw HTML; produce-first, so drinks/eatery
-listings are filtered out unless `--include-all`). Step 1 of the producer-forward
-loop; name extraction + candidate-edge generation is the next, separate step.
+honours robots.txt with correct longest-match precedence, ~1 req/s, caches raw HTML;
+produce-first, so drinks/eatery listings are filtered out unless `--include-all`);
+`scripts/harvesters/stockist_extract.py` (step 2, extract: fetches the detected pages
+and pulls candidate names + a snippet to `data/harvest/stockist-edges.csv`). Producer
+where-to-buy pages expose their list in different ways, so the extractor is a small
+dispatcher, not one universal scraper: Google My Maps embed -> the map's KML export
+(one row per placemark, NZ-only via longitude, coords captured; the highest-yield
+pattern, e.g. CoralTree ~29 NZ stockists); plain static HTML list -> `<li>`/`<td>`/
+heading/anchor text with a boilerplate stoplist; JS store-locator (WP Store Locator,
+Stockist.co, Shopify blog, Wix, bare Google Maps iframe) -> classified `widget:<type>`
+and skipped (handled later with a per-widget adapter, not scraped as noise).
 Reused: `scripts/add_listing.rb`, `scripts/reciprocate.rb`, `scripts/relationship_audit.rb`,
 `scripts/validate_content.rb`.
 Later: `scripts/source_triage.rb` + `data/sources.yml` (source registry); a

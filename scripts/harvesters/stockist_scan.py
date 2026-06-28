@@ -29,7 +29,7 @@ Usage:
   python3 scripts/harvesters/stockist_scan.py --refresh  # ignore the cache, re-fetch
 """
 import sys, os, re, csv, time, glob
-import urllib.request, urllib.error, urllib.parse, urllib.robotparser
+import urllib.request, urllib.error, urllib.parse
 from html.parser import HTMLParser
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -163,6 +163,7 @@ def unmined_producers(include_all=False):
 # ---- polite fetch ----------------------------------------------------------
 
 _last_request = [0.0]
+_robots_cache = {}  # base_url -> [(path_pattern, is_allow), ...] for our group
 
 
 def throttle():
@@ -179,17 +180,79 @@ def normalise_url(url):
     return url
 
 
-def robots_ok(url):
+UA_TOKEN = "homegrowndirectorybot"
+
+
+def _fetch_robots(base):
+    throttle()
     try:
-        p = urllib.parse.urlparse(url)
-        rp = urllib.robotparser.RobotFileParser()
-        rp.set_url(f"{p.scheme}://{p.netloc}/robots.txt")
-        throttle()
-        rp.read()
-        return rp.can_fetch(UA, url)
+        req = urllib.request.Request(base + "/robots.txt", headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+            if resp.status != 200:
+                return ""
+            return resp.read(500_000).decode("utf-8", errors="replace")
     except Exception:
-        # No reachable / parseable robots.txt: default allow, as crawlers do.
-        return True
+        return ""
+
+
+def _rules_for_us(txt):
+    """Allow/Disallow rules from the group matching our UA token, else the * group.
+
+    Python's urllib.robotparser applies the first matching rule in file order, which
+    breaks Allow-overrides-Disallow (it false-blocks e.g. Google's `Allow: /maps/d/`
+    under `Disallow: /maps/`). We instead keep both groups and apply longest-match
+    with allow-wins-on-tie at check time, per the robots standard.
+    """
+    star, mine, cur_uas, pending = [], [], [], []
+
+    def flush():
+        for ua in cur_uas:
+            u = ua.lower()
+            if u == "*":
+                star.extend(pending)
+            elif UA_TOKEN.startswith(u):
+                mine.extend(pending)
+        pending.clear()
+
+    for raw in txt.splitlines():
+        line = raw.split("#", 1)[0].strip()
+        if not line:
+            continue
+        key, _, val = line.partition(":")
+        key, val = key.strip().lower(), val.strip()
+        if key == "user-agent":
+            if pending:          # rules already seen -> previous group ends here
+                flush()
+                cur_uas = []
+            cur_uas.append(val)
+        elif key in ("allow", "disallow") and cur_uas and val:
+            pending.append((val, key == "allow"))
+    if pending:
+        flush()
+    return mine if mine else star
+
+
+def _pattern_matches(pattern, path):
+    rx = re.escape(pattern).replace(r"\*", ".*")
+    if rx.endswith(r"\$"):
+        rx = rx[:-2] + "$"
+    return re.match(rx, path) is not None
+
+
+def robots_ok(url):
+    p = urllib.parse.urlparse(url)
+    base = f"{p.scheme}://{p.netloc}"
+    if base not in _robots_cache:
+        _robots_cache[base] = _rules_for_us(_fetch_robots(base))
+    path = p.path or "/"
+    if p.query:
+        path += "?" + p.query
+    best_len, best_allow = -1, True   # no matching rule => allowed
+    for pattern, is_allow in _robots_cache[base]:
+        if _pattern_matches(pattern, path) and (
+                len(pattern) > best_len or (len(pattern) == best_len and is_allow)):
+            best_len, best_allow = len(pattern), is_allow
+    return best_allow
 
 
 def fetch(url):
