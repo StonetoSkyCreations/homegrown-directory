@@ -7,6 +7,9 @@
 # macOS
 .DS_Store
 
+# Python bytecode cache
+__pycache__/
+
 # Geocoding artefacts
 tools/geocode_results.csv
 tools/apply_geocode_log.txt

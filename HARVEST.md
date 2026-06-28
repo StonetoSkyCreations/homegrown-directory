@@ -47,7 +47,13 @@ index + matcher + YAML field helpers), `scripts/match_report.rb` (dupe detector)
 `scripts/harvest_import.rb` (bulk importer + evidence ledger), `scripts/evidence_audit.rb`
 (edges vs ledger), `scripts/enrich_certifications.rb` (adds a certification + source +
 organic tag to a reviewed list of existing listings).
-Harvesters: `scripts/harvesters/asurequality.py` (register XLSX -> staging CSV).
+Harvesters: `scripts/harvesters/asurequality.py` (register XLSX -> staging CSV);
+`scripts/harvesters/stockist_scan.py` (detect-only web scan: for the unmined NZ
+produce producers with a website, politely fetches each homepage and reports likely
+"where to buy / stockists / suppliers" page URLs to `data/harvest/stockist-candidates.csv`;
+honours robots.txt, ~1 req/s, caches raw HTML; produce-first, so drinks/eatery
+listings are filtered out unless `--include-all`). Step 1 of the producer-forward
+loop; name extraction + candidate-edge generation is the next, separate step.
 Reused: `scripts/add_listing.rb`, `scripts/reciprocate.rb`, `scripts/relationship_audit.rb`,
 `scripts/validate_content.rb`.
 Later: `scripts/source_triage.rb` + `data/sources.yml` (source registry); a

@@ -150,6 +150,7 @@ Done this pass:
 | 0 | hub_report.rb (forward/reverse/unmined/orphan ranking, NZ) | 2026-06-28 | 0 | 0 | hub_report.rb |
 | 4 | reciprocity + hygiene (pulled forward) | 2026-06-28 | 0 new (merged 5 dup slugs, stripped 9 dangling) | +44 reciprocated pairs (196 to 240); 47 one-way reciprocated | reciprocate.rb |
 | 1 | AsureQuality register (Pilot 1, enrichment slice) | 2026-06-28 | 0 new (206 parsed, shortlist staged) | 7 listings certified AsureQuality Organic | asurequality.py + enrich_certifications.rb |
+| 1 | Producer-forward web scan (detect-only, Pilot 4 step 1) | 2026-06-28 | 0 new (detect-only) | 0 (candidate hub pages only) | stockist_scan.py |
 
 ## Pilots (full pipeline doc in `HARVEST.md`)
 - **Pilot 1, AsureQuality register: enrichment slice DONE 2026-06-28.**
