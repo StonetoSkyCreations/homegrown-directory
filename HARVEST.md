@@ -78,3 +78,13 @@ geocode-with-region step so register rows missing a region can be imported.
    ambiguous matches and curate consumer-facing new producers (resolve region first).
 2. Otago Farmers Market (market -> vendor edges) — static vendor pages already fetched.
 3. One eatery "our suppliers" page (producer -> eatery edges) — the on-goal relationship.
+4. **Producer-forward web scan + KML apply — coraltree + three-oaks DONE (2026-06-29).**
+   `stockist_scan.py` -> `stockist_extract.py` -> `candidate_edges.rb` discover producer
+   stockist edges. Applied the two clean KML hubs: 17 AUTO edges to existing listings +
+   11 curated new outlets (reciprocated pairs 240 -> 268, all evidenced). Lessons that
+   now govern this pipeline: clean KML works; static HTML is noise (trust only its AUTO
+   matches); JS-widget pages need a per-adapter, not a scraper; and curate out clinics /
+   pharmacies, producer-to-producer false matches, and "coming soon" pins by hand before
+   any import. Next technical step: per-widget adapters (WP Store Locator, then Wix, then
+   Shopify). Deferred: 8 static-hub AUTO edges for individual review. Full detail + the
+   resume block live in `SOURCING_PLAN.md`.

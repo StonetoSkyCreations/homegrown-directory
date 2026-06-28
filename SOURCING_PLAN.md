@@ -5,6 +5,51 @@ toward "every NZ organic grower, every stockist, and every cafe, store and
 restaurant that stocks it" without random data entry, by following the web of
 connection. New Zealand only for now (ignore Australia).
 
+## Where we are now (resume here, updated 2026-06-29)
+
+**Current harvest priority:** keep harvesting cafes, restaurants, grocers, markets
+and distributors through *verified producer links*. Source types, by leverage:
+producer stockist / "where to buy" pages, grocer supplier pages, cafe/restaurant
+menus or supplier notes, market stallholder lists, distributor producer lists.
+
+**Done (Pilot 4 apply, 2026-06-29):**
+- Producer-forward scan tooling exists (scan -> extract -> classify -> import; see
+  Tooling in `HARVEST.md`).
+- Applied the two clean KML hubs: CoralTree Organic Products + Three Oaks Organic Farm.
+- Added 11 curated new outlets and 28 reciprocal relationships (17 AUTO + 11 new).
+- Reciprocated pairs 240 -> 268; every added relationship carries ledger evidence.
+- Site passed validation / build / SEO checks; 0 one-way, 0 unresolved errors remain.
+
+**Learned:**
+- Clean KML / Google My Maps sources work well (one row per pin, coords included, NZ filterable).
+- Static-HTML scraping is noisy; do not trust it for bulk imports (use only its AUTO matches, with a glance).
+- Human curation before adding listings is essential.
+- Many producer stockist pages are locked behind JS widgets (WP Store Locator, Wix, Shopify, Stockist.co).
+- Clinics, pharmacies, wellness centres, and producer-to-producer false matches must be filtered out carefully.
+- "Coming soon" stockists are not active relationships; do not wire them.
+
+**Do NOT next:**
+- Bulk-import static candidates, or blindly scaffold all "new" candidates.
+- Add a relationship without a `source_url` in the ledger.
+- Tag a cafe/restaurant/grocer `organic` unless the source explicitly supports it.
+- Add "coming soon" / future stockists as active links.
+
+**Best next-session options (recommended order):**
+1. Build the **WP Store Locator** adapter first (should unlock BioFarm + Olliff).
+2. Then investigate **Wix** stockist widgets (Durham, Jersey Girl, Te Horo, Te Matuku).
+3. Then investigate **Shopify / blog-style** extraction for Ceres (distributor mega-hub).
+4. Continue applying only reviewed, evidence-backed relationships.
+5. Keep the focus on cafes, restaurants, grocers, markets and distributors connected to verified producers.
+
+**Deferred items:**
+- 8 static-hub AUTO edges need individual review before wiring (first-light 2,
+  mycobio 2, pasture-poultry 4; 2 are junk: mycobio "Store" -> organic-store,
+  first-light supplies_to wharerata-farm looks reversed).
+- Static "new" rows are mostly noise; do not import.
+- 8 stale producer `website` fields need fixing eventually (they were the
+  unreachable producers in the scan).
+- Per-widget adapters are the highest-leverage next technical work.
+
 ## The core idea: mine hubs, do not type listings one by one
 A **hub** is a business that publishes a list of its partners:
 - a **producer's** "Where to buy / Stockists / Find us" page, or
