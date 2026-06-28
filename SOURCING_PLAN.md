@@ -73,12 +73,17 @@ One hub is roughly one work session and one commit. Stop after any hub; nothing
 is left half-done. Tackle stages in order, but each sub-batch is independent.
 
 ### Stage 0, tooling (one short session)
-- Build `scripts/hub_report.rb` (report-only): reads `search.json` and prints
-  (a) top unmined / partially-mined hubs that have a website, (b) one-way links
-  to reciprocate, (c) orphan counts by region.
-- Build a thin harvest helper: turn a reviewed CSV (the shared `data/imports`
-  header) into matched relationships plus scaffolded listings, so the
-  Chantal/Mahoe/Milmore/Wairiri move becomes one command.
+- **DONE 2026-06-28: `scripts/hub_report.rb`** (report-only): reads the listing
+  collections (NZ only) and ranks forward hubs (producers/distributors by outlets
+  linked, with a website to mine), reverse hubs (stockists by producers sourced),
+  unmined producers with a website, and orphans by region. `--top N` / `--all`.
+  This is now the source of truth for the "concrete top hubs" below (which are
+  stale; run the report). One-way reciprocation is handled by `reciprocate.rb`
+  (currently 0 one-way).
+- TODO: a thin harvest helper to turn a reviewed CSV (the shared `data/imports`
+  header) into matched relationships plus scaffolded listings. May fold into the
+  existing `add_listing.rb` + `reciprocate.rb` once the first hub shows what is
+  actually tedious.
 
 ### Stage 1, mine the top producer hubs (forward) — biggest leverage
 One per sub-batch: Streamside Organics, then Untamed Earth, Farmers Mill, Trickett's
@@ -141,5 +146,5 @@ Done this pass:
 ## Progress log
 | Stage | Hub | Date | Listings added | Relationships added | Commit |
 |-------|-----|------|----------------|---------------------|--------|
-| 0 | (tooling) | | | | |
+| 0 | hub_report.rb (forward/reverse/unmined/orphan ranking, NZ) | 2026-06-28 | 0 | 0 | hub_report.rb |
 | 4 | reciprocity + hygiene (pulled forward) | 2026-06-28 | 0 new (merged 5 dup slugs, stripped 9 dangling) | +44 reciprocated pairs (196 to 240); 47 one-way reciprocated | reciprocate.rb |
