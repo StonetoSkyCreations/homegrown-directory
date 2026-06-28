@@ -113,14 +113,20 @@
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
 
   // Connections of a focus listing: any node referenced in either direction.
+  // outbound = goods flow away from the focus (focus supplies this node).
+  // inbound  = goods flow toward the focus (focus sources from this node).
+  // A relationship can be both (two-way trade); the flow lines reflect this.
   function connectionsOf(focus, records) {
     var out = [];
     var fSup = focus.supplies_to || [], fSrc = focus.sourced_from || [];
     records.forEach(function (r) {
       if (r.slug === focus.slug) { return; }
+      var rSup = r.supplies_to || [], rSrc = r.sourced_from || [];
+      var outbound = fSup.indexOf(r.slug) !== -1 || rSrc.indexOf(focus.slug) !== -1;
+      var inbound = fSrc.indexOf(r.slug) !== -1 || rSup.indexOf(focus.slug) !== -1;
       var fToR = fSup.indexOf(r.slug) !== -1 || fSrc.indexOf(r.slug) !== -1;
-      var rToF = (r.supplies_to || []).indexOf(focus.slug) !== -1 || (r.sourced_from || []).indexOf(focus.slug) !== -1;
-      if (fToR || rToF) { out.push({ node: r, reciprocated: fToR && rToF }); }
+      var rToF = rSup.indexOf(focus.slug) !== -1 || rSrc.indexOf(focus.slug) !== -1;
+      if (inbound || outbound) { out.push({ node: r, reciprocated: fToR && rToF, inbound: inbound, outbound: outbound }); }
     });
     return out;
   }
@@ -144,7 +150,9 @@
     var fll = [num(focus.lat), num(focus.lon)];
     conns.forEach(function (c) {
       var cll = [num(c.node.lat), num(c.node.lon)];
-      edge(map, fll, cll, c.reciprocated);
+      // Flow follows the goods: out toward who they supply, in from who they source.
+      if (c.outbound) { edge(map, fll, cll, c.reciprocated); }
+      if (c.inbound) { edge(map, cll, fll, c.reciprocated); }
       window.L.marker(cll, { icon: pinIcon(c.node.collection, false) }).addTo(map).bindPopup(popupHtml(c.node));
       pts.push(cll);
     });
@@ -221,7 +229,11 @@
       emphasisLayer.clearLayers();
       var fll = [num(focus.lat), num(focus.lon)];
       connectionsOf(focus, records).forEach(function (c) {
-        if (hasCoords(c.node)) { edge(emphasisLayer, fll, [num(c.node.lat), num(c.node.lon)], c.reciprocated); }
+        if (!hasCoords(c.node)) { return; }
+        var cll = [num(c.node.lat), num(c.node.lon)];
+        // Flow follows the goods: out toward who they supply, in from who they source.
+        if (c.outbound) { edge(emphasisLayer, fll, cll, c.reciprocated); }
+        if (c.inbound) { edge(emphasisLayer, cll, fll, c.reciprocated); }
       });
     }
 
