@@ -34,6 +34,7 @@ specialty_tags: []
 sourced_from: []
 supplies_to:
 - hawke-s-bay-farmers-market-hastings
+- down-to-earth-organics-new-plymouth
 relationships_declared: true
 ---
 Operates organic/regenerative dairy herds on chemical-free pastures, producing award-winning cheeses, yoghurt, and milk and selling via Hawke's Bay Farmers' Market. Source: https://hawkesbayfarmersmarket.co.nz/hohepa-hawkes-bay/

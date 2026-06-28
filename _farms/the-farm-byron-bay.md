@@ -38,7 +38,8 @@ services:
 - community events
 relationships_declared: true
 supplies_to:
-- three-blue-ducks-byron-bay
+- the-bread-social-byron-bay
+- three-blue-ducks-the-farm-byron-bay
 source_urls:
 - https://thefarm.com.au
 - https://www.facebook.com/thefarmbyronbay/

@@ -39,6 +39,7 @@ services: []
 services_tags: []
 specialty_tags: []
 sourced_from: []
-supplies_to: []
+supplies_to:
+- down-to-earth-organics-new-plymouth
 relationships_declared: false
 ---

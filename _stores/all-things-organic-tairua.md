@@ -39,7 +39,7 @@ services:
 source_urls:
 - https://thecoromandel.nz/explore/all-things-organic-tairua
 - https://allthingsorganic.co.nz/
-website: ''
+website: https://allthingsorganic.co.nz
 email: orders@allthingsorganic.co.nz
 phone: 021 767 444
 social: ''

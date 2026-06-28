@@ -39,11 +39,12 @@ certifications: []
 specialty_tags: []
 last_checked: '2025-12-12'
 sourced_from: []
-supplies_to: []
-relationships_declared: false
+supplies_to:
+- live2give-organics-grocer
+relationships_declared: true
 ---
 Live2Give Organics is a social enterprise and organic farm run by two husband-and-wife teams, Robert and Naomi and Gosia and Tobi. Based in Palmerston North, they push the boundaries of regenerative and organic farming, using permanent ground cover and living roots to build soil organic matter and capture carbon. Harvests include seasonal vegetables, fruit, organic eggs, and pantry crops such as grains, nuts, seeds, pulses, and flour-ready grains, all grown with short supply chains in mind.
 
 Produce is sold directly through their own Live2Give Organics grocer platform, with chilled-truck deliveries between Palmerston North and Wellington, nationwide courier shipping, and a swap-a-crate system for low-waste local deliveries. The farm also collaborates with partner growers like Streamside Organics to offer a fuller seasonal range while keeping sourcing transparent and close to home.
 
-For the retail side of the business, see [Live2Give Organics grocer](/stores/live2give-organics/).
+For the retail side of the business, see [Live2Give Organics grocer](/stores/live2give-organics-grocer/).

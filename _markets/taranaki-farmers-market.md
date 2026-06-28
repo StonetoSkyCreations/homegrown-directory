@@ -38,7 +38,9 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- ground-breaking-mushrooms-new-plymouth
+- mac-snacks-tikorangi-taranaki
 supplies_to: []
 relationships_declared: false
 ---

@@ -19,24 +19,8 @@ LIST_FIELDS = %w[
   sources
 ].freeze
 RELATIONSHIP_FIELDS = %w[sourced_from supplies_to].freeze
-KNOWN_DUPLICATE_SLUGS = Set[
-  "live2give-organics",
-  "all-things-organic-tairua",
-  "earth-store-whitianga",
-  "toad-hall-motueka",
-  "awarua-organics"
-].freeze
-KNOWN_UNRESOLVED_RELATIONSHIPS = Set[
-  ["_farms/moana-organics.md", "supplies_to", "supply-circle-hub"],
-  ["_farms/the-farm-byron-bay.md", "supplies_to", "three-blue-ducks-byron-bay"],
-  ["_farms/waipuna-pastures.md", "supplies_to", "supply-circle-hub"],
-  ["_stores/city-honest-grocer.md", "sourced_from", "supply-circle-hub"],
-  ["_stores/locavore-byron.md", "sourced_from", "brooklet-springs-farm"],
-  ["_restaurants/amisfield-bistro-queenstown.md", "sourced_from", "amisfield-estate-garden-and-vineyard"],
-  ["_restaurants/amisfield-bistro-queenstown.md", "sourced_from", "central-otago-hunters-and-fishers"],
-  ["_restaurants/amisfield-bistro-queenstown.md", "sourced_from", "local-foragers"],
-  ["_restaurants/kopupako-kitchen.md", "sourced_from", "supply-circle-hub"]
-].map { |parts| parts.join("|") }.to_set.freeze
+KNOWN_DUPLICATE_SLUGS = Set[].freeze
+KNOWN_UNRESOLVED_RELATIONSHIPS = Set[].freeze
 
 def rel(path)
   path.sub("#{ROOT}/", "")

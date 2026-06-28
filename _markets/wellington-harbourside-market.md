@@ -49,6 +49,7 @@ services_tags: []
 certifications: []
 specialty_tags: []
 sourced_from: []
-supplies_to: []
+supplies_to:
+- jano-bistro-wellington
 relationships_declared: false
 ---

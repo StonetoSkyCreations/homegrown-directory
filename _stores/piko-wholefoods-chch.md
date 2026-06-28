@@ -57,6 +57,7 @@ sourced_from:
   - untamed-earth
   - shiny-shovel
   - milmore-downs
+  - awarua-organics
 
 relationships_declared: true
 

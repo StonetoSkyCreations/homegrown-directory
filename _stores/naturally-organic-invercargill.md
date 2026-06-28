@@ -45,7 +45,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- awarua-organics
 supplies_to: []
 relationships_declared: false
 ---

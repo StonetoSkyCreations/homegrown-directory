@@ -40,12 +40,16 @@ practices_tags: []
 products_tags: []
 services_tags: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- milmore-downs
 supplies_to:
 - bohemian-bakery-sumner
 - bohemian-bakery-merivale
 - bohemian-bakery-cashel-street-hq
 - bohemian-bakery-st-martins
 - bohemian-bakery-cbd
+- bellbird-bakery-merivale
+- bellbird-bakery-riverside-market
+- bellbird-bakery-the-tannery
 relationships_declared: true
 ---

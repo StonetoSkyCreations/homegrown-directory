@@ -36,7 +36,8 @@ products_tags: []
 services: []
 services_tags: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- tricketts-grove
 supplies_to:
 - alma-wholefoods
 - blissful-health-and-vegetarian-shop

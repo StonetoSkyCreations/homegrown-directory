@@ -46,6 +46,9 @@ supplies_to:
 - ooooby-online-organic-boxes
 - down-to-earth-organics-new-plymouth
 - bellbird-bakery
+- bellbird-bakery-merivale
+- bellbird-bakery-riverside-market
+- bellbird-bakery-the-tannery
 relationships_declared: true
 supplies_to_text:
 - walnuts-nz-co-operative

@@ -54,7 +54,7 @@ services_tags: []
 certifications: []
 specialty_tags: []
 sourced_from:
-- awarua-organics-southland
+- awarua-organics
 - wairiri-buffalo-canterbury
 - untamed-earth
 - milmore-downs

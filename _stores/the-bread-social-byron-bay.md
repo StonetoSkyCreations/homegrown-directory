@@ -34,6 +34,8 @@ services:
 - workshops
 sourced_from:
 - the-farm-byron-bay
+supplies_to:
+- three-blue-ducks-the-farm-byron-bay
 relationships_declared: true
 source_urls:
 - https://thebreadsocial.com

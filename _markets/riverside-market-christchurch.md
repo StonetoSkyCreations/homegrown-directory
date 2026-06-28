@@ -43,7 +43,8 @@ services: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- bellbird-bakery-riverside-market
 supplies_to: []
 relationships_declared: false
 ---

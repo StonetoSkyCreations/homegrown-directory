@@ -46,7 +46,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - chantal-organics
-- awarua-organics-southland
+- awarua-organics
 supplies_to: []
 relationships_declared: true
 ---

@@ -42,6 +42,7 @@ specialty_tags: []
 sourced_from: []
 sourced_from_text:
 - https://www.mirandafarm.co.nz/about-us#:~:text=We%20are%20a%20small%20caf%C3%A9,out%20at%20the%20Coromandel%20Peninsulahttps://www.mirandafarm.co.nz/contact#:~:text=1107%20Miranda%20Road%20RD3
-supplies_to: []
+supplies_to:
+- miranda-farm-shop-cafe
 relationships_declared: true
 ---

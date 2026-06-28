@@ -35,6 +35,7 @@ products_tags: []
 services_tags: []
 specialty_tags: []
 sourced_from: []
-supplies_to: []
+supplies_to:
+- westland-whole-foods
 relationships_declared: false
 ---

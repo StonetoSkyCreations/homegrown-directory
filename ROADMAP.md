@@ -20,10 +20,12 @@ relationships = verified).
 - **Practice token standardised:** `local` / `locally-sourced` split resolved to canonical `local`; homepage and `/map/` filters fixed to match.
 - **Honest-listing cleanup (workstream B):** rewrote the 46 provenance-note listings ("listed by X as a stockist") to plain visitor copy per the listing-quality standard; added `organic` practice tags to self-identified organic stores. Relationships and source URLs untouched.
 - **Map framing + popup fixes:** homepage / `/map/` now frame the active country (NZ here) instead of zooming to the whole planet on the Chatham Islands antimeridian outlier; clicking a pin shows a brief overview popup in place rather than scrolling to the list card.
+- **Connection flow direction (June 2026):** the animated ant-path lines on the in-listing mini-map and the `/network/` click-to-trace now flow in the goods direction (inward from who a listing sources, outward to who it supplies) instead of always radiating from the focus. `assets/js/connections-map.js`.
+- **Completeness pass (Stage 4 pulled forward, 2026-06-28):** deduped the 5 cross-collection duplicate slugs (merged the cafe/store dups; consolidated the 3 AwaRua listings; split Live2Give into farm + grocer with a reciprocal link), stripped the 9 dangling references, and built `scripts/reciprocate.rb` to reciprocate all 47 one-way claims. Audit now 0 one-way / 0 dangling, 240 reciprocated pairs (was 196). Details in `SOURCING_PLAN.md`.
 
 ## Known issues (fix later)
 - **Store/vendor polish:** `store.html` / `vendor.html` use the connection block but not the full collapsible `<details>` treatment `listing.html` has. Bring to parity.
-- **Duplicate-slug nodes:** a few cross-collection duplicate slugs (e.g. `live2give-organics` is a farm and a store) can show twice. Dedupe by slug if it bothers.
+- **Near-duplicate listings:** the 5 exact cross-collection duplicate slugs are resolved and now blocked by `validate_content.rb` (whitelist emptied). A few *near*-duplicates remain under different slugs (likely the same business or branches), e.g. `bellbird-bakery` vs `bellbird-bakery-merivale` / `-riverside-market` / `-the-tannery`, and `ashley-river-organics` vs `ashley-river-organics-loburn`. Review and merge/relate when convenient.
 - **Coverage:** only a minority of listings declare any relationship; the rest are orphans. Reciprocity coverage is the main growth metric (`relationship_audit.rb`).
 - **`normalise_*.rb` non-idempotent:** a plain re-run rewrites ~90 listing files by re-inferring tags. Run only deliberately.
 

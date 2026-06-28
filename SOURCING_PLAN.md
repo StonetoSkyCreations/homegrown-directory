@@ -52,6 +52,12 @@ The DB tells us where the leverage is. A small report (Stage 0) ranks it:
 - Only **4 distributors**, the biggest single opportunity (distributors are the
   largest hubs; one supplies dozens to hundreds of stores).
 
+**Update 2026-06-28 (completeness pass, Stage 4 pulled forward):** graph is now
+fully reciprocal. `relationship_audit.rb` reports **0 one-way claims, 0 unresolved
+targets, 240 reciprocated pairs** (all listings incl. AU). The 5 duplicate slugs
+and 9 dangling references are resolved (see Stage 4 + the progress log). Next
+session should re-baseline the NZ-only counts before mining the first hub.
+
 ### Concrete top hubs right now
 Forward (producers / distributors, by outlets already linked):
 Milmore Downs (48), Streamside Organics (48), Chantal Organics (44), Mahoe
@@ -95,10 +101,26 @@ session. Canterbury candidates are already staged in
 `~/.claude/plans/eager-plotting-wadler.md`. Then North Canterbury meat, Banks
 Peninsula, then province by province.
 
-### Stage 4, reciprocity and hygiene pass
+### Stage 4, reciprocity and hygiene pass — DONE 2026-06-28 (pulled forward)
 `relationship_audit.rb --strict`: reciprocate one-way links, resolve dangling
 slug references (the legacy exceptions), and dedupe cross-collection duplicate
 slugs (e.g. AwaRua Organics appears as both a farm and a vendor). Re-baseline.
+
+Done this pass:
+- **Deduped 5 duplicate slugs.** Merged the lower-quality cafe/store dups
+  (earth-store-whitianga, toad-hall-motueka, all-things-organic-tairua) into one
+  store listing each; consolidated the 3 AwaRua Organics listings (stub farm +
+  rich vendor + awarua-organics-southland) into the single vendor node and
+  repointed inbound refs; split Live2Give's shared slug into
+  `live2give-organics` (farm) + `live2give-organics-grocer` (grocer) with a
+  reciprocal self-supply link. Pruned `KNOWN_DUPLICATE_SLUGS`.
+- **Stripped 9 dangling references** (none resolved to real businesses):
+  the phantom `supply-circle-hub` x4 (the real grower<->outlet links already
+  exist directly), Amisfield's self/descriptive refs, and 2 AU refs. Pruned
+  `KNOWN_UNRESOLVED_RELATIONSHIPS`.
+- **Built `scripts/reciprocate.rb`** (report / `--apply`, reuses the audit's
+  parsing) and reciprocated all 47 one-way claims. Reusable every harvest session
+  (loop step 6). Result: 0 one-way, 0 dangling.
 
 ## Per-session checklist (keeps each login bounded)
 - [ ] `git pull --rebase`; confirm sole agent (Codex.app fully quit).
@@ -120,3 +142,4 @@ slugs (e.g. AwaRua Organics appears as both a farm and a vendor). Re-baseline.
 | Stage | Hub | Date | Listings added | Relationships added | Commit |
 |-------|-----|------|----------------|---------------------|--------|
 | 0 | (tooling) | | | | |
+| 4 | reciprocity + hygiene (pulled forward) | 2026-06-28 | 0 new (merged 5 dup slugs, stripped 9 dangling) | +44 reciprocated pairs (196 to 240); 47 one-way reciprocated | reciprocate.rb |

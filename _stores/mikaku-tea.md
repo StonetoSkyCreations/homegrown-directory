@@ -62,5 +62,6 @@ specialty_tags:
 sourced_from: []
 supplies_to:
 - arbour-woodfired-pizza-lyttelton
+- lyttelton-farmers-market
 relationships_declared: true
 ---

@@ -47,7 +47,7 @@ services_tags: []
 certifications: []
 specialty_tags: []
 sourced_from:
-- awarua-organics-southland
+- awarua-organics
 - mahoe-farmhouse-cheese
 - chantal-organics
 supplies_to: []

@@ -76,6 +76,7 @@ supplies_to:
 - happy-healthy
 - piko-wholefoods-chch
 - frances-grocer
+- bacca-bakery-golden-bay
 relationships_declared: true
 ---
 Milmore Downs is a 302-hectare, third-generation biodynamic and certified organic farm in the Scargill Valley, north of Christchurch. Managed by the family team of Matthew, Alice, Ian and Eva, the farm integrates mixed cropping with livestock to build long-term soil fertility. Dinkel/spelt, wheat, rye, and barley are grown in rotation alongside deep-rooted herbal leys grazed by sheep and cattle, creating a resilient, self-renewing system.

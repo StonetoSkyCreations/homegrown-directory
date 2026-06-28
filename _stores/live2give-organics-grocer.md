@@ -1,6 +1,6 @@
 ---
 title: Live2Give Organics
-slug: live2give-organics
+slug: live2give-organics-grocer
 collection: stores
 country_slug: new-zealand
 country: New Zealand
@@ -41,6 +41,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - streamside-organics
+- live2give-organics
 supplies_to: []
 relationships_declared: true
 ---

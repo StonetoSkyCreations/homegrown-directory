@@ -29,7 +29,9 @@ specialty_tags:
 - umbrella
 - multi-location
 source_urls: []
-sourced_from: []
+sourced_from:
+- awarua-organics
+- tricketts-grove
 supplies_to: []
 relationships_declared: false
 ---

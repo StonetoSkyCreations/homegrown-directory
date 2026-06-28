@@ -42,6 +42,7 @@ source_urls:
 last_checked: '2025-12-19'
 sourced_from:
 - wairiri-buffalo-canterbury
+- dripping-bowl
 sourced_from_text: []
 supplies_to: []
 supplies_to_text: []

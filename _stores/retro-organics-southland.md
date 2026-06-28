@@ -58,7 +58,8 @@ services_tags:
 specialty_tags:
 - single-farm-dairy
 - vertically-integrated
-sourced_from: []
+sourced_from:
+- awarua-organics
 supplies_to:
 - harbour-co-op-lyttelton
 relationships_declared: true

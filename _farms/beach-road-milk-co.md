@@ -44,7 +44,8 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - kaitake-farm-oakura-taranaki
-supplies_to: []
+supplies_to:
+- beach-road-milk-co-farm-gate
 relationships_declared: false
 ---
 Beach Road Milk Co is a family-owned raw milk farm based in Omata, Taranaki,

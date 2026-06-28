@@ -68,6 +68,7 @@ certifications:
 - Organic Farm NZ
 specialty_tags: []
 sourced_from: []
-supplies_to: []
+supplies_to:
+- little-farms
 relationships_declared: false
 ---

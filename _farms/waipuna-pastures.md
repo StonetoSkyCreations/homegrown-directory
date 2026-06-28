@@ -34,7 +34,6 @@ sourced_from: []
 supplies_to:
 - city-honest-grocer
 - kopupako-kitchen
-- supply-circle-hub
 - harbour-harvest-market
 relationships_declared: true
 ---

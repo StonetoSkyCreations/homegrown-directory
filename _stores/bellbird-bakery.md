@@ -35,7 +35,8 @@ specialty_tags:
 - umbrella
 - multi-location
 source_urls: []
-sourced_from: []
+sourced_from:
+- tricketts-grove
 sourced_from_text:
 - https://www.bellbirdbakery.co.nz
 supplies_to: []

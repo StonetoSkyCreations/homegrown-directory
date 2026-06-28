@@ -43,6 +43,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - streamside-organics
+- ashley-river-organics-loburn
 supplies_to:
 - ooooby-online-organic-boxes
 relationships_declared: true

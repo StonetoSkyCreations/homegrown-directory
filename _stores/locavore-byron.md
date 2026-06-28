@@ -38,8 +38,7 @@ products:
 - game
 - organ-meats
 relationships_declared: true
-sourced_from:
-- brooklet-springs-farm
+sourced_from: []
 sourced_from_text:
 - local organic farming families in the Northern Rivers region
 source_urls:

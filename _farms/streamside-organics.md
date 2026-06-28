@@ -64,7 +64,9 @@ practices:
 products_tags: []
 services_tags: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- ashley-river-organics
+- ashley-river-organics-loburn
 supplies_to:
 - ilex-cafe-botanic-gardens
 - gatherings-christchurch
@@ -89,7 +91,7 @@ supplies_to:
 - freshchoice-merivale
 - freshchoice-nelson-city
 - bliss-box
-- live2give-organics
+- live2give-organics-grocer
 supplies_to_text: []
 relationships_declared: true
 ---

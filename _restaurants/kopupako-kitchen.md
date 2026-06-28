@@ -29,7 +29,6 @@ specialty_tags: []
 sourced_from:
 - moana-organics
 - waipuna-pastures
-- supply-circle-hub
 supplies_to: []
 relationships_declared: true
 ---

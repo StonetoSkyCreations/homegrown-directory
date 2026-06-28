@@ -41,6 +41,8 @@ sourced_from:
 - milmore-downs
 - farmers-mill
 - tricketts-grove
+- bellbird-bakery-merivale
+- bellbird-bakery-the-tannery
 sourced_from_text:
 - https://www.bellbirdbakery.co.nz
 - trade-aid

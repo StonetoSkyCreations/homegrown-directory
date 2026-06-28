@@ -44,6 +44,7 @@ specialty_tags: []
 sourced_from: []
 sourced_from_text:
 - https://thecoromandel.nz/explore/the-cheese-barn-at-matatoki-ltd#:~:text=We%20are%20a%20Cheese%20Factory%2C,go%20well%20with%20the%20cheesehttps://thecoromandel.nz/explore/the-cheese-barn-at-matatoki-ltd#:~:text=Come%20and%20relax%20in%20tranquil,with%20gift%20baskets%20a%20specialityhttps://thecoromandel.nz/explore/the-cheese-barn-at-matatoki-ltd#:~:text=,nz
-supplies_to: []
+supplies_to:
+- down-to-earth-organics-new-plymouth
 relationships_declared: true
 ---

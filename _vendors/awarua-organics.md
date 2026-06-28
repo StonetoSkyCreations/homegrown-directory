@@ -52,6 +52,7 @@ awards: []
 supply_role: Processor; Brand owner
 source_urls:
   - https://english.awaruaorganics.co.nz
+  - https://english.awaruaorganics.co.nz/stockists/
 last_checked: '2025-12-15'
 practices_tags:
   - certified-organic
@@ -73,5 +74,7 @@ supplies_to:
   - naturally-organic-invercargill
   - piko-wholefoods-chch
   - retro-organics-southland
+  - chantal-shop-napier
+  - ie-produce-takapuna
 relationships_declared: true
 ---
