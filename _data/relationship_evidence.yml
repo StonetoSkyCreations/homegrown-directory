@@ -1,8 +1,6 @@
 # Relationship evidence ledger for the harvest pipeline. See HARVEST.md.
-# Key: "<from-slug>|<field>|<to-slug>"  (field = supplies_to | sourced_from, as declared)
-# Value: list of { source_url, snippet, date, confidence: high|medium|low }
-# A relationship is evidenced if the ledger has an entry for the pair in either
-# direction. Managed by scripts/harvest_import.rb; audited by scripts/evidence_audit.rb.
+# Key: "<from-slug>|<field>|<to-slug>"; value: list of {source_url, snippet, date, confidence}.
+# A relationship is evidenced if the ledger has an entry for the pair in either direction.
 ---
 coraltree-organic-products|supplies_to|bin-inn-waitara:
 - source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
@@ -87,5 +85,60 @@ three-oaks-organic-farm|supplies_to|mangaroa-farms-upper-hutt-wellington:
 three-oaks-organic-farm|supplies_to|organic-buzz:
 - source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
   snippet: map pin -40.3476,175.6267
+  date: '2026-06-29'
+  confidence: high
+be-free-grocer|sourced_from|coraltree-organic-products:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: Listed on CoralTree's stockist map
+  date: '2026-06-29'
+  confidence: high
+cornucopia-the-organic-shop|sourced_from|coraltree-organic-products:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: Listed on CoralTree's stockist map
+  date: '2026-06-29'
+  confidence: high
+food-for-thought-organics|sourced_from|coraltree-organic-products:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: Listed on CoralTree's stockist map
+  date: '2026-06-29'
+  confidence: high
+homegrown-vegetable-delivery|sourced_from|coraltree-organic-products:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: Listed on CoralTree's stockist map
+  date: '2026-06-29'
+  confidence: high
+moore-wilsons-wellington|sourced_from|coraltree-organic-products:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: Listed on CoralTree's stockist map
+  date: '2026-06-29'
+  confidence: high
+petal-bee-grocers|sourced_from|coraltree-organic-products:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: Listed on CoralTree's stockist map
+  date: '2026-06-29'
+  confidence: high
+riverstone-cafe|sourced_from|coraltree-organic-products:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: Listed on CoralTree's stockist map
+  date: '2026-06-29'
+  confidence: high
+somerset-cottage|sourced_from|coraltree-organic-products:
+- source_url: https://www.google.com/maps/d/kml?mid=13epScfxlT-v9k0cvkmfZWCOd27NxKjU&forcekml=1
+  snippet: Listed on CoralTree's stockist map
+  date: '2026-06-29'
+  confidence: high
+famly-organic-market-cafe|sourced_from|three-oaks-organic-farm:
+- source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
+  snippet: Listed on Three Oaks Organic Farm's find-us map
+  date: '2026-06-29'
+  confidence: high
+forage-merchants-of-wellington|sourced_from|three-oaks-organic-farm:
+- source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
+  snippet: Listed on Three Oaks Organic Farm's find-us map
+  date: '2026-06-29'
+  confidence: high
+homegrown-butcher-deli-pantry|sourced_from|three-oaks-organic-farm:
+- source_url: https://www.google.com/maps/d/kml?mid=1CnQj2Uk9VTyDLvmwLmrsjuAIWfuzOS8&forcekml=1
+  snippet: Listed on Three Oaks Organic Farm's find-us map
   date: '2026-06-29'
   confidence: high

@@ -46,5 +46,13 @@ supplies_to:
 - organic-buzz
 - taste-nature-dunedin
 - the-island-grocer
+- be-free-grocer
+- cornucopia-the-organic-shop
+- food-for-thought-organics
+- homegrown-vegetable-delivery
+- moore-wilsons-wellington
+- petal-bee-grocers
+- riverstone-cafe
+- somerset-cottage
 relationships_declared: true
 ---

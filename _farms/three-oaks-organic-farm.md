@@ -47,5 +47,8 @@ supplies_to:
 - commonsense-lower-hutt
 - mangaroa-farms-upper-hutt-wellington
 - organic-buzz
+- famly-organic-market-cafe
+- forage-merchants-of-wellington
+- homegrown-butcher-deli-pantry
 relationships_declared: true
 ---
