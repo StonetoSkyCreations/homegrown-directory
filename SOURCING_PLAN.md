@@ -153,6 +153,7 @@ Done this pass:
 | 1 | Producer-forward web scan (detect-only, Pilot 4 step 1) | 2026-06-28 | 0 new (detect-only) | 0 (candidate hub pages only) | stockist_scan.py |
 | 1 | Producer-forward extract + classify (Pilot 4 step 2) | 2026-06-28 | 0 new (review queue staged) | 0 (CoralTree: 10 auto edges + 19 NZ new staged for review) | stockist_extract.py + candidate_edges.rb |
 | 1 | Producer-forward full scan (Pilot 4, all 52 sized) | 2026-06-28 | 0 new (opportunity sized, nothing applied) | 0 (26 trustworthy AUTO edges + ~22 KML-new identified; widget adapters = next leverage) | full-scan analysis |
+| 1 | Apply 2 clean KML hubs: coraltree + three-oaks (Pilot 4) | 2026-06-29 | 11 new (8 coraltree, 3 three-oaks; dropped 11 of 22 candidates) | +28 reciprocal edges (17 AUTO + 11 new); pairs 240 -> 268 | 7ddeb19 + 82189cc |
 
 ## Pilots (full pipeline doc in `HARVEST.md`)
 - **Pilot 1, AsureQuality register: enrichment slice DONE 2026-06-28.**
@@ -201,6 +202,19 @@ Done this pass:
     Stockist.co JSON / Wix for 4+), not more static scraping. Also queued: tighten the
     static adapter to a detected list region; fix the 8 stale producer website fields;
     curate clinics/pharmacies out of the CoralTree new set before any apply.
-  - **Apply pending (nothing written to the site).** When ready: review the clean KML
-    new outlets, then `harvest_import.rb` to wire the 26 auto edges and scaffold the
-    curated new outlets (start with the 2 clean hubs, coraltree + three-oaks).
+  - **Applied 2026-06-29 (coraltree + three-oaks).** Wired 17 of the KML AUTO edges
+    and scaffolded 11 curated new outlets; reciprocated pairs 240 -> 268 (both
+    producers moved from orphan to connected, coraltree now a top-10 hub). Each new
+    outlet was verified for what it is and where before any copy was written.
+    Curation dropped 11 of the 22 "new" candidates: 8 clinics/pharmacies/wellness
+    centres + 3 that are producers, not stockists (Chaos Springs = compost/soil,
+    Zealand Farms = eggs, Millstream Gardens = herbal skincare); also dropped 1 AUTO
+    edge the source itself marks "COMING SOON" (three-oaks -> commonsense-wellington-city).
+    Staging CSVs: `data/imports/{coraltree,three-oaks}-stockists.csv`.
+  - **Still to apply (deferred, needs a glance):** the 8 static-hub AUTO edges
+    (first-light 2, mycobio 2, pasture-poultry 4) were left for an individual review
+    because 2 are junk matches (mycobio "Store" -> organic-store; first-light
+    supplies_to wharerata-farm looks reversed, wharerata is one of its growers).
+  - **Next leverage remains the widget adapters** (the highest-yield uninvested move):
+    WP Store Locator AJAX for biofarm + olliff; Wix for durham / jersey-girl /
+    te-horo / te-matuku; Shopify blog for the ceres distributor mega-hub.
