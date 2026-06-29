@@ -22,6 +22,7 @@ source_urls:
 - https://www.coraltree.co.nz/pages/stockists
 sourced_from:
 - coraltree-organic-products
+- jersey-girl-organics
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-29'

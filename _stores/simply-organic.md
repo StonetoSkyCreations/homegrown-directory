@@ -26,6 +26,7 @@ source_urls:
 - https://chantalorganics.co.nz/find-a-store/
 sourced_from:
 - chantal-organics
+- jersey-girl-organics
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'

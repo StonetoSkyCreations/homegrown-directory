@@ -43,6 +43,7 @@ specialty_tags: []
 sourced_from:
 - mahoe-farmhouse-cheese
 - chantal-organics
+- jersey-girl-organics
 supplies_to: []
 relationships_declared: true
 ---

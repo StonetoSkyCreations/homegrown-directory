@@ -42,6 +42,7 @@ specialty_tags: []
 sourced_from:
 - bliss-box
 - tricketts-grove
+- jersey-girl-organics
 supplies_to: []
 relationships_declared: false
 ---

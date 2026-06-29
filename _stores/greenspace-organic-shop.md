@@ -45,7 +45,8 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- jersey-girl-organics
 supplies_to: []
 relationships_declared: false
 ---

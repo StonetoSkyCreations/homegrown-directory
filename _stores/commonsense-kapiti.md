@@ -43,6 +43,7 @@ specialty_tags: []
 sourced_from:
 - coraltree-organic-products
 - three-oaks-organic-farm
+- jersey-girl-organics
 supplies_to: []
 relationships_declared: false
 ---

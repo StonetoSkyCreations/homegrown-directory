@@ -24,6 +24,7 @@ source_urls:
 - https://www.mahoecheese.co.nz/selected-retailers/
 sourced_from:
 - mahoe-farmhouse-cheese
+- jersey-girl-organics
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'

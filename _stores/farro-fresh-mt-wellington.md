@@ -45,6 +45,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - mahoe-farmhouse-cheese
+- jersey-girl-organics
 supplies_to: []
 relationships_declared: true
 ---

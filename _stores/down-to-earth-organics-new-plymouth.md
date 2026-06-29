@@ -106,6 +106,7 @@ sourced_from:
 - hohepa-hawkes-bay
 - the-cheese-barn-at-matatoki
 - tricketts-grove
+- jersey-girl-organics
 sourced_from_text:
 - Kaitake Ranges Honey
 - Bumblebee Bakery (Villa Bumblebee)
