@@ -11,6 +11,12 @@ region: Canterbury
 city: Christchurch
 address: Christchurch, New Zealand (farmers' markets only; no public retail address)
 location_private: true
+lat: -43.5612795
+lon: 172.6371624
+geo_precision: approx
+geo_source: descriptive
+geo_label: South Christchurch Farmers Market
+geo_last_verified: '2026-06-30'
 description: 'Revive Water Kefir is a small, family-owned New Zealand producer crafting batch-brewed, fruit-infused water kefir using traditional fermentation methods.
 
   '

@@ -39,9 +39,12 @@ contact_via:
   - piko-wholefoods-chch
 
 location_private: true
-geo_precision: approximate
+lat: -42.8251955
+lon: 172.6411177
+geo_precision: approx
 geo_source: descriptive
-geo_last_verified: '2025-12-31'
+geo_label: Hurunui River, North Canterbury
+geo_last_verified: '2026-06-30'
 
 source_urls:
   - https://www.pikowholefoods.co.nz

@@ -11,6 +11,12 @@ region: Canterbury
 city: Christchurch
 address: Christchurch, Canterbury (farm location not publicly listed)
 location_private: true
+lat: -43.5608289
+lon: 172.6369014
+geo_precision: approx
+geo_source: descriptive
+geo_label: Beckenham, Christchurch (Untamed Earth Farm Shop)
+geo_last_verified: '2026-06-30'
 phone: ''
 email: oliver@untamedearth.nz
 website: https://untamedearth.nz
