@@ -5,7 +5,7 @@ toward "every NZ organic grower, every stockist, and every cafe, store and
 restaurant that stocks it" without random data entry, by following the web of
 connection. New Zealand only for now (ignore Australia).
 
-## Where we are now (resume here, updated 2026-06-29)
+## Where we are now (resume here, updated 2026-06-30)
 
 **Current harvest priority:** keep harvesting cafes, restaurants, grocers, markets
 and distributors through *verified producer links*. Source types, by leverage:
@@ -34,10 +34,33 @@ menus or supplier notes, market stallholder lists, distributor producer lists.
 - Tag a cafe/restaurant/grocer `organic` unless the source explicitly supports it.
 - Add "coming soon" / future stockists as active links.
 
+**Widget census done 2026-06-30 (corrected the earlier mislabels):**
+The earlier "WP Store Locator unlocks BioFarm + Olliff" was wrong. Live probing found
+BioFarm's WPSL store list is **empty** (0 from `store_search` AJAX + `/wp-json/.../wpsl_stores`)
+and **Olliff is Progus** (Shopify app, token API), not WPSL. The highest-leverage real
+widget is **Wix** (4 producers). Reachability per the 7 locked-widget producers:
+
+| producer | widget | reachable | est. names | value |
+|----------|--------|-----------|-----------|-------|
+| jersey-girl-organics | Wix | yes | ~111 (15+ auto) | HIGH store hub |
+| durham-farms | Wix | yes | ~13 | low-med |
+| te-horo-harvest | Wix | partial | ~13 (noisy) | med |
+| te-matuku-oysters | Wix | weak | ~14 (page is marketing; real eatery list elsewhere) | low |
+| olliff-farm | Progus | locked | token API, not cracked | med (defer) |
+| ceres-organics | Shopify blog | weak | 6 "Meet <firstname>" profiles, not businesses | low |
+| biofarm | WP Store Locator | no | 0 (empty store DB) | none |
+
+**Built 2026-06-30: the Wix adapter** (`from_wix` in `stockist_extract.py`, parses
+`wixui-rich-text__text` spans). Validated: jersey-girl + durham + te-horo + te-matuku now
+extract; `candidate_edges.rb` gives 22 auto / 103 new / 17 fuzzy (a real split, not static
+noise).
+
 **Best next-session options (recommended order):**
-1. Build the **WP Store Locator** adapter first (should unlock BioFarm + Olliff).
-2. Then investigate **Wix** stockist widgets (Durham, Jersey Girl, Te Horo, Te Matuku).
-3. Then investigate **Shopify / blog-style** extraction for Ceres (distributor mega-hub).
+1. **Apply the Jersey Girl Organics hub** (the Wix win): curate the review queue and wire
+   the ~15+ auto edges + curated new stores, reciprocate, commit. Then Durham, then Te Horo.
+2. Te Matuku's restaurant directory and Olliff's Progus stockists need their own small
+   adapters (Progus token API); defer unless a session wants eateries specifically.
+3. Skip BioFarm (empty WPSL) until its locator is repopulated.
 4. Continue applying only reviewed, evidence-backed relationships.
 5. Keep the focus on cafes, restaurants, grocers, markets and distributors connected to verified producers.
 
@@ -199,6 +222,7 @@ Done this pass:
 | 1 | Producer-forward extract + classify (Pilot 4 step 2) | 2026-06-28 | 0 new (review queue staged) | 0 (CoralTree: 10 auto edges + 19 NZ new staged for review) | stockist_extract.py + candidate_edges.rb |
 | 1 | Producer-forward full scan (Pilot 4, all 52 sized) | 2026-06-28 | 0 new (opportunity sized, nothing applied) | 0 (26 trustworthy AUTO edges + ~22 KML-new identified; widget adapters = next leverage) | full-scan analysis |
 | 1 | Apply 2 clean KML hubs: coraltree + three-oaks (Pilot 4) | 2026-06-29 | 11 new (8 coraltree, 3 three-oaks; dropped 11 of 22 candidates) | +28 reciprocal edges (17 AUTO + 11 new); pairs 240 -> 268 | 7ddeb19 + 82189cc |
+| 1 | Widget census + Wix adapter (from_wix) | 2026-06-30 | 0 (adapter only; queue staged) | 0 applied (jersey-girl 22 auto / 103 new / 17 fuzzy ready to curate) | stockist_extract.py |
 
 ## Pilots (full pipeline doc in `HARVEST.md`)
 - **Pilot 1, AsureQuality register: enrichment slice DONE 2026-06-28.**
@@ -260,6 +284,13 @@ Done this pass:
     (first-light 2, mycobio 2, pasture-poultry 4) were left for an individual review
     because 2 are junk matches (mycobio "Store" -> organic-store; first-light
     supplies_to wharerata-farm looks reversed, wharerata is one of its growers).
-  - **Next leverage remains the widget adapters** (the highest-yield uninvested move):
-    WP Store Locator AJAX for biofarm + olliff; Wix for durham / jersey-girl /
-    te-horo / te-matuku; Shopify blog for the ceres distributor mega-hub.
+  - **Widget census + Wix adapter, 2026-06-30.** Re-probed the 7 locked-widget producers and
+    corrected the labels: BioFarm's WP Store Locator is **empty** (0 stores via `store_search`
+    AJAX and the `wpsl_stores` REST collection); **Olliff is Progus** (Shopify app, token API),
+    not WPSL; Ceres's "meet our growers" blog is 6 first-name profile posts, not businesses.
+    The real leverage is **Wix** (4 producers), so built `from_wix` in `stockist_extract.py`
+    (extracts `wixui-rich-text__text` spans) + a Progus `WIDGET_SIGNS` entry. Validated:
+    jersey-girl ~111 names (15+ auto edges to existing Commonsense / Farro / Chantal stores),
+    durham 13, te-horo 13, te-matuku 14; classifier 22 auto / 103 new / 17 fuzzy. Nothing
+    applied yet (next session applies the Jersey Girl hub). Progus (olliff) + Te Matuku's
+    eatery directory remain for their own small adapters; BioFarm is parked (empty).

@@ -49,8 +49,9 @@ REVERSE_RE = re.compile(r"grower|supplier|producer|maker|farmer", re.I)
 MYMAPS_RE = re.compile(r"maps/d/(?:u/\d+/)?(?:embed|view|edit)?\?[^\"']*?mid=([\w-]+)", re.I)
 
 WIDGET_SIGNS = [
-    ("wpsl", r"\bwpsl\b|wp-store-locator|store-locator"),
+    ("wpsl", r"\bwpsl\b|wp-store-locator"),
     ("stockist", r"stockist\.co|stockist-store-locator"),
+    ("progus", r"progus-store-locator|proguscommerce\.com"),
     ("storerocket", r"storerocket"),
     ("storepoint", r"storepoint"),
     ("storemapper", r"storemapper"),
@@ -76,6 +77,9 @@ STOP_SUBSTR = [
     "visa", "mastercard", "american express", "apple pay", "google pay", "shop pay",
     "union pay", "paypal", "afterpay", "laybuy", "facebook", "instagram", "twitter",
     "tiktok", "youtube", "linkedin", "pinterest", "@", "://", "subscribe",
+    # Wix rich-text footer / form / contact boilerplate.
+    "tel:", "phone:", "thanks for submitting", "designed by", "become a stockist",
+    "all your", "want to join", "where to get", "right out of the shell",
 ]
 
 
@@ -190,6 +194,35 @@ def from_static(slug, page_url, html, field):
     return rows, f"static:{len(rows)}"
 
 
+# Wix renders a "stockists" page as rich-text: each line is a
+# <span class="wixui-rich-text__text">...</span> (store names, region headings, notes,
+# phone lines). There are no coordinates in the markup. We pull the span text, keep the
+# leading "Name" of a "Name, City" / "Name - City" line, and lean on looks_like_name plus
+# the stoplist; residual headings/notes fall to the classifier's review route (curated),
+# while the many existing stores (Farro, New World, Commonsense...) match as auto edges.
+WIX_TEXT_RE = re.compile(r'class="wixui-rich-text__text"[^>]*>(.*?)</span>', re.S)
+
+
+def from_wix(slug, page_url, html, field):
+    rows = []
+    seen = set()
+    for raw in WIX_TEXT_RE.findall(html):
+        txt = clean(raw)
+        if not txt:
+            continue
+        name = re.split(r"\s[-–—]\s|,", txt, maxsplit=1)[0].strip()
+        if not looks_like_name(name):
+            continue
+        key = name.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        rows.append((slug, field, name, page_url, txt[:160], "wix", "", ""))
+        if len(rows) >= 200:
+            break
+    return rows, f"wix:{len(rows)}"
+
+
 def detect_widget(html):
     for kind, pat in WIDGET_SIGNS:
         if re.search(pat, html, re.I):
@@ -237,7 +270,10 @@ def main():
         if mm:
             rows, note = from_kml(slug, mm.group(1), field)
         elif (kind := detect_widget(html)):
-            rows, note = [], f"widget:{kind}"
+            if kind == "wix":
+                rows, note = from_wix(slug, url, html, field)
+            else:
+                rows, note = [], f"widget:{kind}"
         else:
             rows, note = from_static(slug, url, html, field)
         all_rows.extend(rows)
