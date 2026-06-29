@@ -51,18 +51,42 @@ widget is **Wix** (4 producers). Reachability per the 7 locked-widget producers:
 | biofarm | WP Store Locator | no | 0 (empty store DB) | none |
 
 **Built 2026-06-30: the Wix adapter** (`from_wix` in `stockist_extract.py`, parses
-`wixui-rich-text__text` spans). Validated: jersey-girl + durham + te-horo + te-matuku now
-extract; `candidate_edges.rb` gives 22 auto / 103 new / 17 fuzzy (a real split, not static
-noise).
+`wixui-rich-text__text` spans), and **applied the Jersey Girl Organics hub** (commit
+20018fa): 25 reciprocal edges to existing listings + 5 new researched independent stores
+(Te Aroha Organic Health Shop, Nature's Nurture Organic Grocer, Te Puna Deli, Vetro
+Gisborne, Vetro Tauranga). ~48 mainstream supermarket branches were deliberately NOT
+listed; recorded as a where-to-buy note on the Jersey Girl listing instead, to keep the
+directory organic-focused. Reciprocated pairs 268 -> 298.
 
-**Best next-session options (recommended order):**
-1. **Apply the Jersey Girl Organics hub** (the Wix win): curate the review queue and wire
-   the ~15+ auto edges + curated new stores, reciprocate, commit. Then Durham, then Te Horo.
-2. Te Matuku's restaurant directory and Olliff's Progus stockists need their own small
-   adapters (Progus token API); defer unless a session wants eateries specifically.
-3. Skip BioFarm (empty WPSL) until its locator is repopulated.
-4. Continue applying only reviewed, evidence-backed relationships.
-5. Keep the focus on cafes, restaurants, grocers, markets and distributors connected to verified producers.
+**>>> NEXT SESSION, START HERE: apply the Durham Farms Wix hub. <<<**
+The Wix adapter already extracts it (`widget:wix`, ~13 names). Repeat the Jersey Girl loop:
+1. Load rbenv (`eval "$(rbenv init - zsh)"`). Extract + classify:
+   `python3 scripts/harvesters/stockist_extract.py --slugs durham-farms` then
+   `ruby scripts/candidate_edges.rb`. Read `data/harvest/stockist-review.csv`.
+2. Curate exactly like Jersey Girl: KEEP real food stockists (organic stores, grocers,
+   markets, eateries listed as stockists); DROP region/section headings ("Auckland",
+   "Northland", "Restaurants and Cafes", "Waiheke"), footer/form noise ("Become a
+   stockist", "Terms Conditions", "Website designed by"), and non-food. Durham's queue
+   includes IE Produce, Naturally Organics, City of View Superette, Well Hung Butchery.
+3. **Cross-check every "new" candidate against existing listings by normalised name**
+   before scaffolding (Jersey Girl had 3 hidden duplicates the classifier missed: Farro
+   Constellation=mairangi-bay, Farro Takapuna=smales-farm, Naturally Organic
+   Northridge=albany). Wire dupes as AUTO edges, do not re-scaffold.
+4. For NEW keeps: research each business on its own site, write short + long descriptions
+   to the listing-quality + SEO doctrine (description feeds the meta; don't repeat the
+   name/town; organic tag ONLY if the business's own source supports it). Scaffold with
+   `ruby scripts/add_listing.rb --collection stores --name "..." --region R --city C
+   --address A --website W --description "..." --long-description "..." --source-urls <durham
+   stockists URL> --sourced-from durham-farms --geocode`. Present a review table for Josh
+   to sign off BEFORE writing (he wants listings right the first time, no rework pass).
+5. Wire AUTO edges into `_farms/durham-farms.md` supplies_to + add ledger entries to
+   `_data/relationship_evidence.yml`, `ruby scripts/reciprocate.rb --apply`, then
+   validate + build + seo_lint + relationship_audit. One commit for the hub.
+
+After Durham: **Te Horo Harvest** (Wix, ~13 noisier names; strip "Tel:"/address lines).
+Then Te Matuku (eatery directory) + Olliff (Progus) need their own small adapters; BioFarm
+is parked (empty WPSL). Keep focus on cafes, restaurants, grocers, markets, distributors
+connected to verified producers; only apply reviewed, evidence-backed relationships.
 
 **Deferred items:**
 - 8 static-hub AUTO edges need individual review before wiring (first-light 2,
@@ -223,6 +247,7 @@ Done this pass:
 | 1 | Producer-forward full scan (Pilot 4, all 52 sized) | 2026-06-28 | 0 new (opportunity sized, nothing applied) | 0 (26 trustworthy AUTO edges + ~22 KML-new identified; widget adapters = next leverage) | full-scan analysis |
 | 1 | Apply 2 clean KML hubs: coraltree + three-oaks (Pilot 4) | 2026-06-29 | 11 new (8 coraltree, 3 three-oaks; dropped 11 of 22 candidates) | +28 reciprocal edges (17 AUTO + 11 new); pairs 240 -> 268 | 7ddeb19 + 82189cc |
 | 1 | Widget census + Wix adapter (from_wix) | 2026-06-30 | 0 (adapter only; queue staged) | 0 applied (jersey-girl 22 auto / 103 new / 17 fuzzy ready to curate) | stockist_extract.py |
+| 1 | Apply Jersey Girl Organics Wix hub | 2026-06-30 | 5 new (researched independents; 3 candidate dupes wired not re-scaffolded; ~48 supermarkets noted not listed) | +30 reciprocal edges (25 existing + 5 new); pairs 268 -> 298 | 20018fa |
 
 ## Pilots (full pipeline doc in `HARVEST.md`)
 - **Pilot 1, AsureQuality register: enrichment slice DONE 2026-06-28.**
