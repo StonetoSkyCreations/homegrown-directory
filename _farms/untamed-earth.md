@@ -10,6 +10,7 @@ country_slug: new-zealand
 region: Canterbury
 city: Christchurch
 address: Christchurch, Canterbury (farm location not publicly listed)
+location_private: true
 phone: ''
 email: oliver@untamedearth.nz
 website: https://untamedearth.nz

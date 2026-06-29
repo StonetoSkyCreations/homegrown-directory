@@ -38,6 +38,7 @@ relationships_declared: true
 contact_via:
   - piko-wholefoods-chch
 
+location_private: true
 geo_precision: approximate
 geo_source: descriptive
 geo_last_verified: '2025-12-31'

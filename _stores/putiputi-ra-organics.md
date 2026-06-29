@@ -7,9 +7,10 @@ country: New Zealand
 region: Northland
 city: Whangarei
 address: 79 Walton Street
-phone: '09 430 0606'
-description: "Northland organic grocer."
-long_description: "Putiputi Ra Organics is a Northland organic grocer. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
+phone: 09 430 0606
+description: Northland organic grocer.
+long_description: Putiputi Ra Organics is a Northland organic grocer. It stocks organic
+  pantry goods and wholefoods, including Chantal Organics lines.
 practices:
 - Organic
 products:
@@ -30,4 +31,11 @@ sourced_from:
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'
+lat: -35.7250863
+lon: 174.3235817
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2026-06-30'
+geo_label: '79'
+geo_query: 79 Walton Street, Whangarei, Northland, New Zealand
 ---

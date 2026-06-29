@@ -7,8 +7,17 @@ country: New Zealand
 region: Canterbury
 city: Waipara
 address: 328 Georges Road, Waipara 7473
-description: Family-owned Waipara hillside vineyard and olive grove producing estate-grown wines and olive oil with careful, sustainable land stewardship.
-long_description: "Terrace Edge is a family vineyard and olive grove on the terraces above the Waipara River in North Canterbury. The team tends hand-managed vines and olive trees on steep, free-draining soils, crafting small-batch wines and estate olive oil that reflect the site\u2019s microclimate. Farming is guided by a focus on soil health and low-input stewardship suited to the dry, windswept hillside block. Produce is sold direct and through regional partners, with an emphasis on traceability from block to bottle.\n"
+description: Family-owned Waipara hillside vineyard and olive grove producing estate-grown
+  wines and olive oil with careful, sustainable land stewardship.
+long_description: 'Terrace Edge is a family vineyard and olive grove on the terraces
+  above the Waipara River in North Canterbury. The team tends hand-managed vines and
+  olive trees on steep, free-draining soils, crafting small-batch wines and estate
+  olive oil that reflect the site’s microclimate. Farming is guided by a focus on
+  soil health and low-input stewardship suited to the dry, windswept hillside block.
+  Produce is sold direct and through regional partners, with an emphasis on traceability
+  from block to bottle.
+
+  '
 practices: []
 products:
 - wine
@@ -20,8 +29,8 @@ phone: ''
 social: ''
 hours: ''
 market_days: []
-lat: null
-lon: null
+lat: -43.0591026
+lon: 172.7570964
 source_urls: []
 last_checked: '2025-12-12'
 practices_tags: []
@@ -33,4 +42,9 @@ sourced_from: []
 supplies_to:
 - beckenham-butchery
 relationships_declared: true
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2026-06-30'
+geo_label: Waipapa
+geo_query: Waipara, Canterbury, New Zealand
 ---

@@ -6,8 +6,9 @@ country_slug: new-zealand
 country: New Zealand
 region: Waikato
 city: Hamilton
-description: "Stockist of Mahoe Farmhouse cheese in Hamilton."
-long_description: "Gouda Cheese Shop stocks Mahoe Farmhouse cheese at its Hamilton store."
+description: Stockist of Mahoe Farmhouse cheese in Hamilton.
+long_description: Gouda Cheese Shop stocks Mahoe Farmhouse cheese at its Hamilton
+  store.
 practices: []
 products:
 - Dairy
@@ -26,4 +27,11 @@ sourced_from:
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'
+lat: -37.7878809
+lon: 175.281788
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2026-06-30'
+geo_label: Hamilton City
+geo_query: Hamilton, Waikato, New Zealand
 ---

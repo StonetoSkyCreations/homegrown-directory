@@ -6,8 +6,10 @@ country_slug: new-zealand
 country: New Zealand
 region: Northland
 city: Kerikeri
-description: "Stockist of Mahoe Farmhouse cheese and Chantal Organics pantry goods in Kerikeri."
-long_description: "New World Kerikeri stocks Mahoe Farmhouse cheese and Chantal Organics pantry goods at its Kerikeri store."
+description: Stockist of Mahoe Farmhouse cheese and Chantal Organics pantry goods
+  in Kerikeri.
+long_description: New World Kerikeri stocks Mahoe Farmhouse cheese and Chantal Organics
+  pantry goods at its Kerikeri store.
 practices: []
 products:
 - Dairy
@@ -28,4 +30,11 @@ sourced_from:
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'
+lat: -35.2272607
+lon: 173.9491061
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2026-06-30'
+geo_label: Kerikeri
+geo_query: Kerikeri, Northland, New Zealand
 ---

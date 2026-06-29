@@ -135,10 +135,24 @@
     var bySlug = {};
     records.forEach(function (r) { if (r.slug && !bySlug[r.slug]) { bySlug[r.slug] = r; } });
     var focus = bySlug[focusSlug];
-    if (!focus || !hasCoords(focus)) { container.classList.add("connections__map--empty"); return; }
+    if (!focus) { container.classList.add("connections__map--empty"); return; }
 
     var conns = connectionsOf(focus, records).filter(function (c) { return hasCoords(c.node); });
     if (!conns.length) { container.classList.add("connections__map--empty"); return; }
+
+    // When the focus has no coordinates (e.g. a producer whose exact location is
+    // intentionally private), still draw the connected places. Anchor the flow lines at
+    // the centroid of those connections and show no focus pin, so the web reads without
+    // asserting a location for the focus.
+    var focusHasCoords = hasCoords(focus);
+    var fll;
+    if (focusHasCoords) {
+      fll = [num(focus.lat), num(focus.lon)];
+    } else {
+      var sumLat = 0, sumLon = 0;
+      conns.forEach(function (c) { sumLat += num(c.node.lat); sumLon += num(c.node.lon); });
+      fll = [sumLat / conns.length, sumLon / conns.length];
+    }
 
     var map = window.L.map(container, { scrollWheelZoom: false, zoomControl: true });
     window.L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
@@ -147,7 +161,6 @@
     }).addTo(map);
 
     var pts = [];
-    var fll = [num(focus.lat), num(focus.lon)];
     conns.forEach(function (c) {
       var cll = [num(c.node.lat), num(c.node.lon)];
       // Flow follows the goods: out toward who they supply, in from who they source.
@@ -156,8 +169,10 @@
       window.L.marker(cll, { icon: pinIcon(c.node.collection, false) }).addTo(map).bindPopup(popupHtml(c.node));
       pts.push(cll);
     });
-    window.L.marker(fll, { icon: pinIcon(focus.collection, true), zIndexOffset: 1000 }).addTo(map).bindPopup(popupHtml(focus));
-    pts.push(fll);
+    if (focusHasCoords) {
+      window.L.marker(fll, { icon: pinIcon(focus.collection, true), zIndexOffset: 1000 }).addTo(map).bindPopup(popupHtml(focus));
+      pts.push(fll);
+    }
     map.fitBounds(window.L.latLngBounds(pts).pad(0.25));
     container.classList.add("connections__map--ready");
     setTimeout(function () { map.invalidateSize(); }, 80);

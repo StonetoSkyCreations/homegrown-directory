@@ -6,8 +6,10 @@ country_slug: new-zealand
 country: New Zealand
 region: Auckland
 city: Glen Innes
-description: "Stockist of Mahoe Farmhouse cheese and Chantal Organics pantry goods in Glen Innes."
-long_description: "Naturally Organic Glen Innes stocks Mahoe Farmhouse cheese and Chantal Organics pantry goods at its Glen Innes store."
+description: Stockist of Mahoe Farmhouse cheese and Chantal Organics pantry goods
+  in Glen Innes.
+long_description: Naturally Organic Glen Innes stocks Mahoe Farmhouse cheese and Chantal
+  Organics pantry goods at its Glen Innes store.
 practices:
 - Organic
 products:
@@ -30,4 +32,11 @@ sourced_from:
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'
+lat: -36.8778879
+lon: 174.8568031
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2026-06-30'
+geo_label: Glen Innes
+geo_query: Glen Innes, Auckland, New Zealand
 ---

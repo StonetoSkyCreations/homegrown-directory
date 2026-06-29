@@ -7,8 +7,9 @@ country: New Zealand
 region: Bay of Plenty
 address: 30 Lovelock Street
 phone: 07 308 6596
-description: "Bay of Plenty fresh food store."
-long_description: "The Fresh Market is a Bay of Plenty fresh food store. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
+description: Bay of Plenty fresh food store.
+long_description: The Fresh Market is a Bay of Plenty fresh food store. It stocks
+  organic pantry goods and wholefoods, including Chantal Organics lines.
 practices: []
 products:
 - Pantry goods
@@ -27,4 +28,11 @@ sourced_from:
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'
+lat: -37.9603086
+lon: 176.9828468
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2026-06-30'
+geo_label: '30'
+geo_query: 30 Lovelock Street, Bay of Plenty, New Zealand
 ---

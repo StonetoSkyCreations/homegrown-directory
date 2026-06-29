@@ -6,8 +6,10 @@ country_slug: new-zealand
 country: New Zealand
 region: Auckland
 city: Albany
-description: "Stockist of Mahoe Farmhouse cheese and Chantal Organics pantry goods in Albany."
-long_description: "Naturally Organic Albany stocks Mahoe Farmhouse cheese and Chantal Organics pantry goods at its Albany store."
+description: Stockist of Mahoe Farmhouse cheese and Chantal Organics pantry goods
+  in Albany.
+long_description: Naturally Organic Albany stocks Mahoe Farmhouse cheese and Chantal
+  Organics pantry goods at its Albany store.
 practices:
 - Organic
 products:
@@ -30,4 +32,11 @@ sourced_from:
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'
+lat: -36.7279344
+lon: 174.7086478
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2026-06-30'
+geo_label: Albany
+geo_query: Albany, Auckland, New Zealand
 ---

@@ -8,8 +8,12 @@ region: Coromandel
 city: Karangahake Gorge
 address: 25 Waitawheta Road, Karangahake Gorge
 website: https://www.fallsretreat.co.nz/eat-1
-description: Organic garden at Falls Retreat growing seasonal produce for the Karangahake Gorge eatery.
-long_description: Falls Retreat Organic Garden is the on-site food garden at Falls Retreat in the Karangahake Gorge. Falls Retreat says its eatery uses homegrown organic produce, invites guests to wander through the organic veggie garden, and prepares seasonal dishes with produce grown organically in its gardens.
+description: Organic garden at Falls Retreat growing seasonal produce for the Karangahake
+  Gorge eatery.
+long_description: Falls Retreat Organic Garden is the on-site food garden at Falls
+  Retreat in the Karangahake Gorge. Falls Retreat says its eatery uses homegrown organic
+  produce, invites guests to wander through the organic veggie garden, and prepares
+  seasonal dishes with produce grown organically in its gardens.
 subtype: mixed
 practices:
 - Organic
@@ -35,4 +39,11 @@ supplies_to:
 - falls-retreat
 relationships_declared: true
 last_checked: '2026-06-27'
+lat: -37.4231896
+lon: 175.7250984
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2026-06-30'
+geo_label: Karangahake Gorge
+geo_query: Karangahake, New Zealand
 ---

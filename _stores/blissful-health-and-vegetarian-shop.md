@@ -7,9 +7,10 @@ country: New Zealand
 region: Auckland
 city: Auckland
 address: 947 New North Road
-phone: '09 845 1688'
-description: "Auckland health food shop."
-long_description: "Blissful Health and Vegetarian Shop is an Auckland health food shop. It stocks organic pantry goods and wholefoods, including Chantal Organics lines."
+phone: 09 845 1688
+description: Auckland health food shop.
+long_description: Blissful Health and Vegetarian Shop is an Auckland health food shop.
+  It stocks organic pantry goods and wholefoods, including Chantal Organics lines.
 practices: []
 products:
 - Pantry goods
@@ -28,4 +29,11 @@ sourced_from:
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'
+lat: -36.8860561
+lon: 174.7130259
+geo_precision: exact
+geo_source: nominatim
+geo_last_verified: '2026-06-30'
+geo_label: Richardson Motors
+geo_query: 947 New North Road, Auckland, Auckland, New Zealand
 ---

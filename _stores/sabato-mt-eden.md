@@ -6,8 +6,8 @@ country_slug: new-zealand
 country: New Zealand
 region: Auckland
 city: Auckland
-description: "Stockist of Mahoe Farmhouse cheese in Auckland."
-long_description: "Sabato stocks Mahoe Farmhouse cheese at its Auckland store."
+description: Stockist of Mahoe Farmhouse cheese in Auckland.
+long_description: Sabato stocks Mahoe Farmhouse cheese at its Auckland store.
 practices: []
 products:
 - Dairy
@@ -26,4 +26,11 @@ sourced_from:
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'
+lat: -36.852095
+lon: 174.7631803
+geo_precision: approx
+geo_source: nominatim
+geo_last_verified: '2026-06-30'
+geo_label: Auckland
+geo_query: Auckland, Auckland, New Zealand
 ---
