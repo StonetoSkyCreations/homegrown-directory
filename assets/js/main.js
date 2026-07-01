@@ -1304,7 +1304,10 @@
     // If the map library failed to load, don't block the rest of the page.
     if (typeof window.L === "undefined" || typeof window.L.map !== "function") return;
     mapPanel.classList.add("is-open");
-    if (toggleMapBtn) toggleMapBtn.textContent = "Hide map";
+    if (toggleMapBtn) {
+      toggleMapBtn.textContent = "Hide map";
+      toggleMapBtn.setAttribute("aria-expanded", "true");
+    }
     if (!map) {
       map = L.map("map", { scrollWheelZoom: false });
       // Clean, label-light basemap so the coloured markers stand out.
@@ -1325,13 +1328,19 @@
       ).addTo(map);
     }
     refreshMap(currentMapItems());
+    // Leaflet miscalculates its size if the panel was hidden (display:none) when
+    // the map was created or last drawn, so recompute once it is visible again.
+    if (map) window.setTimeout(() => map.invalidateSize(), 60);
   }
 
   function closeMap() {
     if (!mapPanel) return;
     mapPanel.classList.remove("is-open");
     mapPanel.classList.remove("map-panel--open");
-    if (toggleMapBtn) toggleMapBtn.textContent = "Show map";
+    if (toggleMapBtn) {
+      toggleMapBtn.textContent = "Show map";
+      toggleMapBtn.setAttribute("aria-expanded", "false");
+    }
   }
 
   // A brief overview card shown inside the map popup, so clicking a pin gives a
@@ -1626,7 +1635,14 @@
   }
   if (toggleMapBtn) {
     toggleMapBtn.addEventListener("click", async () => {
-      if (mapPanel && mapPanel.classList.contains("is-open")) {
+      // Treat the panel as visible if either the runtime `is-open` class or the
+      // initial `map-panel--open` markup class is present, so "Hide map" works
+      // straight from the default open state (not just after a manual open).
+      const mapIsVisible = mapPanel && (
+        mapPanel.classList.contains("is-open") ||
+        mapPanel.classList.contains("map-panel--open")
+      );
+      if (mapIsVisible) {
         closeMap();
         return;
       }
