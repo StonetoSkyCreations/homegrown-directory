@@ -61,6 +61,7 @@ specialty_tags: []
 sourced_from:
 - coraltree-organic-products
 - three-oaks-organic-farm
+- te-horo-harvest
 supplies_to: []
 relationships_declared: false
 ---

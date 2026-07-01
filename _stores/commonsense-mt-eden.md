@@ -52,6 +52,7 @@ sourced_from:
 - coraltree-organic-products
 - jersey-girl-organics
 - durham-farms
+- te-horo-harvest
 supplies_to: []
 relationships_declared: false
 ---

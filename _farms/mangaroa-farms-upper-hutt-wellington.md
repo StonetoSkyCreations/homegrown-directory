@@ -91,6 +91,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - three-oaks-organic-farm
+- te-horo-harvest
 supplies_to:
 - brewtown-farmers-market
 relationships_declared: true

@@ -27,6 +27,7 @@ source_urls:
 sourced_from:
 - chantal-organics
 - jersey-girl-organics
+- te-horo-harvest
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'

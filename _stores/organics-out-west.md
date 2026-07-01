@@ -44,6 +44,7 @@ sourced_from:
 - mahoe-farmhouse-cheese
 - chantal-organics
 - jersey-girl-organics
+- te-horo-harvest
 supplies_to: []
 relationships_declared: true
 ---

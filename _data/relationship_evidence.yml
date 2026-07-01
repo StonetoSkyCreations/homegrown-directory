@@ -379,3 +379,103 @@ durham-farms|supplies_to|well-hung-artisan-butchery:
   snippet: 'Listed on the Durham Farms stockists page: Well Hung Artisan Butchery'
   date: '2026-07-02'
   confidence: high
+te-horo-harvest|supplies_to|commonsense-kapiti:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Commonsense Organics (Kapiti)'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|commonsense-kilbirnie:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Commonsense Organics (Kilbirnie)'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|commonsense-lower-hutt:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Commonsense Organics (Lower Hutt)'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|commonsense-mt-eden:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Commonsense Organics (Mt Eden)'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|commonsense-wellington-city:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Commonsense Organics (Wellington)'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|cornucopia-organics-hastings:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Cornucopia Organics'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|ie-produce-takapuna:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: ie-produce'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|mangaroa-farms-upper-hutt-wellington:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Mangaroa Farms'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|naturally-organic-albany:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Naturally Organic Albany'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|organic-buzz:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Organic Buzz'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|organic-nation:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Organic Nation'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|organics-out-west:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Organics Out West'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|piko-wholefoods-chch:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Piko Wholefoods'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|simply-organic:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Simply Organic'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|taste-nature-dunedin:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Taste Nature'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|thames-organic-shop:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Thames Organic'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|the-big-egg-shop:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: The Big Egg Shop'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|the-goodness-grocer:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: The Goodness Grocer'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|wholefoods-market:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Wholefoods Market and Health Store'
+  date: '2026-07-02'
+  confidence: high
+te-horo-harvest|supplies_to|wild-earth-organics:
+- source_url: https://www.tehoroharvest.com/stockists
+  snippet: 'Listed on the Te Horo Harvest stockists page: Wild Earth Organics'
+  date: '2026-07-02'
+  confidence: high

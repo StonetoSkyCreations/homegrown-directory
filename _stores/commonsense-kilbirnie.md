@@ -49,6 +49,7 @@ sourced_from:
 - coraltree-organic-products
 - three-oaks-organic-farm
 - jersey-girl-organics
+- te-horo-harvest
 supplies_to: []
 relationships_declared: false
 ---

@@ -78,32 +78,39 @@ authoritative list; (b) live-status-check every "new" candidate (a stale hub can
 shops); (c) RAW Food Market and The Grove failed Nominatim geocode - patch lat/lon by hand
 after scaffolding.
 
-**>>> NEXT SESSION, START HERE: apply the Te Horo Harvest Wix hub. <<<**
-Same loop, but the Wix parser is noisier here (~13 names with "Tel:" / address lines mixed in),
-so trust the live page over the parser. Plan of attack:
-1. Load rbenv (`eval "$(rbenv init - zsh)"`). `python3 scripts/harvesters/stockist_extract.py
-   --slugs te-horo-harvest` then `ruby scripts/candidate_edges.rb`; read
-   `data/harvest/stockist-review.csv`. THEN WebFetch the Te Horo stockists page directly and
-   treat that as authoritative (Durham proved the parser misses most names and grabs headings).
-2. Curate: KEEP real food stockists / eateries; DROP region/section headings, "Tel:" and
-   address fragments, footer/form noise, non-food. **Cross-check every "new" candidate against
-   existing listings by normalised name** (Durham had 3 the classifier missed: IE Produce,
-   Naturally Organics=albany, Well Hung=milford) and **live-status-check each** (drop closed).
+**Applied 2026-07-02: the Te Horo Harvest hub** (Josh pasted the authoritative stockist list
+from tehoroharvest.com/stockists, so the Wix parser was skipped entirely - the fast path when
+the list is to hand). 16 AUTO edges to existing listings (5 Commonsense branches - skipped the
+address-less `commonsense-organics` brand-umbrella listing - plus naturally-organic-albany,
+ie-produce-takapuna, organic-buzz, cornucopia-organics-hastings, mangaroa-farms [a farm whose
+shop stocks Te Horo], organics-out-west, thames-organic-shop, wholefoods-market,
+taste-nature-dunedin, piko-wholefoods-chch, simply-organic) + 4 new listings (Wild Earth
+Organics Tauranga, Organic Nation Hamilton, The Goodness Grocer Waiuku, The Big Egg Shop Otaki -
+Josh said list it). Wild Earth had a stale "CLOSED" crowd flag but is trading. Reciprocated
+pairs 314 -> 334; gate green (654 files validate, build, seo_lint, 0 one-way / 0 unresolved).
+
+**>>> NEXT SESSION, START HERE: pick the next producer hub. <<<**
+Fastest path (proven on Te Horo): Josh pastes a producer's "where to buy / stockists" list and
+we process it directly, no Wix parser needed. Otherwise pick a producer with a known stockist
+page and WebFetch it (trust the live page over the Wix parser). The repeatable loop:
+1. Get the authoritative stockist list (Josh paste, or WebFetch the producer's stockists page).
+2. Cross-check every entry against existing listings by normalised name AND live-status-check
+   each (Te Horo had 16 existing to wire as AUTO edges; Durham had 2 closed shops to drop).
 3. Research each NEW keep on its own site; short + long descriptions to the listing-quality +
    SEO doctrine (desc feeds the meta; don't repeat name/town; organic tag ONLY if the
-   business's own source supports it; no practice tags otherwise). Present a review table for
-   Josh to sign off BEFORE writing (right the first time). Note generic corner
-   dairies/supermarkets on the producer instead of listing them.
-4. Scaffold: `ruby scripts/add_listing.rb --no-validate --geocode --collection ... --name ...
-   --sourced-from te-horo-harvest --source-urls <te horo stockists URL> ...`; patch lat/lon by
-   hand for any that fail to geocode. Add all edges to `_farms/te-horo-harvest.md` supplies_to +
-   ledger entries to `_data/relationship_evidence.yml` (snippet 'Listed on the Te Horo Harvest
-   stockists page: <name>'), `ruby scripts/reciprocate.rb --apply`, then validate + build +
-   seo_lint + relationship_audit (expect 0 one-way). One commit for the hub.
+   business's own source supports it; no practice tags otherwise). Review table for Josh BEFORE
+   writing. Note generic corner dairies / supermarket branches on the producer, don't list them.
+4. Scaffold `ruby scripts/add_listing.rb --no-validate --geocode ... --sourced-from <producer>
+   --source-urls <stockists URL>`; patch lat/lon by hand for geocode misses. Add all edges to
+   the producer's supplies_to + ledger entries in `_data/relationship_evidence.yml` (snippet
+   'Listed on the <Producer> stockists page: <name>'), `ruby scripts/reciprocate.rb --apply`,
+   then validate + build + seo_lint + relationship_audit (0 one-way). One commit per hub, push
+   (auto-deploys).
 
-After Te Horo: Te Matuku (eatery directory) + Olliff (Progus) need their own small adapters;
-BioFarm is parked (empty WPSL). Keep focus on cafes, restaurants, grocers, markets,
-distributors connected to verified producers; only apply reviewed, evidence-backed links.
+Still open (low-value, defer unless wanted): Te Matuku (weak eatery directory) + Olliff (Progus
+token API) need their own small adapters; BioFarm parked (empty WPSL). Keep focus on cafes,
+restaurants, grocers, markets, distributors connected to verified producers; only apply
+reviewed, evidence-backed links.
 
 **Deferred items:**
 - 8 static-hub AUTO edges need individual review before wiring (first-light 2,

@@ -40,6 +40,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - jersey-girl-organics
+- te-horo-harvest
 sourced_from_text:
 - https://thecoromandel.nz/explore/thames-organic-shop#:~:text=Thames%20Organic%20Shophttps://thecoromandel.nz/explore/thames-organic-shop#:~:text=
 supplies_to: []

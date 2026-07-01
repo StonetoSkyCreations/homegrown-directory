@@ -84,6 +84,7 @@ certifications: []
 specialty_tags: []
 sourced_from:
 - coraltree-organic-products
+- te-horo-harvest
 supplies_to: []
 relationships_declared: false
 ---

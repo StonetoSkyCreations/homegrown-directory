@@ -51,6 +51,7 @@ sourced_from:
 - mahoe-farmhouse-cheese
 - chantal-organics
 - durham-farms
+- te-horo-harvest
 supplies_to: []
 relationships_declared: true
 ---

@@ -31,6 +31,7 @@ sourced_from:
 - chantal-organics
 - jersey-girl-organics
 - durham-farms
+- te-horo-harvest
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'

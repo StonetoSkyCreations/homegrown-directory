@@ -49,6 +49,7 @@ specialty_tags: []
 sourced_from:
 - coraltree-organic-products
 - jersey-girl-organics
+- te-horo-harvest
 supplies_to: []
 relationships_declared: false
 ---

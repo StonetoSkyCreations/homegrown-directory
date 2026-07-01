@@ -58,6 +58,7 @@ sourced_from:
   - shiny-shovel
   - milmore-downs
   - awarua-organics
+  - te-horo-harvest
 
 relationships_declared: true
 

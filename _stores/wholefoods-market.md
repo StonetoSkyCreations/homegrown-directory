@@ -27,6 +27,7 @@ source_urls:
 - https://www.milmoredowns.co.nz/shop/other_shops
 sourced_from:
 - milmore-downs
+- te-horo-harvest
 supplies_to: []
 relationships_declared: true
 last_checked: '2026-06-27'
