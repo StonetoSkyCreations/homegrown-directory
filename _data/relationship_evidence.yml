@@ -299,3 +299,83 @@ jersey-girl-organics|supplies_to|vetro-tauranga:
   snippet: 'Listed on the Jersey Girl Organics stockists page: Vetro Tauranga'
   date: '2026-06-30'
   confidence: high
+durham-farms|supplies_to|baduzzi:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Baduzzi'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|commonsense-mt-eden:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Commonsense Mt Eden'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|feoh-espresso-and-roastery:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Feoh Espresso and Roastery'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|florets:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Florets'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|forest-auckland:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Forest'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|giapo:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Giapo'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|grey-lynn-butchers:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Grey Lynn Butchers'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|ie-produce-takapuna:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: IE Produce (Takapuna)'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|kaiwaka-cheese-shop:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Kaiwaka Cheese Shop'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|naturally-organic-albany:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Naturally Organic Albany'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|raw-food-market:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: RAW Food Market'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|scarecrow:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Scarecrow'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|the-dusty-apron:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: The Dusty Apron'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|the-grove:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: The Grove'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|the-island-grocer:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: The Island Grocer'
+  date: '2026-07-02'
+  confidence: high
+durham-farms|supplies_to|well-hung-artisan-butchery:
+- source_url: https://www.durhamfarms.co.nz/stockists-1
+  snippet: 'Listed on the Durham Farms stockists page: Well Hung Artisan Butchery'
+  date: '2026-07-02'
+  confidence: high

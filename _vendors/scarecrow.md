@@ -48,7 +48,8 @@ products_tags: []
 services_tags: []
 certifications: []
 specialty_tags: []
-sourced_from: []
+sourced_from:
+- durham-farms
 supplies_to: []
 relationships_declared: false
 ---

@@ -31,6 +31,7 @@ source_urls:
 - https://florets.nz
 sourced_from:
 - milmore-downs
+- durham-farms
 supplies_to: []
 relationships_declared: true
 lat: -36.864908

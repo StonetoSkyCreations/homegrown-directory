@@ -43,6 +43,7 @@ subtype: restaurant
 sourced_from:
 - kelmarna-community-farm
 - mahoe-farmhouse-cheese
+- durham-farms
 sourced_from_text:
 - https://forestrestaurant.co.nz
 supplies_to: []

@@ -50,6 +50,7 @@ sourced_from:
 - awarua-organics
 - mahoe-farmhouse-cheese
 - chantal-organics
+- durham-farms
 supplies_to: []
 relationships_declared: true
 ---

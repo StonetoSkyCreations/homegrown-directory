@@ -51,6 +51,7 @@ specialty_tags: []
 sourced_from:
 - coraltree-organic-products
 - jersey-girl-organics
+- durham-farms
 supplies_to: []
 relationships_declared: false
 ---

@@ -53,6 +53,7 @@ specialty_tags: []
 sourced_from:
 - mahoe-farmhouse-cheese
 - coraltree-organic-products
+- durham-farms
 supplies_to: []
 relationships_declared: true
 ---

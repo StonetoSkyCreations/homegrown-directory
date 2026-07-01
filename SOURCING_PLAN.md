@@ -5,7 +5,7 @@ toward "every NZ organic grower, every stockist, and every cafe, store and
 restaurant that stocks it" without random data entry, by following the web of
 connection. New Zealand only for now (ignore Australia).
 
-## Where we are now (resume here, updated 2026-06-30)
+## Where we are now (resume here, updated 2026-07-02)
 
 **Current harvest priority:** keep harvesting cafes, restaurants, grocers, markets
 and distributors through *verified producer links*. Source types, by leverage:
@@ -58,35 +58,52 @@ Gisborne, Vetro Tauranga). ~48 mainstream supermarket branches were deliberately
 listed; recorded as a where-to-buy note on the Jersey Girl listing instead, to keep the
 directory organic-focused. Reciprocated pairs 268 -> 298.
 
-**>>> NEXT SESSION, START HERE: apply the Durham Farms Wix hub. <<<**
-The Wix adapter already extracts it (`widget:wix`, ~13 names). Repeat the Jersey Girl loop:
-1. Load rbenv (`eval "$(rbenv init - zsh)"`). Extract + classify:
-   `python3 scripts/harvesters/stockist_extract.py --slugs durham-farms` then
-   `ruby scripts/candidate_edges.rb`. Read `data/harvest/stockist-review.csv`.
-2. Curate exactly like Jersey Girl: KEEP real food stockists (organic stores, grocers,
-   markets, eateries listed as stockists); DROP region/section headings ("Auckland",
-   "Northland", "Restaurants and Cafes", "Waiheke"), footer/form noise ("Become a
-   stockist", "Terms Conditions", "Website designed by"), and non-food. Durham's queue
-   includes IE Produce, Naturally Organics, City of View Superette, Well Hung Butchery.
-3. **Cross-check every "new" candidate against existing listings by normalised name**
-   before scaffolding (Jersey Girl had 3 hidden duplicates the classifier missed: Farro
-   Constellation=mairangi-bay, Farro Takapuna=smales-farm, Naturally Organic
-   Northridge=albany). Wire dupes as AUTO edges, do not re-scaffold.
-4. For NEW keeps: research each business on its own site, write short + long descriptions
-   to the listing-quality + SEO doctrine (description feeds the meta; don't repeat the
-   name/town; organic tag ONLY if the business's own source supports it). Scaffold with
-   `ruby scripts/add_listing.rb --collection stores --name "..." --region R --city C
-   --address A --website W --description "..." --long-description "..." --source-urls <durham
-   stockists URL> --sourced-from durham-farms --geocode`. Present a review table for Josh
-   to sign off BEFORE writing (he wants listings right the first time, no rework pass).
-5. Wire AUTO edges into `_farms/durham-farms.md` supplies_to + add ledger entries to
-   `_data/relationship_evidence.yml`, `ruby scripts/reciprocate.rb --apply`, then
-   validate + build + seo_lint + relationship_audit. One commit for the hub.
+**Applied 2026-07-02: the Durham Farms Wix hub** (one commit). The live stockists page was
+far richer than the Wix parser found (~24 entries, not the ~13 the census guessed): the
+parser grabbed region headings and only a few names, so **WebFetch on the live page was the
+real source**. 8 AUTO edges to existing listings (ie-produce-takapuna, naturally-organic-albany
+[NOT invercargill: the classifier's near-name match was a geo-mismatch], well-hung-artisan-
+butchery, commonsense-mt-eden, scarecrow, florets, the-island-grocer, forest-auckland) + 8 new
+researched listings (Grey Lynn Butchers, Kaiwaka Cheese Shop, RAW Food Market Waiheke, The
+Dusty Apron, The Grove, Baduzzi, Giapo, Feoh Espresso and Roastery). Josh's curation calls: 3
+generic corner dairies (City of Views / White Heron / Victoria Avenue) recorded as a
+where-to-buy note on the Durham listing, NOT listed; Feoh listed as a cafe. DROPPED both
+Huckleberry branches (chain closed all Auckland stores June 2024, page stale). Reciprocated
+pairs 298 -> 314; gate green (650 files validate, build, seo_lint pass, 0 one-way / 0
+unresolved).
 
-After Durham: **Te Horo Harvest** (Wix, ~13 noisier names; strip "Tel:"/address lines).
-Then Te Matuku (eatery directory) + Olliff (Progus) need their own small adapters; BioFarm
-is parked (empty WPSL). Keep focus on cafes, restaurants, grocers, markets, distributors
-connected to verified producers; only apply reviewed, evidence-backed relationships.
+**Lessons banked (repeat next time):** (a) the Wix parser under-extracts multi-column
+stockist pages badly - when it returns mostly region headings, WebFetch the live page for the
+authoritative list; (b) live-status-check every "new" candidate (a stale hub can list closed
+shops); (c) RAW Food Market and The Grove failed Nominatim geocode - patch lat/lon by hand
+after scaffolding.
+
+**>>> NEXT SESSION, START HERE: apply the Te Horo Harvest Wix hub. <<<**
+Same loop, but the Wix parser is noisier here (~13 names with "Tel:" / address lines mixed in),
+so trust the live page over the parser. Plan of attack:
+1. Load rbenv (`eval "$(rbenv init - zsh)"`). `python3 scripts/harvesters/stockist_extract.py
+   --slugs te-horo-harvest` then `ruby scripts/candidate_edges.rb`; read
+   `data/harvest/stockist-review.csv`. THEN WebFetch the Te Horo stockists page directly and
+   treat that as authoritative (Durham proved the parser misses most names and grabs headings).
+2. Curate: KEEP real food stockists / eateries; DROP region/section headings, "Tel:" and
+   address fragments, footer/form noise, non-food. **Cross-check every "new" candidate against
+   existing listings by normalised name** (Durham had 3 the classifier missed: IE Produce,
+   Naturally Organics=albany, Well Hung=milford) and **live-status-check each** (drop closed).
+3. Research each NEW keep on its own site; short + long descriptions to the listing-quality +
+   SEO doctrine (desc feeds the meta; don't repeat name/town; organic tag ONLY if the
+   business's own source supports it; no practice tags otherwise). Present a review table for
+   Josh to sign off BEFORE writing (right the first time). Note generic corner
+   dairies/supermarkets on the producer instead of listing them.
+4. Scaffold: `ruby scripts/add_listing.rb --no-validate --geocode --collection ... --name ...
+   --sourced-from te-horo-harvest --source-urls <te horo stockists URL> ...`; patch lat/lon by
+   hand for any that fail to geocode. Add all edges to `_farms/te-horo-harvest.md` supplies_to +
+   ledger entries to `_data/relationship_evidence.yml` (snippet 'Listed on the Te Horo Harvest
+   stockists page: <name>'), `ruby scripts/reciprocate.rb --apply`, then validate + build +
+   seo_lint + relationship_audit (expect 0 one-way). One commit for the hub.
+
+After Te Horo: Te Matuku (eatery directory) + Olliff (Progus) need their own small adapters;
+BioFarm is parked (empty WPSL). Keep focus on cafes, restaurants, grocers, markets,
+distributors connected to verified producers; only apply reviewed, evidence-backed links.
 
 **Deferred items:**
 - 8 static-hub AUTO edges need individual review before wiring (first-light 2,

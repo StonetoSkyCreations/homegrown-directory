@@ -40,6 +40,24 @@ services: []
 services_tags: []
 specialty_tags: []
 sourced_from: []
-supplies_to: []
-relationships_declared: false
+supplies_to:
+- baduzzi
+- commonsense-mt-eden
+- feoh-espresso-and-roastery
+- florets
+- forest-auckland
+- giapo
+- grey-lynn-butchers
+- ie-produce-takapuna
+- kaiwaka-cheese-shop
+- naturally-organic-albany
+- raw-food-market
+- scarecrow
+- the-dusty-apron
+- the-grove
+- the-island-grocer
+- well-hung-artisan-butchery
+relationships_declared: true
 ---
+
+Durham Farms is a certified organic dairy and mixed produce farm with a farm shop in Waipu, Northland. Alongside the grocers, butchers, markets and eateries listed here, its organic produce is also stocked at a handful of independent neighbourhood dairies and superettes, including City of Views Superette in Birkenhead, White Heron Dairy in Parnell and Victoria Avenue Superette in Remuera.
