@@ -99,3 +99,5 @@ exclude:
   - SOURCING_PLAN.md
   - SEO_DOCTRINE.md
   - HARVEST.md
+  - CLAUDE.md
+  - AUDIT_MASTER_PLAN.md

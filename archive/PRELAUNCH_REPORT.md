@@ -1,3 +1,5 @@
+> Historical snapshot, archived 2026-07-02. Superseded by AUDIT_MASTER_PLAN.md at the repo root. Counts and findings reflect the site at the time of writing, not the current state.
+
 ## Executive summary
 - Status: **PASS** (no Critical blockers). Top findings focus on contact links with empty `mailto:`, a few missing listing cross-links, and JSON-LD gaps on store/vendor layouts.
 - Build completed successfully; homepage and representative listings render; search.json present.

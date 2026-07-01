@@ -1,6 +1,8 @@
 # Homegrown Directory
 
-Static, GitHub Pages ready Jekyll site that maps integrity-first food systems (organic, regenerative, biodynamic, spray-free, pasture-raised). First focus is Aotearoa New Zealand, with a structure ready to expand globally. Live at homegrowndirectory.com.
+Static, GitHub Pages ready Jekyll site that maps integrity-first food systems (organic, regenerative, biodynamic, spray-free, pasture-raised). Live at homegrowndirectory.com.
+
+The site is **one codebase containing two distinct country directories**: New Zealand / Aotearoa (the mature directory and active growth focus) and Australia (early stage). A country switcher in the header moves between them; listings, search, maps, and browse pages stay scoped to the active country. Shared layouts and tooling are fine, but the two datasets are never blended (see `CLAUDE.md` for the full country rules).
 
 The point of difference is the **web of connection**: who grows the food, who stocks it, and who serves it, drawn as supply links between listings. When both sides declare a link it is reciprocated, and reciprocity is the site's trust signal ("Verified by N partners").
 
@@ -64,5 +66,10 @@ ruby scripts/relationship_audit.rb   # confirm reciprocity held or rose
 - Home / search: `/`
 - Interactive map: `/map/`
 - The connection network: `/network/`
-- Country index: `/country/new-zealand/`
+- Country indexes: `/country/new-zealand/`, `/country/australia/`
+- Country-scoped browse: `/country/<country>/farms/` etc.
 - Collections: `/farms/`, `/markets/`, `/stores/`, `/restaurants/`, `/distributors/`
+
+## Agent / contributor rules
+
+`CLAUDE.md` (repo root) is the always-loaded operating-rules file for coding agents; `.claude/rules/` holds path-scoped detail. `AUDIT_MASTER_PLAN.md` is the current audit baseline and staged repair plan; everything in `archive/` is historical.

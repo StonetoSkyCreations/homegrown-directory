@@ -3,11 +3,16 @@
 Internal planning doc (excluded from the published site via `_config.yml`).
 
 ## Vision
-The comprehensive map of NZ organic food: every grower/producer, every stockist of that
-produce, and every cafe/store/restaurant that stocks it. Two-way discovery (a traveller
-finds outlets in a town; an outlet finds producers) with the producer to stockist to
-eatery **web of connection** made visible and used as a trust signal (reciprocated
-relationships = verified).
+The comprehensive map of food grown with care, as two distinct country directories in
+one codebase: New Zealand / Aotearoa (mature, the active growth focus) and Australia
+(early stage, 81 listings, country pages + switcher live). Per country: every
+grower/producer, every stockist of that produce, and every cafe/store/restaurant that
+stocks it. Two-way discovery (a traveller finds outlets in a town; an outlet finds
+producers) with the producer to stockist to eatery **web of connection** made visible
+and used as a trust signal (reciprocated relationships = verified).
+
+**Audit baseline + staged repair plan:** `AUDIT_MASTER_PLAN.md` (2026-07-02) is the
+current audit truth; agent operating rules live in `CLAUDE.md` + `.claude/rules/`.
 
 ## Done
 - **Add pipeline:** `scripts/add_listing.rb` (name+website or `--csv` row, canonical tags, slug de-dup, `--geocode`, runs validate). Canonical vocab centralised in `_data/taxonomies.yml`.

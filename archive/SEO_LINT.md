@@ -1,3 +1,5 @@
+> Historical snapshot, archived 2026-07-02. Superseded by AUDIT_MASTER_PLAN.md at the repo root. Counts and findings reflect the site at the time of writing, not the current state.
+
 # SEO Lint
 
 This lint checks the built `_site` output for basic SEO/meta correctness:

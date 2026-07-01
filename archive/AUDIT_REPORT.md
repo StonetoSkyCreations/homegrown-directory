@@ -1,3 +1,5 @@
+> Historical snapshot, archived 2026-07-02. Superseded by AUDIT_MASTER_PLAN.md at the repo root. Counts and findings reflect the site at the time of writing, not the current state.
+
 Executive summary
 - Hardened listing page rendering to show long descriptions when no body content exists, fixing blank content cases (e.g., Solstice Organics) while keeping design unchanged.  
 - Normalised search.json generation so relationship fields (sources/supplies_to) are always emitted as arrays, preventing filter/search inconsistencies for listings missing these fields.  

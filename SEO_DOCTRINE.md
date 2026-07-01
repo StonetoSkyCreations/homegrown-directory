@@ -68,7 +68,7 @@ City used when present; otherwise fall back to Region.
 
 Avoid repeating identical locality/region strings.
 
-Country is omitted by default (NZ assumed) unless disambiguation is required.
+Country handling: the site contains two country directories (New Zealand / Aotearoa and Australia). Listing titles carry City + Region/State and omit the country name by default; the country must be unambiguous from region/state context and page metadata. Never write country-neutral titles or descriptions for country-scoped pages, and never let a page describe Australian content with New Zealand-only wording or vice versa. Whether AU listings should append ", Australia" for disambiguation is an open decision (AUDIT_MASTER_PLAN.md task HG-AUDIT-020); record the outcome here when made.
 
 Practice tags, marketing phrases, or adjectives are never appended.
 

@@ -3,7 +3,9 @@
 Internal planning doc (excluded from the published site). How we grow Homegrown
 toward "every NZ organic grower, every stockist, and every cafe, store and
 restaurant that stocks it" without random data entry, by following the web of
-connection. New Zealand only for now (ignore Australia).
+connection. This harvest workstream is New Zealand only for now; the Australian
+directory (81 listings, live at /country/australia/) stays as-is until an AU harvest
+is deliberately opened. Do not read this scoping as "the site is NZ-only".
 
 ## Where we are now (resume here, updated 2026-07-02)
 
